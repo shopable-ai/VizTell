@@ -1,0 +1,5 @@
+# ShopMe local generated state
+.shopme/
+
+# macOS metadata
+.DS_Store
