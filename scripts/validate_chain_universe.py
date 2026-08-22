@@ -15,6 +15,8 @@ CORE_FILE = DOC_ROOT / "02_通用基础链路库.md"
 INDEX_FILE = DOC_ROOT / "12_术语、边界与编号索引.md"
 SCENARIO_FILE = DOC_ROOT / "13_场景验证与覆盖矩阵.md"
 OVERVIEW_FILE = DOC_ROOT / "00_总览与核心结论.md"
+PROJECT_SCENE_FILE = DOC_ROOT / "15_项目与复杂任务链路宇宙.md"
+KNOWLEDGE_SCENE_FILE = DOC_ROOT / "16_阅读学习与知识研究链路宇宙.md"
 REQUIRED_FIELDS = (
     "核心步骤",
     "解决",
@@ -155,10 +157,45 @@ def validate_scenarios(errors: list[str]) -> None:
         "项目经验转成公司流程并被采用",
         "生产故障的止损、恢复和防复发",
         "产品或流程的暂停、交接、淘汰和重启",
+        "复杂项目从模糊目标到交付",
+        "文章／单书从筛选到掌握迁移",
+        "大量资料去重并形成知识差额",
     )
     for scenario in expected:
         if scenario not in text:
             add_error(errors, SCENARIO_FILE, f"missing benchmark scenario '{scenario}'")
+
+
+def validate_scene_universes(errors: list[str]) -> None:
+    requirements = {
+        PROJECT_SCENE_FILE: (
+            "目标建立组合链",
+            "目标拆解链",
+            "问题拆解链",
+            "已有解法搜索链",
+            "多方案生成链",
+            "失败预演与反例链",
+            "方案评估链",
+            "执行控制链",
+            "按根因返回最近的有效层",
+        ),
+        KNOWLEDGE_SCENE_FILE: (
+            "文章进入链",
+            "单本书 T0—T7 阶段链",
+            "多资料去重与知识增量链",
+            "资料状态与掌握状态分开",
+            "语义相似只适合召回候选",
+            "知识差额",
+        ),
+    }
+    for path, phrases in requirements.items():
+        if not path.exists():
+            add_error(errors, path, "required L3 scene universe is missing")
+            continue
+        text = path.read_text(encoding="utf-8")
+        for phrase in phrases:
+            if phrase not in text:
+                add_error(errors, path, f"missing required scene concept '{phrase}'")
 
 
 def main() -> int:
@@ -173,6 +210,7 @@ def main() -> int:
     validate_core_chains(errors)
     validate_overview(errors, documents)
     validate_scenarios(errors)
+    validate_scene_universes(errors)
 
     if errors:
         print(f"FAILED: {len(errors)} error(s)")
@@ -184,7 +222,8 @@ def main() -> int:
         "PASS: "
         f"{len(documents)} docs; one H1 each; no heading jumps; "
         "relative links and anchors valid; C01-C30 unique and complete; "
-        "bidirectional overview navigation and seven benchmark scenarios present."
+        "bidirectional overview navigation, ten benchmark scenarios, "
+        "project/complex-task and reading/knowledge L3 scene universes present."
     )
     return 0
 
