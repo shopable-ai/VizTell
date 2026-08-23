@@ -1,6 +1,6 @@
 # 商业模式宇宙：统一结构清单
 
-> 当前版本：v4 合并视图。唯一入口：`README.md`。
+> 当前版本：**v4 本体 + runtime-v1 横向运行时**。唯一入口：`README.md`。
 
 ## 00_导航与总览
 - `00_当前有效版本与加载入口.md`
@@ -22,14 +22,16 @@
 - `10_结构化知识地图/`
 
 ## 02_价值链与利润池
-原价值链与利润池目录整体迁入。
+原价值链与利润池目录整体迁入。当前审计确认总览/部分子文件仍偏纲要级，后续由 Benchmark 的 K1/W1 信号驱动深化。
 
 ## 03_生态与价值交换
-原生态与价值交换目录整体迁入。
+原生态与价值交换目录整体迁入。当前审计确认主要仍是框架/问题集，后续重点补多方激励、补贴稳定性、绕平台和案例校准。
 
 ## 04_案例与行业地图
 - `01_商业模式案例与证据/`
 - `02_行业商业模式地图/`
+
+当前以规则/模板为主，真实案例校准集仍是下一阶段缺口。
 
 ## 05_失败模式与迁移
 - `01_失败模式库/`
@@ -46,6 +48,8 @@
 - `02_v4_Skill机器加载与Offer决策协议.md`
 
 ## 08_机器数据与Schema
+
+### v2/v3/v4 本体与协议
 - `atoms.jsonl`
 - `atoms_v3_registry.json`
 - `atoms_v4_registry.json`
@@ -61,8 +65,28 @@
 - `validation_v3.json`
 - `validation_v4.json`
 
+### runtime-v1 横向机器资产
+- `task_router_v1.json` — 8 个核心任务族 + 跨切 flags + 最小上下文装配规则
+- `commercial_reasoning_runtime_v1.json` — 端到端状态机、Data/Evidence Gate、Trace、错误分类与生命周期
+- `benchmark_manifest_v1.json` — A-E、Rubric、惩罚项、T01/T02、Ablation、Regression
+
+> runtime-v1 不新增或重排 U/Atom/Pattern/PR ID；它只描述怎样加载、使用、测试 v4。
+
 ## 09_专题商业模式
 - `电子书商业模式.md`
+
+## 10_任务工作流与运行时
+- `00_下一阶段演进与成熟度地图.md`
+- `01_任务路由_检索_上下文与数据门.md`
+- `02_端到端商业推理Workflow与知识生命周期.md`
+
+## 11_Benchmark与回归
+- `00_Benchmark评测体系_A-E_消融_回归.md`
+- `01_T01电子书与T02_AI_API跨场景Canary.md`
+
+## 仓库级测试入口
+- `scripts/benchmark_business_model_universe.py` — v4 preservation + runtime routing/retrieval harness；其分数不等于 A-E 商业答案质量分数。
+- `.github/workflows/business-model-universe.yml` — `main` 相关修改的回归入口（存在后由 GitHub Actions 执行）。
 
 ## 90_研究来源与参考
 - `00_传统参考知识/`
@@ -71,9 +95,9 @@
 - `03_v4缺口审计与研究来源.md`
 - `99_历史结构/` — 历史入口、结构快照和并发重构版本说明，不作为当前事实源
 
-## 结构迁移后的同步纪律
+## 结构迁移与运行时同步纪律
 
-目录发生移动、拆分、合并、重命名或并发新增时，必须同步核对：
+目录发生移动、拆分、合并、重命名、并发新增或运行时协议改变时，必须同步核对：
 
 1. `README.md`；
 2. 本 `MANIFEST.md`；
@@ -81,5 +105,8 @@
 4. `00_导航与总览/11_知识层级与分类规范.md` 与 `12_阅读与使用路径.md`；
 5. `07_元数据知识图谱与Skill/` 内跨文件引用；
 6. `08_机器数据与Schema/validation_v4.json` 的 `load_rule` 与 `required_current_files`；
-7. 人类阅读镜像与 JSONL/Registry/Schema 的主从关系；
-8. 当前树是否残留迁移过程中的重复副本或多个稳定入口。
+7. `08_机器数据与Schema/task_router_v1.json`、`commercial_reasoning_runtime_v1.json`、`benchmark_manifest_v1.json` 的相互引用；
+8. 人类阅读镜像与 JSONL/Registry/Schema 的主从关系；
+9. 当前树是否残留迁移过程中的重复副本或多个稳定入口；
+10. `scripts/benchmark_business_model_universe.py --strict` 是否仍通过；
+11. Benchmark 失败应先按 K1/R1/W1/C1/E1/F1/S1/T1/O1/B1 定位根因，不得默认通过增加 Atom 修复。
