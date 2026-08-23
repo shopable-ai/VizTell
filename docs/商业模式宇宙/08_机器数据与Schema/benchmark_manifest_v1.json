@@ -13,33 +13,13 @@
   "rubric": {
     "scale": 100,
     "dimensions": [
-      {"id":"need_understanding","weight":7},
-      {"id":"opportunity_recall","weight":8},
-      {"id":"hidden_profit_discovery","weight":8},
-      {"id":"upstream_downstream_coverage","weight":6},
-      {"id":"candidate_differentiation","weight":6},
-      {"id":"economic_logic","weight":8},
-      {"id":"unit_economics","weight":7},
-      {"id":"cash_cohort_conditional_economics","weight":8},
-      {"id":"competition_and_moat","weight":6},
-      {"id":"risk_and_failure_modes","weight":6},
-      {"id":"facts_and_evidence","weight":8},
-      {"id":"assumption_transparency","weight":5},
-      {"id":"experiment_quality","weight":6},
-      {"id":"executability","weight":5},
-      {"id":"innovation_without_fantasy","weight":3},
-      {"id":"omission_control","weight":3}
+      {"id":"need_understanding","weight":7},{"id":"opportunity_recall","weight":8},{"id":"hidden_profit_discovery","weight":8},{"id":"upstream_downstream_coverage","weight":6},{"id":"candidate_differentiation","weight":6},{"id":"economic_logic","weight":8},{"id":"unit_economics","weight":7},{"id":"cash_cohort_conditional_economics","weight":8},{"id":"competition_and_moat","weight":6},{"id":"risk_and_failure_modes","weight":6},{"id":"facts_and_evidence","weight":8},{"id":"assumption_transparency","weight":5},{"id":"experiment_quality","weight":6},{"id":"executability","weight":5},{"id":"innovation_without_fantasy","weight":3},{"id":"omission_control","weight":3}
     ],
     "penalties": [
-      {"id":"confident_invalid_business_claim","max_penalty":25},
-      {"id":"fabricated_or_stale_fact_as_current","max_penalty":20},
-      {"id":"material_financial_error","max_penalty":15},
-      {"id":"missing_real_data_gate","max_penalty":10},
-      {"id":"unsafe_or_illegal_tactic_presented_as_normal_model","max_penalty":15},
-      {"id":"benchmark_leakage_or_gold_copying","max_penalty":20}
+      {"id":"confident_invalid_business_claim","max_penalty":25},{"id":"fabricated_or_stale_fact_as_current","max_penalty":20},{"id":"material_financial_error","max_penalty":15},{"id":"missing_real_data_gate","max_penalty":10},{"id":"unsafe_or_illegal_tactic_presented_as_normal_model","max_penalty":15},{"id":"benchmark_leakage_or_gold_copying","max_penalty":20}
     ]
   },
-  "runtime_harness_note": "仓库内置脚本只验证结构完整性、任务路由、最小上下文召回、必需资产/域覆盖和消融覆盖下降；A-E最终答案质量分数必须由隔离的模型运行与评审器实际执行，不能用本脚本的路由分数冒充。",
+  "runtime_harness_note": "仓库内置脚本验证结构完整性、任务路由、最小上下文、语义锚点Recall@K和静态消融；A-E最终答案质量分数必须由隔离模型运行与评审器实际执行，不能用本脚本分数冒充。",
   "active_cases": [
     {
       "id":"T01",
@@ -57,6 +37,10 @@
         "06_真实经济性_返点与治理/02_v4隐藏利润层单位经济KPI实验与风险.md",
         "05_失败模式与迁移/01_失败模式库/00_失败模式总览.md"
       ],
+      "retrieval_anchors": {
+        "atom_ids":["U11-A01","U11-A11","U21-A18"],
+        "pattern_ids":["P001","P085","P100"]
+      },
       "capability_checks":[
         "识别电子书不仅是直接利润品，也可能承担Traffic/Hook/Qualification/Identity入口角色",
         "从单本销售扩展到同类书/合集/软件/AI/工具/实物商品/Affiliate/会员/知识库/咨询/企业后端",
@@ -79,6 +63,10 @@
         "06_真实经济性_返点与治理/01_经济真相治理容量风险合同与劳动力层.md",
         "06_真实经济性_返点与治理/02_v4隐藏利润层单位经济KPI实验与风险.md"
       ],
+      "retrieval_anchors": {
+        "atom_ids":["U11-A26","U21-A18","U26-A01"],
+        "pattern_ids":["P044","P108","P161","P186"]
+      },
       "capability_checks":[
         "把模型推理成本视为用量相关COGS而不是传统SaaS近零边际成本",
         "比较免费额度/credits/usage/commit/overage/reserved capacity等结构",
@@ -89,26 +77,9 @@
       "real_data_fields":["每模型/每token或每请求成本","平均输入输出token","缓存命中率","免费额度使用分布","付费转化","毛利目标","渠道分成","企业折扣","账期","支持成本","退款/坏账","峰值容量成本"]
     }
   ],
-  "planned_case_families": [
-    "普通电商SKU",
-    "酒店/容量经济",
-    "Marketplace",
-    "企业采购与返点",
-    "知识库实施",
-    "线下服务",
-    "内容创作者"
-  ],
+  "planned_case_families":["普通电商SKU","酒店/容量经济","Marketplace","企业采购与返点","知识库实施","线下服务","内容创作者"],
   "ablation_groups": {
-    "atoms":"移除Atom召回",
-    "patterns":"移除Pattern召回",
-    "product_roles_offer":"移除Product Role/Offer/价格架构资产",
-    "opportunity_lens":"移除机会来源与变换算子",
-    "value_chain_ecosystem":"移除价值链/利润池/生态资产",
-    "conditional_real_economics":"移除U19/真实经济性/Cohort资产",
-    "topic_case":"移除专题/案例资产",
-    "failure_counterargument":"移除失败模式/反方资产",
-    "external_research":"移除外部研究",
-    "experiment_layer":"移除实验/Pass-Kill-Scale层"
+    "atoms":"移除Atom召回","patterns":"移除Pattern召回","product_roles_offer":"移除Product Role/Offer/价格架构资产","opportunity_lens":"移除机会来源与变换算子","value_chain_ecosystem":"移除价值链/利润池/生态资产","conditional_real_economics":"移除U19/真实经济性/Cohort资产","topic_case":"移除专题/案例资产","failure_counterargument":"移除失败模式/反方资产","external_research":"移除外部研究","experiment_layer":"移除实验/Pass-Kill-Scale层"
   },
   "error_taxonomy":["K1","R1","W1","C1","E1","F1","S1","T1","O1","B1"],
   "regression_policy": {
@@ -117,6 +88,7 @@
     "do_not_accept_on_average_only":true,
     "must_flag_case_regressions":true,
     "benchmark_quality_gate":true,
-    "minimum_runtime_harness_score":90
+    "minimum_runtime_harness_score":90,
+    "minimum_retrieval_anchor_recall":1.0
   }
 }
