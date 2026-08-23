@@ -1,0 +1,209 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ConditionalEconomicsRebate",
+  "type": "object",
+  "required": [
+    "name",
+    "beneficiary",
+    "eligible_base",
+    "qualification",
+    "settlement"
+  ],
+  "properties": {
+    "mechanism_id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "beneficiary": {
+      "type": "string"
+    },
+    "payer": {
+      "type": "string"
+    },
+    "disclosure_level": {
+      "enum": [
+        "V0-public",
+        "V1-public-threshold",
+        "V2-contract",
+        "V3-backend-policy",
+        "V4-group-aggregate",
+        "V5-noncash",
+        "V6-undisclosed-conflict",
+        "V7-personal-kickback-risk"
+      ]
+    },
+    "eligible_base": {
+      "type": "object",
+      "properties": {
+        "metric": {
+          "type": "string"
+        },
+        "scope": {
+          "type": "string"
+        },
+        "eligible_skus": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "eligible_accounts": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "aggregation": {
+          "type": "string"
+        },
+        "exclusions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "qualification": {
+      "type": "object",
+      "properties": {
+        "start_date": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "end_date": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "minimum_threshold": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "conditions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "proof_required": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "tier_function": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "enum": [
+            "cliff",
+            "retroactive",
+            "incremental",
+            "progressive",
+            "none"
+          ]
+        },
+        "tiers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "threshold": {
+                "type": "number"
+              },
+              "rate": {
+                "type": "number"
+              }
+            }
+          }
+        },
+        "cap": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "floor": {
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      }
+    },
+    "settlement": {
+      "type": "object",
+      "properties": {
+        "form": {
+          "type": "string"
+        },
+        "cadence": {
+          "type": "string"
+        },
+        "claim_window": {
+          "type": "string"
+        },
+        "payment_delay": {
+          "type": "string"
+        }
+      }
+    },
+    "downside": {
+      "type": "object"
+    },
+    "governance": {
+      "type": "object"
+    },
+    "economics": {
+      "type": "object",
+      "properties": {
+        "nominal_price": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "invoice_price": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "expected_rebate": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "non_cash_value": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "financing_value": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "net_effective_price": {
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      }
+    }
+  }
+}

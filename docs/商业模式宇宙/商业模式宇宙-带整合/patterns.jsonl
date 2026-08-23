@@ -1,0 +1,130 @@
+{"id": "P001", "name": "传统商品销售 Merchant", "formula": "商品所有权销售 + 商品毛利 + 自有/渠道分发"}
+{"id": "P002", "name": "批发分销 Wholesale", "formula": "批量采购 + 下游渠道销售 + 规模采购差价"}
+{"id": "P003", "name": "D2C 直营", "formula": "品牌直接触达终端 + 去中间商 + 自有客户数据"}
+{"id": "P004", "name": "经销/Reseller", "formula": "获取商品/服务销售权 + 加价或返点"}
+{"id": "P005", "name": "Broker 经纪", "formula": "供需撮合 + 交易佣金 + 信任机制"}
+{"id": "P006", "name": "Marketplace 市场", "formula": "多供给自主上架 + 搜索匹配 + 交易费/佣金"}
+{"id": "P007", "name": "Managed Marketplace", "formula": "Marketplace + 标准化/质控/托管履约"}
+{"id": "P008", "name": "Two-Sided Market", "formula": "两侧互相创造价值 + 差异化定价"}
+{"id": "P009", "name": "Multi-Sided Platform", "formula": "三侧以上互动 + 网络效应 + 多收入源"}
+{"id": "P010", "name": "Innovation Platform", "formula": "技术底座 + 第三方补充创新 + 开发者生态"}
+{"id": "P011", "name": "Hybrid Platform", "formula": "交易平台 + 创新平台同时存在"}
+{"id": "P012", "name": "Aggregator 聚合器", "formula": "聚合分散供给 + 统一发现/品牌/体验"}
+{"id": "P013", "name": "Portal 门户", "formula": "聚合信息与入口 + 广告/导流/增值服务"}
+{"id": "P014", "name": "Supermarket", "formula": "广品类 + 高频/规模采购 + 低价"}
+{"id": "P015", "name": "Long Tail", "formula": "大量小众SKU + 搜索匹配 + 聚合需求"}
+{"id": "P016", "name": "Subscription", "formula": "持续访问 + 周期收费 + 留存运营"}
+{"id": "P017", "name": "Membership", "formula": "会员费 + 独家权益/价格 + 身份关系"}
+{"id": "P018", "name": "Flat Rate", "formula": "固定周期费用 + 大量/无限使用"}
+{"id": "P019", "name": "Usage-Based", "formula": "可计量使用 + 单位价格 + 实时计费"}
+{"id": "P020", "name": "Outcome-Based", "formula": "成功结果可验证 + 按结果付费 + 供给方承担更多风险"}
+{"id": "P021", "name": "Performance Sharing", "formula": "增收/降本可归因 + 按绩效分成"}
+{"id": "P022", "name": "Hybrid Subscription+Usage", "formula": "基础订阅 + 变量用量，兼顾可预测与成本对齐"}
+{"id": "P023", "name": "Freemium", "formula": "免费基础层 + 付费高级层 + 产品驱动转化"}
+{"id": "P024", "name": "Advertising-Supported", "formula": "用户免费/低价 + 广告主付费"}
+{"id": "P025", "name": "Hidden Revenue", "formula": "使用者与付款者分离，由第三方承担收入"}
+{"id": "P026", "name": "Cross-Subsidy", "formula": "一个产品/人群利润补贴另一侧"}
+{"id": "P027", "name": "Robin Hood", "formula": "高支付能力群体补贴低支付能力群体"}
+{"id": "P028", "name": "Razor & Blade", "formula": "低利润耐用品 + 高复购专有耗材"}
+{"id": "P029", "name": "Reverse Razor", "formula": "高价核心资产 + 低价/免费互补品增强核心销量"}
+{"id": "P030", "name": "Add-On", "formula": "低价核心 + 可选增值项逐步收费"}
+{"id": "P031", "name": "Bundle", "formula": "多个产品打包提高客单和降低选择成本"}
+{"id": "P032", "name": "Unbundle", "formula": "拆分功能，让客户只为需要部分付款"}
+{"id": "P033", "name": "Loss Leader → Backend", "formula": "前端低价/免费获客 + 后端高LTV产品"}
+{"id": "P034", "name": "Affiliate", "formula": "合作方按成交/线索分佣 + 效果后付费"}
+{"id": "P035", "name": "Revenue Sharing", "formula": "合作参与方按交易或收入分成"}
+{"id": "P036", "name": "Franchising", "formula": "品牌/SOP输出 + 加盟商资本 + 加盟/供应链收入"}
+{"id": "P037", "name": "Licensing", "formula": "IP/软件/品牌授权 + 授权费/权益金"}
+{"id": "P038", "name": "White Label", "formula": "同一能力让渠道以自有品牌销售"}
+{"id": "P039", "name": "Private Label", "formula": "渠道控制品牌与客户，生产外包"}
+{"id": "P040", "name": "Open Source", "formula": "开放核心 + 服务/托管/支持/生态捕获价值"}
+{"id": "P041", "name": "Open Core", "formula": "开源基础 + 专有企业能力收费"}
+{"id": "P042", "name": "Hosted Open Source", "formula": "开源采用 + 托管云服务订阅"}
+{"id": "P043", "name": "SaaS", "formula": "云软件 + 订阅/席位/使用混合收费"}
+{"id": "P044", "name": "API-as-a-Product", "formula": "能力标准化API + 调用量/订阅收费"}
+{"id": "P045", "name": "Cloud/IaaS Pay-as-you-go", "formula": "按计算/存储/网络消费 + 规模基础设施"}
+{"id": "P046", "name": "Data-as-a-Service", "formula": "数据持续采集 + 标准化访问 + 订阅/调用"}
+{"id": "P047", "name": "Analytics-as-a-Service", "formula": "数据 + 模型 → 洞察/评分收费"}
+{"id": "P048", "name": "Sensor-as-a-Service", "formula": "传感器入口 + 数据/监测/分析持续收费"}
+{"id": "P049", "name": "AI Model-as-a-Service", "formula": "模型调用 + token/容量/等级收费"}
+{"id": "P050", "name": "AI Copilot", "formula": "人机协作工作流 + 席位/使用混合定价"}
+{"id": "P051", "name": "AI Agent-as-a-Service", "formula": "代理执行任务 + 按动作/任务/credits收费"}
+{"id": "P052", "name": "AI Outcome Service", "formula": "代理承担工作 + 按解决/成交/结果付费"}
+{"id": "P053", "name": "Digital Worker", "formula": "按月度数字员工/容量 + 超额用量"}
+{"id": "P054", "name": "Product-as-a-Service", "formula": "保留资产所有权 + 客户购买功能"}
+{"id": "P055", "name": "Rent Instead of Buy", "formula": "低前置成本 + 周期租金 + 资产再利用"}
+{"id": "P056", "name": "Fractional Ownership", "formula": "多人共担高价值资产所有权与维护"}
+{"id": "P057", "name": "Sharing/P2P Asset", "formula": "闲置资产供给 + 短期使用 + 平台抽佣"}
+{"id": "P058", "name": "Shop-in-Shop", "formula": "借已有场地与客流 + 分成/租金"}
+{"id": "P059", "name": "Embedded Distribution", "formula": "把购买入口嵌入其他高频产品/流程"}
+{"id": "P060", "name": "Dropshipping", "formula": "不持库存 + 供应商直发 + 渠道毛利"}
+{"id": "P061", "name": "Consignment", "formula": "供给方承担库存所有权 + 售出后结算"}
+{"id": "P062", "name": "OEM/Contract Manufacturing", "formula": "品牌/渠道在己 + 制造外包"}
+{"id": "P063", "name": "Orchestrator", "formula": "聚焦核心能力 + 外包资产/环节 + 规则编排"}
+{"id": "P064", "name": "Integrator", "formula": "纵向整合多个价值链环节提高控制"}
+{"id": "P065", "name": "Layer Player", "formula": "专注某一价值链层并跨客户复用"}
+{"id": "P066", "name": "Solution Provider", "formula": "多产品整合为一站式结果"}
+{"id": "P067", "name": "Self-Service", "formula": "客户完成部分流程 + 成本下降 + 可规模化"}
+{"id": "P068", "name": "Mass Customization", "formula": "模块标准化 + 用户选择 + 个性化输出"}
+{"id": "P069", "name": "Crowdsourcing", "formula": "把任务开放给大量外部参与者"}
+{"id": "P070", "name": "User Designed", "formula": "客户参与设计/生产 + 平台提供工具"}
+{"id": "P071", "name": "Prosumer", "formula": "用户同时生产与消费，贡献供给"}
+{"id": "P072", "name": "Push-to-Pull", "formula": "订单/需求触发生产与采购，减少库存"}
+{"id": "P073", "name": "Pre-order", "formula": "先获得订单与资金，再生产"}
+{"id": "P074", "name": "Crowdfunding", "formula": "群体出资验证需求并支持实现"}
+{"id": "P075", "name": "Cash Machine", "formula": "客户先付款 + 供应商后结算 → 负营运资金"}
+{"id": "P076", "name": "Loyalty/Lock-in", "formula": "积分、数据、兼容、合同等提高留存与切换成本"}
+{"id": "P077", "name": "Experience Selling", "formula": "功能商品 + 情绪/场景/身份体验溢价"}
+{"id": "P078", "name": "No Frills", "formula": "删减非核心价值 + 极低成本结构"}
+{"id": "P079", "name": "Ultimate Luxury", "formula": "稀缺 + 高服务 + 高价格 + 身份价值"}
+{"id": "P080", "name": "Scarcity", "formula": "人为或天然限量 + 稀缺溢价"}
+{"id": "P081", "name": "Guaranteed Availability", "formula": "付费获得随时可用、备用或SLA"}
+{"id": "P082", "name": "Direct Selling", "formula": "跳过中间商直接销售"}
+{"id": "P083", "name": "Channel Partner", "formula": "伙伴掌握客户 + 分佣/返点换渠道"}
+{"id": "P084", "name": "B2B2C Channel Leverage", "formula": "服务B端痛点以换取其C端客户入口"}
+{"id": "P085", "name": "Content-to-Commerce", "formula": "内容聚集精准人群 + 商品/服务/线索变现"}
+{"id": "P086", "name": "Community-to-Commerce", "formula": "社群关系 + 会员/产品/活动/服务变现"}
+{"id": "P087", "name": "Lead Generation", "formula": "用户侧低价/免费 + 商家为精准线索付费"}
+{"id": "P088", "name": "High-Frequency Wedge", "formula": "高频低利润入口 + 低频高利润后端"}
+{"id": "P089", "name": "Free B2B Tool → Supply Chain", "formula": "免费工具聚合商家 + 集采/金融/广告后端"}
+{"id": "P090", "name": "Buying Club / Group Purchase", "formula": "聚合采购需求 + 规模折扣 + 会员/差价"}
+{"id": "P091", "name": "Embedded Finance", "formula": "非金融场景嵌入支付/信贷/保险 + 分成"}
+{"id": "P092", "name": "Vertical SaaS + Fintech", "formula": "行业软件掌握交易数据 + 支付/信贷/保险后端"}
+{"id": "P093", "name": "Financial Float/Spread", "formula": "管理资金流 + 利差/手续费；强监管"}
+{"id": "P094", "name": "Prepaid Credits", "formula": "预购额度 + 使用扣减 + 提高现金可预测性"}
+{"id": "P095", "name": "Capacity Reservation", "formula": "提前承诺容量 + 折扣 + 供给方获得可预测需求"}
+{"id": "P096", "name": "Circular Resale", "formula": "回收/二手供给 + 认证 + 再售"}
+{"id": "P097", "name": "Repair/Refurbish/Remanufacture", "formula": "延长产品寿命 + 服务/再售收入"}
+{"id": "P098", "name": "Trash-to-Cash", "formula": "废料/副产品转化为可售资源"}
+{"id": "P099", "name": "Roll-up", "formula": "收购分散小企业 + 集中后台/品牌/采购形成协同"}
+{"id": "P100", "name": "Ecosystem Bundle", "formula": "核心入口 + 多伙伴互补服务 + 分成/交叉销售"}
+{"id": "P101", "name": "Back-End Rebate / 后台返点", "formula": "前台按名义价格交易 → 周期累计合格基数 → 后台返还 → 形成低于发票价的真实净价"}
+{"id": "P102", "name": "Tiered Volume Rebate / 阶梯数量返点", "formula": "交易量进入不同档位 → 返点率分层 → 用规模换取更低净价"}
+{"id": "P103", "name": "Retroactive Rebate / 追溯返点", "formula": "跨过门槛 → 对整个累计合格基数按新比例重算 → 门槛附近边际激励极强"}
+{"id": "P104", "name": "Incremental Rebate / 增量返点", "formula": "每档只对新增部分奖励 → 经济曲线更平滑 → 降低断崖式采购扭曲"}
+{"id": "P105", "name": "Growth Rebate / 增长返点", "formula": "相对基期增长 → 触发奖励 → 供应商购买增量而非绝对规模"}
+{"id": "P106", "name": "AVB / Annual Volume Bonus", "formula": "年度聚合量 → 年终奖金/返点 → 大客户、代理集团或渠道集中规模获得后台经济利益"}
+{"id": "P107", "name": "Partner Accelerator / 渠道加速器", "formula": "基础奖励 + 超目标更高费率 → 鼓励伙伴冲刺战略产品或增长目标"}
+{"id": "P108", "name": "Commit-to-Save / 承诺换折扣", "formula": "承诺未来采购/使用量或期限 → 供应方获得可预测需求 → 买方获得更低价格"}
+{"id": "P109", "name": "Co-op Fund / 合作营销基金", "formula": "渠道产生合格收益 → 一部分以合作营销基金返还 → 需证明活动执行"}
+{"id": "P110", "name": "MDF / 市场发展基金", "formula": "厂商投入专项预算 → 渠道用于需求生成/市场开发 → 以增长换取非直接价格补贴"}
+{"id": "P111", "name": "SPIFF / 一线销售激励", "formula": "厂商奖励渠道销售人员推动指定产品 → 短期加速销量 → 必须治理个人受益与利益冲突"}
+{"id": "P112", "name": "Deal Registration / 商机登记保护", "formula": "渠道先登记合格商机 → 获得价格保护/折扣/优先权 → 降低渠道抢单风险"}
+{"id": "P113", "name": "Free Goods Rebate / 免费商品返点", "formula": "现金返点改为额外商品 → 提高表面价格稳定性 → 降低真实单位成本"}
+{"id": "P114", "name": "Credits Economy / Credits返利", "formula": "返点转化为云、广告、服务或平台credits → 促进二次使用并形成生态留存"}
+{"id": "P115", "name": "Media Inventory Rebate / 免费媒体库存", "formula": "媒体采购量 → 免费库存/价值池 → 形成非现金返点和实际CPM下降"}
+{"id": "P116", "name": "Service-Agreement Rebate Risk / 服务协议型返点", "formula": "供应商支付研究/咨询等费用且与采购量关联 → 需区分真实服务与变相返点"}
+{"id": "P117", "name": "Slotting Allowance / 进场费", "formula": "供应商支付前置费用 → 获得渠道上架/货架位置 → 渠道把稀缺分发位变现"}
+{"id": "P118", "name": "Pay-to-Stay / 留架费", "formula": "持续付款/让利 → 保留销售/陈列资格 → 形成持续渠道租值"}
+{"id": "P119", "name": "Performance Fund / 绩效基金", "formula": "达到陈列、推广、销售、服务等可验证指标 → 获得专项资金"}
+{"id": "P120", "name": "Principal Trading / 自营转售", "formula": "中介先作为principal买入资源 → 再向客户转售 → 利润来自采购/销售价差而非代理费"}
+{"id": "P121", "name": "Dual Rate Card / 双重价卡", "formula": "代理身份采购价 ≠ principal身份采购价 → 不同交易身份形成不同真实毛利"}
+{"id": "P122", "name": "Value Pot / 聚合价值池", "formula": "基于集团预期/累计采购量获得免费或折扣资源 → 再在客户/业务间分配"}
+{"id": "P123", "name": "Portfolio Aggregation / 集团量聚合", "formula": "多个账户/子公司/客户合并基数 → 跨过更高门槛 → 获得规模返点"}
+{"id": "P124", "name": "Rebate Stacking / 激励叠加", "formula": "基础折扣 + 数量返点 + MDF + credits + 账期等叠加 → 优化综合净价而非单一报价"}
+{"id": "P125", "name": "Net Price Waterfall / 净价瀑布", "formula": "标价 → 发票折扣 → 后台返点 → 非现金权益 → 费用/融资价值 → 计算真实净价"}
+{"id": "P126", "name": "Threshold Optimization / 门槛优化", "formula": "预测累计基数和边际贡献 → 决定是否值得冲刺下一返点档位 → 防止为返点而亏损"}
+{"id": "P127", "name": "Rebate Accrual & True-up / 返点计提与期末校正", "formula": "交易过程中按预计达成率计提 → 期末按实际资格重算 → 防止利润虚高/虚低"}
+{"id": "P128", "name": "Rebate Audit / 返点审计回收", "formula": "统一交易数据 → 匹配合同条件 → 找出漏领、错算、逾期和clawback → 回收经济利益"}
+{"id": "P129", "name": "Preferred/Exclusive Incentive / 优先或排他奖励", "formula": "供应商用返点换取更高份额、优先展示或排他 → 可能提高合作投入，也需竞争法审查"}
+{"id": "P130", "name": "Undisclosed Rebate Conflict / 未披露返点冲突", "formula": "代理/渠道因客户交易获得供应方后台利益且客户不知情 → 激励可能偏离委托方最佳利益，列为风险模式而非推荐模板"}

@@ -1,0 +1,500 @@
+{"id": "U01-A01", "name": "单边直接客户", "essence": "企业向一个明确客户群直接创造和捕获价值。", "category_id": "U01", "category_name": "参与方与市场结构", "definition": "定义谁创造价值、谁使用、谁付款，以及市场边界。"}
+{"id": "U01-A02", "name": "多角色但单一付款方", "essence": "多人使用或受益，但只有一个角色承担付款。", "category_id": "U01", "category_name": "参与方与市场结构", "definition": "定义谁创造价值、谁使用、谁付款，以及市场边界。"}
+{"id": "U01-A03", "name": "第三方付款", "essence": "使用者与付款者分离，例如广告主、雇主、保险方或政府付款。", "category_id": "U01", "category_name": "参与方与市场结构", "definition": "定义谁创造价值、谁使用、谁付款，以及市场边界。"}
+{"id": "U01-A04", "name": "B2B", "essence": "向企业组织销售，通常决策链长、合同额高。", "category_id": "U01", "category_name": "参与方与市场结构", "definition": "定义谁创造价值、谁使用、谁付款，以及市场边界。"}
+{"id": "U01-A05", "name": "B2C", "essence": "直接向个人消费者销售。", "category_id": "U01", "category_name": "参与方与市场结构", "definition": "定义谁创造价值、谁使用、谁付款，以及市场边界。"}
+{"id": "U01-A06", "name": "B2B2C", "essence": "借B端渠道服务C端，同时与B端共享价值。", "category_id": "U01", "category_name": "参与方与市场结构", "definition": "定义谁创造价值、谁使用、谁付款，以及市场边界。"}
+{"id": "U01-A07", "name": "C2C/P2P", "essence": "个人与个人之间供需匹配。", "category_id": "U01", "category_name": "参与方与市场结构", "definition": "定义谁创造价值、谁使用、谁付款，以及市场边界。"}
+{"id": "U01-A08", "name": "B2G/G2B", "essence": "围绕政府采购、授权、公共服务或监管场景。", "category_id": "U01", "category_name": "参与方与市场结构", "definition": "定义谁创造价值、谁使用、谁付款，以及市场边界。"}
+{"id": "U01-A09", "name": "大众市场", "essence": "标准化方案服务大规模相似需求。", "category_id": "U01", "category_name": "参与方与市场结构", "definition": "定义谁创造价值、谁使用、谁付款，以及市场边界。"}
+{"id": "U01-A10", "name": "垂直细分", "essence": "围绕特定行业、职业或场景深做。", "category_id": "U01", "category_name": "参与方与市场结构", "definition": "定义谁创造价值、谁使用、谁付款，以及市场边界。"}
+{"id": "U01-A11", "name": "长尾市场", "essence": "聚合大量低频小众需求形成总体规模。", "category_id": "U01", "category_name": "参与方与市场结构", "definition": "定义谁创造价值、谁使用、谁付款，以及市场边界。"}
+{"id": "U01-A12", "name": "高端/奢侈人群", "essence": "以稀缺、身份、体验或服务溢价为核心。", "category_id": "U01", "category_name": "参与方与市场结构", "definition": "定义谁创造价值、谁使用、谁付款，以及市场边界。"}
+{"id": "U01-A13", "name": "低收入/BOP市场", "essence": "通过极致成本与可负担性扩大覆盖。", "category_id": "U01", "category_name": "参与方与市场结构", "definition": "定义谁创造价值、谁使用、谁付款，以及市场边界。"}
+{"id": "U01-A14", "name": "未被满足/被忽视人群", "essence": "选择传统企业不愿服务但可形成新经济性的群体。", "category_id": "U01", "category_name": "参与方与市场结构", "definition": "定义谁创造价值、谁使用、谁付款，以及市场边界。"}
+{"id": "U01-A15", "name": "生命周期人群", "essence": "围绕结婚、育儿、养老等阶段串联连续需求。", "category_id": "U01", "category_name": "参与方与市场结构", "definition": "定义谁创造价值、谁使用、谁付款，以及市场边界。"}
+{"id": "U01-A16", "name": "亲和/身份社群", "essence": "以职业、兴趣、身份或价值观形成高密度群体。", "category_id": "U01", "category_name": "参与方与市场结构", "definition": "定义谁创造价值、谁使用、谁付款，以及市场边界。"}
+{"id": "U01-A17", "name": "专业买方与使用者分离", "essence": "采购人、审批人、使用人、受益人不是同一角色。", "category_id": "U01", "category_name": "参与方与市场结构", "definition": "定义谁创造价值、谁使用、谁付款，以及市场边界。"}
+{"id": "U01-A18", "name": "供给者也是客户", "essence": "供给侧既提供资源，也购买平台工具或服务。", "category_id": "U01", "category_name": "参与方与市场结构", "definition": "定义谁创造价值、谁使用、谁付款，以及市场边界。"}
+{"id": "U02-A01", "name": "低成本", "essence": "用结构性成本优势而非短期打折提供更低价格。", "category_id": "U02", "category_name": "价值主张", "definition": "定义客户为什么改变现有行为并选择该方案。"}
+{"id": "U02-A02", "name": "高性能", "essence": "在速度、精度、产能、可靠性等核心指标上领先。", "category_id": "U02", "category_name": "价值主张", "definition": "定义客户为什么改变现有行为并选择该方案。"}
+{"id": "U02-A03", "name": "便利", "essence": "降低搜索、等待、操作、迁移或协调成本。", "category_id": "U02", "category_name": "价值主张", "definition": "定义客户为什么改变现有行为并选择该方案。"}
+{"id": "U02-A04", "name": "一站式解决方案", "essence": "把多个原本分散的任务整合成完整结果。", "category_id": "U02", "category_name": "价值主张", "definition": "定义客户为什么改变现有行为并选择该方案。"}
+{"id": "U02-A05", "name": "个性化", "essence": "按客户、场景或数据动态适配。", "category_id": "U02", "category_name": "价值主张", "definition": "定义客户为什么改变现有行为并选择该方案。"}
+{"id": "U02-A06", "name": "大规模定制", "essence": "用标准化底座实现近似个性化交付。", "category_id": "U02", "category_name": "价值主张", "definition": "定义客户为什么改变现有行为并选择该方案。"}
+{"id": "U02-A07", "name": "体验升级", "essence": "把功能商品转化为更强情绪、场景或身份体验。", "category_id": "U02", "category_name": "价值主张", "definition": "定义客户为什么改变现有行为并选择该方案。"}
+{"id": "U02-A08", "name": "结果承诺", "essence": "客户购买结果而不是过程或工具。", "category_id": "U02", "category_name": "价值主张", "definition": "定义客户为什么改变现有行为并选择该方案。"}
+{"id": "U02-A09", "name": "可用性保证", "essence": "围绕持续在线、备用能力、SLA或即时供给创造价值。", "category_id": "U02", "category_name": "价值主张", "definition": "定义客户为什么改变现有行为并选择该方案。"}
+{"id": "U02-A10", "name": "风险降低", "essence": "通过担保、保险、退款、托管或验证降低决策风险。", "category_id": "U02", "category_name": "价值主张", "definition": "定义客户为什么改变现有行为并选择该方案。"}
+{"id": "U02-A11", "name": "透明与可信", "essence": "让价格、来源、质量、过程或数据可验证。", "category_id": "U02", "category_name": "价值主张", "definition": "定义客户为什么改变现有行为并选择该方案。"}
+{"id": "U02-A12", "name": "速度", "essence": "将等待时间显著缩短。", "category_id": "U02", "category_name": "价值主张", "definition": "定义客户为什么改变现有行为并选择该方案。"}
+{"id": "U02-A13", "name": "稀缺与独家", "essence": "通过限量、排他权或稀缺资源制造溢价。", "category_id": "U02", "category_name": "价值主张", "definition": "定义客户为什么改变现有行为并选择该方案。"}
+{"id": "U02-A14", "name": "身份与地位", "essence": "客户购买社会信号、品牌象征或圈层资格。", "category_id": "U02", "category_name": "价值主张", "definition": "定义客户为什么改变现有行为并选择该方案。"}
+{"id": "U02-A15", "name": "发现与筛选", "essence": "降低海量选择中的搜索和判断成本。", "category_id": "U02", "category_name": "价值主张", "definition": "定义客户为什么改变现有行为并选择该方案。"}
+{"id": "U02-A16", "name": "聚合", "essence": "把分散供给、内容、商品或服务集合为一个入口。", "category_id": "U02", "category_name": "价值主张", "definition": "定义客户为什么改变现有行为并选择该方案。"}
+{"id": "U02-A17", "name": "闲置资源变现", "essence": "帮助资产所有者把空闲时间、空间、设备或能力变成收入。", "category_id": "U02", "category_name": "价值主张", "definition": "定义客户为什么改变现有行为并选择该方案。"}
+{"id": "U02-A18", "name": "降门槛", "essence": "把高额一次性支出改造成低前置成本或按需付费。", "category_id": "U02", "category_name": "价值主张", "definition": "定义客户为什么改变现有行为并选择该方案。"}
+{"id": "U02-A19", "name": "合规/安全即价值", "essence": "把监管、隐私、安全、审计能力产品化。", "category_id": "U02", "category_name": "价值主张", "definition": "定义客户为什么改变现有行为并选择该方案。"}
+{"id": "U02-A20", "name": "可持续/循环价值", "essence": "通过耐用、再用、维修、共享等降低资源消耗。", "category_id": "U02", "category_name": "价值主张", "definition": "定义客户为什么改变现有行为并选择该方案。"}
+{"id": "U02-A21", "name": "互补价值", "essence": "通过与其他产品组合提高整体价值。", "category_id": "U02", "category_name": "价值主张", "definition": "定义客户为什么改变现有行为并选择该方案。"}
+{"id": "U02-A22", "name": "网络价值", "essence": "参与者越多，单个参与者获得的价值越高。", "category_id": "U02", "category_name": "价值主张", "definition": "定义客户为什么改变现有行为并选择该方案。"}
+{"id": "U03-A01", "name": "商品所有权销售", "essence": "一次性转移实物或数字商品所有权。", "category_id": "U03", "category_name": "产品、服务与权利包装", "definition": "定义出售的是所有权、使用权、访问权、结果还是能力。"}
+{"id": "U03-A02", "name": "专业服务", "essence": "按项目、时间或交付成果提供专业能力。", "category_id": "U03", "category_name": "产品、服务与权利包装", "definition": "定义出售的是所有权、使用权、访问权、结果还是能力。"}
+{"id": "U03-A03", "name": "持续服务", "essence": "长期托管、维护、运营或客户成功服务。", "category_id": "U03", "category_name": "产品、服务与权利包装", "definition": "定义出售的是所有权、使用权、访问权、结果还是能力。"}
+{"id": "U03-A04", "name": "订阅访问权", "essence": "按周期购买持续访问而非单次购买。", "category_id": "U03", "category_name": "产品、服务与权利包装", "definition": "定义出售的是所有权、使用权、访问权、结果还是能力。"}
+{"id": "U03-A05", "name": "会员资格", "essence": "购买身份与一组持续权益。", "category_id": "U03", "category_name": "产品、服务与权利包装", "definition": "定义出售的是所有权、使用权、访问权、结果还是能力。"}
+{"id": "U03-A06", "name": "租赁", "essence": "在固定时间内购买资产使用权。", "category_id": "U03", "category_name": "产品、服务与权利包装", "definition": "定义出售的是所有权、使用权、访问权、结果还是能力。"}
+{"id": "U03-A07", "name": "按次使用权", "essence": "只为实际使用次数或时长付费。", "category_id": "U03", "category_name": "产品、服务与权利包装", "definition": "定义出售的是所有权、使用权、访问权、结果还是能力。"}
+{"id": "U03-A08", "name": "产品即服务PaaS", "essence": "厂商保留资产所有权，客户购买功能或产出。", "category_id": "U03", "category_name": "产品、服务与权利包装", "definition": "定义出售的是所有权、使用权、访问权、结果还是能力。"}
+{"id": "U03-A09", "name": "结果即服务", "essence": "客户购买业务结果，供给方承担更多执行风险。", "category_id": "U03", "category_name": "产品、服务与权利包装", "definition": "定义出售的是所有权、使用权、访问权、结果还是能力。"}
+{"id": "U03-A10", "name": "分时/共享使用", "essence": "多个用户轮流使用同一资产。", "category_id": "U03", "category_name": "产品、服务与权利包装", "definition": "定义出售的是所有权、使用权、访问权、结果还是能力。"}
+{"id": "U03-A11", "name": "分数所有权", "essence": "多方共同拥有高价值资产。", "category_id": "U03", "category_name": "产品、服务与权利包装", "definition": "定义出售的是所有权、使用权、访问权、结果还是能力。"}
+{"id": "U03-A12", "name": "捆绑包", "essence": "多个产品或服务打包出售。", "category_id": "U03", "category_name": "产品、服务与权利包装", "definition": "定义出售的是所有权、使用权、访问权、结果还是能力。"}
+{"id": "U03-A13", "name": "拆包/Add-on", "essence": "核心低价，额外功能、容量或服务单独收费。", "category_id": "U03", "category_name": "产品、服务与权利包装", "definition": "定义出售的是所有权、使用权、访问权、结果还是能力。"}
+{"id": "U03-A14", "name": "耗材体系", "essence": "耐用品作为入口，消耗品产生持续复购。", "category_id": "U03", "category_name": "产品、服务与权利包装", "definition": "定义出售的是所有权、使用权、访问权、结果还是能力。"}
+{"id": "U03-A15", "name": "许可证", "essence": "授权使用软件、品牌、专利、内容或标准。", "category_id": "U03", "category_name": "产品、服务与权利包装", "definition": "定义出售的是所有权、使用权、访问权、结果还是能力。"}
+{"id": "U03-A16", "name": "白标", "essence": "同一能力由渠道方以其品牌销售。", "category_id": "U03", "category_name": "产品、服务与权利包装", "definition": "定义出售的是所有权、使用权、访问权、结果还是能力。"}
+{"id": "U03-A17", "name": "私牌/自有品牌", "essence": "渠道或平台控制品牌，生产由第三方完成。", "category_id": "U03", "category_name": "产品、服务与权利包装", "definition": "定义出售的是所有权、使用权、访问权、结果还是能力。"}
+{"id": "U03-A18", "name": "免费基础版", "essence": "基础价值免费，高阶能力收费。", "category_id": "U03", "category_name": "产品、服务与权利包装", "definition": "定义出售的是所有权、使用权、访问权、结果还是能力。"}
+{"id": "U03-A19", "name": "试用/体验版", "essence": "有限时间或容量免费以降低首次采用风险。", "category_id": "U03", "category_name": "产品、服务与权利包装", "definition": "定义出售的是所有权、使用权、访问权、结果还是能力。"}
+{"id": "U03-A20", "name": "开放源码", "essence": "核心代码开放，通过服务、托管、企业版等捕获价值。", "category_id": "U03", "category_name": "产品、服务与权利包装", "definition": "定义出售的是所有权、使用权、访问权、结果还是能力。"}
+{"id": "U03-A21", "name": "开放核心Open Core", "essence": "开源核心与专有高级模块并存。", "category_id": "U03", "category_name": "产品、服务与权利包装", "definition": "定义出售的是所有权、使用权、访问权、结果还是能力。"}
+{"id": "U03-A22", "name": "数字商品/虚拟物品", "essence": "以近零复制成本销售数字资产。", "category_id": "U03", "category_name": "产品、服务与权利包装", "definition": "定义出售的是所有权、使用权、访问权、结果还是能力。"}
+{"id": "U03-A23", "name": "数据产品", "essence": "直接交付数据集、洞察、评分或基准。", "category_id": "U03", "category_name": "产品、服务与权利包装", "definition": "定义出售的是所有权、使用权、访问权、结果还是能力。"}
+{"id": "U03-A24", "name": "API能力", "essence": "把能力以机器可调用接口出售。", "category_id": "U03", "category_name": "产品、服务与权利包装", "definition": "定义出售的是所有权、使用权、访问权、结果还是能力。"}
+{"id": "U03-A25", "name": "AI Agent/数字劳动力", "essence": "按智能代理、任务或结果交付可执行能力。", "category_id": "U03", "category_name": "产品、服务与权利包装", "definition": "定义出售的是所有权、使用权、访问权、结果还是能力。"}
+{"id": "U04-A01", "name": "直接广告获客", "essence": "先付媒体成本获得线索或客户。", "category_id": "U04", "category_name": "获客与需求形成", "definition": "定义第一批和持续客户从哪里来、为何进入。"}
+{"id": "U04-A02", "name": "内容获客", "essence": "以知识、媒体或教育内容聚集需求。", "category_id": "U04", "category_name": "获客与需求形成", "definition": "定义第一批和持续客户从哪里来、为何进入。"}
+{"id": "U04-A03", "name": "搜索需求捕获", "essence": "承接已有搜索意图。", "category_id": "U04", "category_name": "获客与需求形成", "definition": "定义第一批和持续客户从哪里来、为何进入。"}
+{"id": "U04-A04", "name": "产品驱动增长PLG", "essence": "产品体验本身完成获客、转化和扩张。", "category_id": "U04", "category_name": "获客与需求形成", "definition": "定义第一批和持续客户从哪里来、为何进入。"}
+{"id": "U04-A05", "name": "免费入口", "essence": "用零价格前端换取试用、账户或关系。", "category_id": "U04", "category_name": "获客与需求形成", "definition": "定义第一批和持续客户从哪里来、为何进入。"}
+{"id": "U04-A06", "name": "低价爆品", "essence": "以明显价格优势获取高流量。", "category_id": "U04", "category_name": "获客与需求形成", "definition": "定义第一批和持续客户从哪里来、为何进入。"}
+{"id": "U04-A07", "name": "高频刚需入口", "essence": "先占领高频需求，再延伸低频高价值业务。", "category_id": "U04", "category_name": "获客与需求形成", "definition": "定义第一批和持续客户从哪里来、为何进入。"}
+{"id": "U04-A08", "name": "渠道借力", "essence": "从已经拥有目标客户的组织获得用户。", "category_id": "U04", "category_name": "获客与需求形成", "definition": "定义第一批和持续客户从哪里来、为何进入。"}
+{"id": "U04-A09", "name": "异业联盟获客", "essence": "非竞争商家共享客户和权益。", "category_id": "U04", "category_name": "获客与需求形成", "definition": "定义第一批和持续客户从哪里来、为何进入。"}
+{"id": "U04-A10", "name": "推荐裂变", "essence": "把推荐奖励嵌入交易。", "category_id": "U04", "category_name": "获客与需求形成", "definition": "定义第一批和持续客户从哪里来、为何进入。"}
+{"id": "U04-A11", "name": "联盟营销Affiliate", "essence": "第三方按成交或线索获得佣金。", "category_id": "U04", "category_name": "获客与需求形成", "definition": "定义第一批和持续客户从哪里来、为何进入。"}
+{"id": "U04-A12", "name": "创作者/影响者分发", "essence": "借内容创作者的信任和受众。", "category_id": "U04", "category_name": "获客与需求形成", "definition": "定义第一批和持续客户从哪里来、为何进入。"}
+{"id": "U04-A13", "name": "社区驱动增长", "essence": "先形成共同体，再产生交易。", "category_id": "U04", "category_name": "获客与需求形成", "definition": "定义第一批和持续客户从哪里来、为何进入。"}
+{"id": "U04-A14", "name": "企业销售", "essence": "通过销售团队获取高客单组织客户。", "category_id": "U04", "category_name": "获客与需求形成", "definition": "定义第一批和持续客户从哪里来、为何进入。"}
+{"id": "U04-A15", "name": "合作伙伴销售", "essence": "由咨询商、SI、代理或经销商销售。", "category_id": "U04", "category_name": "获客与需求形成", "definition": "定义第一批和持续客户从哪里来、为何进入。"}
+{"id": "U04-A16", "name": "嵌入式获客", "essence": "产品被嵌入另一高频产品或工作流。", "category_id": "U04", "category_name": "获客与需求形成", "definition": "定义第一批和持续客户从哪里来、为何进入。"}
+{"id": "U04-A17", "name": "场景自然流量", "essence": "把商品放到用户天然出现的位置。", "category_id": "U04", "category_name": "获客与需求形成", "definition": "定义第一批和持续客户从哪里来、为何进入。"}
+{"id": "U04-A18", "name": "已教育用户迁移", "essence": "直接争取已被竞争对手教育好的成熟需求。", "category_id": "U04", "category_name": "获客与需求形成", "definition": "定义第一批和持续客户从哪里来、为何进入。"}
+{"id": "U04-A19", "name": "事件/活动引流", "essence": "通过峰值事件、体验或线下聚会聚集用户。", "category_id": "U04", "category_name": "获客与需求形成", "definition": "定义第一批和持续客户从哪里来、为何进入。"}
+{"id": "U04-A20", "name": "开发者优先", "essence": "先让开发者采用，再进入团队或企业。", "category_id": "U04", "category_name": "获客与需求形成", "definition": "定义第一批和持续客户从哪里来、为何进入。"}
+{"id": "U05-A01", "name": "直营门店", "essence": "企业自有线下渠道。", "category_id": "U05", "category_name": "渠道与分发", "definition": "定义价值通过何种商业节点到达用户。"}
+{"id": "U05-A02", "name": "直营网店/D2C", "essence": "品牌直接在线触达消费者。", "category_id": "U05", "category_name": "渠道与分发", "definition": "定义价值通过何种商业节点到达用户。"}
+{"id": "U05-A03", "name": "经销/分销", "essence": "通过中间商覆盖市场。", "category_id": "U05", "category_name": "渠道与分发", "definition": "定义价值通过何种商业节点到达用户。"}
+{"id": "U05-A04", "name": "批发", "essence": "向下游商家批量销售。", "category_id": "U05", "category_name": "渠道与分发", "definition": "定义价值通过何种商业节点到达用户。"}
+{"id": "U05-A05", "name": "零售商渠道", "essence": "进入已有零售网络。", "category_id": "U05", "category_name": "渠道与分发", "definition": "定义价值通过何种商业节点到达用户。"}
+{"id": "U05-A06", "name": "加盟渠道", "essence": "由加盟者投资本地销售节点。", "category_id": "U05", "category_name": "渠道与分发", "definition": "定义价值通过何种商业节点到达用户。"}
+{"id": "U05-A07", "name": "平台分发", "essence": "借第三方市场或应用商店获取交易。", "category_id": "U05", "category_name": "渠道与分发", "definition": "定义价值通过何种商业节点到达用户。"}
+{"id": "U05-A08", "name": "店中店", "essence": "进入其他门店的空间和客流。", "category_id": "U05", "category_name": "渠道与分发", "definition": "定义价值通过何种商业节点到达用户。"}
+{"id": "U05-A09", "name": "嵌入式分发", "essence": "在合作产品内部直接提供能力或购买入口。", "category_id": "U05", "category_name": "渠道与分发", "definition": "定义价值通过何种商业节点到达用户。"}
+{"id": "U05-A10", "name": "OEM渠道", "essence": "随硬件或其他产品预装、搭售。", "category_id": "U05", "category_name": "渠道与分发", "definition": "定义价值通过何种商业节点到达用户。"}
+{"id": "U05-A11", "name": "App Store/插件生态", "essence": "通过插件、扩展、应用市场分发。", "category_id": "U05", "category_name": "渠道与分发", "definition": "定义价值通过何种商业节点到达用户。"}
+{"id": "U05-A12", "name": "API分发", "essence": "能力通过开发者集成传播。", "category_id": "U05", "category_name": "渠道与分发", "definition": "定义价值通过何种商业节点到达用户。"}
+{"id": "U05-A13", "name": "社交/内容渠道", "essence": "内容流即分发渠道。", "category_id": "U05", "category_name": "渠道与分发", "definition": "定义价值通过何种商业节点到达用户。"}
+{"id": "U05-A14", "name": "自提节点", "essence": "借合作网点完成最后一公里。", "category_id": "U05", "category_name": "渠道与分发", "definition": "定义价值通过何种商业节点到达用户。"}
+{"id": "U05-A15", "name": "代理/代表", "essence": "本地代理承担销售与关系维护。", "category_id": "U05", "category_name": "渠道与分发", "definition": "定义价值通过何种商业节点到达用户。"}
+{"id": "U05-A16", "name": "多渠道/全渠道", "essence": "线上线下多个渠道共同完成获客与履约。", "category_id": "U05", "category_name": "渠道与分发", "definition": "定义价值通过何种商业节点到达用户。"}
+{"id": "U06-A01", "name": "一次性交易", "essence": "成交后关系弱，持续增长依赖新客。", "category_id": "U06", "category_name": "关系、留存与复购", "definition": "定义一次交易如何变成持续关系。"}
+{"id": "U06-A02", "name": "订阅关系", "essence": "周期性续费形成持续关系。", "category_id": "U06", "category_name": "关系、留存与复购", "definition": "定义一次交易如何变成持续关系。"}
+{"id": "U06-A03", "name": "会员关系", "essence": "身份、权益和社群共同提高留存。", "category_id": "U06", "category_name": "关系、留存与复购", "definition": "定义一次交易如何变成持续关系。"}
+{"id": "U06-A04", "name": "忠诚度/积分", "essence": "用累积权益提高重复购买。", "category_id": "U06", "category_name": "关系、留存与复购", "definition": "定义一次交易如何变成持续关系。"}
+{"id": "U06-A05", "name": "合同锁定", "essence": "通过长期合同或最低承诺提高可预测性。", "category_id": "U06", "category_name": "关系、留存与复购", "definition": "定义一次交易如何变成持续关系。"}
+{"id": "U06-A06", "name": "数据历史粘性", "essence": "长期积累的历史数据提高迁移成本。", "category_id": "U06", "category_name": "关系、留存与复购", "definition": "定义一次交易如何变成持续关系。"}
+{"id": "U06-A07", "name": "工作流嵌入", "essence": "产品成为日常业务流程的一部分。", "category_id": "U06", "category_name": "关系、留存与复购", "definition": "定义一次交易如何变成持续关系。"}
+{"id": "U06-A08", "name": "专有耗材", "essence": "已安装设备带来后续补充购买。", "category_id": "U06", "category_name": "关系、留存与复购", "definition": "定义一次交易如何变成持续关系。"}
+{"id": "U06-A09", "name": "兼容标准锁定", "essence": "接口、格式或生态兼容形成切换成本。", "category_id": "U06", "category_name": "关系、留存与复购", "definition": "定义一次交易如何变成持续关系。"}
+{"id": "U06-A10", "name": "社群关系", "essence": "关系网络与身份本身产生留存。", "category_id": "U06", "category_name": "关系、留存与复购", "definition": "定义一次交易如何变成持续关系。"}
+{"id": "U06-A11", "name": "个性化学习效应", "essence": "使用越久越懂客户，价值随时间提高。", "category_id": "U06", "category_name": "关系、留存与复购", "definition": "定义一次交易如何变成持续关系。"}
+{"id": "U06-A12", "name": "客户成功/代运营", "essence": "通过持续帮助客户获得结果降低流失。", "category_id": "U06", "category_name": "关系、留存与复购", "definition": "定义一次交易如何变成持续关系。"}
+{"id": "U06-A13", "name": "长期权益返还", "essence": "通过跨期权益维持关系；需审查现金流与合规。", "category_id": "U06", "category_name": "关系、留存与复购", "definition": "定义一次交易如何变成持续关系。"}
+{"id": "U06-A14", "name": "保修/维保", "essence": "售后责任形成持续接触。", "category_id": "U06", "category_name": "关系、留存与复购", "definition": "定义一次交易如何变成持续关系。"}
+{"id": "U06-A15", "name": "多品类交叉复购", "essence": "同一客户在更多相邻品类持续消费。", "category_id": "U06", "category_name": "关系、留存与复购", "definition": "定义一次交易如何变成持续关系。"}
+{"id": "U06-A16", "name": "习惯/高频使用", "essence": "高使用频率本身形成心智入口。", "category_id": "U06", "category_name": "关系、留存与复购", "definition": "定义一次交易如何变成持续关系。"}
+{"id": "U06-A17", "name": "信用/账户关系", "essence": "支付、钱包或信用记录增加持续使用。", "category_id": "U06", "category_name": "关系、留存与复购", "definition": "定义一次交易如何变成持续关系。"}
+{"id": "U07-A01", "name": "自有生产", "essence": "企业拥有生产资产和关键流程。", "category_id": "U07", "category_name": "供给、生产与资源组织", "definition": "定义谁拥有资产、谁生产、谁履约。"}
+{"id": "U07-A02", "name": "垂直整合", "essence": "覆盖更多价值链环节以控制质量或利润。", "category_id": "U07", "category_name": "供给、生产与资源组织", "definition": "定义谁拥有资产、谁生产、谁履约。"}
+{"id": "U07-A03", "name": "专业层玩家Layer Player", "essence": "专注价值链某一层，向多个行业复用能力。", "category_id": "U07", "category_name": "供给、生产与资源组织", "definition": "定义谁拥有资产、谁生产、谁履约。"}
+{"id": "U07-A04", "name": "资产轻型编排", "essence": "保留客户和规则，资产与履约外包。", "category_id": "U07", "category_name": "供给、生产与资源组织", "definition": "定义谁拥有资产、谁生产、谁履约。"}
+{"id": "U07-A05", "name": "合同制造/OEM", "essence": "第三方按规格生产。", "category_id": "U07", "category_name": "供给、生产与资源组织", "definition": "定义谁拥有资产、谁生产、谁履约。"}
+{"id": "U07-A06", "name": "ODM", "essence": "第三方参与设计并为品牌方制造。", "category_id": "U07", "category_name": "供给、生产与资源组织", "definition": "定义谁拥有资产、谁生产、谁履约。"}
+{"id": "U07-A07", "name": "外包履约", "essence": "订单在自己手上，执行由第三方完成。", "category_id": "U07", "category_name": "供给、生产与资源组织", "definition": "定义谁拥有资产、谁生产、谁履约。"}
+{"id": "U07-A08", "name": "众包", "essence": "大量外部个体完成任务。", "category_id": "U07", "category_name": "供给、生产与资源组织", "definition": "定义谁拥有资产、谁生产、谁履约。"}
+{"id": "U07-A09", "name": "用户生产/UGC", "essence": "用户创造内容、商品、应用或供给。", "category_id": "U07", "category_name": "供给、生产与资源组织", "definition": "定义谁拥有资产、谁生产、谁履约。"}
+{"id": "U07-A10", "name": "Prosumer", "essence": "用户同时是生产者与消费者。", "category_id": "U07", "category_name": "供给、生产与资源组织", "definition": "定义谁拥有资产、谁生产、谁履约。"}
+{"id": "U07-A11", "name": "按需生产", "essence": "收到订单后生产，降低库存。", "category_id": "U07", "category_name": "供给、生产与资源组织", "definition": "定义谁拥有资产、谁生产、谁履约。"}
+{"id": "U07-A12", "name": "Push-to-Pull", "essence": "由需求信号驱动生产或采购。", "category_id": "U07", "category_name": "供给、生产与资源组织", "definition": "定义谁拥有资产、谁生产、谁履约。"}
+{"id": "U07-A13", "name": "寄售", "essence": "商品在销售前仍由供应方承担所有权或风险。", "category_id": "U07", "category_name": "供给、生产与资源组织", "definition": "定义谁拥有资产、谁生产、谁履约。"}
+{"id": "U07-A14", "name": "Dropshipping", "essence": "商家不持货，由供应商直接发给客户。", "category_id": "U07", "category_name": "供给、生产与资源组织", "definition": "定义谁拥有资产、谁生产、谁履约。"}
+{"id": "U07-A15", "name": "供应商账期", "essence": "先销售后付款，降低营运资金占用。", "category_id": "U07", "category_name": "供给、生产与资源组织", "definition": "定义谁拥有资产、谁生产、谁履约。"}
+{"id": "U07-A16", "name": "共享基础设施", "essence": "多方共用仓储、计算、设备或场所。", "category_id": "U07", "category_name": "供给、生产与资源组织", "definition": "定义谁拥有资产、谁生产、谁履约。"}
+{"id": "U07-A17", "name": "闲置资产供给", "essence": "把现有未充分利用资产纳入供给。", "category_id": "U07", "category_name": "供给、生产与资源组织", "definition": "定义谁拥有资产、谁生产、谁履约。"}
+{"id": "U07-A18", "name": "用户资产供给", "essence": "用户房屋、车辆、空间或设备成为平台供给。", "category_id": "U07", "category_name": "供给、生产与资源组织", "definition": "定义谁拥有资产、谁生产、谁履约。"}
+{"id": "U07-A19", "name": "标准化服务网络", "essence": "统一培训、工具和流程，让分散供给可复制。", "category_id": "U07", "category_name": "供给、生产与资源组织", "definition": "定义谁拥有资产、谁生产、谁履约。"}
+{"id": "U07-A20", "name": "模块化供给", "essence": "把复杂产品拆成可替换模块，由多伙伴组合。", "category_id": "U07", "category_name": "供给、生产与资源组织", "definition": "定义谁拥有资产、谁生产、谁履约。"}
+{"id": "U07-A21", "name": "本地服务节点", "essence": "利用线下合作点完成交付、体验、维修或自提。", "category_id": "U07", "category_name": "供给、生产与资源组织", "definition": "定义谁拥有资产、谁生产、谁履约。"}
+{"id": "U08-A01", "name": "商户/Merchant", "essence": "自行取得商品或服务后再销售给客户。", "category_id": "U08", "category_name": "平台、网络与生态", "definition": "定义多方如何连接、交互以及平台为何有价值。"}
+{"id": "U08-A02", "name": "经纪/Broker", "essence": "撮合买卖双方并按交易收费。", "category_id": "U08", "category_name": "平台、网络与生态", "definition": "定义多方如何连接、交互以及平台为何有价值。"}
+{"id": "U08-A03", "name": "双边市场", "essence": "连接两个相互依赖的群体。", "category_id": "U08", "category_name": "平台、网络与生态", "definition": "定义多方如何连接、交互以及平台为何有价值。"}
+{"id": "U08-A04", "name": "多边平台", "essence": "连接三个及以上相互产生价值的群体。", "category_id": "U08", "category_name": "平台、网络与生态", "definition": "定义多方如何连接、交互以及平台为何有价值。"}
+{"id": "U08-A05", "name": "交易平台", "essence": "核心是促成交换、支付或履约。", "category_id": "U08", "category_name": "平台、网络与生态", "definition": "定义多方如何连接、交互以及平台为何有价值。"}
+{"id": "U08-A06", "name": "创新平台", "essence": "提供技术底座让第三方开发互补创新。", "category_id": "U08", "category_name": "平台、网络与生态", "definition": "定义多方如何连接、交互以及平台为何有价值。"}
+{"id": "U08-A07", "name": "混合平台", "essence": "同时拥有交易平台与创新平台特征。", "category_id": "U08", "category_name": "平台、网络与生态", "definition": "定义多方如何连接、交互以及平台为何有价值。"}
+{"id": "U08-A08", "name": "P2P平台", "essence": "个人供给个人需求。", "category_id": "U08", "category_name": "平台、网络与生态", "definition": "定义多方如何连接、交互以及平台为何有价值。"}
+{"id": "U08-A09", "name": "聚合器Aggregator", "essence": "聚合分散供给并统一搜索、品牌或体验。", "category_id": "U08", "category_name": "平台、网络与生态", "definition": "定义多方如何连接、交互以及平台为何有价值。"}
+{"id": "U08-A10", "name": "门户/Portal", "essence": "聚合内容、服务或入口。", "category_id": "U08", "category_name": "平台、网络与生态", "definition": "定义多方如何连接、交互以及平台为何有价值。"}
+{"id": "U08-A11", "name": "市场Marketplace", "essence": "供给方自主上架，平台提供交易规则。", "category_id": "U08", "category_name": "平台、网络与生态", "definition": "定义多方如何连接、交互以及平台为何有价值。"}
+{"id": "U08-A12", "name": "托管式Marketplace", "essence": "平台进一步介入质量、定价、履约或售后。", "category_id": "U08", "category_name": "平台、网络与生态", "definition": "定义多方如何连接、交互以及平台为何有价值。"}
+{"id": "U08-A13", "name": "生态编排者", "essence": "不拥有多数资源，但设计规则、接口和利益分配。", "category_id": "U08", "category_name": "平台、网络与生态", "definition": "定义多方如何连接、交互以及平台为何有价值。"}
+{"id": "U08-A14", "name": "应用商店", "essence": "平台控制分发与结算，第三方提供应用。", "category_id": "U08", "category_name": "平台、网络与生态", "definition": "定义多方如何连接、交互以及平台为何有价值。"}
+{"id": "U08-A15", "name": "开发者平台", "essence": "API/SDK/工具吸引补充者创新。", "category_id": "U08", "category_name": "平台、网络与生态", "definition": "定义多方如何连接、交互以及平台为何有价值。"}
+{"id": "U08-A16", "name": "数据平台", "essence": "多方数据汇聚后产生新服务或网络效应。", "category_id": "U08", "category_name": "平台、网络与生态", "definition": "定义多方如何连接、交互以及平台为何有价值。"}
+{"id": "U08-A17", "name": "共享经济平台", "essence": "提高资产利用率并匹配短期使用权。", "category_id": "U08", "category_name": "平台、网络与生态", "definition": "定义多方如何连接、交互以及平台为何有价值。"}
+{"id": "U08-A18", "name": "合作平台", "essence": "支持多方共同生产、协作或知识共享。", "category_id": "U08", "category_name": "平台、网络与生态", "definition": "定义多方如何连接、交互以及平台为何有价值。"}
+{"id": "U08-A19", "name": "信任中介", "essence": "主要价值来自身份、认证、信誉或担保。", "category_id": "U08", "category_name": "平台、网络与生态", "definition": "定义多方如何连接、交互以及平台为何有价值。"}
+{"id": "U08-A20", "name": "联盟网络", "essence": "多个独立企业共享渠道、会员或采购。", "category_id": "U08", "category_name": "平台、网络与生态", "definition": "定义多方如何连接、交互以及平台为何有价值。"}
+{"id": "U08-A21", "name": "合作社/互助网络", "essence": "参与者共同拥有或治理平台。", "category_id": "U08", "category_name": "平台、网络与生态", "definition": "定义多方如何连接、交互以及平台为何有价值。"}
+{"id": "U09-A01", "name": "平台托管Escrow", "essence": "资金先由可信中介持有，履约后结算。", "category_id": "U09", "category_name": "交易、信任与治理", "definition": "定义陌生参与方为何敢交易，以及如何约束质量。"}
+{"id": "U09-A02", "name": "先服务后付款", "essence": "客户验收后付款，供给方承担更多质量风险。", "category_id": "U09", "category_name": "交易、信任与治理", "definition": "定义陌生参与方为何敢交易，以及如何约束质量。"}
+{"id": "U09-A03", "name": "预授权后扣款", "essence": "先确认支付能力，履约后结算。", "category_id": "U09", "category_name": "交易、信任与治理", "definition": "定义陌生参与方为何敢交易，以及如何约束质量。"}
+{"id": "U09-A04", "name": "评价体系", "essence": "用历史评分约束质量。", "category_id": "U09", "category_name": "交易、信任与治理", "definition": "定义陌生参与方为何敢交易，以及如何约束质量。"}
+{"id": "U09-A05", "name": "信誉体系", "essence": "基于长期交易行为形成信用资产。", "category_id": "U09", "category_name": "交易、信任与治理", "definition": "定义陌生参与方为何敢交易，以及如何约束质量。"}
+{"id": "U09-A06", "name": "身份/KYC", "essence": "确认交易主体身份并满足合规。", "category_id": "U09", "category_name": "交易、信任与治理", "definition": "定义陌生参与方为何敢交易，以及如何约束质量。"}
+{"id": "U09-A07", "name": "认证/标准", "essence": "通过标准化资格降低信息不对称。", "category_id": "U09", "category_name": "交易、信任与治理", "definition": "定义陌生参与方为何敢交易，以及如何约束质量。"}
+{"id": "U09-A08", "name": "第三方检测", "essence": "用独立证明增强质量可信度。", "category_id": "U09", "category_name": "交易、信任与治理", "definition": "定义陌生参与方为何敢交易，以及如何约束质量。"}
+{"id": "U09-A09", "name": "透明定价", "essence": "减少议价与隐性费用。", "category_id": "U09", "category_name": "交易、信任与治理", "definition": "定义陌生参与方为何敢交易，以及如何约束质量。"}
+{"id": "U09-A10", "name": "价格保证", "essence": "承诺最低价、价保或自动补差。", "category_id": "U09", "category_name": "交易、信任与治理", "definition": "定义陌生参与方为何敢交易，以及如何约束质量。"}
+{"id": "U09-A11", "name": "退款保证", "essence": "降低首次购买风险。", "category_id": "U09", "category_name": "交易、信任与治理", "definition": "定义陌生参与方为何敢交易，以及如何约束质量。"}
+{"id": "U09-A12", "name": "回购承诺", "essence": "提供未来退出路径；需审查履约能力。", "category_id": "U09", "category_name": "交易、信任与治理", "definition": "定义陌生参与方为何敢交易，以及如何约束质量。"}
+{"id": "U09-A13", "name": "保修/质保", "essence": "承担一定期限内的产品或服务风险。", "category_id": "U09", "category_name": "交易、信任与治理", "definition": "定义陌生参与方为何敢交易，以及如何约束质量。"}
+{"id": "U09-A14", "name": "保险", "essence": "将特定风险转移给保险机制。", "category_id": "U09", "category_name": "交易、信任与治理", "definition": "定义陌生参与方为何敢交易，以及如何约束质量。"}
+{"id": "U09-A15", "name": "SLA", "essence": "对可用率、响应时间或结果质量做合同承诺。", "category_id": "U09", "category_name": "交易、信任与治理", "definition": "定义陌生参与方为何敢交易，以及如何约束质量。"}
+{"id": "U09-A16", "name": "标准化履约", "essence": "流程、工具和培训统一。", "category_id": "U09", "category_name": "交易、信任与治理", "definition": "定义陌生参与方为何敢交易，以及如何约束质量。"}
+{"id": "U09-A17", "name": "平台争议处理", "essence": "由平台处理纠纷、证据和赔付。", "category_id": "U09", "category_name": "交易、信任与治理", "definition": "定义陌生参与方为何敢交易，以及如何约束质量。"}
+{"id": "U09-A18", "name": "资金监管", "essence": "银行或受监管机构管理专项资金。", "category_id": "U09", "category_name": "交易、信任与治理", "definition": "定义陌生参与方为何敢交易，以及如何约束质量。"}
+{"id": "U09-A19", "name": "可追溯性", "essence": "用序列号、链路记录、传感器等证明来源和过程。", "category_id": "U09", "category_name": "交易、信任与治理", "definition": "定义陌生参与方为何敢交易，以及如何约束质量。"}
+{"id": "U09-A20", "name": "人工/算法风控", "essence": "通过规则、模型和审查降低欺诈与违约。", "category_id": "U09", "category_name": "交易、信任与治理", "definition": "定义陌生参与方为何敢交易，以及如何约束质量。"}
+{"id": "U10-A01", "name": "固定价格", "essence": "每单位或套餐价格固定。", "category_id": "U10", "category_name": "定价与支付", "definition": "定义价格怎样形成、按什么计量、何时支付。"}
+{"id": "U10-A02", "name": "成本加成", "essence": "成本基础上加目标毛利。", "category_id": "U10", "category_name": "定价与支付", "definition": "定义价格怎样形成、按什么计量、何时支付。"}
+{"id": "U10-A03", "name": "价值定价", "essence": "按客户获得的经济价值定价。", "category_id": "U10", "category_name": "定价与支付", "definition": "定义价格怎样形成、按什么计量、何时支付。"}
+{"id": "U10-A04", "name": "高端溢价", "essence": "用品牌、稀缺或服务进行高价定位。", "category_id": "U10", "category_name": "定价与支付", "definition": "定义价格怎样形成、按什么计量、何时支付。"}
+{"id": "U10-A05", "name": "渗透定价", "essence": "早期低价快速获得市场份额。", "category_id": "U10", "category_name": "定价与支付", "definition": "定义价格怎样形成、按什么计量、何时支付。"}
+{"id": "U10-A06", "name": "No Frills", "essence": "去除非核心服务以压低价格。", "category_id": "U10", "category_name": "定价与支付", "definition": "定义价格怎样形成、按什么计量、何时支付。"}
+{"id": "U10-A07", "name": "动态定价", "essence": "价格随供需、时间、库存等变化。", "category_id": "U10", "category_name": "定价与支付", "definition": "定义价格怎样形成、按什么计量、何时支付。"}
+{"id": "U10-A08", "name": "拍卖", "essence": "买方竞价决定价格。", "category_id": "U10", "category_name": "定价与支付", "definition": "定义价格怎样形成、按什么计量、何时支付。"}
+{"id": "U10-A09", "name": "反向拍卖", "essence": "供方竞价争取买方需求。", "category_id": "U10", "category_name": "定价与支付", "definition": "定义价格怎样形成、按什么计量、何时支付。"}
+{"id": "U10-A10", "name": "Pay What You Want", "essence": "客户自定支付额。", "category_id": "U10", "category_name": "定价与支付", "definition": "定义价格怎样形成、按什么计量、何时支付。"}
+{"id": "U10-A11", "name": "分层套餐Tier", "essence": "不同功能、额度或服务级别对应不同价位。", "category_id": "U10", "category_name": "定价与支付", "definition": "定义价格怎样形成、按什么计量、何时支付。"}
+{"id": "U10-A12", "name": "按量计费", "essence": "按实际消费单位收费。", "category_id": "U10", "category_name": "定价与支付", "definition": "定义价格怎样形成、按什么计量、何时支付。"}
+{"id": "U10-A13", "name": "阶梯量价", "essence": "使用越多进入不同价格区间。", "category_id": "U10", "category_name": "定价与支付", "definition": "定义价格怎样形成、按什么计量、何时支付。"}
+{"id": "U10-A14", "name": "容量计费", "essence": "按预留算力、存储、并发或工具容量收费。", "category_id": "U10", "category_name": "定价与支付", "definition": "定义价格怎样形成、按什么计量、何时支付。"}
+{"id": "U10-A15", "name": "席位计费", "essence": "按用户/账号数收费。", "category_id": "U10", "category_name": "定价与支付", "definition": "定义价格怎样形成、按什么计量、何时支付。"}
+{"id": "U10-A16", "name": "按任务计费", "essence": "每完成一次动作、流程或任务收费。", "category_id": "U10", "category_name": "定价与支付", "definition": "定义价格怎样形成、按什么计量、何时支付。"}
+{"id": "U10-A17", "name": "按结果计费", "essence": "仅成功结果产生费用。", "category_id": "U10", "category_name": "定价与支付", "definition": "定义价格怎样形成、按什么计量、何时支付。"}
+{"id": "U10-A18", "name": "绩效分成", "essence": "费用与客户最终业绩挂钩。", "category_id": "U10", "category_name": "定价与支付", "definition": "定义价格怎样形成、按什么计量、何时支付。"}
+{"id": "U10-A19", "name": "订阅", "essence": "按周/月/年定期支付。", "category_id": "U10", "category_name": "定价与支付", "definition": "定义价格怎样形成、按什么计量、何时支付。"}
+{"id": "U10-A20", "name": "Flat Rate", "essence": "固定周期费换取近似无限使用。", "category_id": "U10", "category_name": "定价与支付", "definition": "定义价格怎样形成、按什么计量、何时支付。"}
+{"id": "U10-A21", "name": "会员费", "essence": "为进入体系或享受权益付费。", "category_id": "U10", "category_name": "定价与支付", "definition": "定义价格怎样形成、按什么计量、何时支付。"}
+{"id": "U10-A22", "name": "Freemium", "essence": "免费基础层 + 付费高级层。", "category_id": "U10", "category_name": "定价与支付", "definition": "定义价格怎样形成、按什么计量、何时支付。"}
+{"id": "U10-A23", "name": "永久免费入口", "essence": "某一价值单元长期免费，由其他收入补贴。", "category_id": "U10", "category_name": "定价与支付", "definition": "定义价格怎样形成、按什么计量、何时支付。"}
+{"id": "U10-A24", "name": "Add-on", "essence": "核心低价，附加项收费。", "category_id": "U10", "category_name": "定价与支付", "definition": "定义价格怎样形成、按什么计量、何时支付。"}
+{"id": "U10-A25", "name": "捆绑定价", "essence": "多个项目合并为一个价格。", "category_id": "U10", "category_name": "定价与支付", "definition": "定义价格怎样形成、按什么计量、何时支付。"}
+{"id": "U10-A26", "name": "拆分定价", "essence": "客户只为所需组件付费。", "category_id": "U10", "category_name": "定价与支付", "definition": "定义价格怎样形成、按什么计量、何时支付。"}
+{"id": "U10-A27", "name": "两部制价格", "essence": "固定基础费 + 变量使用费。", "category_id": "U10", "category_name": "定价与支付", "definition": "定义价格怎样形成、按什么计量、何时支付。"}
+{"id": "U10-A28", "name": "交叉补贴", "essence": "一个产品/人群/市场的利润补贴另一个。", "category_id": "U10", "category_name": "定价与支付", "definition": "定义价格怎样形成、按什么计量、何时支付。"}
+{"id": "U10-A29", "name": "Robin Hood", "essence": "高支付能力客户补贴低支付能力客户。", "category_id": "U10", "category_name": "定价与支付", "definition": "定义价格怎样形成、按什么计量、何时支付。"}
+{"id": "U10-A30", "name": "预付Credits", "essence": "先购买额度再按消费扣减。", "category_id": "U10", "category_name": "定价与支付", "definition": "定义价格怎样形成、按什么计量、何时支付。"}
+{"id": "U10-A31", "name": "最低承诺", "essence": "承诺最低消费换更优惠单价。", "category_id": "U10", "category_name": "定价与支付", "definition": "定义价格怎样形成、按什么计量、何时支付。"}
+{"id": "U10-A32", "name": "保留容量/承诺折扣", "essence": "提前承诺长期使用换折扣。", "category_id": "U10", "category_name": "定价与支付", "definition": "定义价格怎样形成、按什么计量、何时支付。"}
+{"id": "U10-A33", "name": "微支付", "essence": "对极小价值单元进行低额高频收费。", "category_id": "U10", "category_name": "定价与支付", "definition": "定义价格怎样形成、按什么计量、何时支付。"}
+{"id": "U10-A34", "name": "买A送B", "essence": "利用两个产品不同毛利结构组合价值。", "category_id": "U10", "category_name": "定价与支付", "definition": "定义价格怎样形成、按什么计量、何时支付。"}
+{"id": "U10-A35", "name": "返现/积分返还", "essence": "交易后返还现金或权益；必须核算真实成本。", "category_id": "U10", "category_name": "定价与支付", "definition": "定义价格怎样形成、按什么计量、何时支付。"}
+{"id": "U10-A36", "name": "团购/Buying Club", "essence": "聚合需求以获得更低采购价。", "category_id": "U10", "category_name": "定价与支付", "definition": "定义价格怎样形成、按什么计量、何时支付。"}
+{"id": "U11-A01", "name": "商品毛利", "essence": "销售价格减商品成本。", "category_id": "U11", "category_name": "收入与价值捕获", "definition": "定义利润池位于哪里、由谁付费。"}
+{"id": "U11-A02", "name": "项目服务费", "essence": "按项目或工时收费。", "category_id": "U11", "category_name": "收入与价值捕获", "definition": "定义利润池位于哪里、由谁付费。"}
+{"id": "U11-A03", "name": "订阅收入", "essence": "持续访问产生周期性收入。", "category_id": "U11", "category_name": "收入与价值捕获", "definition": "定义利润池位于哪里、由谁付费。"}
+{"id": "U11-A04", "name": "会员费", "essence": "资格与权益产生收入。", "category_id": "U11", "category_name": "收入与价值捕获", "definition": "定义利润池位于哪里、由谁付费。"}
+{"id": "U11-A05", "name": "使用费", "essence": "按时长、次数、调用量等收费。", "category_id": "U11", "category_name": "收入与价值捕获", "definition": "定义利润池位于哪里、由谁付费。"}
+{"id": "U11-A06", "name": "交易佣金", "essence": "从成交金额中抽成。", "category_id": "U11", "category_name": "收入与价值捕获", "definition": "定义利润池位于哪里、由谁付费。"}
+{"id": "U11-A07", "name": "固定交易费", "essence": "每笔交易收固定费用。", "category_id": "U11", "category_name": "收入与价值捕获", "definition": "定义利润池位于哪里、由谁付费。"}
+{"id": "U11-A08", "name": "上架/刊登费", "essence": "供给方为展示机会付费。", "category_id": "U11", "category_name": "收入与价值捕获", "definition": "定义利润池位于哪里、由谁付费。"}
+{"id": "U11-A09", "name": "广告收入", "essence": "广告主为注意力与触达付费。", "category_id": "U11", "category_name": "收入与价值捕获", "definition": "定义利润池位于哪里、由谁付费。"}
+{"id": "U11-A10", "name": "赞助", "essence": "品牌为内容、活动或社群关联付费。", "category_id": "U11", "category_name": "收入与价值捕获", "definition": "定义利润池位于哪里、由谁付费。"}
+{"id": "U11-A11", "name": "线索费Lead Gen", "essence": "为可验证潜在客户付费。", "category_id": "U11", "category_name": "收入与价值捕获", "definition": "定义利润池位于哪里、由谁付费。"}
+{"id": "U11-A12", "name": "Affiliate佣金", "essence": "为促成第三方交易获得分成。", "category_id": "U11", "category_name": "收入与价值捕获", "definition": "定义利润池位于哪里、由谁付费。"}
+{"id": "U11-A13", "name": "授权费", "essence": "授权品牌、专利、内容、软件或标准。", "category_id": "U11", "category_name": "收入与价值捕获", "definition": "定义利润池位于哪里、由谁付费。"}
+{"id": "U11-A14", "name": "权益金Royalty", "essence": "按销量、收入或使用量持续收取。", "category_id": "U11", "category_name": "收入与价值捕获", "definition": "定义利润池位于哪里、由谁付费。"}
+{"id": "U11-A15", "name": "加盟费", "essence": "品牌/系统/区域权产生一次或周期收费。", "category_id": "U11", "category_name": "收入与价值捕获", "definition": "定义利润池位于哪里、由谁付费。"}
+{"id": "U11-A16", "name": "平台服务费", "essence": "向平台参与方收取工具或管理费。", "category_id": "U11", "category_name": "收入与价值捕获", "definition": "定义利润池位于哪里、由谁付费。"}
+{"id": "U11-A17", "name": "增值服务", "essence": "基础服务外的高级能力收费。", "category_id": "U11", "category_name": "收入与价值捕获", "definition": "定义利润池位于哪里、由谁付费。"}
+{"id": "U11-A18", "name": "实施/集成费", "essence": "部署、迁移、定制或集成收费。", "category_id": "U11", "category_name": "收入与价值捕获", "definition": "定义利润池位于哪里、由谁付费。"}
+{"id": "U11-A19", "name": "维护/支持费", "essence": "售后、更新、技术支持收费。", "category_id": "U11", "category_name": "收入与价值捕获", "definition": "定义利润池位于哪里、由谁付费。"}
+{"id": "U11-A20", "name": "供应链差价", "essence": "集采、直采或渠道压缩形成毛利。", "category_id": "U11", "category_name": "收入与价值捕获", "definition": "定义利润池位于哪里、由谁付费。"}
+{"id": "U11-A21", "name": "采购返点", "essence": "采购规模换取供应商返点。", "category_id": "U11", "category_name": "收入与价值捕获", "definition": "定义利润池位于哪里、由谁付费。"}
+{"id": "U11-A22", "name": "耗材复购", "essence": "硬件装机后持续销售耗材。", "category_id": "U11", "category_name": "收入与价值捕获", "definition": "定义利润池位于哪里、由谁付费。"}
+{"id": "U11-A23", "name": "租金/租赁费", "essence": "暂时授予资产使用权获得收入。", "category_id": "U11", "category_name": "收入与价值捕获", "definition": "定义利润池位于哪里、由谁付费。"}
+{"id": "U11-A24", "name": "数据销售", "essence": "直接出售数据或数据访问权。", "category_id": "U11", "category_name": "收入与价值捕获", "definition": "定义利润池位于哪里、由谁付费。"}
+{"id": "U11-A25", "name": "洞察/分析费", "essence": "对数据分析、评分或预测收费。", "category_id": "U11", "category_name": "收入与价值捕获", "definition": "定义利润池位于哪里、由谁付费。"}
+{"id": "U11-A26", "name": "API调用费", "essence": "按调用、token、事件或计算量收费。", "category_id": "U11", "category_name": "收入与价值捕获", "definition": "定义利润池位于哪里、由谁付费。"}
+{"id": "U11-A27", "name": "云/算力收入", "essence": "按计算、存储、网络或预留容量收费。", "category_id": "U11", "category_name": "收入与价值捕获", "definition": "定义利润池位于哪里、由谁付费。"}
+{"id": "U11-A28", "name": "利息收入", "essence": "向借款人或资金使用方收取利息。", "category_id": "U11", "category_name": "收入与价值捕获", "definition": "定义利润池位于哪里、由谁付费。"}
+{"id": "U11-A29", "name": "利差/Spread", "essence": "资金成本与资产收益之间的差额。", "category_id": "U11", "category_name": "收入与价值捕获", "definition": "定义利润池位于哪里、由谁付费。"}
+{"id": "U11-A30", "name": "支付/Interchange", "essence": "支付流转产生手续费或交换费。", "category_id": "U11", "category_name": "收入与价值捕获", "definition": "定义利润池位于哪里、由谁付费。"}
+{"id": "U11-A31", "name": "保险佣金", "essence": "分销保险或风险产品获得佣金。", "category_id": "U11", "category_name": "收入与价值捕获", "definition": "定义利润池位于哪里、由谁付费。"}
+{"id": "U11-A32", "name": "资产升值", "essence": "通过持有、改善或运营提升资产价值。", "category_id": "U11", "category_name": "收入与价值捕获", "definition": "定义利润池位于哪里、由谁付费。"}
+{"id": "U11-A33", "name": "二次销售/残值", "essence": "二手转售、回收或残值变现。", "category_id": "U11", "category_name": "收入与价值捕获", "definition": "定义利润池位于哪里、由谁付费。"}
+{"id": "U11-A34", "name": "收入分成", "essence": "参与方按约定比例共享新增收入。", "category_id": "U11", "category_name": "收入与价值捕获", "definition": "定义利润池位于哪里、由谁付费。"}
+{"id": "U11-A35", "name": "成果分成", "essence": "按节省成本、增收或成功成果抽取比例。", "category_id": "U11", "category_name": "收入与价值捕获", "definition": "定义利润池位于哪里、由谁付费。"}
+{"id": "U11-A36", "name": "创作者打赏/小费", "essence": "用户自愿向内容或服务提供者支付。", "category_id": "U11", "category_name": "收入与价值捕获", "definition": "定义利润池位于哪里、由谁付费。"}
+{"id": "U11-A37", "name": "捐赠/资助", "essence": "依靠自愿支持、基金或公共资助。", "category_id": "U11", "category_name": "收入与价值捕获", "definition": "定义利润池位于哪里、由谁付费。"}
+{"id": "U12-A01", "name": "规模经济", "essence": "产量增加使单位固定成本下降。", "category_id": "U12", "category_name": "成本结构与运营杠杆", "definition": "定义规模扩大后成本如何变化。"}
+{"id": "U12-A02", "name": "范围经济", "essence": "多个产品共享品牌、渠道、技术或客户。", "category_id": "U12", "category_name": "成本结构与运营杠杆", "definition": "定义规模扩大后成本如何变化。"}
+{"id": "U12-A03", "name": "密度经济", "essence": "同一区域订单越密集，履约单位成本越低。", "category_id": "U12", "category_name": "成本结构与运营杠杆", "definition": "定义规模扩大后成本如何变化。"}
+{"id": "U12-A04", "name": "软件零/低复制成本", "essence": "新增数字用户的复制成本接近零，但服务成本可能存在。", "category_id": "U12", "category_name": "成本结构与运营杠杆", "definition": "定义规模扩大后成本如何变化。"}
+{"id": "U12-A05", "name": "自动化", "essence": "用软件、机器人或AI替代重复人工。", "category_id": "U12", "category_name": "成本结构与运营杠杆", "definition": "定义规模扩大后成本如何变化。"}
+{"id": "U12-A06", "name": "自助服务", "essence": "把部分工作转移给客户完成。", "category_id": "U12", "category_name": "成本结构与运营杠杆", "definition": "定义规模扩大后成本如何变化。"}
+{"id": "U12-A07", "name": "标准化", "essence": "减少交付差异和培训成本。", "category_id": "U12", "category_name": "成本结构与运营杠杆", "definition": "定义规模扩大后成本如何变化。"}
+{"id": "U12-A08", "name": "模块化", "essence": "通过通用组件减少定制成本。", "category_id": "U12", "category_name": "成本结构与运营杠杆", "definition": "定义规模扩大后成本如何变化。"}
+{"id": "U12-A09", "name": "共享基础设施", "essence": "多业务共用固定资产。", "category_id": "U12", "category_name": "成本结构与运营杠杆", "definition": "定义规模扩大后成本如何变化。"}
+{"id": "U12-A10", "name": "资产轻", "essence": "避免拥有重资产，把资本需求转移给伙伴。", "category_id": "U12", "category_name": "成本结构与运营杠杆", "definition": "定义规模扩大后成本如何变化。"}
+{"id": "U12-A11", "name": "外包", "essence": "把非核心活动交给更高效供应商。", "category_id": "U12", "category_name": "成本结构与运营杠杆", "definition": "定义规模扩大后成本如何变化。"}
+{"id": "U12-A12", "name": "离岸/低成本地域", "essence": "利用地域成本差异。", "category_id": "U12", "category_name": "成本结构与运营杠杆", "definition": "定义规模扩大后成本如何变化。"}
+{"id": "U12-A13", "name": "集中采购", "essence": "通过规模降低采购价格。", "category_id": "U12", "category_name": "成本结构与运营杠杆", "definition": "定义规模扩大后成本如何变化。"}
+{"id": "U12-A14", "name": "库存最小化", "essence": "按需、寄售、Dropship等减少存货资金。", "category_id": "U12", "category_name": "成本结构与运营杠杆", "definition": "定义规模扩大后成本如何变化。"}
+{"id": "U12-A15", "name": "数字渠道替代物理渠道", "essence": "降低门店和人工分发成本。", "category_id": "U12", "category_name": "成本结构与运营杠杆", "definition": "定义规模扩大后成本如何变化。"}
+{"id": "U12-A16", "name": "无中间商D2C", "essence": "减少渠道层级与加价。", "category_id": "U12", "category_name": "成本结构与运营杠杆", "definition": "定义规模扩大后成本如何变化。"}
+{"id": "U12-A17", "name": "逆向物流优化", "essence": "回收、维修和再售降低全生命周期成本。", "category_id": "U12", "category_name": "成本结构与运营杠杆", "definition": "定义规模扩大后成本如何变化。"}
+{"id": "U13-A01", "name": "即时收付", "essence": "交易发生时收款并支付成本。", "category_id": "U13", "category_name": "现金流、营运资金与融资", "definition": "定义钱何时进出、谁为增长提供资金。"}
+{"id": "U13-A02", "name": "预收款", "essence": "交付前先收到客户资金。", "category_id": "U13", "category_name": "现金流、营运资金与融资", "definition": "定义钱何时进出、谁为增长提供资金。"}
+{"id": "U13-A03", "name": "年度预付", "essence": "一次收取较长周期订阅费。", "category_id": "U13", "category_name": "现金流、营运资金与融资", "definition": "定义钱何时进出、谁为增长提供资金。"}
+{"id": "U13-A04", "name": "套餐预付", "essence": "先收未来多次服务的资金。", "category_id": "U13", "category_name": "现金流、营运资金与融资", "definition": "定义钱何时进出、谁为增长提供资金。"}
+{"id": "U13-A05", "name": "押金", "essence": "持有可退资金换使用权；必须隔离返还义务。", "category_id": "U13", "category_name": "现金流、营运资金与融资", "definition": "定义钱何时进出、谁为增长提供资金。"}
+{"id": "U13-A06", "name": "保证金", "essence": "为履约或加盟等关系提供资金担保。", "category_id": "U13", "category_name": "现金流、营运资金与融资", "definition": "定义钱何时进出、谁为增长提供资金。"}
+{"id": "U13-A07", "name": "负营运资金/Cash Machine", "essence": "先从客户收款，之后再向供应商付款。", "category_id": "U13", "category_name": "现金流、营运资金与融资", "definition": "定义钱何时进出、谁为增长提供资金。"}
+{"id": "U13-A08", "name": "供应商信用", "essence": "供应商允许延期结算。", "category_id": "U13", "category_name": "现金流、营运资金与融资", "definition": "定义钱何时进出、谁为增长提供资金。"}
+{"id": "U13-A09", "name": "寄售资金结构", "essence": "未售库存主要由供应方占用资金。", "category_id": "U13", "category_name": "现金流、营运资金与融资", "definition": "定义钱何时进出、谁为增长提供资金。"}
+{"id": "U13-A10", "name": "预售", "essence": "先收订单再生产。", "category_id": "U13", "category_name": "现金流、营运资金与融资", "definition": "定义钱何时进出、谁为增长提供资金。"}
+{"id": "U13-A11", "name": "奖励型众筹", "essence": "群体先资助产品实现，再获得权益或产品。", "category_id": "U13", "category_name": "现金流、营运资金与融资", "definition": "定义钱何时进出、谁为增长提供资金。"}
+{"id": "U13-A12", "name": "股权众筹", "essence": "群体以股权方式提供资本；受证券监管。", "category_id": "U13", "category_name": "现金流、营运资金与融资", "definition": "定义钱何时进出、谁为增长提供资金。"}
+{"id": "U13-A13", "name": "债权众筹/借贷", "essence": "群体提供借款；受金融监管。", "category_id": "U13", "category_name": "现金流、营运资金与融资", "definition": "定义钱何时进出、谁为增长提供资金。"}
+{"id": "U13-A14", "name": "客户融资增长", "essence": "用客户预付款支持扩张。", "category_id": "U13", "category_name": "现金流、营运资金与融资", "definition": "定义钱何时进出、谁为增长提供资金。"}
+{"id": "U13-A15", "name": "加盟商融资增长", "essence": "由加盟者承担本地资本开支。", "category_id": "U13", "category_name": "现金流、营运资金与融资", "definition": "定义钱何时进出、谁为增长提供资金。"}
+{"id": "U13-A16", "name": "项目融资", "essence": "特定项目现金流为核心融资基础。", "category_id": "U13", "category_name": "现金流、营运资金与融资", "definition": "定义钱何时进出、谁为增长提供资金。"}
+{"id": "U13-A17", "name": "租赁融资", "essence": "用租金替代一次性购买资产。", "category_id": "U13", "category_name": "现金流、营运资金与融资", "definition": "定义钱何时进出、谁为增长提供资金。"}
+{"id": "U13-A18", "name": "以租代购", "essence": "租赁期内逐步取得资产所有权。", "category_id": "U13", "category_name": "现金流、营运资金与融资", "definition": "定义钱何时进出、谁为增长提供资金。"}
+{"id": "U13-A19", "name": "分期/BNPL", "essence": "延迟客户现金支出；涉及信用和监管。", "category_id": "U13", "category_name": "现金流、营运资金与融资", "definition": "定义钱何时进出、谁为增长提供资金。"}
+{"id": "U13-A20", "name": "应收账款融资/保理", "essence": "将未来应收转换为当前现金。", "category_id": "U13", "category_name": "现金流、营运资金与融资", "definition": "定义钱何时进出、谁为增长提供资金。"}
+{"id": "U13-A21", "name": "收入分成融资", "essence": "投资方按未来收入比例回收资本。", "category_id": "U13", "category_name": "现金流、营运资金与融资", "definition": "定义钱何时进出、谁为增长提供资金。"}
+{"id": "U13-A22", "name": "Float", "essence": "短期持有待结算资金形成资金池；需强监管与隔离。", "category_id": "U13", "category_name": "现金流、营运资金与融资", "definition": "定义钱何时进出、谁为增长提供资金。"}
+{"id": "U13-A23", "name": "延期退款/返还", "essence": "跨期使用客户资金；高流动性和监管风险。", "category_id": "U13", "category_name": "现金流、营运资金与融资", "definition": "定义钱何时进出、谁为增长提供资金。"}
+{"id": "U13-A24", "name": "储值/钱包", "essence": "客户预存资金后消费；通常受支付/储值监管。", "category_id": "U13", "category_name": "现金流、营运资金与融资", "definition": "定义钱何时进出、谁为增长提供资金。"}
+{"id": "U14-A01", "name": "软件许可", "essence": "按版本、设备、企业或周期授权软件。", "category_id": "U14", "category_name": "数据、IP、软件与AI", "definition": "定义数字资产如何形成可复制收入或控制点。"}
+{"id": "U14-A02", "name": "SaaS", "essence": "云端持续提供软件能力。", "category_id": "U14", "category_name": "数据、IP、软件与AI", "definition": "定义数字资产如何形成可复制收入或控制点。"}
+{"id": "U14-A03", "name": "API-as-a-Product", "essence": "把内部能力标准化为可调用产品。", "category_id": "U14", "category_name": "数据、IP、软件与AI", "definition": "定义数字资产如何形成可复制收入或控制点。"}
+{"id": "U14-A04", "name": "IaaS/Cloud Pay-as-you-go", "essence": "按基础设施实际用量收费。", "category_id": "U14", "category_name": "数据、IP、软件与AI", "definition": "定义数字资产如何形成可复制收入或控制点。"}
+{"id": "U14-A05", "name": "PaaS/开发平台", "essence": "提供开发、部署和运行环境。", "category_id": "U14", "category_name": "数据、IP、软件与AI", "definition": "定义数字资产如何形成可复制收入或控制点。"}
+{"id": "U14-A06", "name": "Open Source", "essence": "开放代码促进采用和协作。", "category_id": "U14", "category_name": "数据、IP、软件与AI", "definition": "定义数字资产如何形成可复制收入或控制点。"}
+{"id": "U14-A07", "name": "Open Core", "essence": "开源基础 + 企业专有功能。", "category_id": "U14", "category_name": "数据、IP、软件与AI", "definition": "定义数字资产如何形成可复制收入或控制点。"}
+{"id": "U14-A08", "name": "托管开源", "essence": "开源软件免费，托管运维收费。", "category_id": "U14", "category_name": "数据、IP、软件与AI", "definition": "定义数字资产如何形成可复制收入或控制点。"}
+{"id": "U14-A09", "name": "企业支持订阅", "essence": "围绕开源提供支持、认证和安全更新。", "category_id": "U14", "category_name": "数据、IP、软件与AI", "definition": "定义数字资产如何形成可复制收入或控制点。"}
+{"id": "U14-A10", "name": "数据即服务DaaS", "essence": "持续提供数据访问。", "category_id": "U14", "category_name": "数据、IP、软件与AI", "definition": "定义数字资产如何形成可复制收入或控制点。"}
+{"id": "U14-A11", "name": "分析即服务", "essence": "交付洞察而非原始数据。", "category_id": "U14", "category_name": "数据、IP、软件与AI", "definition": "定义数字资产如何形成可复制收入或控制点。"}
+{"id": "U14-A12", "name": "Sensor-as-a-Service", "essence": "传感器是入口，数据/分析服务变现。", "category_id": "U14", "category_name": "数据、IP、软件与AI", "definition": "定义数字资产如何形成可复制收入或控制点。"}
+{"id": "U14-A13", "name": "IoT连接收入", "essence": "设备持续在线产生订阅、数据或服务收入。", "category_id": "U14", "category_name": "数据、IP、软件与AI", "definition": "定义数字资产如何形成可复制收入或控制点。"}
+{"id": "U14-A14", "name": "数字孪生/远程运维", "essence": "基于实时数字状态提供持续服务。", "category_id": "U14", "category_name": "数据、IP、软件与AI", "definition": "定义数字资产如何形成可复制收入或控制点。"}
+{"id": "U14-A15", "name": "模型即服务MaaS", "essence": "按模型调用、token或能力层级收费。", "category_id": "U14", "category_name": "数据、IP、软件与AI", "definition": "定义数字资产如何形成可复制收入或控制点。"}
+{"id": "U14-A16", "name": "AI Copilot", "essence": "AI嵌入人类工作流，通常按席位/使用量混合收费。", "category_id": "U14", "category_name": "数据、IP、软件与AI", "definition": "定义数字资产如何形成可复制收入或控制点。"}
+{"id": "U14-A17", "name": "AI Agent-as-a-Service", "essence": "代理执行任务，按动作、工作量或成果计费。", "category_id": "U14", "category_name": "数据、IP、软件与AI", "definition": "定义数字资产如何形成可复制收入或控制点。"}
+{"id": "U14-A18", "name": "AI数字员工", "essence": "以月费、任务量或产出替代传统人力计价。", "category_id": "U14", "category_name": "数据、IP、软件与AI", "definition": "定义数字资产如何形成可复制收入或控制点。"}
+{"id": "U14-A19", "name": "成功结果计价AI", "essence": "按解决问题、合格线索、完成任务等计费。", "category_id": "U14", "category_name": "数据、IP、软件与AI", "definition": "定义数字资产如何形成可复制收入或控制点。"}
+{"id": "U14-A20", "name": "AI混合计价", "essence": "基础订阅 + credits/usage + 高级功能。", "category_id": "U14", "category_name": "数据、IP、软件与AI", "definition": "定义数字资产如何形成可复制收入或控制点。"}
+{"id": "U14-A21", "name": "数据网络效应", "essence": "更多使用产生更多数据，数据又提升产品价值。", "category_id": "U14", "category_name": "数据、IP、软件与AI", "definition": "定义数字资产如何形成可复制收入或控制点。"}
+{"id": "U14-A22", "name": "开发者生态", "essence": "第三方应用和集成扩大平台价值。", "category_id": "U14", "category_name": "数据、IP、软件与AI", "definition": "定义数字资产如何形成可复制收入或控制点。"}
+{"id": "U14-A23", "name": "应用商店抽成", "essence": "对第三方数字交易抽成。", "category_id": "U14", "category_name": "数据、IP、软件与AI", "definition": "定义数字资产如何形成可复制收入或控制点。"}
+{"id": "U14-A24", "name": "IP授权", "essence": "专利、算法、配方、品牌或内容授权。", "category_id": "U14", "category_name": "数据、IP、软件与AI", "definition": "定义数字资产如何形成可复制收入或控制点。"}
+{"id": "U14-A25", "name": "数据授权/洁净室", "essence": "以受控方式让合作方使用数据或模型。", "category_id": "U14", "category_name": "数据、IP、软件与AI", "definition": "定义数字资产如何形成可复制收入或控制点。"}
+{"id": "U14-A26", "name": "Embedded Software", "essence": "软件随其他硬件/服务嵌入并收费或分成。", "category_id": "U14", "category_name": "数据、IP、软件与AI", "definition": "定义数字资产如何形成可复制收入或控制点。"}
+{"id": "U15-A01", "name": "标准化复制", "essence": "把成功运营拆成可重复SOP。", "category_id": "U15", "category_name": "增长、复制与扩张", "definition": "定义从1到10、100、1000的复制引擎。"}
+{"id": "U15-A02", "name": "加盟扩张", "essence": "由当地加盟者出资和运营。", "category_id": "U15", "category_name": "增长、复制与扩张", "definition": "定义从1到10、100、1000的复制引擎。"}
+{"id": "U15-A03", "name": "城市/区域合伙人", "essence": "通过本地伙伴获取关系和履约能力。", "category_id": "U15", "category_name": "增长、复制与扩张", "definition": "定义从1到10、100、1000的复制引擎。"}
+{"id": "U15-A04", "name": "授权扩张", "essence": "以许可方式让第三方复制能力。", "category_id": "U15", "category_name": "增长、复制与扩张", "definition": "定义从1到10、100、1000的复制引擎。"}
+{"id": "U15-A05", "name": "OEM扩张", "essence": "通过合作制造快速扩大供给。", "category_id": "U15", "category_name": "增长、复制与扩张", "definition": "定义从1到10、100、1000的复制引擎。"}
+{"id": "U15-A06", "name": "渠道复制", "essence": "复制相同合作模板进入更多渠道。", "category_id": "U15", "category_name": "增长、复制与扩张", "definition": "定义从1到10、100、1000的复制引擎。"}
+{"id": "U15-A07", "name": "店中店复制", "essence": "依附既有场所快速扩展销售点。", "category_id": "U15", "category_name": "增长、复制与扩张", "definition": "定义从1到10、100、1000的复制引擎。"}
+{"id": "U15-A08", "name": "网络效应", "essence": "参与者增加提升价值和增长。", "category_id": "U15", "category_name": "增长、复制与扩张", "definition": "定义从1到10、100、1000的复制引擎。"}
+{"id": "U15-A09", "name": "推荐裂变", "essence": "现有用户带来新用户。", "category_id": "U15", "category_name": "增长、复制与扩张", "definition": "定义从1到10、100、1000的复制引擎。"}
+{"id": "U15-A10", "name": "用户生成供给", "essence": "增长供给侧时不等比例增加企业成本。", "category_id": "U15", "category_name": "增长、复制与扩张", "definition": "定义从1到10、100、1000的复制引擎。"}
+{"id": "U15-A11", "name": "开发者补充", "essence": "第三方持续扩充功能与应用。", "category_id": "U15", "category_name": "增长、复制与扩张", "definition": "定义从1到10、100、1000的复制引擎。"}
+{"id": "U15-A12", "name": "Land and Expand", "essence": "先从小团队/小用量进入，再扩席位、用量或模块。", "category_id": "U15", "category_name": "增长、复制与扩张", "definition": "定义从1到10、100、1000的复制引擎。"}
+{"id": "U15-A13", "name": "Cross-sell", "essence": "同一客户购买相邻产品。", "category_id": "U15", "category_name": "增长、复制与扩张", "definition": "定义从1到10、100、1000的复制引擎。"}
+{"id": "U15-A14", "name": "Upsell", "essence": "客户升级更高价格层级。", "category_id": "U15", "category_name": "增长、复制与扩张", "definition": "定义从1到10、100、1000的复制引擎。"}
+{"id": "U15-A15", "name": "品类扩张", "essence": "从一个高频/高信任入口扩至更多品类。", "category_id": "U15", "category_name": "增长、复制与扩张", "definition": "定义从1到10、100、1000的复制引擎。"}
+{"id": "U15-A16", "name": "地域复制", "essence": "复制到新城市/国家。", "category_id": "U15", "category_name": "增长、复制与扩张", "definition": "定义从1到10、100、1000的复制引擎。"}
+{"id": "U15-A17", "name": "并购/Roll-up", "essence": "收购分散经营者形成规模和协同。", "category_id": "U15", "category_name": "增长、复制与扩张", "definition": "定义从1到10、100、1000的复制引擎。"}
+{"id": "U15-A18", "name": "品牌授权", "essence": "利用品牌资产快速扩品类或地域。", "category_id": "U15", "category_name": "增长、复制与扩张", "definition": "定义从1到10、100、1000的复制引擎。"}
+{"id": "U15-A19", "name": "供应链规模飞轮", "essence": "订单越大采购越便宜，价格优势再带来更多订单。", "category_id": "U15", "category_name": "增长、复制与扩张", "definition": "定义从1到10、100、1000的复制引擎。"}
+{"id": "U15-A20", "name": "数据飞轮", "essence": "用户越多数据越好，产品越好又吸引更多用户。", "category_id": "U15", "category_name": "增长、复制与扩张", "definition": "定义从1到10、100、1000的复制引擎。"}
+{"id": "U15-A21", "name": "内容飞轮", "essence": "内容带来用户，用户行为产生更多内容与传播。", "category_id": "U15", "category_name": "增长、复制与扩张", "definition": "定义从1到10、100、1000的复制引擎。"}
+{"id": "U16-A01", "name": "品牌壁垒", "essence": "信任、认知和身份价值降低替代性。", "category_id": "U16", "category_name": "壁垒、控制点与战略位置", "definition": "定义价值链中什么因素让利润不被竞争吞噬。"}
+{"id": "U16-A02", "name": "规模壁垒", "essence": "成本、采购、覆盖或研发随规模形成优势。", "category_id": "U16", "category_name": "壁垒、控制点与战略位置", "definition": "定义价值链中什么因素让利润不被竞争吞噬。"}
+{"id": "U16-A03", "name": "网络效应壁垒", "essence": "竞争者难以复制参与者网络。", "category_id": "U16", "category_name": "壁垒、控制点与战略位置", "definition": "定义价值链中什么因素让利润不被竞争吞噬。"}
+{"id": "U16-A04", "name": "数据壁垒", "essence": "独特数据、历史数据或反馈闭环提高优势。", "category_id": "U16", "category_name": "壁垒、控制点与战略位置", "definition": "定义价值链中什么因素让利润不被竞争吞噬。"}
+{"id": "U16-A05", "name": "IP/专利壁垒", "essence": "法律保护的知识产权限制复制。", "category_id": "U16", "category_name": "壁垒、控制点与战略位置", "definition": "定义价值链中什么因素让利润不被竞争吞噬。"}
+{"id": "U16-A06", "name": "标准/协议控制", "essence": "掌握接口或事实标准获得生态控制点。", "category_id": "U16", "category_name": "壁垒、控制点与战略位置", "definition": "定义价值链中什么因素让利润不被竞争吞噬。"}
+{"id": "U16-A07", "name": "安装基础Installed Base", "essence": "已有设备/账户形成持续触达和互补品市场。", "category_id": "U16", "category_name": "壁垒、控制点与战略位置", "definition": "定义价值链中什么因素让利润不被竞争吞噬。"}
+{"id": "U16-A08", "name": "高切换成本", "essence": "迁移数据、流程、培训或集成成本高。", "category_id": "U16", "category_name": "壁垒、控制点与战略位置", "definition": "定义价值链中什么因素让利润不被竞争吞噬。"}
+{"id": "U16-A09", "name": "高频入口", "essence": "掌握用户经常发生的关键动作。", "category_id": "U16", "category_name": "壁垒、控制点与战略位置", "definition": "定义价值链中什么因素让利润不被竞争吞噬。"}
+{"id": "U16-A10", "name": "支付入口", "essence": "掌握交易结算位置。", "category_id": "U16", "category_name": "壁垒、控制点与战略位置", "definition": "定义价值链中什么因素让利润不被竞争吞噬。"}
+{"id": "U16-A11", "name": "渠道控制", "essence": "独占或强绑定重要客户入口。", "category_id": "U16", "category_name": "壁垒、控制点与战略位置", "definition": "定义价值链中什么因素让利润不被竞争吞噬。"}
+{"id": "U16-A12", "name": "供给独占", "essence": "拥有稀缺供应、牌照或独家合作。", "category_id": "U16", "category_name": "壁垒、控制点与战略位置", "definition": "定义价值链中什么因素让利润不被竞争吞噬。"}
+{"id": "U16-A13", "name": "监管牌照", "essence": "合规资格形成进入壁垒。", "category_id": "U16", "category_name": "壁垒、控制点与战略位置", "definition": "定义价值链中什么因素让利润不被竞争吞噬。"}
+{"id": "U16-A14", "name": "密度/本地网络", "essence": "本地区供需密度提高服务效果。", "category_id": "U16", "category_name": "壁垒、控制点与战略位置", "definition": "定义价值链中什么因素让利润不被竞争吞噬。"}
+{"id": "U16-A15", "name": "运营Know-how", "essence": "复杂执行能力难以简单复制。", "category_id": "U16", "category_name": "壁垒、控制点与战略位置", "definition": "定义价值链中什么因素让利润不被竞争吞噬。"}
+{"id": "U16-A16", "name": "生态互补品", "essence": "大量第三方互补产品提高迁移成本。", "category_id": "U16", "category_name": "壁垒、控制点与战略位置", "definition": "定义价值链中什么因素让利润不被竞争吞噬。"}
+{"id": "U16-A17", "name": "资本壁垒", "essence": "重资产或规模资本需求限制进入。", "category_id": "U16", "category_name": "壁垒、控制点与战略位置", "definition": "定义价值链中什么因素让利润不被竞争吞噬。"}
+{"id": "U16-A18", "name": "信任/信誉壁垒", "essence": "长期履约记录成为难复制资产。", "category_id": "U16", "category_name": "壁垒、控制点与战略位置", "definition": "定义价值链中什么因素让利润不被竞争吞噬。"}
+{"id": "U16-A19", "name": "成本领先", "essence": "结构性低成本使跟随者难获利。", "category_id": "U16", "category_name": "壁垒、控制点与战略位置", "definition": "定义价值链中什么因素让利润不被竞争吞噬。"}
+{"id": "U16-A20", "name": "差异化", "essence": "价值主张明显不同，避免同质竞争。", "category_id": "U16", "category_name": "壁垒、控制点与战略位置", "definition": "定义价值链中什么因素让利润不被竞争吞噬。"}
+{"id": "U16-A21", "name": "反定位/Aikido", "essence": "选择与行业主流相反的取舍，让在位者难以模仿。", "category_id": "U16", "category_name": "壁垒、控制点与战略位置", "definition": "定义价值链中什么因素让利润不被竞争吞噬。"}
+{"id": "U17-A01", "name": "产品寿命延长", "essence": "通过耐用、维护和升级延长使用。", "category_id": "U17", "category_name": "循环、可持续与社会价值", "definition": "定义资源循环、社会目标与经济模型如何兼容。"}
+{"id": "U17-A02", "name": "维修", "essence": "修复故障而不是替换产品。", "category_id": "U17", "category_name": "循环、可持续与社会价值", "definition": "定义资源循环、社会目标与经济模型如何兼容。"}
+{"id": "U17-A03", "name": "翻新", "essence": "恢复旧产品的功能和外观后再售。", "category_id": "U17", "category_name": "循环、可持续与社会价值", "definition": "定义资源循环、社会目标与经济模型如何兼容。"}
+{"id": "U17-A04", "name": "再制造", "essence": "用回收部件重新制造达到可用标准。", "category_id": "U17", "category_name": "循环、可持续与社会价值", "definition": "定义资源循环、社会目标与经济模型如何兼容。"}
+{"id": "U17-A05", "name": "二手转售", "essence": "把使用过的商品重新进入市场。", "category_id": "U17", "category_name": "循环、可持续与社会价值", "definition": "定义资源循环、社会目标与经济模型如何兼容。"}
+{"id": "U17-A06", "name": "回购/Take-back", "essence": "生产商或平台负责产品回收。", "category_id": "U17", "category_name": "循环、可持续与社会价值", "definition": "定义资源循环、社会目标与经济模型如何兼容。"}
+{"id": "U17-A07", "name": "租赁替代所有权", "essence": "用更高资产利用率减少闲置。", "category_id": "U17", "category_name": "循环、可持续与社会价值", "definition": "定义资源循环、社会目标与经济模型如何兼容。"}
+{"id": "U17-A08", "name": "共享", "essence": "多用户共同使用同一资产。", "category_id": "U17", "category_name": "循环、可持续与社会价值", "definition": "定义资源循环、社会目标与经济模型如何兼容。"}
+{"id": "U17-A09", "name": "再利用", "essence": "产品或部件在相同/相近用途继续使用。", "category_id": "U17", "category_name": "循环、可持续与社会价值", "definition": "定义资源循环、社会目标与经济模型如何兼容。"}
+{"id": "U17-A10", "name": "废物变资源/Trash-to-Cash", "essence": "副产品、废料成为新价值来源。", "category_id": "U17", "category_name": "循环、可持续与社会价值", "definition": "定义资源循环、社会目标与经济模型如何兼容。"}
+{"id": "U17-A11", "name": "回收材料", "essence": "将材料重新投入生产。", "category_id": "U17", "category_name": "循环、可持续与社会价值", "definition": "定义资源循环、社会目标与经济模型如何兼容。"}
+{"id": "U17-A12", "name": "再生/可再生投入", "essence": "采用可再生材料和再生系统。", "category_id": "U17", "category_name": "循环、可持续与社会价值", "definition": "定义资源循环、社会目标与经济模型如何兼容。"}
+{"id": "U17-A13", "name": "逆向物流", "essence": "建立回收、维修、翻新、再售的反向网络。", "category_id": "U17", "category_name": "循环、可持续与社会价值", "definition": "定义资源循环、社会目标与经济模型如何兼容。"}
+{"id": "U17-A14", "name": "充分性/Sufficiency", "essence": "通过更少消费、更长寿命创造价值。", "category_id": "U17", "category_name": "循环、可持续与社会价值", "definition": "定义资源循环、社会目标与经济模型如何兼容。"}
+{"id": "U17-A15", "name": "社会企业", "essence": "经济收入与明确社会目标共同设计。", "category_id": "U17", "category_name": "循环、可持续与社会价值", "definition": "定义资源循环、社会目标与经济模型如何兼容。"}
+{"id": "U17-A16", "name": "交叉补贴公益", "essence": "高支付能力客户补贴低支付能力群体。", "category_id": "U17", "category_name": "循环、可持续与社会价值", "definition": "定义资源循环、社会目标与经济模型如何兼容。"}
+{"id": "U17-A17", "name": "合作社/成员所有", "essence": "用户或劳动者共同拥有并分享收益。", "category_id": "U17", "category_name": "循环、可持续与社会价值", "definition": "定义资源循环、社会目标与经济模型如何兼容。"}
+{"id": "U17-A18", "name": "影响力付费", "essence": "公共部门/资方按社会成果支付。", "category_id": "U17", "category_name": "循环、可持续与社会价值", "definition": "定义资源循环、社会目标与经济模型如何兼容。"}
+{"id": "U18-A01", "name": "单位经济性风险", "essence": "单个客户/订单贡献不足以覆盖可变成本和获客。", "category_id": "U18", "category_name": "风险、监管与生命周期", "definition": "定义模式何时失效、受何约束、何时退出或重构。"}
+{"id": "U18-A02", "name": "现金流期限错配", "essence": "回款与付款时间结构导致流动性危机。", "category_id": "U18", "category_name": "风险、监管与生命周期", "definition": "定义模式何时失效、受何约束、何时退出或重构。"}
+{"id": "U18-A03", "name": "返还义务风险", "essence": "押金、返现、回购承诺超过可用现金。", "category_id": "U18", "category_name": "风险、监管与生命周期", "definition": "定义模式何时失效、受何约束、何时退出或重构。"}
+{"id": "U18-A04", "name": "补贴依赖", "essence": "补贴停止后需求或供给迅速消失。", "category_id": "U18", "category_name": "风险、监管与生命周期", "definition": "定义模式何时失效、受何约束、何时退出或重构。"}
+{"id": "U18-A05", "name": "逆向选择", "essence": "优惠吸引的恰好是最不盈利客户。", "category_id": "U18", "category_name": "风险、监管与生命周期", "definition": "定义模式何时失效、受何约束、何时退出或重构。"}
+{"id": "U18-A06", "name": "道德风险", "essence": "参与方因风险转移而降低努力或提高风险行为。", "category_id": "U18", "category_name": "风险、监管与生命周期", "definition": "定义模式何时失效、受何约束、何时退出或重构。"}
+{"id": "U18-A07", "name": "服务质量失控", "essence": "分散履约导致体验不可预测。", "category_id": "U18", "category_name": "风险、监管与生命周期", "definition": "定义模式何时失效、受何约束、何时退出或重构。"}
+{"id": "U18-A08", "name": "合作方依赖", "essence": "关键渠道、供应商或平台掌握过大议价权。", "category_id": "U18", "category_name": "风险、监管与生命周期", "definition": "定义模式何时失效、受何约束、何时退出或重构。"}
+{"id": "U18-A09", "name": "去中介化", "essence": "平台撮合后双方绕过平台交易。", "category_id": "U18", "category_name": "风险、监管与生命周期", "definition": "定义模式何时失效、受何约束、何时退出或重构。"}
+{"id": "U18-A10", "name": "鸡生蛋网络问题", "essence": "双边平台早期一侧缺乏导致另一侧也不加入。", "category_id": "U18", "category_name": "风险、监管与生命周期", "definition": "定义模式何时失效、受何约束、何时退出或重构。"}
+{"id": "U18-A11", "name": "多归属Multi-homing", "essence": "用户/供给可低成本同时使用多个平台，削弱壁垒。", "category_id": "U18", "category_name": "风险、监管与生命周期", "definition": "定义模式何时失效、受何约束、何时退出或重构。"}
+{"id": "U18-A12", "name": "库存风险", "essence": "需求预测错误形成存货与折价压力。", "category_id": "U18", "category_name": "风险、监管与生命周期", "definition": "定义模式何时失效、受何约束、何时退出或重构。"}
+{"id": "U18-A13", "name": "履约/物流风险", "essence": "配送、时效、上门等成本超出模型。", "category_id": "U18", "category_name": "风险、监管与生命周期", "definition": "定义模式何时失效、受何约束、何时退出或重构。"}
+{"id": "U18-A14", "name": "信用风险", "essence": "分期、贷款或赊销发生违约。", "category_id": "U18", "category_name": "风险、监管与生命周期", "definition": "定义模式何时失效、受何约束、何时退出或重构。"}
+{"id": "U18-A15", "name": "欺诈风险", "essence": "虚假交易、薅补贴、身份欺诈或套利。", "category_id": "U18", "category_name": "风险、监管与生命周期", "definition": "定义模式何时失效、受何约束、何时退出或重构。"}
+{"id": "U18-A16", "name": "金融监管", "essence": "存款、收益承诺、借贷、保险、支付等受许可监管。", "category_id": "U18", "category_name": "风险、监管与生命周期", "definition": "定义模式何时失效、受何约束、何时退出或重构。"}
+{"id": "U18-A17", "name": "证券/众筹监管", "essence": "股权、收益权和投资产品可能受证券规则约束。", "category_id": "U18", "category_name": "风险、监管与生命周期", "definition": "定义模式何时失效、受何约束、何时退出或重构。"}
+{"id": "U18-A18", "name": "消费者保护", "essence": "广告、退款、自动续费、价格透明等受法规约束。", "category_id": "U18", "category_name": "风险、监管与生命周期", "definition": "定义模式何时失效、受何约束、何时退出或重构。"}
+{"id": "U18-A19", "name": "劳动用工分类", "essence": "平台劳动力可能触发雇佣责任。", "category_id": "U18", "category_name": "风险、监管与生命周期", "definition": "定义模式何时失效、受何约束、何时退出或重构。"}
+{"id": "U18-A20", "name": "隐私与数据合规", "essence": "数据采集、共享和画像受隐私规则约束。", "category_id": "U18", "category_name": "风险、监管与生命周期", "definition": "定义模式何时失效、受何约束、何时退出或重构。"}
+{"id": "U18-A21", "name": "IP风险", "essence": "训练数据、内容、软件、品牌或专利可能侵权。", "category_id": "U18", "category_name": "风险、监管与生命周期", "definition": "定义模式何时失效、受何约束、何时退出或重构。"}
+{"id": "U18-A22", "name": "AI供应商依赖", "essence": "基础模型、云或API涨价/限额影响毛利与稳定性。", "category_id": "U18", "category_name": "风险、监管与生命周期", "definition": "定义模式何时失效、受何约束、何时退出或重构。"}
+{"id": "U18-A23", "name": "AI成本失控", "essence": "高使用量带来非零推理成本，使固定价亏损。", "category_id": "U18", "category_name": "风险、监管与生命周期", "definition": "定义模式何时失效、受何约束、何时退出或重构。"}
+{"id": "U18-A24", "name": "结果归因争议", "essence": "Outcome pricing中结果是否由产品造成难界定。", "category_id": "U18", "category_name": "风险、监管与生命周期", "definition": "定义模式何时失效、受何约束、何时退出或重构。"}
+{"id": "U18-A25", "name": "安全/合规责任", "essence": "自动化代理执行动作带来权限、审计和损失责任。", "category_id": "U18", "category_name": "风险、监管与生命周期", "definition": "定义模式何时失效、受何约束、何时退出或重构。"}
+{"id": "U18-A26", "name": "市场教育成本", "essence": "新习惯需要高额教育成本。", "category_id": "U18", "category_name": "风险、监管与生命周期", "definition": "定义模式何时失效、受何约束、何时退出或重构。"}
+{"id": "U18-A27", "name": "生命周期衰退", "essence": "技术、渠道或客户行为变化使原模式失效。", "category_id": "U18", "category_name": "风险、监管与生命周期", "definition": "定义模式何时失效、受何约束、何时退出或重构。"}
+{"id": "U18-A28", "name": "监管套利失效", "essence": "依赖规则空隙的利润可能随政策变化消失。", "category_id": "U18", "category_name": "风险、监管与生命周期", "definition": "定义模式何时失效、受何约束、何时退出或重构。"}
+{"id": "U18-A29", "name": "返点透明度风险", "essence": "后台收入未向应知方披露，导致代理冲突、审计和合同风险。", "category_id": "U18", "category_name": "风险、监管与生命周期", "definition": "定义模式何时失效、受何约束、何时退出或重构。"}
+{"id": "U18-A30", "name": "商业贿赂/个人回扣风险", "essence": "利益直接进入采购、销售或代理个人账户，与正常公司级返点有本质区别。", "category_id": "U18", "category_name": "风险、监管与生命周期", "definition": "定义模式何时失效、受何约束、何时退出或重构。"}
+{"id": "U18-A31", "name": "返点会计错报", "essence": "未正确计提、冲减成本/收入或处理可变对价，导致利润失真。", "category_id": "U18", "category_name": "风险、监管与生命周期", "definition": "定义模式何时失效、受何约束、何时退出或重构。"}
+{"id": "U18-A32", "name": "门槛博弈/Threshold Gaming", "essence": "为了跨过返利门槛而提前采购、虚增投放、渠道压货或做低质量交易。", "category_id": "U18", "category_name": "风险、监管与生命周期", "definition": "定义模式何时失效、受何约束、何时退出或重构。"}
+{"id": "U18-A33", "name": "返点泄漏", "essence": "应得返点因申报、证据、SKU归类、期限或数据缺失未收到。", "category_id": "U18", "category_name": "风险、监管与生命周期", "definition": "定义模式何时失效、受何约束、何时退出或重构。"}
+{"id": "U18-A34", "name": "Clawback追回风险", "essence": "退款、退货、违约或资格变化导致历史奖励被追回。", "category_id": "U18", "category_name": "风险、监管与生命周期", "definition": "定义模式何时失效、受何约束、何时退出或重构。"}
+{"id": "U18-A35", "name": "净价歧视/竞争风险", "essence": "不同买家的综合deal rate差异可能触发价格歧视或竞争法问题。", "category_id": "U18", "category_name": "风险、监管与生命周期", "definition": "定义模式何时失效、受何约束、何时退出或重构。"}
+{"id": "U18-A36", "name": "排他返点竞争风险", "essence": "返点与高份额/排他条件绑定时可能限制竞争。", "category_id": "U18", "category_name": "风险、监管与生命周期", "definition": "定义模式何时失效、受何约束、何时退出或重构。"}
+{"id": "U18-A37", "name": "后台利益错配", "essence": "渠道或代理为了自身后台奖励，选择并非最符合终端客户利益的产品。", "category_id": "U18", "category_name": "风险、监管与生命周期", "definition": "定义模式何时失效、受何约束、何时退出或重构。"}
+{"id": "U19-A01", "name": "标价/List Price", "essence": "公开或名义报价，是价格瀑布的起点，不等于真实净价格。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A02", "name": "发票内折扣/On-invoice Discount", "essence": "直接体现在发票上的折扣。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A03", "name": "发票外折扣/Off-invoice Discount", "essence": "不直接改变发票单价、后续单独结算的优惠。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A04", "name": "合同基础折扣", "essence": "由客户等级、渠道身份或框架合同预先约定的折扣。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A05", "name": "阶梯数量返点/Tiered Volume Rebate", "essence": "累计采购/投放达到不同门槛后获得不同返点率。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A06", "name": "追溯式数量返点/Retroactive Rebate", "essence": "跨过门槛后，对此前全部合格交易按新比例重算。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A07", "name": "增量式数量返点/Incremental Rebate", "essence": "只对超过各档门槛的增量部分应用更高返点。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A08", "name": "增长返点/Growth Rebate", "essence": "相对基期增长达到目标后返还奖励。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A09", "name": "年终返点/Year-end Rebate", "essence": "以年度累计业绩结算的后台返利。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A10", "name": "季度/月度返点", "essence": "按季度、月度等周期进行累计与结算。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A11", "name": "年度数量奖金/AVB", "essence": "基于年度聚合采购/媒体投放量形成的奖金或返还。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A12", "name": "最低消费/采购门槛", "essence": "达到最低合格金额后才开始获得返点或权益。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A13", "name": "Stretch Target Bonus", "essence": "超过基础目标后，再设置更高目标的额外奖金。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A14", "name": "超额完成加速器/Accelerator", "essence": "业绩超过目标后提高后续奖励率。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A15", "name": "市场份额返点", "essence": "采购方把更高份额给予单一供应商后获得奖励。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A16", "name": "品类份额返点", "essence": "在特定SKU/品类达到份额或占比条件后获得奖励。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A17", "name": "产品组合/Mix Rebate", "essence": "购买指定高价值/战略产品组合后获得额外奖励。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A18", "name": "战略产品加速奖励", "essence": "厂商为推动特定新品、云产品或战略SKU设置更高奖励。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A19", "name": "新客户奖励", "essence": "渠道为首次获取或激活新客户获得奖励。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A20", "name": "续约/留存奖励", "essence": "基于客户续约、保持活跃或降低流失获得奖励。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A21", "name": "使用量/消费奖励", "essence": "基于真实消耗而非订单金额结算后台奖励。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A22", "name": "承诺量折扣/Commitment Discount", "essence": "提前承诺未来使用或采购量，交换更低实际价格。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A23", "name": "预付承诺折扣", "essence": "提前支付或预购额度，交换更高折扣。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A24", "name": "早付款折扣/Prompt-payment Discount", "essence": "提前结算账款换取折扣。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A25", "name": "账期经济价值", "essence": "更长付款期本身相当于融资利益，应纳入净经济性。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A26", "name": "免费商品/Free Goods", "essence": "返点不以现金支付，而以额外商品体现。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A27", "name": "免费媒体库存/Media Credits", "essence": "以免费媒体曝光、库存或价值池替代现金返利。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A28", "name": "服务Credits", "essence": "以云额度、广告额度、SaaS credits、服务抵扣金等形式返还。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A29", "name": "Make-good/补量", "essence": "未达到约定效果或交付质量时，用额外服务/媒体补偿。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A30", "name": "免费支持/培训/认证", "essence": "以专业服务、培训、认证席位等非现金价值形成真实经济利益。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A31", "name": "数据/线索Credits", "essence": "以数据、潜客、名单、研究资源等非现金权益形成收益。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A32", "name": "合作广告基金/Co-op Funds", "essence": "供应商按合作规则共同承担渠道营销费用。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A33", "name": "市场发展基金/MDF", "essence": "厂商为渠道增长、活动、获客、品牌建设提供专项资金。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A34", "name": "Performance Fund", "essence": "按销售、陈列、推广、服务等绩效提供专项资金。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A35", "name": "SPIFF/销售人员激励", "essence": "厂商向渠道销售团队设置短期单品/目标奖金；需明确受益者和合规。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A36", "name": "Deal Registration 优惠", "essence": "渠道提前登记商机后获得价格保护、额外折扣或优先权。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A37", "name": "合作伙伴等级奖励", "essence": "Silver/Gold/战略伙伴等等级对应不同后台经济权益。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A38", "name": "认证/能力奖励", "essence": "达到认证、技术能力、客户成功等要求后获得奖励。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A39", "name": "区域/城市奖励", "essence": "针对指定地区、市场开拓或覆盖率设置奖励。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A40", "name": "独家/排他奖励", "essence": "承诺排他、优先采购或主要份额后获得商业利益；需竞争法审查。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A41", "name": "优先陈列/展示费", "essence": "为更优货架、频道、流量位、推荐位支付或返还经济利益。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A42", "name": "Slotting Allowance/进场费", "essence": "供应商为进入零售货架、平台或渠道支付前置费用。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A43", "name": "Pay-to-stay/留架费", "essence": "为持续保留渠道位置、陈列或销售资格支付费用。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A44", "name": "Markdown Allowance/降价补贴", "essence": "供应商补偿渠道降价促销造成的毛利损失。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A45", "name": "Stock Rotation Allowance/库存轮换", "essence": "允许滞销库存调换、回收或获得补贴，降低渠道库存风险。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A46", "name": "Freight/物流补贴", "essence": "运费、仓储、配送或最后一公里成本由另一方部分承担。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A47", "name": "安装/部署补贴", "essence": "厂商补贴初始安装、迁移、部署或实施成本。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A48", "name": "Bill-back", "essence": "渠道先按标准价购买，满足条件后供应商按交易明细返还差额。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A49", "name": "Chargeback", "essence": "渠道/分销商按下游特定协议价销售后，向上游申请价差补偿。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A50", "name": "Rebate Clawback/追回", "essence": "若后续不满足条件、退货、取消或违反规则，已计提返点被追回。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A51", "name": "封顶/Cap", "essence": "奖励达到上限后不再增长。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A52", "name": "保底/Floor", "essence": "达到资格后至少获得最低金额或最低比例。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A53", "name": "门槛断崖/Cliff Threshold", "essence": "未达到门槛为0，跨过门槛立即产生较大经济变化。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A54", "name": "平滑门槛/Progressive Threshold", "essence": "奖励随达成度逐步变化，避免断崖。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A55", "name": "跨账户聚合", "essence": "同一集团多个账户/子公司交易合并计算门槛。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A56", "name": "跨品类聚合", "essence": "多个产品线或媒体渠道合并形成累计采购基数。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A57", "name": "集团级采购池", "essence": "母公司/代理集团集中多个客户或业务量后获得更高经济待遇。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A58", "name": "组合门槛", "essence": "同时满足金额、增长率、产品组合、认证等多条件才触发奖励。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A59", "name": "保密协议价/Confidential Net Price", "essence": "价格或返点仅对特定客户/渠道披露，不公开展示。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A60", "name": "Side Letter/补充协议", "essence": "主合同之外通过补充文件约定价格、奖励或例外条款。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A61", "name": "Principal Trading Margin", "essence": "中介以自营主体先买入资源，再转售给客户赚取差价。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A62", "name": "Dual Rate Card/双重价卡", "essence": "同一资源在代理身份与自营身份下存在不同采购/销售价格。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A63", "name": "Arbitrage Spread/套利价差", "essence": "利用不同渠道、区域、时间、身份或价格层的差异赚取价差。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A64", "name": "服务协议型返还", "essence": "表面为研究、咨询、技术等服务费，经济上可能与采购量关联；需验证真实服务与披露。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A65", "name": "Value Pot/价值池", "essence": "基于预期或聚合采购量提前获得免费/折扣资源，后续在客户间分配。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A66", "name": "Soft-dollar/非现金软利益", "essence": "会议、培训、研究、工具、资源等并非现金但具有可计量经济价值。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A67", "name": "个人级回扣/Kickback Risk", "essence": "利益支付给个人而非合同主体；可能涉及商业贿赂、欺诈或利益冲突，不能按正常返点处理。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A68", "name": "未披露代理返点/Conflict Rebate", "essence": "代理因客户支出获得供应方利益但客户不知情，形成代理冲突与透明度风险。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A69", "name": "最惠客户/MFN 约束", "essence": "承诺不给其他客户更优惠价格，影响真实议价空间与策略。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A70", "name": "返点审计权", "essence": "合同允许核查计提、门槛、基数、抵扣和支付记录。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A71", "name": "True-up/期末调整", "essence": "周期结束后根据实际合格交易重新核算应付/应收返点。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A72", "name": "Rebate Accrual/返点计提", "essence": "在实际支付前，根据预计达成率在财务中估计返点影响。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A73", "name": "返点泄漏/Rebate Leakage", "essence": "应获得但因数据、流程、申领期限、证据不足而未兑现的利益。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A74", "name": "重复激励/Stacking", "essence": "同一交易可叠加多个折扣、返点、基金或credits。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A75", "name": "互斥激励/Exclusion Rule", "essence": "某些激励不可叠加，选择其一。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A76", "name": "资格窗口/Eligibility Window", "essence": "只有特定期间、区域、SKU、客户类型、交易类型合格。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A77", "name": "申领窗口/Claim Window", "essence": "达到条件后必须在限定时间内提交材料，否则失去权益。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A78", "name": "证明材料/Proof of Execution", "essence": "返点、MDF、co-op等需要活动证据、订单、发票、投放数据等。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A79", "name": "受益所有者/Beneficiary", "essence": "明确经济利益最终属于客户、代理、渠道公司还是个人。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A80", "name": "披露义务/Disclosure", "essence": "明确是否必须向委托方、客户、投资人或监管机构披露返利。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A81", "name": "净有效价格/Net Effective Price", "essence": "扣除全部现金与非现金利益、加入费用与融资价值后的真实单位价格。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A82", "name": "净有效收入/Net Effective Revenue", "essence": "扣除返还、分成、credits、促销支持等后的真实收入。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}
+{"id": "U19-A83", "name": "Deal Rate/综合交易率", "essence": "把多种折扣、返点、free goods、基金等折算成统一经济率。", "category_id": "U19", "category_name": "条件性收益、返点与隐性经济层", "definition": "定义标价之外由门槛、累计量、返利、credits、基金、账期、非现金权益、补充协议和代理关系形成的第二层/第三层真实经济价格。"}

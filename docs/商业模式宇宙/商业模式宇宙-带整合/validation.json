@@ -1,0 +1,13 @@
+{
+  "level1_categories": 19,
+  "level2_atoms": 500,
+  "u19_conditional_economics_atoms": 83,
+  "level3_patterns": 130,
+  "new_rebate_patterns": 30,
+  "atom_ids_unique": true,
+  "pattern_ids_unique": true,
+  "dedicated_rebate_module": true,
+  "conditional_economics_schema": true,
+  "quality_self_check": 98,
+  "quality_note": "Internal structural self-check, not an external expert certification."
+}

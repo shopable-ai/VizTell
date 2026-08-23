@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BusinessModelUniverseProjectSignature",
+  "type": "object",
+  "properties": {
+    "project": {
+      "type": "object"
+    },
+    "actors": {
+      "type": "array"
+    },
+    "problem": {
+      "type": "object"
+    },
+    "offer": {
+      "type": "object"
+    },
+    "delivery": {
+      "type": "object"
+    },
+    "economics": {
+      "type": "object"
+    },
+    "retention": {
+      "type": "object"
+    },
+    "growth": {
+      "type": "object"
+    },
+    "digital_assets": {
+      "type": "object"
+    },
+    "constraints": {
+      "type": "object"
+    },
+    "evidence": {
+      "type": "object"
+    },
+    "atoms": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "patterns": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "conditional_economics": {
+      "type": "object"
+    }
+  }
+}
