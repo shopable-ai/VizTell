@@ -1,12 +1,18 @@
 {
   "version": "v4",
+  "runtime_extension": "runtime-v1",
   "universe_root": "docs/商业模式宇宙",
   "human_entry": "README.md",
   "manifest": "MANIFEST.md",
   "current_entry": "00_导航与总览/00_当前有效版本与加载入口.md",
   "canonical_human_paths": {
     "v4_pattern_index": "01_核心机制与组合模式/05_v4新增组合模式P171-P200.md",
-    "opportunity_transformation_lens": "01_核心机制与组合模式/06_机会来源_差异捕获与商业模式变换算子.md"
+    "opportunity_transformation_lens": "01_核心机制与组合模式/06_机会来源_差异捕获与商业模式变换算子.md",
+    "runtime_maturity_map": "10_任务工作流与运行时/00_下一阶段演进与成熟度地图.md",
+    "runtime_router_retrieval": "10_任务工作流与运行时/01_任务路由_检索_上下文与数据门.md",
+    "runtime_workflow": "10_任务工作流与运行时/02_端到端商业推理Workflow与知识生命周期.md",
+    "benchmark_system": "11_Benchmark与回归/00_Benchmark评测体系_A-E_消融_回归.md",
+    "benchmark_seed_cases": "11_Benchmark与回归/01_T01电子书与T02_AI_API跨场景Canary.md"
   },
   "base_version": "v2",
   "base_level1_categories": 19,
@@ -36,7 +42,11 @@
   "v4_total_atoms": 676,
   "v4_total_patterns": 200,
   "horizontal_human_lenses": [
-    "01_核心机制与组合模式/06_机会来源_差异捕获与商业模式变换算子.md"
+    "01_核心机制与组合模式/06_机会来源_差异捕获与商业模式变换算子.md",
+    "10_任务工作流与运行时/00_下一阶段演进与成熟度地图.md",
+    "10_任务工作流与运行时/01_任务路由_检索_上下文与数据门.md",
+    "10_任务工作流与运行时/02_端到端商业推理Workflow与知识生命周期.md",
+    "11_Benchmark与回归/00_Benchmark评测体系_A-E_消融_回归.md"
   ],
   "horizontal_human_lenses_are_not_new_ids": true,
   "extension_atom_ids_unique": true,
@@ -44,6 +54,20 @@
   "product_role_ids_unique": true,
   "no_new_u28_plus": true,
   "preserves_v2_v3_ids": true,
+  "runtime_v1": {
+    "creates_new_ontology_ids": false,
+    "task_families": 8,
+    "active_benchmark_cases": ["T01", "T02"],
+    "comparison_conditions": ["A", "B", "C", "D", "E"],
+    "error_taxonomy": ["K1", "R1", "W1", "C1", "E1", "F1", "S1", "T1", "O1", "B1"],
+    "machine_assets": {
+      "task_router": "08_机器数据与Schema/task_router_v1.json",
+      "runtime_protocol": "08_机器数据与Schema/commercial_reasoning_runtime_v1.json",
+      "benchmark_manifest": "08_机器数据与Schema/benchmark_manifest_v1.json"
+    },
+    "repository_harness": "scripts/benchmark_business_model_universe.py",
+    "harness_score_is_not_answer_quality_score": true
+  },
   "load_rule": {
     "atoms": [
       "08_机器数据与Schema/atoms.jsonl",
@@ -58,7 +82,12 @@
     "product_roles": "08_机器数据与Schema/product_roles_v4.json",
     "schema": "08_机器数据与Schema/business_model_signature_v4.schema.json",
     "rebate_schema": "08_机器数据与Schema/conditional_economics_rebate.schema.json",
-    "skill_protocol": "07_元数据知识图谱与Skill/02_v4_Skill机器加载与Offer决策协议.md"
+    "skill_protocol": "07_元数据知识图谱与Skill/02_v4_Skill机器加载与Offer决策协议.md",
+    "runtime": {
+      "task_router": "08_机器数据与Schema/task_router_v1.json",
+      "runtime_protocol": "08_机器数据与Schema/commercial_reasoning_runtime_v1.json",
+      "benchmark_manifest": "08_机器数据与Schema/benchmark_manifest_v1.json"
+    }
   },
   "required_current_files": [
     "README.md",
@@ -87,7 +116,15 @@
     "08_机器数据与Schema/product_roles_v4.json",
     "08_机器数据与Schema/business_model_signature_v4.schema.json",
     "08_机器数据与Schema/conditional_economics_rebate.schema.json",
+    "08_机器数据与Schema/task_router_v1.json",
+    "08_机器数据与Schema/commercial_reasoning_runtime_v1.json",
+    "08_机器数据与Schema/benchmark_manifest_v1.json",
     "09_专题商业模式/电子书商业模式.md",
+    "10_任务工作流与运行时/00_下一阶段演进与成熟度地图.md",
+    "10_任务工作流与运行时/01_任务路由_检索_上下文与数据门.md",
+    "10_任务工作流与运行时/02_端到端商业推理Workflow与知识生命周期.md",
+    "11_Benchmark与回归/00_Benchmark评测体系_A-E_消融_回归.md",
+    "11_Benchmark与回归/01_T01电子书与T02_AI_API跨场景Canary.md",
     "90_研究来源与参考/03_v4缺口审计与研究来源.md"
   ],
   "migration_integrity_audit": {
@@ -124,8 +161,17 @@
     "conditional_economics_reuses_u19": true,
     "human_readable_v4_pattern_index_present": true,
     "path_aware_validation": true,
+    "runtime_separated_from_ontology_ids": true,
+    "runtime_has_task_router": true,
+    "runtime_has_real_data_and_evidence_gate": true,
+    "runtime_has_trace": true,
+    "benchmark_has_a_to_e": true,
+    "benchmark_has_ablation": true,
+    "benchmark_has_error_taxonomy": true,
+    "benchmark_has_regression_policy": true,
+    "benchmark_harness_score_not_mislabeled_as_answer_quality": true,
     "material_asset_loss_detected": false
   },
   "quality_self_check": 98,
-  "quality_note": "Internal structural self-check, not external certification. Restructure audit found no material asset loss; current canonical human sequence is 05 P171-P200, 06 opportunity/transformation lens."
+  "quality_note": "Internal structural self-check, not external certification. v4 ontology preservation remains the stable baseline; runtime-v1 adds routing/workflow/eval assets without creating new ontology IDs. A-E business-answer uplift remains unmeasured until isolated model runs are executed."
 }
