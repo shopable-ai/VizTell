@@ -8,7 +8,7 @@
 - `10_项目范围与边界.md`
 - `11_知识层级与分类规范.md`
 - `12_阅读与使用路径.md`
-- `13_完整性与反方审计清单.md`
+- `13_完整性与反方审计清单.md` — 同时包含仓库结构完整性与商业知识完整性审计
 - `20_映射规则风险门与95分验收.md`
 
 ## 01_核心机制与组合模式
@@ -17,6 +17,7 @@
 - `02_L3经典与组合模式库.md`
 - `03_v3新增组合模式P131-P170.md`
 - `04_v4商品角色价格架构Offer转化与场景经济.md`
+- `05_v4新增组合模式P171-P200.md` — v4 Pattern 人类阅读镜像；机器事实源仍为 08 中 JSONL
 - `10_结构化知识地图/` — 原人工浏览主题地图全量保留
 
 ## 02_价值链与利润池
@@ -40,8 +41,8 @@
 
 ## 07_元数据知识图谱与Skill
 - `00_元数据知识图谱与Skill协议.md`
-- `01_v3_Skill增量协议.md`
-- `02_v4_Skill机器加载与Offer决策协议.md`
+- `01_v3_Skill增量协议.md` — 已使用统一目录当前文件名
+- `02_v4_Skill机器加载与Offer决策协议.md` — 当前 v4 Offer/价格/场景/Cohort 决策协议
 
 ## 08_机器数据与Schema
 - `atoms.jsonl`
@@ -57,7 +58,7 @@
 - `conditional_economics_rebate.schema.json`
 - `validation.json`
 - `validation_v3.json`
-- `validation_v4.json`
+- `validation_v4.json` — 当前路径感知的结构与版本校验清单
 
 ## 09_专题商业模式
 - `电子书商业模式.md`
@@ -71,3 +72,14 @@
 - `99_历史结构/MANIFEST_v0.1.md`
 - `99_历史结构/00_v2基线总览与核心结论.md`
 - `99_历史结构/00A_原兼容加载入口_v4.md`
+
+## 结构迁移后的同步纪律
+
+目录发生移动、拆分、合并或重命名时，必须同步核对：
+
+1. `README.md`；
+2. 本 `MANIFEST.md`；
+3. `00_导航与总览/00_当前有效版本与加载入口.md`；
+4. `07_元数据知识图谱与Skill/` 内跨文件引用；
+5. `08_机器数据与Schema/validation_v4.json` 的 `load_rule` 与 `required_current_files`；
+6. 人类阅读镜像与 JSONL/Registry/Schema 的主从关系。
