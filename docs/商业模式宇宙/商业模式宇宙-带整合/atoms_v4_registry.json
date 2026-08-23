@@ -1,0 +1,63 @@
+{
+  "version": "v4",
+  "extension_type": "additive_cross_cutting_atoms",
+  "new_level1_domains": 0,
+  "note": "v4 intentionally reuses U01-U27 and adds only missing atoms required by product-role, offer, pricing and promotion reasoning.",
+  "U03": {
+    "category_name": "产品、服务与权利包装",
+    "atoms": [
+      {"id":"U03-A26","name":"Sample/样品包装","definition":"用更小规格、有限功能或局部交付证明核心价值，重点是降低体验成本而非永久免费。"},
+      {"id":"U03-A27","name":"Starter/Entry Pack/入门包","definition":"把首次采用所需的最小产品、服务或额度组合为低复杂度入口包装，并保留清晰升级路径。"}
+    ]
+  },
+  "U04": {
+    "category_name": "获客与需求形成",
+    "atoms": [
+      {"id":"U04-A21","name":"Qualified Hook/资格门槛引流","definition":"入口优惠附带与目标客群相关的资格、行为或小额承诺，用于减少纯薅羊毛流量。"},
+      {"id":"U04-A22","name":"Context-triggered Acquisition/场景触发获客","definition":"根据季节、天气、地点、节日、即时事件或生命周期触发不同获客 Offer。"},
+      {"id":"U04-A23","name":"Reactivation/Win-back Acquisition/再激活获客","definition":"针对沉默或流失用户设计重新进入交易的专门入口，而不是重复支付新客 CAC。"},
+      {"id":"U04-A24","name":"Promotion-to-Relationship Capture/促销转关系","definition":"把一次性促销访问转为账户、许可的触达关系、会员或可持续识别状态，并单独衡量转关系率。"}
+    ]
+  },
+  "U06": {
+    "category_name": "关系、留存与复购",
+    "atoms": [
+      {"id":"U06-A18","name":"Replenishment/Auto-replenishment/补货关系","definition":"根据消耗周期、库存状态或预测自动提醒、生成或执行补货，从一次购买转向持续复购。"},
+      {"id":"U06-A19","name":"Win-back Relationship/流失唤醒关系","definition":"把曾经活跃但已沉默的用户作为独立 cohort 管理，使用专门 Offer 恢复留存而非与新客混算。"}
+    ]
+  },
+  "U10": {
+    "category_name": "定价与支付",
+    "atoms": [
+      {"id":"U10-A37","name":"Introductory/First-order Price/首单与导入价","definition":"只在首次交易或导入期适用的价格，与后续标准价格明确分离并测量续购后的真实 LTV。"},
+      {"id":"U10-A38","name":"Reference/Anchor Price/参照锚定价","definition":"设置可解释的参照价格或价值基准，帮助用户比较其他 Offer；参照必须真实、合规、可验证。"},
+      {"id":"U10-A39","name":"Decoy/Asymmetric Choice Price/对比诱饵价格","definition":"通过选择集中的相对价格和属性差异影响目标层级选择；属于可测试的行为假设而非保证有效的规则。"},
+      {"id":"U10-A40","name":"Segment/Fenced Price/分群围栏价","definition":"基于可识别的资格、客户类型或使用条件形成不同价格，必须定义围栏、防套利与合规边界。"},
+      {"id":"U10-A41","name":"Channel-specific Price/渠道价","definition":"不同销售渠道具有不同价格、补贴或权益结构，并同步审查渠道冲突和价保条款。"},
+      {"id":"U10-A42","name":"Geographic Price/地域价","definition":"根据地区成本、支付能力、竞争或税费形成地域化价格，并管理跨区套利与公平性风险。"},
+      {"id":"U10-A43","name":"Seasonal/Temporal Price/季节时间价","definition":"价格随季节、日期、星期、时段或距离履约时间变化，用于需求与容量管理。"},
+      {"id":"U10-A44","name":"Context-triggered Price/情境触发价","definition":"价格或优惠由天气、事件、库存、生命周期、客户状态等条件触发，不等同于一般动态定价。"},
+      {"id":"U10-A45","name":"Conditional Threshold Discount/条件门槛优惠","definition":"达到购物金额、件数、组合、行为或其他阈值后才获得折扣/权益，用于提高购物篮或筛选用户。"},
+      {"id":"U10-A46","name":"Coupon/Promo Code/券码优惠","definition":"以可追踪的券、码或资格凭证改变交易价格，用于归因、渠道合作、定向促销和实验。"},
+      {"id":"U10-A47","name":"Price Framing/价格呈现框架","definition":"改变价格的周期、单位、比较基准或展示方式而不改变真实经济价格；必须避免误导。"},
+      {"id":"U10-A48","name":"Negotiated/Quote-based Price/议价报价","definition":"价格通过销售、采购或招投标协商形成，需记录折扣权限、成交概率与 pocket price。"},
+      {"id":"U10-A49","name":"Price Lock/价格锁定","definition":"在约定期限、数量或条件下锁定价格，降低客户不确定性，同时把成本上涨风险转给供给方。"}
+    ]
+  },
+  "U18": {
+    "category_name": "风险、监管与生命周期",
+    "atoms": [
+      {"id":"U18-A38","name":"Promotion Abuse/补贴与促销滥用风险","definition":"多账号、套利、倒卖、虚假新客或重复领取使促销成本脱离真实增量客户价值。"},
+      {"id":"U18-A39","name":"Reference-price Erosion/原价侵蚀与蚕食风险","definition":"频繁促销降低用户对标准价的接受度，或把原本会全价购买的需求迁移到优惠。"},
+      {"id":"U18-A40","name":"Premium Brand Dilution/高端品牌稀释风险","definition":"低价入口与高端定位不一致，导致身份、稀缺或服务溢价受损。"},
+      {"id":"U18-A41","name":"Channel Price Conflict/渠道价格冲突风险","definition":"直营、平台、经销、会员或地域价格差异引发投诉、价保、渠道抵制或合同冲突。"},
+      {"id":"U18-A42","name":"Demand Pull-forward/促销依赖与需求前置风险","definition":"活动主要把未来正常需求提前，而没有创造净增量，活动后出现销售低谷。"},
+      {"id":"U18-A43","name":"Promotion Capacity Shock/促销容量冲击风险","definition":"流量成功但库存、客服、配送、桌台、算力或服务产能不足，使体验和贡献利润反而恶化。"}
+    ]
+  },
+  "summary": {
+    "new_atoms": 27,
+    "domains_extended": 5,
+    "ids_unique_within_registry": true
+  }
+}
