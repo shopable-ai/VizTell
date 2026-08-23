@@ -17,6 +17,8 @@ SCENARIO_FILE = DOC_ROOT / "13_场景验证与覆盖矩阵.md"
 OVERVIEW_FILE = DOC_ROOT / "00_总览与核心结论.md"
 PROJECT_SCENE_FILE = DOC_ROOT / "15_项目与复杂任务链路宇宙.md"
 KNOWLEDGE_SCENE_FILE = DOC_ROOT / "16_阅读学习与知识研究链路宇宙.md"
+SCENE_ENTRY_FILE = DOC_ROOT / "17_现实场景分类与入口地图.md"
+SCENE_EXPLANATION_FILE = DOC_ROOT / "18_场景分类说明与组合示例.md"
 REQUIRED_FIELDS = (
     "核心步骤",
     "解决",
@@ -198,6 +200,55 @@ def validate_scene_universes(errors: list[str]) -> None:
                 add_error(errors, path, f"missing required scene concept '{phrase}'")
 
 
+def validate_real_world_scene_map(errors: list[str]) -> None:
+    if not SCENE_ENTRY_FILE.exists():
+        add_error(errors, SCENE_ENTRY_FILE, "real-world scene entry map is missing")
+        return
+    if not SCENE_EXPLANATION_FILE.exists():
+        add_error(errors, SCENE_EXPLANATION_FILE, "scene explanation file is missing")
+        return
+
+    entry_text = SCENE_ENTRY_FILE.read_text(encoding="utf-8")
+    expected_scene_ids = [f"S{number:02d}" for number in range(1, 16)]
+    scene_ids = re.findall(r"^\|\s*(S\d{2})\s*\|", entry_text, re.MULTILINE)
+    if scene_ids != expected_scene_ids:
+        add_error(errors, SCENE_ENTRY_FILE, f"scene IDs are not exactly S01-S15 in order: {scene_ids}")
+    if len(set(scene_ids)) != len(scene_ids):
+        add_error(errors, SCENE_ENTRY_FILE, "scene IDs are duplicated")
+
+    expected_domain_ids = [f"D{number:02d}" for number in range(1, 9)]
+    domain_ids = re.findall(r"^\|\s*(D\d{2})\s*\|", entry_text, re.MULTILINE)
+    if domain_ids != expected_domain_ids:
+        add_error(errors, SCENE_ENTRY_FILE, f"domain IDs are not exactly D01-D08 in order: {domain_ids}")
+
+    required_entry_phrases = (
+        "现实场景 = 主场景类型 × 发生领域 × 主体规模 × 复杂度／风险 × 生命周期阶段",
+        "场景代码 `S01—S15` 只是导航编号",
+        "一个现实事件可以同时具有多个场景标签，但只选一个主入口",
+        "AI／Agent 通常是技术模式或工具维度，而不是新的现实领域",
+        "第三维：主体规模",
+        "第四维：复杂度与风险",
+        "第五维：生命周期阶段",
+    )
+    for phrase in required_entry_phrases:
+        if phrase not in entry_text:
+            add_error(errors, SCENE_ENTRY_FILE, f"missing scene taxonomy rule '{phrase}'")
+
+    explanation_text = SCENE_EXPLANATION_FILE.read_text(encoding="utf-8")
+    required_explanation_phrases = (
+        "本文件只负责解释，不承担稳定分类结论",
+        "S07 信息／研究 vs S08 学习／能力",
+        "S09 任务／执行 vs S10 项目／复杂任务",
+        "S12 监测／反馈／偏差／改进 vs S13 风险／异常／恢复",
+        "S14 验证／验收／价值评估 vs S15 生命周期",
+        "场景分类不是互斥标签体系",
+        "什么时候才值得建立新的独立场景宇宙",
+    )
+    for phrase in required_explanation_phrases:
+        if phrase not in explanation_text:
+            add_error(errors, SCENE_EXPLANATION_FILE, f"missing scene explanation boundary '{phrase}'")
+
+
 def main() -> int:
     errors: list[str] = []
     documents = sorted(DOC_ROOT.rglob("*.md"))
@@ -211,6 +262,7 @@ def main() -> int:
     validate_overview(errors, documents)
     validate_scenarios(errors)
     validate_scene_universes(errors)
+    validate_real_world_scene_map(errors)
 
     if errors:
         print(f"FAILED: {len(errors)} error(s)")
@@ -222,8 +274,9 @@ def main() -> int:
         "PASS: "
         f"{len(documents)} docs; one H1 each; no heading jumps; "
         "relative links and anchors valid; C01-C30 unique and complete; "
-        "bidirectional overview navigation, ten benchmark scenarios, "
-        "project/complex-task and reading/knowledge L3 scene universes present."
+        "ten benchmark scenarios; project/complex-task and reading/knowledge L3 universes; "
+        "S01-S15 real-world scene entry map, five-dimensional scene coordinates, "
+        "and separated scene explanation file present."
     )
     return 0
 
