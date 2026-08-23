@@ -1,0 +1,94 @@
+{
+  "version": "runtime-v1",
+  "ontology_base": "v4",
+  "object_type": "commercial_reasoning_runtime_protocol",
+  "goal": "把商业模式宇宙从知识本体升级为可路由、可检索、可组合、可审计、可实验、可回归的商业推理系统。",
+  "invariants": [
+    "不创建U28+",
+    "不重排U01-U27",
+    "不覆盖既有Atom/Pattern/PR稳定ID",
+    "事实、假设、计算、判断、未知必须区分",
+    "缺真实数据时只能输出场景区间或假设模型",
+    "复杂任务默认最小充分上下文而非全库加载",
+    "每次运行必须产生trace"
+  ],
+  "stages": [
+    {"id":"S01","name":"task_intake","required_outputs":["user_goal","decision_to_make","scope","constraints","success_criteria"]},
+    {"id":"S02","name":"task_router","required_outputs":["task_family","flags","route_confidence","alternate_routes"]},
+    {"id":"S03","name":"project_signature","required_outputs":["actors","payer_user_beneficiary","problem","current_offer_or_state","known_constraints"]},
+    {"id":"S04","name":"data_evidence_gate","required_outputs":["known_facts","project_data","missing_data","external_research_questions","freshness_risks"]},
+    {"id":"S05","name":"context_builder","required_outputs":["domains","atoms","patterns","product_roles_if_relevant","topic_or_case_assets","knowledge_assets","context_budget"]},
+    {"id":"S06","name":"opportunity_and_gap_scan","required_outputs":["opportunity_sources","value_gaps","frictions_mismatches","transformation_operators"]},
+    {"id":"S07","name":"structure_analysis","required_outputs":["value_chain","profit_pools","ecosystem","control_points","current_business_model_signature"]},
+    {"id":"S08","name":"candidate_generation","required_outputs":["candidate_set","candidate_differences","mechanism_trace"]},
+    {"id":"S09","name":"economics","required_outputs":["front_end_contribution_if_applicable","basket_contribution_if_applicable","cohort_contribution_if_applicable","unit_economics","cashflow","conditional_economics","scenario_ranges"]},
+    {"id":"S10","name":"strategy_risk_counterargument","required_outputs":["competitive_response","moats","failure_modes","counterarguments","regulatory_or_contract_risks"]},
+    {"id":"S11","name":"experiment_and_decision","required_outputs":["critical_assumptions","minimum_experiments","pass_conditions","kill_conditions","scale_conditions","candidate_ranking"]},
+    {"id":"S12","name":"decision_artifact","required_outputs":["recommended_option_or_options","why","facts","assumptions","calculations","unknowns","next_actions"]},
+    {"id":"S13","name":"feedback_and_lifecycle","required_outputs":["observed_failures","error_classes","knowledge_feedback_classification","regression_targets"]}
+  ],
+  "conditional_modules": {
+    "offer_price_module": "仅在定价、入口品、套餐、订阅、商品组合或转化图相关任务启用；不能强迫所有商业问题经过Offer Graph。",
+    "conditional_economics_module": "存在返点、返佣、credits、账期、供应商资金、公共补贴等信号时强制启用。",
+    "capacity_module": "酒店、库存、时段、算力、产能等易腐或闲置容量任务启用U22。",
+    "external_research_module": "涉及当前市场、竞争者、平台规则、费率、法规、价格、合同政策或事实核查时强制启用。",
+    "case_topic_module": "仅在任务与现有专题/案例高度相关时加载，专题不能替代通用宇宙。"
+  },
+  "evidence_states": [
+    {"id":"FACT","name":"已验证事实","rule":"必须可追溯到项目数据或可靠证据。"},
+    {"id":"ASSUMPTION","name":"假设","rule":"必须明确标注并可被实验或数据推翻。"},
+    {"id":"DERIVED","name":"派生计算","rule":"必须给出输入、公式或计算逻辑。"},
+    {"id":"JUDGMENT","name":"分析判断","rule":"必须说明依据与主要反方理由。"},
+    {"id":"UNKNOWN","name":"未知","rule":"不能用精确数字或确定语气伪装。"}
+  ],
+  "real_data_gate": {
+    "usually_required": ["采购价","COGS","渠道费率","返点合同","CAC","转化率","复购","退款","履约成本","库存或容量","账期","真实Cohort"],
+    "fallback": "缺数据时输出低/中/高或保守/基准/乐观场景，并显示敏感参数；禁止把场景中点写成已知事实。"
+  },
+  "trace_schema": {
+    "run_id": "string",
+    "task_family": "string",
+    "flags": "array",
+    "route_scores": "object",
+    "domains_loaded": "array",
+    "knowledge_assets_loaded": "array",
+    "atom_ids_loaded": "array",
+    "pattern_ids_loaded": "array",
+    "modules_used": "array",
+    "external_sources": "array",
+    "facts": "array",
+    "assumptions": "array",
+    "unknowns": "array",
+    "candidate_ids": "array",
+    "errors": "array",
+    "context_budget": "object",
+    "benchmark_case_id": "string|null",
+    "universe_version": "string"
+  },
+  "error_taxonomy": {
+    "K1":"Knowledge Gap：知识库没有需要的机制/事实模型",
+    "R1":"Retrieval Failure：知识存在但没有召回",
+    "W1":"Workflow Failure：召回正确但流程未使用或顺序错误",
+    "C1":"Context Failure：上下文过多、过少、冲突或关键信息位置失效",
+    "E1":"Evidence Failure：把假设、过期规则或弱证据当事实",
+    "F1":"Financial Failure：单位经济、现金流、会计口径或条件性经济计算错误",
+    "S1":"Strategy Failure：候选方案的竞争/激励/价值逻辑不成立",
+    "T1":"Tool Failure：外部研究、数据、代码或系统调用失败",
+    "O1":"Output Failure：分析本身可用但决策交付结构不可执行",
+    "B1":"Benchmark Failure：测试题本身模糊、错误、泄漏或评分覆盖不足"
+  },
+  "feedback_router": [
+    "先查是否已有Atom",
+    "再查是否已有Pattern",
+    "再判断是否只是新组合",
+    "再判断是否只是案例/证据",
+    "再判断是否只是专题知识",
+    "再判断是否只是短期平台规则或时效数据",
+    "只有现有机制无法表达且跨场景可迁移时，才提议新Atom/Pattern"
+  ],
+  "lifecycle_states": ["candidate","experimental","verified","stable","deprecated","superseded","historical"],
+  "decision_artifact_contract": {
+    "required_sections": ["问题与决策", "关键事实", "关键未知与数据缺口", "候选方案", "经济模型", "风险与反方", "实验与Kill Condition", "结论与下一动作"],
+    "prohibited": ["无数据伪精确", "只列赚钱方式不解释机制", "只看转化率不看增量贡献", "把工具成功当商业验证", "为了高分隐藏失败"]
+  }
+}
