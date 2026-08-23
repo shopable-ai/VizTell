@@ -1,0 +1,63 @@
+{
+  "version": "v4",
+  "object_type": "cross_cutting_product_role_taxonomy",
+  "rules": {
+    "role_is_contextual_not_intrinsic": true,
+    "multiple_roles_allowed": true,
+    "primary_role_required_for_decisioning": true,
+    "roles_are_not_new_level1_domains": true
+  },
+  "role_families": [
+    {"id":"F1","name":"acquisition_attention","roles":[
+      {"id":"PR01","name_cn":"流量品","name_en":"Traffic Product","objective":"qualified_traffic","primary_kpis":["qualified_visits","qualified_cac","cohort_contribution"]},
+      {"id":"PR02","name_cn":"钩子品","name_en":"Hook / Lead Magnet","objective":"first_action_or_relationship","primary_kpis":["lead_capture_rate","activation_rate","qualified_cac"]},
+      {"id":"PR03","name_cn":"亏损引流品","name_en":"Loss Leader","objective":"acquire_for_basket_or_backend","primary_kpis":["front_end_contribution","attach_rate","true_cohort_contribution","payback"]},
+      {"id":"PR04","name_cn":"体验品","name_en":"Trial / Experience Product","objective":"reduce_adoption_risk","primary_kpis":["trial_to_paid","time_to_value","trial_cost"]},
+      {"id":"PR05","name_cn":"样品","name_en":"Sample","objective":"prove_quality_at_low_cost","primary_kpis":["sample_to_purchase","sample_cost","incremental_conversion"]},
+      {"id":"PR06","name_cn":"超级爆品/招牌品","name_en":"Hero / Signature SKU","objective":"mindshare_and_scale_demand","primary_kpis":["share_of_search","traffic","conversion","contribution"]},
+      {"id":"PR07","name_cn":"时令事件入口品","name_en":"Seasonal / Event Hook","objective":"capture_contextual_demand_peak","primary_kpis":["triggered_conversion","incremental_traffic","context_roi"]}
+    ]},
+    {"id":"F2","name":"choice_trust_positioning","roles":[
+      {"id":"PR08","name_cn":"信任品","name_en":"Trust Product","objective":"reduce_uncertainty","primary_kpis":["first_purchase_conversion","refund_rate","repeat_rate"]},
+      {"id":"PR09","name_cn":"形象旗舰品","name_en":"Image / Flagship Product","objective":"set_brand_ceiling","primary_kpis":["premium_perception","brand_lift","halo_conversion"]},
+      {"id":"PR10","name_cn":"锚定品","name_en":"Anchor / Reference Product","objective":"create_value_reference","primary_kpis":["target_offer_share","price_realization"]},
+      {"id":"PR11","name_cn":"对比诱饵品","name_en":"Decoy / Comparison Product","objective":"reshape_choice_set","primary_kpis":["incremental_target_choice","incremental_margin"],"experiment_required":true},
+      {"id":"PR12","name_cn":"筛选品","name_en":"Qualification / Screening Product","objective":"filter_low_intent_or_bad_fit","primary_kpis":["qualified_rate","sales_efficiency","downstream_conversion"]},
+      {"id":"PR13","name_cn":"用户识别品","name_en":"Identity / Data Entry Product","objective":"create_permissioned_identifiable_relationship","primary_kpis":["identified_user_rate","consent_rate","downstream_ltv"]}
+    ]},
+    {"id":"F3","name":"core_monetization_basket","roles":[
+      {"id":"PR14","name_cn":"核心商品","name_en":"Core Offer","objective":"solve_primary_job","primary_kpis":["conversion","retention","gross_margin"]},
+      {"id":"PR15","name_cn":"利润品","name_en":"Profit Product","objective":"maximize_absolute_contribution","primary_kpis":["contribution_margin","contribution_per_customer"]},
+      {"id":"PR16","name_cn":"毛利增强附加品","name_en":"Margin Booster / Add-on","objective":"increase_incremental_margin","primary_kpis":["attach_rate","incremental_margin","aov"]},
+      {"id":"PR17","name_cn":"升级品","name_en":"Upsell","objective":"move_customer_to_higher_value_tier","primary_kpis":["upsell_rate","arpu_expansion","net_retention"]},
+      {"id":"PR18","name_cn":"交叉销售品","name_en":"Cross-sell","objective":"expand_share_of_wallet","primary_kpis":["cross_sell_rate","basket_size","incremental_ltv"]},
+      {"id":"PR19","name_cn":"套餐核心品","name_en":"Bundle Driver","objective":"anchor_bundle_value","primary_kpis":["bundle_mix","basket_size","bundle_contribution"]},
+      {"id":"PR20","name_cn":"高端溢价品","name_en":"Premium / Status Product","objective":"capture_high_wtp","primary_kpis":["premium_mix","price_realization","premium_margin"]},
+      {"id":"PR21","name_cn":"企业礼赠品","name_en":"Enterprise / Gift Product","objective":"convert_consumer_value_to_organizational_budget","primary_kpis":["b2b_pipeline","order_value","recipient_conversion"]}
+    ]},
+    {"id":"F4","name":"retention_lifecycle","roles":[
+      {"id":"PR22","name_cn":"补充耗材品","name_en":"Replenishment / Consumable","objective":"repeat_by_consumption","primary_kpis":["repeat_rate","reorder_interval","installed_base_ltv"]},
+      {"id":"PR23","name_cn":"订阅品","name_en":"Subscription Product","objective":"recurring_access_or_delivery","primary_kpis":["mrr_arr","retention","churn","net_retention"]},
+      {"id":"PR24","name_cn":"会员品","name_en":"Membership Product","objective":"increase_frequency_and_loyalty","primary_kpis":["membership_conversion","member_frequency","member_ltv"]},
+      {"id":"PR25","name_cn":"高频习惯品","name_en":"Habit / Frequency Product","objective":"own_recurring_attention","primary_kpis":["frequency","active_rate","retention"]},
+      {"id":"PR26","name_cn":"生命周期延伸品","name_en":"Lifecycle Extension Product","objective":"capture_next_stage_need","primary_kpis":["lifecycle_conversion","ltv_extension"]},
+      {"id":"PR27","name_cn":"唤醒品","name_en":"Reactivation Product","objective":"win_back_dormant_users","primary_kpis":["reactivation_rate","reactivated_cohort_contribution","repeat_after_reactivation"]},
+      {"id":"PR28","name_cn":"忠诚兑换品","name_en":"Loyalty / Redemption Product","objective":"redeem_and_reinforce_loyalty","primary_kpis":["redemption_rate","breakage","retention_lift"]}
+    ]},
+    {"id":"F5","name":"growth_partner_capacity_cashflow","roles":[
+      {"id":"PR29","name_cn":"推荐奖励品","name_en":"Referral Reward Product","objective":"incentivize_referral","primary_kpis":["referral_rate","referred_cac","referred_ltv"]},
+      {"id":"PR30","name_cn":"裂变传播品","name_en":"Viral / Shareable Product","objective":"organic_distribution","primary_kpis":["share_rate","viral_coefficient","organic_cac"]},
+      {"id":"PR31","name_cn":"渠道交换品","name_en":"Channel Exchange Product","objective":"trade_value_for_partner_distribution","primary_kpis":["partner_reach","partner_cac","partner_contribution"]},
+      {"id":"PR32","name_cn":"供应商战略品","name_en":"Supplier-funded Strategic SKU","objective":"capture_supplier_funded_economics","primary_kpis":["net_effective_cost","rebate_mdf_value","true_contribution"]},
+      {"id":"PR33","name_cn":"数据入口品","name_en":"Data / Identity Product","objective":"create_reusable_data_asset","primary_kpis":["data_capture_rate","data_quality","downstream_value"]},
+      {"id":"PR34","name_cn":"闲置容量填充品","name_en":"Capacity Filler","objective":"monetize_perishable_capacity","primary_kpis":["incremental_utilization","revenue_per_available_unit","incremental_contribution"]},
+      {"id":"PR35","name_cn":"库存消化品","name_en":"Inventory Liquidator","objective":"reduce_spoilage_and_holding_loss","primary_kpis":["sell_through","markdown_recovery","avoided_spoilage"]},
+      {"id":"PR36","name_cn":"现金流品","name_en":"Cashflow / Prepaid Product","objective":"pull_cash_forward_and_commit_demand","primary_kpis":["cash_collected","deferred_obligation","working_capital_effect"]},
+      {"id":"PR37","name_cn":"储值权益品","name_en":"Gift Card / Credit Product","objective":"prepay_future_consumption","primary_kpis":["redemption","breakage","float_value","incremental_basket"]},
+      {"id":"PR38","name_cn":"后端服务品","name_en":"Backend Service Product","objective":"monetize_post_purchase_service","primary_kpis":["service_attach","service_margin","retention_lift"]},
+      {"id":"PR39","name_cn":"风险保障品","name_en":"Warranty / Risk Product","objective":"monetize_risk_reduction","primary_kpis":["attach_rate","loss_ratio","risk_adjusted_margin"]},
+      {"id":"PR40","name_cn":"退出回收品","name_en":"Exit / Resale / Trade-in Product","objective":"capture_residual_value_and_next_purchase","primary_kpis":["trade_in_rate","residual_recovery","repurchase_conversion"]}
+    ]}
+  ],
+  "summary": {"role_families":5,"product_roles":40}
+}
