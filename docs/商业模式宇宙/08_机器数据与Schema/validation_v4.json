@@ -12,7 +12,9 @@
     "runtime_router_retrieval": "10_任务工作流与运行时/01_任务路由_检索_上下文与数据门.md",
     "runtime_workflow": "10_任务工作流与运行时/02_端到端商业推理Workflow与知识生命周期.md",
     "benchmark_system": "11_Benchmark与回归/00_Benchmark评测体系_A-E_消融_回归.md",
-    "benchmark_seed_cases": "11_Benchmark与回归/01_T01电子书与T02_AI_API跨场景Canary.md"
+    "benchmark_seed_cases": "11_Benchmark与回归/01_T01电子书与T02_AI_API跨场景Canary.md",
+    "runtime_acceptance_record": "11_Benchmark与回归/02_首轮运行时实测_问题修正与验收.md",
+    "runtime_latest_report": "11_Benchmark与回归/runtime_harness_latest.json"
   },
   "base_version": "v2",
   "base_level1_categories": 19,
@@ -60,12 +62,15 @@
     "active_benchmark_cases": ["T01", "T02"],
     "comparison_conditions": ["A", "B", "C", "D", "E"],
     "error_taxonomy": ["K1", "R1", "W1", "C1", "E1", "F1", "S1", "T1", "O1", "B1"],
+    "retrieval_baseline": "task/flag retrieval_concepts + weighted deterministic lexical V0",
+    "semantic_anchor_recall_required": 1.0,
     "machine_assets": {
       "task_router": "08_机器数据与Schema/task_router_v1.json",
       "runtime_protocol": "08_机器数据与Schema/commercial_reasoning_runtime_v1.json",
       "benchmark_manifest": "08_机器数据与Schema/benchmark_manifest_v1.json"
     },
     "repository_harness": "scripts/benchmark_business_model_universe.py",
+    "latest_report": "11_Benchmark与回归/runtime_harness_latest.json",
     "harness_score_is_not_answer_quality_score": true
   },
   "load_rule": {
@@ -125,6 +130,8 @@
     "10_任务工作流与运行时/02_端到端商业推理Workflow与知识生命周期.md",
     "11_Benchmark与回归/00_Benchmark评测体系_A-E_消融_回归.md",
     "11_Benchmark与回归/01_T01电子书与T02_AI_API跨场景Canary.md",
+    "11_Benchmark与回归/02_首轮运行时实测_问题修正与验收.md",
+    "11_Benchmark与回归/runtime_harness_latest.json",
     "90_研究来源与参考/03_v4缺口审计与研究来源.md"
   ],
   "migration_integrity_audit": {
@@ -165,13 +172,16 @@
     "runtime_has_task_router": true,
     "runtime_has_real_data_and_evidence_gate": true,
     "runtime_has_trace": true,
+    "runtime_has_task_flag_retrieval_concepts": true,
     "benchmark_has_a_to_e": true,
+    "benchmark_has_semantic_retrieval_anchors": true,
     "benchmark_has_ablation": true,
     "benchmark_has_error_taxonomy": true,
     "benchmark_has_regression_policy": true,
+    "benchmark_has_auditable_latest_report": true,
     "benchmark_harness_score_not_mislabeled_as_answer_quality": true,
     "material_asset_loss_detected": false
   },
   "quality_self_check": 98,
-  "quality_note": "Internal structural self-check, not external certification. v4 ontology preservation remains the stable baseline; runtime-v1 adds routing/workflow/eval assets without creating new ontology IDs. A-E business-answer uplift remains unmeasured until isolated model runs are executed."
+  "quality_note": "Internal structural/runtime self-check, not external certification. v4 ontology preservation remains the stable baseline; runtime-v1 adds routing/workflow/retrieval/eval assets without creating new ontology IDs. Deterministic T01/T02 routing/context/retrieval regression is implemented; A-E business-answer uplift remains unmeasured until isolated model runs are executed."
 }
