@@ -4,6 +4,11 @@
 This is intentionally NOT an A-E answer-quality judge. It verifies that the v4
 ontology is preserved and that runtime-v1 can route benchmark tasks and assemble
 minimum sufficient context before an external model runner is introduced.
+
+The retrieval layer is only a deterministic V0 baseline. It uses route-aware
+query expansion so a short user query can inherit task-family, flag and selected
+knowledge-asset vocabulary. It is designed to expose retrieval regressions, not
+to replace BM25 / embeddings / reranking.
 """
 from __future__ import annotations
 
@@ -33,8 +38,8 @@ def load_jsonl(path: Path) -> List[Dict[str, Any]]:
                 continue
             try:
                 obj = json.loads(line)
-            except json.JSONDecodeError as e:
-                raise ValueError(f"Invalid JSONL {path}:{line_no}: {e}") from e
+            except json.JSONDecodeError as exc:
+                raise ValueError(f"Invalid JSONL {path}:{line_no}: {exc}") from exc
             if not isinstance(obj, dict):
                 raise ValueError(f"Expected object in {path}:{line_no}")
             rows.append(obj)
@@ -101,7 +106,7 @@ def ngrams(text: str, n: int = 2) -> set[str]:
 
 
 def semanticish_score(query: str, candidate: str) -> float:
-    """Cheap deterministic baseline: substring + character bigram overlap."""
+    """Cheap deterministic lexical/character-overlap baseline."""
     qn = normalize(query)
     cn = normalize(candidate)
     if not qn or not cn:
@@ -119,10 +124,30 @@ def trigger_score(query: str, triggers: Sequence[str]) -> float:
     text = query.lower()
     score = 0.0
     for trigger in triggers:
-        t = str(trigger).lower().strip()
-        if t and t in text:
-            score += 2.0 + min(3.0, len(normalize(t)) / 3.0)
+        term = str(trigger).lower().strip()
+        if term and term in text:
+            score += 2.0 + min(3.0, len(normalize(term)) / 3.0)
     return score
+
+
+def unique_text(items: Sequence[str]) -> List[str]:
+    out: List[str] = []
+    seen = set()
+    for item in items:
+        text = str(item).strip()
+        key = text.lower()
+        if text and key not in seen:
+            out.append(text)
+            seen.add(key)
+    return out
+
+
+def asset_terms(path: str) -> List[str]:
+    """Convert a routed asset path into stable retrieval vocabulary."""
+    name = Path(path).stem
+    name = re.sub(r"^[0-9]+_", "", name)
+    parts = re.split(r"[_\-→/]+", name)
+    return [p.strip() for p in parts if len(normalize(p)) >= 2]
 
 
 def route_task(query: str, router: Dict[str, Any]) -> Dict[str, Any]:
@@ -133,6 +158,7 @@ def route_task(query: str, router: Dict[str, Any]) -> Dict[str, Any]:
     family_scores.sort(key=lambda x: (-x[0], x[1]))
     if not family_scores:
         raise ValueError("Router has no task families")
+
     best_score, best_id, best_family = family_scores[0]
     if best_score <= 0:
         best_family = next(
@@ -141,7 +167,7 @@ def route_task(query: str, router: Dict[str, Any]) -> Dict[str, Any]:
         )
         best_id = str(best_family.get("id"))
 
-    flags = []
+    flags: List[Dict[str, Any]] = []
     flag_scores: Dict[str, float] = {}
     for flag in router.get("flags", []):
         score = trigger_score(query, flag.get("triggers", []))
@@ -165,6 +191,16 @@ def route_task(query: str, router: Dict[str, Any]) -> Dict[str, Any]:
             if asset not in assets:
                 assets.append(asset)
 
+    expansion_terms: List[str] = [str(best_family.get("name", ""))]
+    expansion_terms.extend(str(x) for x in best_family.get("triggers", []))
+    for flag in flags:
+        expansion_terms.append(str(flag.get("id", "")))
+        expansion_terms.extend(str(x) for x in flag.get("triggers", []))
+    for asset in assets:
+        expansion_terms.extend(asset_terms(asset))
+    expansion_terms = unique_text(expansion_terms)
+    retrieval_query = " ".join([query] + expansion_terms)
+
     return {
         "family": best_id,
         "family_score": best_score,
@@ -177,6 +213,8 @@ def route_task(query: str, router: Dict[str, Any]) -> Dict[str, Any]:
         "flag_scores": flag_scores,
         "domains": domains,
         "assets": assets,
+        "retrieval_expansion_terms": expansion_terms,
+        "retrieval_query": retrieval_query,
     }
 
 
@@ -201,6 +239,11 @@ def retrieve_top(
 
 def pct(hit: int, total: int) -> float:
     return 100.0 if total == 0 else round(hit * 100.0 / total, 2)
+
+
+def mean_top_score(records: Sequence[Dict[str, Any]], n: int = 3) -> float:
+    values = [float(x.get("_retrieval_score", 0.0)) for x in records[:n]]
+    return round(sum(values) / len(values), 6) if values else 0.0
 
 
 def preservation_report(root: Path, router: Dict[str, Any]) -> Dict[str, Any]:
@@ -234,8 +277,7 @@ def preservation_report(root: Path, router: Dict[str, Any]) -> Dict[str, Any]:
         "role_ids_unique": role_unique,
         "u19_preserved": any(a.get("category_id") == "U19" for a in all_atoms),
         "no_u28_plus": not any(
-            re.match(r"U(2[8-9]|[3-9][0-9]+)-", str(a.get("id", "")))
-            for a in all_atoms
+            re.match(r"U(2[8-9]|[3-9][0-9]+)-", str(a.get("id", ""))) for a in all_atoms
         ),
         "p001_present": any(p.get("id") == "P001" for p in all_patterns),
         "p200_present": any(p.get("id") == "P200" for p in all_patterns),
@@ -243,7 +285,7 @@ def preservation_report(root: Path, router: Dict[str, Any]) -> Dict[str, Any]:
         "pr40_present": any(r.get("id") == "PR40" for r in roles),
     }
 
-    router_assets = []
+    router_assets: List[str] = []
     for family in router.get("families", []):
         router_assets.extend(family.get("knowledge_assets", []))
     for flag in router.get("flags", []):
@@ -265,11 +307,7 @@ def preservation_report(root: Path, router: Dict[str, Any]) -> Dict[str, Any]:
             "total_patterns": len(all_patterns),
             "product_roles": len(roles),
         },
-        "duplicates": {
-            "atoms": atom_dups,
-            "patterns": pattern_dups,
-            "roles": role_dups,
-        },
+        "duplicates": {"atoms": atom_dups, "patterns": pattern_dups, "roles": role_dups},
         "missing_router_assets": missing_router_assets,
         "atoms": all_atoms,
         "patterns": all_patterns,
@@ -320,25 +358,33 @@ def benchmark_case(
     flag_recall = pct(len(flag_hits), len(expected_flags))
     route_correct = route["family"] == case.get("expected_family")
 
-    max_assets = int(router.get("retrieval", {}).get("default_max_knowledge_assets", 12))
+    retrieval_cfg = router.get("retrieval", {})
+    max_assets = int(retrieval_cfg.get("default_max_knowledge_assets", 12))
     budget_ok = len(route["assets"]) <= max_assets
+    retrieval_query = route["retrieval_query"]
 
     top_atoms = retrieve_top(
-        query,
+        retrieval_query,
         atoms,
         set(route["domains"]),
-        int(router.get("retrieval", {}).get("default_top_atoms", 24)),
+        int(retrieval_cfg.get("default_top_atoms", 24)),
         ("name", "essence", "definition", "category_name"),
     )
     top_patterns = retrieve_top(
-        query,
+        retrieval_query,
         patterns,
         None,
-        int(router.get("retrieval", {}).get("default_top_patterns", 12)),
+        int(retrieval_cfg.get("default_top_patterns", 12)),
         ("name", "formula", "definition", "description"),
     )
 
-    # Harness score is deliberately about runtime wiring, not answer quality.
+    atom_top3_mean = mean_top_score(top_atoms)
+    pattern_top3_mean = mean_top_score(top_patterns)
+    signal_threshold = float(retrieval_cfg.get("v0_min_top3_mean_score", 0.08))
+    retrieval_signal_pass = (
+        atom_top3_mean >= signal_threshold and pattern_top3_mean >= signal_threshold
+    )
+
     score = (
         (35.0 if route_correct else 0.0)
         + asset_recall * 0.30
@@ -383,18 +429,23 @@ def benchmark_case(
             "budget_ok": budget_ok,
         },
         "retrieval_preview": {
+            "strategy": "route-aware deterministic V0 expansion",
+            "expansion_terms": route["retrieval_expansion_terms"],
             "top_atoms": [
-                {"id": atom.get("id"), "name": atom.get("name"), "score": atom.get("_retrieval_score")}
-                for atom in top_atoms[:10]
+                {"id": a.get("id"), "name": a.get("name"), "score": a.get("_retrieval_score")}
+                for a in top_atoms[:10]
             ],
             "top_patterns": [
-                {
-                    "id": pattern.get("id"),
-                    "name": pattern.get("name"),
-                    "score": pattern.get("_retrieval_score"),
-                }
-                for pattern in top_patterns[:10]
+                {"id": p.get("id"), "name": p.get("name"), "score": p.get("_retrieval_score")}
+                for p in top_patterns[:10]
             ],
+        },
+        "retrieval_quality": {
+            "v0_min_top3_mean_score": signal_threshold,
+            "atom_top3_mean_score": atom_top3_mean,
+            "pattern_top3_mean_score": pattern_top3_mean,
+            "signal_pass": retrieval_signal_pass,
+            "semantics": "lexical signal guard only; not semantic relevance or answer-quality score",
         },
         "retrieval_ablation": ablations,
         "runtime_harness_score": score,
@@ -417,18 +468,13 @@ def main() -> int:
     preservation = preservation_report(root, router)
     atoms = preservation.pop("atoms")
     patterns = preservation.pop("patterns")
+    cases = [benchmark_case(case, router, root, atoms, patterns) for case in bench.get("active_cases", [])]
 
-    cases = [
-        benchmark_case(case, router, root, atoms, patterns)
-        for case in bench.get("active_cases", [])
-    ]
-    min_score = float(
-        bench.get("regression_policy", {}).get("minimum_runtime_harness_score", 90)
-    )
-
-    regression_failures = []
+    min_score = float(bench.get("regression_policy", {}).get("minimum_runtime_harness_score", 90))
+    regression_failures: List[str] = []
     if not preservation["pass"]:
         regression_failures.append("preservation")
+
     for case in cases:
         coverage = case["coverage"]
         if case["runtime_harness_score"] < min_score:
@@ -443,6 +489,8 @@ def main() -> int:
             regression_failures.append(f"{case['case_id']}:context_budget")
         if coverage["missing_assets_on_disk"]:
             regression_failures.append(f"{case['case_id']}:missing_files")
+        if not case["retrieval_quality"]["signal_pass"]:
+            regression_failures.append(f"{case['case_id']}:retrieval_signal")
 
     report = {
         "harness": "business-model-universe-runtime-v1",
@@ -462,9 +510,7 @@ def main() -> int:
 
     json.dump(report, sys.stdout, ensure_ascii=False, indent=2 if args.pretty else None)
     sys.stdout.write("\n")
-    if args.strict and regression_failures:
-        return 1
-    return 0
+    return 1 if args.strict and regression_failures else 0
 
 
 if __name__ == "__main__":
