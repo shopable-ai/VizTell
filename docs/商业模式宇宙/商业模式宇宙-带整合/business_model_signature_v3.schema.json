@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BusinessModelUniverseProjectSignature",
+  "type": "object",
+  "properties": {
+    "project": {"type": "object"},
+    "problem": {"type": "object"},
+    "offer": {"type": "object"},
+    "delivery": {"type": "object"},
+    "economics": {"type": "object"},
+    "retention": {"type": "object"},
+    "growth": {"type": "object"},
+    "digital_assets": {"type": "object"},
+    "constraints": {"type": "object"},
+    "evidence": {"type": "object"},
+    "conditional_economics": {"type": "object"},
+    "ownership_governance": {"type": "object"},
+    "accounting_truth": {"type": "object"},
+    "capacity_economics": {"type": "object"},
+    "risk_transfer": {"type": "object"},
+    "public_economics": {"type": "object"},
+    "treasury": {"type": "object"},
+    "contract_economics": {"type": "object"},
+    "labor_economics": {"type": "object"},
+    "market_design": {"type": "object"},
+    "competitive_response": {"type": "object"},
+    "metrics": {"type": "object"},
+    "experiments": {"type": "object"},
+    "actors": {"type": "array"},
+    "atoms": {"type": "array", "items": {"type": "string"}},
+    "patterns": {"type": "array", "items": {"type": "string"}}
+  }
+}
