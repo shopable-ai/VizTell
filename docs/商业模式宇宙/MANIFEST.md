@@ -66,9 +66,9 @@
 - `validation_v4.json`
 
 ### runtime-v1 横向机器资产
-- `task_router_v1.json` — 8 个核心任务族 + 跨切 flags + 最小上下文装配规则
+- `task_router_v1.json` — 8 个核心任务族 + 跨切 flags + `retrieval_concepts` + 最小上下文装配规则
 - `commercial_reasoning_runtime_v1.json` — 端到端状态机、Data/Evidence Gate、Trace、错误分类与生命周期
-- `benchmark_manifest_v1.json` — A-E、Rubric、惩罚项、T01/T02、Ablation、Regression
+- `benchmark_manifest_v1.json` — A-E、Rubric、惩罚项、T01/T02、Semantic Retrieval Anchors、Ablation、Regression
 
 > runtime-v1 不新增或重排 U/Atom/Pattern/PR ID；它只描述怎样加载、使用、测试 v4。
 
@@ -83,10 +83,12 @@
 ## 11_Benchmark与回归
 - `00_Benchmark评测体系_A-E_消融_回归.md`
 - `01_T01电子书与T02_AI_API跨场景Canary.md`
+- `02_首轮运行时实测_问题修正与验收.md` — 记录首轮 R1/C1 暴露、两次 Retriever 修正及最终验收
+- `runtime_harness_latest.json` — GitHub Actions 自动写回的最新确定性运行报告；属于可再生测试证据，不是本体事实源
 
 ## 仓库级测试入口
-- `scripts/benchmark_business_model_universe.py` — v4 preservation + runtime routing/retrieval harness；其分数不等于 A-E 商业答案质量分数。
-- `.github/workflows/business-model-universe.yml` — `main` 相关修改的回归入口（存在后由 GitHub Actions 执行）。
+- `scripts/benchmark_business_model_universe.py` — v4 preservation + runtime routing/context + V0 retrieval semantic-anchor harness；其分数不等于 A-E 商业答案质量分数。
+- `.github/workflows/business-model-universe.yml` — `main` 相关修改的回归入口；带并发串行保护，自动写回最新报告。
 
 ## 90_研究来源与参考
 - `00_传统参考知识/`
@@ -109,4 +111,5 @@
 8. 人类阅读镜像与 JSONL/Registry/Schema 的主从关系；
 9. 当前树是否残留迁移过程中的重复副本或多个稳定入口；
 10. `scripts/benchmark_business_model_universe.py --strict` 是否仍通过；
-11. Benchmark 失败应先按 K1/R1/W1/C1/E1/F1/S1/T1/O1/B1 定位根因，不得默认通过增加 Atom 修复。
+11. `runtime_harness_latest.json` 的 `tested_commit`、Semantic Anchor Recall 和 `regression.pass` 是否与当前运行一致；
+12. Benchmark 失败应先按 K1/R1/W1/C1/E1/F1/S1/T1/O1/B1 定位根因，不得默认通过增加 Atom 修复。
