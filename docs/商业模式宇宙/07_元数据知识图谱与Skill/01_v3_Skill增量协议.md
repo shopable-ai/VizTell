@@ -1,8 +1,8 @@
 # 商业模式宇宙 v3：Skill 增量协议
 
-> 在 v2 `03_商业模式宇宙_元数据知识图谱与Skill协议.md` 基础上增加经济真相、治理、容量、风险、公共激励、财资、合同和劳动力分析。
+> 在当前目录的 v2 基线 `00_元数据知识图谱与Skill协议.md` 基础上增加经济真相、治理、容量、风险、公共激励、财资、合同和劳动力分析。
 >
-> **v4 兼容提示：** 本文件仍是 v3 经济真相层的有效协议；商品角色、价格架构、Offer Graph、Context Router、Cohort Economics 与 Incrementality 的增量协议见 `14_商业模式宇宙_v4_Skill机器加载与Offer决策协议.md`。v4 不覆盖本文件。
+> **v4 兼容提示：** 本文件仍是 v3 经济真相层的有效协议；商品角色、价格架构、Offer Graph、Context Router、Cohort Economics 与 Incrementality 的增量协议见 `02_v4_Skill机器加载与Offer决策协议.md`。v4 不覆盖本文件。
 
 ## 一、必须新增的输入/输出对象
 
