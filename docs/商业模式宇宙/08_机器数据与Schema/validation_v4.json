@@ -1,5 +1,9 @@
 {
   "version": "v4",
+  "universe_root": "docs/商业模式宇宙",
+  "current_entry": "00_导航与总览/00_当前有效版本与加载入口.md",
+  "human_entry": "README.md",
+  "manifest": "MANIFEST.md",
   "base_version": "v2",
   "base_level1_categories": 19,
   "base_atoms": 500,
@@ -41,20 +45,82 @@
   "extension_pattern_ids_unique": true,
   "product_role_ids_unique": true,
   "no_new_u28_plus": true,
-  "no_branch_or_pr_required_by_design": true,
-  "preserves_v2_v3_files": true,
-  "load_rule": "load atoms.jsonl + atoms_v3_registry.json + atoms_v4_registry.json; load patterns.jsonl + patterns_v3_extension_P131-P170.jsonl + patterns_v4_extension_P171-P200.jsonl; load product_roles_v4.json; schema=business_model_signature_v4.schema.json",
-  "required_v4_files": [
-    "12_商业模式宇宙_v4商品角色价格架构Offer转化与场景经济.md",
-    "13_商业模式宇宙_v4隐藏利润层单位经济KPI实验与风险.md",
-    "14_商业模式宇宙_v4_Skill机器加载与Offer决策协议.md",
-    "15_商业模式宇宙_v4缺口审计与研究来源.md",
-    "atoms_v4_registry.json",
-    "product_roles_v4.json",
-    "patterns_v4_extension_P171-P200.jsonl",
-    "business_model_signature_v4.schema.json"
+  "preserves_v2_v3_ids": true,
+  "load_rule": {
+    "atoms": [
+      "08_机器数据与Schema/atoms.jsonl",
+      "08_机器数据与Schema/atoms_v3_registry.json",
+      "08_机器数据与Schema/atoms_v4_registry.json"
+    ],
+    "patterns": [
+      "08_机器数据与Schema/patterns.jsonl",
+      "08_机器数据与Schema/patterns_v3_extension_P131-P170.jsonl",
+      "08_机器数据与Schema/patterns_v4_extension_P171-P200.jsonl"
+    ],
+    "product_roles": "08_机器数据与Schema/product_roles_v4.json",
+    "schema": "08_机器数据与Schema/business_model_signature_v4.schema.json",
+    "rebate_schema": "08_机器数据与Schema/conditional_economics_rebate.schema.json",
+    "skill_protocol": "07_元数据知识图谱与Skill/02_v4_Skill机器加载与Offer决策协议.md"
+  },
+  "required_current_files": [
+    "README.md",
+    "MANIFEST.md",
+    "00_导航与总览/00_当前有效版本与加载入口.md",
+    "00_导航与总览/01_统一结构与迁移映射.md",
+    "01_核心机制与组合模式/00_商业模式宇宙总览与核心结论.md",
+    "01_核心机制与组合模式/04_v4商品角色价格架构Offer转化与场景经济.md",
+    "01_核心机制与组合模式/05_v4新增组合模式P171-P200.md",
+    "06_真实经济性_返点与治理/00_返点门槛后台利益与真实净经济性.md",
+    "06_真实经济性_返点与治理/01_经济真相治理容量风险合同与劳动力层.md",
+    "06_真实经济性_返点与治理/02_v4隐藏利润层单位经济KPI实验与风险.md",
+    "07_元数据知识图谱与Skill/00_元数据知识图谱与Skill协议.md",
+    "07_元数据知识图谱与Skill/01_v3_Skill增量协议.md",
+    "07_元数据知识图谱与Skill/02_v4_Skill机器加载与Offer决策协议.md",
+    "08_机器数据与Schema/atoms.jsonl",
+    "08_机器数据与Schema/atoms_v3_registry.json",
+    "08_机器数据与Schema/atoms_v4_registry.json",
+    "08_机器数据与Schema/patterns.jsonl",
+    "08_机器数据与Schema/patterns_v3_extension_P131-P170.jsonl",
+    "08_机器数据与Schema/patterns_v4_extension_P171-P200.jsonl",
+    "08_机器数据与Schema/product_roles_v4.json",
+    "08_机器数据与Schema/business_model_signature_v4.schema.json",
+    "08_机器数据与Schema/conditional_economics_rebate.schema.json",
+    "90_研究来源与参考/03_v4缺口审计与研究来源.md",
+    "09_专题商业模式/电子书商业模式.md"
   ],
+  "migration_integrity_audit": {
+    "pre_restructure_commit": "357da7578308acff03ef9cda1f7f745102db53a8",
+    "restructure_commit": "d29da8b9bf918e9c5877f0982120f0ae9094b0fb",
+    "method": "GitHub tree/content SHA comparison",
+    "material_asset_loss_detected": false,
+    "unchanged_subtree_shas": {
+      "value_chain": "9d4961ab1fb04a0a1cf35243edf7629f089dfa5b",
+      "ecosystem": "0775d7b9365ffabfd788ed15de6fb577287bbabd",
+      "cases": "b654a2c638df449bbd60ff0f55e45e8051e9ecc5",
+      "industry_maps": "d73e571e08500fd2e61963013e7d196d4de920c3",
+      "failure_patterns": "c0a08d06bdf7eb315d48294ab368c38fbf5d8f3a",
+      "migration_paths": "4131e3727f762676668f6df2994ece8f188acf86",
+      "traditional_references": "173e88501b1428a7a644a961937a8cf5736b7333"
+    },
+    "unchanged_critical_blob_shas": {
+      "v4_offer_system": "44bc94a9bc7bc2d22825013c1f43456fd3fab506",
+      "v4_cohort_economics": "4db69e72e86de42a560f0711e64626c929df6a6d",
+      "atoms_v4_registry": "dc788deb628741c894027a4991eda4689ac66035",
+      "patterns_v4_jsonl": "38c4628eb6c93aecb7da4bf63c2756739eeee94a",
+      "product_roles_v4": "52d183bd0b0ca65f9c5f5a671a58a9534b47b0c8",
+      "business_model_signature_v4": "d24e154cd3fe5f15e4e88b02c44f64a309183952",
+      "ebook_business_model": "a2582e16ea9c935f005fb13ccbf383d0a9786be3"
+    },
+    "post_migration_repairs": [
+      "v3 Skill references updated to current filenames",
+      "v4 Skill loading paths updated to unified directory",
+      "human-readable P171-P200 mirror added",
+      "validation manifest updated to current paths"
+    ]
+  },
   "acceptance_checks": {
+    "single_human_entry": true,
+    "current_machine_entry_resolved": true,
     "loss_leader_not_duplicated_as_new_base_pattern": true,
     "product_role_separated_from_pricing_mechanism": true,
     "offer_architecture_is_graph_not_forced_linear_funnel": true,
@@ -65,8 +131,9 @@
     "incrementality_control_or_holdout_supported": true,
     "brand_channel_abuse_capacity_risks_supported": true,
     "machine_readable_schema_added": true,
-    "source_fact_inference_project_evidence_separated": true
+    "source_fact_inference_project_evidence_separated": true,
+    "human_readable_v4_pattern_index_present": true
   },
   "quality_self_check": 98,
-  "quality_note": "Internal structural self-check, not external certification. v4 materially closes the offer-architecture gap; case-level parameterization and jurisdiction-specific legal validation remain project-specific."
+  "quality_note": "Internal structural self-check, not external certification. No material asset loss was detected in the audited restructure. Historical v2/v3 documents intentionally retain baseline semantics, so current totals and paths must be resolved from README/current-entry/this validation file."
 }
