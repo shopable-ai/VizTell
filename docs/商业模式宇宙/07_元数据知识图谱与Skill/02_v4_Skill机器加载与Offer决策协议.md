@@ -1,6 +1,6 @@
 # 商业模式宇宙 v4：Skill 机器加载与 Offer 决策协议
 
-> 本文件在 v2 `03` 与 v3 `10` 上增量扩展，不替换已有 Skill。
+> 本文件在当前目录的 v2 基线 `00_元数据知识图谱与Skill协议.md` 与 v3 增量 `01_v3_Skill增量协议.md` 上继续扩展，不替换已有 Skill。
 
 ## 一、v4 Skill 的目标
 
@@ -351,22 +351,23 @@ Skill 不应只返回“1分钱西瓜”。至少可以生成：
 
 # 八、机器加载兼容规则
 
-v4 是增量加载：
+统一目录结构下，v4 继续采用增量加载；路径以 `docs/商业模式宇宙/` 为根：
 
 ```text
-atoms = atoms.jsonl
-      + atoms_v3_registry.json
-      + atoms_v4_registry.json
+atoms = ../08_机器数据与Schema/atoms.jsonl
+      + ../08_机器数据与Schema/atoms_v3_registry.json
+      + ../08_机器数据与Schema/atoms_v4_registry.json
 
-patterns = patterns.jsonl
-         + patterns_v3_extension_P131-P170.jsonl
-         + patterns_v4_extension_P171-P200.jsonl
+patterns = ../08_机器数据与Schema/patterns.jsonl
+         + ../08_机器数据与Schema/patterns_v3_extension_P131-P170.jsonl
+         + ../08_机器数据与Schema/patterns_v4_extension_P171-P200.jsonl
 
-product_roles = product_roles_v4.json
-schema = business_model_signature_v4.schema.json
+product_roles = ../08_机器数据与Schema/product_roles_v4.json
+schema = ../08_机器数据与Schema/business_model_signature_v4.schema.json
+validation = ../08_机器数据与Schema/validation_v4.json
 ```
 
-`product_roles_v4.json` 是横向 taxonomy，不计入 L1/L2 atom 数。
+`product_roles_v4.json` 是横向 taxonomy，不计入 L1/L2 atom 数。当前唯一总入口与冲突优先级见 `../README.md` 和 `../00_导航与总览/00_当前有效版本与加载入口.md`。
 
 ---
 
