@@ -1,0 +1,191 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/shopable-ai/VizTell/business_model_signature_v4.schema.json",
+  "title": "BusinessModelUniverseProjectSignatureV4",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "version": {"type":"string","const":"v4"},
+    "project": {"type":"object"},
+    "actors": {"type":"array","items":{"type":"object"}},
+    "problem": {"type":"object"},
+    "offer": {"type":"object"},
+    "delivery": {"type":"object"},
+    "economics": {"type":"object"},
+    "conditional_economics": {"type":"object"},
+    "retention": {"type":"object"},
+    "growth": {"type":"object"},
+    "digital_assets": {"type":"object"},
+    "constraints": {"type":"object"},
+    "evidence": {"type":"object"},
+    "ownership_governance": {"type":"object"},
+    "accounting_truth": {"type":"object"},
+    "capacity_economics": {"type":"object"},
+    "risk_transfer": {"type":"object"},
+    "public_economics": {"type":"object"},
+    "treasury": {"type":"object"},
+    "contract_economics": {"type":"object"},
+    "labor_economics": {"type":"object"},
+    "market_design": {"type":"object"},
+    "competitive_response": {"type":"object"},
+    "metrics": {"type":"object"},
+    "experiments": {"type":"object"},
+    "product_role_assignments": {
+      "type":"array",
+      "items":{"$ref":"#/$defs/productRoleAssignment"}
+    },
+    "price_architecture": {"$ref":"#/$defs/priceArchitecture"},
+    "context_router": {"$ref":"#/$defs/contextRouter"},
+    "offer_architecture": {"$ref":"#/$defs/offerArchitecture"},
+    "cohort_economics": {"$ref":"#/$defs/cohortEconomics"},
+    "promotion_experiment": {"$ref":"#/$defs/promotionExperiment"},
+    "atoms": {"type":"array","items":{"type":"string"},"uniqueItems":true},
+    "patterns": {"type":"array","items":{"type":"string"},"uniqueItems":true}
+  },
+  "$defs": {
+    "moneyOrNumber": {"type":["number","null"]},
+    "productRoleAssignment": {
+      "type":"object",
+      "required":["offer_id","primary_role"],
+      "properties": {
+        "offer_id":{"type":"string"},
+        "product_id":{"type":["string","null"]},
+        "primary_role":{"type":"string","pattern":"^PR(0[1-9]|[1-3][0-9]|40)$"},
+        "secondary_roles":{"type":"array","items":{"type":"string","pattern":"^PR(0[1-9]|[1-3][0-9]|40)$"},"uniqueItems":true},
+        "role_reason":{"type":"string"},
+        "target_segment":{"type":["string","object","array","null"]},
+        "role_kpis":{"type":"array","items":{"type":"string"}},
+        "exit_conditions":{"type":"array","items":{"type":"string"}}
+      },
+      "additionalProperties":true
+    },
+    "priceArchitecture": {
+      "type":"object",
+      "properties": {
+        "reference_layer":{"type":"object"},
+        "entry_layer":{"type":"object"},
+        "fences":{"type":"object"},
+        "choice_architecture":{"type":"object"},
+        "meter_and_commitment":{"type":"object"},
+        "net_effective_economics":{"type":"object"},
+        "pricing_atom_ids":{"type":"array","items":{"type":"string"},"uniqueItems":true}
+      },
+      "additionalProperties":true
+    },
+    "contextRouter": {
+      "type":"object",
+      "properties": {
+        "customer_state":{"type":["string","object","null"]},
+        "lifecycle":{"type":["string","object","null"]},
+        "time":{"type":["string","object","null"]},
+        "season":{"type":["string","null"]},
+        "holiday_event":{"type":["string","array","null"]},
+        "location":{"type":["string","object","null"]},
+        "weather":{"type":["string","object","null"]},
+        "inventory_state":{"type":["string","object","null"]},
+        "capacity_state":{"type":["string","object","null"]},
+        "channel":{"type":["string","array","null"]},
+        "current_intent":{"type":["string","array","null"]},
+        "eligible_offer_ids":{"type":"array","items":{"type":"string"}}
+      },
+      "additionalProperties":true
+    },
+    "offerNode": {
+      "type":"object",
+      "required":["offer_id"],
+      "properties": {
+        "offer_id":{"type":"string"},
+        "role_ids":{"type":"array","items":{"type":"string","pattern":"^PR(0[1-9]|[1-3][0-9]|40)$"},"uniqueItems":true},
+        "price_mechanism_ids":{"type":"array","items":{"type":"string"},"uniqueItems":true},
+        "target_segment":{"type":["string","object","array","null"]},
+        "trigger_context":{"type":["object","array","string","null"]},
+        "economics":{"type":"object"},
+        "constraints":{"type":"object"}
+      },
+      "additionalProperties":true
+    },
+    "conversionEdge": {
+      "type":"object",
+      "required":["from_offer","to_offer"],
+      "properties": {
+        "from_offer":{"type":"string"},
+        "to_offer":{"type":"string"},
+        "trigger_event":{"type":["string","object","null"]},
+        "eligibility":{"type":["string","object","array","null"]},
+        "conversion_rate":{"type":["number","null"],"minimum":0,"maximum":1},
+        "attach_rate":{"type":["number","null"],"minimum":0},
+        "time_lag_days":{"type":["number","null"],"minimum":0},
+        "incremental_revenue":{"$ref":"#/$defs/moneyOrNumber"},
+        "incremental_contribution":{"$ref":"#/$defs/moneyOrNumber"},
+        "evidence_level":{"type":["string","null"],"enum":["E0","E1","E2","E3","E4","E5",null]},
+        "confidence":{"type":["number","null"],"minimum":0,"maximum":1}
+      },
+      "additionalProperties":true
+    },
+    "offerArchitecture": {
+      "type":"object",
+      "properties": {
+        "nodes":{"type":"array","items":{"$ref":"#/$defs/offerNode"}},
+        "edges":{"type":"array","items":{"$ref":"#/$defs/conversionEdge"}},
+        "candidate_rank":{"type":["integer","null"],"minimum":1,"maximum":7},
+        "fit_score":{"type":["number","null"],"minimum":0,"maximum":100},
+        "risk_penalty":{"type":["number","null"],"minimum":0},
+        "critical_assumptions":{"type":"array","items":{"type":"string"}},
+        "kill_conditions":{"type":"array","items":{"type":"string"}}
+      },
+      "additionalProperties":true
+    },
+    "cohortEconomics": {
+      "type":"object",
+      "properties": {
+        "front_end_revenue":{"$ref":"#/$defs/moneyOrNumber"},
+        "cogs":{"$ref":"#/$defs/moneyOrNumber"},
+        "packaging":{"$ref":"#/$defs/moneyOrNumber"},
+        "fulfillment":{"$ref":"#/$defs/moneyOrNumber"},
+        "delivery":{"$ref":"#/$defs/moneyOrNumber"},
+        "spoilage_loss":{"$ref":"#/$defs/moneyOrNumber"},
+        "direct_promotion_cost":{"$ref":"#/$defs/moneyOrNumber"},
+        "front_end_contribution":{"$ref":"#/$defs/moneyOrNumber"},
+        "attach_contribution":{"$ref":"#/$defs/moneyOrNumber"},
+        "backend_contribution":{"$ref":"#/$defs/moneyOrNumber"},
+        "membership_contribution":{"$ref":"#/$defs/moneyOrNumber"},
+        "subscription_contribution":{"$ref":"#/$defs/moneyOrNumber"},
+        "repeat_contribution":{"$ref":"#/$defs/moneyOrNumber"},
+        "cross_sell_contribution":{"$ref":"#/$defs/moneyOrNumber"},
+        "referral_contribution":{"$ref":"#/$defs/moneyOrNumber"},
+        "supplier_conditional_economics":{"$ref":"#/$defs/moneyOrNumber"},
+        "avoided_spoilage_or_capacity_value":{"$ref":"#/$defs/moneyOrNumber"},
+        "cac":{"$ref":"#/$defs/moneyOrNumber"},
+        "service_cost":{"$ref":"#/$defs/moneyOrNumber"},
+        "refunds_returns":{"$ref":"#/$defs/moneyOrNumber"},
+        "fraud_abuse":{"$ref":"#/$defs/moneyOrNumber"},
+        "financing_cost":{"$ref":"#/$defs/moneyOrNumber"},
+        "expected_clawback":{"$ref":"#/$defs/moneyOrNumber"},
+        "true_cohort_contribution":{"$ref":"#/$defs/moneyOrNumber"},
+        "payback_days":{"type":["number","null"],"minimum":0},
+        "measurement_window_days":{"type":["integer","null"],"minimum":1},
+        "realized_vs_forecast":{"type":["string","object","null"]}
+      },
+      "additionalProperties":true
+    },
+    "promotionExperiment": {
+      "type":"object",
+      "properties": {
+        "hypothesis":{"type":["string","object","null"]},
+        "population":{"type":["object","string","null"]},
+        "assignment":{"type":["object","string","null"]},
+        "treatment":{"type":["object","string","null"]},
+        "control_holdout":{"type":["object","string","null"]},
+        "primary_metric":{"type":["string","null"]},
+        "guardrails":{"type":"array","items":{"type":"string"}},
+        "observation_window":{"type":["string","object","null"]},
+        "budget_cap":{"$ref":"#/$defs/moneyOrNumber"},
+        "pass_condition":{"type":["string","object","null"]},
+        "kill_condition":{"type":["string","object","null"]},
+        "scale_condition":{"type":["string","object","null"]},
+        "confounders":{"type":"array","items":{"type":"string"}}
+      },
+      "additionalProperties":true
+    }
+  }
+}
