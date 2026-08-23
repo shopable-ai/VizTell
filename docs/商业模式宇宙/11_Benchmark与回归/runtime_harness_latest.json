@@ -1,0 +1,405 @@
+{
+  "harness": "business-model-universe-runtime-v1",
+  "ontology_base": "v4",
+  "note": "This report validates structure + routing + minimum-context retrieval wiring. It does not estimate A-E business-answer uplift.",
+  "preservation": {
+    "pass": true,
+    "checks": {
+      "base_atoms_500": true,
+      "v3_atoms_149": true,
+      "v4_atoms_27": true,
+      "total_atoms_676": true,
+      "base_patterns_130": true,
+      "v3_patterns_40": true,
+      "v4_patterns_30": true,
+      "total_patterns_200": true,
+      "product_roles_40": true,
+      "atom_ids_unique": true,
+      "pattern_ids_unique": true,
+      "role_ids_unique": true,
+      "u19_preserved": true,
+      "no_u28_plus": true,
+      "p001_present": true,
+      "p200_present": true,
+      "pr01_present": true,
+      "pr40_present": true,
+      "router_assets_exist": true
+    },
+    "counts": {
+      "base_atoms": 500,
+      "v3_atoms": 149,
+      "v4_atoms": 27,
+      "total_atoms": 676,
+      "base_patterns": 130,
+      "v3_patterns": 40,
+      "v4_patterns": 30,
+      "total_patterns": 200,
+      "product_roles": 40
+    },
+    "duplicates": {
+      "atoms": [],
+      "patterns": [],
+      "roles": []
+    },
+    "missing_router_assets": []
+  },
+  "cases": [
+    {
+      "case_id": "T01",
+      "name": "电子书低门槛入口与后端商业化",
+      "query": "基于这本电子书/PDF，研究适合的电商销售与后端商业模式。",
+      "route": {
+        "family": "design_new_business_model",
+        "expected_family": "design_new_business_model",
+        "correct": true,
+        "flags": [
+          "knowledge_product"
+        ],
+        "expected_flags": [
+          "knowledge_product"
+        ],
+        "alternate_routes": []
+      },
+      "coverage": {
+        "required_asset_recall": 100.0,
+        "required_domain_recall": 100.0,
+        "expected_flag_recall": 100.0,
+        "missing_assets_on_disk": [],
+        "missing_assets_in_context": [],
+        "missing_domains": [],
+        "knowledge_asset_count": 9,
+        "knowledge_asset_budget": 12,
+        "budget_ok": true
+      },
+      "retrieval_preview": {
+        "top_atoms": [
+          {
+            "id": "U21-A05",
+            "name": "Agent模式/Net",
+            "score": 0.052632
+          },
+          {
+            "id": "U18-A30",
+            "name": "商业贿赂/个人回扣风险",
+            "score": 0.046875
+          },
+          {
+            "id": "U04-A15",
+            "name": "合作伙伴销售",
+            "score": 0.046512
+          },
+          {
+            "id": "U21-A04",
+            "name": "Principal模式/Gross",
+            "score": 0.04
+          },
+          {
+            "id": "U11-A01",
+            "name": "商品毛利",
+            "score": 0.032258
+          },
+          {
+            "id": "U11-A22",
+            "name": "耗材复购",
+            "score": 0.030303
+          },
+          {
+            "id": "U11-A24",
+            "name": "数据销售",
+            "score": 0.030303
+          },
+          {
+            "id": "U11-A33",
+            "name": "二次销售/残值",
+            "score": 0.028571
+          },
+          {
+            "id": "U15-A07",
+            "name": "店中店复制",
+            "score": 0.027778
+          },
+          {
+            "id": "U01-A05",
+            "name": "B2C",
+            "score": 0.026316
+          }
+        ],
+        "top_patterns": [
+          {
+            "id": "P082",
+            "name": "Direct Selling",
+            "score": 0.047619
+          },
+          {
+            "id": "P038",
+            "name": "White Label",
+            "score": 0.045455
+          },
+          {
+            "id": "P004",
+            "name": "经销/Reseller",
+            "score": 0.043478
+          },
+          {
+            "id": "P074",
+            "name": "Crowdfunding",
+            "score": 0.041667
+          },
+          {
+            "id": "P002",
+            "name": "批发分销 Wholesale",
+            "score": 0.038462
+          },
+          {
+            "id": "P001",
+            "name": "传统商品销售 Merchant",
+            "score": 0.037037
+          },
+          {
+            "id": "P091",
+            "name": "Embedded Finance",
+            "score": 0.035714
+          },
+          {
+            "id": "P088",
+            "name": "High-Frequency Wedge",
+            "score": 0.033333
+          },
+          {
+            "id": "P100",
+            "name": "Ecosystem Bundle",
+            "score": 0.032258
+          },
+          {
+            "id": "P118",
+            "name": "Pay-to-Stay / 留架费",
+            "score": 0.032258
+          }
+        ]
+      },
+      "retrieval_ablation": {
+        "product_roles_offer": {
+          "removed_assets": [
+            "01_核心机制与组合模式/04_v4商品角色价格架构Offer转化与场景经济.md",
+            "07_元数据知识图谱与Skill/02_v4_Skill机器加载与Offer决策协议.md"
+          ],
+          "required_asset_recall_after": 71.43,
+          "coverage_drop_points": 28.57
+        },
+        "opportunity_lens": {
+          "removed_assets": [
+            "01_核心机制与组合模式/06_机会来源_差异捕获与商业模式变换算子.md"
+          ],
+          "required_asset_recall_after": 85.71,
+          "coverage_drop_points": 14.29
+        },
+        "value_chain_ecosystem": {
+          "removed_assets": [
+            "02_价值链与利润池/00_价值链与利润池总览.md",
+            "03_生态与价值交换/00_生态价值网络总览.md"
+          ],
+          "required_asset_recall_after": 85.71,
+          "coverage_drop_points": 14.29
+        },
+        "conditional_real_economics": {
+          "removed_assets": [
+            "06_真实经济性_返点与治理/02_v4隐藏利润层单位经济KPI实验与风险.md"
+          ],
+          "required_asset_recall_after": 85.71,
+          "coverage_drop_points": 14.29
+        },
+        "topic_case": {
+          "removed_assets": [
+            "09_专题商业模式/电子书商业模式.md"
+          ],
+          "required_asset_recall_after": 85.71,
+          "coverage_drop_points": 14.29
+        },
+        "failure_counterargument": {
+          "removed_assets": [
+            "05_失败模式与迁移/01_失败模式库/00_失败模式总览.md"
+          ],
+          "required_asset_recall_after": 85.71,
+          "coverage_drop_points": 14.29
+        }
+      },
+      "runtime_harness_score": 100.0,
+      "score_semantics": "routing/context harness only; NOT A-E business answer quality"
+    },
+    {
+      "case_id": "T02",
+      "name": "AI API按量计费与企业后端Canary",
+      "query": "我们提供按调用计费的AI API，推理成本随用量变化。怎样设计免费额度、commit、overage、渠道和企业后端，避免增长越快亏得越多？",
+      "route": {
+        "family": "pricing_offer_portfolio",
+        "expected_family": "pricing_offer_portfolio",
+        "correct": true,
+        "flags": [
+          "ai_native",
+          "enterprise",
+          "low_price_entry"
+        ],
+        "expected_flags": [
+          "ai_native",
+          "enterprise",
+          "low_price_entry"
+        ],
+        "alternate_routes": [
+          {
+            "family": "growth_retention_ltv",
+            "score": 2.6666666666666665
+          },
+          {
+            "family": "platform_channel_ecosystem",
+            "score": 2.6666666666666665
+          }
+        ]
+      },
+      "coverage": {
+        "required_asset_recall": 100.0,
+        "required_domain_recall": 100.0,
+        "expected_flag_recall": 100.0,
+        "missing_assets_on_disk": [],
+        "missing_assets_in_context": [],
+        "missing_domains": [],
+        "knowledge_asset_count": 5,
+        "knowledge_asset_budget": 12,
+        "budget_ok": true
+      },
+      "retrieval_preview": {
+        "top_atoms": [
+          {
+            "id": "U27-A09",
+            "name": "Tiered Commission",
+            "score": 0.192308
+          },
+          {
+            "id": "U26-A01",
+            "name": "Minimum Commitment",
+            "score": 0.185185
+          },
+          {
+            "id": "U27-A08",
+            "name": "Commission/销售佣金",
+            "score": 0.166667
+          },
+          {
+            "id": "U21-A14",
+            "name": "Unit Economics View",
+            "score": 0.153846
+          },
+          {
+            "id": "U27-A06",
+            "name": "BPO/Managed Service",
+            "score": 0.148148
+          },
+          {
+            "id": "U27-A07",
+            "name": "Piece-rate/计件",
+            "score": 0.142857
+          },
+          {
+            "id": "U21-A12",
+            "name": "Contra Revenue",
+            "score": 0.136364
+          },
+          {
+            "id": "U27-A16",
+            "name": "Owner-operator",
+            "score": 0.136364
+          },
+          {
+            "id": "U21-A18",
+            "name": "Cohort Economics",
+            "score": 0.130435
+          },
+          {
+            "id": "U11-A26",
+            "name": "API调用费",
+            "score": 0.125
+          }
+        ],
+        "top_patterns": [
+          {
+            "id": "P044",
+            "name": "API-as-a-Product",
+            "score": 0.208333
+          },
+          {
+            "id": "P086",
+            "name": "Community-to-Commerce",
+            "score": 0.206897
+          },
+          {
+            "id": "P161",
+            "name": "Capacity Reservation + Overage",
+            "score": 0.195652
+          },
+          {
+            "id": "P108",
+            "name": "Commit-to-Save / 承诺换折扣",
+            "score": 0.186047
+          },
+          {
+            "id": "P051",
+            "name": "AI Agent-as-a-Service",
+            "score": 0.176471
+          },
+          {
+            "id": "P186",
+            "name": "Credit Pack → Usage → Top-up → Overage/Upgrade",
+            "score": 0.168831
+          },
+          {
+            "id": "P085",
+            "name": "Content-to-Commerce",
+            "score": 0.166667
+          },
+          {
+            "id": "P158",
+            "name": "Franchise Capital Leverage",
+            "score": 0.163265
+          },
+          {
+            "id": "P084",
+            "name": "B2B2C Channel Leverage",
+            "score": 0.147059
+          },
+          {
+            "id": "P029",
+            "name": "Reverse Razor",
+            "score": 0.142857
+          }
+        ]
+      },
+      "retrieval_ablation": {
+        "product_roles_offer": {
+          "removed_assets": [
+            "01_核心机制与组合模式/04_v4商品角色价格架构Offer转化与场景经济.md",
+            "07_元数据知识图谱与Skill/02_v4_Skill机器加载与Offer决策协议.md"
+          ],
+          "required_asset_recall_after": 50.0,
+          "coverage_drop_points": 50.0
+        },
+        "conditional_real_economics": {
+          "removed_assets": [
+            "06_真实经济性_返点与治理/00_返点门槛后台利益与真实净经济性.md",
+            "06_真实经济性_返点与治理/01_经济真相治理容量风险合同与劳动力层.md",
+            "06_真实经济性_返点与治理/02_v4隐藏利润层单位经济KPI实验与风险.md"
+          ],
+          "required_asset_recall_after": 50.0,
+          "coverage_drop_points": 50.0
+        }
+      },
+      "runtime_harness_score": 100.0,
+      "score_semantics": "routing/context harness only; NOT A-E business answer quality"
+    }
+  ],
+  "regression": {
+    "minimum_runtime_harness_score": 90.0,
+    "pass": true,
+    "failures": []
+  },
+  "tested_commit": "d3309f1a138de97c9b9aecf05245c977e2a0563a",
+  "report_semantics": "deterministic preservation/routing/context harness; not A-E business-answer quality"
+}
