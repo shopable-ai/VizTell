@@ -10,10 +10,11 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   runtime-regression:
+    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -28,5 +29,38 @@ jobs:
       - name: Validate Python syntax
         run: python -m py_compile scripts/benchmark_business_model_universe.py
 
-      - name: Run business model universe runtime harness
-        run: python scripts/benchmark_business_model_universe.py --root . --strict --pretty
+      - name: Run deterministic runtime harness
+        run: |
+          python scripts/benchmark_business_model_universe.py --root . --pretty > 'docs/商业模式宇宙/11_Benchmark与回归/runtime_harness_latest.json'
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          path = Path('docs/商业模式宇宙/11_Benchmark与回归/runtime_harness_latest.json')
+          data = json.loads(path.read_text(encoding='utf-8'))
+          data['tested_commit'] = os.environ['GITHUB_SHA']
+          data['report_semantics'] = 'deterministic preservation/routing/context harness; not A-E business-answer quality'
+          path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          PY
+
+      - name: Persist auditable report on main
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add 'docs/商业模式宇宙/11_Benchmark与回归/runtime_harness_latest.json'
+          if ! git diff --cached --quiet; then
+            git commit -m 'test(bm-universe): update runtime harness report [skip ci]'
+            git push origin HEAD:main
+          fi
+
+      - name: Enforce regression gate
+        run: |
+          python - <<'PY'
+          import json, sys
+          from pathlib import Path
+          path = Path('docs/商业模式宇宙/11_Benchmark与回归/runtime_harness_latest.json')
+          data = json.loads(path.read_text(encoding='utf-8'))
+          if not data.get('regression', {}).get('pass'):
+              print(json.dumps(data.get('regression', {}), ensure_ascii=False, indent=2))
+              sys.exit(1)
+          print('Business Model Universe runtime regression: PASS')
+          PY
