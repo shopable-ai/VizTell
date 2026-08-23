@@ -1,0 +1,30 @@
+{"id":"P171","name":"Qualified Loss Leader → Basket Profit","formula":"高感知入口品 + 资格/限新/行为围栏 → 合格流量 → 同篮Attach → 后端贡献 → 用True Cohort Contribution而非入口毛利决策","distinguishes_from":"P033 adds qualification, attach measurement, cohort economics and abuse guardrails"}
+{"id":"P172","name":"Seasonal Traffic SKU Rotation","formula":"季节/温度/节日需求信号 → 在同一目标客群中轮换PR07入口SKU → 保持稳定Core/Profit后端 → 按季节cohort比较增量贡献"}
+{"id":"P173","name":"Weather/Event-triggered Offer Router","formula":"天气/事件/地点触发 → 候选Offer评分 → 库存/容量/品牌/经济门过滤 → 发放情境Offer → holdout验证增量"}
+{"id":"P174","name":"Sample → Trust → Full-size → Replenishment","formula":"低成本样品PR05 → 建立质量信任PR08 → 正装Core → 消耗周期补货PR22 → 用sample-to-paid与repeat回收采样成本"}
+{"id":"P175","name":"Paid Trial → Core → Subscription","formula":"象征性/低价体验而非完全免费 → 筛选真实意向 → Core首次成交 → 订阅/持续服务 → 比较Paid Trial与Free Trial的质量和LTV"}
+{"id":"P176","name":"Free Hook → Identity Capture → Qualified Core","formula":"免费高价值Hook → 合法留资/账户关系 → 行为或需求资格评分 → 匹配Core Offer → 不用下载量代替合格转化"}
+{"id":"P177","name":"Hero SKU → Price Anchor Ladder → Premium Mix","formula":"Hero建立心智/流量 → 真实锚定层级 → Good-Better-Best比较 → Premium承接高WTP → 测量premium mix与price realization"}
+{"id":"P178","name":"Anchor + Decoy + Target Tier","formula":"目标Tier + 真实Anchor + 可解释Comparison/Decoy → 改变选择集 → 受控实验验证目标Tier增量选择与利润，失败则移除"}
+{"id":"P179","name":"Good-Better-Best + Price Fences","formula":"按价值/服务/容量分成Good-Better-Best → 使用资格/用量/服务围栏防止高WTP用户下沉 → Upsell路径 → 分层贡献利润"}
+{"id":"P180","name":"Entry Offer → Core → Add-on Attach","formula":"低摩擦Entry → Core成交 → 交易时点展示高相关Add-on → 用Attach Rate×增量毛利核算，不以附件销量单独判断"}
+{"id":"P181","name":"Entry Offer → Membership → Member-price Flywheel","formula":"首次入口 → 会员资格/权益 → 会员价与频次提升 → 更多交易提高会员感知价值 → 续费；必须扣除权益履约与价格让利"}
+{"id":"P182","name":"Consumer Wedge → Enterprise/Gifting Backend","formula":"个人消费入口建立产品认知 → 企业礼赠/员工福利/客户关系场景 → 批量订单与服务 → 收件人再转个人客户形成双向LTV"}
+{"id":"P183","name":"Reactivation Offer → Repeat → Cross-sell","formula":"识别沉默cohort → 定向Win-back Offer → 恢复第二次交易 → 再做Cross-sell → 与自然回流holdout比较增量而非只看兑换率"}
+{"id":"P184","name":"Referral Reward → Qualified New Cohort","formula":"现有用户奖励 + 新客入口权益 → 反作弊/资格门 → 新客成交 → 分别计算推荐人奖励成本与被推荐cohort LTV/CAC"}
+{"id":"P185","name":"Gift Card/Prepaid → Visit → Basket → Breakage/Float","formula":"预付权益/礼卡 → 未来到店或交易 → 通常产生超面值购物篮机会 → 同时建模兑换、breakage、资金时序和储值监管"}
+{"id":"P186","name":"Credit Pack → Usage → Top-up → Overage/Upgrade","formula":"预购credits → 按使用burn → 低余额触发top-up → 超额或升级 → 适用于AI/API等非零边际成本产品并持续监控单位毛利"}
+{"id":"P187","name":"Included Usage → Overage → Expansion","formula":"固定基础费含合理用量 → 超过阈值按量计费 → 高使用客户升级容量/承诺 → 兼顾可预测收入与成本对齐"}
+{"id":"P188","name":"Freemium → Promotional Credits → Usage Commit","formula":"免费基础价值 → 有期限promotional credits体验高成本能力 → 形成真实使用数据 → 付费credit pack/minimum commitment → 防止永久免费高成本用户"}
+{"id":"P189","name":"Capacity Filler → Core Retention","formula":"低峰/闲置容量用PR34专属Offer填充 → 提高增量利用率 → 对合格用户引导标准时段/Core → 防止高峰需求被折价替代"}
+{"id":"P190","name":"Inventory Liquidation Hook → Full-margin Cohort","formula":"临期/季末/尾货经济压力 → 定向清仓Offer降低spoilage/holding loss → 获取或唤醒用户 → 后续标准毛利商品转化；单独衡量品牌侵蚀"}
+{"id":"P191","name":"Bundle Anchor → Cross-category Basket Optimization","formula":"高感知Bundle Driver → 搭配互补品形成套餐 → 优化总篮贡献而非逐SKU毛利 → 用incrementality/cannibalization测试套餐是否真实增量"}
+{"id":"P192","name":"Unbundle Entry → Paid Add-ons → Premium Rebundle","formula":"拆低首次门槛 → 用户只买最小核心 → 高价值功能Add-on → 重度用户升级到重新打包Premium → 比较ARPU与复杂度成本"}
+{"id":"P193","name":"New-customer Price Fence → Standard Repeat","formula":"首单/新客专价 + 强资格/身份围栏 → 第一次成交 → 明确标准续购价 → 通过repeat/payback判断，而不是首单转化率"}
+{"id":"P194","name":"Paid Pilot → B2B Land-and-Expand","formula":"小范围付费Pilot筛选真实项目 → 明确验收与价值证明 → Core合同 → 席位/区域/模块/用量扩张 → 避免无限免费PoC"}
+{"id":"P195","name":"Supplier-funded Entry SKU → Backend Profit","formula":"供应商返点/MDF/free goods改变入口SKU净成本 → 允许更强前端优惠 → 客户篮子/后端获利 → 必须把供应商条件、clawback和资格写入Net Effective Economics"}
+{"id":"P196","name":"Enterprise Gift → Recipient Acquisition","formula":"企业付款购买礼赠/福利 → 收件人体验商品 → 合法转化为直接关系 → 个人复购/会员/推荐 → 同时计算B2B订单与recipient cohort价值"}
+{"id":"P197","name":"Lifecycle Trigger → Next-best Offer","formula":"结婚/搬家/育儿/续约/设备老化等生命周期事件 → 匹配下一阶段PR26产品 → 复用既有信任 → 延长LTV并设置敏感数据/隐私边界"}
+{"id":"P198","name":"Promotion Budget as CAC","formula":"把入口折扣+免费商品+券+配送补贴+直接履约成本统一视为增量获客投资 → 除以合格新增客户 → 与其他渠道CAC和payback比较"}
+{"id":"P199","name":"True Cohort Contribution Waterfall","formula":"前端收入-COGS-履约-配送-损耗-促销 + Attach/Backend/会员/复购/Cross-sell/返点等贡献 - CAC-服务-退款-欺诈 = True Cohort Contribution"}
+{"id":"P200","name":"Contextual Offer Portfolio Router","formula":"用户状态×时间×季节×地点×天气×事件×生命周期×库存×容量 → 生成3~7个候选Offer Architecture → 经济/风险/品牌/渠道过滤 → 排序并用最小实验更新路由"}
