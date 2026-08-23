@@ -9,6 +9,10 @@ on:
       - '.github/workflows/business-model-universe.yml'
   workflow_dispatch:
 
+concurrency:
+  group: business-model-universe-main
+  cancel-in-progress: true
+
 permissions:
   contents: write
 
@@ -38,7 +42,7 @@ jobs:
           path = Path('docs/商业模式宇宙/11_Benchmark与回归/runtime_harness_latest.json')
           data = json.loads(path.read_text(encoding='utf-8'))
           data['tested_commit'] = os.environ['GITHUB_SHA']
-          data['report_semantics'] = 'deterministic preservation/routing/context harness; not A-E business-answer quality'
+          data['report_semantics'] = 'deterministic preservation/routing/context/retrieval harness; not A-E business-answer quality'
           path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
           PY
 
