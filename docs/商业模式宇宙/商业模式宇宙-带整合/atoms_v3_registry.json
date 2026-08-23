@@ -1,0 +1,50 @@
+{
+  "U20": {
+    "category_name": "所有权、治理与剩余索取权",
+    "atoms": [
+      {"id":"U20-A01","name":"创始人控制"},{"id":"U20-A02","name":"普通股股东所有"},{"id":"U20-A03","name":"双层股权/Dual-class"},{"id":"U20-A04","name":"员工持股/ESOP"},{"id":"U20-A05","name":"合作社/成员所有"},{"id":"U20-A06","name":"用户所有平台"},{"id":"U20-A07","name":"供应商所有联盟"},{"id":"U20-A08","name":"合资企业/JV"},{"id":"U20-A09","name":"SPV/项目公司"},{"id":"U20-A10","name":"经济权与治理权分离"},{"id":"U20-A11","name":"剩余索取权"},{"id":"U20-A12","name":"否决权/Veto Rights"},{"id":"U20-A13","name":"董事会控制"},{"id":"U20-A14","name":"数据所有/控制权"},{"id":"U20-A15","name":"IP所有权"},{"id":"U20-A16","name":"客户关系所有权"},{"id":"U20-A17","name":"资产所有权与运营权分离"}
+    ]
+  },
+  "U21": {
+    "category_name": "会计口径与经济真相层",
+    "atoms": [
+      {"id":"U21-A01","name":"GMV/交易总额"},{"id":"U21-A02","name":"Gross Billings"},{"id":"U21-A03","name":"Recognized Revenue"},{"id":"U21-A04","name":"Principal模式/Gross"},{"id":"U21-A05","name":"Agent模式/Net"},{"id":"U21-A06","name":"Take Rate"},{"id":"U21-A07","name":"Gross Profit"},{"id":"U21-A08","name":"Contribution Margin"},{"id":"U21-A09","name":"Operating Contribution"},{"id":"U21-A10","name":"Deferred Revenue/合同负债"},{"id":"U21-A11","name":"Pass-through Revenue"},{"id":"U21-A12","name":"Contra Revenue"},{"id":"U21-A13","name":"Capitalized vs Expensed"},{"id":"U21-A14","name":"Unit Economics View"},{"id":"U21-A15","name":"Cash Collected"},{"id":"U21-A16","name":"Free Cash Flow"},{"id":"U21-A17","name":"Revenue Quality"},{"id":"U21-A18","name":"Cohort Economics"}
+    ]
+  },
+  "U22": {
+    "category_name": "容量、利用率与损耗经济学",
+    "atoms": [
+      {"id":"U22-A01","name":"Capacity/可售容量"},{"id":"U22-A02","name":"Utilization Rate/利用率"},{"id":"U22-A03","name":"Occupancy/占用率"},{"id":"U22-A04","name":"Load Factor"},{"id":"U22-A05","name":"Yield Management"},{"id":"U22-A06","name":"Revenue Management"},{"id":"U22-A07","name":"Overbooking/超售"},{"id":"U22-A08","name":"No-show"},{"id":"U22-A09","name":"Cancellation Economics"},{"id":"U22-A10","name":"Breakage"},{"id":"U22-A11","name":"Expiration"},{"id":"U22-A12","name":"Under-utilization"},{"id":"U22-A13","name":"Oversubscription"},{"id":"U22-A14","name":"Statistical Multiplexing"},{"id":"U22-A15","name":"Capacity Pooling"},{"id":"U22-A16","name":"Reservation/预留"},{"id":"U22-A17","name":"Priority Allocation"},{"id":"U22-A18","name":"Spoilage/易腐库存"},{"id":"U22-A19","name":"Waitlist"},{"id":"U22-A20","name":"Surge Pricing"}
+    ]
+  },
+  "U23": {
+    "category_name": "风险转移、风险池与保险经济学",
+    "atoms": [
+      {"id":"U23-A01","name":"Risk Transfer"},{"id":"U23-A02","name":"Risk Pooling"},{"id":"U23-A03","name":"Premium/风险保费"},{"id":"U23-A04","name":"Deductible/免赔额"},{"id":"U23-A05","name":"Copay/共同承担"},{"id":"U23-A06","name":"Warranty/保修"},{"id":"U23-A07","name":"Extended Warranty"},{"id":"U23-A08","name":"Guarantee/保证"},{"id":"U23-A09","name":"Performance Guarantee"},{"id":"U23-A10","name":"Insurance Distribution"},{"id":"U23-A11","name":"Embedded Insurance"},{"id":"U23-A12","name":"Reinsurance"},{"id":"U23-A13","name":"Excess-of-loss"},{"id":"U23-A14","name":"Reserve/准备金"},{"id":"U23-A15","name":"Hedging/对冲"},{"id":"U23-A16","name":"Risk-based Pricing"},{"id":"U23-A17","name":"Adverse Selection Control"},{"id":"U23-A18","name":"Moral Hazard Control"}
+    ]
+  },
+  "U24": {
+    "category_name": "政府、补贴、税收与公共激励层",
+    "atoms": [
+      {"id":"U24-A01","name":"Direct Grant/直接补助"},{"id":"U24-A02","name":"Operating Subsidy"},{"id":"U24-A03","name":"Capital Subsidy"},{"id":"U24-A04","name":"Tax Credit/税收抵免"},{"id":"U24-A05","name":"Tax Deduction/税前扣除"},{"id":"U24-A06","name":"R&D Incentive"},{"id":"U24-A07","name":"Government Procurement"},{"id":"U24-A08","name":"PPP"},{"id":"U24-A09","name":"Concession/特许经营"},{"id":"U24-A10","name":"Government Guarantee"},{"id":"U24-A11","name":"Preferential Loan"},{"id":"U24-A12","name":"Land/Rent Incentive"},{"id":"U24-A13","name":"Employment Subsidy"},{"id":"U24-A14","name":"Export Incentive"},{"id":"U24-A15","name":"Carbon Credit/环境信用"},{"id":"U24-A16","name":"Regulated Tariff"},{"id":"U24-A17","name":"Universal Service Payment"},{"id":"U24-A18","name":"Outcome/Public Impact Payment"}
+    ]
+  },
+  "U25": {
+    "category_name": "财资、资产负债表与跨币种经济层",
+    "atoms": [
+      {"id":"U25-A01","name":"Float Income"},{"id":"U25-A02","name":"Interest Income"},{"id":"U25-A03","name":"Interest Spread"},{"id":"U25-A04","name":"FX Spread"},{"id":"U25-A05","name":"FX Risk"},{"id":"U25-A06","name":"Treasury Hedging"},{"id":"U25-A07","name":"Cash Pooling"},{"id":"U25-A08","name":"Netting"},{"id":"U25-A09","name":"Settlement Delay Economics"},{"id":"U25-A10","name":"Merchant Reserve"},{"id":"U25-A11","name":"Collateral Economics"},{"id":"U25-A12","name":"Working-capital Arbitrage"},{"id":"U25-A13","name":"Securitization"},{"id":"U25-A14","name":"Receivables Financing"},{"id":"U25-A15","name":"Balance-sheet Lending"},{"id":"U25-A16","name":"Off-balance-sheet Financing"},{"id":"U25-A17","name":"Cross-border Settlement"},{"id":"U25-A18","name":"Tax/Withholding Economics"}
+    ]
+  },
+  "U26": {
+    "category_name": "合同架构、权利、义务与期权层",
+    "atoms": [
+      {"id":"U26-A01","name":"Minimum Commitment"},{"id":"U26-A02","name":"Minimum Guarantee"},{"id":"U26-A03","name":"Take-or-pay"},{"id":"U26-A04","name":"Pay-or-play"},{"id":"U26-A05","name":"Auto-renewal"},{"id":"U26-A06","name":"Early Termination Fee"},{"id":"U26-A07","name":"Cancellation Window"},{"id":"U26-A08","name":"Price Escalator"},{"id":"U26-A09","name":"Renewal Cap"},{"id":"U26-A10","name":"MFN/最惠条款"},{"id":"U26-A11","name":"Exclusivity"},{"id":"U26-A12","name":"Territory Rights"},{"id":"U26-A13","name":"Right of First Refusal"},{"id":"U26-A14","name":"Call Option"},{"id":"U26-A15","name":"Put Option"},{"id":"U26-A16","name":"Buyback/Repurchase"},{"id":"U26-A17","name":"SLA Credit"},{"id":"U26-A18","name":"Change Order"},{"id":"U26-A19","name":"Audit Right"},{"id":"U26-A20","name":"Data Portability/Exit Right"}
+    ]
+  },
+  "U27": {
+    "category_name": "劳动力、组织与激励经济层",
+    "atoms": [
+      {"id":"U27-A01","name":"Full-time Employee"},{"id":"U27-A02","name":"Part-time Employee"},{"id":"U27-A03","name":"Contractor/独立承包"},{"id":"U27-A04","name":"Gig Workforce"},{"id":"U27-A05","name":"Agency Outsourcing"},{"id":"U27-A06","name":"BPO/Managed Service"},{"id":"U27-A07","name":"Piece-rate/计件"},{"id":"U27-A08","name":"Commission/销售佣金"},{"id":"U27-A09","name":"Tiered Commission"},{"id":"U27-A10","name":"Bonus/奖金"},{"id":"U27-A11","name":"Profit Share"},{"id":"U27-A12","name":"Revenue Share"},{"id":"U27-A13","name":"Creator Revenue Share"},{"id":"U27-A14","name":"Partner-operated"},{"id":"U27-A15","name":"Franchisee-operated"},{"id":"U27-A16","name":"Owner-operator"},{"id":"U27-A17","name":"ESOP/Equity Incentive"},{"id":"U27-A18","name":"Tournament Incentive"},{"id":"U27-A19","name":"Quality-linked Pay"},{"id":"U27-A20","name":"Guaranteed Minimum + Variable"}
+    ]
+  }
+}
