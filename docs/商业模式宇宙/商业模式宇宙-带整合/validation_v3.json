@@ -1,0 +1,18 @@
+{
+  "base_version": "v2",
+  "base_level1_categories": 19,
+  "base_atoms": 500,
+  "base_patterns": 130,
+  "v3_extension_domains": 8,
+  "v3_extension_atoms": 149,
+  "v3_extension_patterns": 40,
+  "cross_cutting_systems": 4,
+  "v3_total_level1_categories": 27,
+  "v3_total_atoms": 649,
+  "v3_total_patterns": 170,
+  "extension_atom_ids_unique": true,
+  "extension_pattern_ids_unique": true,
+  "load_rule": "load atoms.jsonl + atoms_v3_registry.json (U20-U27 registry; definitions in 07); load patterns.jsonl + patterns_v3_extension_P131-P170.jsonl",
+  "quality_self_check": 98,
+  "quality_note": "Internal structural self-check, not external certification; source cases are not yet fully mapped to U20-U27."
+}
