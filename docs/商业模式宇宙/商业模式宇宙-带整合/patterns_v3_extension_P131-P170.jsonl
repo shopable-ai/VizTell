@@ -1,0 +1,40 @@
+{"id": "P131", "name": "Platform Principal vs Agent", "formula": "同一平台交易 → 判断是否控制商品/服务 → 决定Gross还是Net收入视角 → 与GMV/Take Rate分开"}
+{"id": "P132", "name": "Asset-owner + Operator Split", "formula": "资产所有者提供资本 → 专业运营方经营 → 管理费/分成 → 资产收益与运营收益分离"}
+{"id": "P133", "name": "Cooperative Platform", "formula": "用户/供给者共同拥有 → 共同治理 → 剩余收益回流成员 → 平台激励结构改变"}
+{"id": "P134", "name": "SPV Project Economics", "formula": "项目资产与现金流装入SPV → 风险隔离 → 项目融资 → 按项目分配收益"}
+{"id": "P135", "name": "Breakage Economics", "formula": "客户预付权益 → 部分最终不兑换/使用 → 历史行为估计breakage → 影响负债与收入"}
+{"id": "P136", "name": "Overbooking + No-show Optimization", "formula": "存在取消/No-show → 基于概率超售容量 → 提高利用率 → 同时承担补偿风险"}
+{"id": "P137", "name": "Yield Management", "formula": "固定易腐容量 → 需求分层 → 动态价格+库存配额 → 最大化单位时间收益"}
+{"id": "P138", "name": "Oversubscription Pooling", "formula": "客户峰值不同步 → 共享容量池 → 售出逻辑容量可超过专用物理容量 → 降低单位成本"}
+{"id": "P139", "name": "Risk Pool Subscription", "formula": "大量客户支付小额保费 → 风险池承担少数大额事件 → 保费、准备金和赔付共同决定利润"}
+{"id": "P140", "name": "Embedded Insurance", "formula": "在主交易中嵌入保险 → 降低用户风险 → 平台获佣金/分成"}
+{"id": "P141", "name": "Warranty Profit Pool", "formula": "核心商品销售 → 保修/延保单独定价 → 用故障概率与服务网络管理风险收益"}
+{"id": "P142", "name": "Reinsurance Layering", "formula": "原始保险人承保 → 将部分风险转给再保险人 → 用再保险保费换资本/波动缓释"}
+{"id": "P143", "name": "Grant-assisted Economics", "formula": "市场收入 + 政府补助/税收激励 → 改变真实单位经济性 → 补贴退出后重新验证"}
+{"id": "P144", "name": "Public Procurement Anchor", "formula": "政府成为首批/大额客户 → 形成基础订单与信誉 → 再向商业市场扩张"}
+{"id": "P145", "name": "PPP/Concession", "formula": "公共资产/经营权 + 私营资本和运营 → 长期合同/收费权 → 风险按合同分配"}
+{"id": "P146", "name": "Float + Payments", "formula": "平台代收/结算资金 → 合规持有期形成资金价值 → 支付费+资金收益共同构成经济性"}
+{"id": "P147", "name": "FX Spread Platform", "formula": "跨境交易 → 聚合换汇需求 → 汇差/手续费变现 → 同时管理币种风险"}
+{"id": "P148", "name": "Negative Working Capital", "formula": "客户先付 → 库存快速周转 → 供应商后收 → 增长产生现金"}
+{"id": "P149", "name": "Take-or-pay Contract", "formula": "客户锁定最低付款 → 供给方锁定容量回报 → 未使用容量仍有收入保障"}
+{"id": "P150", "name": "Minimum Guarantee + Upside Share", "formula": "提供最低保底 → 合作方投入资源 → 超额结果再分成"}
+{"id": "P151", "name": "Auto-renew + Expansion", "formula": "自动续约降低流失 → 席位/用量/模块增长形成Land-and-expand"}
+{"id": "P152", "name": "SLA-backed Service", "formula": "服务费 → SLA定义质量 → 失败触发credits/赔付 → 用风险承担增强可信度"}
+{"id": "P153", "name": "Option-embedded Deal", "formula": "当前交易 + Call/Put/Buyback等选择权 → 将未来不确定性写入合同价值"}
+{"id": "P154", "name": "Exclusive Distribution", "formula": "渠道给予排他/优先资源 → 供应方提供更强价格/返点/支持 → 需竞争审查"}
+{"id": "P155", "name": "Gig Marketplace", "formula": "平台匹配需求与独立供给者 → 按任务分成 → 低固定成本扩张 → 质量/劳动分类是关键风险"}
+{"id": "P156", "name": "Commission-led Distribution", "formula": "固定成本较低 + 成交佣金 → 销售成本变量化 → 需防止错误销售激励"}
+{"id": "P157", "name": "Creator Economy Revenue Share", "formula": "平台提供流量/工具 → 创作者提供内容/供给 → 广告/订阅/交易收入分成"}
+{"id": "P158", "name": "Franchise Capital Leverage", "formula": "总部控制品牌/SOP → 加盟商投入门店资本和人员 → 低资本快速扩张"}
+{"id": "P159", "name": "Managed Service / BPO", "formula": "客户外包完整流程 → 服务商用规模/标准化/自动化提升效率 → 按席位/量/结果收费"}
+{"id": "P160", "name": "Outcome + Risk Share", "formula": "服务商承担结果不确定性 → 客户按成功付费 → 定价覆盖失败概率与归因风险"}
+{"id": "P161", "name": "Capacity Reservation + Overage", "formula": "客户预留基础容量并支付承诺费 → 超额使用另行计费"}
+{"id": "P162", "name": "Government-backed Demand", "formula": "政策采购/补贴提高支付能力 → 形成市场 → 测试政策退坡后的可持续性"}
+{"id": "P163", "name": "Tax-credit Monetization", "formula": "合格投入产生税收抵免 → 降低项目净成本或被结构化融资利用"}
+{"id": "P164", "name": "Receivables Finance Growth", "formula": "账期销售形成应收 → 保理/融资提前变现 → 用融资成本换增长速度"}
+{"id": "P165", "name": "Balance-sheet Lending", "formula": "平台掌握客户与数据 → 自有资金放贷 → 收利息/利差并承担信用/资本风险"}
+{"id": "P166", "name": "Off-balance-sheet Lending", "formula": "平台获客与风控 → 金融伙伴出资 → 平台赚导流/服务/分成并降低资本占用"}
+{"id": "P167", "name": "Data-rights Moat", "formula": "合同明确数据访问与派生权 → 使用产生独特数据 → 数据反哺产品形成壁垒"}
+{"id": "P168", "name": "Employee Ownership Flywheel", "formula": "员工股权参与剩余价值 → 降低关键人才流失/代理成本 → 企业增长增强留存"}
+{"id": "P169", "name": "Dynamic Labor Pool", "formula": "固定核心团队 + 弹性外部供给 → 随需求调节劳动容量 → 降低闲置"}
+{"id": "P170", "name": "Economic Truth Waterfall", "formula": "GMV → Billings → Recognized Revenue → Net Revenue → Gross Profit → Contribution Margin → Cash → FCF"}
