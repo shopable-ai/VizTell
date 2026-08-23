@@ -20,6 +20,7 @@
       "id": "design_new_business_model",
       "name": "从0设计或重构商业模式",
       "triggers": ["设计商业模式", "商业模式", "新业务", "商业化", "从0", "创业", "新产品"],
+      "retrieval_concepts": ["价值主张", "客户", "收入模式", "商品毛利", "单位经济", "Cohort Economics", "价值链", "利润池", "渠道", "复购", "增长", "风险", "Merchant", "Ecosystem Bundle"],
       "primary_domains": ["U01", "U02", "U03", "U07", "U10", "U11", "U12", "U13", "U15", "U16", "U18", "U19", "U21"],
       "knowledge_assets": [
         "01_核心机制与组合模式/00_商业模式宇宙总览与核心结论.md",
@@ -34,6 +35,7 @@
       "id": "diagnose_optimize_existing",
       "name": "已有业务诊断与优化",
       "triggers": ["优化", "诊断", "为什么不赚钱", "利润下降", "业务问题", "改进", "提升利润"],
+      "retrieval_concepts": ["单位经济", "Cohort Economics", "贡献利润", "CAC", "LTV", "现金流", "利润池", "瓶颈", "转化率", "复购", "退款", "风险"],
       "primary_domains": ["U02", "U04", "U06", "U10", "U11", "U12", "U13", "U15", "U16", "U18", "U19", "U21", "U26", "U27"],
       "knowledge_assets": [
         "01_核心机制与组合模式/06_机会来源_差异捕获与商业模式变换算子.md",
@@ -46,6 +48,7 @@
       "id": "pricing_offer_portfolio",
       "name": "定价、入口商品、商品组合与Offer架构",
       "triggers": ["定价", "价格", "低价", "免费", "引流", "首单", "套餐", "订阅", "会员", "商品组合", "offer", "计费", "额度", "commit", "overage"],
+      "retrieval_concepts": ["Pricing", "商品角色", "入口商品", "Free Trial", "Freemium", "Usage-Based", "Minimum Commitment", "Commit-to-Save", "Capacity Reservation + Overage", "Credit Pack", "Cohort Economics", "单位经济", "贡献利润"],
       "primary_domains": ["U03", "U04", "U06", "U10", "U11", "U12", "U13", "U18", "U19", "U21", "U26"],
       "knowledge_assets": [
         "01_核心机制与组合模式/04_v4商品角色价格架构Offer转化与场景经济.md",
@@ -58,6 +61,7 @@
       "id": "profit_cash_conditional_economics",
       "name": "利润、单位经济、现金流与条件性经济",
       "triggers": ["毛利", "贡献利润", "现金流", "回款", "账期", "采购价", "返点", "返佣", "rebate", "MDF", "CAC", "LTV", "cohort", "payback"],
+      "retrieval_concepts": ["Gross Profit", "Operating Contribution", "Cohort Economics", "Cash Collected", "Take Rate", "Contra Revenue", "Rebate", "MDF", "Clawback", "Payback", "Working Capital", "账期"],
       "primary_domains": ["U10", "U11", "U12", "U13", "U19", "U21", "U22", "U25", "U26"],
       "knowledge_assets": [
         "06_真实经济性_返点与治理/00_返点门槛后台利益与真实净经济性.md",
@@ -69,6 +73,7 @@
       "id": "platform_channel_ecosystem",
       "name": "平台、渠道、分销与多方生态",
       "triggers": ["平台", "marketplace", "渠道", "分销", "经销", "代理", "撮合", "生态", "多边市场", "供需匹配"],
+      "retrieval_concepts": ["Marketplace", "Take Rate", "Merchant", "Reseller", "B2B2C", "Agent模式", "多边市场", "网络效应", "交叉补贴", "渠道", "佣金", "生态"],
       "primary_domains": ["U01", "U05", "U08", "U09", "U11", "U15", "U16", "U18", "U20", "U26", "U27"],
       "knowledge_assets": [
         "03_生态与价值交换/00_生态价值网络总览.md",
@@ -81,6 +86,7 @@
       "id": "growth_retention_ltv",
       "name": "获客、增长、复购、留存与LTV",
       "triggers": ["获客", "增长", "复购", "留存", "流失", "LTV", "CAC", "推荐", "裂变", "唤醒", "转化率"],
+      "retrieval_concepts": ["CAC", "LTV", "Cohort Economics", "复购", "留存", "推荐", "Referral", "Lead Generation", "High-Frequency Wedge", "Cross-sell", "Upsell", "Qualified CAC"],
       "primary_domains": ["U04", "U05", "U06", "U10", "U11", "U15", "U18", "U21"],
       "knowledge_assets": [
         "01_核心机制与组合模式/04_v4商品角色价格架构Offer转化与场景经济.md",
@@ -92,6 +98,7 @@
       "id": "value_chain_expansion_competition",
       "name": "价值链、上下游扩张、竞争与迁移",
       "triggers": ["上下游", "价值链", "利润池", "供应链", "竞争", "壁垒", "迁移", "新市场", "控制点", "纵向整合"],
+      "retrieval_concepts": ["价值链", "利润池", "控制点", "瓶颈", "纵向整合", "Layer Player", "Solution Provider", "供应链", "迁移", "壁垒", "竞争反应"],
       "primary_domains": ["U05", "U07", "U11", "U12", "U13", "U15", "U16", "U18", "U19", "U20", "U26", "U27"],
       "knowledge_assets": [
         "02_价值链与利润池/00_价值链与利润池总览.md",
@@ -105,6 +112,7 @@
       "id": "research_case_market",
       "name": "案例、行业、市场与竞品研究",
       "triggers": ["案例", "拆解", "行业研究", "市场研究", "竞品", "公司分析", "调研", "事实核查"],
+      "retrieval_concepts": ["商业模式案例", "行业地图", "竞争", "市场结构", "价格", "渠道", "客户", "证据", "事实核查", "失败模式"],
       "primary_domains": ["U01", "U02", "U04", "U05", "U08", "U10", "U11", "U16", "U18", "U21"],
       "knowledge_assets": [
         "04_案例与行业地图/01_商业模式案例与证据/00_案例与证据规则.md",
@@ -119,6 +127,7 @@
     {
       "id": "knowledge_product",
       "triggers": ["电子书", "PDF", "知识产品", "知识库", "课程", "内容产品"],
+      "retrieval_concepts": ["电子书", "知识产品", "Content-to-Commerce", "Merchant", "Ecosystem Bundle", "商品毛利", "Lead Gen", "会员", "订阅", "复购", "Affiliate", "知识库", "咨询", "企业服务", "后端", "Cohort Economics"],
       "domains_add": ["U03", "U04", "U06", "U10", "U14", "U15", "U18", "U21"],
       "assets_add": [
         "09_专题商业模式/电子书商业模式.md",
@@ -129,6 +138,7 @@
     {
       "id": "ai_native",
       "triggers": ["AI", "API", "token", "模型", "推理成本", "agent", "算力"],
+      "retrieval_concepts": ["API-as-a-Product", "AI Model-as-a-Service", "API调用费", "Usage-Based", "token", "推理成本", "模型成本", "Credit Pack", "Capacity Reservation + Overage"],
       "domains_add": ["U10", "U12", "U13", "U14", "U16", "U18", "U21", "U26"],
       "assets_add": [
         "01_核心机制与组合模式/04_v4商品角色价格架构Offer转化与场景经济.md",
@@ -138,12 +148,14 @@
     {
       "id": "enterprise",
       "triggers": ["企业", "B2B", "采购", "合同", "席位", "大客户", "企业后端"],
+      "retrieval_concepts": ["Minimum Commitment", "Commit-to-Save", "B2B", "企业合同", "采购", "账期", "SLA", "渠道", "折扣", "大客户", "Managed Service"],
       "domains_add": ["U01", "U05", "U10", "U13", "U20", "U21", "U26", "U27"],
       "assets_add": ["06_真实经济性_返点与治理/01_经济真相治理容量风险合同与劳动力层.md"]
     },
     {
       "id": "conditional_economics",
       "triggers": ["返点", "返佣", "rebate", "MDF", "credits", "账期", "年终返利", "渠道奖励"],
+      "retrieval_concepts": ["Rebate", "MDF", "Credits", "Contra Revenue", "Clawback", "Pocket Price", "Net Effective Economics", "账期", "返佣", "返点"],
       "domains_add": ["U19", "U25", "U26"],
       "assets_add": [
         "06_真实经济性_返点与治理/00_返点门槛后台利益与真实净经济性.md",
@@ -153,12 +165,14 @@
     {
       "id": "capacity_perishable",
       "triggers": ["酒店", "房间", "座位", "库存", "产能", "利用率", "易腐", "闲置容量", "算力容量"],
+      "retrieval_concepts": ["Capacity Reservation", "Overage", "利用率", "闲置容量", "易腐容量", "库存", "峰值容量", "Yield Management"],
       "domains_add": ["U22"],
       "assets_add": ["06_真实经济性_返点与治理/01_经济真相治理容量风险合同与劳动力层.md"]
     },
     {
       "id": "low_price_entry",
       "triggers": ["低价", "免费", "引流", "首单", "试用", "入口商品", "钩子"],
+      "retrieval_concepts": ["Loss Leader", "Free Trial", "Freemium", "Credit Pack", "入口商品", "低价", "免费", "首单", "资格筛选", "Qualified CAC", "Cohort Economics", "Cannibalization", "滥用"],
       "domains_add": ["U03", "U04", "U10", "U18", "U19", "U21"],
       "assets_add": [
         "01_核心机制与组合模式/04_v4商品角色价格架构Offer转化与场景经济.md",
@@ -182,7 +196,9 @@
     "default_top_atoms": 24,
     "default_top_patterns": 12,
     "default_max_knowledge_assets": 12,
-    "expansion_rule": "先任务族与旗标收窄域，再召回Atom/Pattern/专题/案例；只有证据不足或任务跨域时继续扩检索。",
+    "v0_min_top3_mean_score": 0.08,
+    "v0_required_anchor_recall": 1.0,
+    "expansion_rule": "先任务族与旗标收窄域，再用任务/旗标retrieval_concepts召回Atom/Pattern/专题/案例；只有证据不足或任务跨域时继续扩检索。",
     "full_universe_fallback": "仅用于复杂全局审计、低召回诊断或明确要求全量覆盖，不作为默认路径。"
   }
 }
