@@ -1,6 +1,8 @@
 # 商业模式宇宙 v3：Skill 增量协议
 
 > 在 v2 `03_商业模式宇宙_元数据知识图谱与Skill协议.md` 基础上增加经济真相、治理、容量、风险、公共激励、财资、合同和劳动力分析。
+>
+> **v4 兼容提示：** 本文件仍是 v3 经济真相层的有效协议；商品角色、价格架构、Offer Graph、Context Router、Cohort Economics 与 Incrementality 的增量协议见 `14_商业模式宇宙_v4_Skill机器加载与Offer决策协议.md`。v4 不覆盖本文件。
 
 ## 一、必须新增的输入/输出对象
 
@@ -113,3 +115,21 @@ Float/FX/账期是否贡献或吞噬利润？
 竞争对手复制后还剩什么优势？
 用什么 KPI 和实验验证？
 ```
+
+## 四、v4 调用衔接
+
+完成本文件的 v3 审计后，若任务涉及具体商品/服务组合、促销、入口价格或转化，应继续执行：
+
+```text
+v3 economic truth / capacity / contract / treasury
+→ v4 product-role-classifier
+→ v4 price-architecture-designer
+→ v4 context-offer-router
+→ v4 conversion-graph-builder
+→ v4 cohort-economics-simulator
+→ v4 promotion-incrementality-auditor
+→ 3~7 candidate architectures
+→ rank / test / kill / scale
+```
+
+这样可以避免“经济真相审计完成，但没有继续设计具体 Offer”的断链。
