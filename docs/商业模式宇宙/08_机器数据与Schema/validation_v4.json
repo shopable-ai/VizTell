@@ -37,6 +37,10 @@
     "context_offer_router",
     "cohort_economics_incrementality_guardrail"
   ],
+  "horizontal_human_lenses": [
+    "01_核心机制与组合模式/05_机会来源_差异捕获与商业模式变换算子.md"
+  ],
+  "horizontal_human_lenses_are_not_new_ids": true,
   "total_cross_cutting_systems_v3_plus_v4": 9,
   "v4_total_level1_categories": 27,
   "v4_total_atoms": 676,
@@ -67,9 +71,13 @@
     "MANIFEST.md",
     "00_导航与总览/00_当前有效版本与加载入口.md",
     "00_导航与总览/01_统一结构与迁移映射.md",
+    "00_导航与总览/11_知识层级与分类规范.md",
+    "00_导航与总览/12_阅读与使用路径.md",
+    "00_导航与总览/13_完整性与反方审计清单.md",
     "01_核心机制与组合模式/00_商业模式宇宙总览与核心结论.md",
     "01_核心机制与组合模式/04_v4商品角色价格架构Offer转化与场景经济.md",
-    "01_核心机制与组合模式/05_v4新增组合模式P171-P200.md",
+    "01_核心机制与组合模式/05_机会来源_差异捕获与商业模式变换算子.md",
+    "01_核心机制与组合模式/06_v4新增组合模式P171-P200.md",
     "06_真实经济性_返点与治理/00_返点门槛后台利益与真实净经济性.md",
     "06_真实经济性_返点与治理/01_经济真相治理容量风险合同与劳动力层.md",
     "06_真实经济性_返点与治理/02_v4隐藏利润层单位经济KPI实验与风险.md",
@@ -115,7 +123,10 @@
       "v3 Skill references updated to current filenames",
       "v4 Skill loading paths updated to unified directory",
       "human-readable P171-P200 mirror added",
-      "validation manifest updated to current paths"
+      "validation manifest updated to current paths",
+      "repository root README linked to the unified business model universe",
+      "concurrent opportunity-source lens preserved and classified as a horizontal human lens",
+      "duplicate 05_ navigation prefix resolved as opportunity=05 and P171-P200=06"
     ]
   },
   "acceptance_checks": {
@@ -123,6 +134,7 @@
     "current_machine_entry_resolved": true,
     "loss_leader_not_duplicated_as_new_base_pattern": true,
     "product_role_separated_from_pricing_mechanism": true,
+    "opportunity_source_separated_from_atom_and_pattern": true,
     "offer_architecture_is_graph_not_forced_linear_funnel": true,
     "front_end_basket_and_cohort_contribution_separated": true,
     "conditional_economics_reuses_u19": true,
@@ -132,8 +144,9 @@
     "brand_channel_abuse_capacity_risks_supported": true,
     "machine_readable_schema_added": true,
     "source_fact_inference_project_evidence_separated": true,
-    "human_readable_v4_pattern_index_present": true
+    "human_readable_v4_pattern_index_present": true,
+    "duplicate_navigation_prefix_resolved": true
   },
   "quality_self_check": 98,
-  "quality_note": "Internal structural self-check, not external certification. No material asset loss was detected in the audited restructure. Historical v2/v3 documents intentionally retain baseline semantics, so current totals and paths must be resolved from README/current-entry/this validation file."
+  "quality_note": "Internal structural self-check, not external certification. No material asset loss was detected in the audited restructure. Historical v2/v3 documents intentionally retain baseline semantics; Opportunity Source/Transformation Operator is a horizontal human lens rather than a new ID layer."
 }
