@@ -1,0 +1,32 @@
+name: Business Model Universe Regression
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'docs/商业模式宇宙/**'
+      - 'scripts/benchmark_business_model_universe.py'
+      - '.github/workflows/business-model-universe.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  runtime-regression:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Validate Python syntax
+        run: python -m py_compile scripts/benchmark_business_model_universe.py
+
+      - name: Run business model universe runtime harness
+        run: python scripts/benchmark_business_model_universe.py --root . --strict --pretty
