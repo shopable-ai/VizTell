@@ -1,7 +1,7 @@
 {
   "harness": "business-model-universe-runtime-v1",
   "ontology_base": "v4",
-  "note": "This report validates structure + routing + minimum-context retrieval wiring. It does not estimate A-E business-answer uplift.",
+  "note": "Validates structure + routing + minimum-context + V0 retrieval anchors; does not estimate A-E business-answer uplift.",
   "preservation": {
     "pass": true,
     "checks": {
@@ -72,146 +72,169 @@
         "budget_ok": true
       },
       "retrieval_preview": {
-        "strategy": "route-aware deterministic V0 expansion",
-        "expansion_terms": [
-          "从0设计或重构商业模式",
-          "设计商业模式",
-          "商业模式",
-          "新业务",
-          "商业化",
-          "从0",
-          "创业",
-          "新产品",
-          "knowledge_product",
+        "strategy": "task/flag concept weighted deterministic V0",
+        "retrieval_concepts": [
+          "价值主张",
+          "客户",
+          "收入模式",
+          "商品毛利",
+          "单位经济",
+          "Cohort Economics",
+          "价值链",
+          "利润池",
+          "渠道",
+          "复购",
+          "增长",
+          "风险",
+          "Merchant",
+          "Ecosystem Bundle",
           "电子书",
-          "PDF",
           "知识产品",
+          "Content-to-Commerce",
+          "Lead Gen",
+          "会员",
+          "订阅",
+          "Affiliate",
           "知识库",
-          "课程",
-          "内容产品",
-          "商业模式宇宙总览与核心结论",
-          "机会来源",
-          "差异捕获与商业模式变换算子",
-          "价值链与利润池总览",
-          "生态价值网络总览",
-          "v4隐藏利润层单位经济KPI实验与风险",
-          "失败模式总览",
-          "电子书商业模式",
-          "v4商品角色价格架构Offer转化与场景经济",
-          "v4",
-          "Skill机器加载与Offer决策协议"
+          "咨询",
+          "企业服务",
+          "后端"
         ],
         "top_atoms": [
           {
-            "id": "U21-A15",
-            "name": "Cash Collected",
-            "score": 0.227273
+            "id": "U21-A18",
+            "name": "Cohort Economics",
+            "score": 4.225091
           },
           {
-            "id": "U11-A01",
-            "name": "商品毛利",
-            "score": 0.225806
-          },
-          {
-            "id": "U21-A07",
-            "name": "Gross Profit",
-            "score": 0.210526
+            "id": "U11-A12",
+            "name": "Affiliate佣金",
+            "score": 1.960749
           },
           {
             "id": "U11-A11",
             "name": "线索费Lead Gen",
-            "score": 0.184211
+            "score": 1.858882
           },
           {
-            "id": "U21-A02",
-            "name": "Gross Billings",
-            "score": 0.181818
+            "id": "U04-A11",
+            "name": "联盟营销Affiliate",
+            "score": 1.674814
           },
           {
-            "id": "U11-A31",
-            "name": "保险佣金",
-            "score": 0.176471
+            "id": "U11-A01",
+            "name": "商品毛利",
+            "score": 1.489869
           },
           {
-            "id": "U21-A04",
-            "name": "Principal模式/Gross",
-            "score": 0.16
+            "id": "U02-A12",
+            "name": "速度",
+            "score": 1.346045
           },
           {
-            "id": "U21-A05",
-            "name": "Agent模式/Net",
-            "score": 0.157895
+            "id": "U02-A10",
+            "name": "风险降低",
+            "score": 1.291399
           },
           {
-            "id": "U10-A06",
-            "name": "No Frills",
-            "score": 0.153846
+            "id": "U02-A05",
+            "name": "个性化",
+            "score": 1.275256
           },
           {
-            "id": "U11-A08",
-            "name": "上架/刊登费",
-            "score": 0.151515
+            "id": "U02-A21",
+            "name": "互补价值",
+            "score": 1.255472
+          },
+          {
+            "id": "U11-A04",
+            "name": "会员费",
+            "score": 1.2475
           }
         ],
         "top_patterns": [
           {
-            "id": "P078",
-            "name": "No Frills",
-            "score": 0.3
+            "id": "P085",
+            "name": "Content-to-Commerce",
+            "score": 3.705029
           },
           {
-            "id": "P044",
-            "name": "API-as-a-Product",
-            "score": 0.291667
+            "id": "P100",
+            "name": "Ecosystem Bundle",
+            "score": 3.450085
           },
           {
-            "id": "P054",
-            "name": "Product-as-a-Service",
-            "score": 0.25
+            "id": "P034",
+            "name": "Affiliate",
+            "score": 2.760535
           },
           {
-            "id": "P004",
-            "name": "经销/Reseller",
-            "score": 0.217391
+            "id": "P001",
+            "name": "传统商品销售 Merchant",
+            "score": 2.537001
           },
           {
-            "id": "P019",
-            "name": "Usage-Based",
-            "score": 0.181818
-          },
-          {
-            "id": "P141",
-            "name": "Warranty Profit Pool",
-            "score": 0.170213
-          },
-          {
-            "id": "P088",
-            "name": "High-Frequency Wedge",
-            "score": 0.166667
-          },
-          {
-            "id": "P040",
-            "name": "Open Source",
-            "score": 0.16
-          },
-          {
-            "id": "P066",
-            "name": "Solution Provider",
-            "score": 0.153846
+            "id": "P087",
+            "name": "Lead Generation",
+            "score": 1.949659
           },
           {
             "id": "P065",
             "name": "Layer Player",
-            "score": 0.15
+            "score": 1.417667
+          },
+          {
+            "id": "P064",
+            "name": "Integrator",
+            "score": 1.303958
+          },
+          {
+            "id": "P086",
+            "name": "Community-to-Commerce",
+            "score": 1.199054
+          },
+          {
+            "id": "P143",
+            "name": "Grant-assisted Economics",
+            "score": 1.165696
+          },
+          {
+            "id": "P083",
+            "name": "Channel Partner",
+            "score": 1.156379
           }
         ]
       },
       "retrieval_quality": {
         "v0_min_top3_mean_score": 0.08,
-        "atom_top3_mean_score": 0.221202,
-        "pattern_top3_mean_score": 0.280556,
+        "atom_top3_mean_score": 2.681574,
+        "pattern_top3_mean_score": 3.305216,
         "signal_pass": true,
-        "semantics": "lexical signal guard only; not semantic relevance or answer-quality score"
+        "required_anchor_recall": 1.0,
+        "atom_anchor_ids": [
+          "U11-A01",
+          "U11-A11",
+          "U21-A18"
+        ],
+        "atom_anchor_hits": [
+          "U11-A01",
+          "U11-A11",
+          "U21-A18"
+        ],
+        "atom_anchor_recall": 1.0,
+        "pattern_anchor_ids": [
+          "P001",
+          "P085",
+          "P100"
+        ],
+        "pattern_anchor_hits": [
+          "P001",
+          "P085",
+          "P100"
+        ],
+        "pattern_anchor_recall": 1.0,
+        "anchor_pass": true,
+        "semantics": "V0 retrieval regression guard; benchmark anchors never modify the retrieval query"
       },
       "retrieval_ablation": {
         "product_roles_offer": {
@@ -303,162 +326,182 @@
         "budget_ok": true
       },
       "retrieval_preview": {
-        "strategy": "route-aware deterministic V0 expansion",
-        "expansion_terms": [
-          "定价、入口商品、商品组合与Offer架构",
-          "定价",
-          "价格",
+        "strategy": "task/flag concept weighted deterministic V0",
+        "retrieval_concepts": [
+          "Pricing",
+          "商品角色",
+          "入口商品",
+          "Free Trial",
+          "Freemium",
+          "Usage-Based",
+          "Minimum Commitment",
+          "Commit-to-Save",
+          "Capacity Reservation + Overage",
+          "Credit Pack",
+          "Cohort Economics",
+          "单位经济",
+          "贡献利润",
+          "API-as-a-Product",
+          "AI Model-as-a-Service",
+          "API调用费",
+          "token",
+          "推理成本",
+          "模型成本",
+          "B2B",
+          "企业合同",
+          "采购",
+          "账期",
+          "SLA",
+          "渠道",
+          "折扣",
+          "大客户",
+          "Managed Service",
+          "Loss Leader",
           "低价",
           "免费",
-          "引流",
           "首单",
-          "套餐",
-          "订阅",
-          "会员",
-          "商品组合",
-          "offer",
-          "计费",
-          "额度",
-          "commit",
-          "overage",
-          "ai_native",
-          "AI",
-          "API",
-          "token",
-          "模型",
-          "推理成本",
-          "agent",
-          "算力",
-          "enterprise",
-          "企业",
-          "B2B",
-          "采购",
-          "合同",
-          "席位",
-          "大客户",
-          "企业后端",
-          "low_price_entry",
-          "试用",
-          "入口商品",
-          "钩子",
-          "v4商品角色价格架构Offer转化与场景经济",
-          "v4",
-          "Skill机器加载与Offer决策协议",
-          "v4隐藏利润层单位经济KPI实验与风险",
-          "返点门槛后台利益与真实净经济性",
-          "经济真相治理容量风险合同与劳动力层"
+          "资格筛选",
+          "Qualified CAC",
+          "Cannibalization",
+          "滥用"
         ],
         "top_atoms": [
           {
-            "id": "U21-A06",
-            "name": "Take Rate",
-            "score": 0.470588
+            "id": "U26-A01",
+            "name": "Minimum Commitment",
+            "score": 4.37621
           },
           {
-            "id": "U27-A18",
-            "name": "Tournament Incentive",
-            "score": 0.461538
-          },
-          {
-            "id": "U21-A09",
-            "name": "Operating Contribution",
-            "score": 0.428571
-          },
-          {
-            "id": "U27-A07",
-            "name": "Piece-rate/计件",
-            "score": 0.428571
-          },
-          {
-            "id": "U21-A12",
-            "name": "Contra Revenue",
-            "score": 0.409091
+            "id": "U21-A18",
+            "name": "Cohort Economics",
+            "score": 4.350217
           },
           {
             "id": "U27-A06",
             "name": "BPO/Managed Service",
-            "score": 0.407407
+            "score": 3.914067
           },
           {
-            "id": "U26-A06",
-            "name": "Early Termination Fee",
-            "score": 0.4
+            "id": "U14-A03",
+            "name": "API-as-a-Product",
+            "score": 2.130092
           },
           {
-            "id": "U27-A09",
-            "name": "Tiered Commission",
-            "score": 0.384615
+            "id": "U10-A22",
+            "name": "Freemium",
+            "score": 1.981906
           },
           {
-            "id": "U27-A17",
-            "name": "ESOP/Equity Incentive",
-            "score": 0.37931
+            "id": "U11-A26",
+            "name": "API调用费",
+            "score": 1.744079
           },
           {
-            "id": "U26-A01",
-            "name": "Minimum Commitment",
-            "score": 0.37037
+            "id": "U26-A17",
+            "name": "SLA Credit",
+            "score": 1.603207
+          },
+          {
+            "id": "U21-A14",
+            "name": "Unit Economics View",
+            "score": 1.442162
+          },
+          {
+            "id": "U18-A24",
+            "name": "结果归因争议",
+            "score": 1.322338
+          },
+          {
+            "id": "U14-A15",
+            "name": "模型即服务MaaS",
+            "score": 1.17946
           }
         ],
         "top_patterns": [
           {
             "id": "P049",
             "name": "AI Model-as-a-Service",
-            "score": 0.4
-          },
-          {
-            "id": "P050",
-            "name": "AI Copilot",
-            "score": 0.347826
-          },
-          {
-            "id": "P087",
-            "name": "Lead Generation",
-            "score": 0.344828
-          },
-          {
-            "id": "P085",
-            "name": "Content-to-Commerce",
-            "score": 0.333333
-          },
-          {
-            "id": "P051",
-            "name": "AI Agent-as-a-Service",
-            "score": 0.323529
-          },
-          {
-            "id": "P116",
-            "name": "Service-Agreement Rebate Risk / 服务协议型返点",
-            "score": 0.322034
-          },
-          {
-            "id": "P039",
-            "name": "Private Label",
-            "score": 0.304348
+            "score": 4.19282
           },
           {
             "id": "P161",
             "name": "Capacity Reservation + Overage",
-            "score": 0.304348
+            "score": 4.152997
           },
           {
-            "id": "P077",
-            "name": "Experience Selling",
-            "score": 0.3
+            "id": "P044",
+            "name": "API-as-a-Product",
+            "score": 3.740829
           },
           {
-            "id": "P084",
-            "name": "B2B2C Channel Leverage",
-            "score": 0.294118
+            "id": "P019",
+            "name": "Usage-Based",
+            "score": 3.420422
+          },
+          {
+            "id": "P023",
+            "name": "Freemium",
+            "score": 2.818799
+          },
+          {
+            "id": "P033",
+            "name": "Loss Leader → Backend",
+            "score": 2.728015
+          },
+          {
+            "id": "P108",
+            "name": "Commit-to-Save / 承诺换折扣",
+            "score": 2.628018
+          },
+          {
+            "id": "P159",
+            "name": "Managed Service / BPO",
+            "score": 2.477826
+          },
+          {
+            "id": "P188",
+            "name": "Freemium → Promotional Credits → Usage Commit",
+            "score": 2.036632
+          },
+          {
+            "id": "P095",
+            "name": "Capacity Reservation",
+            "score": 1.763327
           }
         ]
       },
       "retrieval_quality": {
         "v0_min_top3_mean_score": 0.08,
-        "atom_top3_mean_score": 0.453566,
-        "pattern_top3_mean_score": 0.364218,
+        "atom_top3_mean_score": 4.213498,
+        "pattern_top3_mean_score": 4.028882,
         "signal_pass": true,
-        "semantics": "lexical signal guard only; not semantic relevance or answer-quality score"
+        "required_anchor_recall": 1.0,
+        "atom_anchor_ids": [
+          "U11-A26",
+          "U21-A18",
+          "U26-A01"
+        ],
+        "atom_anchor_hits": [
+          "U11-A26",
+          "U21-A18",
+          "U26-A01"
+        ],
+        "atom_anchor_recall": 1.0,
+        "pattern_anchor_ids": [
+          "P044",
+          "P108",
+          "P161",
+          "P186"
+        ],
+        "pattern_anchor_hits": [
+          "P044",
+          "P108",
+          "P161",
+          "P186"
+        ],
+        "pattern_anchor_recall": 1.0,
+        "anchor_pass": true,
+        "semantics": "V0 retrieval regression guard; benchmark anchors never modify the retrieval query"
       },
       "retrieval_ablation": {
         "product_roles_offer": {
@@ -488,6 +531,6 @@
     "pass": true,
     "failures": []
   },
-  "tested_commit": "2b86486685d6cdf22db5d4c0c8dc3d52c30eea87",
+  "tested_commit": "feaf1f9dafd5060f3ced6228acc25ba35408455b",
   "report_semantics": "deterministic preservation/routing/context harness; not A-E business-answer quality"
 }
