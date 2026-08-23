@@ -1,0 +1,122 @@
+{
+  "version": "benchmark-v1",
+  "ontology_base": "v4",
+  "runtime": "runtime-v1",
+  "purpose": "测量商业模式宇宙、检索、Workflow、外部研究和真实项目数据分别带来多少增量价值，并把失败定位到知识/检索/流程/上下文/证据/财务/战略/工具/输出/Benchmark根因。",
+  "comparison_conditions": [
+    {"id":"A","name":"普通模型 + 简单任务提示词","universe":false,"topic_file":false,"workflow":false,"external_research":false,"project_data":false},
+    {"id":"B","name":"普通模型 + 单个相关专题文件","universe":false,"topic_file":true,"workflow":false,"external_research":false,"project_data":false},
+    {"id":"C","name":"商业模式宇宙 + 无完整Workflow","universe":true,"topic_file":true,"workflow":false,"external_research":false,"project_data":false},
+    {"id":"D","name":"商业模式宇宙 + 完整Workflow","universe":true,"topic_file":true,"workflow":true,"external_research":false,"project_data":false},
+    {"id":"E","name":"商业模式宇宙 + Workflow + 外部研究 + 项目真实数据","universe":true,"topic_file":true,"workflow":true,"external_research":true,"project_data":true}
+  ],
+  "rubric": {
+    "scale": 100,
+    "dimensions": [
+      {"id":"need_understanding","weight":7},
+      {"id":"opportunity_recall","weight":8},
+      {"id":"hidden_profit_discovery","weight":8},
+      {"id":"upstream_downstream_coverage","weight":6},
+      {"id":"candidate_differentiation","weight":6},
+      {"id":"economic_logic","weight":8},
+      {"id":"unit_economics","weight":7},
+      {"id":"cash_cohort_conditional_economics","weight":8},
+      {"id":"competition_and_moat","weight":6},
+      {"id":"risk_and_failure_modes","weight":6},
+      {"id":"facts_and_evidence","weight":8},
+      {"id":"assumption_transparency","weight":5},
+      {"id":"experiment_quality","weight":6},
+      {"id":"executability","weight":5},
+      {"id":"innovation_without_fantasy","weight":3},
+      {"id":"omission_control","weight":3}
+    ],
+    "penalties": [
+      {"id":"confident_invalid_business_claim","max_penalty":25},
+      {"id":"fabricated_or_stale_fact_as_current","max_penalty":20},
+      {"id":"material_financial_error","max_penalty":15},
+      {"id":"missing_real_data_gate","max_penalty":10},
+      {"id":"unsafe_or_illegal_tactic_presented_as_normal_model","max_penalty":15},
+      {"id":"benchmark_leakage_or_gold_copying","max_penalty":20}
+    ]
+  },
+  "runtime_harness_note": "仓库内置脚本只验证结构完整性、任务路由、最小上下文召回、必需资产/域覆盖和消融覆盖下降；A-E最终答案质量分数必须由隔离的模型运行与评审器实际执行，不能用本脚本的路由分数冒充。",
+  "active_cases": [
+    {
+      "id":"T01",
+      "name":"电子书低门槛入口与后端商业化",
+      "query":"基于这本电子书/PDF，研究适合的电商销售与后端商业模式。",
+      "expected_family":"design_new_business_model",
+      "expected_flags":["knowledge_product"],
+      "required_domains":["U03","U04","U06","U10","U11","U12","U13","U14","U15","U16","U18","U19","U21"],
+      "required_assets":[
+        "09_专题商业模式/电子书商业模式.md",
+        "01_核心机制与组合模式/06_机会来源_差异捕获与商业模式变换算子.md",
+        "01_核心机制与组合模式/04_v4商品角色价格架构Offer转化与场景经济.md",
+        "07_元数据知识图谱与Skill/02_v4_Skill机器加载与Offer决策协议.md",
+        "02_价值链与利润池/00_价值链与利润池总览.md",
+        "06_真实经济性_返点与治理/02_v4隐藏利润层单位经济KPI实验与风险.md",
+        "05_失败模式与迁移/01_失败模式库/00_失败模式总览.md"
+      ],
+      "capability_checks":[
+        "识别电子书不仅是直接利润品，也可能承担Traffic/Hook/Qualification/Identity入口角色",
+        "从单本销售扩展到同类书/合集/软件/AI/工具/实物商品/Affiliate/会员/知识库/咨询/企业后端",
+        "区分Front-end Contribution、Basket Contribution、True Cohort Contribution",
+        "缺CAC/LTV/复购/退款/履约/返点等真实参数时使用场景区间",
+        "设计最小实验、Pass/Kill/Scale条件，而不是把长列表当决策"
+      ],
+      "real_data_fields":["成交价","版权/内容成本","平台费率","履约与售后成本","CAC","加购率","后端转化率","复购率","退款率","真实Cohort","渠道返佣或返点条件"]
+    },
+    {
+      "id":"T02",
+      "name":"AI API按量计费与企业后端Canary",
+      "query":"我们提供按调用计费的AI API，推理成本随用量变化。怎样设计免费额度、commit、overage、渠道和企业后端，避免增长越快亏得越多？",
+      "expected_family":"pricing_offer_portfolio",
+      "expected_flags":["ai_native","enterprise","low_price_entry"],
+      "required_domains":["U01","U03","U04","U05","U10","U11","U12","U13","U14","U16","U18","U19","U20","U21","U26","U27"],
+      "required_assets":[
+        "01_核心机制与组合模式/04_v4商品角色价格架构Offer转化与场景经济.md",
+        "07_元数据知识图谱与Skill/02_v4_Skill机器加载与Offer决策协议.md",
+        "06_真实经济性_返点与治理/01_经济真相治理容量风险合同与劳动力层.md",
+        "06_真实经济性_返点与治理/02_v4隐藏利润层单位经济KPI实验与风险.md"
+      ],
+      "capability_checks":[
+        "把模型推理成本视为用量相关COGS而不是传统SaaS近零边际成本",
+        "比较免费额度/credits/usage/commit/overage/reserved capacity等结构",
+        "同时检查企业合同、渠道、账期、最低承诺和风险",
+        "给出单位经济和现金流敏感参数",
+        "设置滥用、异常高用量、模型成本变化和负毛利Kill Condition"
+      ],
+      "real_data_fields":["每模型/每token或每请求成本","平均输入输出token","缓存命中率","免费额度使用分布","付费转化","毛利目标","渠道分成","企业折扣","账期","支持成本","退款/坏账","峰值容量成本"]
+    }
+  ],
+  "planned_case_families": [
+    "普通电商SKU",
+    "酒店/容量经济",
+    "Marketplace",
+    "企业采购与返点",
+    "知识库实施",
+    "线下服务",
+    "内容创作者"
+  ],
+  "ablation_groups": {
+    "atoms":"移除Atom召回",
+    "patterns":"移除Pattern召回",
+    "product_roles_offer":"移除Product Role/Offer/价格架构资产",
+    "opportunity_lens":"移除机会来源与变换算子",
+    "value_chain_ecosystem":"移除价值链/利润池/生态资产",
+    "conditional_real_economics":"移除U19/真实经济性/Cohort资产",
+    "topic_case":"移除专题/案例资产",
+    "failure_counterargument":"移除失败模式/反方资产",
+    "external_research":"移除外部研究",
+    "experiment_layer":"移除实验/Pass-Kill-Scale层"
+  },
+  "error_taxonomy":["K1","R1","W1","C1","E1","F1","S1","T1","O1","B1"],
+  "regression_policy": {
+    "run_on_changes_to":["01","02","03","04","05","06","07","08","09","10","11","scripts"],
+    "compare_against_previous_baseline":true,
+    "do_not_accept_on_average_only":true,
+    "must_flag_case_regressions":true,
+    "benchmark_quality_gate":true,
+    "minimum_runtime_harness_score":90
+  }
+}
