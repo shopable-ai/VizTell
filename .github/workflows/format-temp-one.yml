@@ -37,7 +37,6 @@ jobs:
           H=re.compile(r'^(#{1,6})\s+(.*)$')
           IMAGE_COMMENT=re.compile(r'^\s*<!--\s*Image\s*\([^>]*\)\s*-->\s*$',re.I)
           COMPANY=re.compile(r'^\s*【天使投资有限公司】\s*')
-          PROMO=re.compile(r'^\s*\d*\s*[（(]更多绝密电子书加微信[^\n]*$',re.I)
           pages=[]; no=None; buf=[]
           for line in raw.splitlines():
             m=PAGE.match(line)
@@ -52,9 +51,7 @@ jobs:
           out=['# 万能厚黑不黑模式','']; toc_images=[]
           stats={'headers':0,'promos':0,'image_comments':0,'hfix':0,'moved':0,'traditional_chars_changed':0}
           duplicate_titles={'万能厚黑不黑模式°','万能厚黑不黑模式','石能厚黑不黑模式'}
-
           def simplify_preserving_urls(line):
-            # URLs/image paths are split out and retained byte-for-byte.
             parts=re.split(r'(https?\s*:\s*//\S+)',line)
             outp=[]
             for p in parts:
@@ -64,7 +61,6 @@ jobs:
                 stats['traditional_chars_changed'] += sum(1 for a,b in zip(p,q) if a!=b) + abs(len(p)-len(q))
                 outp.append(q)
             return ''.join(outp)
-
           for pno,block in pages:
             text=[]; imgs=[]
             for line in block:
@@ -73,23 +69,21 @@ jobs:
               if im: imgs.append(im.group(0)); continue
               if IMAGE_COMMENT.match(s): stats['image_comments']+=1; continue
               s,n=COMPANY.subn('',s,1); stats['headers']+=n
-              if PROMO.match(s.strip()): stats['promos']+=1; continue
+              if '更多绝密电子书加微信' in s:
+                stats['promos']+=1; continue
               if s.strip() in {'198g','\\'}: continue
               hm=H.match(s.strip())
               if hm:
                 title=cc.convert(hm.group(2).strip())
                 if title in duplicate_titles: continue
-                if pno < 12:
-                  # Front matter must not share chapter heading level.
-                  s='**'+title+'**'
+                if pno < 12: s='**'+title+'**'
                 else:
                   if title=='开篇': s='## 开篇'
                   elif re.match(r'^第[一二三四五六七八九十百零〇两0-9]+章',title): s='## '+title
                   elif title.startswith('【') and title.endswith('篇】'): s='## '+title
                   else: s='### '+title
                 stats['hfix']+=1
-              else:
-                s=simplify_preserving_urls(s)
+              else: s=simplify_preserving_urls(s)
               text.append(s)
             norm=[]
             for x in text:
@@ -106,14 +100,10 @@ jobs:
               if out and out[-1]!='': out.append('')
               out.extend(imgs); stats['moved']+=len(imgs)
           if toc_images:
-            # Directory screenshots remain between front matter and body, but OCR directory text is removed.
-            # Insert immediately before first main-body content (page 12 material).
-            # Front matter pages 1-9 have already been emitted; locate by the last page-9 image reference.
             marker='![第9页原始页面图](assets/page-009.png)'
             try: idx=out.index(marker)+1
             except ValueError: idx=2
-            out[idx:idx]=['','**目录**','']+toc_images+['']
-            stats['moved']+=len(toc_images)
+            out[idx:idx]=['','**目录**','']+toc_images+['']; stats['moved']+=len(toc_images)
           norm=[]
           for x in out:
             if not x.strip():
