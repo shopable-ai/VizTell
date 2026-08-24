@@ -1,0 +1,287 @@
+{
+  "rule": "# book -> ## numbered chapter -> ### chapter subsection -> #### true subsection child",
+  "scope": "temp/*.md only (no child directories)",
+  "changed_files": [
+    {
+      "file": "temp/做局大师-人间博弈之术.md",
+      "chapter_count": 48,
+      "chapter_levels": {
+        "3": 48
+      },
+      "h4_descendants": 66,
+      "deep_descendants": 66,
+      "eligible": true,
+      "heading_changes": 114,
+      "chapter_changes": 48,
+      "descendant_changes": 66,
+      "samples": [
+        {
+          "before": "### 第一章 设局谋略",
+          "after": "## 第一章 设局谋略"
+        },
+        {
+          "before": "#### 历史上的厚黑人士",
+          "after": "### 历史上的厚黑人士"
+        },
+        {
+          "before": "#### 一张看不清本色的脸",
+          "after": "### 一张看不清本色的脸"
+        },
+        {
+          "before": "#### 拙诚也是做局的一种道具",
+          "after": "### 拙诚也是做局的一种道具"
+        },
+        {
+          "before": "### 第二章 心照不宣的驭人术",
+          "after": "## 第二章 心照不宣的驭人术"
+        },
+        {
+          "before": "#### 好处要给在恰当处",
+          "after": "### 好处要给在恰当处"
+        },
+        {
+          "before": "#### 恩惠要一点儿一点儿地赐予",
+          "after": "### 恩惠要一点儿一点儿地赐予"
+        },
+        {
+          "before": "#### 利益捆绑",
+          "after": "### 利益捆绑"
+        },
+        {
+          "before": "#### 名誉要挟",
+          "after": "### 名誉要挟"
+        },
+        {
+          "before": "#### 抓其弱点，逼其就范",
+          "after": "### 抓其弱点，逼其就范"
+        },
+        {
+          "before": "### 第三章 吕不韦的长线投资",
+          "after": "## 第三章 吕不韦的长线投资"
+        },
+        {
+          "before": "#### 加大投资",
+          "after": "### 加大投资"
+        },
+        {
+          "before": "### 第四章 千古第一反间计",
+          "after": "## 第四章 千古第一反间计"
+        },
+        {
+          "before": "### 第五章 与虎谋皮的招数",
+          "after": "## 第五章 与虎谋皮的招数"
+        },
+        {
+          "before": "### 第六章 借树开花",
+          "after": "## 第六章 借树开花"
+        },
+        {
+          "before": "#### 李园的夺权之路",
+          "after": "### 李园的夺权之路"
+        }
+      ]
+    }
+  ],
+  "audited_files": [
+    {
+      "file": "temp/《人性商战(线下3天2夜全文字版)》.md",
+      "chapter_count": 0,
+      "chapter_levels": {},
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《人性难题宝典1-9》.md",
+      "chapter_count": 0,
+      "chapter_levels": {},
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《坏人基因》上册.md",
+      "chapter_count": 0,
+      "chapter_levels": {},
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《坏人基因》下册.md",
+      "chapter_count": 0,
+      "chapter_levels": {},
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《大心机3》.md",
+      "chapter_count": 11,
+      "chapter_levels": {
+        "1": 11
+      },
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《开窍开悟开智1》PDF.md",
+      "chapter_count": 0,
+      "chapter_levels": {},
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《开窍开智开悟5》.md",
+      "chapter_count": 4,
+      "chapter_levels": {
+        "1": 4
+      },
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《洗脑的最高境界》.md",
+      "chapter_count": 0,
+      "chapter_levels": {},
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《玩转人性》.md",
+      "chapter_count": 0,
+      "chapter_levels": {},
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《绝密人性天书》净版.md",
+      "chapter_count": 3,
+      "chapter_levels": {
+        "1": 3
+      },
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《贪婪的人性》男人篇.md",
+      "chapter_count": 0,
+      "chapter_levels": {},
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《道破人性第一书》.md",
+      "chapter_count": 0,
+      "chapter_levels": {},
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/人性伎俩.md",
+      "chapter_count": 7,
+      "chapter_levels": {
+        "2": 7
+      },
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/做局大师-人间博弈之术.md",
+      "chapter_count": 48,
+      "chapter_levels": {
+        "3": 48
+      },
+      "h4_descendants": 66,
+      "deep_descendants": 66,
+      "eligible": true,
+      "heading_changes": 114,
+      "chapter_changes": 48,
+      "descendant_changes": 66,
+      "samples": [
+        {
+          "before": "### 第一章 设局谋略",
+          "after": "## 第一章 设局谋略"
+        },
+        {
+          "before": "#### 历史上的厚黑人士",
+          "after": "### 历史上的厚黑人士"
+        },
+        {
+          "before": "#### 一张看不清本色的脸",
+          "after": "### 一张看不清本色的脸"
+        },
+        {
+          "before": "#### 拙诚也是做局的一种道具",
+          "after": "### 拙诚也是做局的一种道具"
+        },
+        {
+          "before": "### 第二章 心照不宣的驭人术",
+          "after": "## 第二章 心照不宣的驭人术"
+        },
+        {
+          "before": "#### 好处要给在恰当处",
+          "after": "### 好处要给在恰当处"
+        },
+        {
+          "before": "#### 恩惠要一点儿一点儿地赐予",
+          "after": "### 恩惠要一点儿一点儿地赐予"
+        },
+        {
+          "before": "#### 利益捆绑",
+          "after": "### 利益捆绑"
+        },
+        {
+          "before": "#### 名誉要挟",
+          "after": "### 名誉要挟"
+        },
+        {
+          "before": "#### 抓其弱点，逼其就范",
+          "after": "### 抓其弱点，逼其就范"
+        },
+        {
+          "before": "### 第三章 吕不韦的长线投资",
+          "after": "## 第三章 吕不韦的长线投资"
+        },
+        {
+          "before": "#### 加大投资",
+          "after": "### 加大投资"
+        },
+        {
+          "before": "### 第四章 千古第一反间计",
+          "after": "## 第四章 千古第一反间计"
+        },
+        {
+          "before": "### 第五章 与虎谋皮的招数",
+          "after": "## 第五章 与虎谋皮的招数"
+        },
+        {
+          "before": "### 第六章 借树开花",
+          "after": "## 第六章 借树开花"
+        },
+        {
+          "before": "#### 李园的夺权之路",
+          "after": "### 李园的夺权之路"
+        }
+      ]
+    }
+  ],
+  "ambiguous_files": [],
+  "summary": {
+    "files_audited": 14,
+    "files_changed": 1,
+    "heading_changes": 114,
+    "chapter_changes": 48,
+    "descendant_changes": 66,
+    "ambiguous_files": 0
+  }
+}
