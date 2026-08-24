@@ -1,0 +1,21 @@
+{
+  "changed": [
+    {
+      "path": "temp/《坏人基因》上册.md",
+      "embedded_headings_separated": 35,
+      "scene_markers_separated": 334
+    },
+    {
+      "path": "temp/《坏人基因》下册.md",
+      "embedded_headings_separated": 15,
+      "scene_markers_separated": 5
+    }
+  ],
+  "errors": [],
+  "summary": {
+    "files_changed": 2,
+    "embedded_headings_separated": 50,
+    "scene_markers_separated": 339,
+    "errors": 0
+  }
+}
