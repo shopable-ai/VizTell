@@ -21,7 +21,7 @@ jobs:
         with: {fetch-depth: 0}
       - name: Setup converter
         run: pip install --quiet opencc-python-reimplemented
-      - name: Format 万能识人术 only
+      - name: Format 人心探索（动机篇） only
         run: |
           set +e
           python - <<'PY' > /tmp/format-run.log 2>&1
@@ -29,15 +29,14 @@ jobs:
           from pathlib import Path
           from opencc import OpenCC
           cc=OpenCC('t2s')
-          src=Path('temp/《万能识人术》/index.md')
-          dst=Path('temp/《万能识人术》/万能识人术.md')
+          src=Path('temp/《人心探索（动机篇）》/index.md')
+          dst=Path('temp/《人心探索（动机篇）》/人心探索（动机篇）.md')
           raw=src.read_text(encoding='utf-8')
           PAGE=re.compile(r'^\s*<!--\s*page\s*:\s*(\d+)\s*-->\s*$',re.I)
           IMG=re.compile(r'!\[[^\]]*\]\([^\n)]*\)|!\[[^\]]*\]\[[^\]\n]*\]')
           H=re.compile(r'^(#{1,6})\s+(.*)$')
-          LEADER=re.compile(r'^(.*?)\s*[.·…]{4,}\s*\d+\s*$')
-          SCAN_FOOT=re.compile(r'^\s*\d*\s*籍\s*:\s*.*(?:SS\s*Q|SOS).*$')
-          PUNCT=tuple('。！？；：!?;”’）》】')
+          CHAPTER=re.compile(r'^第\s*(\d+)\s*章\s*(.*)$')
+          IMAGE_COMMENT=re.compile(r'^\s*<!--\s*Image\s*\([^>]*\)\s*-->\s*$',re.I)
           pages=[]; no=None; buf=[]
           for line in raw.splitlines():
             m=PAGE.match(line)
@@ -48,67 +47,68 @@ jobs:
           if no is not None: pages.append((no,buf))
           assert pages and pages[0][0]==1
           images_before=IMG.findall(raw)
-
-          # Build trustworthy section-title dictionary from the three-page TOC.
-          toc_pages={1,2,3}; toc_titles=set(); toc_images=[]
+          toc_pages={1,2,3}
+          chapter_titles={}; toc_images=[]
           for pno,block in pages:
             if pno not in toc_pages: continue
             for line in block:
-              s=H.sub(r'\2',line.strip())
-              m=LEADER.match(s)
-              if m:
-                title=re.sub(r'\s+',' ',m.group(1).strip())
-                if title and title!='目录': toc_titles.add(cc.convert(title))
               im=IMG.fullmatch(line.strip())
-              if im: toc_images.append(im.group(0))
+              if im: toc_images.append(im.group(0)); continue
+              hm=H.match(line.strip())
+              text=hm.group(2).strip() if hm else line.strip()
+              cm=CHAPTER.match(text.replace('第1章遇','第1章 遇'))
+              if cm:
+                n=int(cm.group(1)); title=cc.convert(text)
+                title=re.sub(r'^第\s*(\d+)\s*章\s*',lambda m:f'第{m.group(1)}章 ',title)
+                title=re.sub(r'\s+',' ',title).strip()
+                chapter_titles[n]=title
+          assert len(chapter_titles)>=12, f'chapter TOC incomplete: {len(chapter_titles)}'
 
-          stats={'scan_footers':0,'page_numbers':0,'headings':0,'reflowed':0,'moved':0,'traditional_changes':0}
-          out=['# 万能识人术','']
+          stats={'image_comments':0,'chapter_fixes':0,'other_heading_fixes':0,'moved':0,'traditional_changes':0}
+          out=['# 人心探索（动机篇）','']
           if toc_images:
-            out += ['**目录**','']+toc_images+['']; stats['moved']+=len(toc_images)
-
-          pending=[]
-          def flush():
-            if not pending: return
-            if len(pending)>1: stats['reflowed']+=1
-            text=''
-            for frag in pending:
-              frag=frag.strip()
-              if not text: text=frag
-              elif re.search(r'[A-Za-z0-9]$',text) and re.match(r'^[A-Za-z0-9]',frag): text+=' '+frag
-              else: text+=frag
-            out.append(text); out.append(''); pending.clear()
+            out+=['**目录**','']+toc_images+['']; stats['moved']+=len(toc_images)
 
           for pno,block in pages:
             if pno in toc_pages: continue
-            # Determine last non-empty non-image source line for page-number removal.
-            meaningful=[x for x in block if x.strip() and not IMG.fullmatch(x.strip())]
-            last_text=meaningful[-1].strip() if meaningful else ''
-            page_imgs=[]
+            text=[]; imgs=[]
             for line in block:
-              s=line.strip()
-              if not s: continue
-              im=IMG.fullmatch(s)
-              if im:
-                page_imgs.append(im.group(0)); continue
-              if SCAN_FOOT.match(s): stats['scan_footers']+=1; continue
-              if s==last_text and re.fullmatch(r'\d{1,3}',s): stats['page_numbers']+=1; continue
-              hm=H.match(s)
-              if hm: s=hm.group(2).strip()
-              converted=cc.convert(s)
-              stats['traditional_changes'] += sum(1 for a,b in zip(s,converted) if a!=b)+abs(len(s)-len(converted))
-              s=converted
-              compact_title=re.sub(r'\s+',' ',s)
-              if compact_title in toc_titles:
-                flush(); out.append('## '+compact_title); out.append(''); stats['headings']+=1; continue
-              # Reflow PDF hard wraps. A sentence-ending line closes a paragraph;
-              # otherwise continuation survives page boundaries.
-              pending.append(s)
-              if s.endswith(PUNCT): flush()
-            if page_imgs:
-              flush()
-              out.extend(page_imgs); out.append(''); stats['moved']+=len(page_imgs)
-          flush()
+              s=line.rstrip()
+              im=IMG.fullmatch(s.strip())
+              if im: imgs.append(im.group(0)); continue
+              if IMAGE_COMMENT.match(s): stats['image_comments']+=1; continue
+              hm=H.match(s.strip())
+              plain=hm.group(2).strip() if hm else s.strip()
+              converted=cc.convert(plain)
+              stats['traditional_changes'] += sum(1 for a,b in zip(plain,converted) if a!=b)+abs(len(plain)-len(converted))
+              cm=CHAPTER.match(converted)
+              if cm:
+                n=int(cm.group(1)); canonical=chapter_titles.get(n)
+                if canonical:
+                  s='## '+canonical
+                else:
+                  s='## '+re.sub(r'^第\s*(\d+)\s*章\s*',lambda m:f'第{m.group(1)}章 ',converted)
+                stats['chapter_fixes']+=1
+              elif hm:
+                # Non-chapter visual headings belong inside the current chapter.
+                s='### '+converted
+                stats['other_heading_fixes']+=1
+              else:
+                s=cc.convert(s)
+              text.append(s)
+            norm=[]
+            for x in text:
+              if not x.strip():
+                if norm and norm[-1]!='': norm.append('')
+              else: norm.append(x.rstrip())
+            while norm and norm[-1]=='': norm.pop()
+            if norm:
+              if out and out[-1]!='': out.append('')
+              out.extend(norm)
+            if imgs:
+              if out and out[-1]!='': out.append('')
+              out.extend(imgs); stats['moved']+=len(imgs)
+
           norm=[]
           for x in out:
             if not x.strip():
@@ -119,13 +119,15 @@ jobs:
           assert images_after==images_before,'images changed/order changed'
           assert len(re.findall(r'^#\s+',final,re.M))==1,'not one H1'
           assert not re.search(r'^\s*<!--\s*page\s*:',final,re.M|re.I),'page comments remain'
-          assert not SCAN_FOOT.search(final),'scan footer remains'
+          # All 13 chapters should occur in body once the book is complete.
+          found=set(int(x) for x in re.findall(r'^##\s+第(\d+)章\b',final,re.M))
+          assert len(found)>=12, f'too few body chapters: {sorted(found)}'
           dst.write_text(final,encoding='utf-8'); src.unlink()
           visible=IMG.sub('',final); visible=re.sub(r'^#{1,6}\s*','',visible,flags=re.M)
           report={'file':str(dst),'source_bytes':len(raw.encode()),'output_bytes':len(final.encode()),
             'pages_detected':len(pages),'toc_ocr_pages_removed':3,'page_markers_removed':len(pages),
-            'scan_footers_removed':stats['scan_footers'],'end_page_numbers_removed':stats['page_numbers'],
-            'toc_matched_headings_restored':stats['headings'],'paragraph_blocks_reflowed':stats['reflowed'],
+            'chapter_headings_from_toc':len(chapter_titles),'chapter_heading_fixes':stats['chapter_fixes'],
+            'other_heading_fixes':stats['other_heading_fixes'],'conversion_image_comments_removed':stats['image_comments'],
             'traditional_to_simplified':stats['traditional_changes']>0,'traditional_character_changes':stats['traditional_changes'],
             'page_images_moved_after_text':stats['moved'],'image_refs_before':len(images_before),
             'image_refs_after':len(images_after),'image_refs_changed':images_before!=images_after,
@@ -141,8 +143,8 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -A -- 'temp/《万能识人术》' temp/.format-progress.json temp/.format-progress.log
+          git add -A -- 'temp/《人心探索（动机篇）》' temp/.format-progress.json temp/.format-progress.log
           if git diff --cached --quiet; then exit 0; fi
-          git commit -m 'docs(temp): process 万能识人术 [skip ci]'
+          git commit -m 'docs(temp): process 人心探索（动机篇） [skip ci]'
           git pull --rebase origin main
           git push origin HEAD:main
