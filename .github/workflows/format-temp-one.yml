@@ -4,7 +4,6 @@ on:
   push:
     branches: [main]
     paths:
-      - 'scripts/format_temp_markdown.py'
       - '.github/workflows/format-temp-one.yml'
   workflow_dispatch:
 
@@ -23,47 +22,198 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 1
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-
-      - name: Correct and validate first book hierarchy
+      - name: Format 布局锦囊1.0 only
         run: |
           python - <<'PY'
-          import re
+          import json, re
           from pathlib import Path
 
-          path = Path('temp/做局大师-人间博弈之术.md')
-          text = path.read_text(encoding='utf-8')
-          parts = ['设局', '观局', '开局', '控局', '对局', '僵局', '搅局', '败局']
-          changed = 0
-          for part in parts:
-              text, n = re.subn(rf'^####\s+{re.escape(part)}\s*$', f'## {part}', text, flags=re.M)
-              changed += n
-          path.write_text(text, encoding='utf-8')
+          src = Path('temp/007《布局锦囊1.0》/index.md')
+          dst = Path('temp/007《布局锦囊1.0》/布局锦囊1.0.md')
+          raw = src.read_text(encoding='utf-8')
+          PAGE = re.compile(r'^\s*<!--\s*page\s*:\s*(\d+)\s*-->\s*$', re.I)
+          PAGE_H = re.compile(r'^\s*#{1,6}\s*第\s*\d+\s*页\s*$')
+          IMG = re.compile(r'!\[[^\]]*\]\([^\n)]*\)|!\[[^\]]*\]\[[^\]\n]*\]')
+          H = re.compile(r'^(#{1,6})\s+(.*)$')
+          PROMO = re.compile(r'\s*\d*【朋友圈每日更新最新电子版书籍[^\n]*$')
 
-          assert len(re.findall(r'^#\s+', text, flags=re.M)) == 1, 'must have exactly one H1'
-          for part in parts:
-              assert re.search(rf'^##\s+{re.escape(part)}\s*$', text, flags=re.M), f'missing H2 part: {part}'
-          assert not re.search(r'^\s*<!--\s*page\s*:', text, flags=re.M | re.I), 'page comments remain'
-          assert not re.search(r'^\s*#{1,6}\s*第\s*\d+\s*页\s*$', text, flags=re.M), 'page headings remain'
-          print(f'corrected_part_headings={changed}')
-          print(f'h2_parts={len(parts)}')
-          print(f'bytes={len(text.encode("utf-8"))}')
+          images_before = IMG.findall(raw)
+          lines = raw.splitlines()
+          pages = []
+          current_no = None
+          current = []
+          for line in lines:
+              m = PAGE.match(line)
+              if m:
+                  if current_no is not None:
+                      pages.append((current_no, current))
+                  current_no = int(m.group(1))
+                  current = []
+              else:
+                  current.append(line)
+          if current_no is not None:
+              pages.append((current_no, current))
+
+          assert pages and pages[0][0] == 1, 'unexpected page structure'
+          toc_images = []
+          out = ['# 布局锦囊1.0', '']
+          page_markers_removed = len(pages)
+          promo_removed = 0
+          page_images_moved = 0
+          heading_fixes = 0
+
+          def clean_page(page_no, block):
+              nonlocal_dummy = None
+              cleaned = []
+              imgs = []
+              first_h1_seen = False
+              for line in block:
+                  if PAGE_H.match(line):
+                      continue
+                  exact_img = IMG.fullmatch(line.strip())
+                  if exact_img:
+                      imgs.append(exact_img.group(0))
+                      continue
+                  new = PROMO.sub('', line).rstrip()
+                  if new != line.rstrip():
+                      # count each footer/promo fragment removed
+                      pass
+                  if not new.strip():
+                      cleaned.append('')
+                      continue
+                  hm = H.match(new.strip())
+                  if hm:
+                      level, title = len(hm.group(1)), hm.group(2).strip()
+                      if page_no == 1 and title == '布局锦囊':
+                          # canonical H1 already inserted above
+                          continue
+                      if level == 1:
+                          cleaned.append('## ' + title)
+                          first_h1_seen = True
+                      elif level == 2 and first_h1_seen:
+                          cleaned.append('### ' + title)
+                      else:
+                          cleaned.append(new.strip())
+                  else:
+                      cleaned.append(new.strip() if new.startswith(' ') else new)
+              # normalize blank runs
+              norm = []
+              for x in cleaned:
+                  if not x.strip():
+                      if norm and norm[-1] != '':
+                          norm.append('')
+                  else:
+                      norm.append(x.rstrip())
+              while norm and norm[-1] == '':
+                  norm.pop()
+              return norm, imgs
+
+          # Count promo fragments independently so text cleanup above stays simple.
+          promo_removed = len(re.findall(r'【朋友圈每日更新最新电子版书籍', raw))
+
+          for page_no, block in pages:
+              text_lines, imgs = clean_page(page_no, block)
+              if 5 <= page_no <= 17:
+                  # The OCR text here is the duplicated directory. Preserve every
+                  # original page screenshot, as required by the prompt.
+                  toc_images.extend(imgs)
+                  continue
+              if page_no == 5:
+                  continue
+              if text_lines:
+                  if out and out[-1] != '':
+                      out.append('')
+                  out.extend(text_lines)
+              if imgs:
+                  if out and out[-1] != '':
+                      out.append('')
+                  out.extend(imgs)
+                  page_images_moved += len(imgs)
+
+              # After the front matter, retain TOC screenshots while removing the
+              # duplicated OCR directory text.
+              if page_no == 4 and toc_images:
+                  # toc_images is not populated until pages 5-17 are visited, so
+                  # insertion happens below in a second placement pass.
+                  pass
+
+          # Place preserved TOC screenshots after the first four pages. Rebuild
+          # the final sequence by locating the page-4 image boundary in current
+          # output; this preserves source order of all image references.
+          # Simpler and safer: construct again by page groups.
+          front = ['# 布局锦囊1.0', '']
+          body = []
+          toc_images = []
+          page_images_moved = 0
+          for page_no, block in pages:
+              text_lines, imgs = clean_page(page_no, block)
+              if 5 <= page_no <= 17:
+                  toc_images.extend(imgs)
+                  continue
+              target = front if page_no <= 4 else body
+              if text_lines:
+                  if target and target[-1] != '': target.append('')
+                  target.extend(text_lines)
+              if imgs:
+                  if target and target[-1] != '': target.append('')
+                  target.extend(imgs)
+                  page_images_moved += len(imgs)
+          final = front
+          if toc_images:
+              if final and final[-1] != '': final.append('')
+              final.extend(['## 目录', ''])
+              final.extend(toc_images)
+              page_images_moved += len(toc_images)
+          if body:
+              if final and final[-1] != '': final.append('')
+              final.extend(body)
+
+          # Normalize blank lines again.
+          normalized = []
+          for x in final:
+              if not x.strip():
+                  if normalized and normalized[-1] != '': normalized.append('')
+              else:
+                  normalized.append(x.rstrip())
+          output = '\n'.join(normalized).strip() + '\n'
+
+          images_after = IMG.findall(output)
+          assert images_after == images_before, 'image reference order/path changed'
+          assert len(re.findall(r'^#\s+', output, flags=re.M)) == 1, 'not exactly one H1'
+          assert not re.search(r'^\s*<!--\s*page\s*:', output, flags=re.M | re.I), 'page markers remain'
+          assert not re.search(r'^\s*#{1,6}\s*第\s*\d+\s*页\s*$', output, flags=re.M), 'page headings remain'
+          assert '朋友圈每日更新最新电子版书籍' not in output, 'repeated promo/footer remains'
+
+          dst.write_text(output, encoding='utf-8')
+          src.unlink()
+          visible = re.sub(r'!\[[^\]]*\]\([^\n)]*\)', '', output)
+          visible = re.sub(r'^#{1,6}\s*', '', visible, flags=re.M)
+          visible_chars = len(re.sub(r'\s+', '', visible))
+          report = {
+              'file': str(dst),
+              'source_bytes': len(raw.encode('utf-8')),
+              'output_bytes': len(output.encode('utf-8')),
+              'pages_detected': len(pages),
+              'toc_ocr_pages_removed': 13,
+              'page_markers_removed': page_markers_removed,
+              'repeated_promo_fragments_removed': promo_removed,
+              'page_images_moved_after_text': page_images_moved,
+              'image_refs_before': len(images_before),
+              'image_refs_after': len(images_after),
+              'image_refs_changed': images_before != images_after,
+              'visible_body_chars': visible_chars,
+              'traditional_to_simplified': False,
+              'notes': 'Pages 5-17 OCR directory text removed; their original page screenshots preserved under the source-derived 目录 section.'
+          }
+          Path('temp/.format-progress.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          print(json.dumps(report, ensure_ascii=False, indent=2))
           PY
 
-      - name: Commit corrected Markdown
+      - name: Commit second formatted Markdown
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -- 'temp/做局大师-人间博弈之术.md'
-          if git diff --cached --quiet; then
-            echo 'No Markdown changes to commit.'
-            exit 0
-          fi
-          git commit -m 'docs(temp): correct 做局大师 hierarchy [skip ci]'
+          git add -- 'temp/007《布局锦囊1.0》/index.md' 'temp/007《布局锦囊1.0》/布局锦囊1.0.md' 'temp/.format-progress.json'
+          git commit -m 'docs(temp): format 布局锦囊1.0 [skip ci]'
           git push origin HEAD:main
