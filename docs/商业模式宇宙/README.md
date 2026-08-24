@@ -1,41 +1,102 @@
 # 商业模式宇宙
 
-> **唯一总入口。** 原 `universe-business-model/` 与 `商业模式宇宙-带整合/` 已按功能层重新合并，不再并列维护两套“商业模式宇宙”。
+> **唯一总入口。** 原 `universe-business-model/` 与 `商业模式宇宙-带整合/` 已按功能层合并，不再并列维护两套“商业模式宇宙”。
 
-## 当前有效版本：v4 本体 + runtime-v1 演进层
+## 当前有效版本：v4 本体 + runtime-v1 + 项目商业推理业务层
 
 - L1：**U01-U27，共 27 个一级设计域**；v4 不新增 U28+。
 - L2：**676 个原子机制** = v2 500 + v3 149 + v4 27。
 - L3：**P001-P200，共 200 个组合模式**。
 - 横向商品角色：**PR01-PR40，共 40 个**，不计入 L2 atom。
 - U19 返点/条件性收益层及旧 ID 保持稳定；v3/v4 使用 additive registry / extension，不覆盖旧数据。
-- runtime-v1：新增**任务路由、最小充分上下文、端到端商业推理 Workflow、真实数据/证据门、Trace、Benchmark、Ablation、Regression 与知识生命周期**；它们是横向运行时，不新增 U/Atom/Pattern/PR ID。
+- runtime-v1 负责 Task Router、Retriever、最小充分上下文、Data/Evidence Gate、Trace、Benchmark、Ablation、Regression 与知识生命周期。
+- **项目商业推理业务层**负责把真实项目、功能、灵感、经营问题、数据或商业现象转成商业决策和真实行动；它是人工默认入口，不新增 U/Atom/Pattern/PR ID。
 
-统一知识分析主链：
+---
+
+## 一、人工默认入口：项目商业推理工作流
+
+正式目录：
+
+```text
+10_任务工作流与运行时/项目商业推理工作流/
+```
+
+第一份文件：
+
+```text
+10_任务工作流与运行时/项目商业推理工作流/
+00_总览_怎样使用项目商业推理工作流.md
+```
+
+人工业务总链：
+
+> **项目是什么 → 现在到哪一步 → 当前真正要解决什么 → 最值得补什么信息 → 现在已经拥有什么 → 谁在用、谁付钱、为什么付钱 → 市场现在怎样 → 别人为什么成功、为什么失败 → 哪些商业机制值得借鉴 → 钱在哪里 → 上下游和相邻机会在哪里 → 3-5 套结构不同方案 → 商品与收费 → 经济性 → 竞争与风险 → 成立条件与 A-E 证据评级 → 排序 → 最小验证 → 真实交易 → P20 根据结果持续经营。**
+
+### 业务目录
+
+```text
+项目商业推理工作流/
+├─ 00_总览_怎样使用项目商业推理工作流.md
+├─ 01_P01-P20项目商业推理总工作流.md
+├─ 02_真实项目与现实输入入口.md
+├─ 03_市场研究_成功失败与证据判断.md
+├─ 04_利润池_上下游与相邻机会.md
+├─ 05_候选商业方案_商品价格与经济性.md
+├─ 06_竞争风险_证据评级与排序.md
+├─ 07_最小验证_实际赚钱与持续经营.md
+├─ 08_商业现象逆向拆解工作流.md
+├─ 09_项目输入输出模板与快速清单.md
+└─ 10_真实项目验证_T03_AI_PDF与T04_低价电子书现象_2026-08-25.md
+```
+
+P01-P20 是完整地图，不要求任何项目机械跑满。不同现实输入由 `02_真实项目与现实输入入口.md` 选择起点。
+
+旧 `10/03`、`10/05`、`10/06` 路径保留为兼容跳转，避免历史 T01/T02、Runtime 或外部引用断链；不再独立维护第二份业务规则。
+
+---
+
+## 二、统一知识分析主链
 
 > **参与方与需求 → 机会来源/差异/错配 → 价值主张 → 产品/权利包装 → 商品角色 → 获客与渠道 → 供给与交付 → 交易与信任 → 价格架构与 Offer Graph → 返点/条件性经济 → 所有权与治理 → 会计与经济真相 → Front-end/Basket/Cohort 贡献 → 容量/库存/风险/公共激励/财资/合同/劳动力 → 留存复购 → Context Router → 增长复制 → 壁垒与竞争反应 → KPI/增量实验 → 风险治理 → 迁移/退出**
 
-## 当前项目业务主链（人工默认入口）
+这条知识主链服务 P10-P17 等业务阶段，但不替代人工工作流。
 
-> **项目是什么 → 现在到哪一步 → 真正要解决什么 → 最值得补什么信息 → 已经拥有什么 → 谁在用/谁付钱/为什么付钱 → 市场现在怎样 → 别人为什么成功/失败 → 调用商业知识 → 钱在哪里 → 上下游和相邻机会 → 3-5 套候选 → 商品与收费 → 经济性 → 竞争/风险 → 成立条件与证据评级 → 排序 → 最小行动与验证 → 根据真实结果持续经营。**
+---
 
-对应人类可读主文件：
+## 三、后台运行时主链
+
+中文对应见 `10_任务工作流与运行时/02_端到端商业推理Workflow与知识生命周期.md`。
 
 ```text
-10/03_项目优先商业推理执行协议.md
-→ 10/05_真实商业项目与商业现象解析.md
-→ 10/06_从商业判断到实际赚钱.md
+任务接收
+→ 任务路由
+→ 项目商业画像
+→ 数据/证据门
+→ 信息缺口
+→ 最小充分上下文
+→ 按需外部研究
+→ 机会扫描
+→ Domain / Atom / Pattern Retrieval
+→ 按需商品角色/价格/Offer
+→ 价值链/利润池/生态
+→ 条件性经济/会计真相
+→ 候选生成
+→ Unit / Basket / Cohort / Cashflow
+→ 竞争/壁垒/风险/反方
+→ 实验
+→ 排序/淘汰/扩大
+→ 商业决策输出
+→ Trace
+→ Benchmark / Error Classification
+→ Knowledge Feedback / Lifecycle
 ```
 
-其中 `03` 固定 P01-P20 业务主干；`05` 处理“已有项目、功能、灵感、经营问题、数据、别人赚钱现象、成功失败案例、模式迁移”等现实入口；`06` 负责把第一推荐变成真实 Offer、交易、指标、继续/修改/停止条件和下一轮经营。
+后台系统用于支持、实现和质量保障，不是普通人处理真实项目时的第一阅读顺序。
 
-当前后台运行时主链：
+---
 
-> **Task → Task Router → Project Signature → Data/Evidence Gate → Information Gap → Context Builder → External Research（按需）→ Opportunity Scan → Domain/Atom/Pattern Retrieval → 条件模块 → Candidate Generation → Unit/Cohort/Cashflow → Competition/Risk/Counterargument → Experiment → Rank/Kill/Scale → Decision Artifact → Trace → Benchmark/Error Classification → Feedback/Lifecycle**
-
-> 后台运行时用于支持和质量保障，不是普通用户处理真实项目时的默认阅读顺序。
-
-## 统一目录
+## 四、统一目录
 
 ```text
 docs/商业模式宇宙/
@@ -56,25 +117,25 @@ docs/商业模式宇宙/
 └── 90_研究来源与参考/
 ```
 
-## 各层职责
-
 | 目录 | 唯一职责 |
 |---|---|
 | `00_导航与总览` | 当前版本、加载入口、边界、分类规范、使用路径、结构完整性、风险门与验收 |
-| `01_核心机制与组合模式` | 当前总览、U01-U27、L2 atoms、L3 patterns、v4 商品角色/价格/Offer、P171-P200 人类阅读镜像、机会来源与变换算子、主题知识地图 |
+| `01_核心机制与组合模式` | U01-U27、atoms、patterns、Product Roles、价格/Offer、机会来源与变换算子、知识地图 |
 | `02_价值链与利润池` | 价值链位置、利润池、成本池、控制点、价值迁移 |
 | `03_生态与价值交换` | 多方价值网络、资源交换、合作、激励与治理 |
 | `04_案例与行业地图` | 案例证据、实例映射、行业情境化 |
 | `05_失败模式与迁移` | 失败机制、反方诊断、阶段迁移与模式演化 |
 | `06_真实经济性_返点与治理` | U19、U20-U27、隐藏利润、Cohort Economics、KPI/实验与风险 |
 | `07_元数据知识图谱与Skill` | 统一对象模型、知识图谱关系、v2/v3/v4 Skill 协议 |
-| `08_机器数据与Schema` | JSONL、Registry、Product Roles、Schema、Validation，以及 runtime-v1 Router/Protocol/Benchmark Manifest 的唯一机器目录 |
-| `09_专题商业模式` | 电子书等具体项目/主题完整商业模型 |
-| `10_任务工作流与运行时` | **人类业务层：P01-P20 项目商业推理、现实输入解析、从判断到实际赚钱；后台层：Task Router、Retrieval、Data/Evidence Gate、端到端 Workflow、Trace 与知识生命周期** |
-| `11_Benchmark与回归` | A-E 对照、评分 Rubric、错误分类、Ablation、Regression 与 T01/T02 测试用例 |
-| `90_研究来源与参考` | 研究来源、传统框架、缺口审计、历史结构与并发重构快照 |
+| `08_机器数据与Schema` | JSONL、Registry、Product Roles、Schema、Validation 与 runtime-v1 机器协议 |
+| `09_专题商业模式` | 电子书等具体项目/主题深度商业模型 |
+| `10_任务工作流与运行时` | **业务子目录是人工默认入口；同层 00/01/02 是后台运行时与演进协议；04 是历史真实运行记录；旧 03/05/06 为兼容入口** |
+| `11_Benchmark与回归` | Rubric、错误分类、Ablation、Regression、T01/T02 与确定性 Harness |
+| `90_研究来源与参考` | 研究来源、传统框架、缺口审计、历史结构快照 |
 
-## 01_核心机制与组合模式的当前顺序
+---
+
+## 五、01_核心机制与组合模式当前顺序
 
 ```text
 00 总览
@@ -87,23 +148,27 @@ docs/商业模式宇宙/
 → 10 结构化知识地图
 ```
 
-其中：
-
 - `05_v4新增组合模式P171-P200.md` 是机器 P171-P200 JSONL 的人类阅读镜像；
 - `06_机会来源_差异捕获与商业模式变换算子.md` 是横向机会发现与重构镜头，不是 U28，也不新增 atom/pattern ID。
 
-## 推荐路径
+---
 
-- **真实商业项目（默认推荐）**：`10/03 P01-P20业务主干 → 10/05 判断现实入口 → 按需研究 09专题 + 01/02/03/04/05/06 → 10/06 形成真实行动 → 下一轮回到 P20`。
-- **看到别人的赚钱现象**：`10/05 商业模式逆向拆解 → 现实证据 → 01/02/03/05/06 机制与经济核验 → 10/03 P13-P18 形成/排序候选 → 10/06 判断是否值得迁移并最小验证`。
-- **已有产品/功能商业化**：`10/05 已有项目/功能入口 → 10/03 P06-P18 → 10/06 Offer与真实付费验证`。
-- **快速理解本体**：`README → 00/00_当前有效版本与加载入口 → 01/00 总览 → 01/04 商品角色/价格/Offer → 01/05 P171-P200 → 01/06 机会来源/变换算子 → 06 真实经济性`。
-- **发现商业机会**：`01/06 机会来源/差异/错配 → 变换算子 → 01/01 U01-U27 原子 → 01/02/03/05 Pattern → 02 利润池 → 03 生态 → 06 真实经济性 → 05 失败/迁移`。
-- **后台运行时/质量保障**：`10/00 成熟度 → 10/01 Task Router/检索/数据门 → 10/02 Workflow → 08机器协议 → 11 Benchmark/Regression`。
-- **AI / Agent / Skill**：`00/00_当前有效版本与加载入口 → 07_元数据知识图谱与Skill → 08_机器数据与Schema → 10 后台运行时 → 11 Benchmark`。
-- **专题商业化**：先读 `09_专题商业模式/`，再回查 `01/02/03/06`；专题不能反向替代通用宇宙。
+## 六、推荐路径
 
-## 机器加载基线
+- **真实商业项目**：`项目商业推理工作流/00 → 01 P01-P20 → 02 现实入口 → 按需 03-08 → 09 模板/状态 → P20`。
+- **已有产品/功能商业化**：`02 已有项目/功能入口 → P06/P07/P11/P14/P15/P18 → 07 真实付费验证`。
+- **已有真实经营数据**：直接 `P15 → P17 → P18 → P19/P20`，数据必须改变或验证排序。
+- **看到别人赚钱现象**：`08 逆向拆解 → 假设/证据/反证 → P08-P17 → 判断可持续性 → 迁移后重新 P13-P19`。
+- **成功/失败案例迁移**：先拆收入、成本、频率、供给、渠道、现金流、壁垒和成立条件，再判断哪些可迁移。
+- **快速理解本体**：`README → 00/00_当前有效版本与加载入口 → 01/00 → 01/04 → 01/05 → 01/06 → 06真实经济性`。
+- **发现商业机会**：P11/P12 按需调用 `01/06 → U01-U27 → Patterns → 02利润池 → 03生态 → 06真实经济性 → 05失败/迁移`，最后回 P13-P18 收敛。
+- **后台运行时/质量保障**：`10/00 → 10/01 → 10/02 → 08机器协议 → 11 Benchmark/Regression`。
+- **AI / Agent / Skill**：`00/00 → 07 → 08 → 10后台运行时 → 11`。
+- **专题商业化**：先读 `09_专题商业模式/`，再回查通用本体；专题不能替代 P01-P20。
+
+---
+
+## 七、机器加载基线
 
 ### v4 本体
 
@@ -123,7 +188,7 @@ rebate_schema = 08_机器数据与Schema/conditional_economics_rebate.schema.jso
 skill = 07_元数据知识图谱与Skill/02_v4_Skill机器加载与Offer决策协议.md
 ```
 
-### runtime-v1 横向运行时
+### runtime-v1
 
 ```text
 task_router = 08_机器数据与Schema/task_router_v1.json
@@ -132,64 +197,57 @@ benchmark_manifest = 08_机器数据与Schema/benchmark_manifest_v1.json
 benchmark_harness = ../../scripts/benchmark_business_model_universe.py
 ```
 
-> runtime-v1 只决定如何使用 v4 知识，不覆盖 v4 机器事实源。
+runtime-v1 只决定如何使用 v4 知识，不覆盖 v4 本体事实源。
 
-## 当前 Benchmark
+---
+
+## 八、当前真实测试与 Benchmark
+
+### 后台 Benchmark
 
 - `T01`：电子书/PDF 低门槛入口与后端商业化 Seed Case；
 - `T02`：AI API usage/commit/overage/企业后端跨场景 Canary。
 
-仓库内置 Harness 首先验证：
+Harness 验证稳定 ID/数量、Router/Flags、Domain/Asset Recall、最小上下文、基础召回、Ablation；**Harness 分数不等于商业答案 A-E 质量**。
 
-- 稳定 ID/数量没有退化；
-- Task Router/Flags；
-- 必需 Domain/Asset Recall；
-- 最小上下文预算；
-- Atom/Pattern 基础召回预览；
-- Retrieval coverage ablation。
+### 业务 Workflow 真实运行
 
-**Harness 分数不是 A-E 商业答案质量分数。** A-E 最终增量必须由隔离模型运行、Judge/Human 与真实数据实际测量。
+- `T03`：已有 AI PDF 产品与上传/问答/总结/知识库功能；
+- `T04`：闲鱼 0.01-3 元电子书反常低价现象。
 
-## 冲突优先级
+运行记录：`10_任务工作流与运行时/项目商业推理工作流/10_真实项目验证_T03_AI_PDF与T04_低价电子书现象_2026-08-25.md`。
 
-1. 本 `README.md` 与 `00_导航与总览/00_当前有效版本与加载入口.md`：版本、路径、加载事实。
-2. `01_核心机制与组合模式/00_商业模式宇宙总览与核心结论.md`：当前人类可读 v4 本体总览。
-3. v4 Registry / Schema / Validation / Skill / P171-P200：当前本体增量层。
-4. runtime-v1 Router / Protocol / Benchmark：如何使用和评测 v4，本身不得改写稳定本体事实。
-5. v3 Registry / Schema / Skill / P131-P170：U20-U27 与 v3 增量。
-6. v2 JSONL 与 L1-L3 基线正文：稳定旧 ID 基线。
-7. `90_研究来源与参考/`：来源、传统兼容与历史快照，不作为当前加载入口。
+T03/T04 暴露并已修复：现实入口跳转、P01-P20 跳过规则、Fact/Inference/Assumption/Unknown、H1-H12 逆向拆解、候选去同质化、条件性收益分层、商业行动卡和 P20 状态继承。本轮未发现必须立即新增 U/Atom/Pattern/Schema 的问题。
 
-## 结构迁移完整性结论
+---
 
-统一目录重构已按重构前提交 `357da7578308acff03ef9cda1f7f745102db53a8` 与重构提交 `d29da8b9bf918e9c5877f0982120f0ae9094b0fb` 对账。核心旧子树与 v4 关键机器/正文资产保持原 tree/blob SHA，**当前审计未发现实质内容资产丢失**。
+## 九、冲突优先级
 
-重构后发现并已修复：
+1. 本 `README.md` 与 `00_导航与总览/00_当前有效版本与加载入口.md`：版本、路径、加载事实；
+2. `10_任务工作流与运行时/项目商业推理工作流/`：真实项目人工业务流程的唯一事实源；
+3. `01_核心机制与组合模式/00_商业模式宇宙总览与核心结论.md`：人类可读 v4 本体总览；
+4. v4 Registry / Schema / Validation / Skill / P171-P200：当前本体增量层；
+5. runtime-v1 Router / Protocol / Benchmark：运行和评测，不得改写稳定本体；
+6. v3 与 v2 基线；
+7. `90_研究来源与参考/`：来源与历史快照，不作为当前加载入口。
 
-- v3 Skill 的旧平铺文件名引用；
-- v4 Skill 的旧编号式引用与机器加载路径；
-- `validation_v4.json` 的旧平铺必需文件名；
-- P171-P200 缺少与 P131-P170 对称的人类阅读索引；
-- 仓库根 README 缺少商业模式宇宙入口；
-- 旧知识层级把 L1/L2/L3 错定义为原子/机制/结构，与当前 U/atom/pattern 口径冲突；
-- 阅读路径残留旧目录；
-- 并发重构产生的重复机会来源与 Pattern 过渡路径。当前稳定入口为 **05=P171-P200、06=机会来源/变换算子**。
+---
 
-下一阶段审计又确认：**本体/机器资产成熟度显著高于 Workflow/Benchmark/案例校准层**。因此新增 runtime-v1 与 `10/11` 两个横向层，而不是继续机械扩 U/Atom/Pattern。
+## 十、结构迁移与维护纪律
 
-当前项目层进一步明确：**真实商业任务的人工默认入口是 P01-P20 业务主干，而不是 Router/Schema/Benchmark。** 后台工程只在支持真实项目决策或质量保障时进入。
+已有统一目录重构的核心本体资产、稳定 U/Atom/Pattern/PR ID 不因本轮业务目录化而改变。本轮采取“新业务目录成为 canonical + 旧 03/05/06 保留兼容入口”的方式，避免外部与历史引用断裂，同时防止继续维护重复规则。
 
-完整性门见 `00_导航与总览/13_完整性与反方审计清单.md`，机器基线见 `08_机器数据与Schema/validation_v4.json`，运行评测见 `11_Benchmark与回归/`。被淘汰的并发过渡版本记录在 `90_研究来源与参考/99_历史结构/`，不作为当前事实源。
-
-## 不丢失与维护规则
+维护规则：
 
 1. 不重排 U01-U27、既有原子 ID、P001-P200、PR01-PR40。
 2. 禁止再次创建第二个“商业模式宇宙”顶级目录。
-3. 横向问题优先复用现有 U01-U27，不为商品角色、场景、Offer、机会来源、任务类型机械新增一级域。
-4. Product Role、Opportunity Source、Transformation Operator、Pricing Mechanism、Pattern、Instance、Task Family 必须分开建模。
+3. 横向问题优先复用 U01-U27，不为商品角色、场景、Offer、机会来源、任务类型机械新增一级域。
+4. Product Role、Opportunity Source、Transformation Operator、Pricing Mechanism、Pattern、Instance、Task Family 分开建模。
 5. 价格分析必须经过 U19 Net Effective Economics。
-6. 低价/免费入口必须核算 Front-end、Basket、True Cohort Contribution 与 Qualified Promo CAC，并设置增量实验及 kill condition。
-7. 新本体机器对象同时更新 Registry/Schema/Validation/Skill；新运行时对象同步 Router/Protocol/Benchmark。
-8. 每次目录移动后同步更新 README、MANIFEST、知识层级、阅读路径、Skill、Validation，并回读 GitHub `main` 验证。
-9. 影响商业模式宇宙的修改应运行 `scripts/benchmark_business_model_universe.py --strict`；新内容不能只因为结构通过就宣称商业决策质量提升。
-10. Benchmark 暴露 K1 才优先补本体；R1/W1/C1/E1/F1/S1/T1/O1/B1 应修对应层，而不是一律新增 Atom。
+6. 低价/免费入口必须核算 Front-end、Basket、True Cohort Contribution 与 Qualified Promo CAC，并设置增量实验和 Kill Condition。
+7. 新本体机器对象同步 Registry/Schema/Validation/Skill；新运行时对象同步 Router/Protocol/Benchmark。
+8. 目录移动或 canonical 路径变化必须同步 README、MANIFEST、当前有效版本、阅读路径、Skill/Validation 中相关引用，并回读 `main`。
+9. 影响商业模式宇宙的修改应运行 `scripts/benchmark_business_model_universe.py --strict`；结构通过不代表商业决策质量提升。
+10. 真实项目输出不好时先按项目理解 → 商业问题 → 市场研究 → 成功失败机制 → 利润池 → 上下游 → 候选 → 经济性 → 排序 → 行动 → P20 状态继承排错；只有最后确认为 K1 才优先补本体。
+
+完整性门见 `00_导航与总览/13_完整性与反方审计清单.md`，机器基线见 `08_机器数据与Schema/validation_v4.json`，运行评测见 `11_Benchmark与回归/`。
