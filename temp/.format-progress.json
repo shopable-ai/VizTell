@@ -1,0 +1,16 @@
+{
+  "file": "temp/007《布局锦囊1.0》/布局锦囊1.0.md",
+  "source_bytes": 823756,
+  "output_bytes": 732120,
+  "pages_detected": 383,
+  "toc_ocr_pages_removed": 13,
+  "page_markers_removed": 383,
+  "repeated_promo_fragments_removed": 382,
+  "page_images_moved_after_text": 383,
+  "image_refs_before": 383,
+  "image_refs_after": 383,
+  "image_refs_changed": false,
+  "visible_body_chars": 238332,
+  "traditional_to_simplified": false,
+  "notes": "Pages 5-17 OCR directory text removed; original directory page screenshots preserved under 目录."
+}
