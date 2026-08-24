@@ -1,0 +1,135 @@
+{
+  "main_script_multiline_fix_applied": true,
+  "raw_documents_detected": 12,
+  "formatted": [
+    {
+      "path": "temp/《人性商战(线下3天2夜全文字版)》.md",
+      "formatted": true,
+      "toc_blocks_removed": 0,
+      "heading_changes": 0,
+      "page_numbers_removed": 0,
+      "conversion_comments_removed": 0,
+      "body_retention": 1.0,
+      "images_preserved": 0
+    },
+    {
+      "path": "temp/《人性难题宝典1-9》.md",
+      "formatted": true,
+      "toc_blocks_removed": 2,
+      "heading_changes": 0,
+      "page_numbers_removed": 0,
+      "conversion_comments_removed": 0,
+      "body_retention": 1.0,
+      "images_preserved": 0
+    },
+    {
+      "path": "temp/《坏人基因》上册.md",
+      "formatted": true,
+      "toc_blocks_removed": 3,
+      "heading_changes": 53,
+      "page_numbers_removed": 0,
+      "conversion_comments_removed": 0,
+      "body_retention": 1.0,
+      "images_preserved": 0
+    },
+    {
+      "path": "temp/《坏人基因》下册.md",
+      "formatted": true,
+      "toc_blocks_removed": 7,
+      "heading_changes": 28,
+      "page_numbers_removed": 0,
+      "conversion_comments_removed": 0,
+      "body_retention": 1.0,
+      "images_preserved": 0
+    },
+    {
+      "path": "temp/《大心机3》.md",
+      "formatted": true,
+      "toc_blocks_removed": 6,
+      "heading_changes": 129,
+      "page_numbers_removed": 195,
+      "conversion_comments_removed": 0,
+      "body_retention": 0.9963,
+      "images_preserved": 0
+    },
+    {
+      "path": "temp/《开窍开悟开智1》PDF.md",
+      "formatted": true,
+      "toc_blocks_removed": 12,
+      "heading_changes": 313,
+      "page_numbers_removed": 0,
+      "conversion_comments_removed": 0,
+      "body_retention": 1.0,
+      "images_preserved": 0
+    },
+    {
+      "path": "temp/《开窍开智开悟5》.md",
+      "formatted": true,
+      "toc_blocks_removed": 20,
+      "heading_changes": 39,
+      "page_numbers_removed": 0,
+      "conversion_comments_removed": 0,
+      "body_retention": 1.0,
+      "images_preserved": 0
+    },
+    {
+      "path": "temp/《洗脑的最高境界》.md",
+      "formatted": true,
+      "toc_blocks_removed": 5,
+      "heading_changes": 3,
+      "page_numbers_removed": 2,
+      "conversion_comments_removed": 0,
+      "body_retention": 1.0,
+      "images_preserved": 0
+    },
+    {
+      "path": "temp/《玩转人性》.md",
+      "formatted": true,
+      "toc_blocks_removed": 2,
+      "heading_changes": 11,
+      "page_numbers_removed": 202,
+      "conversion_comments_removed": 0,
+      "body_retention": 0.9973,
+      "images_preserved": 0
+    },
+    {
+      "path": "temp/《绝密人性天书》净版.md",
+      "formatted": true,
+      "toc_blocks_removed": 0,
+      "heading_changes": 12,
+      "page_numbers_removed": 0,
+      "conversion_comments_removed": 0,
+      "body_retention": 1.0,
+      "images_preserved": 0
+    },
+    {
+      "path": "temp/《贪婪的人性》男人篇.md",
+      "formatted": true,
+      "toc_blocks_removed": 3,
+      "heading_changes": 40,
+      "page_numbers_removed": 233,
+      "conversion_comments_removed": 0,
+      "body_retention": 0.9963,
+      "images_preserved": 0
+    },
+    {
+      "path": "temp/《道破人性第一书》.md",
+      "formatted": true,
+      "toc_blocks_removed": 7,
+      "heading_changes": 300,
+      "page_numbers_removed": 287,
+      "conversion_comments_removed": 0,
+      "body_retention": 0.9859,
+      "images_preserved": 0
+    }
+  ],
+  "errors": [],
+  "summary": {
+    "raw_documents_detected": 12,
+    "raw_documents_formatted": 12,
+    "toc_blocks_removed": 67,
+    "heading_changes": 928,
+    "page_numbers_removed": 919,
+    "errors": 0
+  }
+}

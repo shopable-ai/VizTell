@@ -23,7 +23,7 @@ import shutil
 from collections import Counter
 from pathlib import Path
 
-PAGE = re.compile(r"^\s*<!--\s*page\s*:\s*\d+\s*-->\s*$", re.I)
+PAGE = re.compile(r"^\s*<!--\s*page\s*:\s*\d+\s*-->\s*$", re.I | re.M)
 H = re.compile(r"^(#{1,6})\s+(.+?)\s*$")
 IMAGE = re.compile(r"!\[[^\]]*\]\([^\n)]*\)|!\[[^\]]*\]\[[^\]\n]*\]")
 IMG_COMMENT = re.compile(r"^\s*<!--\s*Image\s*\([^>]*\)\s*-->\s*$", re.I)
