@@ -1,4 +1,4 @@
-name: Format One Temp Markdown
+name: Inspect One Temp Markdown
 
 on:
   push:
@@ -13,31 +13,22 @@ concurrency:
 permissions:
   contents: write
 jobs:
-  format-one:
+  inspect-one:
     if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with: {fetch-depth: 0}
-      - name: Setup converter
-        run: pip install --quiet opencc-python-reimplemented
-      - name: Format 人性伎俩 only
+      - name: Inspect 人性商战 only
         run: |
-          set +e
-          python - <<'PY' > /tmp/format-run.log 2>&1
+          python - <<'PY'
           import json,re
           from pathlib import Path
-          from opencc import OpenCC
-          cc=OpenCC('t2s')
-          src=Path('temp/《人性伎俩》.md')
-          dst=Path('temp/人性伎俩.md')
-          raw=src.read_text(encoding='utf-8')
+          path=Path('temp/《人性商战(线下3天2夜全文字版)》.md')
+          raw=path.read_text(encoding='utf-8')
           PAGE=re.compile(r'^\s*<!--\s*page\s*:\s*(\d+)\s*-->\s*$',re.I)
           IMG=re.compile(r'!\[[^\]]*\]\([^\n)]*\)|!\[[^\]]*\]\[[^\]\n]*\]')
           H=re.compile(r'^(#{1,6})\s+(.*)$')
-          CHAPTER=re.compile(r'^第[一二三四五六七八九十百零〇两0-9]+章\s+.+$')
-          LEADER_ITEM=re.compile(r'([^\n.]{2,80}?)\s*\.{5,}\s*\d+')
-          IMAGE_COMMENT=re.compile(r'^\s*<!--\s*Image\s*\([^>]*\)\s*-->\s*$',re.I)
           pages=[]; no=None; buf=[]
           for line in raw.splitlines():
             m=PAGE.match(line)
@@ -46,83 +37,29 @@ jobs:
               no=int(m.group(1)); buf=[]
             else: buf.append(line)
           if no is not None: pages.append((no,buf))
-          assert pages and pages[0][0]==1
-          images_before=IMG.findall(raw)
-          toc_pages={1,2,3,4}
-          toc_text='\n'.join('\n'.join(b) for p,b in pages if p in toc_pages)
-          toc_text=H.sub(r'\2',toc_text)
-          titles=set()
-          chapters=set()
-          for m in LEADER_ITEM.finditer(toc_text):
-            t=cc.convert(re.sub(r'\s+',' ',m.group(1).strip()))
-            t=re.sub(r'^目录','',t).strip()
-            if not t: continue
-            titles.add(t)
-            if CHAPTER.match(t): chapters.add(t)
-          assert len(chapters)>=7, f'chapter extraction failed: {chapters}'
-          stats={'image_comments':0,'chapters':0,'subheads':0,'page_numbers':0,'separators':0,'traditional_changes':0}
-          out=['# 人性伎俩','']
-          for pno,block in pages:
-            if pno in toc_pages: continue
-            meaningful=[x for x in block if x.strip() and not IMG.fullmatch(x.strip())]
-            last=meaningful[-1].strip() if meaningful else ''
+          opening=[]
+          for pno,block in pages[:18]:
+            txt=[]; heads=[]; imgs=0
             for line in block:
-              s=line.rstrip(); stripped=s.strip()
-              if IMAGE_COMMENT.match(s): stats['image_comments']+=1; continue
-              if stripped=='==': stats['separators']+=1; continue
-              if stripped==last and re.fullmatch(r'\d{1,3}',stripped): stats['page_numbers']+=1; continue
-              im=IMG.fullmatch(stripped)
-              if im:
-                out.append(im.group(0)); out.append(''); continue
-              hm=H.match(stripped); plain=hm.group(2).strip() if hm else stripped
-              converted=cc.convert(plain)
-              stats['traditional_changes'] += sum(1 for a,b in zip(plain,converted) if a!=b)+abs(len(plain)-len(converted))
-              normalized=re.sub(r'\s+',' ',converted).strip()
-              if CHAPTER.match(normalized):
-                s='## '+normalized; stats['chapters']+=1
-              elif normalized in titles and normalized not in chapters:
-                s='### '+normalized; stats['subheads']+=1
-              elif hm:
-                # Unknown visual headings are kept as lower-level section headings, never H1/H2.
-                s='### '+normalized; stats['subheads']+=1
-              else:
-                s=cc.convert(s)
-              if s.strip(): out.append(s.rstrip()); out.append('')
-          norm=[]
-          for x in out:
-            if not x.strip():
-              if norm and norm[-1]!='': norm.append('')
-            else: norm.append(x.rstrip())
-          final='\n'.join(norm).strip()+'\n'
-          images_after=IMG.findall(final)
-          assert images_after==images_before,'image refs changed'
-          assert len(re.findall(r'^#\s+',final,re.M))==1,'not one H1'
-          assert not re.search(r'^\s*<!--\s*page\s*:',final,re.M|re.I),'page markers remain'
-          assert '\n==\n' not in final,'separator artifacts remain'
-          assert stats['chapters']>=7,'too few body chapters'
-          dst.write_text(final,encoding='utf-8'); src.unlink()
-          visible=IMG.sub('',final); visible=re.sub(r'^#{1,6}\s*','',visible,flags=re.M)
-          report={'file':str(dst),'source_bytes':len(raw.encode()),'output_bytes':len(final.encode()),
-            'pages_detected':len(pages),'toc_ocr_pages_removed':4,'page_markers_removed':len(pages),
-            'chapter_heading_fixes':stats['chapters'],'toc_matched_subheadings_restored':stats['subheads'],
-            'end_page_numbers_removed':stats['page_numbers'],'separator_artifacts_removed':stats['separators'],
-            'conversion_image_comments_removed':stats['image_comments'],
-            'traditional_to_simplified':stats['traditional_changes']>0,'traditional_character_changes':stats['traditional_changes'],
-            'image_refs_before':len(images_before),'image_refs_after':len(images_after),
-            'image_refs_changed':images_before!=images_after,'visible_body_chars':len(re.sub(r'\s+','',visible))}
+              s=line.strip()
+              if not s: continue
+              if IMG.fullmatch(s): imgs+=1; continue
+              hm=H.match(s)
+              if hm: heads.append([len(hm.group(1)),hm.group(2)[:120]]); s=hm.group(2)
+              if len(txt)<10: txt.append(s[:200])
+            opening.append({'page':pno,'images':imgs,'headings':heads[:10],'text':txt})
+          report={'file':str(path),'bytes':len(raw.encode()),'lines':len(raw.splitlines()),
+            'page_count':len(pages),'image_refs':len(IMG.findall(raw)),'page_markers':len(re.findall(r'^\s*<!--\s*page\s*:',raw,re.M|re.I)),
+            'h1':len(re.findall(r'^#\s+',raw,re.M)),'h2':len(re.findall(r'^##\s+',raw,re.M)),'h3':len(re.findall(r'^###\s+',raw,re.M)),
+            'common_strings':{s:raw.count(s) for s in ['目录','微信','人性商战','第1天','第一天','第2天','第二天','第3天','第三天','课程']},
+            'opening_pages':opening}
           Path('temp/.format-progress.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-          print(json.dumps(report,ensure_ascii=False,indent=2))
           PY
-          code=$?
-          echo "exit_code=$code" > temp/.format-progress.log
-          cat /tmp/format-run.log >> temp/.format-progress.log
-          exit 0
-      - name: Persist result or diagnostic
+      - name: Persist inspection
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -A -- 'temp/《人性伎俩》.md' 'temp/人性伎俩.md' temp/.format-progress.json temp/.format-progress.log
-          if git diff --cached --quiet; then exit 0; fi
-          git commit -m 'docs(temp): process 人性伎俩 [skip ci]'
+          git add temp/.format-progress.json
+          git commit -m 'chore(temp): inspect 人性商战 [skip ci]'
           git pull --rebase origin main
           git push origin HEAD:main
