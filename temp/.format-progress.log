@@ -1,43 +1,4 @@
-exit_code=0
-{
-  "file": "temp/《458条人性顶级秘术》/458条人性秘术.md",
-  "source_bytes": 1079741,
-  "output_bytes": 1040119,
-  "pages_detected": 564,
-  "toc_pages_detected": [
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-    10,
-    11,
-    12,
-    13,
-    14,
-    15,
-    16,
-    17,
-    18,
-    19,
-    20,
-    21,
-    22,
-    23
-  ],
-  "toc_ocr_pages_removed": 23,
-  "page_markers_removed": 564,
-  "repeated_headers_removed": 23,
-  "conversion_image_comments_removed": 0,
-  "heading_fixes": 47,
-  "page_images_moved_after_text": 44,
-  "image_refs_before": 44,
-  "image_refs_after": 44,
-  "image_refs_changed": false,
-  "visible_body_chars": 341200,
-  "traditional_to_simplified": false
-}
+exit_code=1
+Traceback (most recent call last):
+  File "<stdin>", line 100, in <module>
+AssertionError: promo footer remains
