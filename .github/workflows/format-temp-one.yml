@@ -23,131 +23,115 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-
-      - name: Format 布局锦囊3.0 only
+      - name: Format 布局锦囊2.0 only
         run: |
           set +e
           python - <<'PY' > /tmp/format-run.log 2>&1
-          import json, re
+          import json,re
           from pathlib import Path
-
-          src = Path('temp/008《布局锦囊3.0》/index.md')
-          dst = Path('temp/008《布局锦囊3.0》/布局锦囊3.0.md')
-          raw = src.read_text(encoding='utf-8')
-          PAGE = re.compile(r'^\s*<!--\s*page\s*:\s*(\d+)\s*-->\s*$', re.I)
-          IMG = re.compile(r'!\[[^\]]*\]\([^\n)]*\)|!\[[^\]]*\]\[[^\]\n]*\]')
-          H = re.compile(r'^(#{1,6})\s+(.*)$')
-          IMAGE_COMMENT = re.compile(r'^\s*<!--\s*Image\s*\([^>]*\)\s*-->\s*$', re.I)
-          TOPIC = re.compile(r'^【\s*\d+(?:\s*个)?布局锦[囊燕]\s*[：:）)]?.*】\s*$')
-          TOPIC_LOOSE = re.compile(r'^【\s*\d+[^】]{0,40}布局锦[囊燕][^】]*】')
-
-          images_before = IMG.findall(raw)
-          pages, pno, buf = [], None, []
+          src=Path('temp/009《布局锦囊2.0》/index.md')
+          dst=Path('temp/009《布局锦囊2.0》/布局锦囊2.0.md')
+          raw=src.read_text(encoding='utf-8')
+          PAGE=re.compile(r'^\s*<!--\s*page\s*:\s*(\d+)\s*-->\s*$',re.I)
+          IMG=re.compile(r'!\[[^\]]*\]\([^\n)]*\)|!\[[^\]]*\]\[[^\]\n]*\]')
+          IMAGE_COMMENT=re.compile(r'^\s*<!--\s*Image\s*\([^>]*\)\s*-->\s*$',re.I)
+          H=re.compile(r'^(#{1,6})\s+(.*)$')
+          HEADER=re.compile(r'^\s*【卧龙营销内部资料】\s*布局锦囊\s*')
+          EXACT_PAGE_NO=re.compile(r'^\s*\d{1,3}\s*$')
+          TOPIC=re.compile(r'^\s*(\d{2,4})\s*个?\s*布局\s*锦\s*囊\s*[：:]?\s*【[^】]+】\s*$')
+          pages=[]; no=None; buf=[]
           for line in raw.splitlines():
-              m = PAGE.match(line)
-              if m:
-                  if pno is not None: pages.append((pno, buf))
-                  pno, buf = int(m.group(1)), []
-              else: buf.append(line)
-          if pno is not None: pages.append((pno, buf))
-          assert len(pages) == 466, f'unexpected page count: {len(pages)}'
+            m=PAGE.match(line)
+            if m:
+              if no is not None: pages.append((no,buf))
+              no=int(m.group(1)); buf=[]
+            else: buf.append(line)
+          if no is not None: pages.append((no,buf))
+          assert pages, 'no page structure'
+          images_before=IMG.findall(raw)
 
-          counters = {'bad':0,'topic':0,'image_comments':0,'moved':0}
-          toc_pages = {1,2,3,4}
-          toc_images = []
-          output = ['# 布局锦囊3.0', '']
+          # Initial directory pages are extremely dense with numbered 布局锦囊 entries.
+          toc_pages=[]
+          for pno,block in pages:
+            plain='\n'.join(IMG.sub('',x) for x in block)
+            density=plain.count('布局锦囊') + plain.count('布局 锦囊') + plain.count('布 局锦 囊')
+            if not toc_pages and pno==pages[0][0] and density>=8:
+              toc_pages.append(pno); continue
+            if toc_pages and pno==toc_pages[-1]+1 and density>=8:
+              toc_pages.append(pno); continue
+            if toc_pages: break
+          assert toc_pages, 'TOC not detected'
 
-          def clean_text_line(line):
-              if IMAGE_COMMENT.match(line):
-                  counters['image_comments'] += 1
-                  return None
-              s = line.rstrip()
-              if not s.strip(): return ''
-              hm = H.match(s.strip())
+          out=['# 布局锦囊2.0','']; toc_images=[]
+          stats={'headers':0,'image_comments':0,'page_numbers':0,'bad_h':0,'topics':0,'moved':0}
+          for pno,block in pages:
+            text=[]; imgs=[]
+            for idx,line in enumerate(block):
+              s=line.rstrip()
+              im=IMG.fullmatch(s.strip())
+              if im: imgs.append(im.group(0)); continue
+              if IMAGE_COMMENT.match(s): stats['image_comments']+=1; continue
+              new,n=HEADER.subn('',s,1)
+              if n: stats['headers']+=1; s=new
+              # A bare number at the physical end of a page is page furniture.
+              if EXACT_PAGE_NO.match(s) and all(not z.strip() or IMG.fullmatch(z.strip()) for z in block[idx+1:]):
+                stats['page_numbers']+=1; continue
+              hm=H.match(s.strip())
               if hm:
-                  text = hm.group(2).strip()
-                  if TOPIC.match(text) or TOPIC_LOOSE.match(text):
-                      counters['topic'] += 1
-                      return '## ' + text
-                  counters['bad'] += 1
-                  return text
-              plain = s.strip()
-              if TOPIC.match(plain):
-                  counters['topic'] += 1
-                  return '## ' + plain
-              return s
-
-          for page_no, block in pages:
-              text_lines, imgs = [], []
-              for line in block:
-                  exact = IMG.fullmatch(line.strip())
-                  if exact:
-                      imgs.append(exact.group(0)); continue
-                  cleaned = clean_text_line(line)
-                  if cleaned is not None: text_lines.append(cleaned)
-              norm=[]
-              for x in text_lines:
-                  if not x.strip():
-                      if norm and norm[-1] != '': norm.append('')
-                  else: norm.append(x.rstrip())
-              while norm and norm[-1] == '': norm.pop()
-              if page_no in toc_pages:
-                  toc_images.extend(imgs)
-                  continue
-              if norm:
-                  if output and output[-1] != '': output.append('')
-                  output.extend(norm)
-              if imgs:
-                  if output and output[-1] != '': output.append('')
-                  output.extend(imgs)
-                  counters['moved'] += len(imgs)
-
-          output[2:2] = ['## 目录', ''] + toc_images + ['']
-          counters['moved'] += len(toc_images)
-          normalized=[]
-          for x in output:
+                s=hm.group(2).strip(); stats['bad_h']+=1
+              if TOPIC.match(s.strip()):
+                s='## '+s.strip(); stats['topics']+=1
+              text.append(s)
+            norm=[]
+            for x in text:
               if not x.strip():
-                  if normalized and normalized[-1] != '': normalized.append('')
-              else: normalized.append(x.rstrip())
-          final='\n'.join(normalized).strip()+'\n'
-
+                if norm and norm[-1]!='': norm.append('')
+              else: norm.append(x.rstrip())
+            while norm and norm[-1]=='': norm.pop()
+            if pno in toc_pages:
+              toc_images.extend(imgs); continue
+            if norm:
+              if out and out[-1]!='': out.append('')
+              out.extend(norm)
+            if imgs:
+              if out and out[-1]!='': out.append('')
+              out.extend(imgs); stats['moved']+=len(imgs)
+          out[2:2]=['## 目录','']+toc_images+['']; stats['moved']+=len(toc_images)
+          norm=[]
+          for x in out:
+            if not x.strip():
+              if norm and norm[-1]!='': norm.append('')
+            else: norm.append(x.rstrip())
+          final='\n'.join(norm).strip()+'\n'
           images_after=IMG.findall(final)
-          assert images_after == images_before, 'image references/order changed'
-          assert len(re.findall(r'^#\s+', final, re.M)) == 1, 'must have exactly one H1'
-          assert not re.search(r'^\s*<!--\s*page\s*:', final, re.M|re.I), 'page markers remain'
-          assert not IMAGE_COMMENT.search(final), 'image conversion comments remain'
-          assert len(re.findall(r'^##\s+', final, re.M)) <= 250, 'too many H2s remain'
-
-          dst.write_text(final,encoding='utf-8')
-          src.unlink()
-          visible=IMG.sub('',final)
-          visible=re.sub(r'^#{1,6}\s*','',visible,flags=re.M)
+          assert images_after==images_before,'image refs/order changed'
+          assert len(re.findall(r'^#\s+',final,re.M))==1,'not exactly one H1'
+          assert not re.search(r'^\s*<!--\s*page\s*:',final,re.M|re.I),'page comments remain'
+          assert '【卧龙营销内部资料】布局锦囊' not in final,'repeated header remains'
+          dst.write_text(final,encoding='utf-8'); src.unlink()
+          visible=IMG.sub('',final); visible=re.sub(r'^#{1,6}\s*','',visible,flags=re.M)
           report={
             'file':str(dst),'source_bytes':len(raw.encode()),'output_bytes':len(final.encode()),
-            'pages_detected':len(pages),'toc_ocr_pages_removed':4,'page_markers_removed':466,
-            'conversion_image_comments_removed':counters['image_comments'],
-            'bad_markdown_headings_flattened_to_text':counters['bad'],
-            'reliable_topic_headings_restored':counters['topic'],
-            'page_images_moved_after_text':counters['moved'],
-            'image_refs_before':len(images_before),'image_refs_after':len(images_after),
-            'image_refs_changed':images_before!=images_after,
-            'visible_body_chars':len(re.sub(r'\s+','',visible)),'traditional_to_simplified':False,
-            'notes':'Pages 1-4 OCR directory text removed; all directory screenshots preserved. Unreliable OCR H1/H2 markers flattened to text.'}
+            'pages_detected':len(pages),'toc_pages_detected':toc_pages,'toc_ocr_pages_removed':len(toc_pages),
+            'page_markers_removed':len(pages),'repeated_headers_removed':stats['headers'],
+            'conversion_image_comments_removed':stats['image_comments'],'end_page_numbers_removed':stats['page_numbers'],
+            'bad_markdown_headings_flattened':stats['bad_h'],'reliable_topic_headings_restored':stats['topics'],
+            'page_images_moved_after_text':stats['moved'],'image_refs_before':len(images_before),
+            'image_refs_after':len(images_after),'image_refs_changed':images_before!=images_after,
+            'visible_body_chars':len(re.sub(r'\s+','',visible)),'traditional_to_simplified':False}
           Path('temp/.format-progress.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
           print(json.dumps(report,ensure_ascii=False,indent=2))
           PY
           code=$?
           echo "exit_code=$code" > temp/.format-progress.log
           cat /tmp/format-run.log >> temp/.format-progress.log
-          cat temp/.format-progress.log
           exit 0
-
       - name: Persist result or diagnostic
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -A -- 'temp/008《布局锦囊3.0》' temp/.format-progress.json temp/.format-progress.log
+          git add -A -- 'temp/009《布局锦囊2.0》' temp/.format-progress.json temp/.format-progress.log
           if git diff --cached --quiet; then exit 0; fi
-          git commit -m 'docs(temp): process 布局锦囊3.0 [skip ci]'
+          git commit -m 'docs(temp): process 布局锦囊2.0 [skip ci]'
           git pull --rebase origin main
           git push origin HEAD:main
