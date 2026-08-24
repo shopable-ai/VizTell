@@ -1,4 +1,4 @@
-name: Inspect One Temp Markdown
+name: Format One Temp Markdown
 
 on:
   push:
@@ -13,22 +13,28 @@ concurrency:
 permissions:
   contents: write
 jobs:
-  inspect-one:
+  format-one:
     if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with: {fetch-depth: 0}
-      - name: Inspect only
+      - name: Format 458条人性秘术 only
         run: |
-          python - <<'PY'
+          set +e
+          python - <<'PY' > /tmp/format-run.log 2>&1
           import json,re
           from pathlib import Path
-          path=Path('temp/《458条人性顶级秘术》/index.md')
-          raw=path.read_text(encoding='utf-8')
+          src=Path('temp/《458条人性顶级秘术》/index.md')
+          dst=Path('temp/《458条人性顶级秘术》/458条人性秘术.md')
+          raw=src.read_text(encoding='utf-8')
           PAGE=re.compile(r'^\s*<!--\s*page\s*:\s*(\d+)\s*-->\s*$',re.I)
           IMG=re.compile(r'!\[[^\]]*\]\([^\n)]*\)|!\[[^\]]*\]\[[^\]\n]*\]')
           H=re.compile(r'^(#{1,6})\s+(.*)$')
+          IMAGE_COMMENT=re.compile(r'^\s*<!--\s*Image\s*\([^>]*\)\s*-->\s*$',re.I)
+          CHAPTER=re.compile(r'^第[一二三四五六七八九十百零〇两0-9]+章\s*.*$')
+          HEADER=re.compile(r'^\s*人性\s*[—-]{1,2}\s*《(?:老杨[·・]?\s*)?458\s*条人性秘术》\s*$')
+          LEADER=re.compile(r'[·.…]{3,}\s*\d+\s*$')
           pages=[]; no=None; buf=[]
           for line in raw.splitlines():
             m=PAGE.match(line)
@@ -37,32 +43,87 @@ jobs:
               no=int(m.group(1)); buf=[]
             else: buf.append(line)
           if no is not None: pages.append((no,buf))
-          rows=[]
-          for pno,block in pages[:25]:
-            text=[]; heads=[]; imgs=0
+          assert len(pages)==564
+          images_before=IMG.findall(raw)
+
+          toc=[]
+          for pno,block in pages:
+            nonimg=[H.sub(r'\2',x.strip()) for x in block if x.strip() and not IMG.fullmatch(x.strip())]
+            leaders=sum(bool(LEADER.search(x)) for x in nonimg)
+            has_contents=any('内容目录' in x.replace(' ','') or x.replace(' ','')=='目录' for x in nonimg)
+            if not toc and pno==1 and (has_contents or leaders>=3): toc.append(pno); continue
+            if toc and pno==toc[-1]+1 and leaders>=3: toc.append(pno); continue
+            if toc: break
+          assert toc and len(toc)>=5, f'unsafe toc detection: {toc}'
+
+          out=['# 458条人性秘术','']; toc_images=[]
+          stats={'headers':0,'image_comments':0,'hfix':0,'moved':0}
+          for pno,block in pages:
+            text=[]; imgs=[]
             for line in block:
-              s=line.strip()
-              if not s: continue
-              if IMG.fullmatch(s): imgs+=1; continue
-              hm=H.match(s)
+              s=line.rstrip()
+              im=IMG.fullmatch(s.strip())
+              if im: imgs.append(im.group(0)); continue
+              if IMAGE_COMMENT.match(s): stats['image_comments']+=1; continue
+              if HEADER.match(s): stats['headers']+=1; continue
+              # one obvious conversion/watermark artifact from the directory cover
+              if pno==1 and s.strip()=='1000 du88360': continue
+              hm=H.match(s.strip())
               if hm:
-                heads.append([len(hm.group(1)),hm.group(2)[:100]]); s=hm.group(2)
-              if len(text)<8: text.append(s[:180])
-            rows.append({'page':pno,'images':imgs,'headings':heads[:8],'text':text})
-          report={
-            'file':str(path),'bytes':len(raw.encode()),'lines':len(raw.splitlines()),
-            'page_count':len(pages),'image_refs':len(IMG.findall(raw)),
-            'page_markers':len(re.findall(r'^\s*<!--\s*page\s*:',raw,re.M|re.I)),
-            'h1':len(re.findall(r'^#\s+',raw,re.M)),'h2':len(re.findall(r'^##\s+',raw,re.M)),
-            'common_strings':{s:raw.count(s) for s in ['目录','朋友圈每日更新','卧龙营销内部资料','人性顶级秘术','微信']},
-            'opening_pages':rows}
+                title=hm.group(2).strip()
+                if CHAPTER.match(title): s='## '+title
+                else: s='### '+title
+                stats['hfix']+=1
+              text.append(s)
+            norm=[]
+            for x in text:
+              if not x.strip():
+                if norm and norm[-1]!='': norm.append('')
+              else: norm.append(x.rstrip())
+            while norm and norm[-1]=='': norm.pop()
+            if pno in toc:
+              toc_images.extend(imgs); continue
+            if norm:
+              if out and out[-1]!='': out.append('')
+              out.extend(norm)
+            if imgs:
+              if out and out[-1]!='': out.append('')
+              out.extend(imgs); stats['moved']+=len(imgs)
+          if toc_images:
+            out[2:2]=['## 目录','']+toc_images+['']; stats['moved']+=len(toc_images)
+          norm=[]
+          for x in out:
+            if not x.strip():
+              if norm and norm[-1]!='': norm.append('')
+            else: norm.append(x.rstrip())
+          final='\n'.join(norm).strip()+'\n'
+          images_after=IMG.findall(final)
+          assert images_after==images_before,'images changed'
+          assert len(re.findall(r'^#\s+',final,re.M))==1,'not one H1'
+          assert not re.search(r'^\s*<!--\s*page\s*:',final,re.M|re.I),'page comments remain'
+          assert not HEADER.search(final),'headers remain'
+          dst.write_text(final,encoding='utf-8'); src.unlink()
+          visible=IMG.sub('',final); visible=re.sub(r'^#{1,6}\s*','',visible,flags=re.M)
+          report={'file':str(dst),'source_bytes':len(raw.encode()),'output_bytes':len(final.encode()),
+            'pages_detected':len(pages),'toc_pages_detected':toc,'toc_ocr_pages_removed':len(toc),
+            'page_markers_removed':len(pages),'repeated_headers_removed':stats['headers'],
+            'conversion_image_comments_removed':stats['image_comments'],'heading_fixes':stats['hfix'],
+            'page_images_moved_after_text':stats['moved'],'image_refs_before':len(images_before),
+            'image_refs_after':len(images_after),'image_refs_changed':images_before!=images_after,
+            'visible_body_chars':len(re.sub(r'\s+','',visible)),'traditional_to_simplified':False}
           Path('temp/.format-progress.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          print(json.dumps(report,ensure_ascii=False,indent=2))
           PY
-      - name: Persist report
+          code=$?
+          echo "exit_code=$code" > temp/.format-progress.log
+          cat /tmp/format-run.log >> temp/.format-progress.log
+          exit 0
+      - name: Persist result or diagnostic
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add temp/.format-progress.json
-          git commit -m 'chore(temp): inspect 458条人性顶级秘术 [skip ci]'
+          git add -A -- 'temp/《458条人性顶级秘术》' temp/.format-progress.json temp/.format-progress.log
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'docs(temp): process 458条人性秘术 [skip ci]'
           git pull --rebase origin main
           git push origin HEAD:main
