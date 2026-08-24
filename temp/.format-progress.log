@@ -1,19 +1,29 @@
 exit_code=0
 {
-  "file": "temp/008《布局锦囊3.0》/布局锦囊3.0.md",
-  "source_bytes": 1170128,
-  "output_bytes": 1147292,
-  "pages_detected": 466,
-  "toc_ocr_pages_removed": 4,
-  "page_markers_removed": 466,
+  "file": "temp/009《布局锦囊2.0》/布局锦囊2.0.md",
+  "source_bytes": 786511,
+  "output_bytes": 735634,
+  "pages_detected": 371,
+  "toc_pages_detected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "toc_ocr_pages_removed": 7,
+  "page_markers_removed": 371,
+  "repeated_headers_removed": 310,
   "conversion_image_comments_removed": 0,
-  "bad_markdown_headings_flattened_to_text": 406,
-  "reliable_topic_headings_restored": 61,
-  "page_images_moved_after_text": 466,
-  "image_refs_before": 466,
-  "image_refs_after": 466,
+  "end_page_numbers_removed": 15,
+  "bad_markdown_headings_flattened": 507,
+  "reliable_topic_headings_restored": 58,
+  "page_images_moved_after_text": 345,
+  "image_refs_before": 345,
+  "image_refs_after": 345,
   "image_refs_changed": false,
-  "visible_body_chars": 378082,
-  "traditional_to_simplified": false,
-  "notes": "Pages 1-4 OCR directory text removed; all directory screenshots preserved. Unreliable OCR H1/H2 markers flattened to text."
+  "visible_body_chars": 239524,
+  "traditional_to_simplified": false
 }
