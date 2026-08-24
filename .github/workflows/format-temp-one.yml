@@ -20,92 +20,48 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-
-      - name: Inspect 布局锦囊3.0 only
+      - name: Inspect opening pages only
         run: |
           python - <<'PY'
-          import json, re
+          import json,re
           from pathlib import Path
-
-          path = Path('temp/008《布局锦囊3.0》/index.md')
-          raw = path.read_text(encoding='utf-8')
-          PAGE = re.compile(r'^\s*<!--\s*page\s*:\s*(\d+)\s*-->\s*$', re.I)
-          PAGE_H = re.compile(r'^\s*#{1,6}\s*第\s*\d+\s*页\s*$')
-          IMG = re.compile(r'!\[[^\]]*\]\([^\n)]*\)|!\[[^\]]*\]\[[^\]\n]*\]')
-          H = re.compile(r'^(#{1,6})\s+(.*)$')
-          TOC = re.compile(r'(?:\.{4,}|…{3,}|·{4,})\s*\d+\s*$')
-
-          pages, no, buf = [], None, []
+          path=Path('temp/008《布局锦囊3.0》/index.md')
+          raw=path.read_text(encoding='utf-8')
+          PAGE=re.compile(r'^\s*<!--\s*page\s*:\s*(\d+)\s*-->\s*$',re.I)
+          IMG=re.compile(r'!\[[^\]]*\]\([^\n)]*\)|!\[[^\]]*\]\[[^\]\n]*\]')
+          H=re.compile(r'^(#{1,6})\s+(.*)$')
+          pages=[]; no=None; buf=[]
           for line in raw.splitlines():
-              m = PAGE.match(line)
-              if m:
-                  if no is not None: pages.append((no, buf))
-                  no, buf = int(m.group(1)), []
-              else:
-                  buf.append(line)
-          if no is not None: pages.append((no, buf))
-
-          page_summaries = []
-          toc_candidates = []
-          heading_counts = {f'h{i}': 0 for i in range(1,7)}
-          headings = []
-          promo_counts = {}
-          for pno, block in pages:
-              text = []
-              leaders = 0
-              imgs = 0
-              for line in block:
-                  s = line.strip()
-                  if not s or PAGE_H.match(s): continue
-                  if IMG.fullmatch(s): imgs += 1; continue
-                  hm = H.match(s)
-                  if hm:
-                      lvl = len(hm.group(1)); title = hm.group(2).strip()
-                      heading_counts[f'h{lvl}'] += 1
-                      if len(headings) < 160: headings.append({'page': pno, 'level': lvl, 'title': title})
-                      s = title
-                  if TOC.search(s): leaders += 1
-                  if len(text) < 8: text.append(s[:180])
-              if leaders >= 2 or any('目录' in x for x in text):
-                  toc_candidates.append({'page': pno, 'leaders': leaders, 'sample': text[:6]})
-              if len(page_summaries) < 35 or pno in range(35,46):
-                  page_summaries.append({'page': pno, 'images': imgs, 'sample': text[:6]})
-
-          promo_patterns = [
-              '朋友圈每日更新最新电子版书籍', '备用微信', '电子版书籍', '微信'
-          ]
-          for pat in promo_patterns:
-              promo_counts[pat] = raw.count(pat)
-
-          report = {
-              'file': str(path),
-              'source_bytes': len(raw.encode('utf-8')),
-              'line_count': len(raw.splitlines()),
-              'page_count': len(pages),
-              'page_range': [pages[0][0], pages[-1][0]] if pages else None,
-              'page_marker_count': len(re.findall(r'^\s*<!--\s*page\s*:', raw, re.M | re.I)),
-              'fake_page_heading_count': len(re.findall(r'^\s*#{1,6}\s*第\s*\d+\s*页\s*$', raw, re.M)),
-              'image_ref_count': len(IMG.findall(raw)),
-              'heading_counts': heading_counts,
-              'promo_counts': promo_counts,
-              'toc_candidates': toc_candidates[:40],
-              'first_headings': headings,
-              'page_summaries': page_summaries,
-          }
-          Path('temp/.format-progress.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
-          print(json.dumps(report, ensure_ascii=False, indent=2))
+            m=PAGE.match(line)
+            if m:
+              if no is not None: pages.append((no,buf))
+              no=int(m.group(1)); buf=[]
+            else: buf.append(line)
+          if no is not None: pages.append((no,buf))
+          rows=[]
+          for pno,block in pages[:30]:
+            text=[]; heads=[]; imgs=[]
+            for line in block:
+              s=line.strip()
+              if not s: continue
+              im=IMG.fullmatch(s)
+              if im: imgs.append(im.group(0)); continue
+              hm=H.match(s)
+              if hm:
+                heads.append([len(hm.group(1)),hm.group(2)[:120]])
+                s=hm.group(2)
+              if len(text)<12: text.append(s[:220])
+            rows.append({'page':pno,'headings':heads[:12],'image_count':len(imgs),'text':text})
+          Path('temp/.format-progress.json').write_text(json.dumps({'file':str(path),'opening_pages':rows},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
           PY
-
-      - name: Persist inspection only
+      - name: Persist inspection
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -- 'temp/.format-progress.json'
-          if git diff --cached --quiet; then exit 0; fi
-          git commit -m 'chore(temp): inspect 布局锦囊3.0 [skip ci]'
+          git add -- temp/.format-progress.json
+          git commit -m 'chore(temp): inspect 布局锦囊3.0 opening [skip ci]'
           git pull --rebase origin main
           git push origin HEAD:main
