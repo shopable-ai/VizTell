@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/format-temp-one.yml'
+      - 'scripts/format_temp_markdown.py'
   workflow_dispatch:
 
 concurrency:
@@ -42,7 +43,6 @@ jobs:
           echo "Found ${total} remaining subdirectory index.md files."
 
           for target in "${targets[@]}"; do
-            # A prior iteration/rebase may already have processed this path.
             if [[ ! -f "$target" ]]; then
               continue
             fi
@@ -64,8 +64,6 @@ jobs:
             if [[ $code -ne 0 ]]; then
               printf '%s\t%s\n' "$target" "$(tail -n 1 "$log" | tr '\t' ' ')" >> /tmp/failure.tsv
               cat "$log"
-              # Safety failure leaves this file untouched and moves to the next
-              # book; failures are persisted for a later per-file semantic pass.
               git reset --hard HEAD
               continue
             fi
@@ -85,7 +83,6 @@ jobs:
 
           python - <<'PY'
           from pathlib import Path
-          from datetime import datetime, timezone
 
           def rows(path):
               p=Path(path)
