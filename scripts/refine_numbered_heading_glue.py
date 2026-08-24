@@ -31,6 +31,9 @@ def split_embedded_sets(lines: list[str]) -> tuple[list[str], int]:
     for line in lines:
         # Find `第X套：` occurrences that start after body text. Iterate because
         # a single OCR line can contain more than one glued title.
+        if re.match(r"^#{1,6}\s+", line.strip()):
+            out.append(line)
+            continue
         pending = line
         while True:
             matches = list(SET_TOKEN.finditer(pending))
