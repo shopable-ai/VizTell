@@ -1,22 +1,19 @@
 {
-  "file": "temp/《万能厚黑不黑模式》/万能厚黑不黑模式.md",
-  "source_bytes": 548418,
-  "output_bytes": 500581,
-  "pages_detected": 249,
-  "toc_pages_removed": [
-    10,
-    11
-  ],
-  "page_markers_removed": 249,
-  "repeated_headers_removed": 215,
-  "repeated_promo_footers_removed": 244,
-  "conversion_image_comments_removed": 0,
-  "heading_fixes": 138,
+  "file": "temp/《万能识人术》/万能识人术.md",
+  "source_bytes": 202464,
+  "output_bytes": 187101,
+  "pages_detected": 169,
+  "toc_ocr_pages_removed": 3,
+  "page_markers_removed": 169,
+  "scan_footers_removed": 3,
+  "end_page_numbers_removed": 162,
+  "toc_matched_headings_restored": 57,
+  "paragraph_blocks_reflowed": 503,
   "traditional_to_simplified": true,
-  "traditional_character_changes": 67,
-  "page_images_moved_after_text": 249,
-  "image_refs_before": 249,
-  "image_refs_after": 249,
+  "traditional_character_changes": 4,
+  "page_images_moved_after_text": 2,
+  "image_refs_before": 2,
+  "image_refs_after": 2,
   "image_refs_changed": false,
-  "visible_body_chars": 162107
+  "visible_body_chars": 62156
 }
