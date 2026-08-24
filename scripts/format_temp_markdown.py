@@ -3,8 +3,12 @@
 
 Aligned with .prompt/Markdown文档整理与修复通用提示词.md.
 The script processes ONE file per invocation. It is designed for temp/**/index.md
-and refuses the write if image references change, page markers remain, or body
-retention falls below the safety threshold.
+and refuses the write if image references are lost/changed, page markers remain,
+or body retention falls below the safety threshold.
+
+Important image rule: full-page source screenshots may intentionally move after
+searchable OCR text. Therefore image *order* may change, but the multiset of
+Markdown image references (exact strings, paths and counts) must remain identical.
 """
 from __future__ import annotations
 
@@ -34,7 +38,6 @@ LIST = re.compile(r"^\s*(?:[-*+]\s+|[-*+]\s*[•·]\s*|\d+[.)、：:]\s*|[（(]?
 CHAPTER = re.compile(r"^第\s*[一二三四五六七八九十百零〇两0-9]+\s*章(?:\s+|：|:)?\s*.*$")
 PART = re.compile(r"^(?:第\s*[一二三四五六七八九十百零〇两0-9]+\s*[篇部卷]|Part\s+\d+)\b.*$", re.I)
 TOC_LEADER = re.compile(r"^(.*?)(?:\.{4,}|…{3,}|·{4,}|﹒{4,})\s*[.·… ]*\d+\s*$")
-TOC_ITEM_LOOSE = re.compile(r"^.{2,100}?\s+\d{1,4}\s*$")
 HTML_COMMENT = re.compile(r"<!--.*?-->", re.S)
 URL = re.compile(r"https?\s*:\s*//\S+", re.I)
 SCAN_FOOT = re.compile(r"^\s*\d*\s*籍\s*:\s*.*(?:SS\s*Q|SOS).*$", re.I)
@@ -67,6 +70,7 @@ class Stats:
     image_refs_before: int = 0
     image_refs_after: int = 0
     image_refs_changed: bool = False
+    image_reference_order_changed: bool = False
     visible_body_chars: int = 0
     meaningful_body_retention: float = 1.0
 
@@ -148,7 +152,6 @@ def toc_score(block: list[str]) -> tuple[int, int, int, int]:
 
 
 def detect_toc_pages(pages: list[tuple[int, list[str]]]) -> set[int]:
-    """Detect one early contiguous directory block without deleting front matter."""
     if not pages or pages[0][0] == 0:
         return set()
     scan = pages[: min(30, len(pages))]
@@ -167,7 +170,6 @@ def detect_toc_pages(pages: list[tuple[int, list[str]]]) -> set[int]:
         if i == start_i:
             chosen.append(pno)
             continue
-        # Continue through multi-page directories even when OCR destroys dot leaders.
         likely = leaders >= 2 or chapters >= 2 or directory or (chars < 1800 and (leaders + chapters) >= 1)
         if likely:
             chosen.append(pno)
@@ -209,7 +211,6 @@ def infer_title(source: Path, lines: list[str]) -> str:
     parent = re.sub(r"PDF版$", "", parent, flags=re.I).strip()
     if parent.startswith("《") and parent.endswith("》"):
         parent = parent[1:-1].strip()
-    # Prefer a sensible early H1 when it is clearly a book title rather than 目录/章名.
     for raw in lines[:120]:
         m = HEADING.match(raw.strip())
         if not m or len(m.group(1)) != 1:
@@ -219,7 +220,6 @@ def infer_title(source: Path, lines: list[str]) -> str:
             continue
         t = re.sub(r"[°·•]+$", "", t).strip()
         if t:
-            # Parent names are usually more stable than OCR title corruption.
             if parent and compact_key(parent) in compact_key(t):
                 return parent
             if parent:
@@ -281,7 +281,6 @@ def fix_list_marker(line: str, stats: Stats) -> str:
 
 
 def reflow_plain(lines: list[str], stats: Stats) -> list[str]:
-    """Conservatively join obvious hard-wrap fragments; preserve real paragraphs/lists."""
     out: list[str] = []
     pending: list[str] = []
 
@@ -307,7 +306,6 @@ def reflow_plain(lines: list[str], stats: Stats) -> list[str]:
     for line in lines:
         s = line.strip()
         if not s:
-            # A blank after terminal punctuation is a real paragraph boundary.
             if pending and pending[-1].rstrip().endswith(PUNCT_END):
                 flush()
             continue
@@ -322,19 +320,10 @@ def reflow_plain(lines: list[str], stats: Stats) -> list[str]:
     return out
 
 
-def clean_page(
-    pno: int,
-    block: list[str],
-    title: str,
-    toc_titles: dict[str, tuple[int, str]],
-    furniture: set[str],
-    stats: Stats,
-) -> tuple[list[str], list[str], list[str]]:
+def clean_page(pno: int, block: list[str], title: str, toc_titles: dict[str, tuple[int, str]], furniture: set[str], stats: Stats) -> tuple[list[str], list[str]]:
     text_lines: list[str] = []
     page_images: list[str] = []
-    ordinary_images: list[str] = []
     meaningful = [x for x in block if x.strip() and not IMAGE.fullmatch(x.strip()) and not IMAGE_COMMENT.match(x)]
-    last_plain = strip_heading(meaningful[-1]) if meaningful else ""
 
     for raw in block:
         s = raw.rstrip("\r\n")
@@ -350,7 +339,6 @@ def clean_page(
             if PAGE_IMAGE.fullmatch(stripped):
                 page_images.append(im.group(0))
             else:
-                ordinary_images.append(im.group(0))
                 text_lines.append(im.group(0))
                 stats.ordinary_images_preserved_in_place += 1
             continue
@@ -361,8 +349,7 @@ def clean_page(
         if norm(plain_original) in furniture:
             stats.repeated_furniture_removed += 1
             continue
-        if stripped and stripped == meaningful[-1].strip() if meaningful else False:
-            digits = re.sub(r"\D", "", stripped)
+        if meaningful and stripped == meaningful[-1].strip():
             if re.fullmatch(r"\d{1,4}", stripped) and (not pno or int(stripped) in {pno, pno - 1, pno + 1}):
                 stats.end_page_numbers_removed += 1
                 continue
@@ -392,7 +379,6 @@ def clean_page(
                 stats.heading_fixes += 1
             continue
         if hm:
-            # Unknown visual headings stay inside the current chapter, never H1.
             text_lines.append("### " + norm(plain))
             if len(hm.group(1)) != 3:
                 stats.heading_fixes += 1
@@ -402,12 +388,10 @@ def clean_page(
         line = fix_list_marker(line, stats)
         text_lines.append(line)
 
-    # Keep ordinary images at their original inline positions, but move only
-    # strong-evidence full-page screenshots after the searchable page text.
     cleaned = reflow_plain(text_lines, stats)
     if page_images:
         stats.page_images_moved_after_text += len(page_images)
-    return cleaned, page_images, ordinary_images
+    return cleaned, page_images
 
 
 def normalize_blank_lines(lines: list[str]) -> list[str]:
@@ -457,7 +441,7 @@ def run(source: Path, destination: Path | None = None, title: str | None = None)
             continue
 
         body_source_parts.extend(block)
-        cleaned, page_imgs, _ = clean_page(pno, block, title, toc_titles, furniture, stats)
+        cleaned, page_imgs = clean_page(pno, block, title, toc_titles, furniture, stats)
         if cleaned:
             if output and output[-1] != "":
                 output.append("")
@@ -468,9 +452,7 @@ def run(source: Path, destination: Path | None = None, title: str | None = None)
             output.extend(page_imgs)
 
     if toc_page_images:
-        # Preserve directory screenshots while removing duplicated OCR directory text.
-        insert = 2
-        output[insert:insert] = ["**目录**", ""] + toc_page_images + [""]
+        output[2:2] = ["**目录**", ""] + toc_page_images + [""]
         stats.page_images_moved_after_text += len(toc_page_images)
 
     output = normalize_blank_lines(output)
@@ -478,11 +460,12 @@ def run(source: Path, destination: Path | None = None, title: str | None = None)
 
     after_images = image_refs(final)
     stats.image_refs_after = len(after_images)
-    stats.image_refs_changed = before_images != after_images
+    stats.image_reference_order_changed = before_images != after_images
+    stats.image_refs_changed = Counter(before_images) != Counter(after_images)
     stats.traditional_to_simplified = stats.traditional_character_changes > 0
 
     if stats.image_refs_changed:
-        raise RuntimeError("Markdown image references changed or order changed; refusing write")
+        raise RuntimeError("Markdown image references were added, removed, duplicated, or path-modified; refusing write")
     if re.search(r"^\s*<!--\s*page\s*:", final, re.M | re.I):
         raise RuntimeError("page comments remain")
     if IMAGE_COMMENT.search(final):
