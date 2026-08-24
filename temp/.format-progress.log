@@ -1,15 +1,19 @@
-exit_code=1
-Traceback (most recent call last):
-  File "/home/runner/work/VizTell/VizTell/scripts/format_布局锦囊1_0.py", line 118, in <module>
-    if __name__ == '__main__': main()
-                               ^^^^^^
-  File "/home/runner/work/VizTell/VizTell/scripts/format_布局锦囊1_0.py", line 67, in main
-    raw = SRC.read_text(encoding='utf-8')
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.12/pathlib.py", line 1029, in read_text
-    with self.open(mode='r', encoding=encoding, errors=errors) as f:
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
-    return io.open(self, mode, buffering, encoding, errors, newline)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: 'temp/007《布局锦囊1.0》/index.md'
+exit_code=0
+{
+  "file": "temp/008《布局锦囊3.0》/布局锦囊3.0.md",
+  "source_bytes": 1170128,
+  "output_bytes": 1147292,
+  "pages_detected": 466,
+  "toc_ocr_pages_removed": 4,
+  "page_markers_removed": 466,
+  "conversion_image_comments_removed": 0,
+  "bad_markdown_headings_flattened_to_text": 406,
+  "reliable_topic_headings_restored": 61,
+  "page_images_moved_after_text": 466,
+  "image_refs_before": 466,
+  "image_refs_after": 466,
+  "image_refs_changed": false,
+  "visible_body_chars": 378082,
+  "traditional_to_simplified": false,
+  "notes": "Pages 1-4 OCR directory text removed; all directory screenshots preserved. Unreliable OCR H1/H2 markers flattened to text."
+}
