@@ -1,4 +1,23 @@
-exit_code=1
-Traceback (most recent call last):
-  File "<stdin>", line 100, in <module>
-AssertionError: promo footer remains
+exit_code=0
+{
+  "file": "temp/《万能厚黑不黑模式》/万能厚黑不黑模式.md",
+  "source_bytes": 548418,
+  "output_bytes": 500581,
+  "pages_detected": 249,
+  "toc_pages_removed": [
+    10,
+    11
+  ],
+  "page_markers_removed": 249,
+  "repeated_headers_removed": 215,
+  "repeated_promo_footers_removed": 244,
+  "conversion_image_comments_removed": 0,
+  "heading_fixes": 138,
+  "traditional_to_simplified": true,
+  "traditional_character_changes": 67,
+  "page_images_moved_after_text": 249,
+  "image_refs_before": 249,
+  "image_refs_after": 249,
+  "image_refs_changed": false,
+  "visible_body_chars": 162107
+}
