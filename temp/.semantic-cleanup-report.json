@@ -1,0 +1,515 @@
+{
+  "renamed_to_index": [
+    {
+      "action": "rename",
+      "from": "temp/007《布局锦囊1.0》/布局锦囊1.0.md",
+      "to": "temp/007《布局锦囊1.0》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/008《布局锦囊3.0》/布局锦囊3.0.md",
+      "to": "temp/008《布局锦囊3.0》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/009《布局锦囊2.0》/布局锦囊2.0.md",
+      "to": "temp/009《布局锦囊2.0》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《458条人性顶级秘术》/458条人性秘术.md",
+      "to": "temp/《458条人性顶级秘术》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《万能厚黑不黑模式》/万能厚黑不黑模式.md",
+      "to": "temp/《万能厚黑不黑模式》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《万能识人术》/万能识人术.md",
+      "to": "temp/《万能识人术》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《人心探索（动机篇）》/人心探索（动机篇）.md",
+      "to": "temp/《人心探索（动机篇）》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《人心探索（操控篇）》/人心探索（操控篇）.md",
+      "to": "temp/《人心探索（操控篇）》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《人性天眼》/人性天眼.md",
+      "to": "temp/《人性天眼》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《人性宝典2.0》/人性宝典2.0.md",
+      "to": "temp/《人性宝典2.0》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《人性密码》/人性密码.md",
+      "to": "temp/《人性密码》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《人性底层模型1.0》/人性底层模型1.0.md",
+      "to": "temp/《人性底层模型1.0》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《人性底层模型2.0》/人性底层模型2.0.md",
+      "to": "temp/《人性底层模型2.0》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《人性心法》/人性心法.md",
+      "to": "temp/《人性心法》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《人性心理战》/人性心理战.md",
+      "to": "temp/《人性心理战》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《人性成败拿捏》/人性成败拿捏.md",
+      "to": "temp/《人性成败拿捏》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《人性探索大师1》/人性探索大师1.md",
+      "to": "temp/《人性探索大师1》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《人性探索大师2》/人性探索大师2.md",
+      "to": "temp/《人性探索大师2》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《人性探索大师3》/人性探索大师3.md",
+      "to": "temp/《人性探索大师3》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《人性智谋36计》/人性智谋36计.md",
+      "to": "temp/《人性智谋36计》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《人性真相》/人性真相.md",
+      "to": "temp/《人性真相》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《人性真言》/人性真言.md",
+      "to": "temp/《人性真言》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《人性社交思维手册》/人性社交思维手册.md",
+      "to": "temp/《人性社交思维手册》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《人性纵横说1.0》/人性纵横说1.0.md",
+      "to": "temp/《人性纵横说1.0》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《人性背后隐藏的邪恶密码》/人性背后隐藏的邪恶密码.md",
+      "to": "temp/《人性背后隐藏的邪恶密码》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《人性艺术-内心电影剪辑师》/人性艺术-内心电影剪辑师.md",
+      "to": "temp/《人性艺术-内心电影剪辑师》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《人性要诀》/人性要诀.md",
+      "to": "temp/《人性要诀》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《人性逆袭绝技》/人性逆袭绝技.md",
+      "to": "temp/《人性逆袭绝技》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《人性错觉控制术》/人性错觉控制术.md",
+      "to": "temp/《人性错觉控制术》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《人性陷阱》/人性陷阱.md",
+      "to": "temp/《人性陷阱》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《人性魔鬼手段》/人性魔鬼手段.md",
+      "to": "temp/《人性魔鬼手段》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《人类欺骗行为解读》/人类欺骗行为解读.md",
+      "to": "temp/《人类欺骗行为解读》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《人脑操控力》/人脑操控力.md",
+      "to": "temp/《人脑操控力》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《冷读术》/冷读术.md",
+      "to": "temp/《冷读术》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《坏术大师》/坏术大师.md",
+      "to": "temp/《坏术大师》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《大心机1》/大心机1.md",
+      "to": "temp/《大心机1》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《大心机2》/大心机2.md",
+      "to": "temp/《大心机2》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《天之卷：强者修炼手册》/天之卷：强者修炼手册.md",
+      "to": "temp/《天之卷：强者修炼手册》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《天机38局》/天机38局.md",
+      "to": "temp/《天机38局》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《富人机密手稿》/富人机密手稿.md",
+      "to": "temp/《富人机密手稿》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《布局系统2.0》/布局系统2.0.md",
+      "to": "temp/《布局系统2.0》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《布局系统》/布局系统.md",
+      "to": "temp/《布局系统》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《开悟开窍开智3》/开悟开窍开智3.md",
+      "to": "temp/《开悟开窍开智3》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《开窍开悟开智1》/开窍开悟开智1.md",
+      "to": "temp/《开窍开悟开智1》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《开窍开悟开智2》/开窍开悟开智2.md",
+      "to": "temp/《开窍开悟开智2》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《开窍开悟开智4》/开窍开悟开智4.md",
+      "to": "temp/《开窍开悟开智4》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《怎样洞察人心》/怎样洞察人心.md",
+      "to": "temp/《怎样洞察人心》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《成长人性》/成长人性.md",
+      "to": "temp/《成长人性》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《揭秘男人的人性》/揭秘男人的人性.md",
+      "to": "temp/《揭秘男人的人性》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《格商》/格商.md",
+      "to": "temp/《格商》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《格商》PDF版/格商.md",
+      "to": "temp/《格商》PDF版/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《洞察人性天机》/洞察人性天机.md",
+      "to": "temp/《洞察人性天机》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《烂好人毒素》/烂好人毒素.md",
+      "to": "temp/《烂好人毒素》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《百发百中攻心术》/百发百中攻心术.md",
+      "to": "temp/《百发百中攻心术》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《社会人心运作手册》/社会人心运作手册.md",
+      "to": "temp/《社会人心运作手册》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《社会人心运作手册》PDF版/社会人心运作手册.md",
+      "to": "temp/《社会人心运作手册》PDF版/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《穷人的底层逻辑》/穷人的底层逻辑.md",
+      "to": "temp/《穷人的底层逻辑》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《红尘修炼手册》/红尘修炼手册.md",
+      "to": "temp/《红尘修炼手册》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《红尘纵横1》/红尘纵横1.md",
+      "to": "temp/《红尘纵横1》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《红尘纵横2》/红尘纵横2.md",
+      "to": "temp/《红尘纵横2》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《红尘纵横3》/红尘纵横3.md",
+      "to": "temp/《红尘纵横3》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《透视人性》/透视人性.md",
+      "to": "temp/《透视人性》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《阅人高手1》/阅人高手1.md",
+      "to": "temp/《阅人高手1》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《阅人高手2》/阅人高手2.md",
+      "to": "temp/《阅人高手2》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《零距离人性》/零距离人性.md",
+      "to": "temp/《零距离人性》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《驭心高手》/驭心高手.md",
+      "to": "temp/《驭心高手》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/《高手深度思考的秘密》/高手深度思考的秘密.md",
+      "to": "temp/《高手深度思考的秘密》/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/千门谋局上册/千门谋局上册.md",
+      "to": "temp/千门谋局上册/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/千门谋局下册/千门谋局下册.md",
+      "to": "temp/千门谋局下册/index.md"
+    },
+    {
+      "action": "rename",
+      "from": "temp/布局锦囊5.0/布局锦囊5.0.md",
+      "to": "temp/布局锦囊5.0/index.md"
+    }
+  ],
+  "ambiguous_child_directories": [],
+  "ads_cleaned": [
+    {
+      "path": "temp/007《布局锦囊1.0》/index.md",
+      "ad_fragments_removed": 1
+    },
+    {
+      "path": "temp/009《布局锦囊2.0》/index.md",
+      "ad_fragments_removed": 19
+    },
+    {
+      "path": "temp/《万能厚黑不黑模式》/index.md",
+      "ad_fragments_removed": 2
+    },
+    {
+      "path": "temp/《人性商战(线下3天2夜全文字版)》.md",
+      "ad_fragments_removed": 2
+    },
+    {
+      "path": "temp/《人性宝典2.0》/index.md",
+      "ad_fragments_removed": 180
+    },
+    {
+      "path": "temp/《人性密码》/index.md",
+      "ad_fragments_removed": 168
+    },
+    {
+      "path": "temp/《人性心法》/index.md",
+      "ad_fragments_removed": 10
+    },
+    {
+      "path": "temp/《人性心理战》/index.md",
+      "ad_fragments_removed": 238
+    },
+    {
+      "path": "temp/《人性探索大师1》/index.md",
+      "ad_fragments_removed": 4
+    },
+    {
+      "path": "temp/《人性探索大师2》/index.md",
+      "ad_fragments_removed": 5
+    },
+    {
+      "path": "temp/《人性探索大师3》/index.md",
+      "ad_fragments_removed": 1
+    },
+    {
+      "path": "temp/《人性智谋36计》/index.md",
+      "ad_fragments_removed": 3
+    },
+    {
+      "path": "temp/《人性真相》/index.md",
+      "ad_fragments_removed": 2
+    },
+    {
+      "path": "temp/《人性纵横说1.0》/index.md",
+      "ad_fragments_removed": 13
+    },
+    {
+      "path": "temp/《人性逆袭绝技》/index.md",
+      "ad_fragments_removed": 361
+    },
+    {
+      "path": "temp/《人性魔鬼手段》/index.md",
+      "ad_fragments_removed": 261
+    },
+    {
+      "path": "temp/《人脑操控力》/index.md",
+      "ad_fragments_removed": 127
+    },
+    {
+      "path": "temp/《冷读术》/index.md",
+      "ad_fragments_removed": 9
+    },
+    {
+      "path": "temp/《坏人基因》上册.md",
+      "ad_fragments_removed": 4
+    },
+    {
+      "path": "temp/《坏人基因》下册.md",
+      "ad_fragments_removed": 4
+    },
+    {
+      "path": "temp/《坏术大师》/index.md",
+      "ad_fragments_removed": 107
+    },
+    {
+      "path": "temp/《天之卷：强者修炼手册》/index.md",
+      "ad_fragments_removed": 1
+    },
+    {
+      "path": "temp/《富人机密手稿》/index.md",
+      "ad_fragments_removed": 1
+    },
+    {
+      "path": "temp/《布局系统2.0》/index.md",
+      "ad_fragments_removed": 3
+    },
+    {
+      "path": "temp/《布局系统》/index.md",
+      "ad_fragments_removed": 10
+    },
+    {
+      "path": "temp/《开窍开悟开智1》/index.md",
+      "ad_fragments_removed": 2
+    },
+    {
+      "path": "temp/《怎样洞察人心》/index.md",
+      "ad_fragments_removed": 92
+    },
+    {
+      "path": "temp/《烂好人毒素》/index.md",
+      "ad_fragments_removed": 109
+    },
+    {
+      "path": "temp/《穷人的底层逻辑》/index.md",
+      "ad_fragments_removed": 1
+    },
+    {
+      "path": "temp/《红尘修炼手册》/index.md",
+      "ad_fragments_removed": 3
+    },
+    {
+      "path": "temp/《红尘纵横1》/index.md",
+      "ad_fragments_removed": 5
+    },
+    {
+      "path": "temp/《透视人性》/index.md",
+      "ad_fragments_removed": 4
+    },
+    {
+      "path": "temp/《零距离人性》/index.md",
+      "ad_fragments_removed": 2
+    },
+    {
+      "path": "temp/人性伎俩.md",
+      "ad_fragments_removed": 2
+    },
+    {
+      "path": "temp/做局大师-人间博弈之术.md",
+      "ad_fragments_removed": 1
+    },
+    {
+      "path": "temp/布局锦囊5.0/index.md",
+      "ad_fragments_removed": 7
+    }
+  ],
+  "formatted_raw_documents": [],
+  "prompt": {
+    "changed": true
+  },
+  "errors": [],
+  "summary": {
+    "renamed_count": 70,
+    "ambiguous_directory_count": 0,
+    "files_with_ads_cleaned": 36,
+    "ad_fragments_removed": 1764,
+    "raw_documents_formatted": 0,
+    "format_heading_changes": 0,
+    "errors": 0
+  }
+}
