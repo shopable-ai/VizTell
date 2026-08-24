@@ -19,22 +19,25 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with: {fetch-depth: 0}
-      - name: Format 458条人性秘术 only
+      - name: Setup converter
+        run: pip install --quiet opencc-python-reimplemented
+      - name: Format 万能厚黑不黑模式 only
         run: |
           set +e
           python - <<'PY' > /tmp/format-run.log 2>&1
           import json,re
           from pathlib import Path
-          src=Path('temp/《458条人性顶级秘术》/index.md')
-          dst=Path('temp/《458条人性顶级秘术》/458条人性秘术.md')
+          from opencc import OpenCC
+          cc=OpenCC('t2s')
+          src=Path('temp/《万能厚黑不黑模式》/index.md')
+          dst=Path('temp/《万能厚黑不黑模式》/万能厚黑不黑模式.md')
           raw=src.read_text(encoding='utf-8')
           PAGE=re.compile(r'^\s*<!--\s*page\s*:\s*(\d+)\s*-->\s*$',re.I)
           IMG=re.compile(r'!\[[^\]]*\]\([^\n)]*\)|!\[[^\]]*\]\[[^\]\n]*\]')
           H=re.compile(r'^(#{1,6})\s+(.*)$')
           IMAGE_COMMENT=re.compile(r'^\s*<!--\s*Image\s*\([^>]*\)\s*-->\s*$',re.I)
-          CHAPTER=re.compile(r'^第[一二三四五六七八九十百零〇两0-9]+章\s*.*$')
-          HEADER=re.compile(r'^\s*人性\s*[—-]{1,2}\s*《(?:老杨[·・]?\s*)?458\s*条人性秘术》\s*$')
-          LEADER=re.compile(r'[·.…]{3,}\s*\d+\s*$')
+          COMPANY=re.compile(r'^\s*【天使投资有限公司】\s*')
+          PROMO=re.compile(r'^\s*\d*\s*[（(]更多绝密电子书加微信[^\n]*$',re.I)
           pages=[]; no=None; buf=[]
           for line in raw.splitlines():
             m=PAGE.match(line)
@@ -43,21 +46,25 @@ jobs:
               no=int(m.group(1)); buf=[]
             else: buf.append(line)
           if no is not None: pages.append((no,buf))
-          assert len(pages)==564
           images_before=IMG.findall(raw)
+          assert pages and pages[0][0]==1
+          toc_pages={10,11}
+          out=['# 万能厚黑不黑模式','']; toc_images=[]
+          stats={'headers':0,'promos':0,'image_comments':0,'hfix':0,'moved':0,'traditional_chars_changed':0}
+          duplicate_titles={'万能厚黑不黑模式°','万能厚黑不黑模式','石能厚黑不黑模式'}
 
-          toc=[]
-          for pno,block in pages:
-            nonimg=[H.sub(r'\2',x.strip()) for x in block if x.strip() and not IMG.fullmatch(x.strip())]
-            leaders=sum(bool(LEADER.search(x)) for x in nonimg)
-            has_contents=any('内容目录' in x.replace(' ','') or x.replace(' ','')=='目录' for x in nonimg)
-            if not toc and pno==1 and (has_contents or leaders>=3): toc.append(pno); continue
-            if toc and pno==toc[-1]+1 and leaders>=3: toc.append(pno); continue
-            if toc: break
-          assert toc and len(toc)>=5, f'unsafe toc detection: {toc}'
+          def simplify_preserving_urls(line):
+            # URLs/image paths are split out and retained byte-for-byte.
+            parts=re.split(r'(https?\s*:\s*//\S+)',line)
+            outp=[]
+            for p in parts:
+              if re.match(r'https?\s*:',p): outp.append(p)
+              else:
+                q=cc.convert(p)
+                stats['traditional_chars_changed'] += sum(1 for a,b in zip(p,q) if a!=b) + abs(len(p)-len(q))
+                outp.append(q)
+            return ''.join(outp)
 
-          out=['# 458条人性秘术','']; toc_images=[]
-          stats={'headers':0,'image_comments':0,'hfix':0,'moved':0}
           for pno,block in pages:
             text=[]; imgs=[]
             for line in block:
@@ -65,15 +72,24 @@ jobs:
               im=IMG.fullmatch(s.strip())
               if im: imgs.append(im.group(0)); continue
               if IMAGE_COMMENT.match(s): stats['image_comments']+=1; continue
-              if HEADER.match(s): stats['headers']+=1; continue
-              # one obvious conversion/watermark artifact from the directory cover
-              if pno==1 and s.strip()=='1000 du88360': continue
+              s,n=COMPANY.subn('',s,1); stats['headers']+=n
+              if PROMO.match(s.strip()): stats['promos']+=1; continue
+              if s.strip() in {'198g','\\'}: continue
               hm=H.match(s.strip())
               if hm:
-                title=hm.group(2).strip()
-                if CHAPTER.match(title): s='## '+title
-                else: s='### '+title
+                title=cc.convert(hm.group(2).strip())
+                if title in duplicate_titles: continue
+                if pno < 12:
+                  # Front matter must not share chapter heading level.
+                  s='**'+title+'**'
+                else:
+                  if title=='开篇': s='## 开篇'
+                  elif re.match(r'^第[一二三四五六七八九十百零〇两0-9]+章',title): s='## '+title
+                  elif title.startswith('【') and title.endswith('篇】'): s='## '+title
+                  else: s='### '+title
                 stats['hfix']+=1
+              else:
+                s=simplify_preserving_urls(s)
               text.append(s)
             norm=[]
             for x in text:
@@ -81,7 +97,7 @@ jobs:
                 if norm and norm[-1]!='': norm.append('')
               else: norm.append(x.rstrip())
             while norm and norm[-1]=='': norm.pop()
-            if pno in toc:
+            if pno in toc_pages:
               toc_images.extend(imgs); continue
             if norm:
               if out and out[-1]!='': out.append('')
@@ -90,7 +106,14 @@ jobs:
               if out and out[-1]!='': out.append('')
               out.extend(imgs); stats['moved']+=len(imgs)
           if toc_images:
-            out[2:2]=['## 目录','']+toc_images+['']; stats['moved']+=len(toc_images)
+            # Directory screenshots remain between front matter and body, but OCR directory text is removed.
+            # Insert immediately before first main-body content (page 12 material).
+            # Front matter pages 1-9 have already been emitted; locate by the last page-9 image reference.
+            marker='![第9页原始页面图](assets/page-009.png)'
+            try: idx=out.index(marker)+1
+            except ValueError: idx=2
+            out[idx:idx]=['','**目录**','']+toc_images+['']
+            stats['moved']+=len(toc_images)
           norm=[]
           for x in out:
             if not x.strip():
@@ -98,19 +121,21 @@ jobs:
             else: norm.append(x.rstrip())
           final='\n'.join(norm).strip()+'\n'
           images_after=IMG.findall(final)
-          assert images_after==images_before,'images changed'
+          assert images_after==images_before,'images changed/order changed'
           assert len(re.findall(r'^#\s+',final,re.M))==1,'not one H1'
           assert not re.search(r'^\s*<!--\s*page\s*:',final,re.M|re.I),'page comments remain'
-          assert not HEADER.search(final),'headers remain'
+          assert '更多绝密电子书加微信' not in final,'promo footer remains'
+          assert '【天使投资有限公司】' not in final,'repeated header remains'
           dst.write_text(final,encoding='utf-8'); src.unlink()
           visible=IMG.sub('',final); visible=re.sub(r'^#{1,6}\s*','',visible,flags=re.M)
           report={'file':str(dst),'source_bytes':len(raw.encode()),'output_bytes':len(final.encode()),
-            'pages_detected':len(pages),'toc_pages_detected':toc,'toc_ocr_pages_removed':len(toc),
-            'page_markers_removed':len(pages),'repeated_headers_removed':stats['headers'],
+            'pages_detected':len(pages),'toc_pages_removed':[10,11],'page_markers_removed':len(pages),
+            'repeated_headers_removed':stats['headers'],'repeated_promo_footers_removed':stats['promos'],
             'conversion_image_comments_removed':stats['image_comments'],'heading_fixes':stats['hfix'],
+            'traditional_to_simplified':True,'traditional_character_changes':stats['traditional_chars_changed'],
             'page_images_moved_after_text':stats['moved'],'image_refs_before':len(images_before),
             'image_refs_after':len(images_after),'image_refs_changed':images_before!=images_after,
-            'visible_body_chars':len(re.sub(r'\s+','',visible)),'traditional_to_simplified':False}
+            'visible_body_chars':len(re.sub(r'\s+','',visible))}
           Path('temp/.format-progress.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
           print(json.dumps(report,ensure_ascii=False,indent=2))
           PY
@@ -122,8 +147,8 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -A -- 'temp/《458条人性顶级秘术》' temp/.format-progress.json temp/.format-progress.log
+          git add -A -- 'temp/《万能厚黑不黑模式》' temp/.format-progress.json temp/.format-progress.log
           if git diff --cached --quiet; then exit 0; fi
-          git commit -m 'docs(temp): process 458条人性秘术 [skip ci]'
+          git commit -m 'docs(temp): process 万能厚黑不黑模式 [skip ci]'
           git pull --rebase origin main
           git push origin HEAD:main
