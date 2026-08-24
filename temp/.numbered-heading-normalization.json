@@ -1,0 +1,125 @@
+{
+  "changed": [
+    {
+      "path": "temp/007《布局锦囊1.0》/index.md",
+      "changed": true,
+      "counts": {
+        "招": 5
+      },
+      "active_units": [
+        "招"
+      ],
+      "heading_changes": 5,
+      "glued_title_splits": 0,
+      "description_splits": 0,
+      "unit_changes": {
+        "招": 5
+      }
+    },
+    {
+      "path": "temp/《458条人性顶级秘术》/index.md",
+      "changed": true,
+      "counts": {
+        "招": 15
+      },
+      "active_units": [
+        "招"
+      ],
+      "heading_changes": 15,
+      "glued_title_splits": 0,
+      "description_splits": 0,
+      "unit_changes": {
+        "招": 15
+      }
+    },
+    {
+      "path": "temp/《人性真言》/index.md",
+      "changed": true,
+      "counts": {
+        "招": 5
+      },
+      "active_units": [
+        "招"
+      ],
+      "heading_changes": 5,
+      "glued_title_splits": 0,
+      "description_splits": 0,
+      "unit_changes": {
+        "招": 5
+      }
+    },
+    {
+      "path": "temp/《人性要诀》/index.md",
+      "changed": true,
+      "counts": {
+        "诀": 102
+      },
+      "active_units": [
+        "诀"
+      ],
+      "heading_changes": 103,
+      "glued_title_splits": 1,
+      "description_splits": 0,
+      "unit_changes": {
+        "诀": 103
+      }
+    },
+    {
+      "path": "temp/《洗脑的最高境界》.md",
+      "changed": true,
+      "counts": {
+        "套": 98
+      },
+      "active_units": [
+        "套"
+      ],
+      "heading_changes": 98,
+      "glued_title_splits": 0,
+      "description_splits": 68,
+      "unit_changes": {
+        "套": 98
+      }
+    },
+    {
+      "path": "temp/千门谋局上册/index.md",
+      "changed": true,
+      "counts": {
+        "招": 3
+      },
+      "active_units": [
+        "招"
+      ],
+      "heading_changes": 3,
+      "glued_title_splits": 0,
+      "description_splits": 0,
+      "unit_changes": {
+        "招": 3
+      }
+    },
+    {
+      "path": "temp/千门谋局下册/index.md",
+      "changed": true,
+      "counts": {
+        "招": 10
+      },
+      "active_units": [
+        "招"
+      ],
+      "heading_changes": 12,
+      "glued_title_splits": 2,
+      "description_splits": 0,
+      "unit_changes": {
+        "招": 12
+      }
+    }
+  ],
+  "errors": [],
+  "summary": {
+    "files_scanned": 84,
+    "files_changed": 7,
+    "heading_changes": 241,
+    "glued_title_splits": 3,
+    "description_splits": 68,
+    "errors": 0
+  }
+}
