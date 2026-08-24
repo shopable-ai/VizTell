@@ -1,0 +1,56 @@
+name: Format One Temp Markdown
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/format_temp_markdown.py'
+      - '.github/workflows/format-temp-one.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: format-temp-one-main
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  format-one:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Validate formatter syntax
+        run: python -m py_compile scripts/format_temp_markdown.py
+
+      - name: Format first Markdown only
+        run: |
+          python scripts/format_temp_markdown.py \
+            --source 'temp/004《做局大师-人间博弈之术》.md' \
+            --destination 'temp/做局大师-人间博弈之术.md' \
+            --title '做局大师-人间博弈之术' \
+            --report /tmp/format-report.json
+          cat /tmp/format-report.json
+
+      - name: Commit formatted Markdown
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- 'temp/004《做局大师-人间博弈之术》.md' 'temp/做局大师-人间博弈之术.md'
+          if git diff --cached --quiet; then
+            echo 'No Markdown changes to commit.'
+            exit 0
+          fi
+          git commit -m 'docs(temp): format 做局大师-人间博弈之术 [skip ci]'
+          git push origin HEAD:main
