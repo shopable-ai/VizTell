@@ -26,20 +26,20 @@ jobs:
 
       - name: Format 布局锦囊3.0 only
         run: |
-          python - <<'PY'
+          set +e
+          python - <<'PY' > /tmp/format-run.log 2>&1
           import json, re
           from pathlib import Path
 
           src = Path('temp/008《布局锦囊3.0》/index.md')
           dst = Path('temp/008《布局锦囊3.0》/布局锦囊3.0.md')
           raw = src.read_text(encoding='utf-8')
-
           PAGE = re.compile(r'^\s*<!--\s*page\s*:\s*(\d+)\s*-->\s*$', re.I)
           IMG = re.compile(r'!\[[^\]]*\]\([^\n)]*\)|!\[[^\]]*\]\[[^\]\n]*\]')
           H = re.compile(r'^(#{1,6})\s+(.*)$')
           IMAGE_COMMENT = re.compile(r'^\s*<!--\s*Image\s*\([^>]*\)\s*-->\s*$', re.I)
-          TOPIC = re.compile(r'^【\s*\d+(?:\s*个)?布局锦[囊燕囊]\s*[：:）)]?.*】\s*$')
-          TOPIC_LOOSE = re.compile(r'^【\s*\d+[^】]{0,40}布局锦[囊燕囊][^】]*】')
+          TOPIC = re.compile(r'^【\s*\d+(?:\s*个)?布局锦[囊燕]\s*[：:）)]?.*】\s*$')
+          TOPIC_LOOSE = re.compile(r'^【\s*\d+[^】]{0,40}布局锦[囊燕][^】]*】')
 
           images_before = IMG.findall(raw)
           pages, pno, buf = [], None, []
@@ -48,23 +48,18 @@ jobs:
               if m:
                   if pno is not None: pages.append((pno, buf))
                   pno, buf = int(m.group(1)), []
-              else:
-                  buf.append(line)
+              else: buf.append(line)
           if pno is not None: pages.append((pno, buf))
           assert len(pages) == 466, f'unexpected page count: {len(pages)}'
 
+          counters = {'bad':0,'topic':0,'image_comments':0,'moved':0}
           toc_pages = {1,2,3,4}
           toc_images = []
           output = ['# 布局锦囊3.0', '']
-          bad_headings_flattened = 0
-          topic_headings = 0
-          image_comments_removed = 0
-          page_images_moved = 0
 
           def clean_text_line(line):
-              nonlocal bad_headings_flattened, topic_headings, image_comments_removed
               if IMAGE_COMMENT.match(line):
-                  image_comments_removed += 1
+                  counters['image_comments'] += 1
                   return None
               s = line.rstrip()
               if not s.strip(): return ''
@@ -72,14 +67,13 @@ jobs:
               if hm:
                   text = hm.group(2).strip()
                   if TOPIC.match(text) or TOPIC_LOOSE.match(text):
-                      topic_headings += 1
+                      counters['topic'] += 1
                       return '## ' + text
-                  bad_headings_flattened += 1
+                  counters['bad'] += 1
                   return text
-              # A reliable topic line may have lost Markdown heading syntax in OCR.
               plain = s.strip()
               if TOPIC.match(plain):
-                  topic_headings += 1
+                  counters['topic'] += 1
                   return '## ' + plain
               return s
 
@@ -91,34 +85,25 @@ jobs:
                       imgs.append(exact.group(0)); continue
                   cleaned = clean_text_line(line)
                   if cleaned is not None: text_lines.append(cleaned)
-
-              # Normalize only blank-run noise; do not rewrite uncertain prose.
-              norm = []
+              norm=[]
               for x in text_lines:
                   if not x.strip():
                       if norm and norm[-1] != '': norm.append('')
-                  else:
-                      norm.append(x.rstrip())
+                  else: norm.append(x.rstrip())
               while norm and norm[-1] == '': norm.pop()
-
               if page_no in toc_pages:
                   toc_images.extend(imgs)
                   continue
-
               if norm:
                   if output and output[-1] != '': output.append('')
                   output.extend(norm)
               if imgs:
                   if output and output[-1] != '': output.append('')
                   output.extend(imgs)
-                  page_images_moved += len(imgs)
+                  counters['moved'] += len(imgs)
 
-          # Preserve directory page screenshots while removing duplicate OCR directory text.
-          insert_at = 2
-          directory_block = ['## 目录', ''] + toc_images + ['']
-          output[insert_at:insert_at] = directory_block
-          page_images_moved += len(toc_images)
-
+          output[2:2] = ['## 目录', ''] + toc_images + ['']
+          counters['moved'] += len(toc_images)
           normalized=[]
           for x in output:
               if not x.strip():
@@ -126,46 +111,43 @@ jobs:
               else: normalized.append(x.rstrip())
           final='\n'.join(normalized).strip()+'\n'
 
-          images_after = IMG.findall(final)
+          images_after=IMG.findall(final)
           assert images_after == images_before, 'image references/order changed'
           assert len(re.findall(r'^#\s+', final, re.M)) == 1, 'must have exactly one H1'
           assert not re.search(r'^\s*<!--\s*page\s*:', final, re.M|re.I), 'page markers remain'
           assert not IMAGE_COMMENT.search(final), 'image conversion comments remain'
+          assert len(re.findall(r'^##\s+', final, re.M)) <= 250, 'too many H2s remain'
 
-          # H1/H2 pollution should be dramatically reduced: only canonical title + reliable topics + directory.
-          assert len(re.findall(r'^##\s+', final, re.M)) <= 250, 'too many H2s remain; heading cleanup ineffective'
-
-          dst.write_text(final, encoding='utf-8')
+          dst.write_text(final,encoding='utf-8')
           src.unlink()
-          visible = IMG.sub('', final)
-          visible = re.sub(r'^#{1,6}\s*', '', visible, flags=re.M)
-          report = {
-            'file': str(dst),
-            'source_bytes': len(raw.encode('utf-8')),
-            'output_bytes': len(final.encode('utf-8')),
-            'pages_detected': len(pages),
-            'toc_ocr_pages_removed': len(toc_pages),
-            'page_markers_removed': len(pages),
-            'conversion_image_comments_removed': image_comments_removed,
-            'bad_markdown_headings_flattened_to_text': bad_headings_flattened,
-            'reliable_topic_headings_restored': topic_headings,
-            'page_images_moved_after_text': page_images_moved,
-            'image_refs_before': len(images_before),
-            'image_refs_after': len(images_after),
-            'image_refs_changed': images_before != images_after,
-            'visible_body_chars': len(re.sub(r'\s+', '', visible)),
-            'traditional_to_simplified': False,
-            'notes': 'Pages 1-4 are duplicated OCR directory pages; OCR directory text removed, all four page screenshots preserved under 目录. Unreliable OCR-generated H1/H2 markers were flattened back to their original text.'
-          }
+          visible=IMG.sub('',final)
+          visible=re.sub(r'^#{1,6}\s*','',visible,flags=re.M)
+          report={
+            'file':str(dst),'source_bytes':len(raw.encode()),'output_bytes':len(final.encode()),
+            'pages_detected':len(pages),'toc_ocr_pages_removed':4,'page_markers_removed':466,
+            'conversion_image_comments_removed':counters['image_comments'],
+            'bad_markdown_headings_flattened_to_text':counters['bad'],
+            'reliable_topic_headings_restored':counters['topic'],
+            'page_images_moved_after_text':counters['moved'],
+            'image_refs_before':len(images_before),'image_refs_after':len(images_after),
+            'image_refs_changed':images_before!=images_after,
+            'visible_body_chars':len(re.sub(r'\s+','',visible)),'traditional_to_simplified':False,
+            'notes':'Pages 1-4 OCR directory text removed; all directory screenshots preserved. Unreliable OCR H1/H2 markers flattened to text.'}
           Path('temp/.format-progress.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
           print(json.dumps(report,ensure_ascii=False,indent=2))
           PY
+          code=$?
+          echo "exit_code=$code" > temp/.format-progress.log
+          cat /tmp/format-run.log >> temp/.format-progress.log
+          cat temp/.format-progress.log
+          exit 0
 
-      - name: Commit formatted third book
+      - name: Persist result or diagnostic
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -A -- 'temp/008《布局锦囊3.0》' temp/.format-progress.json
-          git commit -m 'docs(temp): format 布局锦囊3.0 [skip ci]'
+          git add -A -- 'temp/008《布局锦囊3.0》' temp/.format-progress.json temp/.format-progress.log
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'docs(temp): process 布局锦囊3.0 [skip ci]'
           git pull --rebase origin main
           git push origin HEAD:main
