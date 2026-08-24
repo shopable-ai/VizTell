@@ -31,26 +31,39 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Validate formatter syntax
-        run: python -m py_compile scripts/format_temp_markdown.py
-
-      - name: Format first Markdown only
+      - name: Correct and validate first book hierarchy
         run: |
-          python scripts/format_temp_markdown.py \
-            --source 'temp/004《做局大师-人间博弈之术》.md' \
-            --destination 'temp/做局大师-人间博弈之术.md' \
-            --title '做局大师-人间博弈之术' \
-            --report /tmp/format-report.json
-          cat /tmp/format-report.json
+          python - <<'PY'
+          import re
+          from pathlib import Path
 
-      - name: Commit formatted Markdown
+          path = Path('temp/做局大师-人间博弈之术.md')
+          text = path.read_text(encoding='utf-8')
+          parts = ['设局', '观局', '开局', '控局', '对局', '僵局', '搅局', '败局']
+          changed = 0
+          for part in parts:
+              text, n = re.subn(rf'^####\s+{re.escape(part)}\s*$', f'## {part}', text, flags=re.M)
+              changed += n
+          path.write_text(text, encoding='utf-8')
+
+          assert len(re.findall(r'^#\s+', text, flags=re.M)) == 1, 'must have exactly one H1'
+          for part in parts:
+              assert re.search(rf'^##\s+{re.escape(part)}\s*$', text, flags=re.M), f'missing H2 part: {part}'
+          assert not re.search(r'^\s*<!--\s*page\s*:', text, flags=re.M | re.I), 'page comments remain'
+          assert not re.search(r'^\s*#{1,6}\s*第\s*\d+\s*页\s*$', text, flags=re.M), 'page headings remain'
+          print(f'corrected_part_headings={changed}')
+          print(f'h2_parts={len(parts)}')
+          print(f'bytes={len(text.encode("utf-8"))}')
+          PY
+
+      - name: Commit corrected Markdown
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -- 'temp/004《做局大师-人间博弈之术》.md' 'temp/做局大师-人间博弈之术.md'
+          git add -- 'temp/做局大师-人间博弈之术.md'
           if git diff --cached --quiet; then
             echo 'No Markdown changes to commit.'
             exit 0
           fi
-          git commit -m 'docs(temp): format 做局大师-人间博弈之术 [skip ci]'
+          git commit -m 'docs(temp): correct 做局大师 hierarchy [skip ci]'
           git push origin HEAD:main
