@@ -1,120 +1,45 @@
-name: Format Temp Subdirectory Markdown Sequentially
+name: Normalize Temp Markdown Book Headers
 
 on:
   push:
     branches: [main]
     paths:
       - '.github/workflows/format-temp-one.yml'
-      - 'scripts/format_temp_markdown.py'
+      - 'scripts/fix_temp_book_headers.py'
   workflow_dispatch:
 
 concurrency:
-  group: format-temp-subdirs-main
+  group: normalize-temp-book-headers-main
   cancel-in-progress: false
 
 permissions:
   contents: write
 
 jobs:
-  format-subdirectories:
+  normalize-headers:
     if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 30
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Install conversion dependency
-        run: pip install --quiet opencc-python-reimplemented
-
-      - name: Format every remaining child-directory index.md one by one
-        shell: bash
+      - name: Normalize first line of every temp book Markdown
         run: |
-          set -uo pipefail
+          python scripts/fix_temp_book_headers.py --root temp --report /tmp/temp-header-report.json
+          cat /tmp/temp-header-report.json
+
+      - name: Commit header-only repairs
+        run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-
-          mapfile -d '' targets < <(find temp -mindepth 2 -type f -name 'index.md' -print0 | sort -z)
-          total=${#targets[@]}
-          : > /tmp/success.tsv
-          : > /tmp/failure.tsv
-          echo "Found ${total} remaining subdirectory index.md files."
-
-          for target in "${targets[@]}"; do
-            if [[ ! -f "$target" ]]; then
-              continue
-            fi
-
-            dir=$(dirname "$target")
-            label=$(basename "$dir")
-            report=/tmp/format-report.json
-            log=/tmp/format-one.log
-            rm -f "$report" "$log"
-
-            echo "===== ${target} ====="
-            set +e
-            python scripts/format_temp_markdown.py \
-              --source "$target" \
-              --report "$report" >"$log" 2>&1
-            code=$?
-            set -e
-
-            if [[ $code -ne 0 ]]; then
-              printf '%s\t%s\n' "$target" "$(tail -n 1 "$log" | tr '\t' ' ')" >> /tmp/failure.tsv
-              cat "$log"
-              git reset --hard HEAD
-              continue
-            fi
-
-            cat "$report"
-            git add -A -- "$dir"
-            if git diff --cached --quiet; then
-              printf '%s\t%s\n' "$target" 'no-change' >> /tmp/failure.tsv
-              continue
-            fi
-
-            git commit -m "docs(temp): format ${label} [skip ci]"
-            git pull --rebase origin main
-            git push origin HEAD:main
-            printf '%s\t%s\n' "$target" "$(python -c 'import json,sys; d=json.load(open(sys.argv[1])); print(d.get("destination",""))' "$report")" >> /tmp/success.tsv
-          done
-
-          python - <<'PY'
-          from pathlib import Path
-
-          def rows(path):
-              p=Path(path)
-              if not p.exists(): return []
-              out=[]
-              for line in p.read_text(encoding='utf-8').splitlines():
-                  if not line: continue
-                  a,*rest=line.split('\t',1)
-                  out.append((a,rest[0] if rest else ''))
-              return out
-
-          ok=rows('/tmp/success.tsv')
-          bad=rows('/tmp/failure.tsv')
-          lines=[
-              '# temp 子目录 Markdown 格式化进度',
-              '',
-              f'- 本轮成功：{len(ok)}',
-              f'- 本轮安全拦截/待单独处理：{len(bad)}',
-              '',
-              '## 本轮成功',
-              ''
-          ]
-          lines += [f'- `{src}` → `{dst}`' for src,dst in ok] or ['- 无']
-          lines += ['', '## 待单独语义处理', '']
-          lines += [f'- `{src}`：{reason}' for src,reason in bad] or ['- 无']
-          lines += ['', '> 安全拦截的文件没有被删除或覆盖；需要按单文件语义继续处理。', '']
-          Path('temp/.format-subdirs-summary.md').write_text('\n'.join(lines), encoding='utf-8')
-          PY
-
-          git add temp/.format-subdirs-summary.md
-          if ! git diff --cached --quiet; then
-            git commit -m 'docs(temp): update subdirectory formatting summary [skip ci]'
-            git pull --rebase origin main
-            git push origin HEAD:main
+          git add -A -- temp
+          if git diff --cached --quiet; then
+            echo 'No temp header changes required.'
+            exit 0
           fi
+          git commit -m 'docs(temp): normalize book title as first line [skip ci]'
+          git pull --rebase origin main
+          git push origin HEAD:main
