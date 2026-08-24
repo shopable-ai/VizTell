@@ -22,6 +22,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Format 布局锦囊1.0 only
         run: |
@@ -39,34 +41,23 @@ jobs:
           PROMO = re.compile(r'\s*\d*【朋友圈每日更新最新电子版书籍[^\n]*$')
 
           images_before = IMG.findall(raw)
-          lines = raw.splitlines()
-          pages = []
-          current_no = None
-          current = []
-          for line in lines:
+          pages, current_no, current = [], None, []
+          for line in raw.splitlines():
               m = PAGE.match(line)
               if m:
                   if current_no is not None:
                       pages.append((current_no, current))
-                  current_no = int(m.group(1))
-                  current = []
+                  current_no, current = int(m.group(1)), []
               else:
                   current.append(line)
           if current_no is not None:
               pages.append((current_no, current))
-
           assert pages and pages[0][0] == 1, 'unexpected page structure'
-          toc_images = []
-          out = ['# 布局锦囊1.0', '']
-          page_markers_removed = len(pages)
-          promo_removed = 0
-          page_images_moved = 0
-          heading_fixes = 0
+
+          promo_removed = len(re.findall(r'【朋友圈每日更新最新电子版书籍', raw))
 
           def clean_page(page_no, block):
-              nonlocal_dummy = None
-              cleaned = []
-              imgs = []
+              cleaned, imgs = [], []
               first_h1_seen = False
               for line in block:
                   if PAGE_H.match(line):
@@ -76,9 +67,6 @@ jobs:
                       imgs.append(exact_img.group(0))
                       continue
                   new = PROMO.sub('', line).rstrip()
-                  if new != line.rstrip():
-                      # count each footer/promo fragment removed
-                      pass
                   if not new.strip():
                       cleaned.append('')
                       continue
@@ -86,7 +74,6 @@ jobs:
                   if hm:
                       level, title = len(hm.group(1)), hm.group(2).strip()
                       if page_no == 1 and title == '布局锦囊':
-                          # canonical H1 already inserted above
                           continue
                       if level == 1:
                           cleaned.append('## ' + title)
@@ -97,54 +84,17 @@ jobs:
                           cleaned.append(new.strip())
                   else:
                       cleaned.append(new.strip() if new.startswith(' ') else new)
-              # normalize blank runs
               norm = []
               for x in cleaned:
                   if not x.strip():
-                      if norm and norm[-1] != '':
-                          norm.append('')
+                      if norm and norm[-1] != '': norm.append('')
                   else:
                       norm.append(x.rstrip())
-              while norm and norm[-1] == '':
-                  norm.pop()
+              while norm and norm[-1] == '': norm.pop()
               return norm, imgs
 
-          # Count promo fragments independently so text cleanup above stays simple.
-          promo_removed = len(re.findall(r'【朋友圈每日更新最新电子版书籍', raw))
-
-          for page_no, block in pages:
-              text_lines, imgs = clean_page(page_no, block)
-              if 5 <= page_no <= 17:
-                  # The OCR text here is the duplicated directory. Preserve every
-                  # original page screenshot, as required by the prompt.
-                  toc_images.extend(imgs)
-                  continue
-              if page_no == 5:
-                  continue
-              if text_lines:
-                  if out and out[-1] != '':
-                      out.append('')
-                  out.extend(text_lines)
-              if imgs:
-                  if out and out[-1] != '':
-                      out.append('')
-                  out.extend(imgs)
-                  page_images_moved += len(imgs)
-
-              # After the front matter, retain TOC screenshots while removing the
-              # duplicated OCR directory text.
-              if page_no == 4 and toc_images:
-                  # toc_images is not populated until pages 5-17 are visited, so
-                  # insertion happens below in a second placement pass.
-                  pass
-
-          # Place preserved TOC screenshots after the first four pages. Rebuild
-          # the final sequence by locating the page-4 image boundary in current
-          # output; this preserves source order of all image references.
-          # Simpler and safer: construct again by page groups.
           front = ['# 布局锦囊1.0', '']
-          body = []
-          toc_images = []
+          body, toc_images = [], []
           page_images_moved = 0
           for page_no, block in pages:
               text_lines, imgs = clean_page(page_no, block)
@@ -159,6 +109,7 @@ jobs:
                   if target and target[-1] != '': target.append('')
                   target.extend(imgs)
                   page_images_moved += len(imgs)
+
           final = front
           if toc_images:
               if final and final[-1] != '': final.append('')
@@ -169,7 +120,6 @@ jobs:
               if final and final[-1] != '': final.append('')
               final.extend(body)
 
-          # Normalize blank lines again.
           normalized = []
           for x in final:
               if not x.strip():
@@ -196,7 +146,7 @@ jobs:
               'output_bytes': len(output.encode('utf-8')),
               'pages_detected': len(pages),
               'toc_ocr_pages_removed': 13,
-              'page_markers_removed': page_markers_removed,
+              'page_markers_removed': len(pages),
               'repeated_promo_fragments_removed': promo_removed,
               'page_images_moved_after_text': page_images_moved,
               'image_refs_before': len(images_before),
@@ -204,7 +154,7 @@ jobs:
               'image_refs_changed': images_before != images_after,
               'visible_body_chars': visible_chars,
               'traditional_to_simplified': False,
-              'notes': 'Pages 5-17 OCR directory text removed; their original page screenshots preserved under the source-derived 目录 section.'
+              'notes': 'Pages 5-17 OCR directory text removed; original directory page screenshots preserved under 目录.'
           }
           Path('temp/.format-progress.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
           print(json.dumps(report, ensure_ascii=False, indent=2))
@@ -216,4 +166,5 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add -- 'temp/007《布局锦囊1.0》/index.md' 'temp/007《布局锦囊1.0》/布局锦囊1.0.md' 'temp/.format-progress.json'
           git commit -m 'docs(temp): format 布局锦囊1.0 [skip ci]'
+          git pull --rebase origin main
           git push origin HEAD:main
