@@ -1,0 +1,18 @@
+{
+  "changed": [
+    {
+      "path": "temp/《洗脑的最高境界》.md",
+      "embedded_set_titles_separated": 106,
+      "heading_descriptions_separated": 37,
+      "residual_toc_headings_removed": 3
+    }
+  ],
+  "errors": [],
+  "summary": {
+    "files_changed": 1,
+    "embedded_set_titles_separated": 106,
+    "heading_descriptions_separated": 37,
+    "residual_toc_headings_removed": 3,
+    "errors": 0
+  }
+}
