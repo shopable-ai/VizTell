@@ -1,0 +1,49 @@
+{
+  "list_continuation_cleanup": [
+    {
+      "path": "temp/《人性难题宝典1-9》.md",
+      "changed": true,
+      "continuation_lines_merged": 245
+    },
+    {
+      "path": "temp/《大心机3》.md",
+      "changed": true,
+      "continuation_lines_merged": 130
+    },
+    {
+      "path": "temp/《开窍开悟开智1》PDF.md",
+      "changed": true,
+      "continuation_lines_merged": 1
+    },
+    {
+      "path": "temp/《洗脑的最高境界》.md",
+      "changed": true,
+      "continuation_lines_merged": 211
+    },
+    {
+      "path": "temp/《玩转人性》.md",
+      "changed": true,
+      "continuation_lines_merged": 13
+    },
+    {
+      "path": "temp/《绝密人性天书》净版.md",
+      "changed": true,
+      "continuation_lines_merged": 21
+    }
+  ],
+  "prompt_numbered_title_rule_added": true,
+  "validation": {
+    "markdown_files_scanned": 84,
+    "child_directory_naming_issues": [],
+    "content_issues": []
+  },
+  "errors": [],
+  "summary": {
+    "raw_files_with_list_wrap_changes": 6,
+    "list_continuation_lines_merged": 621,
+    "markdown_files_scanned": 84,
+    "child_directory_naming_issues": 0,
+    "content_issue_files": 0,
+    "errors": 0
+  }
+}
