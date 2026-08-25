@@ -8,7 +8,7 @@
     "image_refs_total": 10604
   },
   "issue_counts": {
-    "history_processed_but_content_fails": 32,
+    "history_processed_but_content_fails": 31,
     "low_heading_density": 2,
     "possible_ad_residue": 17,
     "possible_heading_body_glue": 54
@@ -57,9 +57,9 @@
         }
       ],
       "history": {
-        "sha": "b8ecd134ac2e0bd64a31d2926f0e1b63ffa24478",
-        "date": "2026-08-25T09:43:08Z",
-        "message": "docs(temp): remove explicit promo credentials and watermarks [skip ci]"
+        "sha": "45b642c8e9c39278a60b94b3f6baecc6bf87bc55",
+        "date": "2026-08-25T09:45:34Z",
+        "message": "docs(temp): remove remaining explicit promo CTAs [skip ci]"
       }
     },
     {
@@ -358,17 +358,12 @@
           "code": "possible_heading_body_glue",
           "severity": "medium",
           "detail": "count_sample=30, stems=[], examples=[{'line': 4, 'prefix': '人性决定了你的上限', 'body_starter': '一个', 'excerpt': '人性决定了你的上限一个人不可能拥有超越自己人性的人格、能量、金钱和格局'}, {'line': 37, 'prefix': '你甚至无法定义它', 'body_starter': '因为', 'excerpt': '你甚至无法定义它，因为它太大，你只能描述它，但又无法描述精准，也无法通过三言两语说得清楚，唯一稍微靠得住的方法 ）'}, {'line': 44, 'prefix': '他们会因为性焦虑辗转反侧，把自己全家的财富都交给', 'body_starter': '一个', 'excerpt': '他们会因为性焦虑辗转反侧，把自己全家的财富都交给一个根本不爱自己的女人，仅仅是为了所谓的上床和繁殖。他们也会因为不安全感而死死抱住一个自己根本不喜欢、每天生不如死的工作，不敢辞职，甚至不敢找工作。他们都想有钱，都想成功，但是他们却喜欢骗自己只要自己好好规划，一步一个脚印，就可以10年后财富自由。'}, {'line': 52, 'prefix': '你要成为那个对的人。最起码', 'body_starter': '对于', 'excerpt': '你要成为那个对的人。最起码对于你自己的梦想，你要成为那个对的人。'}, {'line': 53, 'prefix': '3尼采还说——', 'body_starter': '一个', 'excerpt': '3尼采还说——一个人之所以伟大，在于他是桥梁而不是目的。'}, {'line': 54, 'prefix': '把人生当做桥梁的人，会越走越宽，把人生', 'body_starter': '当', 'excerpt': '把人生当做桥梁的人，会越走越宽，把人生当做目的的人，会越走越窄。'}, {'line': 55, 'prefix': '把人生当做目的的人，喜欢告诉自己，我的目标就是考上', 'body_starter': '一个', 'excerpt': '把人生当做目的的人，喜欢告诉自己，我的目标就是考上一个好大学，只要考上好大学就有好工作了，我就可以歇着了。其实考上好大学，人生连开始都没开始呢。其实找到一个好工作，不仅无法让你歇着，真正的好工作反而会让你更加拼搏。'}, {'line': 60, 'prefix': '一个有能力的人会爱上', 'body_starter': '一个', 'excerpt': '一个有能力的人会爱上一个连个人能力都没有的人吗？一个在成年后所有花钱的事情还需要父母掏钱，而不是给父母的钱的人。'}, {'line': 70, 'prefix': '而这些巨婴都', 'body_starter': '有一个', 'excerpt': '而这些巨婴都有一个特点—一他们永远在把一件事当做自己人生的结果，其实这些都只是经历而已。因为他们在把一件事当做自己人生的结果，于是他们就算自己没有能力，就算是伤害别人的财富他们也要得到——就和小孩子看到一个玩具，但是自己没有能买，就大哭大闹一样。小孩子不懂事，喜欢把是否能拥有一个玩具当做人生中很重要的事情，当做自己人生是否成功的标志，其实大多数成年人活了几十'}, {'line': 77, 'prefix': '我能想到的人生唯一的意义就是一一', 'body_starter': '当', 'excerpt': '我能想到的人生唯一的意义就是一一当我死之前，闭眼之前，我觉得我没白活。我希望死之前我能觉得自己不曾为没做过什么而去后悔。然后在我尝试过的那么多事情中，做了一点事，赚了一点钱，得到了一点爱，并奉献出了我的全部心力和心血。'}, {'line': 84, 'prefix': '我始终告诉自己，我配的上任何成就，不会', 'body_starter': '因为', 'excerpt': '我始终告诉自己，我配的上任何成就，不会因为我的出身有任何影响，不会因为我的学历有任何影响，不会因为我的家庭有任何的影响。如果要说有影响的是什么，那就只有一个—一就是我自已够不够努力，就是我自己够不够拼命，就是我自己的能力够不够强。'}, {'line': 90, 'prefix': '在心理学上，只有', 'body_starter': '当', 'excerpt': '在心理学上，只有当一个人进入类似催眠状态的情况下，他的意志和身体才能发挥最大的潜力—一而疯狂地自我暗示，本质上就是一种自我催眠。你能够通过一个人对自己的暗示看出一个人自信不自信，勇敢不勇敢，有没有理想。'}]"
-        },
-        {
-          "code": "history_processed_but_content_fails",
-          "severity": "info",
-          "detail": "docs(temp): repair Human Mind section 15 [skip ci]"
         }
       ],
       "history": {
-        "sha": "b06a040d7e1ff61eb03b193f8e433afc6cc5f777",
-        "date": "2026-08-25T09:34:21Z",
-        "message": "docs(temp): repair Human Mind section 15 [skip ci]"
+        "sha": "45b642c8e9c39278a60b94b3f6baecc6bf87bc55",
+        "date": "2026-08-25T09:45:34Z",
+        "message": "docs(temp): remove remaining explicit promo CTAs [skip ci]"
       }
     },
     {
@@ -1750,9 +1745,9 @@
         }
       ],
       "history": {
-        "sha": "b8ecd134ac2e0bd64a31d2926f0e1b63ffa24478",
-        "date": "2026-08-25T09:43:08Z",
-        "message": "docs(temp): remove explicit promo credentials and watermarks [skip ci]"
+        "sha": "45b642c8e9c39278a60b94b3f6baecc6bf87bc55",
+        "date": "2026-08-25T09:45:34Z",
+        "message": "docs(temp): remove remaining explicit promo CTAs [skip ci]"
       }
     }
   ]
