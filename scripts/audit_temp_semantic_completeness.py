@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
 """Repository-wide semantic completeness audit for temp Markdown.
 
-This audit intentionally catches false passes that syntax-only validators miss.
-It is diagnostic: it does not rewrite book content.
+Two different concepts are reported separately:
+1. actionable defects: objective current-content violations that may block pass;
+2. review candidates: high-recall heuristics that must never be treated as proof.
+
+Git history/mtime is context only.  It never proves formatting completion.
 """
 from __future__ import annotations
 
@@ -16,18 +19,21 @@ from pathlib import Path
 H = re.compile(r"^(#{1,6})\s+(.+?)\s*$")
 IMAGE = re.compile(r"!\[[^\]]*\]\([^\n)]*\)|!\[[^\]]*\]\[[^\]\n]*\]")
 BOX = re.compile(r"^\s*[□▢▫]\s*.+")
-# High-risk plain chapter markers are deliberately limited to explicit chapter-
-# like units.  `第X部分/第X部` is common inside prose (e.g. `第三部分，下部...`)
-# and is therefore left to lower-confidence/manual review rather than promoted.
 CHAPTER_PLAIN = re.compile(r"^\s*(第\s*[一二三四五六七八九十百零〇两0-9]+\s*(?:章|节|课|讲|篇|卷|册)(?![，,。；;：:])\s*.{0,90})\s*$")
 QA = re.compile(r"^\s*\d{1,4}\s*[.．、]\s*[^？?\n]{2,110}[？?]\s*$")
 ANSWER = re.compile(r"^\s*答\s*[:：]")
 TOC_LEADER = re.compile(r"(?:\.{4,}|…{3,}|·{4,}|﹒{4,})\s*[.·… ]*\d{1,4}\s*$")
 CONVERSION = re.compile(r"(?:<!--\s*page\s*:\s*\d+\s*-->|<!--\s*Image\s*\(|^\s*(?:视觉补充|页面视觉补充|OCR文字补充|原始页面文字补充)\s*$)", re.I | re.M)
-AD_PATTERNS = [
+ACCOUNT = r"(?:[A-Za-z][A-Za-z0-9_-]{4,}|[1-9]\d{5,})"
+EXPLICIT_PROMO = [
+    re.compile(rf"(?i)(?:微信号|微信|微芯|薇芯|薇信|V信|VX|WX)\s*[:：号]?\s*{ACCOUNT}"),
+    re.compile(r"(?:公号|公众号)\s*[:：]\s*(?:营销书刊|知识藏经阁|文字变现艺术家|顶层思维供应社|文字变现)"),
+    re.compile(r"更多资料加\s*信\s*[A-Za-z0-9_-]{4,}", re.I),
+]
+BROAD_PROMO_CANDIDATES = [
     re.compile(r"加\s*(?:我|本人)?\s*微信"),
     re.compile(r"微信(?:号|联系|咨询|购买|获取|扫码)"),
-    re.compile(r"(?:VX|V信|薇信)\s*[:：号]?", re.I),
+    re.compile(r"(?:扫码添加|扫码关注|添加作者|加作者)"),
     re.compile(r"一手电子书"),
 ]
 BODY_STARTERS = [
@@ -67,8 +73,7 @@ def common_heading_stems(headings: list[str]) -> set[str]:
         plain=re.sub(r"^\d+[.、．]\s*", "", title.strip())
         plain=re.sub(r"^[第上中下].{0,8}?[章节篇部卷课讲]\s*", "", plain)
         han="".join(re.findall(r"[\u4e00-\u9fff]", plain))
-        if len(han)>=2:
-            c[han[:2]] += 1
+        if len(han)>=2: c[han[:2]] += 1
     return {k for k,v in c.items() if v>=4}
 
 
@@ -79,8 +84,7 @@ def possible_glue(lines: list[str], stems:set[str], limit=30):
         if not s or H.match(s) or IMAGE.search(s) or s.startswith(("|","```","~~~","<!--")):
             continue
         if len(s)<26: continue
-        if stems and not any(s.startswith(stem) for stem in stems):
-            continue
+        if stems and not any(s.startswith(stem) for stem in stems): continue
         for starter in BODY_STARTERS:
             p=s.find(starter,4,36)
             if 4<=p<=35:
@@ -90,6 +94,15 @@ def possible_glue(lines: list[str], stems:set[str], limit=30):
                     break
         if len(hits)>=limit: break
     return hits
+
+
+def collect_matches(text: str, patterns: list[re.Pattern], cap: int=30):
+    out=[]
+    for pat in patterns:
+        for m in pat.finditer(text):
+            out.append({"line":text.count("\n",0,m.start())+1,"match":m.group(0)[:80]})
+            if len(out)>=cap: return out
+    return out
 
 
 def audit(path: Path) -> dict:
@@ -102,71 +115,90 @@ def audit(path: Path) -> dict:
     h1=sum(level==1 for _,level,_ in hs)
     hbody=[title for _,level,title in hs if 2<=level<=4]
     vis=visible_chars(text)
-    issues=[]
+    defects=[]
+    candidates=[]
 
-    if h1!=1: issues.append({"code":"h1_count","severity":"high","detail":f"H1={h1}"})
+    if h1!=1: defects.append({"code":"h1_count","severity":"high","detail":f"H1={h1}"})
     if vis>=30000 and not hbody:
-        issues.append({"code":"large_document_without_structure","severity":"high","detail":f"visible_chars={vis}"})
+        defects.append({"code":"large_document_without_structure","severity":"high","detail":f"visible_chars={vis}"})
     elif vis>=80000 and len(hbody)<5:
-        issues.append({"code":"very_low_heading_density","severity":"high","detail":f"visible_chars={vis}, headings_2_4={len(hbody)}"})
+        defects.append({"code":"very_low_heading_density","severity":"high","detail":f"visible_chars={vis}, headings_2_4={len(hbody)}"})
     elif vis>=80000 and vis/max(1,len(hbody))>12000:
-        issues.append({"code":"low_heading_density","severity":"medium","detail":f"chars_per_heading={round(vis/max(1,len(hbody)))}"})
+        candidates.append({"code":"low_heading_density","confidence":"review","detail":f"chars_per_heading={round(vis/max(1,len(hbody)))}"})
 
     box=[i for i,x in enumerate(lines,1) if BOX.match(x)]
-    if box: issues.append({"code":"explicit_box_heading_residue","severity":"high","detail":f"count={len(box)}, lines={box[:20]}"})
+    if box: defects.append({"code":"explicit_box_heading_residue","severity":"high","detail":f"count={len(box)}, lines={box[:20]}"})
 
     plain_ch=[(i,x.strip()[:120]) for i,x in enumerate(lines,1) if not H.match(x.strip()) and CHAPTER_PLAIN.match(x.strip())]
-    if plain_ch: issues.append({"code":"plain_chapter_markers","severity":"high","detail":f"count={len(plain_ch)}, examples={plain_ch[:12]}"})
+    if plain_ch: defects.append({"code":"plain_chapter_markers","severity":"high","detail":f"count={len(plain_ch)}, examples={plain_ch[:12]}"})
 
     qa=[]
     for i,x in enumerate(lines):
         if H.match(x.strip()) or not QA.match(x.strip()): continue
         _,nxt=next_nonblank(lines,i+1)
         if nxt and ANSWER.match(nxt): qa.append(i+1)
-    if qa: issues.append({"code":"numbered_qa_heading_residue","severity":"high","detail":f"count={len(qa)}, lines={qa[:20]}"})
+    if qa: defects.append({"code":"numbered_qa_heading_residue","severity":"high","detail":f"count={len(qa)}, lines={qa[:20]}"})
 
     toc=[i for i,x in enumerate(lines[:500],1) if TOC_LEADER.search(x.strip())]
-    if toc: issues.append({"code":"leading_toc_leader_residue","severity":"high","detail":f"count={len(toc)}, lines={toc[:20]}"})
-    if CONVERSION.search(text): issues.append({"code":"conversion_residue","severity":"high","detail":"page/conversion marker remains"})
+    if toc: defects.append({"code":"leading_toc_leader_residue","severity":"high","detail":f"count={len(toc)}, lines={toc[:20]}"})
+    if CONVERSION.search(text): defects.append({"code":"conversion_residue","severity":"high","detail":"page/conversion marker remains"})
 
-    ad=[]
-    for pat in AD_PATTERNS:
-        for m in pat.finditer(text):
-            line=text.count("\n",0,m.start())+1
-            ad.append({"line":line,"match":m.group(0)[:60]})
-            if len(ad)>=30: break
-        if len(ad)>=30: break
-    if ad: issues.append({"code":"possible_ad_residue","severity":"medium","detail":f"count_sample={len(ad)}, examples={ad[:20]}"})
+    explicit_promo=collect_matches(text,EXPLICIT_PROMO)
+    if explicit_promo:
+        defects.append({"code":"explicit_promo_credential","severity":"high","detail":f"count_sample={len(explicit_promo)}, examples={explicit_promo[:20]}"})
+    broad_promo=collect_matches(text,BROAD_PROMO_CANDIDATES)
+    if broad_promo:
+        candidates.append({"code":"possible_ad_residue","confidence":"review","detail":f"count_sample={len(broad_promo)}, examples={broad_promo[:20]}"})
 
     giant=[i for i,x in enumerate(lines,1) if len(x)>2500 and not IMAGE.search(x) and not x.lstrip().startswith("|")]
-    if giant: issues.append({"code":"giant_ocr_lines","severity":"medium","detail":f"count={len(giant)}, lines={giant[:20]}"})
+    if giant: defects.append({"code":"giant_ocr_lines","severity":"medium","detail":f"count={len(giant)}, lines={giant[:20]}"})
 
     stems=common_heading_stems(hbody)
     glue=possible_glue(lines,stems)
     if len(glue)>=3:
-        issues.append({"code":"possible_heading_body_glue","severity":"medium","detail":f"count_sample={len(glue)}, stems={sorted(stems)}, examples={glue[:12]}"})
+        candidates.append({"code":"possible_heading_body_glue","confidence":"review","detail":f"count_sample={len(glue)}, stems={sorted(stems)}, examples={glue[:12]}"})
 
     huge_head=[{"line":i,"level":l,"length":len(t),"text":t[:160]} for i,l,t in hs if l>1 and len(t)>180]
-    if huge_head: issues.append({"code":"oversized_heading","severity":"high","detail":f"count={len(huge_head)}, examples={huge_head[:12]}"})
+    if huge_head: defects.append({"code":"oversized_heading","severity":"high","detail":f"count={len(huge_head)}, examples={huge_head[:12]}"})
 
-    sev={x['severity'] for x in issues}
+    sev={x['severity'] for x in defects}
     status='needs_review_high' if 'high' in sev else ('needs_review_medium' if 'medium' in sev else 'pass')
     history=git_meta(path)
-    if issues and re.search(r"format|cleanup|finalize|repair", history.get('message') or '', re.I):
-        issues.append({"code":"history_processed_but_content_fails","severity":"info","detail":history.get('message')})
-    return {"path":str(path),"status":status,"metrics":{"bytes":len(text.encode('utf-8')),"visible_chars":vis,"h1":h1,"headings_2_4":len(hbody),"image_refs":len(IMAGE.findall(text)),"lines":len(lines)},"issues":issues,"history":history}
+    if defects and re.search(r"format|cleanup|finalize|repair", history.get('message') or '', re.I):
+        defects.append({"code":"history_processed_but_content_fails","severity":"info","detail":history.get('message')})
+    return {
+        "path":str(path),"status":status,
+        "metrics":{"bytes":len(text.encode('utf-8')),"visible_chars":vis,"h1":h1,"headings_2_4":len(hbody),"image_refs":len(IMAGE.findall(text)),"lines":len(lines)},
+        "issues":defects,"review_candidates":candidates,"history":history
+    }
 
 
 def main():
     p=argparse.ArgumentParser(); p.add_argument('--root',default='temp'); p.add_argument('--report',default='temp/.semantic-completeness-audit.json'); a=p.parse_args()
     targets=sorted(x for x in Path(a.root).rglob('*.md') if x.is_file() and not x.name.startswith('.'))
     items=[audit(x) for x in targets]
-    counts=defaultdict(int)
+    counts=defaultdict(int); candidate_counts=defaultdict(int)
     for item in items:
         for issue in item['issues']: counts[issue['code']]+=1
+        for issue in item['review_candidates']: candidate_counts[issue['code']]+=1
     review=[x for x in items if x['status']!='pass']
-    payload={'summary':{'markdown_files_scanned':len(items),'pass':sum(x['status']=='pass' for x in items),'needs_review_high':sum(x['status']=='needs_review_high' for x in items),'needs_review_medium':sum(x['status']=='needs_review_medium' for x in items),'review_total':len(review),'image_refs_total':sum(x['metrics']['image_refs'] for x in items)},'issue_counts':dict(sorted(counts.items())), 'review':review}
+    candidate_docs=[x for x in items if x['review_candidates']]
+    payload={
+        'summary':{
+            'markdown_files_scanned':len(items),
+            'pass':sum(x['status']=='pass' for x in items),
+            'needs_review_high':sum(x['status']=='needs_review_high' for x in items),
+            'needs_review_medium':sum(x['status']=='needs_review_medium' for x in items),
+            'review_total':len(review),
+            'review_candidate_docs':len(candidate_docs),
+            'image_refs_total':sum(x['metrics']['image_refs'] for x in items)
+        },
+        'issue_counts':dict(sorted(counts.items())),
+        'review_candidate_counts':dict(sorted(candidate_counts.items())),
+        'review':review,
+        'review_candidates':[{'path':x['path'],'metrics':x['metrics'],'candidates':x['review_candidates'],'history':x['history']} for x in candidate_docs]
+    }
     Path(a.report).write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-    print(json.dumps(payload['summary'],ensure_ascii=False,indent=2)); print(json.dumps(payload['issue_counts'],ensure_ascii=False,indent=2))
+    print(json.dumps(payload['summary'],ensure_ascii=False,indent=2)); print(json.dumps({'issues':payload['issue_counts'],'review_candidates':payload['review_candidate_counts']},ensure_ascii=False,indent=2))
 
 if __name__=='__main__': main()
