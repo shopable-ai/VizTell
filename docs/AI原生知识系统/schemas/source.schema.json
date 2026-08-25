@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:viztell:ai-knowledge-system:schema:source:0.1",
+  "title": "Source v0.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["source_id", "carrier_type", "location"],
+  "properties": {
+    "schema_version": {"const": "0.1"},
+    "source_id": {"type": "string", "pattern": "^S-.+"},
+    "carrier_type": {"type": "string"},
+    "title": {"type": ["string", "null"]},
+    "author_or_org": {"type": ["string", "null"]},
+    "source_level": {"enum": ["primary", "secondary", "tertiary", "unknown", "not_evaluated"]},
+    "published_at": {"type": ["string", "null"], "format": "date-time"},
+    "observed_at": {"type": ["string", "null"], "format": "date-time"},
+    "version": {"type": ["string", "integer", "null"]},
+    "location": {"type": "string", "minLength": 1},
+    "upstream_source_refs": {"type": "array", "items": {"type": "string", "pattern": "^S-.+"}, "uniqueItems": true},
+    "independence_group": {"type": ["string", "null"]},
+    "license": {"type": ["string", "null"]},
+    "access_class": {"type": ["string", "null"]},
+    "credibility_state": {"enum": ["high", "medium", "low", "unknown", "not_evaluated", null]},
+    "created_at": {"type": ["string", "null"], "format": "date-time"},
+    "updated_at": {"type": ["string", "null"], "format": "date-time"}
+  }
+}
