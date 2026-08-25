@@ -1,0 +1,23 @@
+{
+  "status": "applied",
+  "path": "temp/《穷人的底层逻辑》/index.md",
+  "removed_line_range": [
+    27,
+    29
+  ],
+  "removed_lines": 3,
+  "page6_line_before": 31,
+  "earlier_source_copies": {
+    "A": [
+      18
+    ],
+    "B": [
+      19
+    ],
+    "C": [
+      23
+    ]
+  },
+  "image_refs_preserved": 7,
+  "errors": []
+}
