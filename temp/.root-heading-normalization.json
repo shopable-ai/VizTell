@@ -1,88 +1,80 @@
 {
   "rule": "# book -> ## numbered chapter -> ### chapter subsection -> #### true subsection child",
-  "scope": "temp/*.md only (no child directories)",
-  "changed_files": [
-    {
-      "file": "temp/做局大师-人间博弈之术.md",
-      "chapter_count": 48,
-      "chapter_levels": {
-        "3": 48
-      },
-      "h4_descendants": 66,
-      "deep_descendants": 66,
-      "eligible": true,
-      "heading_changes": 114,
-      "chapter_changes": 48,
-      "descendant_changes": 66,
-      "samples": [
-        {
-          "before": "### 第一章 设局谋略",
-          "after": "## 第一章 设局谋略"
-        },
-        {
-          "before": "#### 历史上的厚黑人士",
-          "after": "### 历史上的厚黑人士"
-        },
-        {
-          "before": "#### 一张看不清本色的脸",
-          "after": "### 一张看不清本色的脸"
-        },
-        {
-          "before": "#### 拙诚也是做局的一种道具",
-          "after": "### 拙诚也是做局的一种道具"
-        },
-        {
-          "before": "### 第二章 心照不宣的驭人术",
-          "after": "## 第二章 心照不宣的驭人术"
-        },
-        {
-          "before": "#### 好处要给在恰当处",
-          "after": "### 好处要给在恰当处"
-        },
-        {
-          "before": "#### 恩惠要一点儿一点儿地赐予",
-          "after": "### 恩惠要一点儿一点儿地赐予"
-        },
-        {
-          "before": "#### 利益捆绑",
-          "after": "### 利益捆绑"
-        },
-        {
-          "before": "#### 名誉要挟",
-          "after": "### 名誉要挟"
-        },
-        {
-          "before": "#### 抓其弱点，逼其就范",
-          "after": "### 抓其弱点，逼其就范"
-        },
-        {
-          "before": "### 第三章 吕不韦的长线投资",
-          "after": "## 第三章 吕不韦的长线投资"
-        },
-        {
-          "before": "#### 加大投资",
-          "after": "### 加大投资"
-        },
-        {
-          "before": "### 第四章 千古第一反间计",
-          "after": "## 第四章 千古第一反间计"
-        },
-        {
-          "before": "### 第五章 与虎谋皮的招数",
-          "after": "## 第五章 与虎谋皮的招数"
-        },
-        {
-          "before": "### 第六章 借树开花",
-          "after": "## 第六章 借树开花"
-        },
-        {
-          "before": "#### 李园的夺权之路",
-          "after": "### 李园的夺权之路"
-        }
-      ]
-    }
-  ],
+  "scope": "temp/**/*.md recursively; high-confidence numbered chapter shifts only",
+  "changed_files": [],
   "audited_files": [
+    {
+      "file": "temp/007《布局锦囊1.0》/index.md",
+      "chapter_count": 0,
+      "chapter_levels": {},
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/008《布局锦囊3.0》/index.md",
+      "chapter_count": 0,
+      "chapter_levels": {},
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/009《布局锦囊2.0》/index.md",
+      "chapter_count": 0,
+      "chapter_levels": {},
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《458条人性顶级秘术》/index.md",
+      "chapter_count": 26,
+      "chapter_levels": {
+        "2": 26
+      },
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《万能厚黑不黑模式》/index.md",
+      "chapter_count": 34,
+      "chapter_levels": {
+        "2": 34
+      },
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《万能识人术》/index.md",
+      "chapter_count": 0,
+      "chapter_levels": {},
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《人心探索（动机篇）》/index.md",
+      "chapter_count": 13,
+      "chapter_levels": {
+        "2": 13
+      },
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《人心探索（操控篇）》/index.md",
+      "chapter_count": 14,
+      "chapter_levels": {
+        "2": 14
+      },
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
     {
       "file": "temp/《人性商战(线下3天2夜全文字版)》.md",
       "chapter_count": 0,
@@ -92,7 +84,237 @@
       "eligible": false
     },
     {
+      "file": "temp/《人性天眼》/index.md",
+      "chapter_count": 0,
+      "chapter_levels": {},
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《人性宝典2.0》/index.md",
+      "chapter_count": 6,
+      "chapter_levels": {
+        "2": 6
+      },
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《人性密码》/index.md",
+      "chapter_count": 0,
+      "chapter_levels": {},
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《人性底层模型1.0》/index.md",
+      "chapter_count": 0,
+      "chapter_levels": {},
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《人性底层模型2.0》/index.md",
+      "chapter_count": 0,
+      "chapter_levels": {},
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《人性心法》/index.md",
+      "chapter_count": 8,
+      "chapter_levels": {
+        "2": 8
+      },
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《人性心理战》/index.md",
+      "chapter_count": 9,
+      "chapter_levels": {
+        "2": 9
+      },
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《人性成败拿捏》/index.md",
+      "chapter_count": 9,
+      "chapter_levels": {
+        "2": 9
+      },
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《人性探索大师1》/index.md",
+      "chapter_count": 9,
+      "chapter_levels": {
+        "2": 9
+      },
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《人性探索大师2》/index.md",
+      "chapter_count": 10,
+      "chapter_levels": {
+        "2": 10
+      },
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《人性探索大师3》/index.md",
+      "chapter_count": 7,
+      "chapter_levels": {
+        "2": 7
+      },
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《人性智谋36计》/index.md",
+      "chapter_count": 0,
+      "chapter_levels": {},
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《人性真相》/index.md",
+      "chapter_count": 0,
+      "chapter_levels": {},
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《人性真言》/index.md",
+      "chapter_count": 0,
+      "chapter_levels": {},
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《人性社交思维手册》/index.md",
+      "chapter_count": 0,
+      "chapter_levels": {},
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《人性纵横说1.0》/index.md",
+      "chapter_count": 0,
+      "chapter_levels": {},
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《人性背后隐藏的邪恶密码》/index.md",
+      "chapter_count": 0,
+      "chapter_levels": {},
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《人性艺术-内心电影剪辑师》/index.md",
+      "chapter_count": 38,
+      "chapter_levels": {
+        "2": 38
+      },
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《人性要诀》/index.md",
+      "chapter_count": 0,
+      "chapter_levels": {},
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《人性逆袭绝技》/index.md",
+      "chapter_count": 0,
+      "chapter_levels": {},
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《人性错觉控制术》/index.md",
+      "chapter_count": 0,
+      "chapter_levels": {},
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《人性陷阱》/index.md",
+      "chapter_count": 4,
+      "chapter_levels": {
+        "2": 4
+      },
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
       "file": "temp/《人性难题宝典1-9》.md",
+      "chapter_count": 0,
+      "chapter_levels": {},
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《人性魔鬼手段》/index.md",
+      "chapter_count": 31,
+      "chapter_levels": {
+        "2": 31
+      },
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《人类欺骗行为解读》/index.md",
+      "chapter_count": 0,
+      "chapter_levels": {},
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《人脑操控力》/index.md",
+      "chapter_count": 5,
+      "chapter_levels": {
+        "2": 5
+      },
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《冷读术》/index.md",
       "chapter_count": 0,
       "chapter_levels": {},
       "h4_descendants": 0,
@@ -116,11 +338,103 @@
       "eligible": false
     },
     {
+      "file": "temp/《坏术大师》/index.md",
+      "chapter_count": 0,
+      "chapter_levels": {},
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《大心机1》/index.md",
+      "chapter_count": 9,
+      "chapter_levels": {
+        "2": 9
+      },
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《大心机2》/index.md",
+      "chapter_count": 6,
+      "chapter_levels": {
+        "2": 6
+      },
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
       "file": "temp/《大心机3》.md",
+      "chapter_count": 7,
+      "chapter_levels": {
+        "2": 7
+      },
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《天之卷：强者修炼手册》/index.md",
+      "chapter_count": 0,
+      "chapter_levels": {},
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《天机38局》/index.md",
+      "chapter_count": 0,
+      "chapter_levels": {},
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《富人机密手稿》/index.md",
+      "chapter_count": 7,
+      "chapter_levels": {
+        "2": 7
+      },
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《布局系统2.0》/index.md",
+      "chapter_count": 3,
+      "chapter_levels": {
+        "2": 3
+      },
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《布局系统》/index.md",
       "chapter_count": 11,
       "chapter_levels": {
-        "1": 11
+        "2": 11
       },
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《开悟开窍开智3》/index.md",
+      "chapter_count": 5,
+      "chapter_levels": {
+        "2": 5
+      },
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《开窍开悟开智1》/index.md",
+      "chapter_count": 0,
+      "chapter_levels": {},
       "h4_descendants": 0,
       "deep_descendants": 0,
       "eligible": false
@@ -134,10 +448,74 @@
       "eligible": false
     },
     {
+      "file": "temp/《开窍开悟开智2》/index.md",
+      "chapter_count": 0,
+      "chapter_levels": {},
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《开窍开悟开智4》/index.md",
+      "chapter_count": 0,
+      "chapter_levels": {},
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
       "file": "temp/《开窍开智开悟5》.md",
       "chapter_count": 4,
       "chapter_levels": {
-        "1": 4
+        "2": 4
+      },
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《怎样洞察人心》/index.md",
+      "chapter_count": 9,
+      "chapter_levels": {
+        "2": 9
+      },
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《成长人性》/index.md",
+      "chapter_count": 39,
+      "chapter_levels": {
+        "2": 39
+      },
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《揭秘男人的人性》/index.md",
+      "chapter_count": 0,
+      "chapter_levels": {},
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《格商》/index.md",
+      "chapter_count": 16,
+      "chapter_levels": {
+        "2": 16
+      },
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《格商》PDF版/index.md",
+      "chapter_count": 16,
+      "chapter_levels": {
+        "2": 16
       },
       "h4_descendants": 0,
       "deep_descendants": 0,
@@ -145,6 +523,22 @@
     },
     {
       "file": "temp/《洗脑的最高境界》.md",
+      "chapter_count": 0,
+      "chapter_levels": {},
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《洞察人性天机》/index.md",
+      "chapter_count": 0,
+      "chapter_levels": {},
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《烂好人毒素》/index.md",
       "chapter_count": 0,
       "chapter_levels": {},
       "h4_descendants": 0,
@@ -160,10 +554,84 @@
       "eligible": false
     },
     {
+      "file": "temp/《百发百中攻心术》/index.md",
+      "chapter_count": 136,
+      "chapter_levels": {
+        "2": 136
+      },
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《社会人心运作手册》/index.md",
+      "chapter_count": 10,
+      "chapter_levels": {
+        "2": 10
+      },
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《社会人心运作手册》PDF版/index.md",
+      "chapter_count": 10,
+      "chapter_levels": {
+        "2": 10
+      },
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《穷人的底层逻辑》/index.md",
+      "chapter_count": 0,
+      "chapter_levels": {},
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《红尘修炼手册》/index.md",
+      "chapter_count": 0,
+      "chapter_levels": {},
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《红尘纵横1》/index.md",
+      "chapter_count": 30,
+      "chapter_levels": {
+        "2": 30
+      },
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《红尘纵横2》/index.md",
+      "chapter_count": 59,
+      "chapter_levels": {
+        "2": 59
+      },
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《红尘纵横3》/index.md",
+      "chapter_count": 0,
+      "chapter_levels": {},
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
       "file": "temp/《绝密人性天书》净版.md",
       "chapter_count": 3,
       "chapter_levels": {
-        "1": 3
+        "2": 3
       },
       "h4_descendants": 0,
       "deep_descendants": 0,
@@ -178,7 +646,61 @@
       "eligible": false
     },
     {
+      "file": "temp/《透视人性》/index.md",
+      "chapter_count": 0,
+      "chapter_levels": {},
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
       "file": "temp/《道破人性第一书》.md",
+      "chapter_count": 0,
+      "chapter_levels": {},
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《阅人高手1》/index.md",
+      "chapter_count": 0,
+      "chapter_levels": {},
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《阅人高手2》/index.md",
+      "chapter_count": 18,
+      "chapter_levels": {
+        "2": 18
+      },
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《零距离人性》/index.md",
+      "chapter_count": 7,
+      "chapter_levels": {
+        "2": 7
+      },
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《驭心高手》/index.md",
+      "chapter_count": 10,
+      "chapter_levels": {
+        "2": 10
+      },
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/《高手深度思考的秘密》/index.md",
       "chapter_count": 0,
       "chapter_levels": {},
       "h4_descendants": 0,
@@ -199,89 +721,46 @@
       "file": "temp/做局大师-人间博弈之术.md",
       "chapter_count": 48,
       "chapter_levels": {
-        "3": 48
+        "2": 48
       },
-      "h4_descendants": 66,
-      "deep_descendants": 66,
-      "eligible": true,
-      "heading_changes": 114,
-      "chapter_changes": 48,
-      "descendant_changes": 66,
-      "samples": [
-        {
-          "before": "### 第一章 设局谋略",
-          "after": "## 第一章 设局谋略"
-        },
-        {
-          "before": "#### 历史上的厚黑人士",
-          "after": "### 历史上的厚黑人士"
-        },
-        {
-          "before": "#### 一张看不清本色的脸",
-          "after": "### 一张看不清本色的脸"
-        },
-        {
-          "before": "#### 拙诚也是做局的一种道具",
-          "after": "### 拙诚也是做局的一种道具"
-        },
-        {
-          "before": "### 第二章 心照不宣的驭人术",
-          "after": "## 第二章 心照不宣的驭人术"
-        },
-        {
-          "before": "#### 好处要给在恰当处",
-          "after": "### 好处要给在恰当处"
-        },
-        {
-          "before": "#### 恩惠要一点儿一点儿地赐予",
-          "after": "### 恩惠要一点儿一点儿地赐予"
-        },
-        {
-          "before": "#### 利益捆绑",
-          "after": "### 利益捆绑"
-        },
-        {
-          "before": "#### 名誉要挟",
-          "after": "### 名誉要挟"
-        },
-        {
-          "before": "#### 抓其弱点，逼其就范",
-          "after": "### 抓其弱点，逼其就范"
-        },
-        {
-          "before": "### 第三章 吕不韦的长线投资",
-          "after": "## 第三章 吕不韦的长线投资"
-        },
-        {
-          "before": "#### 加大投资",
-          "after": "### 加大投资"
-        },
-        {
-          "before": "### 第四章 千古第一反间计",
-          "after": "## 第四章 千古第一反间计"
-        },
-        {
-          "before": "### 第五章 与虎谋皮的招数",
-          "after": "## 第五章 与虎谋皮的招数"
-        },
-        {
-          "before": "### 第六章 借树开花",
-          "after": "## 第六章 借树开花"
-        },
-        {
-          "before": "#### 李园的夺权之路",
-          "after": "### 李园的夺权之路"
-        }
-      ]
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/千门谋局上册/index.md",
+      "chapter_count": 0,
+      "chapter_levels": {},
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/千门谋局下册/index.md",
+      "chapter_count": 0,
+      "chapter_levels": {},
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
+    },
+    {
+      "file": "temp/布局锦囊5.0/index.md",
+      "chapter_count": 2,
+      "chapter_levels": {
+        "2": 2
+      },
+      "h4_descendants": 0,
+      "deep_descendants": 0,
+      "eligible": false
     }
   ],
   "ambiguous_files": [],
   "summary": {
-    "files_audited": 14,
-    "files_changed": 1,
-    "heading_changes": 114,
-    "chapter_changes": 48,
-    "descendant_changes": 66,
+    "files_audited": 84,
+    "files_changed": 0,
+    "heading_changes": 0,
+    "chapter_changes": 0,
+    "descendant_changes": 0,
     "ambiguous_files": 0
   }
 }
