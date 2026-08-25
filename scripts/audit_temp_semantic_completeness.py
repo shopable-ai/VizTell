@@ -16,7 +16,10 @@ from pathlib import Path
 H = re.compile(r"^(#{1,6})\s+(.+?)\s*$")
 IMAGE = re.compile(r"!\[[^\]]*\]\([^\n)]*\)|!\[[^\]]*\]\[[^\]\n]*\]")
 BOX = re.compile(r"^\s*[□▢▫]\s*.+")
-CHAPTER_PLAIN = re.compile(r"^\s*(第\s*[一二三四五六七八九十百零〇两0-9]+\s*(?:章|节|课|讲|篇|部分|部|卷|册)\b.{0,90})\s*$")
+# A real plain chapter marker may continue with a short title, but a prose
+# phrase such as `第三部分，下部，也就是……` must not be promoted.  Punctuation
+# immediately after the unit is therefore treated as prose, not a chapter.
+CHAPTER_PLAIN = re.compile(r"^\s*(第\s*[一二三四五六七八九十百零〇两0-9]+\s*(?:章|节|课|讲|篇|部分|部|卷|册)(?![，,。；;：:])\s*.{0,90})\s*$")
 QA = re.compile(r"^\s*\d{1,4}\s*[.．、]\s*[^？?\n]{2,110}[？?]\s*$")
 ANSWER = re.compile(r"^\s*答\s*[:：]")
 TOC_LEADER = re.compile(r"(?:\.{4,}|…{3,}|·{4,}|﹒{4,})\s*[.·… ]*\d{1,4}\s*$")
@@ -143,7 +146,6 @@ def audit(path: Path) -> dict:
     if len(glue)>=3:
         issues.append({"code":"possible_heading_body_glue","severity":"medium","detail":f"count_sample={len(glue)}, stems={sorted(stems)}, examples={glue[:12]}"})
 
-    # Detect pathological headings that likely contain full prose.
     huge_head=[{"line":i,"level":l,"length":len(t),"text":t[:160]} for i,l,t in hs if l>1 and len(t)>180]
     if huge_head: issues.append({"code":"oversized_heading","severity":"high","detail":f"count={len(huge_head)}, examples={huge_head[:12]}"})
 
