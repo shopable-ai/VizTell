@@ -1,118 +1,6 @@
 {
   "prompt_strengthened": false,
-  "changed_files": [
-    {
-      "path": "temp/008《布局锦囊3.0》/index.md",
-      "changed": true,
-      "ad_spans_removed": 73,
-      "heading_changes": 0,
-      "examples": [
-        {
-          "line": 192,
-          "kind": "orphan-promo-tail",
-          "before": "（5）创业的成功概率很低，创业成功率不到10%！对于新手创业者来说，创业成功率更低！具体更多落地细节，",
-          "after": "（5）创业的成功概率很低，创业成功率不到10%！对于新手创业者来说，创业成功率更低！"
-        },
-        {
-          "line": 296,
-          "kind": "orphan-promo-tail",
-          "before": "核心落地：市调的是否足够全局，掌握的高纬信息是否足够多，说白了，所谓狗屁高纬认知，就是对行业是否足够的了解（俗话说：调研的足够多，足够充分），以及对获得的信息有一个充分的判断和决策，最终决定了我们执行的战略，战术。具体更多落地细节，",
-          "after": "核心落地：市调的是否足够全局，掌握的高纬信息是否足够多，说白了，所谓狗屁高纬认知，就是对行业是否足够的了解（俗话说：调研的足够多，足够充分），以及对获得的信息有一个充分的判断和决策，最终决定了我们执行的战略，战术。"
-        },
-        {
-          "line": 397,
-          "kind": "orphan-promo-tail",
-          "before": "具体更多落地细节，",
-          "after": ""
-        },
-        {
-          "line": 443,
-          "kind": "orphan-promo-tail",
-          "before": "找到人生目标能够创造最持久的幸福感，同时成为所在行业的专家，赚取最丰厚的财富。具体更多落地细节，",
-          "after": "找到人生目标能够创造最持久的幸福感，同时成为所在行业的专家，赚取最丰厚的财富。"
-        },
-        {
-          "line": 571,
-          "kind": "orphan-promo-tail",
-          "before": "具体更多落地细节，",
-          "after": ""
-        },
-        {
-          "line": 591,
-          "kind": "orphan-promo-tail",
-          "before": "具体落地细节，",
-          "after": ""
-        },
-        {
-          "line": 684,
-          "kind": "orphan-promo-tail",
-          "before": "1，过程管理你是否发现很多富裕家庭，父母都是从事管理相关的工作，而穷人家庭的父母更多是普通员工。也就是说：富裕家庭的父母从事的，战略规划，规则制定，执行协调，进度跟踪，结果反馈，向上管理。具体更多落地细节，",
-          "after": "1，过程管理你是否发现很多富裕家庭，父母都是从事管理相关的工作，而穷人家庭的父母更多是普通员工。也就是说：富裕家庭的父母从事的，战略规划，规则制定，执行协调，进度跟踪，结果反馈，向上管理。"
-        },
-        {
-          "line": 788,
-          "kind": "orphan-promo-tail",
-          "before": "我们身边的人也是比比皆是：有些人愿意省吃俭用几个月来买一款包包、一部新出的手机，穷人喜欢及时享乐，因为攒钱投资对他们来说见效太慢了，他们等不及。具体更多落地细节，",
-          "after": "我们身边的人也是比比皆是：有些人愿意省吃俭用几个月来买一款包包、一部新出的手机，穷人喜欢及时享乐，因为攒钱投资对他们来说见效太慢了，他们等不及。"
-        },
-        {
-          "line": 900,
-          "kind": "orphan-promo-tail",
-          "before": "听众们此时才明白，这就是丘吉尔想说的人生智慧，绝不放弃就是他全部的人生信仰。具体更多落地细节，",
-          "after": "听众们此时才明白，这就是丘吉尔想说的人生智慧，绝不放弃就是他全部的人生信仰。"
-        },
-        {
-          "line": 959,
-          "kind": "orphan-promo-tail",
-          "before": "建议培养“目标导向”的思维：好项目永远比钱少，只要目标正确，钱总有办法解决。具体更多落地细节，",
-          "after": "建议培养“目标导向”的思维：好项目永远比钱少，只要目标正确，钱总有办法解决。"
-        },
-        {
-          "line": 1119,
-          "kind": "orphan-promo-tail",
-          "before": "具体更多落地细节，",
-          "after": ""
-        },
-        {
-          "line": 1185,
-          "kind": "orphan-promo-tail",
-          "before": "就是要让别人爱上你的钱。就是要让别人爱上你给的利益。就是要让别人觉得你能给他希望。具体更多落地细节，",
-          "after": "就是要让别人爱上你的钱。就是要让别人爱上你给的利益。就是要让别人觉得你能给他希望。"
-        }
-      ],
-      "heading_examples": []
-    },
-    {
-      "path": "temp/009《布局锦囊2.0》/index.md",
-      "changed": true,
-      "ad_spans_removed": 1,
-      "heading_changes": 0,
-      "examples": [
-        {
-          "line": 6926,
-          "kind": "public-account-promo",
-          "before": "更多落地细节，立刻扫码关注本公众号，为你解答更多实战干货分享。",
-          "after": ""
-        }
-      ],
-      "heading_examples": []
-    },
-    {
-      "path": "temp/布局锦囊5.0/index.md",
-      "changed": true,
-      "ad_spans_removed": 1,
-      "heading_changes": 0,
-      "examples": [
-        {
-          "line": 2728,
-          "kind": "orphan-promo-tail",
-          "before": "【 扑龙仵钜，拉d 裕科 ］ 在局杯，觉系负还得需要： 正确方向就像我们回到开头，你真以为张国立演的地主十年后还能回来？他再厉害，也当不了东家了也不想想 1949 年，啥来了！ 土改； 吃大锅饭的时代．所以说：努力只是基本功，更重要的是时代红利，尤其重要，具体落地细节，",
-          "after": "【 扑龙仵钜，拉d 裕科 ］ 在局杯，觉系负还得需要： 正确方向就像我们回到开头，你真以为张国立演的地主十年后还能回来？他再厉害，也当不了东家了也不想想 1949 年，啥来了！ 土改； 吃大锅饭的时代．所以说：努力只是基本功，更重要的是时代红利，尤其重要，"
-        }
-      ],
-      "heading_examples": []
-    }
-  ],
+  "changed_files": [],
   "high_confidence_residuals": [],
   "review_candidates": [],
   "heading_jump_files": [
@@ -703,8 +591,8 @@
   "errors": [],
   "summary": {
     "markdown_files_scanned": 84,
-    "markdown_files_changed": 3,
-    "ad_spans_removed": 75,
+    "markdown_files_changed": 0,
+    "ad_spans_removed": 0,
     "heading_changes": 0,
     "high_confidence_residual_files": 0,
     "review_candidate_files": 0,
