@@ -1,10 +1,10 @@
 {
   "summary": {
     "markdown_files_scanned": 84,
-    "files_changed": 1,
+    "files_changed": 0,
     "toc_labels_removed": 0,
     "duplicate_h1_removed": 0,
-    "heading_jumps_fixed": 1,
+    "heading_jumps_fixed": 0,
     "image_refs_checked": 10604,
     "errors": 0
   },
@@ -236,11 +236,11 @@
     },
     {
       "path": "temp/《人性背后隐藏的邪恶密码》/index.md",
-      "changed": true,
-      "applied": true,
+      "changed": false,
+      "applied": false,
       "toc_labels_removed": 0,
       "duplicate_h1_removed": 0,
-      "heading_jumps_fixed": 1,
+      "heading_jumps_fixed": 0,
       "image_refs": 126
     },
     {

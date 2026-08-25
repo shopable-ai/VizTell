@@ -7,8 +7,8 @@
   "summary": {
     "markdown_files_scanned": 84,
     "files_changed": 0,
-    "files_pass": 79,
-    "files_needing_review_high": 2,
+    "files_pass": 80,
+    "files_needing_review_high": 1,
     "files_needing_review_medium": 3,
     "repair_errors": 0,
     "toc_text_lines_removed": 0,
@@ -20,8 +20,8 @@
   },
   "issue_counts": {
     "giant_ocr_lines": 4,
-    "history_says_processed_but_content_fails": 5,
-    "large_document_without_structure": 2,
+    "history_says_processed_but_content_fails": 4,
+    "large_document_without_structure": 1,
     "toc_marker_needs_review": 1
   },
   "repairs": [
@@ -593,9 +593,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 126,
       "visible_retention": 1.0,
-      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
-      "last_commit_date": "2026-08-25T07:59:45Z",
-      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
+      "last_commit_sha": "3cc2be465cff7c61eb97dc9488c2d7861290878c",
+      "last_commit_date": "2026-08-25T08:14:32Z",
+      "last_commit_message": "docs(markdown): repair semantic formatting omissions [skip ci]"
     },
     {
       "path": "temp/《人性艺术-内心电影剪辑师》/index.md",
@@ -1473,9 +1473,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 7,
       "visible_retention": 1.0,
-      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
-      "last_commit_date": "2026-08-25T07:59:45Z",
-      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
+      "last_commit_sha": "3cc2be465cff7c61eb97dc9488c2d7861290878c",
+      "last_commit_date": "2026-08-25T08:14:32Z",
+      "last_commit_message": "docs(markdown): repair semantic formatting omissions [skip ci]"
     },
     {
       "path": "temp/《红尘修炼手册》/index.md",
@@ -2375,9 +2375,9 @@
         "image_refs": 126
       },
       "history": {
-        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
-        "last_commit_date": "2026-08-25T07:59:45Z",
-        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
+        "last_commit_sha": "3cc2be465cff7c61eb97dc9488c2d7861290878c",
+        "last_commit_date": "2026-08-25T08:14:32Z",
+        "last_commit_message": "docs(markdown): repair semantic formatting omissions [skip ci]"
       }
     },
     {
@@ -2477,24 +2477,13 @@
     },
     {
       "path": "temp/《人性难题宝典1-9》.md",
-      "status": "needs_review_high",
-      "issues": [
-        {
-          "code": "large_document_without_structure",
-          "severity": "high",
-          "detail": "visible_chars=275601, headings_2_4=0"
-        },
-        {
-          "code": "history_says_processed_but_content_fails",
-          "severity": "info",
-          "detail": "docs(temp): finalize Markdown cleanup [skip ci]"
-        }
-      ],
+      "status": "pass",
+      "issues": [],
       "metrics": {
-        "bytes": 827495,
-        "visible_chars": 275601,
+        "bytes": 827654,
+        "visible_chars": 275429,
         "h1": 1,
-        "h2": 0,
+        "h2": 135,
         "h3": 0,
         "h4": 0,
         "image_refs": 0
@@ -3168,9 +3157,9 @@
         "image_refs": 7
       },
       "history": {
-        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
-        "last_commit_date": "2026-08-25T07:59:45Z",
-        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
+        "last_commit_sha": "3cc2be465cff7c61eb97dc9488c2d7861290878c",
+        "last_commit_date": "2026-08-25T08:14:32Z",
+        "last_commit_message": "docs(markdown): repair semantic formatting omissions [skip ci]"
       }
     },
     {
