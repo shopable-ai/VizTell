@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:viztell:ai-knowledge-system:schema:canonical-knowledge:0.1",
+  "title": "Canonical Knowledge v0.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["knowledge_id", "knowledge_type", "canonical_label", "canonical_statement", "version"],
+  "properties": {
+    "schema_version": {"const": "0.1"},
+    "knowledge_id": {"type": "string", "pattern": "^K-.+"},
+    "knowledge_type": {
+      "enum": ["concept", "fact", "claim", "principle", "mechanism", "theory", "model", "framework", "method", "technique", "procedure", "decision_rule", "condition", "scope", "boundary", "exception", "counterexample", "case", "skill", "tacit_knowledge"]
+    },
+    "canonical_label": {"type": "string", "minLength": 1},
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["label"],
+        "properties": {
+          "label": {"type": "string", "minLength": 1},
+          "type": {"type": ["string", "null"]},
+          "language": {"type": ["string", "null"]}
+        }
+      }
+    },
+    "canonical_statement": {"type": "string", "minLength": 1},
+    "type_payload": {"type": "object"},
+    "conditions": {"type": "array", "items": {"type": "string"}},
+    "scope": {"type": "array", "items": {"type": "string"}},
+    "boundaries": {"type": "array", "items": {"type": "string"}},
+    "exceptions": {"type": "array", "items": {"type": "string"}},
+    "source_refs": {"type": "array", "items": {"type": "string", "pattern": "^S-.+"}, "uniqueItems": true},
+    "fragment_refs": {"type": "array", "items": {"type": "string", "pattern": "^F-.+"}, "uniqueItems": true},
+    "evidence_refs": {"type": "array", "items": {"type": "string", "pattern": "^E-.+"}, "uniqueItems": true},
+    "relation_refs": {"type": "array", "items": {"type": "string", "pattern": "^R-.+"}, "uniqueItems": true},
+    "provenance": {"type": "object"},
+    "epistemic_state": {
+      "enum": ["unverified_claim", "weak_evidence", "preliminary_support", "supported", "strongly_supported", "consensus_supported", "contested", "falsified", "not_verifiable", "obsolete", "unknown", "not_evaluated", null]
+    },
+    "temporal_state": {"type": "object"},
+    "version": {"type": ["integer", "string"]},
+    "created_at": {"type": ["string", "null"], "format": "date-time"},
+    "updated_at": {"type": ["string", "null"], "format": "date-time"}
+  }
+}
