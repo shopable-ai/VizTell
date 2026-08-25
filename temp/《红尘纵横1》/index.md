@@ -7,7 +7,7 @@
 ![第5页原始页面图](assets/page-005.png)
 
 凶
-### ！ THE WORLD OF MORTALS
+## ！ THE WORLD OF MORTALS
 通人性者一通百通
 
 ![第1页原始页面图](assets/page-001.png)
