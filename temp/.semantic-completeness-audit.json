@@ -9,7 +9,7 @@
   },
   "issue_counts": {
     "history_processed_but_content_fails": 31,
-    "low_heading_density": 2,
+    "low_heading_density": 1,
     "possible_ad_residue": 17,
     "possible_heading_body_glue": 54
   },
@@ -1214,23 +1214,18 @@
       "path": "temp/《玩转人性》.md",
       "status": "needs_review_medium",
       "metrics": {
-        "bytes": 547821,
+        "bytes": 547940,
         "visible_chars": 183174,
         "h1": 1,
-        "headings_2_4": 11,
+        "headings_2_4": 34,
         "image_refs": 0,
-        "lines": 311
+        "lines": 357
       },
       "issues": [
         {
-          "code": "low_heading_density",
-          "severity": "medium",
-          "detail": "chars_per_heading=16652"
-        },
-        {
           "code": "possible_ad_residue",
           "severity": "medium",
-          "detail": "count_sample=1, examples=[{'line': 94, 'match': '微信号'}]"
+          "detail": "count_sample=1, examples=[{'line': 112, 'match': '微信号'}]"
         }
       ],
       "history": {
