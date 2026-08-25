@@ -1,0 +1,77 @@
+name: Correct High Risk Repair Side Effects
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/correct-high-risk-repair-side-effects.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: markdown-temp-repair-main
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  correct:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Rebase to latest main
+        run: |
+          git fetch origin main
+          git rebase origin/main
+
+      - name: Restore only Markdown files touched by the over-broad pass
+        shell: bash
+        run: |
+          set -euo pipefail
+          BAD_COMMIT='6d30bcbd706fdbf9a88995171e98c81fb359ec53'
+          SAFE_PARENT='088a9f24eff622d5bd9bc405e5974a76cae1462f'
+          count=0
+          while IFS= read -r -d '' path; do
+            case "$path" in
+              temp/*.md|temp/*/*.md|temp/*/*/*.md)
+                git checkout "$SAFE_PARENT" -- "$path"
+                count=$((count + 1))
+                ;;
+            esac
+          done < <(git diff-tree -z --no-commit-id --name-only -r "$BAD_COMMIT")
+          echo "Restored $count Markdown file(s) to the safe parent before replay."
+
+      - name: Replay corrected evidence-backed repairs only
+        run: |
+          python scripts/repair_confirmed_high_risk_markdown.py \
+            --root temp \
+            --report temp/.confirmed-high-risk-repair.json \
+            --apply
+          cat temp/.confirmed-high-risk-repair.json
+
+      - name: Refresh semantic audits
+        run: |
+          python scripts/audit_temp_semantic_completeness.py \
+            --root temp \
+            --report temp/.semantic-completeness-audit.json
+          python scripts/extract_high_risk_markdown_contexts.py
+
+      - name: Commit corrected content and reports
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A -- temp
+          if git diff --cached --quiet; then
+            echo 'No correction changes detected.'
+          else
+            git commit -m 'fix(temp): remove high-risk repair whitespace side effects [skip ci]'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
