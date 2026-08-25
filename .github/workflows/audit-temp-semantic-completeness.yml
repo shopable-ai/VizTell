@@ -1,0 +1,48 @@
+name: Audit Temp Semantic Completeness
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/audit-temp-semantic-completeness.yml'
+      - 'scripts/audit_temp_semantic_completeness.py'
+  workflow_dispatch:
+
+concurrency:
+  group: markdown-temp-repair-main
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Rebase to latest main
+        run: |
+          git fetch origin main
+          git rebase origin/main
+      - name: Run semantic completeness audit
+        run: |
+          python scripts/audit_temp_semantic_completeness.py --root temp --report temp/.semantic-completeness-audit.json
+          cat temp/.semantic-completeness-audit.json
+      - name: Commit audit report
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add temp/.semantic-completeness-audit.json
+          if git diff --cached --quiet; then
+            echo 'Semantic audit unchanged.'
+          else
+            git commit -m 'chore(temp): refresh semantic completeness audit [skip ci]'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
