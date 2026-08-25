@@ -1,0 +1,32 @@
+{
+  "status": "pass",
+  "head_commit_at_validation": "3edd27f9401a9dcc2c3bcfba0c738ffa2acee1f5",
+  "summary": {
+    "markdown_files": 84,
+    "objective_pass": 84,
+    "actionable_high_defects": 0,
+    "actionable_medium_defects": 0,
+    "explicit_promo_occurrences": 0,
+    "explicit_promo_files": 0,
+    "markdown_image_refs_total": 10604,
+    "review_candidate_docs": 62,
+    "review_candidate_counts": {
+      "low_heading_density": 1,
+      "possible_ad_residue": 15,
+      "possible_heading_body_glue": 54
+    }
+  },
+  "checks": {
+    "markdown_file_count_matches_audit": true,
+    "all_files_objectively_pass": true,
+    "actionable_high_defects_zero": true,
+    "actionable_medium_defects_zero": true,
+    "actionable_issue_types_zero": true,
+    "explicit_promo_tokens_zero": true,
+    "all_files_exactly_one_h1": true,
+    "image_total_matches_audit": true,
+    "prompt_completion_rules_present": true
+  },
+  "h1_failures": [],
+  "note": "Review candidates are high-recall observations only and are intentionally not counted as actionable defects."
+}
