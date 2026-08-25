@@ -1,0 +1,198 @@
+{
+  "status": "applied",
+  "path": "temp/《零距离人性》/index.md",
+  "section_headings_restored": 31,
+  "page_v_markers_removed": 226,
+  "direct_promo_phrases_removed": 9,
+  "false_h3_demoted": 2,
+  "image_refs_preserved": 1,
+  "restored": [
+    {
+      "source_line": 251,
+      "chapter": "第二章 细察行为，了解性情",
+      "no": 1,
+      "title": "触摸"
+    },
+    {
+      "source_line": 258,
+      "chapter": "第二章 细察行为，了解性情",
+      "no": 2,
+      "title": "涂鸦"
+    },
+    {
+      "source_line": 285,
+      "chapter": "第二章 细察行为，了解性情",
+      "no": 3,
+      "title": "点菜"
+    },
+    {
+      "source_line": 292,
+      "chapter": "第二章 细察行为，了解性情",
+      "no": 4,
+      "title": "拿烟"
+    },
+    {
+      "source_line": 301,
+      "chapter": "第二章 细察行为，了解性情",
+      "no": 5,
+      "title": "握手"
+    },
+    {
+      "source_line": 323,
+      "chapter": "第二章 细察行为，了解性情",
+      "no": 6,
+      "title": "亲吻"
+    },
+    {
+      "source_line": 339,
+      "chapter": "第二章 细察行为，了解性情",
+      "no": 7,
+      "title": "喝水"
+    },
+    {
+      "source_line": 348,
+      "chapter": "第二章 细察行为，了解性情",
+      "no": 8,
+      "title": "习惯性行为"
+    },
+    {
+      "source_line": 366,
+      "chapter": "第二章 细察行为，了解性情",
+      "no": 9,
+      "title": "男人的小动作"
+    },
+    {
+      "source_line": 380,
+      "chapter": "第二章 细察行为，了解性情",
+      "no": 10,
+      "title": "吃东西的方式"
+    },
+    {
+      "source_line": 390,
+      "chapter": "第二章 细察行为，了解性情",
+      "no": 11,
+      "title": "握电话筒的方式"
+    },
+    {
+      "source_line": 403,
+      "chapter": "第二章 细察行为，了解性情",
+      "no": 12,
+      "title": "挤公车"
+    },
+    {
+      "source_line": 412,
+      "chapter": "第二章 细察行为，了解性情",
+      "no": 13,
+      "title": "开车方式"
+    },
+    {
+      "source_line": 428,
+      "chapter": "第二章 细察行为，了解性情",
+      "no": 14,
+      "title": "下车方式"
+    },
+    {
+      "source_line": 438,
+      "chapter": "第三章 穿着打扮，暴露内心",
+      "no": 1,
+      "title": "着装"
+    },
+    {
+      "source_line": 459,
+      "chapter": "第三章 穿着打扮，暴露内心",
+      "no": 2,
+      "title": "穿衣风格"
+    },
+    {
+      "source_line": 481,
+      "chapter": "第三章 穿着打扮，暴露内心",
+      "no": 3,
+      "title": "鞋"
+    },
+    {
+      "source_line": 496,
+      "chapter": "第三章 穿着打扮，暴露内心",
+      "no": 4,
+      "title": "背包"
+    },
+    {
+      "source_line": 525,
+      "chapter": "第三章 穿着打扮，暴露内心",
+      "no": 5,
+      "title": "眼镜"
+    },
+    {
+      "source_line": 530,
+      "chapter": "第三章 穿着打扮，暴露内心",
+      "no": 6,
+      "title": "香水"
+    },
+    {
+      "source_line": 537,
+      "chapter": "第三章 穿着打扮，暴露内心",
+      "no": 7,
+      "title": "颜色"
+    },
+    {
+      "source_line": 565,
+      "chapter": "第三章 穿着打扮，暴露内心",
+      "no": 8,
+      "title": "领带"
+    },
+    {
+      "source_line": 582,
+      "chapter": "第三章 穿着打扮，暴露内心",
+      "no": 9,
+      "title": "发型"
+    },
+    {
+      "source_line": 609,
+      "chapter": "第三章 穿着打扮，暴露内心",
+      "no": 10,
+      "title": "帽子"
+    },
+    {
+      "source_line": 619,
+      "chapter": "第三章 穿着打扮，暴露内心",
+      "no": 11,
+      "title": "妆容"
+    },
+    {
+      "source_line": 633,
+      "chapter": "第三章 穿着打扮，暴露内心",
+      "no": 12,
+      "title": "戒指"
+    },
+    {
+      "source_line": 649,
+      "chapter": "第三章 穿着打扮，暴露内心",
+      "no": 13,
+      "title": "首饰"
+    },
+    {
+      "source_line": 660,
+      "chapter": "第三章 穿着打扮，暴露内心",
+      "no": 14,
+      "title": "T 恤"
+    },
+    {
+      "source_line": 671,
+      "chapter": "第三章 穿着打扮，暴露内心",
+      "no": 15,
+      "title": "手表"
+    },
+    {
+      "source_line": 684,
+      "chapter": "第三章 穿着打扮，暴露内心",
+      "no": 16,
+      "title": "衬衫"
+    },
+    {
+      "source_line": 690,
+      "chapter": "第三章 穿着打扮，暴露内心",
+      "no": 17,
+      "title": "内衣"
+    }
+  ],
+  "errors": []
+}

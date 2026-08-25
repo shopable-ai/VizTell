@@ -2,19 +2,24 @@
   "audit_summary": {
     "markdown_files_scanned": 84,
     "pass": 20,
-    "needs_review_high": 0,
-    "needs_review_medium": 64,
+    "needs_review_high": 1,
+    "needs_review_medium": 63,
     "review_total": 64,
     "image_refs_total": 10604
   },
   "issue_types": {
     "low_heading_density": {
-      "count": 4,
+      "count": 3,
       "paths": [
         "temp/《人性商战(线下3天2夜全文字版)》.md",
         "temp/《玩转人性》.md",
-        "temp/《零距离人性》/index.md",
         "temp/布局锦囊5.0/index.md"
+      ]
+    },
+    "plain_chapter_markers": {
+      "count": 1,
+      "paths": [
+        "temp/《零距离人性》/index.md"
       ]
     },
     "possible_ad_residue": {
