@@ -1,0 +1,43 @@
+{
+  "status": "applied",
+  "path": "temp/《人性商战(线下3天2夜全文字版)》.md",
+  "headings_inserted": 6,
+  "inserted": [
+    {
+      "heading": "三大核心：搞人、搞钱、搞地盘",
+      "anchor": "三大核心搞人搞钱搞地盘",
+      "original_char_offset": 2583
+    },
+    {
+      "heading": "上午课程：人性导航图",
+      "anchor": "上午我重点为大家分享的是人性导航图",
+      "original_char_offset": 3539
+    },
+    {
+      "heading": "下午课程：人性营销",
+      "anchor": "今天下午的主题跟大家分享人性营销",
+      "original_char_offset": 48032
+    },
+    {
+      "heading": "商业模式落地",
+      "anchor": "接下来主题商业模式落地",
+      "original_char_offset": 111773
+    },
+    {
+      "heading": "战略破局",
+      "anchor": "我接下来其实这个部分就给大家讲的是战略破局",
+      "original_char_offset": 221712
+    },
+    {
+      "heading": "团队破局：合伙人与股权",
+      "anchor": "第二个我们来看一下合伙人初期在一起的时候，我们该如何分股权",
+      "original_char_offset": 299320
+    }
+  ],
+  "giant_lines_over_1100_before": 23,
+  "new_prose_lines_created": 230,
+  "lines_over_2500_after": 0,
+  "original_body_preserved_modulo_whitespace": true,
+  "image_refs_preserved": 0,
+  "errors": []
+}
