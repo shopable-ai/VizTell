@@ -15,7 +15,7 @@ PATTERNS=[
     ('human_mind_resume_course', re.compile(r'(?:###\s*)?扫码关注[，,]?\s*回复[“"]简历[”"]二字\s*送你一份由王老师亲自编写的超实用简历模板帮你的职场更顺利仅需\s*1\s*元[，,]?即可试听王老师精彩千聊课程《[^》]{1,80}》')),
     ('author_internal_share', re.compile(r'(?:具体(?:更多)?落地细节\s*[：:,，]?\s*|更多落地细节\s*[，,]?\s*|具体更多落地细节\s*[，,]?\s*)?(?:可以|可)?\s*添加作者(?:获取内部分享|内部分享|内部|获取内部营销密码)[。！？]?')),
     ('layout5_author_wechat', re.compile(r'[（(]\s*(?:具体落地细节\s*[，,]?\s*)?(?:割韭菜\s*模板可)?\s*添加作者微信\s*[；;:：]?\s*1\s*3\s*6\s*1\s*3\s*8\s*2\s*6\s*5\s*1\s*4\s*获取内部分享\s*[）)]')),
-    ('layout5_orphan_author_share', re.compile(r'因为书籍页码\s*有\s*限[，,]?\s*可以添加作者侬信\s*[：:]?\s*获取\s*内\s*部分享[。！？]?')),
+    ('layout5_orphan_author_share', re.compile(r'因(?:为)?书籍页码\s*有\s*限[，,]?\s*可以添加作者侬信\s*[：:]?\s*获取\s*内\s*部分享[。！？]?')),
 ]
 
 def refs(t:str)->Counter[str]: return Counter(IMAGE.findall(t))
