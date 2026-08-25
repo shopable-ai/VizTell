@@ -2,15 +2,15 @@
   "summary": {
     "markdown_files_scanned": 84,
     "pass": 20,
-    "needs_review_high": 1,
-    "needs_review_medium": 63,
+    "needs_review_high": 3,
+    "needs_review_medium": 61,
     "review_total": 64,
     "image_refs_total": 10604
   },
   "issue_counts": {
     "history_processed_but_content_fails": 59,
     "low_heading_density": 3,
-    "plain_chapter_markers": 1,
+    "plain_chapter_markers": 3,
     "possible_ad_residue": 19,
     "possible_heading_body_glue": 54
   },
@@ -375,7 +375,7 @@
     },
     {
       "path": "temp/《人性心法》/index.md",
-      "status": "needs_review_medium",
+      "status": "needs_review_high",
       "metrics": {
         "bytes": 402722,
         "visible_chars": 128374,
@@ -385,6 +385,11 @@
         "lines": 2529
       },
       "issues": [
+        {
+          "code": "plain_chapter_markers",
+          "severity": "high",
+          "detail": "count=1, examples=[(1277, '第15 节投机是对人性最大的亵渎071很多人以为投机很容易，以为跟对老大，加入一个创业公司待几年上市很容易。这是对人性最大的亵渎。')]"
+        },
         {
           "code": "possible_ad_residue",
           "severity": "medium",
@@ -1713,7 +1718,7 @@
         {
           "code": "plain_chapter_markers",
           "severity": "high",
-          "detail": "count=1, examples=[(805, '第三部分，下部，也就是人们经常说的下庭，以嘴为中心，因为嘴除了吃饭、')]"
+          "detail": "count=3, examples=[(802, '第一部分是上部，也就是所谓的“上庭”。这一部分在双眉连线以上、以额头为中心，代表人智力、理性。这是因为额位于头的最重要的部位，所以人们附'), (804, '第二部分是中部，也就是人们所谓的“中庭”，包括眼睛、脸颊，以鼻子为'), (805, '第三部分，下部，也就是人们经常说的下庭，以嘴为中心，因为嘴除了吃饭、')]"
         },
         {
           "code": "possible_heading_body_glue",
@@ -1723,13 +1728,13 @@
         {
           "code": "history_processed_but_content_fails",
           "severity": "info",
-          "detail": "docs(temp): repair content-level Markdown omissions [skip ci]"
+          "detail": "docs(temp): repair zero-distance numbered sections [skip ci]"
         }
       ],
       "history": {
-        "sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
-        "date": "2026-08-25T07:57:18Z",
-        "message": "docs(temp): repair content-level Markdown omissions [skip ci]"
+        "sha": "c453e09a7a8f7b87ddd4d39c6e012a8118d7c8e7",
+        "date": "2026-08-25T09:25:03Z",
+        "message": "docs(temp): repair zero-distance numbered sections [skip ci]"
       }
     },
     {
@@ -1874,7 +1879,7 @@
     },
     {
       "path": "temp/布局锦囊5.0/index.md",
-      "status": "needs_review_medium",
+      "status": "needs_review_high",
       "metrics": {
         "bytes": 1260571,
         "visible_chars": 407628,
@@ -1888,6 +1893,11 @@
           "code": "low_heading_density",
           "severity": "medium",
           "detail": "chars_per_heading=17723"
+        },
+        {
+          "code": "plain_chapter_markers",
+          "severity": "high",
+          "detail": "count=11, examples=[(2316, '第一节时间：如何让你的时间投资卓有成效？'), (2325, '第二 节状态：如何成为一个更在状态的狠人？'), (2331, '第三节情商：如何既取悦自己又让别人舒服？'), (2341, '第四节学霸：如何加速成为某个领域的高手？'), (2352, '第五节读书：如何将读过的书转化为生产力？'), (2364, '第七节讲课：如何让你讲出去的话很有价值？'), (2370, '第八节牛人：如何通过持续见牛人突破自己？'), (2378, '第一节贵人：如何让自已拥有超好的贵人运？'), (2396, '第三节销售： 如 何让你 的 销 售 能 力大幅提升？'), (2413, '第五节冠军：如何运用冠军战略吸引好机会？'), (2438, '第七节写书 ： 如何让写 书这 件事 变 得更 容 易？')]"
         },
         {
           "code": "possible_ad_residue",
