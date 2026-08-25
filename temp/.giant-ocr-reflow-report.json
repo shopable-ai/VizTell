@@ -1,0 +1,689 @@
+{
+  "results": [
+    {
+      "path": "temp/《开窍开智开悟5》.md",
+      "giant_lines_before": [
+        709
+      ],
+      "changed_lines": [
+        {
+          "line": 584,
+          "length": 1106,
+          "chunks": 2
+        },
+        {
+          "line": 594,
+          "length": 1196,
+          "chunks": 2
+        },
+        {
+          "line": 597,
+          "length": 1340,
+          "chunks": 3
+        },
+        {
+          "line": 628,
+          "length": 1180,
+          "chunks": 2
+        },
+        {
+          "line": 643,
+          "length": 1258,
+          "chunks": 2
+        },
+        {
+          "line": 655,
+          "length": 1503,
+          "chunks": 3
+        },
+        {
+          "line": 662,
+          "length": 1392,
+          "chunks": 3
+        },
+        {
+          "line": 667,
+          "length": 1531,
+          "chunks": 3
+        },
+        {
+          "line": 688,
+          "length": 1304,
+          "chunks": 3
+        },
+        {
+          "line": 709,
+          "length": 3043,
+          "chunks": 5
+        },
+        {
+          "line": 710,
+          "length": 1145,
+          "chunks": 2
+        }
+      ],
+      "new_prose_lines_created": 19,
+      "giant_lines_after": [],
+      "lexical_content_preserved_modulo_whitespace": true,
+      "image_refs_preserved": 0
+    },
+    {
+      "path": "temp/《玩转人性》.md",
+      "giant_lines_before": [
+        14,
+        20,
+        32,
+        36,
+        60,
+        72,
+        75,
+        95,
+        96,
+        113,
+        121,
+        152,
+        175
+      ],
+      "changed_lines": [
+        {
+          "line": 5,
+          "length": 1782,
+          "chunks": 3
+        },
+        {
+          "line": 14,
+          "length": 2936,
+          "chunks": 5
+        },
+        {
+          "line": 15,
+          "length": 1751,
+          "chunks": 3
+        },
+        {
+          "line": 19,
+          "length": 1931,
+          "chunks": 3
+        },
+        {
+          "line": 20,
+          "length": 3775,
+          "chunks": 6
+        },
+        {
+          "line": 29,
+          "length": 1764,
+          "chunks": 3
+        },
+        {
+          "line": 30,
+          "length": 1626,
+          "chunks": 3
+        },
+        {
+          "line": 32,
+          "length": 4680,
+          "chunks": 8
+        },
+        {
+          "line": 36,
+          "length": 2861,
+          "chunks": 5
+        },
+        {
+          "line": 37,
+          "length": 1895,
+          "chunks": 4
+        },
+        {
+          "line": 42,
+          "length": 1727,
+          "chunks": 3
+        },
+        {
+          "line": 52,
+          "length": 1950,
+          "chunks": 4
+        },
+        {
+          "line": 60,
+          "length": 2958,
+          "chunks": 5
+        },
+        {
+          "line": 69,
+          "length": 1844,
+          "chunks": 3
+        },
+        {
+          "line": 72,
+          "length": 2863,
+          "chunks": 5
+        },
+        {
+          "line": 75,
+          "length": 2784,
+          "chunks": 5
+        },
+        {
+          "line": 80,
+          "length": 2049,
+          "chunks": 4
+        },
+        {
+          "line": 81,
+          "length": 1954,
+          "chunks": 4
+        },
+        {
+          "line": 87,
+          "length": 1661,
+          "chunks": 3
+        },
+        {
+          "line": 88,
+          "length": 1788,
+          "chunks": 3
+        },
+        {
+          "line": 94,
+          "length": 1864,
+          "chunks": 4
+        },
+        {
+          "line": 95,
+          "length": 2764,
+          "chunks": 5
+        },
+        {
+          "line": 96,
+          "length": 2884,
+          "chunks": 5
+        },
+        {
+          "line": 103,
+          "length": 1747,
+          "chunks": 3
+        },
+        {
+          "line": 106,
+          "length": 1866,
+          "chunks": 3
+        },
+        {
+          "line": 111,
+          "length": 1971,
+          "chunks": 4
+        },
+        {
+          "line": 112,
+          "length": 1907,
+          "chunks": 3
+        },
+        {
+          "line": 113,
+          "length": 2621,
+          "chunks": 5
+        },
+        {
+          "line": 121,
+          "length": 8585,
+          "chunks": 14
+        },
+        {
+          "line": 122,
+          "length": 1919,
+          "chunks": 3
+        },
+        {
+          "line": 125,
+          "length": 1789,
+          "chunks": 3
+        },
+        {
+          "line": 126,
+          "length": 1940,
+          "chunks": 4
+        },
+        {
+          "line": 129,
+          "length": 1463,
+          "chunks": 3
+        },
+        {
+          "line": 134,
+          "length": 1698,
+          "chunks": 3
+        },
+        {
+          "line": 140,
+          "length": 1984,
+          "chunks": 4
+        },
+        {
+          "line": 144,
+          "length": 1899,
+          "chunks": 4
+        },
+        {
+          "line": 152,
+          "length": 2805,
+          "chunks": 5
+        },
+        {
+          "line": 158,
+          "length": 1852,
+          "chunks": 3
+        },
+        {
+          "line": 160,
+          "length": 1777,
+          "chunks": 3
+        },
+        {
+          "line": 169,
+          "length": 1900,
+          "chunks": 3
+        },
+        {
+          "line": 171,
+          "length": 1762,
+          "chunks": 3
+        },
+        {
+          "line": 175,
+          "length": 2753,
+          "chunks": 5
+        }
+      ],
+      "new_prose_lines_created": 132,
+      "giant_lines_after": [],
+      "lexical_content_preserved_modulo_whitespace": true,
+      "image_refs_preserved": 0
+    },
+    {
+      "path": "temp/做局大师-人间博弈之术.md",
+      "giant_lines_before": [
+        46,
+        53,
+        56,
+        67,
+        70,
+        87,
+        119,
+        165,
+        196,
+        222,
+        225,
+        247,
+        268,
+        271,
+        274,
+        316,
+        385
+      ],
+      "changed_lines": [
+        {
+          "line": 10,
+          "length": 1301,
+          "chunks": 3
+        },
+        {
+          "line": 13,
+          "length": 1935,
+          "chunks": 4
+        },
+        {
+          "line": 17,
+          "length": 1248,
+          "chunks": 2
+        },
+        {
+          "line": 35,
+          "length": 1307,
+          "chunks": 3
+        },
+        {
+          "line": 39,
+          "length": 1177,
+          "chunks": 2
+        },
+        {
+          "line": 43,
+          "length": 2336,
+          "chunks": 4
+        },
+        {
+          "line": 46,
+          "length": 2615,
+          "chunks": 5
+        },
+        {
+          "line": 50,
+          "length": 1488,
+          "chunks": 3
+        },
+        {
+          "line": 53,
+          "length": 2584,
+          "chunks": 5
+        },
+        {
+          "line": 56,
+          "length": 3973,
+          "chunks": 7
+        },
+        {
+          "line": 63,
+          "length": 1330,
+          "chunks": 3
+        },
+        {
+          "line": 67,
+          "length": 6073,
+          "chunks": 10
+        },
+        {
+          "line": 70,
+          "length": 3682,
+          "chunks": 6
+        },
+        {
+          "line": 77,
+          "length": 1214,
+          "chunks": 2
+        },
+        {
+          "line": 81,
+          "length": 1207,
+          "chunks": 2
+        },
+        {
+          "line": 84,
+          "length": 2485,
+          "chunks": 4
+        },
+        {
+          "line": 87,
+          "length": 2926,
+          "chunks": 5
+        },
+        {
+          "line": 95,
+          "length": 1215,
+          "chunks": 2
+        },
+        {
+          "line": 99,
+          "length": 1326,
+          "chunks": 3
+        },
+        {
+          "line": 112,
+          "length": 1882,
+          "chunks": 3
+        },
+        {
+          "line": 116,
+          "length": 1376,
+          "chunks": 3
+        },
+        {
+          "line": 119,
+          "length": 2620,
+          "chunks": 5
+        },
+        {
+          "line": 122,
+          "length": 1770,
+          "chunks": 3
+        },
+        {
+          "line": 130,
+          "length": 1272,
+          "chunks": 2
+        },
+        {
+          "line": 134,
+          "length": 1310,
+          "chunks": 3
+        },
+        {
+          "line": 143,
+          "length": 1544,
+          "chunks": 3
+        },
+        {
+          "line": 147,
+          "length": 1165,
+          "chunks": 2
+        },
+        {
+          "line": 156,
+          "length": 1362,
+          "chunks": 3
+        },
+        {
+          "line": 160,
+          "length": 1866,
+          "chunks": 4
+        },
+        {
+          "line": 165,
+          "length": 7162,
+          "chunks": 12
+        },
+        {
+          "line": 169,
+          "length": 1407,
+          "chunks": 3
+        },
+        {
+          "line": 173,
+          "length": 1493,
+          "chunks": 3
+        },
+        {
+          "line": 176,
+          "length": 1635,
+          "chunks": 3
+        },
+        {
+          "line": 181,
+          "length": 1289,
+          "chunks": 3
+        },
+        {
+          "line": 196,
+          "length": 3453,
+          "chunks": 6
+        },
+        {
+          "line": 205,
+          "length": 1115,
+          "chunks": 2
+        },
+        {
+          "line": 214,
+          "length": 1489,
+          "chunks": 3
+        },
+        {
+          "line": 218,
+          "length": 2079,
+          "chunks": 4
+        },
+        {
+          "line": 222,
+          "length": 2769,
+          "chunks": 5
+        },
+        {
+          "line": 225,
+          "length": 2790,
+          "chunks": 5
+        },
+        {
+          "line": 228,
+          "length": 2480,
+          "chunks": 4
+        },
+        {
+          "line": 236,
+          "length": 1760,
+          "chunks": 3
+        },
+        {
+          "line": 240,
+          "length": 1601,
+          "chunks": 3
+        },
+        {
+          "line": 244,
+          "length": 1645,
+          "chunks": 3
+        },
+        {
+          "line": 247,
+          "length": 2743,
+          "chunks": 5
+        },
+        {
+          "line": 250,
+          "length": 1196,
+          "chunks": 2
+        },
+        {
+          "line": 268,
+          "length": 3226,
+          "chunks": 6
+        },
+        {
+          "line": 271,
+          "length": 2811,
+          "chunks": 5
+        },
+        {
+          "line": 274,
+          "length": 2694,
+          "chunks": 5
+        },
+        {
+          "line": 277,
+          "length": 1101,
+          "chunks": 2
+        },
+        {
+          "line": 297,
+          "length": 1660,
+          "chunks": 3
+        },
+        {
+          "line": 305,
+          "length": 1514,
+          "chunks": 3
+        },
+        {
+          "line": 309,
+          "length": 1218,
+          "chunks": 2
+        },
+        {
+          "line": 313,
+          "length": 1744,
+          "chunks": 3
+        },
+        {
+          "line": 316,
+          "length": 8995,
+          "chunks": 15
+        },
+        {
+          "line": 323,
+          "length": 1387,
+          "chunks": 3
+        },
+        {
+          "line": 327,
+          "length": 1632,
+          "chunks": 3
+        },
+        {
+          "line": 332,
+          "length": 1325,
+          "chunks": 3
+        },
+        {
+          "line": 340,
+          "length": 1246,
+          "chunks": 2
+        },
+        {
+          "line": 343,
+          "length": 2256,
+          "chunks": 4
+        },
+        {
+          "line": 346,
+          "length": 1952,
+          "chunks": 4
+        },
+        {
+          "line": 349,
+          "length": 2413,
+          "chunks": 4
+        },
+        {
+          "line": 353,
+          "length": 1887,
+          "chunks": 3
+        },
+        {
+          "line": 356,
+          "length": 1817,
+          "chunks": 3
+        },
+        {
+          "line": 359,
+          "length": 1508,
+          "chunks": 3
+        },
+        {
+          "line": 367,
+          "length": 1721,
+          "chunks": 3
+        },
+        {
+          "line": 370,
+          "length": 1130,
+          "chunks": 2
+        },
+        {
+          "line": 382,
+          "length": 1446,
+          "chunks": 3
+        },
+        {
+          "line": 385,
+          "length": 3884,
+          "chunks": 7
+        },
+        {
+          "line": 390,
+          "length": 2132,
+          "chunks": 4
+        },
+        {
+          "line": 398,
+          "length": 1456,
+          "chunks": 3
+        }
+      ],
+      "new_prose_lines_created": 202,
+      "giant_lines_after": [],
+      "lexical_content_preserved_modulo_whitespace": true,
+      "image_refs_preserved": 0
+    }
+  ],
+  "errors": []
+}
