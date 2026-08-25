@@ -1,0 +1,52 @@
+name: Repair Numbered QA Sections
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/repair-numbered-qa-sections.yml'
+      - 'scripts/repair_numbered_qa_sections.py'
+  workflow_dispatch:
+
+concurrency:
+  group: repair-numbered-qa-sections-main
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  repair:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Rebase to latest main
+        run: |
+          git fetch origin main
+          git rebase origin/main
+      - name: Recover Q&A section headings
+        run: |
+          python scripts/repair_numbered_qa_sections.py --root temp --report temp/.numbered-qa-repair.json --apply
+          cat temp/.numbered-qa-repair.json
+      - name: Normalize and audit
+        run: |
+          python scripts/finalize_temp_markdown_invariants.py --root temp --report temp/.format-invariant-repair.json --apply
+          python scripts/audit_and_repair_temp_markdown.py --root temp --report temp/.content-format-audit.json --apply
+      - name: Commit
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A -- temp
+          if git diff --cached --quiet; then
+            echo 'No numbered Q&A changes detected.'
+          else
+            git commit -m 'docs(temp): recover numbered Q&A headings [skip ci]'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
