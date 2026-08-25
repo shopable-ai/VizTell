@@ -1,11 +1,31 @@
 {
   "summary": {
     "markdown_files_scanned": 84,
-    "files_changed": 1,
-    "image_refs_checked_on_changed_files": 292,
+    "files_changed": 2,
+    "image_refs_checked_on_changed_files": 758,
     "errors": 0
   },
   "results": [
+    {
+      "path": "temp/008《布局锦囊3.0》/index.md",
+      "changed": true,
+      "applied": true,
+      "image_refs": 466,
+      "details": {
+        "layout3_toc": {
+          "changed": true,
+          "toc_start_line": 6,
+          "toc_end_line": 51,
+          "toc_text_lines_removed": 44,
+          "page_images_preserved_inside_toc": 2
+        },
+        "promo_cleanup": {
+          "orphan_promo_sentences_removed": 6,
+          "ocr_b_endpoint_repaired": 1,
+          "changed": true
+        }
+      }
+    },
     {
       "path": "temp/《百发百中攻心术》/index.md",
       "changed": true,
@@ -14,9 +34,18 @@
       "details": {
         "gongxin_chapter20": {
           "changed": true,
-          "chapter20_heading_upgraded": false,
-          "chapter20_glued_headers_stripped": 0,
-          "samples": []
+          "chapter20_heading_upgraded": true,
+          "chapter20_glued_headers_stripped": 2,
+          "samples": [
+            {
+              "line": 2545,
+              "body_prefix": "饭。如果父母不理会孩子的动作，还是一贯地给孩子喂饭，那么久而久之，孩子也没有兴趣自己学着吃饭了。而智慧型的父母从孩子的动作中觉察到孩子的需要，并为孩子做好了自己吃的准备。如准备好了不怕摔坏的碗、适合孩子使用的筷子和子，适合孩子坐的椅子。当孩"
+            },
+            {
+              "line": 2590,
+              "body_prefix": "钢的恼火下，失去理智地对孩子进行打骂，想以此来促使孩子改正错误。"
+            }
+          ]
         },
         "promo_cleanup": {
           "orphan_promo_sentences_removed": 0,
