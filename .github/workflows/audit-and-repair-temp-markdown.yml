@@ -1,0 +1,60 @@
+name: Audit and Repair Temp Markdown
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/audit-and-repair-temp-markdown.yml'
+      - 'scripts/audit_and_repair_temp_markdown.py'
+  workflow_dispatch:
+
+concurrency:
+  group: audit-and-repair-temp-markdown-main
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  audit-repair:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout repository with history
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Repair high-confidence omissions and audit current content
+        shell: bash
+        run: |
+          set +e
+          python scripts/audit_and_repair_temp_markdown.py \
+            --root temp \
+            --report temp/.content-format-audit.json \
+            --apply
+          code=$?
+          set -e
+          cat temp/.content-format-audit.json
+          echo "AUDIT_EXIT_CODE=$code" >> "$GITHUB_ENV"
+
+      - name: Commit safe repairs and audit report
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A -- temp
+          if git diff --cached --quiet; then
+            echo 'No content-level Markdown changes detected.'
+          else
+            git commit -m 'docs(temp): repair content-level Markdown omissions [skip ci]'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+
+      - name: Report safety errors
+        if: env.AUDIT_EXIT_CODE != '0'
+        run: |
+          echo 'Some files were safety-blocked. Successful repairs and the full audit are preserved in temp/.content-format-audit.json.'
