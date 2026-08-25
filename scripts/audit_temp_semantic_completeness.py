@@ -16,10 +16,10 @@ from pathlib import Path
 H = re.compile(r"^(#{1,6})\s+(.+?)\s*$")
 IMAGE = re.compile(r"!\[[^\]]*\]\([^\n)]*\)|!\[[^\]]*\]\[[^\]\n]*\]")
 BOX = re.compile(r"^\s*[□▢▫]\s*.+")
-# A real plain chapter marker may continue with a short title, but a prose
-# phrase such as `第三部分，下部，也就是……` must not be promoted.  Punctuation
-# immediately after the unit is therefore treated as prose, not a chapter.
-CHAPTER_PLAIN = re.compile(r"^\s*(第\s*[一二三四五六七八九十百零〇两0-9]+\s*(?:章|节|课|讲|篇|部分|部|卷|册)(?![，,。；;：:])\s*.{0,90})\s*$")
+# High-risk plain chapter markers are deliberately limited to explicit chapter-
+# like units.  `第X部分/第X部` is common inside prose (e.g. `第三部分，下部...`)
+# and is therefore left to lower-confidence/manual review rather than promoted.
+CHAPTER_PLAIN = re.compile(r"^\s*(第\s*[一二三四五六七八九十百零〇两0-9]+\s*(?:章|节|课|讲|篇|卷|册)(?![，,。；;：:])\s*.{0,90})\s*$")
 QA = re.compile(r"^\s*\d{1,4}\s*[.．、]\s*[^？?\n]{2,110}[？?]\s*$")
 ANSWER = re.compile(r"^\s*答\s*[:：]")
 TOC_LEADER = re.compile(r"(?:\.{4,}|…{3,}|·{4,}|﹒{4,})\s*[.·… ]*\d{1,4}\s*$")
