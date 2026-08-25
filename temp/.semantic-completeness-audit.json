@@ -1,20 +1,19 @@
 {
   "summary": {
     "markdown_files_scanned": 84,
-    "pass": 17,
-    "needs_review_high": 2,
+    "pass": 18,
+    "needs_review_high": 1,
     "needs_review_medium": 65,
-    "review_total": 67,
+    "review_total": 66,
     "image_refs_total": 10604
   },
   "issue_counts": {
-    "explicit_box_heading_residue": 1,
     "giant_ocr_lines": 4,
     "history_processed_but_content_fails": 65,
-    "large_document_without_structure": 2,
+    "large_document_without_structure": 1,
     "low_heading_density": 4,
     "possible_ad_residue": 19,
-    "possible_heading_body_glue": 56
+    "possible_heading_body_glue": 55
   },
   "review": [
     {
@@ -95,13 +94,13 @@
         {
           "code": "history_processed_but_content_fails",
           "severity": "info",
-          "detail": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
+          "detail": "fix(temp): remove high-risk repair whitespace side effects [skip ci]"
         }
       ],
       "history": {
-        "sha": "6d30bcbd706fdbf9a88995171e98c81fb359ec53",
-        "date": "2026-08-25T08:33:14Z",
-        "message": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
+        "sha": "2f7acd24d8eb94abda9328300a5f6266bcf9b1c7",
+        "date": "2026-08-25T08:37:10Z",
+        "message": "fix(temp): remove high-risk repair whitespace side effects [skip ci]"
       }
     },
     {
@@ -124,13 +123,13 @@
         {
           "code": "history_processed_but_content_fails",
           "severity": "info",
-          "detail": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
+          "detail": "fix(temp): remove high-risk repair whitespace side effects [skip ci]"
         }
       ],
       "history": {
-        "sha": "6d30bcbd706fdbf9a88995171e98c81fb359ec53",
-        "date": "2026-08-25T08:33:14Z",
-        "message": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
+        "sha": "2f7acd24d8eb94abda9328300a5f6266bcf9b1c7",
+        "date": "2026-08-25T08:37:10Z",
+        "message": "fix(temp): remove high-risk repair whitespace side effects [skip ci]"
       }
     },
     {
@@ -226,13 +225,13 @@
         {
           "code": "history_processed_but_content_fails",
           "severity": "info",
-          "detail": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
+          "detail": "fix(temp): remove high-risk repair whitespace side effects [skip ci]"
         }
       ],
       "history": {
-        "sha": "6d30bcbd706fdbf9a88995171e98c81fb359ec53",
-        "date": "2026-08-25T08:33:14Z",
-        "message": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
+        "sha": "2f7acd24d8eb94abda9328300a5f6266bcf9b1c7",
+        "date": "2026-08-25T08:37:10Z",
+        "message": "fix(temp): remove high-risk repair whitespace side effects [skip ci]"
       }
     },
     {
@@ -468,13 +467,13 @@
         {
           "code": "history_processed_but_content_fails",
           "severity": "info",
-          "detail": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
+          "detail": "fix(temp): remove high-risk repair whitespace side effects [skip ci]"
         }
       ],
       "history": {
-        "sha": "6d30bcbd706fdbf9a88995171e98c81fb359ec53",
-        "date": "2026-08-25T08:33:14Z",
-        "message": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
+        "sha": "2f7acd24d8eb94abda9328300a5f6266bcf9b1c7",
+        "date": "2026-08-25T08:37:10Z",
+        "message": "fix(temp): remove high-risk repair whitespace side effects [skip ci]"
       }
     },
     {
@@ -729,47 +728,13 @@
         {
           "code": "history_processed_but_content_fails",
           "severity": "info",
-          "detail": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
+          "detail": "fix(temp): remove high-risk repair whitespace side effects [skip ci]"
         }
       ],
       "history": {
-        "sha": "6d30bcbd706fdbf9a88995171e98c81fb359ec53",
-        "date": "2026-08-25T08:33:14Z",
-        "message": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
-      }
-    },
-    {
-      "path": "temp/《人性难题宝典1-9》.md",
-      "status": "needs_review_high",
-      "metrics": {
-        "bytes": 827495,
-        "visible_chars": 275601,
-        "h1": 1,
-        "headings_2_4": 0,
-        "image_refs": 0,
-        "lines": 3101
-      },
-      "issues": [
-        {
-          "code": "large_document_without_structure",
-          "severity": "high",
-          "detail": "visible_chars=275601"
-        },
-        {
-          "code": "explicit_box_heading_residue",
-          "severity": "high",
-          "detail": "count=235, lines=[11, 32, 46, 56, 75, 97, 121, 147, 184, 185, 199, 216, 220, 221, 226, 236, 240, 243, 247, 250]"
-        },
-        {
-          "code": "possible_heading_body_glue",
-          "severity": "medium",
-          "detail": "count_sample=30, stems=[], examples=[{'line': 11, 'prefix': '□如何消除人格障碍所谓人格，心理学上是指', 'body_starter': '一个', 'excerpt': '□如何消除人格障碍所谓人格，心理学上是指一个人在其生活实践中经常表现出来的较稳定的个体心理特征的总和，也称为个性。这些心理特征包括个人的能力、性格、气质、兴趣、爱好、倾向性等等。它们是在生理素质的基础上，通过社会实践逐渐形成和巩固的。它表现出个别差异，人与其他人相区别的特质或个人特征，是一个人在其与环境相互作用过程中，所表现出来的独特的行为模式、思维方式和情'}, {'line': 12, 'prefix': '一般来说', 'body_starter': '如果', 'excerpt': '一般来说，如果一个人的人格与社会环境相适应，就被认为是正常的人格。而有少数人，他们不能适应社会的环境，待人接物、为人处事、情感反应和意志行为与世格格不入或不相协调，其人格偏离常态，即人格障碍。'}, {'line': 20, 'prefix': '3. 有紊乱不定的心理特点有人格障碍的人', 'body_starter': '一般', 'excerpt': '3. 有紊乱不定的心理特点有人格障碍的人一般意识是清醒的，认识能力也保持完整。即在没有意识障碍，没有记忆力和智力活动障碍的情况下，出现情感与行为活动的明显障碍。其情感障碍表现为情绪极不稳定，或对人感情淡薄甚至冷酷无情。无论是被动的或主动的行为变异，如偏执情绪、自我爱恋、被动性侵犯等，都给他人造成极大的困难，甚至带来祸害。'}, {'line': 21, 'prefix': '4. 缺乏自知力有人格障碍的人', 'body_starter': '一般', 'excerpt': '4. 缺乏自知力有人格障碍的人一般能正确处理自己的日常生活和工作，能理解自己的行为后果，也能理解社会对自己行为后果的评价标准。因此，他们不能免除自己的责任能力，但他们缺乏自知力，把自己所遇到的任何困难都归咎于命运或别人的错处，因而他们不能感觉自己有缺点，不知道有什么需要改正，不能从失败中吸取教训。'}, {'line': 28, 'prefix': '1. 生物遗传因素', 'body_starter': '人们', 'excerpt': '1. 生物遗传因素人们常说：“龙生龙，凤生凤，老鼠生来会打洞。”虽然这种说法很难验证，认为人格障碍患者的亲属中人格障碍的发生率与血缘关系成正比，即血缘关系越近，发生率越高。'}, {'line': 35, 'prefix': '2. 坚持自己弗兰克林 1951 年', 'body_starter': '首先', 'excerpt': '2. 坚持自己弗兰克林 1951 年首先发现脱氧核糖核酸的螺旋结构，但因受到“强人”的责难，竞承认这个发现是错误的。后来有两位科学家 1953 年重新发现这一结构，并获诺贝尔奖金。'}, {'line': 37, 'prefix': '3. 敢于反击先是学会发怒。软弱的人多没有', 'body_starter': '当', 'excerpt': '3. 敢于反击先是学会发怒。软弱的人多没有当众发脾气的体验，而习惯于沉默忍受。坚持自己，就要敢于适时发怒，可以逐渐学起。你可以选择经常粗暴对待顾客的售货员为对象，准备好“台词”：“这样对待顾客，太不像话，岂有此理！”说罢，尽管扬长而去。'}, {'line': 38, 'prefix': '4. 直接反驳软弱者', 'body_starter': '对于', 'excerpt': '4. 直接反驳软弱者对于别人的误解与无端的责难总习惯妥协。战胜软弱就要学会直接反驳，不做妥协。'}, {'line': 39, 'prefix': '5. 行为武装心理学也认为改善行为可以改善心理素质。你', 'body_starter': '如果', 'excerpt': '5. 行为武装心理学也认为改善行为可以改善心理素质。你如果软弱，就从行为上这样武装自己：'}, {'line': 43, 'prefix': '⑷声音洪亮', 'body_starter': '如果', 'excerpt': '⑷声音洪亮，如果对方声音超过你，就突然把声音变轻；⑸保持对话时的沉默间隔，不要急不可耐；'}, {'line': 47, 'prefix': '执行分析理论是心理学中', 'body_starter': '一个', 'excerpt': '执行分析理论是心理学中一个重要的理论，这一理论注意到，在我们每个人的身上，父母亲的影子、自己童年时代的影子，以及成年之后的自我同时并存。这种观点涉及到了弗洛伊德的许多不同层次的概念，对处理失败型个性的基本问题是很有效的。这一理论根据人们的“生活脚本”展开分析，失败型的人和成功型的人都基于这样的“生活脚本”来行动和作出反应。你应当认识到，这些不同阶段在你的情感'}, {'line': 48, 'prefix': '1. 双亲的影响“生活脚本”中，父母所留下的部分，包括', 'body_starter': '一个', 'excerpt': '1. 双亲的影响“生活脚本”中，父母所留下的部分，包括一个孩子幼年时起从他父母那里学来的所有章程惯例，它们都未经加工而被当作原始材料记录下来———父母的信仰、告诫都被作为“真理”吸收下来，而不管这些“真理”是否合乎理智。你不可能完全抹去这些早期的烙印，因为它们是你最初从外界获得的信息，并将伴你终生。'}]"
-        }
-      ],
-      "history": {
-        "sha": "15c32861199462958af5287ead1a616dc835ba9a",
-        "date": "2026-08-25T08:17:52Z",
-        "message": "fix(temp): revert unsafe generic boxed heading split [skip ci]"
+        "sha": "2f7acd24d8eb94abda9328300a5f6266bcf9b1c7",
+        "date": "2026-08-25T08:37:10Z",
+        "message": "fix(temp): remove high-risk repair whitespace side effects [skip ci]"
       }
     },
     {
@@ -850,13 +815,13 @@
         {
           "code": "history_processed_but_content_fails",
           "severity": "info",
-          "detail": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
+          "detail": "fix(temp): remove high-risk repair whitespace side effects [skip ci]"
         }
       ],
       "history": {
-        "sha": "6d30bcbd706fdbf9a88995171e98c81fb359ec53",
-        "date": "2026-08-25T08:33:14Z",
-        "message": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
+        "sha": "2f7acd24d8eb94abda9328300a5f6266bcf9b1c7",
+        "date": "2026-08-25T08:37:10Z",
+        "message": "fix(temp): remove high-risk repair whitespace side effects [skip ci]"
       }
     },
     {
@@ -879,13 +844,13 @@
         {
           "code": "history_processed_but_content_fails",
           "severity": "info",
-          "detail": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
+          "detail": "fix(temp): remove high-risk repair whitespace side effects [skip ci]"
         }
       ],
       "history": {
-        "sha": "6d30bcbd706fdbf9a88995171e98c81fb359ec53",
-        "date": "2026-08-25T08:33:14Z",
-        "message": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
+        "sha": "2f7acd24d8eb94abda9328300a5f6266bcf9b1c7",
+        "date": "2026-08-25T08:37:10Z",
+        "message": "fix(temp): remove high-risk repair whitespace side effects [skip ci]"
       }
     },
     {
@@ -908,13 +873,13 @@
         {
           "code": "history_processed_but_content_fails",
           "severity": "info",
-          "detail": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
+          "detail": "fix(temp): remove high-risk repair whitespace side effects [skip ci]"
         }
       ],
       "history": {
-        "sha": "6d30bcbd706fdbf9a88995171e98c81fb359ec53",
-        "date": "2026-08-25T08:33:14Z",
-        "message": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
+        "sha": "2f7acd24d8eb94abda9328300a5f6266bcf9b1c7",
+        "date": "2026-08-25T08:37:10Z",
+        "message": "fix(temp): remove high-risk repair whitespace side effects [skip ci]"
       }
     },
     {
@@ -1053,13 +1018,13 @@
         {
           "code": "history_processed_but_content_fails",
           "severity": "info",
-          "detail": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
+          "detail": "fix(temp): remove high-risk repair whitespace side effects [skip ci]"
         }
       ],
       "history": {
-        "sha": "6d30bcbd706fdbf9a88995171e98c81fb359ec53",
-        "date": "2026-08-25T08:33:14Z",
-        "message": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
+        "sha": "2f7acd24d8eb94abda9328300a5f6266bcf9b1c7",
+        "date": "2026-08-25T08:37:10Z",
+        "message": "fix(temp): remove high-risk repair whitespace side effects [skip ci]"
       }
     },
     {
@@ -1145,13 +1110,13 @@
         {
           "code": "history_processed_but_content_fails",
           "severity": "info",
-          "detail": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
+          "detail": "fix(temp): remove high-risk repair whitespace side effects [skip ci]"
         }
       ],
       "history": {
-        "sha": "6d30bcbd706fdbf9a88995171e98c81fb359ec53",
-        "date": "2026-08-25T08:33:14Z",
-        "message": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
+        "sha": "2f7acd24d8eb94abda9328300a5f6266bcf9b1c7",
+        "date": "2026-08-25T08:37:10Z",
+        "message": "fix(temp): remove high-risk repair whitespace side effects [skip ci]"
       }
     },
     {
@@ -1179,13 +1144,13 @@
         {
           "code": "history_processed_but_content_fails",
           "severity": "info",
-          "detail": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
+          "detail": "fix(temp): remove high-risk repair whitespace side effects [skip ci]"
         }
       ],
       "history": {
-        "sha": "6d30bcbd706fdbf9a88995171e98c81fb359ec53",
-        "date": "2026-08-25T08:33:14Z",
-        "message": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
+        "sha": "2f7acd24d8eb94abda9328300a5f6266bcf9b1c7",
+        "date": "2026-08-25T08:37:10Z",
+        "message": "fix(temp): remove high-risk repair whitespace side effects [skip ci]"
       }
     },
     {
@@ -1237,13 +1202,13 @@
         {
           "code": "history_processed_but_content_fails",
           "severity": "info",
-          "detail": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
+          "detail": "fix(temp): remove high-risk repair whitespace side effects [skip ci]"
         }
       ],
       "history": {
-        "sha": "6d30bcbd706fdbf9a88995171e98c81fb359ec53",
-        "date": "2026-08-25T08:33:14Z",
-        "message": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
+        "sha": "2f7acd24d8eb94abda9328300a5f6266bcf9b1c7",
+        "date": "2026-08-25T08:37:10Z",
+        "message": "fix(temp): remove high-risk repair whitespace side effects [skip ci]"
       }
     },
     {
@@ -1387,13 +1352,13 @@
         {
           "code": "history_processed_but_content_fails",
           "severity": "info",
-          "detail": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
+          "detail": "fix(temp): remove high-risk repair whitespace side effects [skip ci]"
         }
       ],
       "history": {
-        "sha": "6d30bcbd706fdbf9a88995171e98c81fb359ec53",
-        "date": "2026-08-25T08:33:14Z",
-        "message": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
+        "sha": "2f7acd24d8eb94abda9328300a5f6266bcf9b1c7",
+        "date": "2026-08-25T08:37:10Z",
+        "message": "fix(temp): remove high-risk repair whitespace side effects [skip ci]"
       }
     },
     {
@@ -1484,13 +1449,13 @@
         {
           "code": "history_processed_but_content_fails",
           "severity": "info",
-          "detail": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
+          "detail": "fix(temp): remove high-risk repair whitespace side effects [skip ci]"
         }
       ],
       "history": {
-        "sha": "15ccf3613b691bf897399421078513be19a012b1",
-        "date": "2026-08-25T08:36:47Z",
-        "message": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
+        "sha": "2f7acd24d8eb94abda9328300a5f6266bcf9b1c7",
+        "date": "2026-08-25T08:37:10Z",
+        "message": "fix(temp): remove high-risk repair whitespace side effects [skip ci]"
       }
     },
     {
@@ -1605,13 +1570,13 @@
         {
           "code": "history_processed_but_content_fails",
           "severity": "info",
-          "detail": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
+          "detail": "fix(temp): remove high-risk repair whitespace side effects [skip ci]"
         }
       ],
       "history": {
-        "sha": "6d30bcbd706fdbf9a88995171e98c81fb359ec53",
-        "date": "2026-08-25T08:33:14Z",
-        "message": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
+        "sha": "2f7acd24d8eb94abda9328300a5f6266bcf9b1c7",
+        "date": "2026-08-25T08:37:10Z",
+        "message": "fix(temp): remove high-risk repair whitespace side effects [skip ci]"
       }
     },
     {
@@ -1726,13 +1691,13 @@
         {
           "code": "history_processed_but_content_fails",
           "severity": "info",
-          "detail": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
+          "detail": "fix(temp): remove high-risk repair whitespace side effects [skip ci]"
         }
       ],
       "history": {
-        "sha": "6d30bcbd706fdbf9a88995171e98c81fb359ec53",
-        "date": "2026-08-25T08:33:14Z",
-        "message": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
+        "sha": "2f7acd24d8eb94abda9328300a5f6266bcf9b1c7",
+        "date": "2026-08-25T08:37:10Z",
+        "message": "fix(temp): remove high-risk repair whitespace side effects [skip ci]"
       }
     },
     {
@@ -1755,13 +1720,13 @@
         {
           "code": "history_processed_but_content_fails",
           "severity": "info",
-          "detail": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
+          "detail": "fix(temp): remove high-risk repair whitespace side effects [skip ci]"
         }
       ],
       "history": {
-        "sha": "6d30bcbd706fdbf9a88995171e98c81fb359ec53",
-        "date": "2026-08-25T08:33:14Z",
-        "message": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
+        "sha": "2f7acd24d8eb94abda9328300a5f6266bcf9b1c7",
+        "date": "2026-08-25T08:37:10Z",
+        "message": "fix(temp): remove high-risk repair whitespace side effects [skip ci]"
       }
     },
     {
@@ -1876,13 +1841,13 @@
         {
           "code": "history_processed_but_content_fails",
           "severity": "info",
-          "detail": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
+          "detail": "fix(temp): remove high-risk repair whitespace side effects [skip ci]"
         }
       ],
       "history": {
-        "sha": "6d30bcbd706fdbf9a88995171e98c81fb359ec53",
-        "date": "2026-08-25T08:33:14Z",
-        "message": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
+        "sha": "2f7acd24d8eb94abda9328300a5f6266bcf9b1c7",
+        "date": "2026-08-25T08:37:10Z",
+        "message": "fix(temp): remove high-risk repair whitespace side effects [skip ci]"
       }
     },
     {
@@ -1905,13 +1870,13 @@
         {
           "code": "history_processed_but_content_fails",
           "severity": "info",
-          "detail": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
+          "detail": "fix(temp): remove high-risk repair whitespace side effects [skip ci]"
         }
       ],
       "history": {
-        "sha": "6d30bcbd706fdbf9a88995171e98c81fb359ec53",
-        "date": "2026-08-25T08:33:14Z",
-        "message": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
+        "sha": "2f7acd24d8eb94abda9328300a5f6266bcf9b1c7",
+        "date": "2026-08-25T08:37:10Z",
+        "message": "fix(temp): remove high-risk repair whitespace side effects [skip ci]"
       }
     },
     {
@@ -2036,13 +2001,13 @@
         {
           "code": "history_processed_but_content_fails",
           "severity": "info",
-          "detail": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
+          "detail": "fix(temp): remove high-risk repair whitespace side effects [skip ci]"
         }
       ],
       "history": {
-        "sha": "6d30bcbd706fdbf9a88995171e98c81fb359ec53",
-        "date": "2026-08-25T08:33:14Z",
-        "message": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
+        "sha": "2f7acd24d8eb94abda9328300a5f6266bcf9b1c7",
+        "date": "2026-08-25T08:37:10Z",
+        "message": "fix(temp): remove high-risk repair whitespace side effects [skip ci]"
       }
     }
   ]

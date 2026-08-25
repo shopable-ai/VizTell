@@ -1,0 +1,1185 @@
+{
+  "status": "applied",
+  "path": "temp/《人性难题宝典1-9》.md",
+  "reviewed_titles": 235,
+  "headings_restored": 235,
+  "image_refs_preserved": 0,
+  "splits": [
+    {
+      "source_line": 11,
+      "title": "如何消除人格障碍",
+      "body_chars_on_marker_line": 178
+    },
+    {
+      "source_line": 32,
+      "title": "如何克服软弱的性格",
+      "body_chars_on_marker_line": 32
+    },
+    {
+      "source_line": 46,
+      "title": "如何解读成功型与失败型",
+      "body_chars_on_marker_line": 162
+    },
+    {
+      "source_line": 56,
+      "title": "如何避免“不成功人生”的 6 大错误",
+      "body_chars_on_marker_line": 163
+    },
+    {
+      "source_line": 75,
+      "title": "为什么人生本无“注定”的说法",
+      "body_chars_on_marker_line": 69
+    },
+    {
+      "source_line": 97,
+      "title": "如何从“小”字到“大”字",
+      "body_chars_on_marker_line": 39
+    },
+    {
+      "source_line": 121,
+      "title": "如何掌握处理困难的诀窍",
+      "body_chars_on_marker_line": 107
+    },
+    {
+      "source_line": 147,
+      "title": "如何掌握突破困境的方法",
+      "body_chars_on_marker_line": 29
+    },
+    {
+      "source_line": 184,
+      "title": "如何对自己的自卑心理进行分析",
+      "body_chars_on_marker_line": 461
+    },
+    {
+      "source_line": 185,
+      "title": "为什么不要活在别人的价值观里",
+      "body_chars_on_marker_line": 163
+    },
+    {
+      "source_line": 199,
+      "title": "如何培养助于成功的精神特质和习惯",
+      "body_chars_on_marker_line": 26
+    },
+    {
+      "source_line": 216,
+      "title": "如何正确认识你自己",
+      "body_chars_on_marker_line": 274
+    },
+    {
+      "source_line": 220,
+      "title": "如何找到自己的正确位置",
+      "body_chars_on_marker_line": 368
+    },
+    {
+      "source_line": 221,
+      "title": "如何走自己的路让别人去说吧",
+      "body_chars_on_marker_line": 79
+    },
+    {
+      "source_line": 226,
+      "title": "如何学会推销自己",
+      "body_chars_on_marker_line": 158
+    },
+    {
+      "source_line": 236,
+      "title": "如何主动性地创造生活",
+      "body_chars_on_marker_line": 207
+    },
+    {
+      "source_line": 240,
+      "title": "如何宠辱不惊把握自我",
+      "body_chars_on_marker_line": 133
+    },
+    {
+      "source_line": 243,
+      "title": "如何别让感情蒙蔽理智",
+      "body_chars_on_marker_line": 235
+    },
+    {
+      "source_line": 247,
+      "title": "如何保持冷静客观态度",
+      "body_chars_on_marker_line": 190
+    },
+    {
+      "source_line": 250,
+      "title": "如何开诚布公信任别人",
+      "body_chars_on_marker_line": 446
+    },
+    {
+      "source_line": 251,
+      "title": "如何开阔心胸自我解脱",
+      "body_chars_on_marker_line": 177
+    },
+    {
+      "source_line": 253,
+      "title": "如何树立正确的竞争观念",
+      "body_chars_on_marker_line": 192
+    },
+    {
+      "source_line": 257,
+      "title": "为什么自我期望值不要过高",
+      "body_chars_on_marker_line": 241
+    },
+    {
+      "source_line": 259,
+      "title": "如何自我控制保持心理上的平衡",
+      "body_chars_on_marker_line": 483
+    },
+    {
+      "source_line": 261,
+      "title": "如何少追求物质多追求理想",
+      "body_chars_on_marker_line": 111
+    },
+    {
+      "source_line": 272,
+      "title": "为什么不要嫉妒别人的成功",
+      "body_chars_on_marker_line": 47
+    },
+    {
+      "source_line": 297,
+      "title": "如何同命运决一死战",
+      "body_chars_on_marker_line": 421
+    },
+    {
+      "source_line": 300,
+      "title": "如何掌握自我尊重法",
+      "body_chars_on_marker_line": 159
+    },
+    {
+      "source_line": 304,
+      "title": "如何树立“我为人人，人人为我”的观念",
+      "body_chars_on_marker_line": 106
+    },
+    {
+      "source_line": 308,
+      "title": "如何淡泊名利不求奢华",
+      "body_chars_on_marker_line": 128
+    },
+    {
+      "source_line": 314,
+      "title": "为什么要知足者常乐",
+      "body_chars_on_marker_line": 25
+    },
+    {
+      "source_line": 318,
+      "title": "如何运用理性克制贪欲",
+      "body_chars_on_marker_line": 115
+    },
+    {
+      "source_line": 324,
+      "title": "战胜人性弱点有哪 5 大绝招",
+      "body_chars_on_marker_line": 35
+    },
+    {
+      "source_line": 339,
+      "title": "如何克服自身弱点的 12 个“不要”",
+      "body_chars_on_marker_line": 0
+    },
+    {
+      "source_line": 407,
+      "title": "如何将弱点转化为优点",
+      "body_chars_on_marker_line": 67
+    },
+    {
+      "source_line": 435,
+      "title": "如何掌握战胜自卑的 5 大法宝",
+      "body_chars_on_marker_line": 85
+    },
+    {
+      "source_line": 442,
+      "title": "如何迈向成功的心理修备",
+      "body_chars_on_marker_line": 29
+    },
+    {
+      "source_line": 451,
+      "title": "如何培养成就大业者的心理品质",
+      "body_chars_on_marker_line": 80
+    },
+    {
+      "source_line": 478,
+      "title": "如何不打没把握的人生之仗",
+      "body_chars_on_marker_line": 93
+    },
+    {
+      "source_line": 493,
+      "title": "如何了解自己和了解别人",
+      "body_chars_on_marker_line": 26
+    },
+    {
+      "source_line": 535,
+      "title": "如何巧妙掌握“控制法”",
+      "body_chars_on_marker_line": 0
+    },
+    {
+      "source_line": 549,
+      "title": "如何留意批评",
+      "body_chars_on_marker_line": 96
+    },
+    {
+      "source_line": 556,
+      "title": "如何学会与别人合作",
+      "body_chars_on_marker_line": 74
+    },
+    {
+      "source_line": 568,
+      "title": "如何防止与人争斗",
+      "body_chars_on_marker_line": 51
+    },
+    {
+      "source_line": 590,
+      "title": "为什么君子之交淡如水",
+      "body_chars_on_marker_line": 108
+    },
+    {
+      "source_line": 597,
+      "title": "哪些形象最不受欺侮",
+      "body_chars_on_marker_line": 60
+    },
+    {
+      "source_line": 605,
+      "title": "为什么一见如故要适度远之",
+      "body_chars_on_marker_line": 28
+    },
+    {
+      "source_line": 617,
+      "title": "为什么借朋友钱不如给钱",
+      "body_chars_on_marker_line": 32
+    },
+    {
+      "source_line": 627,
+      "title": "为什么友情突然升温要小心",
+      "body_chars_on_marker_line": 62
+    },
+    {
+      "source_line": 635,
+      "title": "如何用一缕温情征服人心",
+      "body_chars_on_marker_line": 76
+    },
+    {
+      "source_line": 651,
+      "title": "如何用委婉拒绝征服人心",
+      "body_chars_on_marker_line": 62
+    },
+    {
+      "source_line": 667,
+      "title": "如何征服猛烈型的人",
+      "body_chars_on_marker_line": 154
+    },
+    {
+      "source_line": 672,
+      "title": "如何征服情绪型的人",
+      "body_chars_on_marker_line": 134
+    },
+    {
+      "source_line": 678,
+      "title": "如何征服慎重型的人",
+      "body_chars_on_marker_line": 83
+    },
+    {
+      "source_line": 686,
+      "title": "如何征服浪漫型的人",
+      "body_chars_on_marker_line": 79
+    },
+    {
+      "source_line": 692,
+      "title": "如何征服现实型的人",
+      "body_chars_on_marker_line": 90
+    },
+    {
+      "source_line": 699,
+      "title": "如何征服乐天派的人",
+      "body_chars_on_marker_line": 63
+    },
+    {
+      "source_line": 702,
+      "title": "如何征服无魄力型的人",
+      "body_chars_on_marker_line": 42
+    },
+    {
+      "source_line": 707,
+      "title": "如何征服形式主义的人",
+      "body_chars_on_marker_line": 79
+    },
+    {
+      "source_line": 712,
+      "title": "如何征服口密腹剑的人",
+      "body_chars_on_marker_line": 112
+    },
+    {
+      "source_line": 718,
+      "title": "如何征服吹牛拍马的人",
+      "body_chars_on_marker_line": 174
+    },
+    {
+      "source_line": 721,
+      "title": "如何征服尖酸刻薄的人",
+      "body_chars_on_marker_line": 68
+    },
+    {
+      "source_line": 732,
+      "title": "如何征服挑拨离间的人",
+      "body_chars_on_marker_line": 202
+    },
+    {
+      "source_line": 733,
+      "title": "如何征服笑里藏刀的人",
+      "body_chars_on_marker_line": 54
+    },
+    {
+      "source_line": 737,
+      "title": "如何征服翻脸无情的人",
+      "body_chars_on_marker_line": 74
+    },
+    {
+      "source_line": 742,
+      "title": "如何征服戴着面具的“好人”",
+      "body_chars_on_marker_line": 0
+    },
+    {
+      "source_line": 752,
+      "title": "为什么将心比心服人心",
+      "body_chars_on_marker_line": 110
+    },
+    {
+      "source_line": 759,
+      "title": "如何制服傲慢对手 3 法",
+      "body_chars_on_marker_line": 25
+    },
+    {
+      "source_line": 767,
+      "title": "如何掌握对付坏人的 4 大杀手锏",
+      "body_chars_on_marker_line": 49
+    },
+    {
+      "source_line": 788,
+      "title": "为什么认错使人伟大",
+      "body_chars_on_marker_line": 91
+    },
+    {
+      "source_line": 815,
+      "title": "如何及时摆脱尴尬境地",
+      "body_chars_on_marker_line": 0
+    },
+    {
+      "source_line": 834,
+      "title": "在顾客面前被上司指责时该怎么办",
+      "body_chars_on_marker_line": 78
+    },
+    {
+      "source_line": 848,
+      "title": "如何平静对付冷遇",
+      "body_chars_on_marker_line": 78
+    },
+    {
+      "source_line": 871,
+      "title": "如何轻松化解言语失误",
+      "body_chars_on_marker_line": 90
+    },
+    {
+      "source_line": 889,
+      "title": "错怪了别人怎么办",
+      "body_chars_on_marker_line": 39
+    },
+    {
+      "source_line": 896,
+      "title": "如何诱使对方主动说出难于启齿的事情",
+      "body_chars_on_marker_line": 110
+    },
+    {
+      "source_line": 900,
+      "title": "发现别人嘲讽你时该怎么办",
+      "body_chars_on_marker_line": 18
+    },
+    {
+      "source_line": 910,
+      "title": "为什么逢人只说三分话",
+      "body_chars_on_marker_line": 56
+    },
+    {
+      "source_line": 914,
+      "title": "如何多说对方爱听的话",
+      "body_chars_on_marker_line": 98
+    },
+    {
+      "source_line": 924,
+      "title": "如何说些鼓舞人心的话",
+      "body_chars_on_marker_line": 197
+    },
+    {
+      "source_line": 930,
+      "title": "如何寻找话题激发共同兴奋点",
+      "body_chars_on_marker_line": 53
+    },
+    {
+      "source_line": 943,
+      "title": "如何看对方的性格说话",
+      "body_chars_on_marker_line": 300
+    },
+    {
+      "source_line": 964,
+      "title": "为什么话说的不要太绝",
+      "body_chars_on_marker_line": 147
+    },
+    {
+      "source_line": 979,
+      "title": "如何掌握开玩笑的“规则”",
+      "body_chars_on_marker_line": 0
+    },
+    {
+      "source_line": 989,
+      "title": "为什么要有能伸能屈的本领",
+      "body_chars_on_marker_line": 146
+    },
+    {
+      "source_line": 1026,
+      "title": "为什么不属于自己的切莫强求",
+      "body_chars_on_marker_line": 112
+    },
+    {
+      "source_line": 1030,
+      "title": "如何克服因失利而实施报复",
+      "body_chars_on_marker_line": 143
+    },
+    {
+      "source_line": 1041,
+      "title": "如何在争论时尽量保持冷静",
+      "body_chars_on_marker_line": 54
+    },
+    {
+      "source_line": 1051,
+      "title": "如何学会不怕挨批评",
+      "body_chars_on_marker_line": 122
+    },
+    {
+      "source_line": 1059,
+      "title": "如何消除误会",
+      "body_chars_on_marker_line": 30
+    },
+    {
+      "source_line": 1094,
+      "title": "如何主动“拥抱”机会",
+      "body_chars_on_marker_line": 40
+    },
+    {
+      "source_line": 1127,
+      "title": "如何做事半功倍的事",
+      "body_chars_on_marker_line": 61
+    },
+    {
+      "source_line": 1138,
+      "title": "如何掌握办事“二分法”：计划＋习惯",
+      "body_chars_on_marker_line": 60
+    },
+    {
+      "source_line": 1146,
+      "title": "如何找到“第一位”",
+      "body_chars_on_marker_line": 0
+    },
+    {
+      "source_line": 1173,
+      "title": "如何与压力和平共处",
+      "body_chars_on_marker_line": 78
+    },
+    {
+      "source_line": 1190,
+      "title": "为什么冥想可缓解压力",
+      "body_chars_on_marker_line": 56
+    },
+    {
+      "source_line": 1206,
+      "title": "为什么在你痛苦时流泪也能缓解压力",
+      "body_chars_on_marker_line": 87
+    },
+    {
+      "source_line": 1211,
+      "title": "为什么体育锻炼是减轻压力的灵丹妙药",
+      "body_chars_on_marker_line": 275
+    },
+    {
+      "source_line": 1222,
+      "title": "逐步适应处理人生的过度压力",
+      "body_chars_on_marker_line": 38
+    },
+    {
+      "source_line": 1229,
+      "title": "为什么溜之大吉能处理人生过度压力",
+      "body_chars_on_marker_line": 360
+    },
+    {
+      "source_line": 1232,
+      "title": "为什么处惊不变是处理人生过度的压力",
+      "body_chars_on_marker_line": 121
+    },
+    {
+      "source_line": 1237,
+      "title": "为什么忘却悲痛是处理人生过度的压力",
+      "body_chars_on_marker_line": 202
+    },
+    {
+      "source_line": 1249,
+      "title": "为什么面对逆境要采取积极态度",
+      "body_chars_on_marker_line": 51
+    },
+    {
+      "source_line": 1259,
+      "title": "为什么逆境会变成好运的台阶",
+      "body_chars_on_marker_line": 71
+    },
+    {
+      "source_line": 1267,
+      "title": "如何面对压力冲破自我樊篱",
+      "body_chars_on_marker_line": 24
+    },
+    {
+      "source_line": 1279,
+      "title": "如何面对压力摆脱墨守成规",
+      "body_chars_on_marker_line": 309
+    },
+    {
+      "source_line": 1290,
+      "title": "如何面对压力不要自我否定",
+      "body_chars_on_marker_line": 64
+    },
+    {
+      "source_line": 1297,
+      "title": "摆脱精神压力有哪些方法",
+      "body_chars_on_marker_line": 189
+    },
+    {
+      "source_line": 1302,
+      "title": "如何疏解工作压力",
+      "body_chars_on_marker_line": 198
+    },
+    {
+      "source_line": 1313,
+      "title": "如何借助人际关系降压",
+      "body_chars_on_marker_line": 224
+    },
+    {
+      "source_line": 1318,
+      "title": "如何以营养降压",
+      "body_chars_on_marker_line": 91
+    },
+    {
+      "source_line": 1333,
+      "title": "如何以运动降压",
+      "body_chars_on_marker_line": 167
+    },
+    {
+      "source_line": 1340,
+      "title": "如何寻找医疗渠道降压",
+      "body_chars_on_marker_line": 109
+    },
+    {
+      "source_line": 1352,
+      "title": "如何疏解压力有哪些好方法",
+      "body_chars_on_marker_line": 209
+    },
+    {
+      "source_line": 1364,
+      "title": "如何建立健康积极的人生观",
+      "body_chars_on_marker_line": 164
+    },
+    {
+      "source_line": 1390,
+      "title": "如何博得异性的喜爱",
+      "body_chars_on_marker_line": 31
+    },
+    {
+      "source_line": 1403,
+      "title": "如何掌握追求爱情的好时机",
+      "body_chars_on_marker_line": 45
+    },
+    {
+      "source_line": 1414,
+      "title": "如何借题发挥地追求恋人",
+      "body_chars_on_marker_line": 190
+    },
+    {
+      "source_line": 1419,
+      "title": "如何单刀直入地追求恋人",
+      "body_chars_on_marker_line": 70
+    },
+    {
+      "source_line": 1424,
+      "title": "初恋有何对策",
+      "body_chars_on_marker_line": 0
+    },
+    {
+      "source_line": 1451,
+      "title": "令女人心里暖洋洋有哪些妙法",
+      "body_chars_on_marker_line": 62
+    },
+    {
+      "source_line": 1457,
+      "title": "如何适度做爱情的“小动作”",
+      "body_chars_on_marker_line": 0
+    },
+    {
+      "source_line": 1462,
+      "title": "如何变单相思为双相思",
+      "body_chars_on_marker_line": 79
+    },
+    {
+      "source_line": 1485,
+      "title": "如何使爱情没有第三者",
+      "body_chars_on_marker_line": 41
+    },
+    {
+      "source_line": 1503,
+      "title": "理想妻子有哪 10 条标准",
+      "body_chars_on_marker_line": 0
+    },
+    {
+      "source_line": 1525,
+      "title": "坏妻子有哪些表现",
+      "body_chars_on_marker_line": 0
+    },
+    {
+      "source_line": 1567,
+      "title": "理想丈夫有哪些标准",
+      "body_chars_on_marker_line": 0
+    },
+    {
+      "source_line": 1589,
+      "title": "坏丈夫有哪些表现",
+      "body_chars_on_marker_line": 0
+    },
+    {
+      "source_line": 1611,
+      "title": "如何掌握失恋兵法",
+      "body_chars_on_marker_line": 0
+    },
+    {
+      "source_line": 1643,
+      "title": "如何掌握最佳的婚育年龄",
+      "body_chars_on_marker_line": 42
+    },
+    {
+      "source_line": 1647,
+      "title": "如何推算最佳受孕时间",
+      "body_chars_on_marker_line": 401
+    },
+    {
+      "source_line": 1648,
+      "title": "什么决定胎儿的性别",
+      "body_chars_on_marker_line": 60
+    },
+    {
+      "source_line": 1653,
+      "title": "如何预知生男还是生女",
+      "body_chars_on_marker_line": 92
+    },
+    {
+      "source_line": 1656,
+      "title": "如何做一个好丈夫的方法",
+      "body_chars_on_marker_line": 41
+    },
+    {
+      "source_line": 1663,
+      "title": "如何做一个好妻子的方法",
+      "body_chars_on_marker_line": 65
+    },
+    {
+      "source_line": 1672,
+      "title": "为什么夫妻间要用甜言蜜语",
+      "body_chars_on_marker_line": 106
+    },
+    {
+      "source_line": 1679,
+      "title": "如何快乐度过成家立业后的日子",
+      "body_chars_on_marker_line": 67
+    },
+    {
+      "source_line": 1696,
+      "title": "为什么千万不要后院“起火”",
+      "body_chars_on_marker_line": 0
+    },
+    {
+      "source_line": 1729,
+      "title": "如何学会改善夫妻关系",
+      "body_chars_on_marker_line": 43
+    },
+    {
+      "source_line": 1762,
+      "title": "如何增添婚姻生活的情趣",
+      "body_chars_on_marker_line": 0
+    },
+    {
+      "source_line": 1767,
+      "title": "如何让配偶保持好心情",
+      "body_chars_on_marker_line": 93
+    },
+    {
+      "source_line": 1775,
+      "title": "为什么家和才能万事兴",
+      "body_chars_on_marker_line": 79
+    },
+    {
+      "source_line": 1783,
+      "title": "为什么家庭是爱的调色盘",
+      "body_chars_on_marker_line": 316
+    },
+    {
+      "source_line": 1790,
+      "title": "为什么情感需要精心培养",
+      "body_chars_on_marker_line": 154
+    },
+    {
+      "source_line": 1815,
+      "title": "有了孩子后出现家庭危机怎么办",
+      "body_chars_on_marker_line": 41
+    },
+    {
+      "source_line": 1856,
+      "title": "如何起诉和离婚",
+      "body_chars_on_marker_line": 34
+    },
+    {
+      "source_line": 1895,
+      "title": "如何掌握家庭问题的处理方法",
+      "body_chars_on_marker_line": 41
+    },
+    {
+      "source_line": 1898,
+      "title": "为什么小事是组合家人感情的细胞",
+      "body_chars_on_marker_line": 193
+    },
+    {
+      "source_line": 1933,
+      "title": "为什么积极赞赏会使相互间再多一点爱",
+      "body_chars_on_marker_line": 94
+    },
+    {
+      "source_line": 1942,
+      "title": "如何掌握夫妻间问题的处理方法",
+      "body_chars_on_marker_line": 64
+    },
+    {
+      "source_line": 1944,
+      "title": "如何掌握对方嗜赌的处理方法",
+      "body_chars_on_marker_line": 141
+    },
+    {
+      "source_line": 1949,
+      "title": "如何掌握对方有怪癖的处理方法",
+      "body_chars_on_marker_line": 65
+    },
+    {
+      "source_line": 1965,
+      "title": "如何掌握夫妻吵架的处理方法",
+      "body_chars_on_marker_line": 62
+    },
+    {
+      "source_line": 1977,
+      "title": "如何掌握分家难分的处理办法",
+      "body_chars_on_marker_line": 68
+    },
+    {
+      "source_line": 1987,
+      "title": "如何掌握发生遗产纠纷的处理办法",
+      "body_chars_on_marker_line": 10
+    },
+    {
+      "source_line": 1994,
+      "title": "如何掌握婆媳间问题的处理方法",
+      "body_chars_on_marker_line": 117
+    },
+    {
+      "source_line": 2001,
+      "title": "假如你是婆婆如何处理好婆媳关系",
+      "body_chars_on_marker_line": 217
+    },
+    {
+      "source_line": 2017,
+      "title": "假如你是媳妇如何处理好婆媳关系",
+      "body_chars_on_marker_line": 180
+    },
+    {
+      "source_line": 2059,
+      "title": "如何做好孩子的人生规划",
+      "body_chars_on_marker_line": 55
+    },
+    {
+      "source_line": 2098,
+      "title": "如何教给孩子竞争的意识",
+      "body_chars_on_marker_line": 56
+    },
+    {
+      "source_line": 2127,
+      "title": "如何让孩子自己独立自主",
+      "body_chars_on_marker_line": 58
+    },
+    {
+      "source_line": 2161,
+      "title": "如何增强孩子的记忆力",
+      "body_chars_on_marker_line": 20
+    },
+    {
+      "source_line": 2178,
+      "title": "如何重视孩子的想像力",
+      "body_chars_on_marker_line": 25
+    },
+    {
+      "source_line": 2197,
+      "title": "如何提高孩子的思维能力",
+      "body_chars_on_marker_line": 102
+    },
+    {
+      "source_line": 2204,
+      "title": "如何激发孩子的学习智慧",
+      "body_chars_on_marker_line": 48
+    },
+    {
+      "source_line": 2219,
+      "title": "为什么动手动脑对于学习同样重要",
+      "body_chars_on_marker_line": 41
+    },
+    {
+      "source_line": 2246,
+      "title": "如何实现学习与实践的结合",
+      "body_chars_on_marker_line": 254
+    },
+    {
+      "source_line": 2256,
+      "title": "如何对孩子的学习智慧给予肯定",
+      "body_chars_on_marker_line": 105
+    },
+    {
+      "source_line": 2269,
+      "title": "如何锻炼孩子的毅力",
+      "body_chars_on_marker_line": 82
+    },
+    {
+      "source_line": 2274,
+      "title": "为什么吃苦受难是孩子的必修课",
+      "body_chars_on_marker_line": 115
+    },
+    {
+      "source_line": 2281,
+      "title": "如何增强孩子的承受力",
+      "body_chars_on_marker_line": 25
+    },
+    {
+      "source_line": 2288,
+      "title": "为什么对孩子不可溺爱与失爱",
+      "body_chars_on_marker_line": 70
+    },
+    {
+      "source_line": 2294,
+      "title": "为什么尽量让孩子学会自理",
+      "body_chars_on_marker_line": 38
+    },
+    {
+      "source_line": 2309,
+      "title": "如何培养孩子专心致志的习惯",
+      "body_chars_on_marker_line": 152
+    },
+    {
+      "source_line": 2312,
+      "title": "如何培养孩子敏捷灵巧的习惯",
+      "body_chars_on_marker_line": 75
+    },
+    {
+      "source_line": 2316,
+      "title": "如何培养孩子精益求精的习惯",
+      "body_chars_on_marker_line": 48
+    },
+    {
+      "source_line": 2322,
+      "title": "如何让孩子学会合作",
+      "body_chars_on_marker_line": 397
+    },
+    {
+      "source_line": 2327,
+      "title": "为什么孩子交友不可不慎",
+      "body_chars_on_marker_line": 81
+    },
+    {
+      "source_line": 2334,
+      "title": "为什么在父母的眼里孩子不论长多大都是孩子",
+      "body_chars_on_marker_line": 100
+    },
+    {
+      "source_line": 2357,
+      "title": "如何定位打工族",
+      "body_chars_on_marker_line": 41
+    },
+    {
+      "source_line": 2379,
+      "title": "如何自己做老板",
+      "body_chars_on_marker_line": 40
+    },
+    {
+      "source_line": 2385,
+      "title": "如何选择创业方向",
+      "body_chars_on_marker_line": 150
+    },
+    {
+      "source_line": 2396,
+      "title": "为什么创业前必须清楚 3 个问题",
+      "body_chars_on_marker_line": 65
+    },
+    {
+      "source_line": 2425,
+      "title": "如何掌握开创事业的基本步骤",
+      "body_chars_on_marker_line": 0
+    },
+    {
+      "source_line": 2441,
+      "title": "什么是经营者有利可图的买卖",
+      "body_chars_on_marker_line": 0
+    },
+    {
+      "source_line": 2464,
+      "title": "如何利用人们爱方便的心理赚钱",
+      "body_chars_on_marker_line": 37
+    },
+    {
+      "source_line": 2473,
+      "title": "如何利用父母“望子成龙”的心理赚钱",
+      "body_chars_on_marker_line": 184
+    },
+    {
+      "source_line": 2475,
+      "title": "为什么经营高档商品或廉价商品都能赚钱",
+      "body_chars_on_marker_line": 111
+    },
+    {
+      "source_line": 2479,
+      "title": "为什么受女性欢迎的产品一定畅销",
+      "body_chars_on_marker_line": 41
+    },
+    {
+      "source_line": 2484,
+      "title": "如何利用众人感到困扰的事情做生意",
+      "body_chars_on_marker_line": 55
+    },
+    {
+      "source_line": 2493,
+      "title": "如何为公司招兵买马",
+      "body_chars_on_marker_line": 24
+    },
+    {
+      "source_line": 2512,
+      "title": "如何学会借别人的钱发财",
+      "body_chars_on_marker_line": 132
+    },
+    {
+      "source_line": 2533,
+      "title": "如何寻找创业搭档",
+      "body_chars_on_marker_line": 147
+    },
+    {
+      "source_line": 2550,
+      "title": "如何协调合作获取成功",
+      "body_chars_on_marker_line": 276
+    },
+    {
+      "source_line": 2570,
+      "title": "经营者为什么要追求最大的利润",
+      "body_chars_on_marker_line": 33
+    },
+    {
+      "source_line": 2589,
+      "title": "怎样与爱挑剔的领导相处",
+      "body_chars_on_marker_line": 52
+    },
+    {
+      "source_line": 2598,
+      "title": "怎样与顽劣贪婪的上司相处",
+      "body_chars_on_marker_line": 60
+    },
+    {
+      "source_line": 2603,
+      "title": "怎样与自私的领导相处",
+      "body_chars_on_marker_line": 83
+    },
+    {
+      "source_line": 2609,
+      "title": "怎样与阴险的上司相处",
+      "body_chars_on_marker_line": 168
+    },
+    {
+      "source_line": 2610,
+      "title": "怎样与傲慢的领导相处",
+      "body_chars_on_marker_line": 67
+    },
+    {
+      "source_line": 2612,
+      "title": "如何防止同事小人",
+      "body_chars_on_marker_line": 176
+    },
+    {
+      "source_line": 2631,
+      "title": "如何学会与有棱角的同事打交道",
+      "body_chars_on_marker_line": 62
+    },
+    {
+      "source_line": 2634,
+      "title": "如何对付各种打小报告的同事",
+      "body_chars_on_marker_line": 51
+    },
+    {
+      "source_line": 2655,
+      "title": "如何应付排挤你的同事",
+      "body_chars_on_marker_line": 91
+    },
+    {
+      "source_line": 2666,
+      "title": "如何妥善处理同事和你争功劳",
+      "body_chars_on_marker_line": 89
+    },
+    {
+      "source_line": 2676,
+      "title": "如何对付爱唠叨的下属",
+      "body_chars_on_marker_line": 67
+    },
+    {
+      "source_line": 2684,
+      "title": "如何对付自作聪明的下属",
+      "body_chars_on_marker_line": 273
+    },
+    {
+      "source_line": 2686,
+      "title": "如何对付自私自利的下属",
+      "body_chars_on_marker_line": 16
+    },
+    {
+      "source_line": 2690,
+      "title": "如何对付阴险狡诈的下属",
+      "body_chars_on_marker_line": 92
+    },
+    {
+      "source_line": 2700,
+      "title": "如何防止性骚扰",
+      "body_chars_on_marker_line": 80
+    },
+    {
+      "source_line": 2717,
+      "title": "如何防止朋友中的小人",
+      "body_chars_on_marker_line": 20
+    },
+    {
+      "source_line": 2733,
+      "title": "如何防止生意场中的小人",
+      "body_chars_on_marker_line": 161
+    },
+    {
+      "source_line": 2748,
+      "title": "如何防止情场小人",
+      "body_chars_on_marker_line": 188
+    },
+    {
+      "source_line": 2750,
+      "title": "如何用适当的理由拒绝男友的性要求",
+      "body_chars_on_marker_line": 56
+    },
+    {
+      "source_line": 2755,
+      "title": "如何用超负荷条件拒绝性要求",
+      "body_chars_on_marker_line": 32
+    },
+    {
+      "source_line": 2762,
+      "title": "为什么用诚恳的态度拒绝男友的性要求",
+      "body_chars_on_marker_line": 90
+    },
+    {
+      "source_line": 2798,
+      "title": "如何从失败中摸索事业的目标",
+      "body_chars_on_marker_line": 74
+    },
+    {
+      "source_line": 2803,
+      "title": "如何挣脱失败",
+      "body_chars_on_marker_line": 100
+    },
+    {
+      "source_line": 2814,
+      "title": "如何打败心理上的 7 个敌人",
+      "body_chars_on_marker_line": 0
+    },
+    {
+      "source_line": 2830,
+      "title": "如何不要为失败寻找借口",
+      "body_chars_on_marker_line": 149
+    },
+    {
+      "source_line": 2843,
+      "title": "为什么失败的经验越丰富而成功的几率越大",
+      "body_chars_on_marker_line": 38
+    },
+    {
+      "source_line": 2859,
+      "title": "为什么失败是对一个人人格的试验",
+      "body_chars_on_marker_line": 79
+    },
+    {
+      "source_line": 2867,
+      "title": "为什么苦难往往是经过化妆了的幸福",
+      "body_chars_on_marker_line": 25
+    },
+    {
+      "source_line": 2878,
+      "title": "为什么成功属于打不垮的人",
+      "body_chars_on_marker_line": 73
+    },
+    {
+      "source_line": 2918,
+      "title": "为什么跌倒了要勇敢地站起来",
+      "body_chars_on_marker_line": 70
+    },
+    {
+      "source_line": 2928,
+      "title": "为什么多灾多难是一笔珍贵的财富",
+      "body_chars_on_marker_line": 105
+    },
+    {
+      "source_line": 2936,
+      "title": "如何钻研自己的领域",
+      "body_chars_on_marker_line": 125
+    },
+    {
+      "source_line": 2959,
+      "title": "如何激发人本来的潜能",
+      "body_chars_on_marker_line": 70
+    },
+    {
+      "source_line": 2977,
+      "title": "如何打好内心竞赛",
+      "body_chars_on_marker_line": 82
+    },
+    {
+      "source_line": 2996,
+      "title": "如何培养永不言败的心理",
+      "body_chars_on_marker_line": 34
+    },
+    {
+      "source_line": 3018,
+      "title": "为什么面临绝路心里要喊“前进，前进！”",
+      "body_chars_on_marker_line": 0
+    },
+    {
+      "source_line": 3040,
+      "title": "如何在逆境中点燃追求的热情",
+      "body_chars_on_marker_line": 129
+    },
+    {
+      "source_line": 3054,
+      "title": "如何东山再起",
+      "body_chars_on_marker_line": 98
+    },
+    {
+      "source_line": 3064,
+      "title": "如何重新登录成功",
+      "body_chars_on_marker_line": 33
+    },
+    {
+      "source_line": 3073,
+      "title": "如何掌握通向辉煌人生必备的 6 种能力",
+      "body_chars_on_marker_line": 0
+    }
+  ],
+  "errors": []
+}
