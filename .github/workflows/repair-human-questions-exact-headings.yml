@@ -1,0 +1,62 @@
+name: Repair Human Questions Exact Headings
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/repair-human-questions-exact-headings.yml'
+      - 'scripts/repair_human_questions_exact_headings.py'
+  workflow_dispatch:
+
+concurrency:
+  group: markdown-temp-repair-main
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  repair:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Rebase to latest main
+        run: |
+          git fetch origin main
+          git rebase origin/main
+
+      - name: Restore 235 reviewed boxed headings exactly
+        run: |
+          python scripts/repair_human_questions_exact_headings.py
+          cat temp/.human-questions-exact-heading-repair.json
+
+      - name: Refresh semantic audits
+        run: |
+          python scripts/audit_temp_semantic_completeness.py \
+            --root temp \
+            --report temp/.semantic-completeness-audit.json
+          python scripts/extract_high_risk_markdown_contexts.py
+
+      - name: Commit repaired book and reports
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- \
+            'temp/《人性难题宝典1-9》.md' \
+            temp/.human-questions-exact-heading-repair.json \
+            temp/.semantic-completeness-audit.json \
+            temp/.semantic-high-risk-contexts.json
+          if git diff --cached --quiet; then
+            echo 'No exact-heading changes detected.'
+          else
+            git commit -m 'docs(temp): restore 235 reviewed human-question headings [skip ci]'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
