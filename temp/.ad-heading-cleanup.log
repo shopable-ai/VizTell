@@ -1,3 +1,4 @@
+compile exit code: 0
 {
   "prompt_strengthened": false,
   "changed_files": [],
@@ -610,3 +611,4 @@
     "errors": 0
   }
 }
+cleanup exit code: 0
