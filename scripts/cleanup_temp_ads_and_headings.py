@@ -26,7 +26,6 @@ CRED = r"[A-Za-z0-9][A-Za-z0-9_%\-. ]{2,22}"
 WX = r"(?:微\s*信|威\s*信|V\s*信|V\s*X|VX|weixin|wechat)"
 ADD_AUTHOR = r"(?:可\s*)?(?:添\s*加|加|联\s*系|扫\s*码\s*添\s*加)\s*(?:本\s*书\s*)?(?:作\s*者|客\s*服|老\s*师|讲\s*师|助\s*理|小\s*编|Mona\s*老\s*师)?\s*"
 
-# Exact recurring watermark/promo token glued into正文 in some books.
 GLUED_PREFIX = re.compile(
     rf"(?i)(?:更\s*多\s*精\s*品\s*(?:课\s*程|资\s*料|资\s*源|电\s*子\s*书))\s*"
     rf"(?:加|添\s*加)\s*{WX}\s*[：:=]?\s*{CRED}"
@@ -34,8 +33,6 @@ GLUED_PREFIX = re.compile(
 INLINE_RESOURCE_TOKEN = re.compile(
     rf"(?i)更\s*多\s*资\s*料\s*(?:加|添\s*加)\s*{WX}\s*[：:=]?\s*{CRED}\s*[，,]?\s*"
 )
-
-# Parenthetical contact/promo ads. Keep the surrounding正文.
 PAREN_AD = re.compile(
     rf"[（(]\s*[^（）()\n]{{0,120}}(?:{ADD_AUTHOR}{WX}|(?:作\s*者|客\s*服|老\s*师|Mona\s*老\s*师)\s*{WX})"
     rf"[^（）()\n]{{0,120}}[）)]",
@@ -46,9 +43,6 @@ PAREN_RESOURCE_AD = re.compile(
     rf"[^（）()\n]{{0,80}}(?:{ADD_AUTHOR}{WX}|{WX}\s*[：:=]?\s*{CRED})[^（）()\n]{{0,100}}[）)]",
     re.I,
 )
-
-# Explicit resource/author CTA phrase. The prefix is intentionally specific so
-# ordinary sentences such as “加客户微信”“老师的微信” are not removed.
 AUTHOR_CTA = re.compile(
     rf"(?i)(?:(?:具\s*体\s*)?(?:更\s*多\s*)?(?:落\s*地\s*(?:细\s*节|模\s*型|增\s*长[^，。；;]{{0,18}})|"
     rf"更\s*多\s*(?:内\s*部|精\s*品|实\s*用)?\s*(?:资\s*料|资\s*源|课\s*程|电\s*子\s*书|细\s*节)|"
@@ -58,17 +52,17 @@ AUTHOR_CTA = re.compile(
     rf"(?:\s*(?:获\s*取|索\s*取|领\s*取|内\s*部\s*悄\s*悄\s*分\s*享|购\s*正\s*版\s*书\s*籍)[^。！？!?；;\n]{{0,90}})?"
     rf"[。；;]?[，,]?\s*"
 )
-
-# Shorter explicit “添加作者微信 + credential” span, used inside prose when
-# no promo lead survives OCR. It does not match generic “加微信” examples.
 AUTHOR_CONTACT_SPAN = re.compile(
     rf"(?i)(?:也\s*可\s*以\s*)?{ADD_AUTHOR}{WX}\s*[：:=．.]*\s*{CRED}"
     rf"(?:\s*(?:获\s*取|索\s*取|领\s*取)[^。！？!?；;，,\n]{{0,60}})?"
 )
-
-# Public-account/book-external promo fragments embedded between正文 clauses.
 PUBLIC_RESOURCE_SPAN = re.compile(
     r"(?i)更\s*多\s*内\s*部\s*绝\s*密\s*资\s*料\s*关\s*注\s*公\s*众\s*号\s*[：:]?\s*[^，,。；;]{1,30}[，,]?\s*"
+)
+PUBLIC_BOOK_PROMO = re.compile(
+    r"(?i)(?:更\s*多\s*)?落\s*地\s*细\s*节\s*[，,:：；;、\-—]*\s*"
+    r"(?:立\s*刻|马\s*上|现\s*在)?\s*扫\s*码\s*关\s*注\s*本\s*公\s*众\s*号"
+    r"[^。！？!?\n]{0,120}[。！？!?]?"
 )
 AUDIO_PROMO_SPAN = re.compile(
     r"(?i)完\s*整\s*的?\s*音\s*频[^。！？!?]{0,100}(?:关\s*注|微\s*信\s*公\s*众\s*平\s*台)[^。！？!?]{0,80}[。！？!?]?"
@@ -77,16 +71,13 @@ PERSONAL_ACCOUNT_TAIL = re.compile(
     r"(?i)更\s*多\s*实\s*用\s*干\s*货\s*和\s*活\s*动\s*通\s*知[^。！？!?]{0,30}"
     r"(?:关\s*注|添\s*加)[^。！？!?]{0,20}(?:个\s*人\s*)?微\s*信\s*号[^。！？!?]{0,80}[。！？!?]?"
 )
-
-# Lines that are themselves promotional headings/noise. These can legitimately
-# be deleted as a whole, after which direct child headings may need to move up.
+ORPHAN_PROMO_TAIL = re.compile(
+    r"(?i)(?:具\s*体\s*)?(?:更\s*多\s*)?落\s*地\s*细\s*节\s*[，,:：；;、\-—]*\s*$"
+)
 AD_HEADING = re.compile(
     r"(?i)(?:购\s*正\s*版\s*书\s*籍|更\s*多\s*(?:隐\s*秘|内\s*部|精\s*品)?\s*(?:内\s*容|资\s*料|课\s*程|资\s*源)|"
     r"内\s*部\s*配\s*套\s*分\s*享).{0,100}(?:添\s*加|加|联\s*系).{0,20}(?:作\s*者|客\s*服|老\s*师)?.{0,10}微\s*信"
 )
-
-# High-confidence standalone ad-only lines. Long prose is NEVER deleted solely
-# because it contains a contact phrase; it is handled by span removal above.
 STANDALONE_AD = re.compile(
     rf"(?i)^(?:[—\-–~·•\s]*)?(?:(?:具\s*体\s*)?(?:更\s*多\s*)?(?:落\s*地\s*细\s*节|"
     rf"更\s*多\s*(?:精\s*品|内\s*部)?\s*(?:课\s*程|资\s*料|资\s*源|电\s*子\s*书))[^。！？!?\n]{{0,80}})?"
@@ -95,8 +86,6 @@ STANDALONE_AD = re.compile(
 PURE_CONTACT = re.compile(
     rf"(?i)^\s*(?:(?:微\s*信\s*号|微\s*信\s*ID|客\s*服\s*微\s*信|作\s*者\s*微\s*信|老\s*师\s*微\s*信|VX|V\s*信|威\s*信)\s*[：:=．.]?\s*)?{CRED}(?:\s*电\s*\d[\d ]{{5,}})?\s*$"
 )
-
-# Residual audit only. These are candidates, not auto-deletion rules.
 BROAD_REVIEW = re.compile(
     r"(?i)(?:添\s*加\s*作\s*者\s*微\s*信|作\s*者\s*微\s*信|客\s*服\s*微\s*信|老\s*师\s*微\s*信|"
     r"更\s*多\s*资\s*料\s*加\s*威\s*信|更\s*多\s*精\s*品\s*课\s*程\s*加\s*威\s*信|关\s*注\s*本\s*公\s*众\s*号|"
@@ -123,7 +112,6 @@ def normalize_punctuation(s: str) -> str:
 
 
 def strip_special_spans(content: str) -> tuple[str, list[str]]:
-    """Remove only proven ad spans; never discard surrounding正文."""
     s = content
     kinds: list[str] = []
     rules = [
@@ -133,6 +121,7 @@ def strip_special_spans(content: str) -> tuple[str, list[str]]:
         (PAREN_RESOURCE_AD, "parenthetical-resource"),
         (AUDIO_PROMO_SPAN, "audio-resource-promo"),
         (PUBLIC_RESOURCE_SPAN, "public-account-resource"),
+        (PUBLIC_BOOK_PROMO, "public-account-promo"),
         (PERSONAL_ACCOUNT_TAIL, "personal-account-tail"),
         (AUTHOR_CTA, "author-cta"),
         (AUTHOR_CONTACT_SPAN, "author-contact-span"),
@@ -143,8 +132,11 @@ def strip_special_spans(content: str) -> tuple[str, list[str]]:
             kinds.extend([kind] * count)
             s = new
 
-    # Known OCR pattern: a promo prefix is followed by the actual next section
-    # in the same physical line. Keep the next-section words.
+    new, count = ORPHAN_PROMO_TAIL.subn("", s)
+    if count:
+        kinds.extend(["orphan-promo-tail"] * count)
+        s = new
+
     m = re.match(
         r"(?i)^\s*更\s*多\s*落\s*地\s*细\s*节.{0,120}?"
         r"(?:添\s*加|加)\s*作\s*者\s*微\s*信.{0,120}?"
@@ -166,16 +158,18 @@ def line_parts(line: str) -> tuple[str, str]:
 
 
 def is_ad_heading(content: str) -> bool:
-    return bool(AD_HEADING.search(content) or STANDALONE_AD.match(content))
+    return bool(AD_HEADING.search(content) or STANDALONE_AD.match(content) or PUBLIC_BOOK_PROMO.search(content))
 
 
 def is_standalone_ad(content: str) -> bool:
     s = content.strip()
-    if not s:
+    if not s or len(s) > 240:
         return False
-    if len(s) > 240:
-        return False
-    return bool(STANDALONE_AD.match(s) or (PURE_CONTACT.match(s) and re.search(r"(?:VX|V\s*信|威\s*信|微\s*信)", s, re.I)))
+    return bool(
+        STANDALONE_AD.match(s)
+        or PUBLIC_BOOK_PROMO.fullmatch(s)
+        or (PURE_CONTACT.match(s) and re.search(r"(?:VX|V\s*信|威\s*信|微\s*信)", s, re.I))
+    )
 
 
 def clean_text(text: str) -> tuple[str, dict]:
@@ -199,55 +193,33 @@ def clean_text(text: str) -> tuple[str, dict]:
 
         prefix, content = line_parts(raw)
         heading_level = len(prefix.strip()) if prefix else None
-
-        # Remove a false promotional heading as a structural unit.
         if heading_level and is_ad_heading(content):
             actions.append({"line": n, "kind": "ad-heading", "before": content[:240], "after": ""})
             removed_heading_level = heading_level
             continue
 
         cleaned, kinds = strip_special_spans(content)
-
-        # A line may become an ad-only residue after span removal.
         if is_standalone_ad(cleaned):
             kinds.append("standalone-ad")
             cleaned = ""
-
         if kinds:
-            actions.append({
-                "line": n,
-                "kind": "+".join(sorted(set(kinds))),
-                "before": content[:300],
-                "after": cleaned[:300],
-            })
-
+            actions.append({"line": n, "kind": "+".join(sorted(set(kinds))), "before": content[:300], "after": cleaned[:300]})
         if not cleaned.strip():
-            # Only set heading parent if the removed original line was a heading.
             if heading_level:
                 removed_heading_level = heading_level
             continue
 
-        # Repair only a child level that was made too deep by the immediately
-        # preceding removed advertising heading.
         if heading_level and removed_heading_level is not None:
             if heading_level > removed_heading_level:
                 new_level = max(1, heading_level - 1)
-                heading_shifts.append({
-                    "line": n,
-                    "title": cleaned[:180],
-                    "from": heading_level,
-                    "to": new_level,
-                    "removed_ad_parent": removed_heading_level,
-                })
+                heading_shifts.append({"line": n, "title": cleaned[:180], "from": heading_level, "to": new_level, "removed_ad_parent": removed_heading_level})
                 prefix = "#" * new_level + " "
             else:
                 removed_heading_level = None
-
         out.append(prefix + cleaned if prefix else cleaned)
 
     if not actions and not heading_shifts:
         return text, {"actions": [], "heading_shifts": []}
-
     result = "\n".join(out)
     if text.endswith("\n"):
         result += "\n"
@@ -288,8 +260,7 @@ def process(path: Path) -> dict:
     if changed:
         path.write_text(after, encoding="utf-8")
     return {
-        "path": str(path),
-        "changed": changed,
+        "path": str(path), "changed": changed,
         "ad_spans_removed": len(info["actions"]),
         "heading_changes": len(info["heading_shifts"]),
         "examples": info["actions"][:12],
@@ -307,7 +278,7 @@ def patch_prompt(path: Path) -> bool:
 - **不能因为正文出现“微信、朋友圈、公众号、扫码、微信群、微信号、电子书、资源”等词就删除。** 正文讨论微信获客、朋友圈运营、扫码案例、公众号营销、联系人微信等，都属于正文；
 - 高置信广告通常同时包含“书外引流目的 + 行动指令 + 联系方式/资源领取”中的两项以上，例如“添加作者微信获取资料”“扫码添加老师私人微信”“关注本公众号领取模板”；单纯叙述“老师的微信”“客户加微信”不是广告；
 - 广告若被错误识别成标题，应删除该广告标题，并只修复由这个伪标题直接造成的子标题下沉；不得借广告清理之名批量重排与广告无关的标题；
-- 删除广告后若留下残缺括号、孤立标点、空标题或标题跳级，应同步修复；
+- 删除广告后若留下“具体更多落地细节，”一类无内容的引流残片、残缺括号、孤立标点、空标题或标题跳级，应同步修复；
 - 批量处理目录时必须递归检查目标目录下全部 `.md` 正文文件，而不是只扫描根层；完成后必须再次扫描高置信广告残留和标题跳级，并保留审计报告。
 """.rstrip()
     if marker not in text:
@@ -329,14 +300,11 @@ def high_confidence_residuals(text: str) -> list[dict]:
         if fenced or IMG.search(line):
             continue
         plain = unwrap(line)
-        # Use only the rules that are safe enough to require zero leftovers.
         if (
-            GLUED_PREFIX.search(plain)
-            or INLINE_RESOURCE_TOKEN.search(plain)
-            or PAREN_AD.search(plain)
-            or PAREN_RESOURCE_AD.search(plain)
-            or PUBLIC_RESOURCE_SPAN.search(plain)
-            or PERSONAL_ACCOUNT_TAIL.search(plain)
+            GLUED_PREFIX.search(plain) or INLINE_RESOURCE_TOKEN.search(plain)
+            or PAREN_AD.search(plain) or PAREN_RESOURCE_AD.search(plain)
+            or PUBLIC_RESOURCE_SPAN.search(plain) or PUBLIC_BOOK_PROMO.search(plain)
+            or PERSONAL_ACCOUNT_TAIL.search(plain) or ORPHAN_PROMO_TAIL.search(plain)
             or AD_HEADING.search(plain)
         ):
             out.append({"line": n, "text": plain[:300]})
@@ -369,7 +337,6 @@ def main() -> int:
     ap.add_argument("--prompt", default=".prompt/Markdown文档整理与修复通用提示词.md")
     ap.add_argument("--report", default="temp/.ad-heading-cleanup-report.json")
     args = ap.parse_args()
-
     root = Path(args.root)
     files = sorted(p for p in root.rglob("*.md") if p.is_file() and not p.name.startswith("."))
     prompt_changed = patch_prompt(Path(args.prompt))
