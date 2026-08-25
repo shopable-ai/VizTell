@@ -1,24 +1,8 @@
 {
   "summary": {
-    "unique_tokens": 1,
-    "occurrences": 1,
-    "files": 1
+    "unique_tokens": 0,
+    "occurrences": 0,
+    "files": 0
   },
-  "tokens": [
-    {
-      "kind": "direct_cta",
-      "token": "添加作者",
-      "count": 1,
-      "files": [
-        "temp/布局锦囊5.0/index.md"
-      ],
-      "samples": [
-        {
-          "path": "temp/布局锦囊5.0/index.md",
-          "line": 2313,
-          "context": "本来就不具备任何法律效力 ， 看芯唬人罢了，我特么也可以分分钟成立一个这样的案例，我们还有 100 个人性思维 ， 因书籍页码 有 限，可以添加作者侬信：   获取 内 部分享。 【 1253 个布局锦囊：赚钱生活的一些核心心法】 ## 第一部分：打基础 ### 第一节 时间：如何让你的时间投资卓有成效？ 核心观点： 1 ． "
-        }
-      ]
-    }
-  ]
+  "tokens": []
 }

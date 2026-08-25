@@ -1229,9 +1229,9 @@
         }
       ],
       "history": {
-        "sha": "b8ecd134ac2e0bd64a31d2926f0e1b63ffa24478",
-        "date": "2026-08-25T09:43:08Z",
-        "message": "docs(temp): remove explicit promo credentials and watermarks [skip ci]"
+        "sha": "d390282d8804bc2181aa55da604d029c740c04d0",
+        "date": "2026-08-25T09:50:03Z",
+        "message": "docs(temp): restore reviewed Play Humanity sections [skip ci]"
       }
     },
     {
@@ -1720,8 +1720,8 @@
       "path": "temp/布局锦囊5.0/index.md",
       "status": "needs_review_medium",
       "metrics": {
-        "bytes": 1259731,
-        "visible_chars": 407226,
+        "bytes": 1259652,
+        "visible_chars": 407202,
         "h1": 1,
         "headings_2_4": 38,
         "image_refs": 19,
