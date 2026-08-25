@@ -6,12 +6,12 @@
   },
   "summary": {
     "markdown_files_scanned": 84,
-    "files_changed": 3,
-    "files_pass": 78,
-    "files_needing_review_high": 3,
+    "files_changed": 0,
+    "files_pass": 79,
+    "files_needing_review_high": 2,
     "files_needing_review_medium": 3,
     "repair_errors": 0,
-    "toc_text_lines_removed": 3,
+    "toc_text_lines_removed": 0,
     "headings_recovered_from_toc": 0,
     "glued_headings_split": 0,
     "page_numbers_removed": 0,
@@ -20,9 +20,8 @@
   },
   "issue_counts": {
     "giant_ocr_lines": 4,
-    "history_says_processed_but_content_fails": 3,
+    "history_says_processed_but_content_fails": 5,
     "large_document_without_structure": 2,
-    "leading_toc_text_residue": 1,
     "toc_marker_needs_review": 1
   },
   "repairs": [
@@ -44,9 +43,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 383,
       "visible_retention": 1.0,
-      "last_commit_sha": "4e33d1f1f85c58f00d03329ed55a60cbd1b5fa9c",
-      "last_commit_date": "2026-08-25T14:44:30+08:00",
-      "last_commit_message": "revert(temp): restore正文 before conservative ad pass"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/008《布局锦囊3.0》/index.md",
@@ -66,9 +65,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 466,
       "visible_retention": 1.0,
-      "last_commit_sha": "f0549fd9c5393bac831b0ad23b1e8a0a6348365b",
-      "last_commit_date": "2026-08-25T06:55:46Z",
-      "last_commit_message": "docs(temp): remove ads and repair headings [skip ci]"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/009《布局锦囊2.0》/index.md",
@@ -88,9 +87,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 345,
       "visible_retention": 1.0,
-      "last_commit_sha": "f0549fd9c5393bac831b0ad23b1e8a0a6348365b",
-      "last_commit_date": "2026-08-25T06:55:46Z",
-      "last_commit_message": "docs(temp): remove ads and repair headings [skip ci]"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/《458条人性顶级秘术》/index.md",
@@ -132,9 +131,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 249,
       "visible_retention": 1.0,
-      "last_commit_sha": "4e33d1f1f85c58f00d03329ed55a60cbd1b5fa9c",
-      "last_commit_date": "2026-08-25T14:44:30+08:00",
-      "last_commit_message": "revert(temp): restore正文 before conservative ad pass"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/《万能识人术》/index.md",
@@ -176,9 +175,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 334,
       "visible_retention": 1.0,
-      "last_commit_sha": "195ce6fea6c5632a58993ab66c11d9382f1734cb",
-      "last_commit_date": "2026-08-24T18:59:13Z",
-      "last_commit_message": "docs(temp): repair Markdown naming structure and ads [skip ci]"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/《人心探索（操控篇）》/index.md",
@@ -198,9 +197,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 177,
       "visible_retention": 1.0,
-      "last_commit_sha": "195ce6fea6c5632a58993ab66c11d9382f1734cb",
-      "last_commit_date": "2026-08-24T18:59:13Z",
-      "last_commit_message": "docs(temp): repair Markdown naming structure and ads [skip ci]"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/《人性商战(线下3天2夜全文字版)》.md",
@@ -242,9 +241,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 105,
       "visible_retention": 1.0,
-      "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-      "last_commit_date": "2026-08-25T15:04:52+08:00",
-      "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/《人性宝典2.0》/index.md",
@@ -264,9 +263,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 156,
       "visible_retention": 1.0,
-      "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-      "last_commit_date": "2026-08-25T15:04:52+08:00",
-      "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/《人性密码》/index.md",
@@ -286,9 +285,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 168,
       "visible_retention": 1.0,
-      "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-      "last_commit_date": "2026-08-25T15:04:52+08:00",
-      "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/《人性底层模型1.0》/index.md",
@@ -308,9 +307,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 275,
       "visible_retention": 1.0,
-      "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-      "last_commit_date": "2026-08-25T15:04:52+08:00",
-      "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/《人性底层模型2.0》/index.md",
@@ -330,9 +329,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 105,
       "visible_retention": 1.0,
-      "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-      "last_commit_date": "2026-08-25T15:04:52+08:00",
-      "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/《人性心法》/index.md",
@@ -352,9 +351,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 440,
       "visible_retention": 1.0,
-      "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-      "last_commit_date": "2026-08-25T15:04:52+08:00",
-      "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/《人性心理战》/index.md",
@@ -374,9 +373,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 241,
       "visible_retention": 1.0,
-      "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-      "last_commit_date": "2026-08-25T15:04:52+08:00",
-      "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/《人性成败拿捏》/index.md",
@@ -396,9 +395,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 259,
       "visible_retention": 1.0,
-      "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-      "last_commit_date": "2026-08-25T15:04:52+08:00",
-      "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/《人性探索大师1》/index.md",
@@ -418,9 +417,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 4,
       "visible_retention": 1.0,
-      "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
-      "last_commit_date": "2026-08-25T07:57:18Z",
-      "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/《人性探索大师2》/index.md",
@@ -440,9 +439,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 5,
       "visible_retention": 1.0,
-      "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
-      "last_commit_date": "2026-08-25T07:57:18Z",
-      "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/《人性探索大师3》/index.md",
@@ -462,9 +461,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 1,
       "visible_retention": 1.0,
-      "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
-      "last_commit_date": "2026-08-25T07:57:18Z",
-      "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/《人性智谋36计》/index.md",
@@ -484,9 +483,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 2,
       "visible_retention": 1.0,
-      "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
-      "last_commit_date": "2026-08-25T07:57:18Z",
-      "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/《人性真相》/index.md",
@@ -506,31 +505,31 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 113,
       "visible_retention": 1.0,
-      "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-      "last_commit_date": "2026-08-25T15:04:52+08:00",
-      "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/《人性真言》/index.md",
       "title": "人性真言",
-      "changed": true,
-      "applied": true,
+      "changed": false,
+      "applied": false,
       "toc_marker_found": false,
-      "toc_leader_lines": 1,
-      "toc_titles_detected": 1,
-      "toc_text_lines_removed": 1,
+      "toc_leader_lines": 0,
+      "toc_titles_detected": 0,
+      "toc_text_lines_removed": 0,
       "headings_recovered_from_toc": 0,
       "glued_headings_split": 0,
-      "candidate_headings_not_found": 1,
+      "candidate_headings_not_found": 0,
       "page_numbers_removed": 0,
       "conversion_labels_removed": 0,
       "conversion_comments_removed": 0,
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 106,
-      "visible_retention": 0.9992,
-      "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-      "last_commit_date": "2026-08-25T15:04:52+08:00",
-      "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+      "visible_retention": 1.0,
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/《人性社交思维手册》/index.md",
@@ -550,9 +549,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 90,
       "visible_retention": 1.0,
-      "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-      "last_commit_date": "2026-08-25T15:04:52+08:00",
-      "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/《人性纵横说1.0》/index.md",
@@ -572,31 +571,31 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 159,
       "visible_retention": 1.0,
-      "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-      "last_commit_date": "2026-08-25T15:04:52+08:00",
-      "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/《人性背后隐藏的邪恶密码》/index.md",
       "title": "人性背后隐藏的邪恶密码",
-      "changed": true,
-      "applied": true,
+      "changed": false,
+      "applied": false,
       "toc_marker_found": false,
-      "toc_leader_lines": 1,
-      "toc_titles_detected": 1,
-      "toc_text_lines_removed": 1,
+      "toc_leader_lines": 0,
+      "toc_titles_detected": 0,
+      "toc_text_lines_removed": 0,
       "headings_recovered_from_toc": 0,
       "glued_headings_split": 0,
-      "candidate_headings_not_found": 1,
+      "candidate_headings_not_found": 0,
       "page_numbers_removed": 0,
       "conversion_labels_removed": 0,
       "conversion_comments_removed": 0,
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 126,
-      "visible_retention": 0.9991,
-      "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-      "last_commit_date": "2026-08-25T15:04:52+08:00",
-      "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+      "visible_retention": 1.0,
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/《人性艺术-内心电影剪辑师》/index.md",
@@ -616,9 +615,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 266,
       "visible_retention": 1.0,
-      "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-      "last_commit_date": "2026-08-25T15:04:52+08:00",
-      "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/《人性要诀》/index.md",
@@ -660,9 +659,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 348,
       "visible_retention": 1.0,
-      "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-      "last_commit_date": "2026-08-25T15:04:52+08:00",
-      "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/《人性错觉控制术》/index.md",
@@ -682,9 +681,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 76,
       "visible_retention": 1.0,
-      "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-      "last_commit_date": "2026-08-25T15:04:52+08:00",
-      "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/《人性陷阱》/index.md",
@@ -748,9 +747,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 278,
       "visible_retention": 1.0,
-      "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-      "last_commit_date": "2026-08-25T15:04:52+08:00",
-      "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/《人类欺骗行为解读》/index.md",
@@ -770,9 +769,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 230,
       "visible_retention": 1.0,
-      "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-      "last_commit_date": "2026-08-25T15:04:52+08:00",
-      "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/《人脑操控力》/index.md",
@@ -792,9 +791,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 128,
       "visible_retention": 1.0,
-      "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-      "last_commit_date": "2026-08-25T15:04:52+08:00",
-      "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/《冷读术》/index.md",
@@ -814,9 +813,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 34,
       "visible_retention": 1.0,
-      "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-      "last_commit_date": "2026-08-25T15:04:52+08:00",
-      "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/《坏人基因》上册.md",
@@ -880,9 +879,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 109,
       "visible_retention": 1.0,
-      "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-      "last_commit_date": "2026-08-25T15:04:52+08:00",
-      "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/《大心机1》/index.md",
@@ -924,9 +923,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 1,
       "visible_retention": 1.0,
-      "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-      "last_commit_date": "2026-08-25T15:04:52+08:00",
-      "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/《大心机3》.md",
@@ -968,9 +967,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 122,
       "visible_retention": 1.0,
-      "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-      "last_commit_date": "2026-08-25T15:04:52+08:00",
-      "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/《天机38局》/index.md",
@@ -990,9 +989,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 89,
       "visible_retention": 1.0,
-      "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-      "last_commit_date": "2026-08-25T15:04:52+08:00",
-      "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/《富人机密手稿》/index.md",
@@ -1012,9 +1011,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 3,
       "visible_retention": 1.0,
-      "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
-      "last_commit_date": "2026-08-25T07:57:18Z",
-      "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/《布局系统2.0》/index.md",
@@ -1034,9 +1033,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 401,
       "visible_retention": 1.0,
-      "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-      "last_commit_date": "2026-08-25T15:04:52+08:00",
-      "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/《布局系统》/index.md",
@@ -1056,9 +1055,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 269,
       "visible_retention": 1.0,
-      "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-      "last_commit_date": "2026-08-25T15:04:52+08:00",
-      "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/《开悟开窍开智3》/index.md",
@@ -1078,9 +1077,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 119,
       "visible_retention": 1.0,
-      "last_commit_sha": "eff4e0a1c9a19c0a0f4586823c7400458900d3f3",
-      "last_commit_date": "2026-08-25T06:51:29Z",
-      "last_commit_message": "docs(temp): remove ads and repair headings [skip ci]"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/《开窍开悟开智1》/index.md",
@@ -1100,9 +1099,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 4,
       "visible_retention": 1.0,
-      "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
-      "last_commit_date": "2026-08-25T07:57:18Z",
-      "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/《开窍开悟开智1》PDF.md",
@@ -1144,9 +1143,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 204,
       "visible_retention": 1.0,
-      "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-      "last_commit_date": "2026-08-25T15:04:52+08:00",
-      "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/《开窍开悟开智4》/index.md",
@@ -1188,9 +1187,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 0,
       "visible_retention": 1.0,
-      "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-      "last_commit_date": "2026-08-25T15:04:52+08:00",
-      "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/《怎样洞察人心》/index.md",
@@ -1210,9 +1209,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 193,
       "visible_retention": 1.0,
-      "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-      "last_commit_date": "2026-08-25T15:04:52+08:00",
-      "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/《成长人性》/index.md",
@@ -1232,31 +1231,31 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 270,
       "visible_retention": 1.0,
-      "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-      "last_commit_date": "2026-08-25T15:04:52+08:00",
-      "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/《揭秘男人的人性》/index.md",
       "title": "揭秘男人的人性",
-      "changed": true,
-      "applied": true,
+      "changed": false,
+      "applied": false,
       "toc_marker_found": false,
-      "toc_leader_lines": 1,
-      "toc_titles_detected": 1,
-      "toc_text_lines_removed": 1,
+      "toc_leader_lines": 0,
+      "toc_titles_detected": 0,
+      "toc_text_lines_removed": 0,
       "headings_recovered_from_toc": 0,
       "glued_headings_split": 0,
-      "candidate_headings_not_found": 1,
+      "candidate_headings_not_found": 0,
       "page_numbers_removed": 0,
       "conversion_labels_removed": 0,
       "conversion_comments_removed": 0,
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 126,
-      "visible_retention": 0.9987,
-      "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
-      "last_commit_date": "2026-08-25T07:57:18Z",
-      "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
+      "visible_retention": 1.0,
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/《格商》/index.md",
@@ -1276,9 +1275,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 238,
       "visible_retention": 1.0,
-      "last_commit_sha": "195ce6fea6c5632a58993ab66c11d9382f1734cb",
-      "last_commit_date": "2026-08-24T18:59:13Z",
-      "last_commit_message": "docs(temp): repair Markdown naming structure and ads [skip ci]"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/《格商》PDF版/index.md",
@@ -1298,9 +1297,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 238,
       "visible_retention": 1.0,
-      "last_commit_sha": "195ce6fea6c5632a58993ab66c11d9382f1734cb",
-      "last_commit_date": "2026-08-24T18:59:13Z",
-      "last_commit_message": "docs(temp): repair Markdown naming structure and ads [skip ci]"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/《洗脑的最高境界》.md",
@@ -1342,9 +1341,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 1,
       "visible_retention": 1.0,
-      "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
-      "last_commit_date": "2026-08-25T07:57:18Z",
-      "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/《烂好人毒素》/index.md",
@@ -1364,9 +1363,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 110,
       "visible_retention": 1.0,
-      "last_commit_sha": "4e33d1f1f85c58f00d03329ed55a60cbd1b5fa9c",
-      "last_commit_date": "2026-08-25T14:44:30+08:00",
-      "last_commit_message": "revert(temp): restore正文 before conservative ad pass"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/《玩转人性》.md",
@@ -1408,9 +1407,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 292,
       "visible_retention": 1.0,
-      "last_commit_sha": "195ce6fea6c5632a58993ab66c11d9382f1734cb",
-      "last_commit_date": "2026-08-24T18:59:13Z",
-      "last_commit_message": "docs(temp): repair Markdown naming structure and ads [skip ci]"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/《社会人心运作手册》/index.md",
@@ -1430,9 +1429,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 335,
       "visible_retention": 1.0,
-      "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-      "last_commit_date": "2026-08-25T15:04:52+08:00",
-      "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/《社会人心运作手册》PDF版/index.md",
@@ -1452,9 +1451,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 335,
       "visible_retention": 1.0,
-      "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-      "last_commit_date": "2026-08-25T15:04:52+08:00",
-      "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/《穷人的底层逻辑》/index.md",
@@ -1474,9 +1473,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 7,
       "visible_retention": 1.0,
-      "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
-      "last_commit_date": "2026-08-25T07:57:18Z",
-      "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/《红尘修炼手册》/index.md",
@@ -1496,9 +1495,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 105,
       "visible_retention": 1.0,
-      "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-      "last_commit_date": "2026-08-25T15:04:52+08:00",
-      "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/《红尘纵横1》/index.md",
@@ -1518,9 +1517,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 143,
       "visible_retention": 1.0,
-      "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
-      "last_commit_date": "2026-08-25T07:57:18Z",
-      "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/《红尘纵横2》/index.md",
@@ -1540,9 +1539,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 141,
       "visible_retention": 1.0,
-      "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-      "last_commit_date": "2026-08-25T15:04:52+08:00",
-      "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/《红尘纵横3》/index.md",
@@ -1562,9 +1561,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 120,
       "visible_retention": 1.0,
-      "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-      "last_commit_date": "2026-08-25T15:04:52+08:00",
-      "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/《绝密人性天书》净版.md",
@@ -1628,9 +1627,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 9,
       "visible_retention": 1.0,
-      "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
-      "last_commit_date": "2026-08-25T07:57:18Z",
-      "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/《道破人性第一书》.md",
@@ -1672,9 +1671,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 1,
       "visible_retention": 1.0,
-      "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-      "last_commit_date": "2026-08-25T15:04:52+08:00",
-      "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/《阅人高手2》/index.md",
@@ -1760,9 +1759,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 4,
       "visible_retention": 1.0,
-      "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
-      "last_commit_date": "2026-08-25T07:57:18Z",
-      "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/人性伎俩.md",
@@ -1782,9 +1781,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 0,
       "visible_retention": 1.0,
-      "last_commit_sha": "4e33d1f1f85c58f00d03329ed55a60cbd1b5fa9c",
-      "last_commit_date": "2026-08-25T14:44:30+08:00",
-      "last_commit_message": "revert(temp): restore正文 before conservative ad pass"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/做局大师-人间博弈之术.md",
@@ -1804,9 +1803,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 0,
       "visible_retention": 1.0,
-      "last_commit_sha": "4e33d1f1f85c58f00d03329ed55a60cbd1b5fa9c",
-      "last_commit_date": "2026-08-25T14:44:30+08:00",
-      "last_commit_message": "revert(temp): restore正文 before conservative ad pass"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/千门谋局上册/index.md",
@@ -1826,9 +1825,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 420,
       "visible_retention": 1.0,
-      "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-      "last_commit_date": "2026-08-25T15:04:52+08:00",
-      "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/千门谋局下册/index.md",
@@ -1848,9 +1847,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 418,
       "visible_retention": 1.0,
-      "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-      "last_commit_date": "2026-08-25T15:04:52+08:00",
-      "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     },
     {
       "path": "temp/布局锦囊5.0/index.md",
@@ -1870,9 +1869,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 19,
       "visible_retention": 1.0,
-      "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
-      "last_commit_date": "2026-08-25T07:57:18Z",
-      "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
+      "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+      "last_commit_date": "2026-08-25T07:59:45Z",
+      "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
     }
   ],
   "audit": [
@@ -1890,9 +1889,9 @@
         "image_refs": 383
       },
       "history": {
-        "last_commit_sha": "4e33d1f1f85c58f00d03329ed55a60cbd1b5fa9c",
-        "last_commit_date": "2026-08-25T14:44:30+08:00",
-        "last_commit_message": "revert(temp): restore正文 before conservative ad pass"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -1909,9 +1908,9 @@
         "image_refs": 466
       },
       "history": {
-        "last_commit_sha": "f0549fd9c5393bac831b0ad23b1e8a0a6348365b",
-        "last_commit_date": "2026-08-25T06:55:46Z",
-        "last_commit_message": "docs(temp): remove ads and repair headings [skip ci]"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -1928,9 +1927,9 @@
         "image_refs": 345
       },
       "history": {
-        "last_commit_sha": "f0549fd9c5393bac831b0ad23b1e8a0a6348365b",
-        "last_commit_date": "2026-08-25T06:55:46Z",
-        "last_commit_message": "docs(temp): remove ads and repair headings [skip ci]"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -1966,9 +1965,9 @@
         "image_refs": 249
       },
       "history": {
-        "last_commit_sha": "4e33d1f1f85c58f00d03329ed55a60cbd1b5fa9c",
-        "last_commit_date": "2026-08-25T14:44:30+08:00",
-        "last_commit_message": "revert(temp): restore正文 before conservative ad pass"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -2004,9 +2003,9 @@
         "image_refs": 334
       },
       "history": {
-        "last_commit_sha": "195ce6fea6c5632a58993ab66c11d9382f1734cb",
-        "last_commit_date": "2026-08-24T18:59:13Z",
-        "last_commit_message": "docs(temp): repair Markdown naming structure and ads [skip ci]"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -2023,9 +2022,9 @@
         "image_refs": 177
       },
       "history": {
-        "last_commit_sha": "195ce6fea6c5632a58993ab66c11d9382f1734cb",
-        "last_commit_date": "2026-08-24T18:59:13Z",
-        "last_commit_message": "docs(temp): repair Markdown naming structure and ads [skip ci]"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -2072,9 +2071,9 @@
         "image_refs": 105
       },
       "history": {
-        "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-        "last_commit_date": "2026-08-25T15:04:52+08:00",
-        "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -2091,9 +2090,9 @@
         "image_refs": 156
       },
       "history": {
-        "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-        "last_commit_date": "2026-08-25T15:04:52+08:00",
-        "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -2110,9 +2109,9 @@
         "image_refs": 168
       },
       "history": {
-        "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-        "last_commit_date": "2026-08-25T15:04:52+08:00",
-        "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -2129,9 +2128,9 @@
         "image_refs": 275
       },
       "history": {
-        "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-        "last_commit_date": "2026-08-25T15:04:52+08:00",
-        "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -2148,9 +2147,9 @@
         "image_refs": 105
       },
       "history": {
-        "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-        "last_commit_date": "2026-08-25T15:04:52+08:00",
-        "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -2167,9 +2166,9 @@
         "image_refs": 440
       },
       "history": {
-        "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-        "last_commit_date": "2026-08-25T15:04:52+08:00",
-        "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -2186,9 +2185,9 @@
         "image_refs": 241
       },
       "history": {
-        "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-        "last_commit_date": "2026-08-25T15:04:52+08:00",
-        "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -2205,9 +2204,9 @@
         "image_refs": 259
       },
       "history": {
-        "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-        "last_commit_date": "2026-08-25T15:04:52+08:00",
-        "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -2224,9 +2223,9 @@
         "image_refs": 4
       },
       "history": {
-        "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
-        "last_commit_date": "2026-08-25T07:57:18Z",
-        "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -2243,9 +2242,9 @@
         "image_refs": 5
       },
       "history": {
-        "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
-        "last_commit_date": "2026-08-25T07:57:18Z",
-        "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -2262,9 +2261,9 @@
         "image_refs": 1
       },
       "history": {
-        "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
-        "last_commit_date": "2026-08-25T07:57:18Z",
-        "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -2281,9 +2280,9 @@
         "image_refs": 2
       },
       "history": {
-        "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
-        "last_commit_date": "2026-08-25T07:57:18Z",
-        "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -2300,9 +2299,9 @@
         "image_refs": 113
       },
       "history": {
-        "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-        "last_commit_date": "2026-08-25T15:04:52+08:00",
-        "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -2319,9 +2318,9 @@
         "image_refs": 106
       },
       "history": {
-        "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-        "last_commit_date": "2026-08-25T15:04:52+08:00",
-        "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -2338,9 +2337,9 @@
         "image_refs": 90
       },
       "history": {
-        "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-        "last_commit_date": "2026-08-25T15:04:52+08:00",
-        "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -2357,34 +2356,28 @@
         "image_refs": 159
       },
       "history": {
-        "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-        "last_commit_date": "2026-08-25T15:04:52+08:00",
-        "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
       "path": "temp/《人性背后隐藏的邪恶密码》/index.md",
-      "status": "needs_review_high",
-      "issues": [
-        {
-          "code": "leading_toc_text_residue",
-          "severity": "high",
-          "detail": "leader_lines=1, titles=1"
-        }
-      ],
+      "status": "pass",
+      "issues": [],
       "metrics": {
-        "bytes": 135885,
-        "visible_chars": 44087,
+        "bytes": 125754,
+        "visible_chars": 40084,
         "h1": 1,
         "h2": 1,
-        "h3": 80,
+        "h3": 34,
         "h4": 0,
         "image_refs": 126
       },
       "history": {
-        "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-        "last_commit_date": "2026-08-25T15:04:52+08:00",
-        "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -2401,9 +2394,9 @@
         "image_refs": 266
       },
       "history": {
-        "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-        "last_commit_date": "2026-08-25T15:04:52+08:00",
-        "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -2439,9 +2432,9 @@
         "image_refs": 348
       },
       "history": {
-        "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-        "last_commit_date": "2026-08-25T15:04:52+08:00",
-        "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -2458,9 +2451,9 @@
         "image_refs": 76
       },
       "history": {
-        "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-        "last_commit_date": "2026-08-25T15:04:52+08:00",
-        "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -2526,9 +2519,9 @@
         "image_refs": 278
       },
       "history": {
-        "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-        "last_commit_date": "2026-08-25T15:04:52+08:00",
-        "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -2545,9 +2538,9 @@
         "image_refs": 230
       },
       "history": {
-        "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-        "last_commit_date": "2026-08-25T15:04:52+08:00",
-        "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -2564,9 +2557,9 @@
         "image_refs": 128
       },
       "history": {
-        "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-        "last_commit_date": "2026-08-25T15:04:52+08:00",
-        "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -2583,9 +2576,9 @@
         "image_refs": 34
       },
       "history": {
-        "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-        "last_commit_date": "2026-08-25T15:04:52+08:00",
-        "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -2640,9 +2633,9 @@
         "image_refs": 109
       },
       "history": {
-        "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-        "last_commit_date": "2026-08-25T15:04:52+08:00",
-        "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -2678,9 +2671,9 @@
         "image_refs": 1
       },
       "history": {
-        "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-        "last_commit_date": "2026-08-25T15:04:52+08:00",
-        "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -2716,9 +2709,9 @@
         "image_refs": 122
       },
       "history": {
-        "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-        "last_commit_date": "2026-08-25T15:04:52+08:00",
-        "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -2735,9 +2728,9 @@
         "image_refs": 89
       },
       "history": {
-        "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-        "last_commit_date": "2026-08-25T15:04:52+08:00",
-        "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -2754,9 +2747,9 @@
         "image_refs": 3
       },
       "history": {
-        "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
-        "last_commit_date": "2026-08-25T07:57:18Z",
-        "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -2773,9 +2766,9 @@
         "image_refs": 401
       },
       "history": {
-        "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-        "last_commit_date": "2026-08-25T15:04:52+08:00",
-        "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -2792,9 +2785,9 @@
         "image_refs": 269
       },
       "history": {
-        "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-        "last_commit_date": "2026-08-25T15:04:52+08:00",
-        "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -2811,9 +2804,9 @@
         "image_refs": 119
       },
       "history": {
-        "last_commit_sha": "eff4e0a1c9a19c0a0f4586823c7400458900d3f3",
-        "last_commit_date": "2026-08-25T06:51:29Z",
-        "last_commit_message": "docs(temp): remove ads and repair headings [skip ci]"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -2830,9 +2823,9 @@
         "image_refs": 4
       },
       "history": {
-        "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
-        "last_commit_date": "2026-08-25T07:57:18Z",
-        "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -2868,9 +2861,9 @@
         "image_refs": 204
       },
       "history": {
-        "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-        "last_commit_date": "2026-08-25T15:04:52+08:00",
-        "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -2900,6 +2893,11 @@
           "code": "giant_ocr_lines",
           "severity": "medium",
           "detail": "lines=[709], count=1"
+        },
+        {
+          "code": "history_says_processed_but_content_fails",
+          "severity": "info",
+          "detail": "docs(temp): finalize Markdown content invariants [skip ci]"
         }
       ],
       "metrics": {
@@ -2912,9 +2910,9 @@
         "image_refs": 0
       },
       "history": {
-        "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-        "last_commit_date": "2026-08-25T15:04:52+08:00",
-        "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -2931,9 +2929,9 @@
         "image_refs": 193
       },
       "history": {
-        "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-        "last_commit_date": "2026-08-25T15:04:52+08:00",
-        "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -2950,9 +2948,9 @@
         "image_refs": 270
       },
       "history": {
-        "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-        "last_commit_date": "2026-08-25T15:04:52+08:00",
-        "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -2969,9 +2967,9 @@
         "image_refs": 126
       },
       "history": {
-        "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
-        "last_commit_date": "2026-08-25T07:57:18Z",
-        "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -2988,9 +2986,9 @@
         "image_refs": 238
       },
       "history": {
-        "last_commit_sha": "195ce6fea6c5632a58993ab66c11d9382f1734cb",
-        "last_commit_date": "2026-08-24T18:59:13Z",
-        "last_commit_message": "docs(temp): repair Markdown naming structure and ads [skip ci]"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -3007,9 +3005,9 @@
         "image_refs": 238
       },
       "history": {
-        "last_commit_sha": "195ce6fea6c5632a58993ab66c11d9382f1734cb",
-        "last_commit_date": "2026-08-24T18:59:13Z",
-        "last_commit_message": "docs(temp): repair Markdown naming structure and ads [skip ci]"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -3045,9 +3043,9 @@
         "image_refs": 1
       },
       "history": {
-        "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
-        "last_commit_date": "2026-08-25T07:57:18Z",
-        "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -3064,9 +3062,9 @@
         "image_refs": 110
       },
       "history": {
-        "last_commit_sha": "4e33d1f1f85c58f00d03329ed55a60cbd1b5fa9c",
-        "last_commit_date": "2026-08-25T14:44:30+08:00",
-        "last_commit_message": "revert(temp): restore正文 before conservative ad pass"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -3113,9 +3111,9 @@
         "image_refs": 292
       },
       "history": {
-        "last_commit_sha": "195ce6fea6c5632a58993ab66c11d9382f1734cb",
-        "last_commit_date": "2026-08-24T18:59:13Z",
-        "last_commit_message": "docs(temp): repair Markdown naming structure and ads [skip ci]"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -3132,9 +3130,9 @@
         "image_refs": 335
       },
       "history": {
-        "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-        "last_commit_date": "2026-08-25T15:04:52+08:00",
-        "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -3151,9 +3149,9 @@
         "image_refs": 335
       },
       "history": {
-        "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-        "last_commit_date": "2026-08-25T15:04:52+08:00",
-        "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -3161,18 +3159,18 @@
       "status": "pass",
       "issues": [],
       "metrics": {
-        "bytes": 248619,
+        "bytes": 248756,
         "visible_chars": 82623,
         "h1": 1,
-        "h2": 70,
+        "h2": 97,
         "h3": 4,
         "h4": 0,
         "image_refs": 7
       },
       "history": {
-        "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
-        "last_commit_date": "2026-08-25T07:57:18Z",
-        "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -3189,9 +3187,9 @@
         "image_refs": 105
       },
       "history": {
-        "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-        "last_commit_date": "2026-08-25T15:04:52+08:00",
-        "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -3208,9 +3206,9 @@
         "image_refs": 143
       },
       "history": {
-        "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
-        "last_commit_date": "2026-08-25T07:57:18Z",
-        "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -3227,9 +3225,9 @@
         "image_refs": 141
       },
       "history": {
-        "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-        "last_commit_date": "2026-08-25T15:04:52+08:00",
-        "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -3246,9 +3244,9 @@
         "image_refs": 120
       },
       "history": {
-        "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-        "last_commit_date": "2026-08-25T15:04:52+08:00",
-        "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -3303,9 +3301,9 @@
         "image_refs": 9
       },
       "history": {
-        "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
-        "last_commit_date": "2026-08-25T07:57:18Z",
-        "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -3341,9 +3339,9 @@
         "image_refs": 1
       },
       "history": {
-        "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-        "last_commit_date": "2026-08-25T15:04:52+08:00",
-        "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -3428,9 +3426,9 @@
         "image_refs": 4
       },
       "history": {
-        "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
-        "last_commit_date": "2026-08-25T07:57:18Z",
-        "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -3447,9 +3445,9 @@
         "image_refs": 0
       },
       "history": {
-        "last_commit_sha": "4e33d1f1f85c58f00d03329ed55a60cbd1b5fa9c",
-        "last_commit_date": "2026-08-25T14:44:30+08:00",
-        "last_commit_message": "revert(temp): restore正文 before conservative ad pass"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -3460,6 +3458,11 @@
           "code": "giant_ocr_lines",
           "severity": "medium",
           "detail": "lines=[46, 53, 56, 67, 70, 87, 119, 165, 196, 222, 225, 247], count=17"
+        },
+        {
+          "code": "history_says_processed_but_content_fails",
+          "severity": "info",
+          "detail": "docs(temp): finalize Markdown content invariants [skip ci]"
         }
       ],
       "metrics": {
@@ -3472,9 +3475,9 @@
         "image_refs": 0
       },
       "history": {
-        "last_commit_sha": "4e33d1f1f85c58f00d03329ed55a60cbd1b5fa9c",
-        "last_commit_date": "2026-08-25T14:44:30+08:00",
-        "last_commit_message": "revert(temp): restore正文 before conservative ad pass"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -3491,9 +3494,9 @@
         "image_refs": 420
       },
       "history": {
-        "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-        "last_commit_date": "2026-08-25T15:04:52+08:00",
-        "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -3510,9 +3513,9 @@
         "image_refs": 418
       },
       "history": {
-        "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-        "last_commit_date": "2026-08-25T15:04:52+08:00",
-        "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -3529,9 +3532,9 @@
         "image_refs": 19
       },
       "history": {
-        "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
-        "last_commit_date": "2026-08-25T07:57:18Z",
-        "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     }
   ],

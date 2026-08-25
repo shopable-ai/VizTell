@@ -1,12 +1,12 @@
 {
   "summary": {
     "markdown_files_scanned": 84,
-    "files_changed": 3,
-    "files_pass": 78,
-    "files_needing_review_high": 3,
+    "files_changed": 0,
+    "files_pass": 79,
+    "files_needing_review_high": 2,
     "files_needing_review_medium": 3,
     "repair_errors": 0,
-    "toc_text_lines_removed": 3,
+    "toc_text_lines_removed": 0,
     "headings_recovered_from_toc": 0,
     "glued_headings_split": 0,
     "page_numbers_removed": 0,
@@ -15,12 +15,20 @@
   },
   "issue_counts": {
     "giant_ocr_lines": 4,
-    "history_says_processed_but_content_fails": 3,
+    "history_says_processed_but_content_fails": 5,
     "large_document_without_structure": 2,
-    "leading_toc_text_residue": 1,
     "toc_marker_needs_review": 1
   },
-  "review_file_count": 6,
+  "semantic_residual_summary": {
+    "markdown_files_scanned": 84,
+    "files_changed": 2,
+    "box_headings_promoted": 0,
+    "box_markers_unresolved": 0,
+    "poverty_titles_unresolved": 0,
+    "image_refs_checked": 10604,
+    "errors": 0
+  },
+  "review_file_count": 5,
   "review": [
     {
       "path": "temp/《人性商战(线下3天2夜全文字版)》.md",
@@ -50,31 +58,6 @@
         "last_commit_sha": "4e33d1f1f85c58f00d03329ed55a60cbd1b5fa9c",
         "last_commit_date": "2026-08-25T14:44:30+08:00",
         "last_commit_message": "revert(temp): restore正文 before conservative ad pass"
-      }
-    },
-    {
-      "path": "temp/《人性背后隐藏的邪恶密码》/index.md",
-      "status": "needs_review_high",
-      "issues": [
-        {
-          "code": "leading_toc_text_residue",
-          "severity": "high",
-          "detail": "leader_lines=1, titles=1"
-        }
-      ],
-      "metrics": {
-        "bytes": 135885,
-        "visible_chars": 44087,
-        "h1": 1,
-        "h2": 1,
-        "h3": 80,
-        "h4": 0,
-        "image_refs": 126
-      },
-      "history": {
-        "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-        "last_commit_date": "2026-08-25T15:04:52+08:00",
-        "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
       }
     },
     {
@@ -115,6 +98,11 @@
           "code": "giant_ocr_lines",
           "severity": "medium",
           "detail": "lines=[709], count=1"
+        },
+        {
+          "code": "history_says_processed_but_content_fails",
+          "severity": "info",
+          "detail": "docs(temp): finalize Markdown content invariants [skip ci]"
         }
       ],
       "metrics": {
@@ -127,9 +115,9 @@
         "image_refs": 0
       },
       "history": {
-        "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-        "last_commit_date": "2026-08-25T15:04:52+08:00",
-        "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     },
     {
@@ -170,6 +158,11 @@
           "code": "giant_ocr_lines",
           "severity": "medium",
           "detail": "lines=[46, 53, 56, 67, 70, 87, 119, 165, 196, 222, 225, 247], count=17"
+        },
+        {
+          "code": "history_says_processed_but_content_fails",
+          "severity": "info",
+          "detail": "docs(temp): finalize Markdown content invariants [skip ci]"
         }
       ],
       "metrics": {
@@ -182,10 +175,11 @@
         "image_refs": 0
       },
       "history": {
-        "last_commit_sha": "4e33d1f1f85c58f00d03329ed55a60cbd1b5fa9c",
-        "last_commit_date": "2026-08-25T14:44:30+08:00",
-        "last_commit_message": "revert(temp): restore正文 before conservative ad pass"
+        "last_commit_sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
+        "last_commit_date": "2026-08-25T07:59:45Z",
+        "last_commit_message": "docs(temp): finalize Markdown content invariants [skip ci]"
       }
     }
-  ]
+  ],
+  "unresolved_box_markers": []
 }

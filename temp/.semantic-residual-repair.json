@@ -1,0 +1,160 @@
+{
+  "policy": {
+    "completion_basis": "current semantic/structural content, not file modified date or historical commit message",
+    "image_invariant": "exact Markdown image reference multiset preserved"
+  },
+  "summary": {
+    "markdown_files_scanned": 84,
+    "files_changed": 2,
+    "box_headings_promoted": 0,
+    "box_markers_unresolved": 0,
+    "poverty_titles_unresolved": 0,
+    "image_refs_checked": 10604,
+    "errors": 0
+  },
+  "results": [
+    {
+      "path": "temp/《人性背后隐藏的邪恶密码》/index.md",
+      "changed": true,
+      "applied": true,
+      "image_refs": 126,
+      "details": {
+        "leading_toc": {
+          "changed": true,
+          "page8_line": 200,
+          "body_reset_line": 202,
+          "toc_text_lines_removed": 176
+        }
+      }
+    },
+    {
+      "path": "temp/《穷人的底层逻辑》/index.md",
+      "changed": true,
+      "applied": true,
+      "image_refs": 7,
+      "details": {
+        "poverty_semantic_titles": {
+          "titles_expected": 28,
+          "titles_split": 28,
+          "splits": [
+            {
+              "line": 5,
+              "title": "穷人的饥饿思维"
+            },
+            {
+              "line": 36,
+              "title": "穷人只有一个鸡蛋"
+            },
+            {
+              "line": 48,
+              "title": "穷人占据不利地形"
+            },
+            {
+              "line": 55,
+              "title": "穷人是永远的弱者"
+            },
+            {
+              "line": 67,
+              "title": "穷人是社会的基础"
+            },
+            {
+              "line": 74,
+              "title": "穷人是一种资源"
+            },
+            {
+              "line": 86,
+              "title": "穷人被支配"
+            },
+            {
+              "line": 106,
+              "title": "穷人不安全"
+            },
+            {
+              "line": 120,
+              "title": "穷人容易上当"
+            },
+            {
+              "line": 131,
+              "title": "穷人劳动不止"
+            },
+            {
+              "line": 143,
+              "title": "穷人恩重如山"
+            },
+            {
+              "line": 156,
+              "title": "穷人是颗螺丝钉"
+            },
+            {
+              "line": 163,
+              "title": "穷人没法不志短"
+            },
+            {
+              "line": 171,
+              "title": "穷人为富人输血"
+            },
+            {
+              "line": 184,
+              "title": "穷人后富起来"
+            },
+            {
+              "line": 191,
+              "title": "穷人不要感恩戴德"
+            },
+            {
+              "line": 198,
+              "title": "穷人幻想现代化"
+            },
+            {
+              "line": 209,
+              "title": "穷人要奋斗"
+            },
+            {
+              "line": 221,
+              "title": "素养创造财富"
+            },
+            {
+              "line": 234,
+              "title": "靠人推是走不远的"
+            },
+            {
+              "line": 244,
+              "title": "穷人要有思想"
+            },
+            {
+              "line": 253,
+              "title": "穷人要有激情"
+            },
+            {
+              "line": 266,
+              "title": "你是穷人你怕什么"
+            },
+            {
+              "line": 271,
+              "title": "穷人重视手艺"
+            },
+            {
+              "line": 280,
+              "title": "穷人最有革命性"
+            },
+            {
+              "line": 287,
+              "title": "把幻想变成理想"
+            },
+            {
+              "line": 295,
+              "title": "始终保持斗志"
+            },
+            {
+              "line": 306,
+              "title": "发财是件苦差事"
+            }
+          ],
+          "unresolved_titles": []
+        }
+      }
+    }
+  ],
+  "unresolved_box_markers": [],
+  "errors": []
+}
