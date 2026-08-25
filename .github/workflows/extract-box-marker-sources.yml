@@ -1,0 +1,48 @@
+name: Extract Box Marker Sources
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/extract-box-marker-sources.yml'
+      - 'scripts/extract_box_marker_sources.py'
+  workflow_dispatch:
+
+concurrency:
+  group: markdown-temp-repair-main
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  extract:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Rebase to latest main
+        run: |
+          git fetch origin main
+          git rebase origin/main
+      - name: Extract source lines
+        run: |
+          python scripts/extract_box_marker_sources.py
+          cat temp/.box-marker-sources.tsv
+      - name: Commit source diagnostic
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add temp/.box-marker-sources.tsv
+          if git diff --cached --quiet; then
+            echo 'Box marker sources unchanged.'
+          else
+            git commit -m 'chore(temp): refresh boxed-section source list [skip ci]'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
