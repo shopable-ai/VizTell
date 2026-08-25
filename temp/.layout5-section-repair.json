@@ -1,0 +1,131 @@
+{
+  "status": "applied",
+  "path": "temp/布局锦囊5.0/index.md",
+  "major_part_upgraded_to_h2": true,
+  "reviewed_sections_restored": 15,
+  "embedded_sections_split_from_prose": 4,
+  "image_refs_preserved": 19,
+  "restored": [
+    {
+      "source_line": 2316,
+      "title": "第一节 时间：如何让你的时间投资卓有成效？",
+      "had_prefix": false,
+      "prefix_tail": "",
+      "had_suffix": false,
+      "suffix_prefix": ""
+    },
+    {
+      "source_line": 2325,
+      "title": "第二节 状态：如何成为一个更在状态的狠人？",
+      "had_prefix": false,
+      "prefix_tail": "",
+      "had_suffix": false,
+      "suffix_prefix": ""
+    },
+    {
+      "source_line": 2331,
+      "title": "第三节 情商：如何既取悦自己又让别人舒服？",
+      "had_prefix": false,
+      "prefix_tail": "",
+      "had_suffix": false,
+      "suffix_prefix": ""
+    },
+    {
+      "source_line": 2341,
+      "title": "第四节 学霸：如何加速成为某个领域的高手？",
+      "had_prefix": false,
+      "prefix_tail": "",
+      "had_suffix": false,
+      "suffix_prefix": ""
+    },
+    {
+      "source_line": 2352,
+      "title": "第五节 读书：如何将读过的书转化为生产力？",
+      "had_prefix": false,
+      "prefix_tail": "",
+      "had_suffix": false,
+      "suffix_prefix": ""
+    },
+    {
+      "source_line": 2358,
+      "title": "第六节 写作：如何通过写作让自己更有优势？",
+      "had_prefix": true,
+      "prefix_tail": "6 多读有结果的人写的书，你会更容易有结果 S 7 真正的读懂 ， 是结合自身实际 ，理解｀坚信 ｀持续践行，并做出成绩 ｀、",
+      "had_suffix": false,
+      "suffix_prefix": ""
+    },
+    {
+      "source_line": 2364,
+      "title": "第七节 讲课：如何让你讲出去的话很有价值？",
+      "had_prefix": false,
+      "prefix_tail": "",
+      "had_suffix": false,
+      "suffix_prefix": ""
+    },
+    {
+      "source_line": 2370,
+      "title": "第八节 牛人：如何通过持续见牛人突破自己？",
+      "had_prefix": false,
+      "prefix_tail": "",
+      "had_suffix": false,
+      "suffix_prefix": ""
+    },
+    {
+      "source_line": 2378,
+      "title": "第一节 贵人：如何让自己拥有超好的贵人运？",
+      "had_prefix": false,
+      "prefix_tail": "",
+      "had_suffix": false,
+      "suffix_prefix": ""
+    },
+    {
+      "source_line": 2387,
+      "title": "第二节 团队：如何打造极有战斗力的小团队？",
+      "had_prefix": true,
+      "prefix_tail": "1 1 被重视、 袚鼓励 ｀ 被 夸 奖、被理解 ｀ 被 支持、 被需要 ， 是你的刚需 ， 也是别人 的刚需 C",
+      "had_suffix": false,
+      "suffix_prefix": ""
+    },
+    {
+      "source_line": 2396,
+      "title": "第三节 销售：如何让你的销售能力大幅提升？",
+      "had_prefix": false,
+      "prefix_tail": "",
+      "had_suffix": false,
+      "suffix_prefix": ""
+    },
+    {
+      "source_line": 2405,
+      "title": "第四节 个人品牌：如何让你的个人品牌越来越贵？",
+      "had_prefix": true,
+      "prefix_tail": "【 扑龙旮钜内部资粘 】 布局称 贞系 夕．",
+      "had_suffix": false,
+      "suffix_prefix": ""
+    },
+    {
+      "source_line": 2413,
+      "title": "第五节 冠军：如何运用冠军战略吸引好机会？",
+      "had_prefix": false,
+      "prefix_tail": "",
+      "had_suffix": false,
+      "suffix_prefix": ""
+    },
+    {
+      "source_line": 2424,
+      "title": "第六节 赚钱：如何有效提高自己的赚钱水平？",
+      "had_prefix": true,
+      "prefix_tail": "［ 卧龙秤 销内部资料 ］ 布 局锦 龚系 列",
+      "had_suffix": false,
+      "suffix_prefix": ""
+    },
+    {
+      "source_line": 2438,
+      "title": "第七节 写书：如何让写书这件事变得更容易？",
+      "had_prefix": false,
+      "prefix_tail": "",
+      "had_suffix": false,
+      "suffix_prefix": ""
+    }
+  ],
+  "errors": []
+}

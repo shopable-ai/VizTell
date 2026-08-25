@@ -2,15 +2,14 @@
   "summary": {
     "markdown_files_scanned": 84,
     "pass": 20,
-    "needs_review_high": 1,
-    "needs_review_medium": 63,
+    "needs_review_high": 0,
+    "needs_review_medium": 64,
     "review_total": 64,
     "image_refs_total": 10604
   },
   "issue_counts": {
     "history_processed_but_content_fails": 59,
-    "low_heading_density": 3,
-    "plain_chapter_markers": 1,
+    "low_heading_density": 2,
     "possible_ad_residue": 19,
     "possible_heading_body_glue": 54
   },
@@ -398,13 +397,13 @@
         {
           "code": "history_processed_but_content_fails",
           "severity": "info",
-          "detail": "docs(temp): finalize Markdown content invariants [skip ci]"
+          "detail": "docs(temp): repair Human Mind section 15 [skip ci]"
         }
       ],
       "history": {
-        "sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
-        "date": "2026-08-25T07:59:45Z",
-        "message": "docs(temp): finalize Markdown content invariants [skip ci]"
+        "sha": "b06a040d7e1ff61eb03b193f8e433afc6cc5f777",
+        "date": "2026-08-25T09:34:21Z",
+        "message": "docs(temp): repair Human Mind section 15 [skip ci]"
       }
     },
     {
@@ -1869,30 +1868,20 @@
     },
     {
       "path": "temp/布局锦囊5.0/index.md",
-      "status": "needs_review_high",
+      "status": "needs_review_medium",
       "metrics": {
-        "bytes": 1260571,
-        "visible_chars": 407628,
+        "bytes": 1260640,
+        "visible_chars": 407633,
         "h1": 1,
-        "headings_2_4": 23,
+        "headings_2_4": 38,
         "image_refs": 19,
-        "lines": 5361
+        "lines": 5369
       },
       "issues": [
         {
-          "code": "low_heading_density",
-          "severity": "medium",
-          "detail": "chars_per_heading=17723"
-        },
-        {
-          "code": "plain_chapter_markers",
-          "severity": "high",
-          "detail": "count=11, examples=[(2316, '第一节时间：如何让你的时间投资卓有成效？'), (2325, '第二 节状态：如何成为一个更在状态的狠人？'), (2331, '第三节情商：如何既取悦自己又让别人舒服？'), (2341, '第四节学霸：如何加速成为某个领域的高手？'), (2352, '第五节读书：如何将读过的书转化为生产力？'), (2364, '第七节讲课：如何让你讲出去的话很有价值？'), (2370, '第八节牛人：如何通过持续见牛人突破自己？'), (2378, '第一节贵人：如何让自已拥有超好的贵人运？'), (2396, '第三节销售： 如 何让你 的 销 售 能 力大幅提升？'), (2413, '第五节冠军：如何运用冠军战略吸引好机会？'), (2438, '第七节写书 ： 如何让写 书这 件事 变 得更 容 易？')]"
-        },
-        {
           "code": "possible_ad_residue",
           "severity": "medium",
-          "detail": "count_sample=8, examples=[{'line': 2151, 'match': '微信号'}, {'line': 2611, 'match': '微信号'}, {'line': 2612, 'match': '微信号'}, {'line': 2748, 'match': '微信号'}, {'line': 2748, 'match': '微信号'}, {'line': 2772, 'match': '微信号'}, {'line': 2774, 'match': '微信号'}, {'line': 2788, 'match': '微信号'}]"
+          "detail": "count_sample=8, examples=[{'line': 2151, 'match': '微信号'}, {'line': 2619, 'match': '微信号'}, {'line': 2620, 'match': '微信号'}, {'line': 2756, 'match': '微信号'}, {'line': 2756, 'match': '微信号'}, {'line': 2780, 'match': '微信号'}, {'line': 2782, 'match': '微信号'}, {'line': 2796, 'match': '微信号'}]"
         },
         {
           "code": "possible_heading_body_glue",
