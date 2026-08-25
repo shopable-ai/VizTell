@@ -2,8 +2,8 @@
   "summary": {
     "markdown_files_scanned": 84,
     "pass": 17,
-    "needs_review_high": 6,
-    "needs_review_medium": 61,
+    "needs_review_high": 4,
+    "needs_review_medium": 63,
     "review_total": 67,
     "image_refs_total": 10604
   },
@@ -13,7 +13,7 @@
     "history_processed_but_content_fails": 63,
     "large_document_without_structure": 2,
     "low_heading_density": 4,
-    "oversized_heading": 4,
+    "oversized_heading": 2,
     "possible_ad_residue": 19,
     "possible_heading_body_glue": 56
   },
@@ -51,8 +51,8 @@
       "path": "temp/008《布局锦囊3.0》/index.md",
       "status": "needs_review_high",
       "metrics": {
-        "bytes": 1132120,
-        "visible_chars": 375201,
+        "bytes": 1131631,
+        "visible_chars": 374858,
         "h1": 1,
         "headings_2_4": 44,
         "image_refs": 466,
@@ -112,25 +112,20 @@
     },
     {
       "path": "temp/《458条人性顶级秘术》/index.md",
-      "status": "needs_review_high",
+      "status": "needs_review_medium",
       "metrics": {
-        "bytes": 1040146,
-        "visible_chars": 341185,
+        "bytes": 1033220,
+        "visible_chars": 338587,
         "h1": 1,
         "headings_2_4": 48,
         "image_refs": 44,
-        "lines": 22351
+        "lines": 21271
       },
       "issues": [
         {
           "code": "possible_ad_residue",
           "severity": "medium",
-          "detail": "count_sample=1, examples=[{'line': 11321, 'match': '加我微信'}]"
-        },
-        {
-          "code": "oversized_heading",
-          "severity": "high",
-          "detail": "count=1, examples=[{'line': 9407, 'level': 2, 'length': 292, 'text': '第1招.用拖延法消耗他的时间。这个方法非常简单有效，也经常被很多人使用，如果别人请你办某事，你不想答应他，但又不想直接拒绝，怕他难堪，你就用这招：比如他跟你说：兄弟，明天上午帮我搬家吧？你不想去，又不好直接拒绝，你就这么回答他：我上午家里有事，要不你等我到下午吧？像这种情况，一般他们是等不了的，从而去找别人帮忙了。这不'}]"
+          "detail": "count_sample=1, examples=[{'line': 10779, 'match': '加我微信'}]"
         },
         {
           "code": "history_processed_but_content_fails",
@@ -177,8 +172,8 @@
       "path": "temp/《人心探索（操控篇）》/index.md",
       "status": "needs_review_medium",
       "metrics": {
-        "bytes": 310873,
-        "visible_chars": 100419,
+        "bytes": 310797,
+        "visible_chars": 100367,
         "h1": 1,
         "headings_2_4": 56,
         "image_refs": 177,
@@ -366,8 +361,8 @@
       "path": "temp/《人性底层模型2.0》/index.md",
       "status": "needs_review_medium",
       "metrics": {
-        "bytes": 407260,
-        "visible_chars": 140775,
+        "bytes": 406935,
+        "visible_chars": 140504,
         "h1": 1,
         "headings_2_4": 803,
         "image_refs": 105,
@@ -429,8 +424,8 @@
       "path": "temp/《人性成败拿捏》/index.md",
       "status": "needs_review_medium",
       "metrics": {
-        "bytes": 362698,
-        "visible_chars": 116462,
+        "bytes": 362682,
+        "visible_chars": 116452,
         "h1": 1,
         "headings_2_4": 200,
         "image_refs": 259,
@@ -516,18 +511,18 @@
       "path": "temp/《人性真相》/index.md",
       "status": "needs_review_medium",
       "metrics": {
-        "bytes": 132020,
-        "visible_chars": 42251,
+        "bytes": 129910,
+        "visible_chars": 41220,
         "h1": 1,
         "headings_2_4": 16,
         "image_refs": 113,
-        "lines": 1279
+        "lines": 1178
       },
       "issues": [
         {
           "code": "possible_heading_body_glue",
           "severity": "medium",
-          "detail": "count_sample=30, stems=[], examples=[{'line': 21, 'prefix': '为什么你总是被欺负？', 'body_starter': '因为', 'excerpt': '为什么你总是被欺负？因为你不懂人性，过分善良就是一种纵容；'}, {'line': 22, 'prefix': '为什么你总是被欺骗？', 'body_starter': '因为', 'excerpt': '为什么你总是被欺骗？因为你不懂人性，交浅言深是大忌。'}, {'line': 23, 'prefix': '为什么你总是被利用？', 'body_starter': '因为', 'excerpt': '为什么你总是被利用？因为你不懂人性，飞乌尽良，弓藏，狡兔死，走狗烹。'}, {'line': 24, 'prefix': '为什么你总是成为棋子和炮灰？', 'body_starter': '因为', 'excerpt': '为什么你总是成为棋子和炮灰？因为你不懂人性，这个社会有两套规则，一套是显性的，一套是隐性的。'}, {'line': 41, 'prefix': '这几年新进来的年轻人', 'body_starter': '很多', 'excerpt': '这几年新进来的年轻人，很多都是名牌大学毕业，学习能力、执行力、综合素质都比较强。'}, {'line': 46, 'prefix': '平时沟通协调、开会、处理事情', 'body_starter': '大家', 'excerpt': '平时沟通协调、开会、处理事情，大家都是客客气气的，我一路走来，也遇到很多帮助过我的贵人。'}, {'line': 50, 'prefix': '如果你不离开这个污浊的环境，你整天都会深陷到各种各样的问题', 'body_starter': '当', 'excerpt': '如果你不离开这个污浊的环境，你整天都会深陷到各种各样的问题当中。'}, {'line': 60, 'prefix': '为什么会这样呢？我接下来详细展开来跟', 'body_starter': '大家', 'excerpt': '为什么会这样呢？我接下来详细展开来跟大家说一说：底层往往是各种失意人群的聚集地在大多数单位，领导们都会有这样的想法，比如说某个年轻人不好用，工作态度特别差，故意摆烂。'}, {'line': 63, 'prefix': '如果这个领导级别高，没办法', 'body_starter': '当', 'excerpt': '如果这个领导级别高，没办法当副职，你不能给他降级啊，那就给个正职吧。但是不能调去好单位，把他弄去差的、边缘化的、无关紧要的下属单位当正职，级别不变。'}, {'line': 69, 'prefix': '再比如说，某个领导', 'body_starter': '因为', 'excerpt': '再比如说，某个领导，因为某种原因被处分了，或者出了什么问题被问责了。行，把他弄到下面的单位去下放。'}, {'line': 72, 'prefix': '一把手发现下面单位', 'body_starter': '有一个', 'excerpt': '一把手发现下面单位有一个年轻人，写材料不错，参加各种竞赛总是得奖，公众号：知识藏经阁，这个年轻人借调上级单位期间，经常被表扬，形象气质都非常好。行，咱们机关部门正缺人呢，把这个年轻人调上来吧。'}, {'line': 74, 'prefix': '在这些单位，有的人要么是把这个基层单位', 'body_starter': '当', 'excerpt': '在这些单位，有的人要么是把这个基层单位当做跳板，时刻想着跑路，比如遴选考走。'}]"
+          "detail": "count_sample=30, stems=[], examples=[{'line': 20, 'prefix': '为什么你总是被欺负？', 'body_starter': '因为', 'excerpt': '为什么你总是被欺负？因为你不懂人性，过分善良就是一种纵容；'}, {'line': 21, 'prefix': '为什么你总是被欺骗？', 'body_starter': '因为', 'excerpt': '为什么你总是被欺骗？因为你不懂人性，交浅言深是大忌。'}, {'line': 22, 'prefix': '为什么你总是被利用？', 'body_starter': '因为', 'excerpt': '为什么你总是被利用？因为你不懂人性，飞乌尽良，弓藏，狡兔死，走狗烹。'}, {'line': 23, 'prefix': '为什么你总是成为棋子和炮灰？', 'body_starter': '因为', 'excerpt': '为什么你总是成为棋子和炮灰？因为你不懂人性，这个社会有两套规则，一套是显性的，一套是隐性的。'}, {'line': 39, 'prefix': '这几年新进来的年轻人', 'body_starter': '很多', 'excerpt': '这几年新进来的年轻人，很多都是名牌大学毕业，学习能力、执行力、综合素质都比较强。'}, {'line': 43, 'prefix': '平时沟通协调、开会、处理事情', 'body_starter': '大家', 'excerpt': '平时沟通协调、开会、处理事情，大家都是客客气气的，我一路走来，也遇到很多帮助过我的贵人。'}, {'line': 47, 'prefix': '如果你不离开这个污浊的环境，你整天都会深陷到各种各样的问题', 'body_starter': '当', 'excerpt': '如果你不离开这个污浊的环境，你整天都会深陷到各种各样的问题当中。'}, {'line': 56, 'prefix': '为什么会这样呢？我接下来详细展开来跟', 'body_starter': '大家', 'excerpt': '为什么会这样呢？我接下来详细展开来跟大家说一说：底层往往是各种失意人群的聚集地在大多数单位，领导们都会有这样的想法，比如说某个年轻人不好用，工作态度特别差，故意摆烂。'}, {'line': 59, 'prefix': '如果这个领导级别高，没办法', 'body_starter': '当', 'excerpt': '如果这个领导级别高，没办法当副职，你不能给他降级啊，那就给个正职吧。但是不能调去好单位，把他弄去差的、边缘化的、无关紧要的下属单位当正职，级别不变。'}, {'line': 64, 'prefix': '再比如说，某个领导', 'body_starter': '因为', 'excerpt': '再比如说，某个领导，因为某种原因被处分了，或者出了什么问题被问责了。行，把他弄到下面的单位去下放。'}, {'line': 67, 'prefix': '一把手发现下面单位', 'body_starter': '有一个', 'excerpt': '一把手发现下面单位有一个年轻人，写材料不错，参加各种竞赛总是得奖，公众号：知识藏经阁，这个年轻人借调上级单位期间，经常被表扬，形象气质都非常好。行，咱们机关部门正缺人呢，把这个年轻人调上来吧。'}, {'line': 69, 'prefix': '在这些单位，有的人要么是把这个基层单位', 'body_starter': '当', 'excerpt': '在这些单位，有的人要么是把这个基层单位当做跳板，时刻想着跑路，比如遴选考走。'}]"
         },
         {
           "code": "history_processed_but_content_fails",
@@ -543,25 +538,20 @@
     },
     {
       "path": "temp/《人性真言》/index.md",
-      "status": "needs_review_high",
+      "status": "needs_review_medium",
       "metrics": {
-        "bytes": 145484,
-        "visible_chars": 47300,
+        "bytes": 142967,
+        "visible_chars": 46031,
         "h1": 1,
         "headings_2_4": 17,
         "image_refs": 106,
-        "lines": 1049
+        "lines": 1003
       },
       "issues": [
         {
           "code": "possible_ad_residue",
           "severity": "medium",
-          "detail": "count_sample=1, examples=[{'line': 857, 'match': '加我微信'}]"
-        },
-        {
-          "code": "oversized_heading",
-          "severity": "high",
-          "detail": "count=1, examples=[{'line': 925, 'level': 2, 'length': 303, 'text': '第1招.用拖延法消耗他的时间。这个方法非常简单有效，也经常被很多人使用，如果别人请你办某事，你不想答应他，但又不想直接拒绝，怕他难堪，你就用这招：比如他跟你说：兄弟，明天上午帮我搬家吧？你不想去，又不好直接拒绝，你就这么回答他：我上午家里有事，要不你等我到下午吧？像这种情况，公号：文字变现艺术家，一般他们是等不了的，从'}]"
+          "detail": "count_sample=1, examples=[{'line': 815, 'match': '加我微信'}]"
         },
         {
           "code": "history_processed_but_content_fails",
@@ -579,18 +569,18 @@
       "path": "temp/《人性社交思维手册》/index.md",
       "status": "needs_review_medium",
       "metrics": {
-        "bytes": 100239,
-        "visible_chars": 32451,
+        "bytes": 99102,
+        "visible_chars": 31941,
         "h1": 1,
         "headings_2_4": 11,
         "image_refs": 90,
-        "lines": 1085
+        "lines": 1028
       },
       "issues": [
         {
           "code": "possible_heading_body_glue",
           "severity": "medium",
-          "detail": "count_sample=30, stems=[], examples=[{'line': 41, 'prefix': '人性社交职场沟通思维手册你好，我是mona', 'body_starter': '很多', 'excerpt': '人性社交职场沟通思维手册你好，我是mona，很多人混到现在一事无成，或自认为一事无成。还有很多人混到现在感觉很失败，或不成功。'}, {'line': 43, 'prefix': '我们羡慕着社会上每', 'body_starter': '一个', 'excerpt': '我们羡慕着社会上每一个成功人士，羡慕着身边的有钱人，羡慕着身边每一辆呼啸而过的名车。'}, {'line': 45, 'prefix': '是啊，我怎么会混得这么差？', 'body_starter': '当', 'excerpt': '是啊，我怎么会混得这么差？当年班里（周围）不如我的那个家伙怎么现在这么发达？'}, {'line': 55, 'prefix': '人的一生，不能百年孤独，总要有朋友', 'body_starter': '如果', 'excerpt': '人的一生，不能百年孤独，总要有朋友，如果你想做一名合格的平民百姓，只要奉公守法，那随着你的性子交友，你愿意交就交，不愿意就让他滚。'}, {'line': 57, 'prefix': '我为什么这么说，其实这些朋友里，平时基本上用不着', 'body_starter': '一般', 'excerpt': '我为什么这么说，其实这些朋友里，平时基本上用不着，一般人朋友圈里多是同事、同学、邻居，因为我们平时打交道的朋友、一起喝酒唱歌洗澡的朋友，也就这一圈了，若没有一定的目的性，谁会去刻意交往一个律师或一个流氓呢？'}, {'line': 64, 'prefix': '律师的作用', 'body_starter': '大家', 'excerpt': '律师的作用，大家应该都知道，你落难倒霉的关键时候，他能拉你有力的一把。警察也不用说，常在社会混，哪能不湿鞋，车被扣了，人被查了，基本上这些事有一个局内朋友帮你，你不会吃多大亏。'}, {'line': 65, 'prefix': '老师的作用', 'body_starter': '对于', 'excerpt': '老师的作用对于以后家有儿女的朋友来讲，无疑是巨大的。'}, {'line': 74, 'prefix': '至于为什么要', 'body_starter': '有一个', 'excerpt': '至于为什么要有一个流氓地痞朋友，很多人不明白，其实很简单，在现阶段的社会里，日常生活中很多事，用这些朋友去解决，比其它任何方法都简便有效得多，但不能无限制地使用，他的副作用也是蛮大的，没有代价只有得到是不可能的，具体怎么考虑性价比，请精密计算。'}, {'line': 79, 'prefix': '人活于世，不可能没有爱好', 'body_starter': '如果', 'excerpt': '人活于世，不可能没有爱好，如果你觉得一个人没有爱好，那说明你没发现。他喜欢吃喝，陪他吃喝；他喜欢唱歌跳舞，陪他跳舞唱歌；他第4页，共87页'}, {'line': 84, 'prefix': '交朋友细节方面也有两点，舍得和倾听', 'body_starter': '如果', 'excerpt': '交朋友细节方面也有两点，舍得和倾听，如果你会点察言观色那就更好。舍得是金钱方面的舍得，你又想交点有用的朋友，又吝啬无比，那只好请你继续苦苦挣扎。'}, {'line': 85, 'prefix': '另一点是倾听，这点其实非常重要，领导为什么那么喜欢开会？', 'body_starter': '因为', 'excerpt': '另一点是倾听，这点其实非常重要，领导为什么那么喜欢开会？因为有一大堆人听自己讲话实在太爽了，心理医生为什么几乎能和每位患者处成朋友？因为他们能忍住不抽滔滔不绝患者的冲动，反能拿出一副津津有味的听众模样来。'}, {'line': 87, 'prefix': '至于如何认识到这些不同行业的朋友，说起来不可思议', 'body_starter': '其实', 'excerpt': '至于如何认识到这些不同行业的朋友，说起来不可思议，其实真的很简单。'}]"
+          "detail": "count_sample=30, stems=[], examples=[{'line': 41, 'prefix': '人性社交职场沟通思维手册你好，我是mona', 'body_starter': '很多', 'excerpt': '人性社交职场沟通思维手册你好，我是mona，很多人混到现在一事无成，或自认为一事无成。还有很多人混到现在感觉很失败，或不成功。'}, {'line': 43, 'prefix': '我们羡慕着社会上每', 'body_starter': '一个', 'excerpt': '我们羡慕着社会上每一个成功人士，羡慕着身边的有钱人，羡慕着身边每一辆呼啸而过的名车。'}, {'line': 45, 'prefix': '是啊，我怎么会混得这么差？', 'body_starter': '当', 'excerpt': '是啊，我怎么会混得这么差？当年班里（周围）不如我的那个家伙怎么现在这么发达？'}, {'line': 54, 'prefix': '人的一生，不能百年孤独，总要有朋友', 'body_starter': '如果', 'excerpt': '人的一生，不能百年孤独，总要有朋友，如果你想做一名合格的平民百姓，只要奉公守法，那随着你的性子交友，你愿意交就交，不愿意就让他滚。'}, {'line': 56, 'prefix': '我为什么这么说，其实这些朋友里，平时基本上用不着', 'body_starter': '一般', 'excerpt': '我为什么这么说，其实这些朋友里，平时基本上用不着，一般人朋友圈里多是同事、同学、邻居，因为我们平时打交道的朋友、一起喝酒唱歌洗澡的朋友，也就这一圈了，若没有一定的目的性，谁会去刻意交往一个律师或一个流氓呢？'}, {'line': 63, 'prefix': '律师的作用', 'body_starter': '大家', 'excerpt': '律师的作用，大家应该都知道，你落难倒霉的关键时候，他能拉你有力的一把。警察也不用说，常在社会混，哪能不湿鞋，车被扣了，人被查了，基本上这些事有一个局内朋友帮你，你不会吃多大亏。'}, {'line': 64, 'prefix': '老师的作用', 'body_starter': '对于', 'excerpt': '老师的作用对于以后家有儿女的朋友来讲，无疑是巨大的。'}, {'line': 72, 'prefix': '至于为什么要', 'body_starter': '有一个', 'excerpt': '至于为什么要有一个流氓地痞朋友，很多人不明白，其实很简单，在现阶段的社会里，日常生活中很多事，用这些朋友去解决，比其它任何方法都简便有效得多，但不能无限制地使用，他的副作用也是蛮大的，没有代价只有得到是不可能的，具体怎么考虑性价比，请精密计算。'}, {'line': 77, 'prefix': '人活于世，不可能没有爱好', 'body_starter': '如果', 'excerpt': '人活于世，不可能没有爱好，如果你觉得一个人没有爱好，那说明你没发现。他喜欢吃喝，陪他吃喝；他喜欢唱歌跳舞，陪他跳舞唱歌；他第4页，共87页'}, {'line': 82, 'prefix': '交朋友细节方面也有两点，舍得和倾听', 'body_starter': '如果', 'excerpt': '交朋友细节方面也有两点，舍得和倾听，如果你会点察言观色那就更好。舍得是金钱方面的舍得，你又想交点有用的朋友，又吝啬无比，那只好请你继续苦苦挣扎。'}, {'line': 83, 'prefix': '另一点是倾听，这点其实非常重要，领导为什么那么喜欢开会？', 'body_starter': '因为', 'excerpt': '另一点是倾听，这点其实非常重要，领导为什么那么喜欢开会？因为有一大堆人听自己讲话实在太爽了，心理医生为什么几乎能和每位患者处成朋友？因为他们能忍住不抽滔滔不绝患者的冲动，反能拿出一副津津有味的听众模样来。'}, {'line': 85, 'prefix': '至于如何认识到这些不同行业的朋友，说起来不可思议', 'body_starter': '其实', 'excerpt': '至于如何认识到这些不同行业的朋友，说起来不可思议，其实真的很简单。'}]"
         },
         {
           "code": "history_processed_but_content_fails",
@@ -1198,8 +1188,8 @@
       "path": "temp/《开窍开悟开智2》/index.md",
       "status": "needs_review_medium",
       "metrics": {
-        "bytes": 344818,
-        "visible_chars": 111804,
+        "bytes": 344797,
+        "visible_chars": 111791,
         "h1": 1,
         "headings_2_4": 300,
         "image_refs": 204,
@@ -1963,8 +1953,8 @@
       "path": "temp/千门谋局上册/index.md",
       "status": "needs_review_medium",
       "metrics": {
-        "bytes": 620019,
-        "visible_chars": 199391,
+        "bytes": 619949,
+        "visible_chars": 199333,
         "h1": 1,
         "headings_2_4": 189,
         "image_refs": 420,
@@ -1992,8 +1982,8 @@
       "path": "temp/千门谋局下册/index.md",
       "status": "needs_review_medium",
       "metrics": {
-        "bytes": 487426,
-        "visible_chars": 154826,
+        "bytes": 487382,
+        "visible_chars": 154786,
         "h1": 1,
         "headings_2_4": 211,
         "image_refs": 418,
