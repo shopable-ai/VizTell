@@ -5,7 +5,7 @@
 ![第5页原始页面图](assets/page-005.png)
 
 人际关系处理文库
-## 怎样
+### 怎样
 ### 洞察人心
 ZENYANG DONGCHA RENXIN延边人民出版社
 

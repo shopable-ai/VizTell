@@ -1,566 +1,7 @@
 {
-  "rule": "# book -> ## body chapter/top section -> ### subsection; front matter exempt; prose/metadata misheadings demoted",
-  "scope": "temp/**/*.md recursively; conservative semantic repair + reverse audit",
-  "changed_files": [
-    {
-      "file": "temp/《人性密码》/index.md",
-      "chapter_count": 0,
-      "chapter_levels": {},
-      "h4_descendants": 0,
-      "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 2,
-      "numbered_changes": [],
-      "reverse_audit_changes": [
-        {
-          "line": 3,
-          "title": "人性窋码",
-          "from": 2,
-          "to": 0,
-          "reason": "reverse-false-promotion"
-        }
-      ],
-      "jump_changes": [
-        {
-          "line": 22,
-          "title": "000、成年人生存指南：成上都是主义，心里都是生您• 5",
-          "from": 3,
-          "to": 2,
-          "reason": "fill-missing-heading-level"
-        }
-      ],
-      "frontmatter_exemptions": []
-    },
-    {
-      "file": "temp/《人性底层模型1.0》/index.md",
-      "chapter_count": 0,
-      "chapter_levels": {},
-      "h4_descendants": 0,
-      "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 2,
-      "numbered_changes": [],
-      "reverse_audit_changes": [
-        {
-          "line": 75,
-          "title": "核心的目的，这样的话也就导致了我自己把大量的时间浪费",
-          "from": 2,
-          "to": 0,
-          "reason": "reverse-false-promotion"
-        }
-      ],
-      "jump_changes": [
-        {
-          "line": 105,
-          "title": "什么意思呢？你要明白很多事情你当下去做他是看不到结果",
-          "from": 3,
-          "to": 2,
-          "reason": "fill-missing-heading-level"
-        }
-      ],
-      "frontmatter_exemptions": []
-    },
-    {
-      "file": "temp/《人性心法》/index.md",
-      "chapter_count": 8,
-      "chapter_levels": {
-        "2": 8
-      },
-      "h4_descendants": 0,
-      "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 2,
-      "numbered_changes": [],
-      "reverse_audit_changes": [
-        {
-          "line": 7,
-          "title": "-帮一亿中国人提升财富思维",
-          "from": 2,
-          "to": 0,
-          "reason": "reverse-false-promotion"
-        }
-      ],
-      "jump_changes": [
-        {
-          "line": 17,
-          "title": "人性是认知根本 人性是人格根，",
-          "from": 3,
-          "to": 2,
-          "reason": "fill-missing-heading-level"
-        }
-      ],
-      "frontmatter_exemptions": []
-    },
-    {
-      "file": "temp/《人性心理战》/index.md",
-      "chapter_count": 9,
-      "chapter_levels": {
-        "2": 9
-      },
-      "h4_descendants": 0,
-      "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 2,
-      "numbered_changes": [],
-      "reverse_audit_changes": [
-        {
-          "line": 10,
-          "title": "简体版第二部 亚洲第一心灵能量书《好的好人》 心理",
-          "from": 2,
-          "to": 0,
-          "reason": "reverse-false-promotion"
-        }
-      ],
-      "jump_changes": [
-        {
-          "line": 11,
-          "title": "李大师&江魔一语点醒百万人 惊人的观察力和心理权谋 中文畅销书榜第一名 马来西亚、新加坡50年来 战",
-          "from": 3,
-          "to": 2,
-          "reason": "fill-missing-heading-level"
-        }
-      ],
-      "frontmatter_exemptions": []
-    },
-    {
-      "file": "temp/《人性真相》/index.md",
-      "chapter_count": 0,
-      "chapter_levels": {},
-      "h4_descendants": 0,
-      "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 4,
-      "numbered_changes": [],
-      "reverse_audit_changes": [
-        {
-          "line": 13,
-          "title": "为什么人和人之间走得太近，是一场灾难？ .97",
-          "from": 2,
-          "to": 0,
-          "reason": "reverse-false-promotion"
-        }
-      ],
-      "jump_changes": [
-        {
-          "line": 152,
-          "title": "但是在基层，这套法则通常会失灵。你越是礼貌客气，",
-          "from": 3,
-          "to": 0,
-          "reason": "prose-or-metadata-misheading"
-        },
-        {
-          "line": 216,
-          "title": "我的观点是人受到后天教化的影响是非常大的，我们人首先",
-          "from": 3,
-          "to": 0,
-          "reason": "prose-or-metadata-misheading"
-        },
-        {
-          "line": 478,
-          "title": "量标准之内。",
-          "from": 3,
-          "to": 2,
-          "reason": "fill-missing-heading-level"
-        }
-      ],
-      "frontmatter_exemptions": []
-    },
-    {
-      "file": "temp/《人性艺术-内心电影剪辑师》/index.md",
-      "chapter_count": 38,
-      "chapter_levels": {
-        "2": 38
-      },
-      "h4_descendants": 0,
-      "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 5,
-      "numbered_changes": [],
-      "reverse_audit_changes": [
-        {
-          "line": 25,
-          "title": "我意象心理学”没有成效，而是因为它的成效大得使人吃惊。正",
-          "from": 2,
-          "to": 0,
-          "reason": "reverse-false-promotion"
-        }
-      ],
-      "jump_changes": [
-        {
-          "line": 36,
-          "title": "适或者有自卑情绪。总之，这些“失败者”的感觉、举止和行为",
-          "from": 3,
-          "to": 0,
-          "reason": "prose-or-metadata-misheading"
-        },
-        {
-          "line": 75,
-          "title": "在“体验”的时候，你的神经系统和大脑内部会发生变化，",
-          "from": 3,
-          "to": 0,
-          "reason": "prose-or-metadata-misheading"
-        },
-        {
-          "line": 78,
-          "title": "成“病历”限制到最少的程度，要求你运用想象和记忆建立你自",
-          "from": 3,
-          "to": 0,
-          "reason": "prose-or-metadata-misheading"
-        },
-        {
-          "line": 89,
-          "title": "我所说的“成功”与声望的标志无关，而是指创造性的成就。",
-          "from": 3,
-          "to": 0,
-          "reason": "prose-or-metadata-misheading"
-        }
-      ],
-      "frontmatter_exemptions": []
-    },
-    {
-      "file": "temp/《人性魔鬼手段》/index.md",
-      "chapter_count": 31,
-      "chapter_levels": {
-        "2": 31
-      },
-      "h4_descendants": 0,
-      "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 2,
-      "numbered_changes": [],
-      "reverse_audit_changes": [
-        {
-          "line": 7,
-          "title": "的好人》简体版 亚洲第一心灵能量书《好 “魔鬼",
-          "from": 2,
-          "to": 0,
-          "reason": "reverse-false-promotion"
-        }
-      ],
-      "jump_changes": [
-        {
-          "line": 9,
-          "title": "ING金融集团、保诚保险、卡 类图书第1名 于段",
-          "from": 3,
-          "to": 2,
-          "reason": "fill-missing-heading-level"
-        }
-      ],
-      "frontmatter_exemptions": []
-    },
-    {
-      "file": "temp/《人类欺骗行为解读》/index.md",
-      "chapter_count": 0,
-      "chapter_levels": {},
-      "h4_descendants": 0,
-      "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 6,
-      "numbered_changes": [],
-      "reverse_audit_changes": [
-        {
-          "line": 9,
-          "title": "滚石乐队的歌里曾经唱过，“你无法总是心想事成，但是有",
-          "from": 2,
-          "to": 0,
-          "reason": "reverse-false-promotion"
-        }
-      ],
-      "jump_changes": [
-        {
-          "line": 10,
-          "title": "时你会发现，你会得到你想要的”。他们之所以这样唱，就是",
-          "from": 3,
-          "to": 0,
-          "reason": "prose-or-metadata-misheading"
-        },
-        {
-          "line": 24,
-          "title": "第二编“怎么骗”展现了来自大骗子们的伟大思想、评论、建议。要",
-          "from": 3,
-          "to": 0,
-          "reason": "prose-or-metadata-misheading"
-        },
-        {
-          "line": 35,
-          "title": "17 带我去见你的“叔叔” 啊，你能骗吗 ••123",
-          "from": 3,
-          "to": 0,
-          "reason": "prose-or-metadata-misheading"
-        },
-        {
-          "line": 36,
-          "title": "18 要求你“叔叔”让你重新来过 首先把他灌酵， •••••••••130",
-          "from": 3,
-          "to": 0,
-          "reason": "prose-or-metadata-misheading"
-        },
-        {
-          "line": 37,
-          "title": "19 朋友、骗子、同胞 把你“叔叔”的耳朵借给我• ••135",
-          "from": 3,
-          "to": 2,
-          "reason": "fill-missing-heading-level"
-        }
-      ],
-      "frontmatter_exemptions": []
-    },
-    {
-      "file": "temp/《天之卷：强者修炼手册》/index.md",
-      "chapter_count": 0,
-      "chapter_levels": {},
-      "h4_descendants": 0,
-      "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 3,
-      "numbered_changes": [],
-      "reverse_audit_changes": [
-        {
-          "line": 8,
-          "title": "筷 者修炼手册",
-          "from": 2,
-          "to": 0,
-          "reason": "reverse-false-promotion"
-        }
-      ],
-      "jump_changes": [
-        {
-          "line": 13,
-          "title": "强者修炼手册（1.0版）",
-          "from": 3,
-          "to": 0,
-          "reason": "prose-or-metadata-misheading"
-        },
-        {
-          "line": 41,
-          "title": "强者两大特质",
-          "from": 3,
-          "to": 2,
-          "reason": "fill-missing-heading-level"
-        }
-      ],
-      "frontmatter_exemptions": []
-    },
-    {
-      "file": "temp/《天机38局》/index.md",
-      "chapter_count": 0,
-      "chapter_levels": {},
-      "h4_descendants": 0,
-      "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 2,
-      "numbered_changes": [],
-      "reverse_audit_changes": [
-        {
-          "line": 94,
-          "title": "的数不胜数，切记，识得局中局方可不入局。",
-          "from": 2,
-          "to": 0,
-          "reason": "reverse-false-promotion"
-        }
-      ],
-      "jump_changes": [
-        {
-          "line": 340,
-          "title": "得老天相助，天行健，君子以自强不息，地势坤，君子以厚德载物",
-          "from": 3,
-          "to": 0,
-          "reason": "prose-or-metadata-misheading"
-        }
-      ],
-      "frontmatter_exemptions": []
-    },
-    {
-      "file": "temp/《布局系统2.0》/index.md",
-      "chapter_count": 3,
-      "chapter_levels": {
-        "2": 3
-      },
-      "h4_descendants": 0,
-      "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 2,
-      "numbered_changes": [],
-      "reverse_audit_changes": [
-        {
-          "line": 4,
-          "title": "希局系统2.0",
-          "from": 2,
-          "to": 0,
-          "reason": "reverse-false-promotion"
-        }
-      ],
-      "jump_changes": [
-        {
-          "line": 52,
-          "title": "作者个人简介",
-          "from": 3,
-          "to": 2,
-          "reason": "fill-missing-heading-level"
-        }
-      ],
-      "frontmatter_exemptions": []
-    },
-    {
-      "file": "temp/《成长人性》/index.md",
-      "chapter_count": 39,
-      "chapter_levels": {
-        "2": 39
-      },
-      "h4_descendants": 0,
-      "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 1,
-      "numbered_changes": [],
-      "reverse_audit_changes": [
-        {
-          "line": 27,
-          "title": "那么就意味著在整个人类中的成功分为两个方面，一个是外的",
-          "from": 2,
-          "to": 0,
-          "reason": "reverse-false-promotion"
-        }
-      ],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
-    },
-    {
-      "file": "temp/《红尘纵横3》/index.md",
-      "chapter_count": 0,
-      "chapter_levels": {},
-      "h4_descendants": 0,
-      "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 3,
-      "numbered_changes": [],
-      "reverse_audit_changes": [
-        {
-          "line": 207,
-          "title": "下来的某一节课当中来讲一讲人为什么会发展成现在这样",
-          "from": 2,
-          "to": 0,
-          "reason": "reverse-false-promotion"
-        }
-      ],
-      "jump_changes": [
-        {
-          "line": 420,
-          "title": "普通人买我以后会在房产课当中讲，普通人买房子的逻",
-          "from": 3,
-          "to": 0,
-          "reason": "prose-or-metadata-misheading"
-        },
-        {
-          "line": 491,
-          "title": "而大多数人活在一个什么样的状态当中呢？活在自我的状",
-          "from": 3,
-          "to": 2,
-          "reason": "fill-missing-heading-level"
-        }
-      ],
-      "frontmatter_exemptions": []
-    },
-    {
-      "file": "temp/《透视人性》/index.md",
-      "chapter_count": 0,
-      "chapter_levels": {},
-      "h4_descendants": 0,
-      "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 3,
-      "numbered_changes": [],
-      "reverse_audit_changes": [
-        {
-          "line": 445,
-          "title": "颚吸了两吸，这两声之后，必是自夸或吹年，满脸得色，啧啧两声只",
-          "from": 2,
-          "to": 0,
-          "reason": "reverse-false-promotion"
-        }
-      ],
-      "jump_changes": [
-        {
-          "line": 447,
-          "title": "耳朵不太好使时喜欢说：“啊？”，一副诧异天真的样子，希望",
-          "from": 3,
-          "to": 0,
-          "reason": "prose-or-metadata-misheading"
-        },
-        {
-          "line": 845,
-          "title": "薪 籍： 咧： SSQ：",
-          "from": 3,
-          "to": 2,
-          "reason": "fill-missing-heading-level"
-        }
-      ],
-      "frontmatter_exemptions": []
-    },
-    {
-      "file": "temp/千门谋局下册/index.md",
-      "chapter_count": 0,
-      "chapter_levels": {},
-      "h4_descendants": 0,
-      "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 7,
-      "numbered_changes": [],
-      "reverse_audit_changes": [
-        {
-          "line": 11,
-          "title": "：设局 兵的地方选在和国王办公室正好对着",
-          "from": 2,
-          "to": 0,
-          "reason": "reverse-false-promotion"
-        }
-      ],
-      "jump_changes": [
-        {
-          "line": 26,
-          "title": "二：控局 像大皇子一样，说话很有艺术，绝不",
-          "from": 3,
-          "to": 0,
-          "reason": "prose-or-metadata-misheading"
-        },
-        {
-          "line": 75,
-          "title": "：进退思维 识时务，不可萍撞",
-          "from": 3,
-          "to": 0,
-          "reason": "prose-or-metadata-misheading"
-        },
-        {
-          "line": 96,
-          "title": "二：大局思维 利，势必会因小失大，误入歧途，陷",
-          "from": 3,
-          "to": 0,
-          "reason": "prose-or-metadata-misheading"
-        },
-        {
-          "line": 143,
-          "title": "：以奇致胜",
-          "from": 3,
-          "to": 0,
-          "reason": "prose-or-metadata-misheading"
-        },
-        {
-          "line": 161,
-          "title": "二：以正立身 保住成果，且把成果正义化，也是一",
-          "from": 3,
-          "to": 0,
-          "reason": "prose-or-metadata-misheading"
-        },
-        {
-          "line": 212,
-          "title": "一：示弱思维 时期的著名谋士",
-          "from": 3,
-          "to": 2,
-          "reason": "fill-missing-heading-level"
-        }
-      ],
-      "frontmatter_exemptions": []
-    }
-  ],
+  "rule": "# book -> ## numbered chapter -> ### chapter subsection -> #### true subsection child",
+  "scope": "temp/**/*.md recursively; high-confidence numbered chapter shifts only",
+  "changed_files": [],
   "audited_files": [
     {
       "file": "temp/007《布局锦囊1.0》/index.md",
@@ -568,12 +9,7 @@
       "chapter_levels": {},
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/008《布局锦囊3.0》/index.md",
@@ -581,12 +17,7 @@
       "chapter_levels": {},
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/009《布局锦囊2.0》/index.md",
@@ -594,12 +25,7 @@
       "chapter_levels": {},
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《458条人性顶级秘术》/index.md",
@@ -609,12 +35,7 @@
       },
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《万能厚黑不黑模式》/index.md",
@@ -624,12 +45,7 @@
       },
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《万能识人术》/index.md",
@@ -637,12 +53,7 @@
       "chapter_levels": {},
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《人心探索（动机篇）》/index.md",
@@ -652,12 +63,7 @@
       },
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《人心探索（操控篇）》/index.md",
@@ -667,12 +73,7 @@
       },
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《人性商战(线下3天2夜全文字版)》.md",
@@ -680,12 +81,7 @@
       "chapter_levels": {},
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《人性天眼》/index.md",
@@ -693,12 +89,7 @@
       "chapter_levels": {},
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《人性宝典2.0》/index.md",
@@ -708,12 +99,7 @@
       },
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《人性密码》/index.md",
@@ -721,28 +107,7 @@
       "chapter_levels": {},
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 2,
-      "numbered_changes": [],
-      "reverse_audit_changes": [
-        {
-          "line": 3,
-          "title": "人性窋码",
-          "from": 2,
-          "to": 0,
-          "reason": "reverse-false-promotion"
-        }
-      ],
-      "jump_changes": [
-        {
-          "line": 22,
-          "title": "000、成年人生存指南：成上都是主义，心里都是生您• 5",
-          "from": 3,
-          "to": 2,
-          "reason": "fill-missing-heading-level"
-        }
-      ],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《人性底层模型1.0》/index.md",
@@ -750,28 +115,7 @@
       "chapter_levels": {},
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 2,
-      "numbered_changes": [],
-      "reverse_audit_changes": [
-        {
-          "line": 75,
-          "title": "核心的目的，这样的话也就导致了我自己把大量的时间浪费",
-          "from": 2,
-          "to": 0,
-          "reason": "reverse-false-promotion"
-        }
-      ],
-      "jump_changes": [
-        {
-          "line": 105,
-          "title": "什么意思呢？你要明白很多事情你当下去做他是看不到结果",
-          "from": 3,
-          "to": 2,
-          "reason": "fill-missing-heading-level"
-        }
-      ],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《人性底层模型2.0》/index.md",
@@ -779,12 +123,7 @@
       "chapter_levels": {},
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《人性心法》/index.md",
@@ -794,28 +133,7 @@
       },
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 2,
-      "numbered_changes": [],
-      "reverse_audit_changes": [
-        {
-          "line": 7,
-          "title": "-帮一亿中国人提升财富思维",
-          "from": 2,
-          "to": 0,
-          "reason": "reverse-false-promotion"
-        }
-      ],
-      "jump_changes": [
-        {
-          "line": 17,
-          "title": "人性是认知根本 人性是人格根，",
-          "from": 3,
-          "to": 2,
-          "reason": "fill-missing-heading-level"
-        }
-      ],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《人性心理战》/index.md",
@@ -825,28 +143,7 @@
       },
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 2,
-      "numbered_changes": [],
-      "reverse_audit_changes": [
-        {
-          "line": 10,
-          "title": "简体版第二部 亚洲第一心灵能量书《好的好人》 心理",
-          "from": 2,
-          "to": 0,
-          "reason": "reverse-false-promotion"
-        }
-      ],
-      "jump_changes": [
-        {
-          "line": 11,
-          "title": "李大师&江魔一语点醒百万人 惊人的观察力和心理权谋 中文畅销书榜第一名 马来西亚、新加坡50年来 战",
-          "from": 3,
-          "to": 2,
-          "reason": "fill-missing-heading-level"
-        }
-      ],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《人性成败拿捏》/index.md",
@@ -856,12 +153,7 @@
       },
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《人性探索大师1》/index.md",
@@ -871,12 +163,7 @@
       },
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《人性探索大师2》/index.md",
@@ -886,12 +173,7 @@
       },
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《人性探索大师3》/index.md",
@@ -901,12 +183,7 @@
       },
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《人性智谋36计》/index.md",
@@ -914,19 +191,7 @@
       "chapter_levels": {},
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": [
-        {
-          "line": 6,
-          "title": "前言",
-          "level": 3,
-          "reason": "front-matter"
-        }
-      ]
+      "eligible": false
     },
     {
       "file": "temp/《人性真相》/index.md",
@@ -934,42 +199,7 @@
       "chapter_levels": {},
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 4,
-      "numbered_changes": [],
-      "reverse_audit_changes": [
-        {
-          "line": 13,
-          "title": "为什么人和人之间走得太近，是一场灾难？ .97",
-          "from": 2,
-          "to": 0,
-          "reason": "reverse-false-promotion"
-        }
-      ],
-      "jump_changes": [
-        {
-          "line": 152,
-          "title": "但是在基层，这套法则通常会失灵。你越是礼貌客气，",
-          "from": 3,
-          "to": 0,
-          "reason": "prose-or-metadata-misheading"
-        },
-        {
-          "line": 216,
-          "title": "我的观点是人受到后天教化的影响是非常大的，我们人首先",
-          "from": 3,
-          "to": 0,
-          "reason": "prose-or-metadata-misheading"
-        },
-        {
-          "line": 478,
-          "title": "量标准之内。",
-          "from": 3,
-          "to": 2,
-          "reason": "fill-missing-heading-level"
-        }
-      ],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《人性真言》/index.md",
@@ -977,12 +207,7 @@
       "chapter_levels": {},
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《人性社交思维手册》/index.md",
@@ -990,12 +215,7 @@
       "chapter_levels": {},
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《人性纵横说1.0》/index.md",
@@ -1003,12 +223,7 @@
       "chapter_levels": {},
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《人性背后隐藏的邪恶密码》/index.md",
@@ -1016,12 +231,7 @@
       "chapter_levels": {},
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《人性艺术-内心电影剪辑师》/index.md",
@@ -1031,49 +241,7 @@
       },
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 5,
-      "numbered_changes": [],
-      "reverse_audit_changes": [
-        {
-          "line": 25,
-          "title": "我意象心理学”没有成效，而是因为它的成效大得使人吃惊。正",
-          "from": 2,
-          "to": 0,
-          "reason": "reverse-false-promotion"
-        }
-      ],
-      "jump_changes": [
-        {
-          "line": 36,
-          "title": "适或者有自卑情绪。总之，这些“失败者”的感觉、举止和行为",
-          "from": 3,
-          "to": 0,
-          "reason": "prose-or-metadata-misheading"
-        },
-        {
-          "line": 75,
-          "title": "在“体验”的时候，你的神经系统和大脑内部会发生变化，",
-          "from": 3,
-          "to": 0,
-          "reason": "prose-or-metadata-misheading"
-        },
-        {
-          "line": 78,
-          "title": "成“病历”限制到最少的程度，要求你运用想象和记忆建立你自",
-          "from": 3,
-          "to": 0,
-          "reason": "prose-or-metadata-misheading"
-        },
-        {
-          "line": 89,
-          "title": "我所说的“成功”与声望的标志无关，而是指创造性的成就。",
-          "from": 3,
-          "to": 0,
-          "reason": "prose-or-metadata-misheading"
-        }
-      ],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《人性要诀》/index.md",
@@ -1081,12 +249,7 @@
       "chapter_levels": {},
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《人性逆袭绝技》/index.md",
@@ -1094,12 +257,7 @@
       "chapter_levels": {},
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《人性错觉控制术》/index.md",
@@ -1107,12 +265,7 @@
       "chapter_levels": {},
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《人性陷阱》/index.md",
@@ -1122,12 +275,7 @@
       },
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《人性难题宝典1-9》.md",
@@ -1135,12 +283,7 @@
       "chapter_levels": {},
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《人性魔鬼手段》/index.md",
@@ -1150,28 +293,7 @@
       },
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 2,
-      "numbered_changes": [],
-      "reverse_audit_changes": [
-        {
-          "line": 7,
-          "title": "的好人》简体版 亚洲第一心灵能量书《好 “魔鬼",
-          "from": 2,
-          "to": 0,
-          "reason": "reverse-false-promotion"
-        }
-      ],
-      "jump_changes": [
-        {
-          "line": 9,
-          "title": "ING金融集团、保诚保险、卡 类图书第1名 于段",
-          "from": 3,
-          "to": 2,
-          "reason": "fill-missing-heading-level"
-        }
-      ],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《人类欺骗行为解读》/index.md",
@@ -1179,56 +301,7 @@
       "chapter_levels": {},
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 6,
-      "numbered_changes": [],
-      "reverse_audit_changes": [
-        {
-          "line": 9,
-          "title": "滚石乐队的歌里曾经唱过，“你无法总是心想事成，但是有",
-          "from": 2,
-          "to": 0,
-          "reason": "reverse-false-promotion"
-        }
-      ],
-      "jump_changes": [
-        {
-          "line": 10,
-          "title": "时你会发现，你会得到你想要的”。他们之所以这样唱，就是",
-          "from": 3,
-          "to": 0,
-          "reason": "prose-or-metadata-misheading"
-        },
-        {
-          "line": 24,
-          "title": "第二编“怎么骗”展现了来自大骗子们的伟大思想、评论、建议。要",
-          "from": 3,
-          "to": 0,
-          "reason": "prose-or-metadata-misheading"
-        },
-        {
-          "line": 35,
-          "title": "17 带我去见你的“叔叔” 啊，你能骗吗 ••123",
-          "from": 3,
-          "to": 0,
-          "reason": "prose-or-metadata-misheading"
-        },
-        {
-          "line": 36,
-          "title": "18 要求你“叔叔”让你重新来过 首先把他灌酵， •••••••••130",
-          "from": 3,
-          "to": 0,
-          "reason": "prose-or-metadata-misheading"
-        },
-        {
-          "line": 37,
-          "title": "19 朋友、骗子、同胞 把你“叔叔”的耳朵借给我• ••135",
-          "from": 3,
-          "to": 2,
-          "reason": "fill-missing-heading-level"
-        }
-      ],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《人脑操控力》/index.md",
@@ -1238,12 +311,7 @@
       },
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《冷读术》/index.md",
@@ -1251,12 +319,7 @@
       "chapter_levels": {},
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《坏人基因》上册.md",
@@ -1264,12 +327,7 @@
       "chapter_levels": {},
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《坏人基因》下册.md",
@@ -1277,12 +335,7 @@
       "chapter_levels": {},
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《坏术大师》/index.md",
@@ -1290,12 +343,7 @@
       "chapter_levels": {},
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《大心机1》/index.md",
@@ -1305,12 +353,7 @@
       },
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《大心机2》/index.md",
@@ -1320,12 +363,7 @@
       },
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《大心机3》.md",
@@ -1335,12 +373,7 @@
       },
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《天之卷：强者修炼手册》/index.md",
@@ -1348,35 +381,7 @@
       "chapter_levels": {},
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 3,
-      "numbered_changes": [],
-      "reverse_audit_changes": [
-        {
-          "line": 8,
-          "title": "筷 者修炼手册",
-          "from": 2,
-          "to": 0,
-          "reason": "reverse-false-promotion"
-        }
-      ],
-      "jump_changes": [
-        {
-          "line": 13,
-          "title": "强者修炼手册（1.0版）",
-          "from": 3,
-          "to": 0,
-          "reason": "prose-or-metadata-misheading"
-        },
-        {
-          "line": 41,
-          "title": "强者两大特质",
-          "from": 3,
-          "to": 2,
-          "reason": "fill-missing-heading-level"
-        }
-      ],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《天机38局》/index.md",
@@ -1384,28 +389,7 @@
       "chapter_levels": {},
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 2,
-      "numbered_changes": [],
-      "reverse_audit_changes": [
-        {
-          "line": 94,
-          "title": "的数不胜数，切记，识得局中局方可不入局。",
-          "from": 2,
-          "to": 0,
-          "reason": "reverse-false-promotion"
-        }
-      ],
-      "jump_changes": [
-        {
-          "line": 340,
-          "title": "得老天相助，天行健，君子以自强不息，地势坤，君子以厚德载物",
-          "from": 3,
-          "to": 0,
-          "reason": "prose-or-metadata-misheading"
-        }
-      ],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《富人机密手稿》/index.md",
@@ -1415,19 +399,7 @@
       },
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": [
-        {
-          "line": 3,
-          "title": "前言",
-          "level": 3,
-          "reason": "front-matter"
-        }
-      ]
+      "eligible": false
     },
     {
       "file": "temp/《布局系统2.0》/index.md",
@@ -1437,28 +409,7 @@
       },
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 2,
-      "numbered_changes": [],
-      "reverse_audit_changes": [
-        {
-          "line": 4,
-          "title": "希局系统2.0",
-          "from": 2,
-          "to": 0,
-          "reason": "reverse-false-promotion"
-        }
-      ],
-      "jump_changes": [
-        {
-          "line": 52,
-          "title": "作者个人简介",
-          "from": 3,
-          "to": 2,
-          "reason": "fill-missing-heading-level"
-        }
-      ],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《布局系统》/index.md",
@@ -1468,12 +419,7 @@
       },
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《开悟开窍开智3》/index.md",
@@ -1483,12 +429,7 @@
       },
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《开窍开悟开智1》/index.md",
@@ -1496,12 +437,7 @@
       "chapter_levels": {},
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《开窍开悟开智1》PDF.md",
@@ -1509,12 +445,7 @@
       "chapter_levels": {},
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《开窍开悟开智2》/index.md",
@@ -1522,12 +453,7 @@
       "chapter_levels": {},
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《开窍开悟开智4》/index.md",
@@ -1535,12 +461,7 @@
       "chapter_levels": {},
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《开窍开智开悟5》.md",
@@ -1550,12 +471,7 @@
       },
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《怎样洞察人心》/index.md",
@@ -1565,12 +481,7 @@
       },
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《成长人性》/index.md",
@@ -1580,20 +491,7 @@
       },
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 1,
-      "numbered_changes": [],
-      "reverse_audit_changes": [
-        {
-          "line": 27,
-          "title": "那么就意味著在整个人类中的成功分为两个方面，一个是外的",
-          "from": 2,
-          "to": 0,
-          "reason": "reverse-false-promotion"
-        }
-      ],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《揭秘男人的人性》/index.md",
@@ -1601,12 +499,7 @@
       "chapter_levels": {},
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《格商》/index.md",
@@ -1616,12 +509,7 @@
       },
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《格商》PDF版/index.md",
@@ -1631,12 +519,7 @@
       },
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《洗脑的最高境界》.md",
@@ -1644,12 +527,7 @@
       "chapter_levels": {},
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《洞察人性天机》/index.md",
@@ -1657,25 +535,7 @@
       "chapter_levels": {},
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": [
-        {
-          "line": 3,
-          "title": "序一：为什么有的人飞黄腾达，有的人穷困潦倒",
-          "level": 3,
-          "reason": "front-matter"
-        },
-        {
-          "line": 20,
-          "title": "序二：老祖宗们用鲜血和脑浆写下来的忠告",
-          "level": 3,
-          "reason": "front-matter"
-        }
-      ]
+      "eligible": false
     },
     {
       "file": "temp/《烂好人毒素》/index.md",
@@ -1683,12 +543,7 @@
       "chapter_levels": {},
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《玩转人性》.md",
@@ -1696,12 +551,7 @@
       "chapter_levels": {},
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《百发百中攻心术》/index.md",
@@ -1711,12 +561,7 @@
       },
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《社会人心运作手册》/index.md",
@@ -1726,12 +571,7 @@
       },
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《社会人心运作手册》PDF版/index.md",
@@ -1741,12 +581,7 @@
       },
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《穷人的底层逻辑》/index.md",
@@ -1754,12 +589,7 @@
       "chapter_levels": {},
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《红尘修炼手册》/index.md",
@@ -1767,19 +597,7 @@
       "chapter_levels": {},
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": [
-        {
-          "line": 7,
-          "title": "前言",
-          "level": 3,
-          "reason": "front-matter"
-        }
-      ]
+      "eligible": false
     },
     {
       "file": "temp/《红尘纵横1》/index.md",
@@ -1789,12 +607,7 @@
       },
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《红尘纵横2》/index.md",
@@ -1804,12 +617,7 @@
       },
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《红尘纵横3》/index.md",
@@ -1817,35 +625,7 @@
       "chapter_levels": {},
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 3,
-      "numbered_changes": [],
-      "reverse_audit_changes": [
-        {
-          "line": 207,
-          "title": "下来的某一节课当中来讲一讲人为什么会发展成现在这样",
-          "from": 2,
-          "to": 0,
-          "reason": "reverse-false-promotion"
-        }
-      ],
-      "jump_changes": [
-        {
-          "line": 420,
-          "title": "普通人买我以后会在房产课当中讲，普通人买房子的逻",
-          "from": 3,
-          "to": 0,
-          "reason": "prose-or-metadata-misheading"
-        },
-        {
-          "line": 491,
-          "title": "而大多数人活在一个什么样的状态当中呢？活在自我的状",
-          "from": 3,
-          "to": 2,
-          "reason": "fill-missing-heading-level"
-        }
-      ],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《绝密人性天书》净版.md",
@@ -1855,12 +635,7 @@
       },
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《贪婪的人性》男人篇.md",
@@ -1868,12 +643,7 @@
       "chapter_levels": {},
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《透视人性》/index.md",
@@ -1881,35 +651,7 @@
       "chapter_levels": {},
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 3,
-      "numbered_changes": [],
-      "reverse_audit_changes": [
-        {
-          "line": 445,
-          "title": "颚吸了两吸，这两声之后，必是自夸或吹年，满脸得色，啧啧两声只",
-          "from": 2,
-          "to": 0,
-          "reason": "reverse-false-promotion"
-        }
-      ],
-      "jump_changes": [
-        {
-          "line": 447,
-          "title": "耳朵不太好使时喜欢说：“啊？”，一副诧异天真的样子，希望",
-          "from": 3,
-          "to": 0,
-          "reason": "prose-or-metadata-misheading"
-        },
-        {
-          "line": 845,
-          "title": "薪 籍： 咧： SSQ：",
-          "from": 3,
-          "to": 2,
-          "reason": "fill-missing-heading-level"
-        }
-      ],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《道破人性第一书》.md",
@@ -1917,12 +659,7 @@
       "chapter_levels": {},
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《阅人高手1》/index.md",
@@ -1930,12 +667,7 @@
       "chapter_levels": {},
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《阅人高手2》/index.md",
@@ -1945,12 +677,7 @@
       },
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《零距离人性》/index.md",
@@ -1960,12 +687,7 @@
       },
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《驭心高手》/index.md",
@@ -1975,12 +697,7 @@
       },
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/《高手深度思考的秘密》/index.md",
@@ -1988,12 +705,7 @@
       "chapter_levels": {},
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/人性伎俩.md",
@@ -2003,12 +715,7 @@
       },
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/做局大师-人间博弈之术.md",
@@ -2018,12 +725,7 @@
       },
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/千门谋局上册/index.md",
@@ -2031,12 +733,7 @@
       "chapter_levels": {},
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/千门谋局下册/index.md",
@@ -2044,63 +741,7 @@
       "chapter_levels": {},
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 7,
-      "numbered_changes": [],
-      "reverse_audit_changes": [
-        {
-          "line": 11,
-          "title": "：设局 兵的地方选在和国王办公室正好对着",
-          "from": 2,
-          "to": 0,
-          "reason": "reverse-false-promotion"
-        }
-      ],
-      "jump_changes": [
-        {
-          "line": 26,
-          "title": "二：控局 像大皇子一样，说话很有艺术，绝不",
-          "from": 3,
-          "to": 0,
-          "reason": "prose-or-metadata-misheading"
-        },
-        {
-          "line": 75,
-          "title": "：进退思维 识时务，不可萍撞",
-          "from": 3,
-          "to": 0,
-          "reason": "prose-or-metadata-misheading"
-        },
-        {
-          "line": 96,
-          "title": "二：大局思维 利，势必会因小失大，误入歧途，陷",
-          "from": 3,
-          "to": 0,
-          "reason": "prose-or-metadata-misheading"
-        },
-        {
-          "line": 143,
-          "title": "：以奇致胜",
-          "from": 3,
-          "to": 0,
-          "reason": "prose-or-metadata-misheading"
-        },
-        {
-          "line": 161,
-          "title": "二：以正立身 保住成果，且把成果正义化，也是一",
-          "from": 3,
-          "to": 0,
-          "reason": "prose-or-metadata-misheading"
-        },
-        {
-          "line": 212,
-          "title": "一：示弱思维 时期的著名谋士",
-          "from": 3,
-          "to": 2,
-          "reason": "fill-missing-heading-level"
-        }
-      ],
-      "frontmatter_exemptions": []
+      "eligible": false
     },
     {
       "file": "temp/布局锦囊5.0/index.md",
@@ -2110,21 +751,16 @@
       },
       "h4_descendants": 0,
       "deep_descendants": 0,
-      "eligible_numbered_shift": false,
-      "heading_changes": 0,
-      "numbered_changes": [],
-      "reverse_audit_changes": [],
-      "jump_changes": [],
-      "frontmatter_exemptions": []
+      "eligible": false
     }
   ],
-  "unresolved_files": [],
+  "ambiguous_files": [],
   "summary": {
     "files_audited": 84,
-    "files_changed": 15,
-    "heading_changes": 46,
-    "reverse_audit_changes": 15,
-    "unresolved_jump_files": 0,
-    "frontmatter_exemptions": 5
+    "files_changed": 0,
+    "heading_changes": 0,
+    "chapter_changes": 0,
+    "descendant_changes": 0,
+    "ambiguous_files": 0
   }
 }
