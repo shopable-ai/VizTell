@@ -27,14 +27,15 @@ def refs(text: str) -> Counter[str]:
 
 
 def boundary(text: str) -> int | None:
-    # `text` excludes leading `## ` and starts with 陷阱.
-    q = [p for p in (text.find('？'), text.find('?')) if p >= 0]
-    if q:
-        return min(q) + 1
+    # Prefer reviewed non-question endings first: their body can itself contain
+    # an early question mark, which must not be mistaken for the title end.
     for ending in NONQUESTION_ENDINGS:
         p = text.find(ending)
         if p >= 0:
             return p + len(ending)
+    q = [p for p in (text.find('？'), text.find('?')) if p >= 0]
+    if q:
+        return min(q) + 1
     return None
 
 
@@ -55,8 +56,6 @@ def split_overlong_heading(raw: str) -> tuple[list[str], dict | None]:
 
 
 def split_inline_trap(raw: str) -> tuple[list[str], dict | None]:
-    # Recover a page-number-prefixed trap marker glued at the end of a prose line,
-    # e.g. `...更有帮助 8陷阱 7 ：为你持家理财，还是...？`.
     m = INLINE_TRAP.search(raw)
     if not m:
         return [raw], None
