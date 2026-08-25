@@ -10,7 +10,7 @@
   "issue_counts": {
     "explicit_box_heading_residue": 1,
     "giant_ocr_lines": 4,
-    "history_processed_but_content_fails": 63,
+    "history_processed_but_content_fails": 65,
     "large_document_without_structure": 2,
     "low_heading_density": 4,
     "possible_ad_residue": 19,
@@ -66,13 +66,13 @@
         {
           "code": "history_processed_but_content_fails",
           "severity": "info",
-          "detail": "docs(temp): repair unambiguous OCR and heading residuals [skip ci]"
+          "detail": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
         }
       ],
       "history": {
-        "sha": "a80755524dad1f14ab90abc413b06018ab030163",
-        "date": "2026-08-25T08:27:09Z",
-        "message": "docs(temp): repair unambiguous OCR and heading residuals [skip ci]"
+        "sha": "6d30bcbd706fdbf9a88995171e98c81fb359ec53",
+        "date": "2026-08-25T08:33:14Z",
+        "message": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
       }
     },
     {
@@ -95,13 +95,13 @@
         {
           "code": "history_processed_but_content_fails",
           "severity": "info",
-          "detail": "docs(temp): finalize Markdown content invariants [skip ci]"
+          "detail": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
         }
       ],
       "history": {
-        "sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
-        "date": "2026-08-25T07:59:45Z",
-        "message": "docs(temp): finalize Markdown content invariants [skip ci]"
+        "sha": "6d30bcbd706fdbf9a88995171e98c81fb359ec53",
+        "date": "2026-08-25T08:33:14Z",
+        "message": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
       }
     },
     {
@@ -124,13 +124,13 @@
         {
           "code": "history_processed_but_content_fails",
           "severity": "info",
-          "detail": "docs(temp): repair unambiguous OCR and heading residuals [skip ci]"
+          "detail": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
         }
       ],
       "history": {
-        "sha": "a80755524dad1f14ab90abc413b06018ab030163",
-        "date": "2026-08-25T08:27:09Z",
-        "message": "docs(temp): repair unambiguous OCR and heading residuals [skip ci]"
+        "sha": "6d30bcbd706fdbf9a88995171e98c81fb359ec53",
+        "date": "2026-08-25T08:33:14Z",
+        "message": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
       }
     },
     {
@@ -222,12 +222,17 @@
           "code": "possible_heading_body_glue",
           "severity": "medium",
           "detail": "count_sample=30, stems=[], examples=[{'line': 6, 'prefix': '没有呢这个导航图', 'body_starter': '我们', 'excerpt': '没有呢这个导航图我们有下载给你就可以了。那其实像怎么下载的方式就是我在这里讲，把我的思想，我们几位老师的思想，我吴老师、小易老师，还有我们梁老师，所有的思想全部下来给你。在这三年的时间你拿过去用这样子，你今天遇到东西和未来这条问题就能通通的干嘛。通过这些导航图解决，所以一定要做好笔记。好吧，上午首先为大家分享的叫人性获取。问他问题，如果你现在遇到一只兔子，你'}, {'line': 7, 'prefix': '没有呢这个导航图', 'body_starter': '我们', 'excerpt': '没有呢这个导航图我们有下载给你就可以了。那其实像怎么下载的方式就是我在这里讲，把我的思想，我们几位老师的思想，我吴老师、小易老师，还有我们梁老师，所有的思想全部下来给你。在这三年的时间你拿过去用这样子，你今天遇到东西和未来这条问题就能通通的干嘛。'}, {'line': 8, 'prefix': '通过这些导航图解决，所以一定要做好笔记。好吧，上午首先为', 'body_starter': '大家', 'excerpt': '通过这些导航图解决，所以一定要做好笔记。好吧，上午首先为大家分享的叫人性获取。问他问题，如果你现在遇到一只兔子，你会不会怕兔子？'}, {'line': 9, 'prefix': '因为也了解透性，因为他不会咬你知道兔子不会 1 。那你', 'body_starter': '如果', 'excerpt': '因为也了解透性，因为他不会咬你知道兔子不会 1 。那你如果是遇到一只老虎，你会不会害怕？因为你是老虎会咬人，会吃人，你了解什么猛兽的兽性主任，同样的我们要思考一件事情，就是说比如说你在举例那动物园，比如说这个动物园。'}, {'line': 11, 'prefix': '懂水性的人不怕水。不懂水性的人就怕水，因为有可能被淹到', 'body_starter': '我们', 'excerpt': '懂水性的人不怕水。不懂水性的人就怕水，因为有可能被淹到。我们说游泳要懂水性，这个驯兽要懂兽性，我们在这个人世间天天跟人打交道，身边的亲人、爱人、朋友、合伙人、员工、顾客受到人被带到赚钱，是不是从人家一把钱赚到的。'}, {'line': 13, 'prefix': '接下来我就为', 'body_starter': '大家', 'excerpt': '接下来我就为大家深度的剖析一下，大家过去没有了解到的一些真相。首先写第一句话，一不。一写上数字的阿拉伯是个一相信人性本善，已将痛苦一生。相信人性本善，你将痛苦一生。'}, {'line': 15, 'prefix': '我打野。相信人性本善，已将痛苦一生。我想强调一下上午讲的内容', 'body_starter': '对于', 'excerpt': '我打野。相信人性本善，已将痛苦一生。我想强调一下上午讲的内容，对于个别一些伙伴。'}, {'line': 24, 'prefix': '那个灭火器是干嘛的嘛？背的。对，所以你没没有资金预备', 'body_starter': '当', 'excerpt': '那个灭火器是干嘛的嘛？背的。对，所以你没没有资金预备，当这些事情发生的时候，你就痛苦了，你就受伤了，这就本质。那我们从小一直学习叫人之初，性本善，我们就相信了人性是善良的。然后我们从小跟身边的家里面的兄弟姐妹、跟父母间的关系是不是很好？'}, {'line': 27, 'prefix': '还有前几年，在一九年发生的，泰国的王女士被推下悬崖。我不知道', 'body_starter': '大家', 'excerpt': '还有前几年，在一九年发生的，泰国的王女士被推下悬崖。我不知道大家还当时也是很火爆这个事。王女士挺有钱的，家里面有点钱，她老公呢欠了很多钱，然后就老让她老婆拿钱还给她，还拿她钱还账，还了一部分，但是也不能老是还呐，无底洞啊。'}, {'line': 28, 'prefix': '后来她老公为了把她的家产全整过来，就在旅游的时候。我找到了', 'body_starter': '一个', 'excerpt': '后来她老公为了把她的家产全整过来，就在旅游的时候。我找到了一个悬崖峭壁的边上，把他这个老婆推下了悬崖。更重要的是他老婆当时怀孕，怀了这个男的孩子，够狠的。所以你发现这些事情发生在我们小的时候，那个兄弟姐妹的情不是这样子，怎么变成这样子？'}, {'line': 41, 'prefix': '一团和气啊，想着怎么出去，但最后都出不去。封锁', 'body_starter': '一个', 'excerpt': '一团和气啊，想着怎么出去，但最后都出不去。封锁一个月呢会发生什么情况？不敢多想，相当恐怖，这是正常的。我们我们要看到真相，而不是只听那些好听的话。承不承认。对，那我们就明白了，人性是会根据利益的变化而发生剧烈的改变。'}, {'line': 43, 'prefix': '四是自死的死。相信人性，粉丝才能幸福一生', 'body_starter': '我们', 'excerpt': '四是自死的死。相信人性，粉丝才能幸福一生。我们刚刚第一句话讲的叫什么？相信人性本善，你将痛苦一生。第二第二句话，这叫相信人性，粉丝才能幸福，我可以负责任告诉大家，这个世界每个人都是自私的，你也不要跟我说，然后我父母带是很无私啊，很伟大呀，我对我的孩子还是很无私很伟大的。那个。不在宗教的那些爱，那都是神圣的，都是无私的。我刚才没有人是无私的，都是自私，只是自私'}]"
+        },
+        {
+          "code": "history_processed_but_content_fails",
+          "severity": "info",
+          "detail": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
         }
       ],
       "history": {
-        "sha": "4e33d1f1f85c58f00d03329ed55a60cbd1b5fa9c",
-        "date": "2026-08-25T14:44:30+08:00",
-        "message": "revert(temp): restore正文 before conservative ad pass"
+        "sha": "6d30bcbd706fdbf9a88995171e98c81fb359ec53",
+        "date": "2026-08-25T08:33:14Z",
+        "message": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
       }
     },
     {
@@ -463,13 +468,13 @@
         {
           "code": "history_processed_but_content_fails",
           "severity": "info",
-          "detail": "docs(temp): finalize Markdown content invariants [skip ci]"
+          "detail": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
         }
       ],
       "history": {
-        "sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
-        "date": "2026-08-25T07:59:45Z",
-        "message": "docs(temp): finalize Markdown content invariants [skip ci]"
+        "sha": "6d30bcbd706fdbf9a88995171e98c81fb359ec53",
+        "date": "2026-08-25T08:33:14Z",
+        "message": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
       }
     },
     {
@@ -724,13 +729,13 @@
         {
           "code": "history_processed_but_content_fails",
           "severity": "info",
-          "detail": "docs(temp): repair content-level Markdown omissions [skip ci]"
+          "detail": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
         }
       ],
       "history": {
-        "sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
-        "date": "2026-08-25T07:57:18Z",
-        "message": "docs(temp): repair content-level Markdown omissions [skip ci]"
+        "sha": "6d30bcbd706fdbf9a88995171e98c81fb359ec53",
+        "date": "2026-08-25T08:33:14Z",
+        "message": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
       }
     },
     {
@@ -845,13 +850,13 @@
         {
           "code": "history_processed_but_content_fails",
           "severity": "info",
-          "detail": "docs(temp): finalize Markdown content invariants [skip ci]"
+          "detail": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
         }
       ],
       "history": {
-        "sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
-        "date": "2026-08-25T07:59:45Z",
-        "message": "docs(temp): finalize Markdown content invariants [skip ci]"
+        "sha": "6d30bcbd706fdbf9a88995171e98c81fb359ec53",
+        "date": "2026-08-25T08:33:14Z",
+        "message": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
       }
     },
     {
@@ -870,12 +875,17 @@
           "code": "possible_heading_body_glue",
           "severity": "medium",
           "detail": "count_sample=16, stems=['坏人', '故事'], examples=[{'line': 992, 'prefix': '故事 3：卖瓜瓜不甜〖', 'body_starter': '一个', 'excerpt': '故事 3：卖瓜瓜不甜〖一个负责的和尚，即使中午要还俗，早上该撞的钟也不会漏。〗“我有把握，十个走进来，最少留下五个。”小梅的嘴角往上挑挑，又往下撇撇。'}, {'line': 1124, 'prefix': '故事 2', 'body_starter': '当', 'excerpt': '故事 2：当蜜月过去的时候〖结果，你不但失去了钱，也失去了朋友。〗“喂！”一听是魏老板的声音，康老板心里就笑了。果然吧！他要添货，而且急如星火。少不得要调侃他两句：“早告诉你，一次多进点，保证好卖，你不听，现在我就算给你赶工做出来，也得两个礼拜。”康老板停了一下，豪爽地笑笑，“好好好！看在老交情，我先调一批现成的，立刻给你...上一批的钱？还怕你跑了吗？跟这'}, {'line': 1262, 'prefix': '故事 3：五折大采购〖', 'body_starter': '当', 'excerpt': '故事 3：五折大采购〖当这种大商店减价时，常能低到小店“瞪眼”的地步。〗经过威尼斯、比萨、佛罗伦萨和许多叫不出名字的小城，一团人终于到了罗马。'}, {'line': 1482, 'prefix': '故事 2：包在我身上〖', 'body_starter': '当', 'excerpt': '故事 2：包在我身上〖当两个人战斗，只有一把枪，谁先抢到枪，就可以用枪把对方撂倒〗王总经理最近真是头痛极了。'}, {'line': 1664, 'prefix': '故事 1', 'body_starter': '当', 'excerpt': '故事 1：当法律放假的时候〖当你不小心进入“危邦”或“乱邦”，就必须认清情势，明哲保身地想办法“全身而退”〗“那个女人没戴胸罩耶！”珍妮在保罗耳边大声喊着。'}, {'line': 1808, 'prefix': '故事 1：第五纵队成军记〖', 'body_starter': '一个', 'excerpt': '故事 1：第五纵队成军记〖一个急躁的人，怎么可能成大事呢？〗“把门带上！”总经理指了指门，又指了指椅子，“你坐！”'}, {'line': 2448, 'prefix': '故事：当新人进入洞房〖', 'body_starter': '如果', 'excerpt': '故事：当新人进入洞房〖如果你做中间人，要忠实地传达，不可添油加醋。如果你做调解人，要不听丑话，只说美言。〗“叫那贱人出来！”'}, {'line': 2576, 'prefix': '故事 1：合作大封杀〖“心直口快”常常足以坏事', 'body_starter': '因为', 'excerpt': '故事 1：合作大封杀〖“心直口快”常常足以坏事，因为人与人之间不是直的。在“弯曲”的人际，太“直”常容易造成伤害。〗“自从冒出个奇奇公司，我就睡不好。因为他们的产品跟我们的很相似。”董事长低着头说。停了两秒，有猛一抬头：“不过，看他们现在生产的东西，其实跟我们的相容。对抗不如合作，说不定可以把两家的产品结合在一起，一起出去打天下，还更有利。”说完，指了指业务'}, {'line': 2700, 'prefix': '故事：小袁的艳遇〖', 'body_starter': '当', 'excerpt': '故事：小袁的艳遇〖当你已经“站得住”的时候，就别再添油加醋、编织任何谎言，使自己的“理直”成为“理亏”。〗“屋漏偏逢连夜雨。自从当局扫荡色情，晚上的生意已经不好做了，又来个周休二日，连上班族的生意也少了一天。”小袁狠狠地拍了拍方向盘，咬了咬牙，“一早七点出门，除了顺路把老婆送去上班，八个钟头跑下来，六百块都不到。幸亏老婆好友收入，否则连给岳父的‘规费’都不够'}, {'line': 2939, 'prefix': '故事 1：多甜美的黄小姐〖', 'body_starter': '当', 'excerpt': '故事 1：多甜美的黄小姐〖当你私下去找制造商买东西的时候，常常反而比向“代理商”买得还贵。〗“我找游老板说话。”老丁气急败坏地说。'}, {'line': 3187, 'prefix': '故事 2：丁老太太的干女儿〖', 'body_starter': '当', 'excerpt': '故事 2：丁老太太的干女儿〖当人们攀上交情，往往就忘了“调查对方的来历”。〗丁夫人最近觉得特别轻松，因为丁老太太不再那么罗嗦了。'}, {'line': 3279, 'prefix': '故事 3：美美的爱心〖', 'body_starter': '当', 'excerpt': '故事 3：美美的爱心〖当她们站在冷风中，向你介绍“那个理想”的时候，她们所说的每句话都是肺腑之言。〗看到门上那个大大的红心，美美的心也热了起来。'}]"
+        },
+        {
+          "code": "history_processed_but_content_fails",
+          "severity": "info",
+          "detail": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
         }
       ],
       "history": {
-        "sha": "b045033ccff6e87fd0b5003214dfda4a6812dd44",
-        "date": "2026-08-24T19:03:40Z",
-        "message": "docs(temp): postprocess raw Markdown syntax [skip ci]"
+        "sha": "6d30bcbd706fdbf9a88995171e98c81fb359ec53",
+        "date": "2026-08-25T08:33:14Z",
+        "message": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
       }
     },
     {
@@ -898,13 +908,13 @@
         {
           "code": "history_processed_but_content_fails",
           "severity": "info",
-          "detail": "docs(temp): finalize Markdown content invariants [skip ci]"
+          "detail": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
         }
       ],
       "history": {
-        "sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
-        "date": "2026-08-25T07:59:45Z",
-        "message": "docs(temp): finalize Markdown content invariants [skip ci]"
+        "sha": "6d30bcbd706fdbf9a88995171e98c81fb359ec53",
+        "date": "2026-08-25T08:33:14Z",
+        "message": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
       }
     },
     {
@@ -1043,13 +1053,13 @@
         {
           "code": "history_processed_but_content_fails",
           "severity": "info",
-          "detail": "docs(temp): finalize Markdown content invariants [skip ci]"
+          "detail": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
         }
       ],
       "history": {
-        "sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
-        "date": "2026-08-25T07:59:45Z",
-        "message": "docs(temp): finalize Markdown content invariants [skip ci]"
+        "sha": "6d30bcbd706fdbf9a88995171e98c81fb359ec53",
+        "date": "2026-08-25T08:33:14Z",
+        "message": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
       }
     },
     {
@@ -1135,13 +1145,13 @@
         {
           "code": "history_processed_but_content_fails",
           "severity": "info",
-          "detail": "docs(temp): finalize Markdown content invariants [skip ci]"
+          "detail": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
         }
       ],
       "history": {
-        "sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
-        "date": "2026-08-25T07:59:45Z",
-        "message": "docs(temp): finalize Markdown content invariants [skip ci]"
+        "sha": "6d30bcbd706fdbf9a88995171e98c81fb359ec53",
+        "date": "2026-08-25T08:33:14Z",
+        "message": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
       }
     },
     {
@@ -1169,13 +1179,13 @@
         {
           "code": "history_processed_but_content_fails",
           "severity": "info",
-          "detail": "docs(temp): finalize Markdown cleanup [skip ci]"
+          "detail": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
         }
       ],
       "history": {
-        "sha": "13b70cb87e6a7a3d3f94ba3cf9798c35fdbc226f",
-        "date": "2026-08-24T19:10:36Z",
-        "message": "docs(temp): finalize Markdown cleanup [skip ci]"
+        "sha": "6d30bcbd706fdbf9a88995171e98c81fb359ec53",
+        "date": "2026-08-25T08:33:14Z",
+        "message": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
       }
     },
     {
@@ -1227,13 +1237,13 @@
         {
           "code": "history_processed_but_content_fails",
           "severity": "info",
-          "detail": "docs(temp): repair content-level Markdown omissions [skip ci]"
+          "detail": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
         }
       ],
       "history": {
-        "sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
-        "date": "2026-08-25T07:57:18Z",
-        "message": "docs(temp): repair content-level Markdown omissions [skip ci]"
+        "sha": "6d30bcbd706fdbf9a88995171e98c81fb359ec53",
+        "date": "2026-08-25T08:33:14Z",
+        "message": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
       }
     },
     {
@@ -1377,13 +1387,13 @@
         {
           "code": "history_processed_but_content_fails",
           "severity": "info",
-          "detail": "revert(temp): restore正文 after over-broad ad cleanup"
+          "detail": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
         }
       ],
       "history": {
-        "sha": "11c5718ba2701621be69c8fa5bac0ce47747ff4b",
-        "date": "2026-08-25T14:40:06+08:00",
-        "message": "revert(temp): restore正文 after over-broad ad cleanup"
+        "sha": "6d30bcbd706fdbf9a88995171e98c81fb359ec53",
+        "date": "2026-08-25T08:33:14Z",
+        "message": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
       }
     },
     {
@@ -1458,12 +1468,12 @@
       "path": "temp/《百发百中攻心术》/index.md",
       "status": "needs_review_medium",
       "metrics": {
-        "bytes": 523526,
-        "visible_chars": 170971,
+        "bytes": 523486,
+        "visible_chars": 170958,
         "h1": 1,
-        "headings_2_4": 163,
+        "headings_2_4": 162,
         "image_refs": 292,
-        "lines": 2953
+        "lines": 2952
       },
       "issues": [
         {
@@ -1474,13 +1484,13 @@
         {
           "code": "history_processed_but_content_fails",
           "severity": "info",
-          "detail": "docs(temp): finalize Markdown content invariants [skip ci]"
+          "detail": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
         }
       ],
       "history": {
-        "sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
-        "date": "2026-08-25T07:59:45Z",
-        "message": "docs(temp): finalize Markdown content invariants [skip ci]"
+        "sha": "6d30bcbd706fdbf9a88995171e98c81fb359ec53",
+        "date": "2026-08-25T08:33:14Z",
+        "message": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
       }
     },
     {
@@ -1595,13 +1605,13 @@
         {
           "code": "history_processed_but_content_fails",
           "severity": "info",
-          "detail": "docs(temp): finalize Markdown content invariants [skip ci]"
+          "detail": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
         }
       ],
       "history": {
-        "sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
-        "date": "2026-08-25T07:59:45Z",
-        "message": "docs(temp): finalize Markdown content invariants [skip ci]"
+        "sha": "6d30bcbd706fdbf9a88995171e98c81fb359ec53",
+        "date": "2026-08-25T08:33:14Z",
+        "message": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
       }
     },
     {
@@ -1716,13 +1726,13 @@
         {
           "code": "history_processed_but_content_fails",
           "severity": "info",
-          "detail": "docs(temp): format remaining raw Markdown documents [skip ci]"
+          "detail": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
         }
       ],
       "history": {
-        "sha": "a06564e8b183e4d4ff98e55f6248a7a33c87f08f",
-        "date": "2026-08-24T19:00:52Z",
-        "message": "docs(temp): format remaining raw Markdown documents [skip ci]"
+        "sha": "6d30bcbd706fdbf9a88995171e98c81fb359ec53",
+        "date": "2026-08-25T08:33:14Z",
+        "message": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
       }
     },
     {
@@ -1745,13 +1755,13 @@
         {
           "code": "history_processed_but_content_fails",
           "severity": "info",
-          "detail": "docs(temp): finalize Markdown content invariants [skip ci]"
+          "detail": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
         }
       ],
       "history": {
-        "sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
-        "date": "2026-08-25T07:59:45Z",
-        "message": "docs(temp): finalize Markdown content invariants [skip ci]"
+        "sha": "6d30bcbd706fdbf9a88995171e98c81fb359ec53",
+        "date": "2026-08-25T08:33:14Z",
+        "message": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
       }
     },
     {
@@ -1866,13 +1876,13 @@
         {
           "code": "history_processed_but_content_fails",
           "severity": "info",
-          "detail": "docs(temp): repair content-level Markdown omissions [skip ci]"
+          "detail": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
         }
       ],
       "history": {
-        "sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
-        "date": "2026-08-25T07:57:18Z",
-        "message": "docs(temp): repair content-level Markdown omissions [skip ci]"
+        "sha": "6d30bcbd706fdbf9a88995171e98c81fb359ec53",
+        "date": "2026-08-25T08:33:14Z",
+        "message": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
       }
     },
     {
@@ -1895,13 +1905,13 @@
         {
           "code": "history_processed_but_content_fails",
           "severity": "info",
-          "detail": "docs(temp): finalize Markdown content invariants [skip ci]"
+          "detail": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
         }
       ],
       "history": {
-        "sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
-        "date": "2026-08-25T07:59:45Z",
-        "message": "docs(temp): finalize Markdown content invariants [skip ci]"
+        "sha": "6d30bcbd706fdbf9a88995171e98c81fb359ec53",
+        "date": "2026-08-25T08:33:14Z",
+        "message": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
       }
     },
     {
@@ -2026,13 +2036,13 @@
         {
           "code": "history_processed_but_content_fails",
           "severity": "info",
-          "detail": "docs(temp): finalize Markdown content invariants [skip ci]"
+          "detail": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
         }
       ],
       "history": {
-        "sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
-        "date": "2026-08-25T07:59:45Z",
-        "message": "docs(temp): finalize Markdown content invariants [skip ci]"
+        "sha": "6d30bcbd706fdbf9a88995171e98c81fb359ec53",
+        "date": "2026-08-25T08:33:14Z",
+        "message": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
       }
     }
   ]
