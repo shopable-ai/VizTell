@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:viztell:ai-knowledge-system:schema:evidence:0.1",
+  "title": "Evidence v0.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["evidence_id", "evidence_type", "direction", "source_refs"],
+  "properties": {
+    "schema_version": {"const": "0.1"},
+    "evidence_id": {"type": "string", "pattern": "^E-.+"},
+    "target_claim_refs": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "evidence_type": {"type": "string", "minLength": 1},
+    "direction": {"enum": ["supports", "weakens", "refutes", "neutral", "unclear"]},
+    "source_refs": {"type": "array", "items": {"type": "string", "pattern": "^S-.+"}, "minItems": 1, "uniqueItems": true},
+    "primary_source_ref": {"type": ["string", "null"]},
+    "independence_group": {"type": ["string", "null"]},
+    "directness": {"enum": ["direct", "indirect", "premise_only", "association_only", "unknown", "not_evaluated"]},
+    "method_quality": {"enum": ["high", "medium", "low", "unknown", "not_evaluated"]},
+    "limitations": {"type": "array", "items": {"type": "string"}},
+    "applicable_scope": {"type": "array", "items": {"type": "string"}},
+    "temporal": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "valid_from": {"type": ["string", "null"], "format": "date-time"},
+        "valid_until": {"type": ["string", "null"], "format": "date-time"},
+        "verified_at": {"type": ["string", "null"], "format": "date-time"}
+      }
+    }
+  }
+}
