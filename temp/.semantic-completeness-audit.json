@@ -2,15 +2,15 @@
   "summary": {
     "markdown_files_scanned": 84,
     "pass": 20,
-    "needs_review_high": 3,
-    "needs_review_medium": 61,
+    "needs_review_high": 2,
+    "needs_review_medium": 62,
     "review_total": 64,
     "image_refs_total": 10604
   },
   "issue_counts": {
     "history_processed_but_content_fails": 59,
     "low_heading_density": 3,
-    "plain_chapter_markers": 3,
+    "plain_chapter_markers": 2,
     "possible_ad_residue": 19,
     "possible_heading_body_glue": 54
   },
@@ -1705,7 +1705,7 @@
     },
     {
       "path": "temp/《零距离人性》/index.md",
-      "status": "needs_review_high",
+      "status": "needs_review_medium",
       "metrics": {
         "bytes": 428865,
         "visible_chars": 142506,
@@ -1715,11 +1715,6 @@
         "lines": 1756
       },
       "issues": [
-        {
-          "code": "plain_chapter_markers",
-          "severity": "high",
-          "detail": "count=3, examples=[(802, '第一部分是上部，也就是所谓的“上庭”。这一部分在双眉连线以上、以额头为中心，代表人智力、理性。这是因为额位于头的最重要的部位，所以人们附'), (804, '第二部分是中部，也就是人们所谓的“中庭”，包括眼睛、脸颊，以鼻子为'), (805, '第三部分，下部，也就是人们经常说的下庭，以嘴为中心，因为嘴除了吃饭、')]"
-        },
         {
           "code": "possible_heading_body_glue",
           "severity": "medium",
