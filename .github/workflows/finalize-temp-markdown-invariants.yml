@@ -1,0 +1,88 @@
+name: Finalize Temp Markdown Invariants
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/finalize-temp-markdown-invariants.yml'
+      - 'scripts/finalize_temp_markdown_invariants.py'
+  workflow_dispatch:
+
+concurrency:
+  group: finalize-temp-markdown-invariants-main
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  finalize:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout repository with history
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Repair objective Markdown invariants
+        run: |
+          python scripts/finalize_temp_markdown_invariants.py \
+            --root temp \
+            --report temp/.format-invariant-repair.json \
+            --apply
+          cat temp/.format-invariant-repair.json
+
+      - name: Re-run content-level audit and safe repair
+        run: |
+          python scripts/audit_and_repair_temp_markdown.py \
+            --root temp \
+            --report temp/.content-format-audit.json \
+            --apply
+
+      - name: Write concise review index
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          src = json.loads(Path('temp/.content-format-audit.json').read_text(encoding='utf-8'))
+          review = []
+          for item in src.get('audit', []):
+              if item.get('status') != 'pass':
+                  review.append({
+                      'path': item.get('path'),
+                      'status': item.get('status'),
+                      'issues': item.get('issues', []),
+                      'metrics': item.get('metrics', {}),
+                      'history': item.get('history', {}),
+                  })
+          payload = {
+              'summary': src.get('summary', {}),
+              'issue_counts': src.get('issue_counts', {}),
+              'review_file_count': len(review),
+              'review': review,
+          }
+          Path('temp/.content-format-review.json').write_text(
+              json.dumps(payload, ensure_ascii=False, indent=2) + '\n',
+              encoding='utf-8',
+          )
+          print(json.dumps(payload['summary'], ensure_ascii=False, indent=2))
+          print('review_file_count=', len(review))
+          PY
+
+      - name: Commit invariant repairs and refreshed audit
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A -- temp
+          if git diff --cached --quiet; then
+            echo 'No invariant changes detected.'
+          else
+            git commit -m 'docs(temp): finalize Markdown content invariants [skip ci]'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
