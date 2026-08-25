@@ -32,14 +32,14 @@ jobs:
         run: |
           python scripts/audit_temp_semantic_completeness.py --root temp --report temp/.semantic-completeness-audit.json
           python scripts/summarize_semantic_audit_issues.py
-          cat temp/.semantic-audit-issue-index.tsv
+          cat temp/.semantic-audit-issue-summary.json
       - name: Commit issue index
         shell: bash
         run: |
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add temp/.semantic-completeness-audit.json temp/.semantic-audit-issue-index.tsv
+          git add temp/.semantic-completeness-audit.json temp/.semantic-audit-issue-index.tsv temp/.semantic-audit-issue-summary.json
           if git diff --cached --quiet; then
             echo 'Semantic issue index unchanged.'
           else
