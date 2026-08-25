@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:viztell:ai-knowledge-system:schema:learning-gap:0.1",
+  "title": "Learning Gap v0.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["gap_id", "subject_id", "knowledge_id", "current_level", "target_level"],
+  "properties": {
+    "schema_version": {"const": "0.1"},
+    "gap_id": {"type": "string", "pattern": "^LG-.+"},
+    "subject_id": {"type": "string", "pattern": "^SP-.+"},
+    "knowledge_id": {"type": "string", "pattern": "^K-.+"},
+    "current_level": {"enum": ["H0", "H1", "H2", "H3", "H4", "H5", "H6", "H7"]},
+    "target_level": {"enum": ["H0", "H1", "H2", "H3", "H4", "H5", "H6", "H7"]},
+    "known_components": {"type": "array", "items": {"type": "string"}},
+    "missing_components": {"type": "array", "items": {"type": "string"}},
+    "misconceptions": {"type": "array", "items": {"type": "string"}},
+    "missing_prerequisites": {"type": "array", "items": {"type": "string"}},
+    "practice_requirements": {"type": "array", "items": {"type": "string"}},
+    "estimated_cost": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "understanding": {"type": ["number", "string", "null"]},
+        "memory": {"type": ["number", "string", "null"]},
+        "practice": {"type": ["number", "string", "null"]},
+        "feedback": {"type": ["number", "string", "null"]},
+        "transfer": {"type": ["number", "string", "null"]},
+        "maintenance": {"type": ["number", "string", "null"]}
+      }
+    },
+    "evaluated_at": {"type": ["string", "null"], "format": "date-time"}
+  }
+}
