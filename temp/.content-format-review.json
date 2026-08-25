@@ -1,0 +1,191 @@
+{
+  "summary": {
+    "markdown_files_scanned": 84,
+    "files_changed": 3,
+    "files_pass": 78,
+    "files_needing_review_high": 3,
+    "files_needing_review_medium": 3,
+    "repair_errors": 0,
+    "toc_text_lines_removed": 3,
+    "headings_recovered_from_toc": 0,
+    "glued_headings_split": 0,
+    "page_numbers_removed": 0,
+    "conversion_labels_removed": 0,
+    "image_refs_preserved_total": 10604
+  },
+  "issue_counts": {
+    "giant_ocr_lines": 4,
+    "history_says_processed_but_content_fails": 3,
+    "large_document_without_structure": 2,
+    "leading_toc_text_residue": 1,
+    "toc_marker_needs_review": 1
+  },
+  "review_file_count": 6,
+  "review": [
+    {
+      "path": "temp/《人性商战(线下3天2夜全文字版)》.md",
+      "status": "needs_review_high",
+      "issues": [
+        {
+          "code": "large_document_without_structure",
+          "severity": "high",
+          "detail": "visible_chars=412048, headings_2_4=0"
+        },
+        {
+          "code": "giant_ocr_lines",
+          "severity": "medium",
+          "detail": "lines=[109, 110, 111, 372, 586, 650, 651, 653, 655, 656, 657, 659], count=14"
+        }
+      ],
+      "metrics": {
+        "bytes": 1229397,
+        "visible_chars": 412048,
+        "h1": 1,
+        "h2": 0,
+        "h3": 0,
+        "h4": 0,
+        "image_refs": 0
+      },
+      "history": {
+        "last_commit_sha": "4e33d1f1f85c58f00d03329ed55a60cbd1b5fa9c",
+        "last_commit_date": "2026-08-25T14:44:30+08:00",
+        "last_commit_message": "revert(temp): restore正文 before conservative ad pass"
+      }
+    },
+    {
+      "path": "temp/《人性背后隐藏的邪恶密码》/index.md",
+      "status": "needs_review_high",
+      "issues": [
+        {
+          "code": "leading_toc_text_residue",
+          "severity": "high",
+          "detail": "leader_lines=1, titles=1"
+        }
+      ],
+      "metrics": {
+        "bytes": 135885,
+        "visible_chars": 44087,
+        "h1": 1,
+        "h2": 1,
+        "h3": 80,
+        "h4": 0,
+        "image_refs": 126
+      },
+      "history": {
+        "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
+        "last_commit_date": "2026-08-25T15:04:52+08:00",
+        "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+      }
+    },
+    {
+      "path": "temp/《人性难题宝典1-9》.md",
+      "status": "needs_review_high",
+      "issues": [
+        {
+          "code": "large_document_without_structure",
+          "severity": "high",
+          "detail": "visible_chars=275601, headings_2_4=0"
+        },
+        {
+          "code": "history_says_processed_but_content_fails",
+          "severity": "info",
+          "detail": "docs(temp): finalize Markdown cleanup [skip ci]"
+        }
+      ],
+      "metrics": {
+        "bytes": 827495,
+        "visible_chars": 275601,
+        "h1": 1,
+        "h2": 0,
+        "h3": 0,
+        "h4": 0,
+        "image_refs": 0
+      },
+      "history": {
+        "last_commit_sha": "13b70cb87e6a7a3d3f94ba3cf9798c35fdbc226f",
+        "last_commit_date": "2026-08-24T19:10:36Z",
+        "last_commit_message": "docs(temp): finalize Markdown cleanup [skip ci]"
+      }
+    },
+    {
+      "path": "temp/《开窍开智开悟5》.md",
+      "status": "needs_review_medium",
+      "issues": [
+        {
+          "code": "giant_ocr_lines",
+          "severity": "medium",
+          "detail": "lines=[709], count=1"
+        }
+      ],
+      "metrics": {
+        "bytes": 552288,
+        "visible_chars": 184548,
+        "h1": 1,
+        "h2": 7,
+        "h3": 32,
+        "h4": 0,
+        "image_refs": 0
+      },
+      "history": {
+        "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
+        "last_commit_date": "2026-08-25T15:04:52+08:00",
+        "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+      }
+    },
+    {
+      "path": "temp/《玩转人性》.md",
+      "status": "needs_review_medium",
+      "issues": [
+        {
+          "code": "giant_ocr_lines",
+          "severity": "medium",
+          "detail": "lines=[14, 20, 32, 36, 60, 72, 75, 95, 96, 113, 121, 152], count=13"
+        },
+        {
+          "code": "history_says_processed_but_content_fails",
+          "severity": "info",
+          "detail": "docs(temp): finalize Markdown cleanup [skip ci]"
+        }
+      ],
+      "metrics": {
+        "bytes": 547706,
+        "visible_chars": 183186,
+        "h1": 1,
+        "h2": 1,
+        "h3": 1,
+        "h4": 9,
+        "image_refs": 0
+      },
+      "history": {
+        "last_commit_sha": "13b70cb87e6a7a3d3f94ba3cf9798c35fdbc226f",
+        "last_commit_date": "2026-08-24T19:10:36Z",
+        "last_commit_message": "docs(temp): finalize Markdown cleanup [skip ci]"
+      }
+    },
+    {
+      "path": "temp/做局大师-人间博弈之术.md",
+      "status": "needs_review_medium",
+      "issues": [
+        {
+          "code": "giant_ocr_lines",
+          "severity": "medium",
+          "detail": "lines=[46, 53, 56, 67, 70, 87, 119, 165, 196, 222, 225, 247], count=17"
+        }
+      ],
+      "metrics": {
+        "bytes": 507420,
+        "visible_chars": 169095,
+        "h1": 1,
+        "h2": 56,
+        "h3": 66,
+        "h4": 0,
+        "image_refs": 0
+      },
+      "history": {
+        "last_commit_sha": "4e33d1f1f85c58f00d03329ed55a60cbd1b5fa9c",
+        "last_commit_date": "2026-08-25T14:44:30+08:00",
+        "last_commit_message": "revert(temp): restore正文 before conservative ad pass"
+      }
+    }
+  ]
+}

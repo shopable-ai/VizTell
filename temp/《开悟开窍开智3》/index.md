@@ -1,5 +1,4 @@
 # 开悟开窍开智3
-**目录**
 ![第1页原始页面图](assets/page-001.png)
 ![第2页原始页面图](assets/page-002.png)
 ![第3页原始页面图](assets/page-003.png)

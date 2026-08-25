@@ -1,7 +1,5 @@
 # 百发百中攻心术
 
-**目录**
-
 ![第3页原始页面图](assets/page-003.png)
 ![第4页原始页面图](assets/page-004.png)
 ![第5页原始页面图](assets/page-005.png)

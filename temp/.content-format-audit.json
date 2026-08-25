@@ -6,26 +6,24 @@
   },
   "summary": {
     "markdown_files_scanned": 84,
-    "files_changed": 21,
-    "files_pass": 29,
+    "files_changed": 3,
+    "files_pass": 78,
     "files_needing_review_high": 3,
-    "files_needing_review_medium": 52,
+    "files_needing_review_medium": 3,
     "repair_errors": 0,
-    "toc_text_lines_removed": 33,
-    "headings_recovered_from_toc": 221,
-    "glued_headings_split": 203,
-    "page_numbers_removed": 385,
-    "conversion_labels_removed": 59,
+    "toc_text_lines_removed": 3,
+    "headings_recovered_from_toc": 0,
+    "glued_headings_split": 0,
+    "page_numbers_removed": 0,
+    "conversion_labels_removed": 0,
     "image_refs_preserved_total": 10604
   },
   "issue_counts": {
     "giant_ocr_lines": 4,
-    "heading_level_jumps": 50,
-    "history_says_processed_but_content_fails": 12,
+    "history_says_processed_but_content_fails": 3,
     "large_document_without_structure": 2,
     "leading_toc_text_residue": 1,
-    "toc_body_heading_coverage_low": 2,
-    "toc_marker_needs_review": 45
+    "toc_marker_needs_review": 1
   },
   "repairs": [
     {
@@ -33,7 +31,7 @@
       "title": "布局锦囊1.0",
       "changed": false,
       "applied": false,
-      "toc_marker_found": true,
+      "toc_marker_found": false,
       "toc_leader_lines": 0,
       "toc_titles_detected": 0,
       "toc_text_lines_removed": 0,
@@ -55,7 +53,7 @@
       "title": "布局锦囊3.0",
       "changed": false,
       "applied": false,
-      "toc_marker_found": true,
+      "toc_marker_found": false,
       "toc_leader_lines": 0,
       "toc_titles_detected": 0,
       "toc_text_lines_removed": 0,
@@ -77,7 +75,7 @@
       "title": "布局锦囊2.0",
       "changed": false,
       "applied": false,
-      "toc_marker_found": true,
+      "toc_marker_found": false,
       "toc_leader_lines": 0,
       "toc_titles_detected": 0,
       "toc_text_lines_removed": 0,
@@ -97,8 +95,8 @@
     {
       "path": "temp/《458条人性顶级秘术》/index.md",
       "title": "458条人性秘术",
-      "changed": true,
-      "applied": true,
+      "changed": false,
+      "applied": false,
       "toc_marker_found": false,
       "toc_leader_lines": 0,
       "toc_titles_detected": 0,
@@ -107,21 +105,21 @@
       "glued_headings_split": 0,
       "candidate_headings_not_found": 0,
       "page_numbers_removed": 0,
-      "conversion_labels_removed": 1,
+      "conversion_labels_removed": 0,
       "conversion_comments_removed": 0,
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 44,
       "visible_retention": 1.0,
-      "last_commit_sha": "11c5718ba2701621be69c8fa5bac0ce47747ff4b",
-      "last_commit_date": "2026-08-25T14:40:06+08:00",
-      "last_commit_message": "revert(temp): restore正文 after over-broad ad cleanup"
+      "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
+      "last_commit_date": "2026-08-25T07:57:18Z",
+      "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
     },
     {
       "path": "temp/《万能厚黑不黑模式》/index.md",
       "title": "万能厚黑不黑模式",
       "changed": false,
       "applied": false,
-      "toc_marker_found": true,
+      "toc_marker_found": false,
       "toc_leader_lines": 0,
       "toc_titles_detected": 0,
       "toc_text_lines_removed": 0,
@@ -165,7 +163,7 @@
       "title": "人心探索（动机篇）",
       "changed": false,
       "applied": false,
-      "toc_marker_found": true,
+      "toc_marker_found": false,
       "toc_leader_lines": 0,
       "toc_titles_detected": 0,
       "toc_text_lines_removed": 0,
@@ -187,7 +185,7 @@
       "title": "人心探索（操控篇）",
       "changed": false,
       "applied": false,
-      "toc_marker_found": true,
+      "toc_marker_found": false,
       "toc_leader_lines": 0,
       "toc_titles_detected": 0,
       "toc_text_lines_removed": 0,
@@ -231,7 +229,7 @@
       "title": "人性天眼",
       "changed": false,
       "applied": false,
-      "toc_marker_found": true,
+      "toc_marker_found": false,
       "toc_leader_lines": 0,
       "toc_titles_detected": 0,
       "toc_text_lines_removed": 0,
@@ -253,7 +251,7 @@
       "title": "人性宝典2.0",
       "changed": false,
       "applied": false,
-      "toc_marker_found": true,
+      "toc_marker_found": false,
       "toc_leader_lines": 0,
       "toc_titles_detected": 0,
       "toc_text_lines_removed": 0,
@@ -297,7 +295,7 @@
       "title": "人性底层模型1.0",
       "changed": false,
       "applied": false,
-      "toc_marker_found": true,
+      "toc_marker_found": false,
       "toc_leader_lines": 0,
       "toc_titles_detected": 0,
       "toc_text_lines_removed": 0,
@@ -319,7 +317,7 @@
       "title": "人性底层模型2.0",
       "changed": false,
       "applied": false,
-      "toc_marker_found": true,
+      "toc_marker_found": false,
       "toc_leader_lines": 0,
       "toc_titles_detected": 0,
       "toc_text_lines_removed": 0,
@@ -341,7 +339,7 @@
       "title": "人性心法",
       "changed": false,
       "applied": false,
-      "toc_marker_found": true,
+      "toc_marker_found": false,
       "toc_leader_lines": 0,
       "toc_titles_detected": 0,
       "toc_text_lines_removed": 0,
@@ -363,7 +361,7 @@
       "title": "人性心理战",
       "changed": false,
       "applied": false,
-      "toc_marker_found": true,
+      "toc_marker_found": false,
       "toc_leader_lines": 0,
       "toc_titles_detected": 0,
       "toc_text_lines_removed": 0,
@@ -385,7 +383,7 @@
       "title": "人性成败拿捏",
       "changed": false,
       "applied": false,
-      "toc_marker_found": true,
+      "toc_marker_found": false,
       "toc_leader_lines": 0,
       "toc_titles_detected": 0,
       "toc_text_lines_removed": 0,
@@ -405,8 +403,8 @@
     {
       "path": "temp/《人性探索大师1》/index.md",
       "title": "人性探索大师1",
-      "changed": true,
-      "applied": true,
+      "changed": false,
+      "applied": false,
       "toc_marker_found": false,
       "toc_leader_lines": 0,
       "toc_titles_detected": 0,
@@ -414,21 +412,21 @@
       "headings_recovered_from_toc": 0,
       "glued_headings_split": 0,
       "candidate_headings_not_found": 0,
-      "page_numbers_removed": 124,
-      "conversion_labels_removed": 2,
+      "page_numbers_removed": 0,
+      "conversion_labels_removed": 0,
       "conversion_comments_removed": 0,
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 4,
-      "visible_retention": 0.9974,
-      "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-      "last_commit_date": "2026-08-25T15:04:52+08:00",
-      "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+      "visible_retention": 1.0,
+      "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
+      "last_commit_date": "2026-08-25T07:57:18Z",
+      "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
     },
     {
       "path": "temp/《人性探索大师2》/index.md",
       "title": "人性探索大师2",
-      "changed": true,
-      "applied": true,
+      "changed": false,
+      "applied": false,
       "toc_marker_found": false,
       "toc_leader_lines": 0,
       "toc_titles_detected": 0,
@@ -437,20 +435,20 @@
       "glued_headings_split": 0,
       "candidate_headings_not_found": 0,
       "page_numbers_removed": 0,
-      "conversion_labels_removed": 3,
+      "conversion_labels_removed": 0,
       "conversion_comments_removed": 0,
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 5,
-      "visible_retention": 0.9999,
-      "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-      "last_commit_date": "2026-08-25T15:04:52+08:00",
-      "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+      "visible_retention": 1.0,
+      "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
+      "last_commit_date": "2026-08-25T07:57:18Z",
+      "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
     },
     {
       "path": "temp/《人性探索大师3》/index.md",
       "title": "人性探索大师3",
-      "changed": true,
-      "applied": true,
+      "changed": false,
+      "applied": false,
       "toc_marker_found": false,
       "toc_leader_lines": 0,
       "toc_titles_detected": 0,
@@ -459,20 +457,20 @@
       "glued_headings_split": 0,
       "candidate_headings_not_found": 0,
       "page_numbers_removed": 0,
-      "conversion_labels_removed": 1,
+      "conversion_labels_removed": 0,
       "conversion_comments_removed": 0,
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 1,
       "visible_retention": 1.0,
-      "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-      "last_commit_date": "2026-08-25T15:04:52+08:00",
-      "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+      "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
+      "last_commit_date": "2026-08-25T07:57:18Z",
+      "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
     },
     {
       "path": "temp/《人性智谋36计》/index.md",
       "title": "人性智谋36计",
-      "changed": true,
-      "applied": true,
+      "changed": false,
+      "applied": false,
       "toc_marker_found": false,
       "toc_leader_lines": 0,
       "toc_titles_detected": 0,
@@ -481,21 +479,21 @@
       "glued_headings_split": 0,
       "candidate_headings_not_found": 0,
       "page_numbers_removed": 0,
-      "conversion_labels_removed": 1,
+      "conversion_labels_removed": 0,
       "conversion_comments_removed": 0,
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 2,
-      "visible_retention": 0.9999,
-      "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-      "last_commit_date": "2026-08-25T15:04:52+08:00",
-      "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+      "visible_retention": 1.0,
+      "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
+      "last_commit_date": "2026-08-25T07:57:18Z",
+      "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
     },
     {
       "path": "temp/《人性真相》/index.md",
       "title": "人性真相",
       "changed": false,
       "applied": false,
-      "toc_marker_found": true,
+      "toc_marker_found": false,
       "toc_leader_lines": 0,
       "toc_titles_detected": 0,
       "toc_text_lines_removed": 0,
@@ -515,21 +513,21 @@
     {
       "path": "temp/《人性真言》/index.md",
       "title": "人性真言",
-      "changed": false,
-      "applied": false,
-      "toc_marker_found": true,
-      "toc_leader_lines": 0,
-      "toc_titles_detected": 0,
-      "toc_text_lines_removed": 0,
+      "changed": true,
+      "applied": true,
+      "toc_marker_found": false,
+      "toc_leader_lines": 1,
+      "toc_titles_detected": 1,
+      "toc_text_lines_removed": 1,
       "headings_recovered_from_toc": 0,
       "glued_headings_split": 0,
-      "candidate_headings_not_found": 0,
+      "candidate_headings_not_found": 1,
       "page_numbers_removed": 0,
       "conversion_labels_removed": 0,
       "conversion_comments_removed": 0,
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 106,
-      "visible_retention": 1.0,
+      "visible_retention": 0.9992,
       "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
       "last_commit_date": "2026-08-25T15:04:52+08:00",
       "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
@@ -539,7 +537,7 @@
       "title": "人性社交思维手册",
       "changed": false,
       "applied": false,
-      "toc_marker_found": true,
+      "toc_marker_found": false,
       "toc_leader_lines": 0,
       "toc_titles_detected": 0,
       "toc_text_lines_removed": 0,
@@ -561,7 +559,7 @@
       "title": "人性纵横说1.0",
       "changed": false,
       "applied": false,
-      "toc_marker_found": true,
+      "toc_marker_found": false,
       "toc_leader_lines": 0,
       "toc_titles_detected": 0,
       "toc_text_lines_removed": 0,
@@ -581,21 +579,21 @@
     {
       "path": "temp/《人性背后隐藏的邪恶密码》/index.md",
       "title": "人性背后隐藏的邪恶密码",
-      "changed": false,
-      "applied": false,
-      "toc_marker_found": true,
-      "toc_leader_lines": 0,
-      "toc_titles_detected": 0,
-      "toc_text_lines_removed": 0,
+      "changed": true,
+      "applied": true,
+      "toc_marker_found": false,
+      "toc_leader_lines": 1,
+      "toc_titles_detected": 1,
+      "toc_text_lines_removed": 1,
       "headings_recovered_from_toc": 0,
       "glued_headings_split": 0,
-      "candidate_headings_not_found": 0,
+      "candidate_headings_not_found": 1,
       "page_numbers_removed": 0,
       "conversion_labels_removed": 0,
       "conversion_comments_removed": 0,
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 126,
-      "visible_retention": 1.0,
+      "visible_retention": 0.9991,
       "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
       "last_commit_date": "2026-08-25T15:04:52+08:00",
       "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
@@ -605,7 +603,7 @@
       "title": "人性艺术-内心电影剪辑师",
       "changed": false,
       "applied": false,
-      "toc_marker_found": true,
+      "toc_marker_found": false,
       "toc_leader_lines": 0,
       "toc_titles_detected": 0,
       "toc_text_lines_removed": 0,
@@ -625,8 +623,8 @@
     {
       "path": "temp/《人性要诀》/index.md",
       "title": "人性要诀",
-      "changed": true,
-      "applied": true,
+      "changed": false,
+      "applied": false,
       "toc_marker_found": false,
       "toc_leader_lines": 0,
       "toc_titles_detected": 0,
@@ -635,21 +633,21 @@
       "glued_headings_split": 0,
       "candidate_headings_not_found": 0,
       "page_numbers_removed": 0,
-      "conversion_labels_removed": 4,
+      "conversion_labels_removed": 0,
       "conversion_comments_removed": 0,
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 22,
-      "visible_retention": 0.9997,
-      "last_commit_sha": "f137f45dd9b7718a8ff35d1448fb88abedb0d953",
-      "last_commit_date": "2026-08-24T19:06:36Z",
-      "last_commit_message": "docs(temp): normalize numbered semantic headings [skip ci]"
+      "visible_retention": 1.0,
+      "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
+      "last_commit_date": "2026-08-25T07:57:18Z",
+      "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
     },
     {
       "path": "temp/《人性逆袭绝技》/index.md",
       "title": "人性逆袭绝技",
       "changed": false,
       "applied": false,
-      "toc_marker_found": true,
+      "toc_marker_found": false,
       "toc_leader_lines": 0,
       "toc_titles_detected": 0,
       "toc_text_lines_removed": 0,
@@ -671,7 +669,7 @@
       "title": "人性错觉控制术",
       "changed": false,
       "applied": false,
-      "toc_marker_found": true,
+      "toc_marker_found": false,
       "toc_leader_lines": 0,
       "toc_titles_detected": 0,
       "toc_text_lines_removed": 0,
@@ -691,8 +689,8 @@
     {
       "path": "temp/《人性陷阱》/index.md",
       "title": "人性陷阱",
-      "changed": true,
-      "applied": true,
+      "changed": false,
+      "applied": false,
       "toc_marker_found": false,
       "toc_leader_lines": 0,
       "toc_titles_detected": 0,
@@ -701,14 +699,14 @@
       "glued_headings_split": 0,
       "candidate_headings_not_found": 0,
       "page_numbers_removed": 0,
-      "conversion_labels_removed": 2,
+      "conversion_labels_removed": 0,
       "conversion_comments_removed": 0,
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 2,
-      "visible_retention": 0.9999,
-      "last_commit_sha": "195ce6fea6c5632a58993ab66c11d9382f1734cb",
-      "last_commit_date": "2026-08-24T18:59:13Z",
-      "last_commit_message": "docs(temp): repair Markdown naming structure and ads [skip ci]"
+      "visible_retention": 1.0,
+      "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
+      "last_commit_date": "2026-08-25T07:57:18Z",
+      "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
     },
     {
       "path": "temp/《人性难题宝典1-9》.md",
@@ -737,7 +735,7 @@
       "title": "人性魔鬼手段",
       "changed": false,
       "applied": false,
-      "toc_marker_found": true,
+      "toc_marker_found": false,
       "toc_leader_lines": 0,
       "toc_titles_detected": 0,
       "toc_text_lines_removed": 0,
@@ -759,7 +757,7 @@
       "title": "人类欺骗行为解读",
       "changed": false,
       "applied": false,
-      "toc_marker_found": true,
+      "toc_marker_found": false,
       "toc_leader_lines": 0,
       "toc_titles_detected": 0,
       "toc_text_lines_removed": 0,
@@ -781,7 +779,7 @@
       "title": "人脑操控力",
       "changed": false,
       "applied": false,
-      "toc_marker_found": true,
+      "toc_marker_found": false,
       "toc_leader_lines": 0,
       "toc_titles_detected": 0,
       "toc_text_lines_removed": 0,
@@ -803,7 +801,7 @@
       "title": "冷读术",
       "changed": false,
       "applied": false,
-      "toc_marker_found": true,
+      "toc_marker_found": false,
       "toc_leader_lines": 0,
       "toc_titles_detected": 0,
       "toc_text_lines_removed": 0,
@@ -869,7 +867,7 @@
       "title": "坏术大师",
       "changed": false,
       "applied": false,
-      "toc_marker_found": true,
+      "toc_marker_found": false,
       "toc_leader_lines": 0,
       "toc_titles_detected": 0,
       "toc_text_lines_removed": 0,
@@ -889,24 +887,24 @@
     {
       "path": "temp/《大心机1》/index.md",
       "title": "大心机1",
-      "changed": true,
-      "applied": true,
+      "changed": false,
+      "applied": false,
       "toc_marker_found": false,
-      "toc_leader_lines": 9,
-      "toc_titles_detected": 130,
-      "toc_text_lines_removed": 11,
-      "headings_recovered_from_toc": 63,
-      "glued_headings_split": 60,
-      "candidate_headings_not_found": 35,
+      "toc_leader_lines": 0,
+      "toc_titles_detected": 0,
+      "toc_text_lines_removed": 0,
+      "headings_recovered_from_toc": 0,
+      "glued_headings_split": 0,
+      "candidate_headings_not_found": 0,
       "page_numbers_removed": 0,
-      "conversion_labels_removed": 1,
+      "conversion_labels_removed": 0,
       "conversion_comments_removed": 0,
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 1,
-      "visible_retention": 0.9639,
-      "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-      "last_commit_date": "2026-08-25T15:04:52+08:00",
-      "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+      "visible_retention": 1.0,
+      "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
+      "last_commit_date": "2026-08-25T07:57:18Z",
+      "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
     },
     {
       "path": "temp/《大心机2》/index.md",
@@ -957,7 +955,7 @@
       "title": "天之卷：强者修炼手册",
       "changed": false,
       "applied": false,
-      "toc_marker_found": true,
+      "toc_marker_found": false,
       "toc_leader_lines": 0,
       "toc_titles_detected": 0,
       "toc_text_lines_removed": 0,
@@ -979,7 +977,7 @@
       "title": "天机38局",
       "changed": false,
       "applied": false,
-      "toc_marker_found": true,
+      "toc_marker_found": false,
       "toc_leader_lines": 0,
       "toc_titles_detected": 0,
       "toc_text_lines_removed": 0,
@@ -999,8 +997,8 @@
     {
       "path": "temp/《富人机密手稿》/index.md",
       "title": "富人机密手稿",
-      "changed": true,
-      "applied": true,
+      "changed": false,
+      "applied": false,
       "toc_marker_found": false,
       "toc_leader_lines": 0,
       "toc_titles_detected": 0,
@@ -1008,22 +1006,22 @@
       "headings_recovered_from_toc": 0,
       "glued_headings_split": 0,
       "candidate_headings_not_found": 0,
-      "page_numbers_removed": 73,
-      "conversion_labels_removed": 3,
+      "page_numbers_removed": 0,
+      "conversion_labels_removed": 0,
       "conversion_comments_removed": 0,
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 3,
-      "visible_retention": 0.9989,
-      "last_commit_sha": "11c5718ba2701621be69c8fa5bac0ce47747ff4b",
-      "last_commit_date": "2026-08-25T14:40:06+08:00",
-      "last_commit_message": "revert(temp): restore正文 after over-broad ad cleanup"
+      "visible_retention": 1.0,
+      "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
+      "last_commit_date": "2026-08-25T07:57:18Z",
+      "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
     },
     {
       "path": "temp/《布局系统2.0》/index.md",
       "title": "布局系统2.0",
       "changed": false,
       "applied": false,
-      "toc_marker_found": true,
+      "toc_marker_found": false,
       "toc_leader_lines": 0,
       "toc_titles_detected": 0,
       "toc_text_lines_removed": 0,
@@ -1045,7 +1043,7 @@
       "title": "布局系统",
       "changed": false,
       "applied": false,
-      "toc_marker_found": true,
+      "toc_marker_found": false,
       "toc_leader_lines": 0,
       "toc_titles_detected": 0,
       "toc_text_lines_removed": 0,
@@ -1067,7 +1065,7 @@
       "title": "开悟开窍开智3",
       "changed": false,
       "applied": false,
-      "toc_marker_found": true,
+      "toc_marker_found": false,
       "toc_leader_lines": 0,
       "toc_titles_detected": 0,
       "toc_text_lines_removed": 0,
@@ -1087,24 +1085,24 @@
     {
       "path": "temp/《开窍开悟开智1》/index.md",
       "title": "开窍开悟开智1",
-      "changed": true,
-      "applied": true,
+      "changed": false,
+      "applied": false,
       "toc_marker_found": false,
-      "toc_leader_lines": 9,
-      "toc_titles_detected": 19,
-      "toc_text_lines_removed": 9,
-      "headings_recovered_from_toc": 5,
-      "glued_headings_split": 5,
-      "candidate_headings_not_found": 14,
+      "toc_leader_lines": 0,
+      "toc_titles_detected": 0,
+      "toc_text_lines_removed": 0,
+      "headings_recovered_from_toc": 0,
+      "glued_headings_split": 0,
+      "candidate_headings_not_found": 0,
       "page_numbers_removed": 0,
-      "conversion_labels_removed": 2,
+      "conversion_labels_removed": 0,
       "conversion_comments_removed": 0,
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 4,
-      "visible_retention": 0.8795,
-      "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-      "last_commit_date": "2026-08-25T15:04:52+08:00",
-      "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+      "visible_retention": 1.0,
+      "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
+      "last_commit_date": "2026-08-25T07:57:18Z",
+      "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
     },
     {
       "path": "temp/《开窍开悟开智1》PDF.md",
@@ -1133,7 +1131,7 @@
       "title": "开窍开悟开智2",
       "changed": false,
       "applied": false,
-      "toc_marker_found": true,
+      "toc_marker_found": false,
       "toc_leader_lines": 0,
       "toc_titles_detected": 0,
       "toc_text_lines_removed": 0,
@@ -1153,8 +1151,8 @@
     {
       "path": "temp/《开窍开悟开智4》/index.md",
       "title": "开窍开悟开智4",
-      "changed": true,
-      "applied": true,
+      "changed": false,
+      "applied": false,
       "toc_marker_found": false,
       "toc_leader_lines": 0,
       "toc_titles_detected": 0,
@@ -1162,15 +1160,15 @@
       "headings_recovered_from_toc": 0,
       "glued_headings_split": 0,
       "candidate_headings_not_found": 0,
-      "page_numbers_removed": 115,
+      "page_numbers_removed": 0,
       "conversion_labels_removed": 0,
       "conversion_comments_removed": 0,
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 14,
-      "visible_retention": 0.9967,
-      "last_commit_sha": "195ce6fea6c5632a58993ab66c11d9382f1734cb",
-      "last_commit_date": "2026-08-24T18:59:13Z",
-      "last_commit_message": "docs(temp): repair Markdown naming structure and ads [skip ci]"
+      "visible_retention": 1.0,
+      "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
+      "last_commit_date": "2026-08-25T07:57:18Z",
+      "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
     },
     {
       "path": "temp/《开窍开智开悟5》.md",
@@ -1199,7 +1197,7 @@
       "title": "怎样洞察人心",
       "changed": false,
       "applied": false,
-      "toc_marker_found": true,
+      "toc_marker_found": false,
       "toc_leader_lines": 0,
       "toc_titles_detected": 0,
       "toc_text_lines_removed": 0,
@@ -1221,7 +1219,7 @@
       "title": "成长人性",
       "changed": false,
       "applied": false,
-      "toc_marker_found": true,
+      "toc_marker_found": false,
       "toc_leader_lines": 0,
       "toc_titles_detected": 0,
       "toc_text_lines_removed": 0,
@@ -1245,27 +1243,27 @@
       "applied": true,
       "toc_marker_found": false,
       "toc_leader_lines": 1,
-      "toc_titles_detected": 10,
+      "toc_titles_detected": 1,
       "toc_text_lines_removed": 1,
-      "headings_recovered_from_toc": 9,
+      "headings_recovered_from_toc": 0,
       "glued_headings_split": 0,
       "candidate_headings_not_found": 1,
       "page_numbers_removed": 0,
-      "conversion_labels_removed": 8,
+      "conversion_labels_removed": 0,
       "conversion_comments_removed": 0,
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 126,
-      "visible_retention": 0.9833,
-      "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-      "last_commit_date": "2026-08-25T15:04:52+08:00",
-      "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+      "visible_retention": 0.9987,
+      "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
+      "last_commit_date": "2026-08-25T07:57:18Z",
+      "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
     },
     {
       "path": "temp/《格商》/index.md",
       "title": "格商",
       "changed": false,
       "applied": false,
-      "toc_marker_found": true,
+      "toc_marker_found": false,
       "toc_leader_lines": 0,
       "toc_titles_detected": 0,
       "toc_text_lines_removed": 0,
@@ -1287,7 +1285,7 @@
       "title": "格商",
       "changed": false,
       "applied": false,
-      "toc_marker_found": true,
+      "toc_marker_found": false,
       "toc_leader_lines": 0,
       "toc_titles_detected": 0,
       "toc_text_lines_removed": 0,
@@ -1329,8 +1327,8 @@
     {
       "path": "temp/《洞察人性天机》/index.md",
       "title": "洞察人性天机",
-      "changed": true,
-      "applied": true,
+      "changed": false,
+      "applied": false,
       "toc_marker_found": false,
       "toc_leader_lines": 0,
       "toc_titles_detected": 0,
@@ -1339,21 +1337,21 @@
       "glued_headings_split": 0,
       "candidate_headings_not_found": 0,
       "page_numbers_removed": 0,
-      "conversion_labels_removed": 1,
+      "conversion_labels_removed": 0,
       "conversion_comments_removed": 0,
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 1,
-      "visible_retention": 0.9999,
-      "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-      "last_commit_date": "2026-08-25T15:04:52+08:00",
-      "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+      "visible_retention": 1.0,
+      "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
+      "last_commit_date": "2026-08-25T07:57:18Z",
+      "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
     },
     {
       "path": "temp/《烂好人毒素》/index.md",
       "title": "烂好人毒素",
       "changed": false,
       "applied": false,
-      "toc_marker_found": true,
+      "toc_marker_found": false,
       "toc_leader_lines": 0,
       "toc_titles_detected": 0,
       "toc_text_lines_removed": 0,
@@ -1397,7 +1395,7 @@
       "title": "百发百中攻心术",
       "changed": false,
       "applied": false,
-      "toc_marker_found": true,
+      "toc_marker_found": false,
       "toc_leader_lines": 0,
       "toc_titles_detected": 0,
       "toc_text_lines_removed": 0,
@@ -1419,7 +1417,7 @@
       "title": "社会人心运作手册",
       "changed": false,
       "applied": false,
-      "toc_marker_found": true,
+      "toc_marker_found": false,
       "toc_leader_lines": 0,
       "toc_titles_detected": 0,
       "toc_text_lines_removed": 0,
@@ -1441,7 +1439,7 @@
       "title": "社会人心运作手册",
       "changed": false,
       "applied": false,
-      "toc_marker_found": true,
+      "toc_marker_found": false,
       "toc_leader_lines": 0,
       "toc_titles_detected": 0,
       "toc_text_lines_removed": 0,
@@ -1461,31 +1459,31 @@
     {
       "path": "temp/《穷人的底层逻辑》/index.md",
       "title": "穷人的底层逻辑",
-      "changed": true,
-      "applied": true,
-      "toc_marker_found": true,
-      "toc_leader_lines": 3,
-      "toc_titles_detected": 72,
-      "toc_text_lines_removed": 4,
-      "headings_recovered_from_toc": 69,
-      "glued_headings_split": 68,
-      "candidate_headings_not_found": 3,
-      "page_numbers_removed": 56,
-      "conversion_labels_removed": 2,
+      "changed": false,
+      "applied": false,
+      "toc_marker_found": false,
+      "toc_leader_lines": 0,
+      "toc_titles_detected": 0,
+      "toc_text_lines_removed": 0,
+      "headings_recovered_from_toc": 0,
+      "glued_headings_split": 0,
+      "candidate_headings_not_found": 0,
+      "page_numbers_removed": 0,
+      "conversion_labels_removed": 0,
       "conversion_comments_removed": 0,
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 7,
-      "visible_retention": 0.9031,
-      "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-      "last_commit_date": "2026-08-25T15:04:52+08:00",
-      "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+      "visible_retention": 1.0,
+      "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
+      "last_commit_date": "2026-08-25T07:57:18Z",
+      "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
     },
     {
       "path": "temp/《红尘修炼手册》/index.md",
       "title": "红尘修炼手册",
       "changed": false,
       "applied": false,
-      "toc_marker_found": true,
+      "toc_marker_found": false,
       "toc_leader_lines": 0,
       "toc_titles_detected": 0,
       "toc_text_lines_removed": 0,
@@ -1505,9 +1503,9 @@
     {
       "path": "temp/《红尘纵横1》/index.md",
       "title": "红尘纵横1",
-      "changed": true,
-      "applied": true,
-      "toc_marker_found": true,
+      "changed": false,
+      "applied": false,
+      "toc_marker_found": false,
       "toc_leader_lines": 0,
       "toc_titles_detected": 0,
       "toc_text_lines_removed": 0,
@@ -1515,21 +1513,21 @@
       "glued_headings_split": 0,
       "candidate_headings_not_found": 0,
       "page_numbers_removed": 0,
-      "conversion_labels_removed": 4,
+      "conversion_labels_removed": 0,
       "conversion_comments_removed": 0,
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 143,
-      "visible_retention": 0.9996,
-      "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-      "last_commit_date": "2026-08-25T15:04:52+08:00",
-      "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+      "visible_retention": 1.0,
+      "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
+      "last_commit_date": "2026-08-25T07:57:18Z",
+      "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
     },
     {
       "path": "temp/《红尘纵横2》/index.md",
       "title": "红尘纵横2",
       "changed": false,
       "applied": false,
-      "toc_marker_found": true,
+      "toc_marker_found": false,
       "toc_leader_lines": 0,
       "toc_titles_detected": 0,
       "toc_text_lines_removed": 0,
@@ -1551,7 +1549,7 @@
       "title": "红尘纵横3",
       "changed": false,
       "applied": false,
-      "toc_marker_found": true,
+      "toc_marker_found": false,
       "toc_leader_lines": 0,
       "toc_titles_detected": 0,
       "toc_text_lines_removed": 0,
@@ -1615,24 +1613,24 @@
     {
       "path": "temp/《透视人性》/index.md",
       "title": "透视人性",
-      "changed": true,
-      "applied": true,
+      "changed": false,
+      "applied": false,
       "toc_marker_found": false,
-      "toc_leader_lines": 1,
-      "toc_titles_detected": 30,
-      "toc_text_lines_removed": 1,
-      "headings_recovered_from_toc": 27,
-      "glued_headings_split": 27,
-      "candidate_headings_not_found": 3,
+      "toc_leader_lines": 0,
+      "toc_titles_detected": 0,
+      "toc_text_lines_removed": 0,
+      "headings_recovered_from_toc": 0,
+      "glued_headings_split": 0,
+      "candidate_headings_not_found": 0,
       "page_numbers_removed": 0,
       "conversion_labels_removed": 0,
       "conversion_comments_removed": 0,
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 9,
-      "visible_retention": 0.9604,
-      "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-      "last_commit_date": "2026-08-25T15:04:52+08:00",
-      "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+      "visible_retention": 1.0,
+      "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
+      "last_commit_date": "2026-08-25T07:57:18Z",
+      "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
     },
     {
       "path": "temp/《道破人性第一书》.md",
@@ -1681,8 +1679,8 @@
     {
       "path": "temp/《阅人高手2》/index.md",
       "title": "阅人高手2",
-      "changed": true,
-      "applied": true,
+      "changed": false,
+      "applied": false,
       "toc_marker_found": true,
       "toc_leader_lines": 0,
       "toc_titles_detected": 0,
@@ -1691,20 +1689,20 @@
       "glued_headings_split": 0,
       "candidate_headings_not_found": 0,
       "page_numbers_removed": 0,
-      "conversion_labels_removed": 1,
+      "conversion_labels_removed": 0,
       "conversion_comments_removed": 0,
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 1,
       "visible_retention": 1.0,
-      "last_commit_sha": "195ce6fea6c5632a58993ab66c11d9382f1734cb",
-      "last_commit_date": "2026-08-24T18:59:13Z",
-      "last_commit_message": "docs(temp): repair Markdown naming structure and ads [skip ci]"
+      "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
+      "last_commit_date": "2026-08-25T07:57:18Z",
+      "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
     },
     {
       "path": "temp/《零距离人性》/index.md",
       "title": "零距离人性",
-      "changed": true,
-      "applied": true,
+      "changed": false,
+      "applied": false,
       "toc_marker_found": false,
       "toc_leader_lines": 0,
       "toc_titles_detected": 0,
@@ -1713,42 +1711,20 @@
       "glued_headings_split": 0,
       "candidate_headings_not_found": 0,
       "page_numbers_removed": 0,
-      "conversion_labels_removed": 1,
+      "conversion_labels_removed": 0,
       "conversion_comments_removed": 0,
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 1,
       "visible_retention": 1.0,
-      "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-      "last_commit_date": "2026-08-25T15:04:52+08:00",
-      "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+      "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
+      "last_commit_date": "2026-08-25T07:57:18Z",
+      "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
     },
     {
       "path": "temp/《驭心高手》/index.md",
       "title": "驭心高手",
-      "changed": true,
-      "applied": true,
-      "toc_marker_found": false,
-      "toc_leader_lines": 2,
-      "toc_titles_detected": 55,
-      "toc_text_lines_removed": 3,
-      "headings_recovered_from_toc": 48,
-      "glued_headings_split": 43,
-      "candidate_headings_not_found": 1,
-      "page_numbers_removed": 0,
-      "conversion_labels_removed": 1,
-      "conversion_comments_removed": 0,
-      "duplicate_h1_removed": 0,
-      "image_refs_preserved": 2,
-      "visible_retention": 0.9732,
-      "last_commit_sha": "195ce6fea6c5632a58993ab66c11d9382f1734cb",
-      "last_commit_date": "2026-08-24T18:59:13Z",
-      "last_commit_message": "docs(temp): repair Markdown naming structure and ads [skip ci]"
-    },
-    {
-      "path": "temp/《高手深度思考的秘密》/index.md",
-      "title": "高手深度思考的秘密",
-      "changed": true,
-      "applied": true,
+      "changed": false,
+      "applied": false,
       "toc_marker_found": false,
       "toc_leader_lines": 0,
       "toc_titles_detected": 0,
@@ -1757,14 +1733,36 @@
       "glued_headings_split": 0,
       "candidate_headings_not_found": 0,
       "page_numbers_removed": 0,
-      "conversion_labels_removed": 4,
+      "conversion_labels_removed": 0,
+      "conversion_comments_removed": 0,
+      "duplicate_h1_removed": 0,
+      "image_refs_preserved": 2,
+      "visible_retention": 1.0,
+      "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
+      "last_commit_date": "2026-08-25T07:57:18Z",
+      "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
+    },
+    {
+      "path": "temp/《高手深度思考的秘密》/index.md",
+      "title": "高手深度思考的秘密",
+      "changed": false,
+      "applied": false,
+      "toc_marker_found": false,
+      "toc_leader_lines": 0,
+      "toc_titles_detected": 0,
+      "toc_text_lines_removed": 0,
+      "headings_recovered_from_toc": 0,
+      "glued_headings_split": 0,
+      "candidate_headings_not_found": 0,
+      "page_numbers_removed": 0,
+      "conversion_labels_removed": 0,
       "conversion_comments_removed": 0,
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 4,
-      "visible_retention": 0.9997,
-      "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-      "last_commit_date": "2026-08-25T15:04:52+08:00",
-      "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+      "visible_retention": 1.0,
+      "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
+      "last_commit_date": "2026-08-25T07:57:18Z",
+      "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
     },
     {
       "path": "temp/人性伎俩.md",
@@ -1857,42 +1855,36 @@
     {
       "path": "temp/布局锦囊5.0/index.md",
       "title": "布局锦囊5.0",
-      "changed": true,
-      "applied": true,
+      "changed": false,
+      "applied": false,
       "toc_marker_found": false,
-      "toc_leader_lines": 4,
-      "toc_titles_detected": 8,
-      "toc_text_lines_removed": 4,
+      "toc_leader_lines": 0,
+      "toc_titles_detected": 0,
+      "toc_text_lines_removed": 0,
       "headings_recovered_from_toc": 0,
       "glued_headings_split": 0,
-      "candidate_headings_not_found": 8,
-      "page_numbers_removed": 17,
-      "conversion_labels_removed": 17,
+      "candidate_headings_not_found": 0,
+      "page_numbers_removed": 0,
+      "conversion_labels_removed": 0,
       "conversion_comments_removed": 0,
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 19,
-      "visible_retention": 0.9829,
-      "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-      "last_commit_date": "2026-08-25T15:04:52+08:00",
-      "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+      "visible_retention": 1.0,
+      "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
+      "last_commit_date": "2026-08-25T07:57:18Z",
+      "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
     }
   ],
   "audit": [
     {
       "path": "temp/007《布局锦囊1.0》/index.md",
       "status": "pass",
-      "issues": [
-        {
-          "code": "toc_marker_needs_review",
-          "severity": "low",
-          "detail": "目录 marker remains but no leader-based TOC was proven"
-        }
-      ],
+      "issues": [],
       "metrics": {
-        "bytes": 732016,
-        "visible_chars": 238271,
+        "bytes": 732005,
+        "visible_chars": 238269,
         "h1": 1,
-        "h2": 273,
+        "h2": 272,
         "h3": 65,
         "h4": 0,
         "image_refs": 383
@@ -1906,23 +1898,12 @@
     {
       "path": "temp/008《布局锦囊3.0》/index.md",
       "status": "pass",
-      "issues": [
-        {
-          "code": "toc_marker_needs_review",
-          "severity": "low",
-          "detail": "目录 marker remains but no leader-based TOC was proven"
-        },
-        {
-          "code": "history_says_processed_but_content_fails",
-          "severity": "info",
-          "detail": "docs(temp): remove ads and repair headings [skip ci]"
-        }
-      ],
+      "issues": [],
       "metrics": {
-        "bytes": 1132130,
-        "visible_chars": 375203,
+        "bytes": 1132120,
+        "visible_chars": 375201,
         "h1": 1,
-        "h2": 45,
+        "h2": 44,
         "h3": 0,
         "h4": 0,
         "image_refs": 466
@@ -1936,23 +1917,12 @@
     {
       "path": "temp/009《布局锦囊2.0》/index.md",
       "status": "pass",
-      "issues": [
-        {
-          "code": "toc_marker_needs_review",
-          "severity": "low",
-          "detail": "目录 marker remains but no leader-based TOC was proven"
-        },
-        {
-          "code": "history_says_processed_but_content_fails",
-          "severity": "info",
-          "detail": "docs(temp): remove ads and repair headings [skip ci]"
-        }
-      ],
+      "issues": [],
       "metrics": {
-        "bytes": 723567,
-        "visible_chars": 237290,
+        "bytes": 723557,
+        "visible_chars": 237288,
         "h1": 1,
-        "h2": 59,
+        "h2": 58,
         "h3": 0,
         "h4": 0,
         "image_refs": 345
@@ -1977,24 +1947,18 @@
         "image_refs": 44
       },
       "history": {
-        "last_commit_sha": "11c5718ba2701621be69c8fa5bac0ce47747ff4b",
-        "last_commit_date": "2026-08-25T14:40:06+08:00",
-        "last_commit_message": "revert(temp): restore正文 after over-broad ad cleanup"
+        "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
+        "last_commit_date": "2026-08-25T07:57:18Z",
+        "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
       }
     },
     {
       "path": "temp/《万能厚黑不黑模式》/index.md",
       "status": "pass",
-      "issues": [
-        {
-          "code": "toc_marker_needs_review",
-          "severity": "low",
-          "detail": "目录 marker remains but no leader-based TOC was proven"
-        }
-      ],
+      "issues": [],
       "metrics": {
-        "bytes": 500190,
-        "visible_chars": 161929,
+        "bytes": 500176,
+        "visible_chars": 161927,
         "h1": 1,
         "h2": 35,
         "h3": 78,
@@ -2029,21 +1993,10 @@
     {
       "path": "temp/《人心探索（动机篇）》/index.md",
       "status": "pass",
-      "issues": [
-        {
-          "code": "toc_marker_needs_review",
-          "severity": "low",
-          "detail": "目录 marker remains but no leader-based TOC was proven"
-        },
-        {
-          "code": "history_says_processed_but_content_fails",
-          "severity": "info",
-          "detail": "docs(temp): repair Markdown naming structure and ads [skip ci]"
-        }
-      ],
+      "issues": [],
       "metrics": {
-        "bytes": 447054,
-        "visible_chars": 142693,
+        "bytes": 447042,
+        "visible_chars": 142691,
         "h1": 1,
         "h2": 13,
         "h3": 17,
@@ -2059,21 +2012,10 @@
     {
       "path": "temp/《人心探索（操控篇）》/index.md",
       "status": "pass",
-      "issues": [
-        {
-          "code": "toc_marker_needs_review",
-          "severity": "low",
-          "detail": "目录 marker remains but no leader-based TOC was proven"
-        },
-        {
-          "code": "history_says_processed_but_content_fails",
-          "severity": "info",
-          "detail": "docs(temp): repair Markdown naming structure and ads [skip ci]"
-        }
-      ],
+      "issues": [],
       "metrics": {
-        "bytes": 310885,
-        "visible_chars": 100421,
+        "bytes": 310873,
+        "visible_chars": 100419,
         "h1": 1,
         "h2": 14,
         "h3": 42,
@@ -2118,25 +2060,14 @@
     },
     {
       "path": "temp/《人性天眼》/index.md",
-      "status": "needs_review_medium",
-      "issues": [
-        {
-          "code": "toc_marker_needs_review",
-          "severity": "low",
-          "detail": "目录 marker remains but no leader-based TOC was proven"
-        },
-        {
-          "code": "heading_level_jumps",
-          "severity": "medium",
-          "detail": "count=1"
-        }
-      ],
+      "status": "pass",
+      "issues": [],
       "metrics": {
-        "bytes": 159558,
-        "visible_chars": 51416,
+        "bytes": 159545,
+        "visible_chars": 51414,
         "h1": 1,
-        "h2": 0,
-        "h3": 13,
+        "h2": 1,
+        "h3": 12,
         "h4": 0,
         "image_refs": 105
       },
@@ -2148,25 +2079,14 @@
     },
     {
       "path": "temp/《人性宝典2.0》/index.md",
-      "status": "needs_review_medium",
-      "issues": [
-        {
-          "code": "toc_marker_needs_review",
-          "severity": "low",
-          "detail": "目录 marker remains but no leader-based TOC was proven"
-        },
-        {
-          "code": "heading_level_jumps",
-          "severity": "medium",
-          "detail": "count=1"
-        }
-      ],
+      "status": "pass",
+      "issues": [],
       "metrics": {
-        "bytes": 136974,
-        "visible_chars": 42857,
+        "bytes": 136961,
+        "visible_chars": 42855,
         "h1": 1,
-        "h2": 6,
-        "h3": 82,
+        "h2": 7,
+        "h3": 81,
         "h4": 0,
         "image_refs": 156
       },
@@ -2178,20 +2098,14 @@
     },
     {
       "path": "temp/《人性密码》/index.md",
-      "status": "needs_review_medium",
-      "issues": [
-        {
-          "code": "heading_level_jumps",
-          "severity": "medium",
-          "detail": "count=1"
-        }
-      ],
+      "status": "pass",
+      "issues": [],
       "metrics": {
-        "bytes": 342708,
+        "bytes": 342706,
         "visible_chars": 111829,
         "h1": 1,
-        "h2": 0,
-        "h3": 234,
+        "h2": 1,
+        "h3": 233,
         "h4": 0,
         "image_refs": 168
       },
@@ -2203,25 +2117,14 @@
     },
     {
       "path": "temp/《人性底层模型1.0》/index.md",
-      "status": "needs_review_medium",
-      "issues": [
-        {
-          "code": "toc_marker_needs_review",
-          "severity": "low",
-          "detail": "目录 marker remains but no leader-based TOC was proven"
-        },
-        {
-          "code": "heading_level_jumps",
-          "severity": "medium",
-          "detail": "count=1"
-        }
-      ],
+      "status": "pass",
+      "issues": [],
       "metrics": {
-        "bytes": 392871,
-        "visible_chars": 127023,
+        "bytes": 392858,
+        "visible_chars": 127021,
         "h1": 1,
-        "h2": 0,
-        "h3": 41,
+        "h2": 1,
+        "h3": 40,
         "h4": 0,
         "image_refs": 275
       },
@@ -2233,25 +2136,14 @@
     },
     {
       "path": "temp/《人性底层模型2.0》/index.md",
-      "status": "needs_review_medium",
-      "issues": [
-        {
-          "code": "toc_marker_needs_review",
-          "severity": "low",
-          "detail": "目录 marker remains but no leader-based TOC was proven"
-        },
-        {
-          "code": "heading_level_jumps",
-          "severity": "medium",
-          "detail": "count=1"
-        }
-      ],
+      "status": "pass",
+      "issues": [],
       "metrics": {
-        "bytes": 407273,
-        "visible_chars": 140777,
+        "bytes": 407260,
+        "visible_chars": 140775,
         "h1": 1,
-        "h2": 0,
-        "h3": 803,
+        "h2": 1,
+        "h3": 802,
         "h4": 0,
         "image_refs": 105
       },
@@ -2263,25 +2155,14 @@
     },
     {
       "path": "temp/《人性心法》/index.md",
-      "status": "needs_review_medium",
-      "issues": [
-        {
-          "code": "toc_marker_needs_review",
-          "severity": "low",
-          "detail": "目录 marker remains but no leader-based TOC was proven"
-        },
-        {
-          "code": "heading_level_jumps",
-          "severity": "medium",
-          "detail": "count=1"
-        }
-      ],
+      "status": "pass",
+      "issues": [],
       "metrics": {
-        "bytes": 402734,
-        "visible_chars": 128376,
+        "bytes": 402722,
+        "visible_chars": 128374,
         "h1": 1,
-        "h2": 8,
-        "h3": 45,
+        "h2": 9,
+        "h3": 44,
         "h4": 0,
         "image_refs": 440
       },
@@ -2293,25 +2174,14 @@
     },
     {
       "path": "temp/《人性心理战》/index.md",
-      "status": "needs_review_medium",
-      "issues": [
-        {
-          "code": "toc_marker_needs_review",
-          "severity": "low",
-          "detail": "目录 marker remains but no leader-based TOC was proven"
-        },
-        {
-          "code": "heading_level_jumps",
-          "severity": "medium",
-          "detail": "count=1"
-        }
-      ],
+      "status": "pass",
+      "issues": [],
       "metrics": {
-        "bytes": 269253,
-        "visible_chars": 86790,
+        "bytes": 269238,
+        "visible_chars": 86788,
         "h1": 1,
-        "h2": 9,
-        "h3": 205,
+        "h2": 10,
+        "h3": 204,
         "h4": 0,
         "image_refs": 241
       },
@@ -2323,25 +2193,14 @@
     },
     {
       "path": "temp/《人性成败拿捏》/index.md",
-      "status": "needs_review_medium",
-      "issues": [
-        {
-          "code": "toc_marker_needs_review",
-          "severity": "low",
-          "detail": "目录 marker remains but no leader-based TOC was proven"
-        },
-        {
-          "code": "heading_level_jumps",
-          "severity": "medium",
-          "detail": "count=1"
-        }
-      ],
+      "status": "pass",
+      "issues": [],
       "metrics": {
-        "bytes": 362711,
-        "visible_chars": 116464,
+        "bytes": 362698,
+        "visible_chars": 116462,
         "h1": 1,
-        "h2": 9,
-        "h3": 191,
+        "h2": 10,
+        "h3": 190,
         "h4": 0,
         "image_refs": 259
       },
@@ -2353,125 +2212,90 @@
     },
     {
       "path": "temp/《人性探索大师1》/index.md",
-      "status": "needs_review_medium",
-      "issues": [
-        {
-          "code": "heading_level_jumps",
-          "severity": "medium",
-          "detail": "count=1"
-        }
-      ],
+      "status": "pass",
+      "issues": [],
       "metrics": {
-        "bytes": 387449,
+        "bytes": 387448,
         "visible_chars": 128919,
         "h1": 1,
-        "h2": 9,
-        "h3": 68,
+        "h2": 10,
+        "h3": 67,
         "h4": 0,
         "image_refs": 4
       },
       "history": {
-        "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-        "last_commit_date": "2026-08-25T15:04:52+08:00",
-        "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+        "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
+        "last_commit_date": "2026-08-25T07:57:18Z",
+        "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
       }
     },
     {
       "path": "temp/《人性探索大师2》/index.md",
-      "status": "needs_review_medium",
-      "issues": [
-        {
-          "code": "heading_level_jumps",
-          "severity": "medium",
-          "detail": "count=1"
-        }
-      ],
+      "status": "pass",
+      "issues": [],
       "metrics": {
-        "bytes": 382156,
+        "bytes": 382155,
         "visible_chars": 127490,
         "h1": 1,
-        "h2": 10,
-        "h3": 65,
+        "h2": 11,
+        "h3": 64,
         "h4": 0,
         "image_refs": 5
       },
       "history": {
-        "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-        "last_commit_date": "2026-08-25T15:04:52+08:00",
-        "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+        "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
+        "last_commit_date": "2026-08-25T07:57:18Z",
+        "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
       }
     },
     {
       "path": "temp/《人性探索大师3》/index.md",
-      "status": "needs_review_medium",
-      "issues": [
-        {
-          "code": "heading_level_jumps",
-          "severity": "medium",
-          "detail": "count=1"
-        }
-      ],
+      "status": "pass",
+      "issues": [],
       "metrics": {
-        "bytes": 443918,
+        "bytes": 443917,
         "visible_chars": 148348,
         "h1": 1,
-        "h2": 7,
-        "h3": 65,
+        "h2": 8,
+        "h3": 64,
         "h4": 0,
         "image_refs": 1
       },
       "history": {
-        "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-        "last_commit_date": "2026-08-25T15:04:52+08:00",
-        "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+        "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
+        "last_commit_date": "2026-08-25T07:57:18Z",
+        "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
       }
     },
     {
       "path": "temp/《人性智谋36计》/index.md",
-      "status": "needs_review_medium",
-      "issues": [
-        {
-          "code": "heading_level_jumps",
-          "severity": "medium",
-          "detail": "count=1"
-        }
-      ],
+      "status": "pass",
+      "issues": [],
       "metrics": {
-        "bytes": 130087,
+        "bytes": 130086,
         "visible_chars": 43426,
         "h1": 1,
-        "h2": 0,
-        "h3": 41,
+        "h2": 1,
+        "h3": 40,
         "h4": 0,
         "image_refs": 2
       },
       "history": {
-        "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-        "last_commit_date": "2026-08-25T15:04:52+08:00",
-        "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+        "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
+        "last_commit_date": "2026-08-25T07:57:18Z",
+        "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
       }
     },
     {
       "path": "temp/《人性真相》/index.md",
-      "status": "needs_review_medium",
-      "issues": [
-        {
-          "code": "toc_marker_needs_review",
-          "severity": "low",
-          "detail": "目录 marker remains but no leader-based TOC was proven"
-        },
-        {
-          "code": "heading_level_jumps",
-          "severity": "medium",
-          "detail": "count=1"
-        }
-      ],
+      "status": "pass",
+      "issues": [],
       "metrics": {
-        "bytes": 132033,
-        "visible_chars": 42253,
+        "bytes": 132020,
+        "visible_chars": 42251,
         "h1": 1,
-        "h2": 0,
-        "h3": 16,
+        "h2": 1,
+        "h3": 15,
         "h4": 0,
         "image_refs": 113
       },
@@ -2483,25 +2307,14 @@
     },
     {
       "path": "temp/《人性真言》/index.md",
-      "status": "needs_review_medium",
-      "issues": [
-        {
-          "code": "toc_marker_needs_review",
-          "severity": "low",
-          "detail": "目录 marker remains but no leader-based TOC was proven"
-        },
-        {
-          "code": "heading_level_jumps",
-          "severity": "medium",
-          "detail": "count=1"
-        }
-      ],
+      "status": "pass",
+      "issues": [],
       "metrics": {
-        "bytes": 145562,
-        "visible_chars": 47339,
+        "bytes": 145484,
+        "visible_chars": 47300,
         "h1": 1,
-        "h2": 5,
-        "h3": 12,
+        "h2": 6,
+        "h3": 11,
         "h4": 0,
         "image_refs": 106
       },
@@ -2513,25 +2326,14 @@
     },
     {
       "path": "temp/《人性社交思维手册》/index.md",
-      "status": "needs_review_medium",
-      "issues": [
-        {
-          "code": "toc_marker_needs_review",
-          "severity": "low",
-          "detail": "目录 marker remains but no leader-based TOC was proven"
-        },
-        {
-          "code": "heading_level_jumps",
-          "severity": "medium",
-          "detail": "count=1"
-        }
-      ],
+      "status": "pass",
+      "issues": [],
       "metrics": {
-        "bytes": 100252,
-        "visible_chars": 32453,
+        "bytes": 100239,
+        "visible_chars": 32451,
         "h1": 1,
-        "h2": 0,
-        "h3": 11,
+        "h2": 1,
+        "h3": 10,
         "h4": 0,
         "image_refs": 90
       },
@@ -2543,25 +2345,14 @@
     },
     {
       "path": "temp/《人性纵横说1.0》/index.md",
-      "status": "needs_review_medium",
-      "issues": [
-        {
-          "code": "toc_marker_needs_review",
-          "severity": "low",
-          "detail": "目录 marker remains but no leader-based TOC was proven"
-        },
-        {
-          "code": "heading_level_jumps",
-          "severity": "medium",
-          "detail": "count=1"
-        }
-      ],
+      "status": "pass",
+      "issues": [],
       "metrics": {
-        "bytes": 164898,
-        "visible_chars": 52315,
+        "bytes": 164885,
+        "visible_chars": 52313,
         "h1": 1,
-        "h2": 0,
-        "h3": 33,
+        "h2": 1,
+        "h3": 32,
         "h4": 0,
         "image_refs": 159
       },
@@ -2573,25 +2364,20 @@
     },
     {
       "path": "temp/《人性背后隐藏的邪恶密码》/index.md",
-      "status": "needs_review_medium",
+      "status": "needs_review_high",
       "issues": [
         {
-          "code": "toc_marker_needs_review",
-          "severity": "low",
-          "detail": "目录 marker remains but no leader-based TOC was proven"
-        },
-        {
-          "code": "heading_level_jumps",
-          "severity": "medium",
-          "detail": "count=1"
+          "code": "leading_toc_text_residue",
+          "severity": "high",
+          "detail": "leader_lines=1, titles=1"
         }
       ],
       "metrics": {
-        "bytes": 135977,
-        "visible_chars": 44127,
+        "bytes": 135885,
+        "visible_chars": 44087,
         "h1": 1,
-        "h2": 0,
-        "h3": 82,
+        "h2": 1,
+        "h3": 80,
         "h4": 0,
         "image_refs": 126
       },
@@ -2603,25 +2389,14 @@
     },
     {
       "path": "temp/《人性艺术-内心电影剪辑师》/index.md",
-      "status": "needs_review_medium",
-      "issues": [
-        {
-          "code": "toc_marker_needs_review",
-          "severity": "low",
-          "detail": "目录 marker remains but no leader-based TOC was proven"
-        },
-        {
-          "code": "heading_level_jumps",
-          "severity": "medium",
-          "detail": "count=1"
-        }
-      ],
+      "status": "pass",
+      "issues": [],
       "metrics": {
-        "bytes": 643587,
-        "visible_chars": 210041,
+        "bytes": 643574,
+        "visible_chars": 210039,
         "h1": 1,
-        "h2": 40,
-        "h3": 92,
+        "h2": 41,
+        "h3": 91,
         "h4": 0,
         "image_refs": 266
       },
@@ -2645,32 +2420,21 @@
         "image_refs": 22
       },
       "history": {
-        "last_commit_sha": "f137f45dd9b7718a8ff35d1448fb88abedb0d953",
-        "last_commit_date": "2026-08-24T19:06:36Z",
-        "last_commit_message": "docs(temp): normalize numbered semantic headings [skip ci]"
+        "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
+        "last_commit_date": "2026-08-25T07:57:18Z",
+        "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
       }
     },
     {
       "path": "temp/《人性逆袭绝技》/index.md",
-      "status": "needs_review_medium",
-      "issues": [
-        {
-          "code": "toc_marker_needs_review",
-          "severity": "low",
-          "detail": "目录 marker remains but no leader-based TOC was proven"
-        },
-        {
-          "code": "heading_level_jumps",
-          "severity": "medium",
-          "detail": "count=1"
-        }
-      ],
+      "status": "pass",
+      "issues": [],
       "metrics": {
-        "bytes": 869383,
-        "visible_chars": 283765,
+        "bytes": 869371,
+        "visible_chars": 283763,
         "h1": 1,
-        "h2": 1,
-        "h3": 65,
+        "h2": 2,
+        "h3": 64,
         "h4": 0,
         "image_refs": 348
       },
@@ -2682,25 +2446,14 @@
     },
     {
       "path": "temp/《人性错觉控制术》/index.md",
-      "status": "needs_review_medium",
-      "issues": [
-        {
-          "code": "toc_marker_needs_review",
-          "severity": "low",
-          "detail": "目录 marker remains but no leader-based TOC was proven"
-        },
-        {
-          "code": "heading_level_jumps",
-          "severity": "medium",
-          "detail": "count=1"
-        }
-      ],
+      "status": "pass",
+      "issues": [],
       "metrics": {
-        "bytes": 102584,
-        "visible_chars": 33099,
+        "bytes": 102571,
+        "visible_chars": 33097,
         "h1": 1,
-        "h2": 0,
-        "h3": 22,
+        "h2": 1,
+        "h3": 21,
         "h4": 0,
         "image_refs": 76
       },
@@ -2724,9 +2477,9 @@
         "image_refs": 2
       },
       "history": {
-        "last_commit_sha": "195ce6fea6c5632a58993ab66c11d9382f1734cb",
-        "last_commit_date": "2026-08-24T18:59:13Z",
-        "last_commit_message": "docs(temp): repair Markdown naming structure and ads [skip ci]"
+        "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
+        "last_commit_date": "2026-08-25T07:57:18Z",
+        "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
       }
     },
     {
@@ -2761,25 +2514,14 @@
     },
     {
       "path": "temp/《人性魔鬼手段》/index.md",
-      "status": "needs_review_medium",
-      "issues": [
-        {
-          "code": "toc_marker_needs_review",
-          "severity": "low",
-          "detail": "目录 marker remains but no leader-based TOC was proven"
-        },
-        {
-          "code": "heading_level_jumps",
-          "severity": "medium",
-          "detail": "count=1"
-        }
-      ],
+      "status": "pass",
+      "issues": [],
       "metrics": {
-        "bytes": 347167,
-        "visible_chars": 112985,
+        "bytes": 347155,
+        "visible_chars": 112983,
         "h1": 1,
-        "h2": 31,
-        "h3": 291,
+        "h2": 32,
+        "h3": 290,
         "h4": 0,
         "image_refs": 278
       },
@@ -2791,25 +2533,14 @@
     },
     {
       "path": "temp/《人类欺骗行为解读》/index.md",
-      "status": "needs_review_medium",
-      "issues": [
-        {
-          "code": "toc_marker_needs_review",
-          "severity": "low",
-          "detail": "目录 marker remains but no leader-based TOC was proven"
-        },
-        {
-          "code": "heading_level_jumps",
-          "severity": "medium",
-          "detail": "count=1"
-        }
-      ],
+      "status": "pass",
+      "issues": [],
       "metrics": {
-        "bytes": 416433,
-        "visible_chars": 136869,
+        "bytes": 416420,
+        "visible_chars": 136867,
         "h1": 1,
-        "h2": 0,
-        "h3": 86,
+        "h2": 1,
+        "h3": 85,
         "h4": 0,
         "image_refs": 230
       },
@@ -2821,25 +2552,14 @@
     },
     {
       "path": "temp/《人脑操控力》/index.md",
-      "status": "needs_review_medium",
-      "issues": [
-        {
-          "code": "toc_marker_needs_review",
-          "severity": "low",
-          "detail": "目录 marker remains but no leader-based TOC was proven"
-        },
-        {
-          "code": "heading_level_jumps",
-          "severity": "medium",
-          "detail": "count=1"
-        }
-      ],
+      "status": "pass",
+      "issues": [],
       "metrics": {
-        "bytes": 192268,
-        "visible_chars": 61722,
+        "bytes": 192255,
+        "visible_chars": 61720,
         "h1": 1,
-        "h2": 6,
-        "h3": 69,
+        "h2": 7,
+        "h3": 68,
         "h4": 0,
         "image_refs": 128
       },
@@ -2851,25 +2571,14 @@
     },
     {
       "path": "temp/《冷读术》/index.md",
-      "status": "needs_review_medium",
-      "issues": [
-        {
-          "code": "toc_marker_needs_review",
-          "severity": "low",
-          "detail": "目录 marker remains but no leader-based TOC was proven"
-        },
-        {
-          "code": "heading_level_jumps",
-          "severity": "medium",
-          "detail": "count=1"
-        }
-      ],
+      "status": "pass",
+      "issues": [],
       "metrics": {
-        "bytes": 167532,
-        "visible_chars": 55697,
+        "bytes": 167519,
+        "visible_chars": 55695,
         "h1": 1,
-        "h2": 1,
-        "h3": 61,
+        "h2": 2,
+        "h3": 60,
         "h4": 0,
         "image_refs": 34
       },
@@ -2919,25 +2628,14 @@
     },
     {
       "path": "temp/《坏术大师》/index.md",
-      "status": "needs_review_medium",
-      "issues": [
-        {
-          "code": "toc_marker_needs_review",
-          "severity": "low",
-          "detail": "目录 marker remains but no leader-based TOC was proven"
-        },
-        {
-          "code": "heading_level_jumps",
-          "severity": "medium",
-          "detail": "count=1"
-        }
-      ],
+      "status": "pass",
+      "issues": [],
       "metrics": {
-        "bytes": 119919,
-        "visible_chars": 39104,
+        "bytes": 119906,
+        "visible_chars": 39102,
         "h1": 1,
-        "h2": 0,
-        "h3": 34,
+        "h2": 1,
+        "h3": 33,
         "h4": 0,
         "image_refs": 109
       },
@@ -2961,27 +2659,21 @@
         "image_refs": 1
       },
       "history": {
-        "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-        "last_commit_date": "2026-08-25T15:04:52+08:00",
-        "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+        "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
+        "last_commit_date": "2026-08-25T07:57:18Z",
+        "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
       }
     },
     {
       "path": "temp/《大心机2》/index.md",
-      "status": "needs_review_medium",
-      "issues": [
-        {
-          "code": "heading_level_jumps",
-          "severity": "medium",
-          "detail": "count=1"
-        }
-      ],
+      "status": "pass",
+      "issues": [],
       "metrics": {
-        "bytes": 477236,
+        "bytes": 477235,
         "visible_chars": 159066,
         "h1": 1,
-        "h2": 6,
-        "h3": 33,
+        "h2": 7,
+        "h3": 32,
         "h4": 0,
         "image_refs": 1
       },
@@ -3012,25 +2704,14 @@
     },
     {
       "path": "temp/《天之卷：强者修炼手册》/index.md",
-      "status": "needs_review_medium",
-      "issues": [
-        {
-          "code": "toc_marker_needs_review",
-          "severity": "low",
-          "detail": "目录 marker remains but no leader-based TOC was proven"
-        },
-        {
-          "code": "heading_level_jumps",
-          "severity": "medium",
-          "detail": "count=1"
-        }
-      ],
+      "status": "pass",
+      "issues": [],
       "metrics": {
-        "bytes": 104854,
-        "visible_chars": 32935,
+        "bytes": 104841,
+        "visible_chars": 32933,
         "h1": 1,
-        "h2": 0,
-        "h3": 59,
+        "h2": 1,
+        "h3": 58,
         "h4": 0,
         "image_refs": 122
       },
@@ -3042,25 +2723,14 @@
     },
     {
       "path": "temp/《天机38局》/index.md",
-      "status": "needs_review_medium",
-      "issues": [
-        {
-          "code": "toc_marker_needs_review",
-          "severity": "low",
-          "detail": "目录 marker remains but no leader-based TOC was proven"
-        },
-        {
-          "code": "heading_level_jumps",
-          "severity": "medium",
-          "detail": "count=1"
-        }
-      ],
+      "status": "pass",
+      "issues": [],
       "metrics": {
-        "bytes": 161548,
-        "visible_chars": 52599,
+        "bytes": 161535,
+        "visible_chars": 52597,
         "h1": 1,
-        "h2": 0,
-        "h3": 2,
+        "h2": 1,
+        "h3": 1,
         "h4": 0,
         "image_refs": 89
       },
@@ -3072,55 +2742,33 @@
     },
     {
       "path": "temp/《富人机密手稿》/index.md",
-      "status": "needs_review_medium",
-      "issues": [
-        {
-          "code": "heading_level_jumps",
-          "severity": "medium",
-          "detail": "count=1"
-        },
-        {
-          "code": "history_says_processed_but_content_fails",
-          "severity": "info",
-          "detail": "revert(temp): restore正文 after over-broad ad cleanup"
-        }
-      ],
+      "status": "pass",
+      "issues": [],
       "metrics": {
-        "bytes": 555305,
+        "bytes": 555304,
         "visible_chars": 187221,
         "h1": 1,
-        "h2": 7,
-        "h3": 81,
+        "h2": 8,
+        "h3": 80,
         "h4": 0,
         "image_refs": 3
       },
       "history": {
-        "last_commit_sha": "11c5718ba2701621be69c8fa5bac0ce47747ff4b",
-        "last_commit_date": "2026-08-25T14:40:06+08:00",
-        "last_commit_message": "revert(temp): restore正文 after over-broad ad cleanup"
+        "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
+        "last_commit_date": "2026-08-25T07:57:18Z",
+        "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
       }
     },
     {
       "path": "temp/《布局系统2.0》/index.md",
-      "status": "needs_review_medium",
-      "issues": [
-        {
-          "code": "toc_marker_needs_review",
-          "severity": "low",
-          "detail": "目录 marker remains but no leader-based TOC was proven"
-        },
-        {
-          "code": "heading_level_jumps",
-          "severity": "medium",
-          "detail": "count=1"
-        }
-      ],
+      "status": "pass",
+      "issues": [],
       "metrics": {
-        "bytes": 581140,
-        "visible_chars": 190286,
+        "bytes": 581128,
+        "visible_chars": 190284,
         "h1": 1,
-        "h2": 3,
-        "h3": 560,
+        "h2": 4,
+        "h3": 559,
         "h4": 0,
         "image_refs": 401
       },
@@ -3132,25 +2780,14 @@
     },
     {
       "path": "temp/《布局系统》/index.md",
-      "status": "needs_review_medium",
-      "issues": [
-        {
-          "code": "toc_marker_needs_review",
-          "severity": "low",
-          "detail": "目录 marker remains but no leader-based TOC was proven"
-        },
-        {
-          "code": "heading_level_jumps",
-          "severity": "medium",
-          "detail": "count=1"
-        }
-      ],
+      "status": "pass",
+      "issues": [],
       "metrics": {
-        "bytes": 396350,
-        "visible_chars": 130251,
+        "bytes": 396338,
+        "visible_chars": 130249,
         "h1": 1,
-        "h2": 12,
-        "h3": 169,
+        "h2": 13,
+        "h3": 168,
         "h4": 0,
         "image_refs": 269
       },
@@ -3163,21 +2800,10 @@
     {
       "path": "temp/《开悟开窍开智3》/index.md",
       "status": "pass",
-      "issues": [
-        {
-          "code": "toc_marker_needs_review",
-          "severity": "low",
-          "detail": "目录 marker remains but no leader-based TOC was proven"
-        },
-        {
-          "code": "history_says_processed_but_content_fails",
-          "severity": "info",
-          "detail": "docs(temp): remove ads and repair headings [skip ci]"
-        }
-      ],
+      "issues": [],
       "metrics": {
-        "bytes": 64094,
-        "visible_chars": 19642,
+        "bytes": 64083,
+        "visible_chars": 19640,
         "h1": 1,
         "h2": 5,
         "h3": 7,
@@ -3192,32 +2818,21 @@
     },
     {
       "path": "temp/《开窍开悟开智1》/index.md",
-      "status": "needs_review_medium",
-      "issues": [
-        {
-          "code": "heading_level_jumps",
-          "severity": "medium",
-          "detail": "count=1"
-        },
-        {
-          "code": "toc_body_heading_coverage_low",
-          "severity": "medium",
-          "detail": "missing=14/19"
-        }
-      ],
+      "status": "pass",
+      "issues": [],
       "metrics": {
-        "bytes": 426690,
+        "bytes": 426689,
         "visible_chars": 141039,
         "h1": 1,
-        "h2": 5,
-        "h3": 9,
+        "h2": 6,
+        "h3": 8,
         "h4": 0,
         "image_refs": 4
       },
       "history": {
-        "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-        "last_commit_date": "2026-08-25T15:04:52+08:00",
-        "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+        "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
+        "last_commit_date": "2026-08-25T07:57:18Z",
+        "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
       }
     },
     {
@@ -3241,25 +2856,14 @@
     },
     {
       "path": "temp/《开窍开悟开智2》/index.md",
-      "status": "needs_review_medium",
-      "issues": [
-        {
-          "code": "toc_marker_needs_review",
-          "severity": "low",
-          "detail": "目录 marker remains but no leader-based TOC was proven"
-        },
-        {
-          "code": "heading_level_jumps",
-          "severity": "medium",
-          "detail": "count=1"
-        }
-      ],
+      "status": "pass",
+      "issues": [],
       "metrics": {
-        "bytes": 344831,
-        "visible_chars": 111806,
+        "bytes": 344818,
+        "visible_chars": 111804,
         "h1": 1,
-        "h2": 0,
-        "h3": 300,
+        "h2": 1,
+        "h3": 299,
         "h4": 0,
         "image_refs": 204
       },
@@ -3283,9 +2887,9 @@
         "image_refs": 14
       },
       "history": {
-        "last_commit_sha": "195ce6fea6c5632a58993ab66c11d9382f1734cb",
-        "last_commit_date": "2026-08-24T18:59:13Z",
-        "last_commit_message": "docs(temp): repair Markdown naming structure and ads [skip ci]"
+        "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
+        "last_commit_date": "2026-08-25T07:57:18Z",
+        "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
       }
     },
     {
@@ -3296,19 +2900,14 @@
           "code": "giant_ocr_lines",
           "severity": "medium",
           "detail": "lines=[709], count=1"
-        },
-        {
-          "code": "heading_level_jumps",
-          "severity": "medium",
-          "detail": "count=1"
         }
       ],
       "metrics": {
-        "bytes": 552289,
+        "bytes": 552288,
         "visible_chars": 184548,
         "h1": 1,
-        "h2": 6,
-        "h3": 33,
+        "h2": 7,
+        "h3": 32,
         "h4": 0,
         "image_refs": 0
       },
@@ -3320,25 +2919,14 @@
     },
     {
       "path": "temp/《怎样洞察人心》/index.md",
-      "status": "needs_review_medium",
-      "issues": [
-        {
-          "code": "toc_marker_needs_review",
-          "severity": "low",
-          "detail": "目录 marker remains but no leader-based TOC was proven"
-        },
-        {
-          "code": "heading_level_jumps",
-          "severity": "medium",
-          "detail": "count=1"
-        }
-      ],
+      "status": "pass",
+      "issues": [],
       "metrics": {
-        "bytes": 325944,
-        "visible_chars": 105295,
+        "bytes": 325931,
+        "visible_chars": 105293,
         "h1": 1,
-        "h2": 9,
-        "h3": 106,
+        "h2": 10,
+        "h3": 105,
         "h4": 0,
         "image_refs": 193
       },
@@ -3350,25 +2938,14 @@
     },
     {
       "path": "temp/《成长人性》/index.md",
-      "status": "needs_review_medium",
-      "issues": [
-        {
-          "code": "toc_marker_needs_review",
-          "severity": "low",
-          "detail": "目录 marker remains but no leader-based TOC was proven"
-        },
-        {
-          "code": "heading_level_jumps",
-          "severity": "medium",
-          "detail": "count=1"
-        }
-      ],
+      "status": "pass",
+      "issues": [],
       "metrics": {
-        "bytes": 282611,
-        "visible_chars": 89169,
+        "bytes": 282598,
+        "visible_chars": 89167,
         "h1": 1,
-        "h2": 39,
-        "h3": 49,
+        "h2": 40,
+        "h3": 48,
         "h4": 0,
         "image_refs": 270
       },
@@ -3380,17 +2957,11 @@
     },
     {
       "path": "temp/《揭秘男人的人性》/index.md",
-      "status": "needs_review_high",
-      "issues": [
-        {
-          "code": "leading_toc_text_residue",
-          "severity": "high",
-          "detail": "leader_lines=1, titles=1"
-        }
-      ],
+      "status": "pass",
+      "issues": [],
       "metrics": {
-        "bytes": 92733,
-        "visible_chars": 29222,
+        "bytes": 92664,
+        "visible_chars": 29185,
         "h1": 1,
         "h2": 9,
         "h3": 0,
@@ -3398,29 +2969,18 @@
         "image_refs": 126
       },
       "history": {
-        "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-        "last_commit_date": "2026-08-25T15:04:52+08:00",
-        "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+        "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
+        "last_commit_date": "2026-08-25T07:57:18Z",
+        "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
       }
     },
     {
       "path": "temp/《格商》/index.md",
       "status": "pass",
-      "issues": [
-        {
-          "code": "toc_marker_needs_review",
-          "severity": "low",
-          "detail": "目录 marker remains but no leader-based TOC was proven"
-        },
-        {
-          "code": "history_says_processed_but_content_fails",
-          "severity": "info",
-          "detail": "docs(temp): repair Markdown naming structure and ads [skip ci]"
-        }
-      ],
+      "issues": [],
       "metrics": {
-        "bytes": 556083,
-        "visible_chars": 182678,
+        "bytes": 556071,
+        "visible_chars": 182676,
         "h1": 1,
         "h2": 16,
         "h3": 10,
@@ -3436,21 +2996,10 @@
     {
       "path": "temp/《格商》PDF版/index.md",
       "status": "pass",
-      "issues": [
-        {
-          "code": "toc_marker_needs_review",
-          "severity": "low",
-          "detail": "目录 marker remains but no leader-based TOC was proven"
-        },
-        {
-          "code": "history_says_processed_but_content_fails",
-          "severity": "info",
-          "detail": "docs(temp): repair Markdown naming structure and ads [skip ci]"
-        }
-      ],
+      "issues": [],
       "metrics": {
-        "bytes": 555860,
-        "visible_chars": 182610,
+        "bytes": 555848,
+        "visible_chars": 182608,
         "h1": 1,
         "h2": 16,
         "h3": 12,
@@ -3484,42 +3033,30 @@
     },
     {
       "path": "temp/《洞察人性天机》/index.md",
-      "status": "needs_review_medium",
-      "issues": [
-        {
-          "code": "heading_level_jumps",
-          "severity": "medium",
-          "detail": "count=1"
-        }
-      ],
+      "status": "pass",
+      "issues": [],
       "metrics": {
-        "bytes": 130218,
+        "bytes": 130217,
         "visible_chars": 43302,
         "h1": 1,
-        "h2": 0,
-        "h3": 26,
+        "h2": 1,
+        "h3": 25,
         "h4": 0,
         "image_refs": 1
       },
       "history": {
-        "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-        "last_commit_date": "2026-08-25T15:04:52+08:00",
-        "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+        "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
+        "last_commit_date": "2026-08-25T07:57:18Z",
+        "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
       }
     },
     {
       "path": "temp/《烂好人毒素》/index.md",
       "status": "pass",
-      "issues": [
-        {
-          "code": "toc_marker_needs_review",
-          "severity": "low",
-          "detail": "目录 marker remains but no leader-based TOC was proven"
-        }
-      ],
+      "issues": [],
       "metrics": {
-        "bytes": 268912,
-        "visible_chars": 88005,
+        "bytes": 268898,
+        "visible_chars": 88003,
         "h1": 1,
         "h2": 6,
         "h3": 28,
@@ -3565,21 +3102,10 @@
     {
       "path": "temp/《百发百中攻心术》/index.md",
       "status": "pass",
-      "issues": [
-        {
-          "code": "toc_marker_needs_review",
-          "severity": "low",
-          "detail": "目录 marker remains but no leader-based TOC was proven"
-        },
-        {
-          "code": "history_says_processed_but_content_fails",
-          "severity": "info",
-          "detail": "docs(temp): repair Markdown naming structure and ads [skip ci]"
-        }
-      ],
+      "issues": [],
       "metrics": {
-        "bytes": 523688,
-        "visible_chars": 171023,
+        "bytes": 523676,
+        "visible_chars": 171021,
         "h1": 1,
         "h2": 141,
         "h3": 30,
@@ -3594,25 +3120,14 @@
     },
     {
       "path": "temp/《社会人心运作手册》/index.md",
-      "status": "needs_review_medium",
-      "issues": [
-        {
-          "code": "toc_marker_needs_review",
-          "severity": "low",
-          "detail": "目录 marker remains but no leader-based TOC was proven"
-        },
-        {
-          "code": "heading_level_jumps",
-          "severity": "medium",
-          "detail": "count=1"
-        }
-      ],
+      "status": "pass",
+      "issues": [],
       "metrics": {
-        "bytes": 545008,
-        "visible_chars": 176351,
+        "bytes": 544995,
+        "visible_chars": 176349,
         "h1": 1,
-        "h2": 10,
-        "h3": 237,
+        "h2": 11,
+        "h3": 236,
         "h4": 0,
         "image_refs": 335
       },
@@ -3624,25 +3139,14 @@
     },
     {
       "path": "temp/《社会人心运作手册》PDF版/index.md",
-      "status": "needs_review_medium",
-      "issues": [
-        {
-          "code": "toc_marker_needs_review",
-          "severity": "low",
-          "detail": "目录 marker remains but no leader-based TOC was proven"
-        },
-        {
-          "code": "heading_level_jumps",
-          "severity": "medium",
-          "detail": "count=1"
-        }
-      ],
+      "status": "pass",
+      "issues": [],
       "metrics": {
-        "bytes": 550955,
-        "visible_chars": 178500,
+        "bytes": 550942,
+        "visible_chars": 178498,
         "h1": 1,
-        "h2": 10,
-        "h3": 139,
+        "h2": 11,
+        "h3": 138,
         "h4": 0,
         "image_refs": 335
       },
@@ -3654,50 +3158,33 @@
     },
     {
       "path": "temp/《穷人的底层逻辑》/index.md",
-      "status": "needs_review_medium",
-      "issues": [
-        {
-          "code": "heading_level_jumps",
-          "severity": "medium",
-          "detail": "count=1"
-        }
-      ],
+      "status": "pass",
+      "issues": [],
       "metrics": {
-        "bytes": 248620,
+        "bytes": 248619,
         "visible_chars": 82623,
         "h1": 1,
-        "h2": 69,
-        "h3": 5,
+        "h2": 70,
+        "h3": 4,
         "h4": 0,
         "image_refs": 7
       },
       "history": {
-        "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-        "last_commit_date": "2026-08-25T15:04:52+08:00",
-        "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+        "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
+        "last_commit_date": "2026-08-25T07:57:18Z",
+        "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
       }
     },
     {
       "path": "temp/《红尘修炼手册》/index.md",
-      "status": "needs_review_medium",
-      "issues": [
-        {
-          "code": "toc_marker_needs_review",
-          "severity": "low",
-          "detail": "目录 marker remains but no leader-based TOC was proven"
-        },
-        {
-          "code": "heading_level_jumps",
-          "severity": "medium",
-          "detail": "count=1"
-        }
-      ],
+      "status": "pass",
+      "issues": [],
       "metrics": {
-        "bytes": 94277,
-        "visible_chars": 29314,
+        "bytes": 94264,
+        "visible_chars": 29312,
         "h1": 1,
-        "h2": 0,
-        "h3": 69,
+        "h2": 1,
+        "h3": 68,
         "h4": 0,
         "image_refs": 105
       },
@@ -3709,55 +3196,33 @@
     },
     {
       "path": "temp/《红尘纵横1》/index.md",
-      "status": "needs_review_medium",
-      "issues": [
-        {
-          "code": "toc_marker_needs_review",
-          "severity": "low",
-          "detail": "目录 marker remains but no leader-based TOC was proven"
-        },
-        {
-          "code": "heading_level_jumps",
-          "severity": "medium",
-          "detail": "count=1"
-        }
-      ],
+      "status": "pass",
+      "issues": [],
       "metrics": {
-        "bytes": 157053,
-        "visible_chars": 49804,
+        "bytes": 157041,
+        "visible_chars": 49802,
         "h1": 1,
-        "h2": 30,
-        "h3": 106,
+        "h2": 31,
+        "h3": 105,
         "h4": 0,
         "image_refs": 143
       },
       "history": {
-        "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-        "last_commit_date": "2026-08-25T15:04:52+08:00",
-        "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+        "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
+        "last_commit_date": "2026-08-25T07:57:18Z",
+        "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
       }
     },
     {
       "path": "temp/《红尘纵横2》/index.md",
-      "status": "needs_review_medium",
-      "issues": [
-        {
-          "code": "toc_marker_needs_review",
-          "severity": "low",
-          "detail": "目录 marker remains but no leader-based TOC was proven"
-        },
-        {
-          "code": "heading_level_jumps",
-          "severity": "medium",
-          "detail": "count=1"
-        }
-      ],
+      "status": "pass",
+      "issues": [],
       "metrics": {
-        "bytes": 135005,
-        "visible_chars": 42386,
+        "bytes": 134992,
+        "visible_chars": 42384,
         "h1": 1,
-        "h2": 59,
-        "h3": 257,
+        "h2": 60,
+        "h3": 256,
         "h4": 0,
         "image_refs": 141
       },
@@ -3769,25 +3234,14 @@
     },
     {
       "path": "temp/《红尘纵横3》/index.md",
-      "status": "needs_review_medium",
-      "issues": [
-        {
-          "code": "toc_marker_needs_review",
-          "severity": "low",
-          "detail": "目录 marker remains but no leader-based TOC was proven"
-        },
-        {
-          "code": "heading_level_jumps",
-          "severity": "medium",
-          "detail": "count=1"
-        }
-      ],
+      "status": "pass",
+      "issues": [],
       "metrics": {
-        "bytes": 162616,
-        "visible_chars": 52319,
+        "bytes": 162604,
+        "visible_chars": 52317,
         "h1": 1,
-        "h2": 0,
-        "h3": 5,
+        "h2": 1,
+        "h3": 4,
         "h4": 0,
         "image_refs": 120
       },
@@ -3837,27 +3291,21 @@
     },
     {
       "path": "temp/《透视人性》/index.md",
-      "status": "needs_review_medium",
-      "issues": [
-        {
-          "code": "heading_level_jumps",
-          "severity": "medium",
-          "detail": "count=1"
-        }
-      ],
+      "status": "pass",
+      "issues": [],
       "metrics": {
-        "bytes": 189701,
+        "bytes": 189700,
         "visible_chars": 62949,
         "h1": 1,
-        "h2": 27,
-        "h3": 5,
+        "h2": 28,
+        "h3": 4,
         "h4": 0,
         "image_refs": 9
       },
       "history": {
-        "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-        "last_commit_date": "2026-08-25T15:04:52+08:00",
-        "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+        "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
+        "last_commit_date": "2026-08-25T07:57:18Z",
+        "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
       }
     },
     {
@@ -3881,20 +3329,14 @@
     },
     {
       "path": "temp/《阅人高手1》/index.md",
-      "status": "needs_review_medium",
-      "issues": [
-        {
-          "code": "heading_level_jumps",
-          "severity": "medium",
-          "detail": "count=1"
-        }
-      ],
+      "status": "pass",
+      "issues": [],
       "metrics": {
-        "bytes": 191706,
+        "bytes": 191705,
         "visible_chars": 61088,
         "h1": 1,
-        "h2": 0,
-        "h3": 57,
+        "h2": 1,
+        "h3": 56,
         "h4": 0,
         "image_refs": 1
       },
@@ -3916,7 +3358,7 @@
         {
           "code": "history_says_processed_but_content_fails",
           "severity": "info",
-          "detail": "docs(temp): repair Markdown naming structure and ads [skip ci]"
+          "detail": "docs(temp): repair content-level Markdown omissions [skip ci]"
         }
       ],
       "metrics": {
@@ -3929,9 +3371,9 @@
         "image_refs": 1
       },
       "history": {
-        "last_commit_sha": "195ce6fea6c5632a58993ab66c11d9382f1734cb",
-        "last_commit_date": "2026-08-24T18:59:13Z",
-        "last_commit_message": "docs(temp): repair Markdown naming structure and ads [skip ci]"
+        "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
+        "last_commit_date": "2026-08-25T07:57:18Z",
+        "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
       }
     },
     {
@@ -3948,9 +3390,9 @@
         "image_refs": 1
       },
       "history": {
-        "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-        "last_commit_date": "2026-08-25T15:04:52+08:00",
-        "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+        "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
+        "last_commit_date": "2026-08-25T07:57:18Z",
+        "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
       }
     },
     {
@@ -3967,34 +3409,28 @@
         "image_refs": 2
       },
       "history": {
-        "last_commit_sha": "195ce6fea6c5632a58993ab66c11d9382f1734cb",
-        "last_commit_date": "2026-08-24T18:59:13Z",
-        "last_commit_message": "docs(temp): repair Markdown naming structure and ads [skip ci]"
+        "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
+        "last_commit_date": "2026-08-25T07:57:18Z",
+        "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
       }
     },
     {
       "path": "temp/《高手深度思考的秘密》/index.md",
-      "status": "needs_review_medium",
-      "issues": [
-        {
-          "code": "heading_level_jumps",
-          "severity": "medium",
-          "detail": "count=1"
-        }
-      ],
+      "status": "pass",
+      "issues": [],
       "metrics": {
-        "bytes": 146636,
+        "bytes": 146635,
         "visible_chars": 48778,
         "h1": 1,
-        "h2": 0,
-        "h3": 2,
+        "h2": 1,
+        "h3": 1,
         "h4": 0,
         "image_refs": 4
       },
       "history": {
-        "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-        "last_commit_date": "2026-08-25T15:04:52+08:00",
-        "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+        "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
+        "last_commit_date": "2026-08-25T07:57:18Z",
+        "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
       }
     },
     {
@@ -4002,7 +3438,7 @@
       "status": "pass",
       "issues": [],
       "metrics": {
-        "bytes": 274164,
+        "bytes": 274162,
         "visible_chars": 89389,
         "h1": 1,
         "h2": 7,
@@ -4027,7 +3463,7 @@
         }
       ],
       "metrics": {
-        "bytes": 507421,
+        "bytes": 507420,
         "visible_chars": 169095,
         "h1": 1,
         "h2": 56,
@@ -4043,20 +3479,14 @@
     },
     {
       "path": "temp/千门谋局上册/index.md",
-      "status": "needs_review_medium",
-      "issues": [
-        {
-          "code": "heading_level_jumps",
-          "severity": "medium",
-          "detail": "count=1"
-        }
-      ],
+      "status": "pass",
+      "issues": [],
       "metrics": {
-        "bytes": 620020,
+        "bytes": 620019,
         "visible_chars": 199391,
         "h1": 1,
-        "h2": 3,
-        "h3": 186,
+        "h2": 4,
+        "h3": 185,
         "h4": 0,
         "image_refs": 420
       },
@@ -4068,20 +3498,14 @@
     },
     {
       "path": "temp/千门谋局下册/index.md",
-      "status": "needs_review_medium",
-      "issues": [
-        {
-          "code": "heading_level_jumps",
-          "severity": "medium",
-          "detail": "count=1"
-        }
-      ],
+      "status": "pass",
+      "issues": [],
       "metrics": {
-        "bytes": 487427,
+        "bytes": 487426,
         "visible_chars": 154826,
         "h1": 1,
-        "h2": 12,
-        "h3": 199,
+        "h2": 13,
+        "h3": 198,
         "h4": 0,
         "image_refs": 418
       },
@@ -4093,32 +3517,21 @@
     },
     {
       "path": "temp/布局锦囊5.0/index.md",
-      "status": "needs_review_medium",
-      "issues": [
-        {
-          "code": "heading_level_jumps",
-          "severity": "medium",
-          "detail": "count=1"
-        },
-        {
-          "code": "toc_body_heading_coverage_low",
-          "severity": "medium",
-          "detail": "missing=8/8"
-        }
-      ],
+      "status": "pass",
+      "issues": [],
       "metrics": {
-        "bytes": 1260572,
+        "bytes": 1260571,
         "visible_chars": 407628,
         "h1": 1,
-        "h2": 2,
-        "h3": 21,
+        "h2": 3,
+        "h3": 20,
         "h4": 0,
         "image_refs": 19
       },
       "history": {
-        "last_commit_sha": "cc5cf69125d7686eb70b62ce1c6f76839efa0cb0",
-        "last_commit_date": "2026-08-25T15:04:52+08:00",
-        "last_commit_message": "revert(markdown): remove unsafe generic heading promotions"
+        "last_commit_sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
+        "last_commit_date": "2026-08-25T07:57:18Z",
+        "last_commit_message": "docs(temp): repair content-level Markdown omissions [skip ci]"
       }
     }
   ],

@@ -1,10 +1,9 @@
 # 红尘纵横1
-**目录**
 ![第3页原始页面图](assets/page-003.png)
 ![第4页原始页面图](assets/page-004.png)
 ![第5页原始页面图](assets/page-005.png)
 凶
-### ！ THE WORLD OF MORTALS
+## ！ THE WORLD OF MORTALS
 通人性者一通百通
 ![第1页原始页面图](assets/page-001.png)
 红尘中因为维度的不同，故而自然而然形成金字塔结构！底层的想逆袭，上层的想保持特权！是什么推动社会发展！欲望！

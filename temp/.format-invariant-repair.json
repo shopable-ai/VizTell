@@ -1,0 +1,770 @@
+{
+  "summary": {
+    "markdown_files_scanned": 84,
+    "files_changed": 63,
+    "toc_labels_removed": 44,
+    "duplicate_h1_removed": 0,
+    "heading_jumps_fixed": 50,
+    "image_refs_checked": 10604,
+    "errors": 0
+  },
+  "results": [
+    {
+      "path": "temp/007《布局锦囊1.0》/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 1,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 0,
+      "image_refs": 383
+    },
+    {
+      "path": "temp/008《布局锦囊3.0》/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 1,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 0,
+      "image_refs": 466
+    },
+    {
+      "path": "temp/009《布局锦囊2.0》/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 1,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 0,
+      "image_refs": 345
+    },
+    {
+      "path": "temp/《458条人性顶级秘术》/index.md",
+      "changed": false,
+      "applied": false,
+      "toc_labels_removed": 0,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 0,
+      "image_refs": 44
+    },
+    {
+      "path": "temp/《万能厚黑不黑模式》/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 1,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 0,
+      "image_refs": 249
+    },
+    {
+      "path": "temp/《万能识人术》/index.md",
+      "changed": false,
+      "applied": false,
+      "toc_labels_removed": 0,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 0,
+      "image_refs": 2
+    },
+    {
+      "path": "temp/《人心探索（动机篇）》/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 1,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 0,
+      "image_refs": 334
+    },
+    {
+      "path": "temp/《人心探索（操控篇）》/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 1,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 0,
+      "image_refs": 177
+    },
+    {
+      "path": "temp/《人性商战(线下3天2夜全文字版)》.md",
+      "changed": false,
+      "applied": false,
+      "toc_labels_removed": 0,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 0,
+      "image_refs": 0
+    },
+    {
+      "path": "temp/《人性天眼》/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 1,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 1,
+      "image_refs": 105
+    },
+    {
+      "path": "temp/《人性宝典2.0》/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 1,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 1,
+      "image_refs": 156
+    },
+    {
+      "path": "temp/《人性密码》/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 0,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 1,
+      "image_refs": 168
+    },
+    {
+      "path": "temp/《人性底层模型1.0》/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 1,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 1,
+      "image_refs": 275
+    },
+    {
+      "path": "temp/《人性底层模型2.0》/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 1,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 1,
+      "image_refs": 105
+    },
+    {
+      "path": "temp/《人性心法》/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 1,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 1,
+      "image_refs": 440
+    },
+    {
+      "path": "temp/《人性心理战》/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 1,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 1,
+      "image_refs": 241
+    },
+    {
+      "path": "temp/《人性成败拿捏》/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 1,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 1,
+      "image_refs": 259
+    },
+    {
+      "path": "temp/《人性探索大师1》/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 0,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 1,
+      "image_refs": 4
+    },
+    {
+      "path": "temp/《人性探索大师2》/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 0,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 1,
+      "image_refs": 5
+    },
+    {
+      "path": "temp/《人性探索大师3》/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 0,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 1,
+      "image_refs": 1
+    },
+    {
+      "path": "temp/《人性智谋36计》/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 0,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 1,
+      "image_refs": 2
+    },
+    {
+      "path": "temp/《人性真相》/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 1,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 1,
+      "image_refs": 113
+    },
+    {
+      "path": "temp/《人性真言》/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 1,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 1,
+      "image_refs": 106
+    },
+    {
+      "path": "temp/《人性社交思维手册》/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 1,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 1,
+      "image_refs": 90
+    },
+    {
+      "path": "temp/《人性纵横说1.0》/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 1,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 1,
+      "image_refs": 159
+    },
+    {
+      "path": "temp/《人性背后隐藏的邪恶密码》/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 1,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 1,
+      "image_refs": 126
+    },
+    {
+      "path": "temp/《人性艺术-内心电影剪辑师》/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 1,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 1,
+      "image_refs": 266
+    },
+    {
+      "path": "temp/《人性要诀》/index.md",
+      "changed": false,
+      "applied": false,
+      "toc_labels_removed": 0,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 0,
+      "image_refs": 22
+    },
+    {
+      "path": "temp/《人性逆袭绝技》/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 1,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 1,
+      "image_refs": 348
+    },
+    {
+      "path": "temp/《人性错觉控制术》/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 1,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 1,
+      "image_refs": 76
+    },
+    {
+      "path": "temp/《人性陷阱》/index.md",
+      "changed": false,
+      "applied": false,
+      "toc_labels_removed": 0,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 0,
+      "image_refs": 2
+    },
+    {
+      "path": "temp/《人性难题宝典1-9》.md",
+      "changed": false,
+      "applied": false,
+      "toc_labels_removed": 0,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 0,
+      "image_refs": 0
+    },
+    {
+      "path": "temp/《人性魔鬼手段》/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 1,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 1,
+      "image_refs": 278
+    },
+    {
+      "path": "temp/《人类欺骗行为解读》/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 1,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 1,
+      "image_refs": 230
+    },
+    {
+      "path": "temp/《人脑操控力》/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 1,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 1,
+      "image_refs": 128
+    },
+    {
+      "path": "temp/《冷读术》/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 1,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 1,
+      "image_refs": 34
+    },
+    {
+      "path": "temp/《坏人基因》上册.md",
+      "changed": false,
+      "applied": false,
+      "toc_labels_removed": 0,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 0,
+      "image_refs": 0
+    },
+    {
+      "path": "temp/《坏人基因》下册.md",
+      "changed": false,
+      "applied": false,
+      "toc_labels_removed": 0,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 0,
+      "image_refs": 0
+    },
+    {
+      "path": "temp/《坏术大师》/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 1,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 1,
+      "image_refs": 109
+    },
+    {
+      "path": "temp/《大心机1》/index.md",
+      "changed": false,
+      "applied": false,
+      "toc_labels_removed": 0,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 0,
+      "image_refs": 1
+    },
+    {
+      "path": "temp/《大心机2》/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 0,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 1,
+      "image_refs": 1
+    },
+    {
+      "path": "temp/《大心机3》.md",
+      "changed": false,
+      "applied": false,
+      "toc_labels_removed": 0,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 0,
+      "image_refs": 0
+    },
+    {
+      "path": "temp/《天之卷：强者修炼手册》/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 1,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 1,
+      "image_refs": 122
+    },
+    {
+      "path": "temp/《天机38局》/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 1,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 1,
+      "image_refs": 89
+    },
+    {
+      "path": "temp/《富人机密手稿》/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 0,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 1,
+      "image_refs": 3
+    },
+    {
+      "path": "temp/《布局系统2.0》/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 1,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 1,
+      "image_refs": 401
+    },
+    {
+      "path": "temp/《布局系统》/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 1,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 1,
+      "image_refs": 269
+    },
+    {
+      "path": "temp/《开悟开窍开智3》/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 1,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 0,
+      "image_refs": 119
+    },
+    {
+      "path": "temp/《开窍开悟开智1》/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 0,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 1,
+      "image_refs": 4
+    },
+    {
+      "path": "temp/《开窍开悟开智1》PDF.md",
+      "changed": false,
+      "applied": false,
+      "toc_labels_removed": 0,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 0,
+      "image_refs": 0
+    },
+    {
+      "path": "temp/《开窍开悟开智2》/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 1,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 1,
+      "image_refs": 204
+    },
+    {
+      "path": "temp/《开窍开悟开智4》/index.md",
+      "changed": false,
+      "applied": false,
+      "toc_labels_removed": 0,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 0,
+      "image_refs": 14
+    },
+    {
+      "path": "temp/《开窍开智开悟5》.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 0,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 1,
+      "image_refs": 0
+    },
+    {
+      "path": "temp/《怎样洞察人心》/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 1,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 1,
+      "image_refs": 193
+    },
+    {
+      "path": "temp/《成长人性》/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 1,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 1,
+      "image_refs": 270
+    },
+    {
+      "path": "temp/《揭秘男人的人性》/index.md",
+      "changed": false,
+      "applied": false,
+      "toc_labels_removed": 0,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 0,
+      "image_refs": 126
+    },
+    {
+      "path": "temp/《格商》/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 1,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 0,
+      "image_refs": 238
+    },
+    {
+      "path": "temp/《格商》PDF版/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 1,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 0,
+      "image_refs": 238
+    },
+    {
+      "path": "temp/《洗脑的最高境界》.md",
+      "changed": false,
+      "applied": false,
+      "toc_labels_removed": 0,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 0,
+      "image_refs": 0
+    },
+    {
+      "path": "temp/《洞察人性天机》/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 0,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 1,
+      "image_refs": 1
+    },
+    {
+      "path": "temp/《烂好人毒素》/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 1,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 0,
+      "image_refs": 110
+    },
+    {
+      "path": "temp/《玩转人性》.md",
+      "changed": false,
+      "applied": false,
+      "toc_labels_removed": 0,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 0,
+      "image_refs": 0
+    },
+    {
+      "path": "temp/《百发百中攻心术》/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 1,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 0,
+      "image_refs": 292
+    },
+    {
+      "path": "temp/《社会人心运作手册》/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 1,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 1,
+      "image_refs": 335
+    },
+    {
+      "path": "temp/《社会人心运作手册》PDF版/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 1,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 1,
+      "image_refs": 335
+    },
+    {
+      "path": "temp/《穷人的底层逻辑》/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 0,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 1,
+      "image_refs": 7
+    },
+    {
+      "path": "temp/《红尘修炼手册》/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 1,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 1,
+      "image_refs": 105
+    },
+    {
+      "path": "temp/《红尘纵横1》/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 1,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 1,
+      "image_refs": 143
+    },
+    {
+      "path": "temp/《红尘纵横2》/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 1,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 1,
+      "image_refs": 141
+    },
+    {
+      "path": "temp/《红尘纵横3》/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 1,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 1,
+      "image_refs": 120
+    },
+    {
+      "path": "temp/《绝密人性天书》净版.md",
+      "changed": false,
+      "applied": false,
+      "toc_labels_removed": 0,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 0,
+      "image_refs": 0
+    },
+    {
+      "path": "temp/《贪婪的人性》男人篇.md",
+      "changed": false,
+      "applied": false,
+      "toc_labels_removed": 0,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 0,
+      "image_refs": 0
+    },
+    {
+      "path": "temp/《透视人性》/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 0,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 1,
+      "image_refs": 9
+    },
+    {
+      "path": "temp/《道破人性第一书》.md",
+      "changed": false,
+      "applied": false,
+      "toc_labels_removed": 0,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 0,
+      "image_refs": 0
+    },
+    {
+      "path": "temp/《阅人高手1》/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 0,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 1,
+      "image_refs": 1
+    },
+    {
+      "path": "temp/《阅人高手2》/index.md",
+      "changed": false,
+      "applied": false,
+      "toc_labels_removed": 0,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 0,
+      "image_refs": 1
+    },
+    {
+      "path": "temp/《零距离人性》/index.md",
+      "changed": false,
+      "applied": false,
+      "toc_labels_removed": 0,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 0,
+      "image_refs": 1
+    },
+    {
+      "path": "temp/《驭心高手》/index.md",
+      "changed": false,
+      "applied": false,
+      "toc_labels_removed": 0,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 0,
+      "image_refs": 2
+    },
+    {
+      "path": "temp/《高手深度思考的秘密》/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 0,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 1,
+      "image_refs": 4
+    },
+    {
+      "path": "temp/人性伎俩.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 0,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 0,
+      "image_refs": 0
+    },
+    {
+      "path": "temp/做局大师-人间博弈之术.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 0,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 0,
+      "image_refs": 0
+    },
+    {
+      "path": "temp/千门谋局上册/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 0,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 1,
+      "image_refs": 420
+    },
+    {
+      "path": "temp/千门谋局下册/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 0,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 1,
+      "image_refs": 418
+    },
+    {
+      "path": "temp/布局锦囊5.0/index.md",
+      "changed": true,
+      "applied": true,
+      "toc_labels_removed": 0,
+      "duplicate_h1_removed": 0,
+      "heading_jumps_fixed": 1,
+      "image_refs": 19
+    }
+  ],
+  "errors": []
+}
