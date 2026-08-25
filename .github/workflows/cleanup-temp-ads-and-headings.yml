@@ -20,27 +20,45 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Remove ads and repair heading hierarchy
+
+      - name: Remove ads and repair only provable heading damage
+        shell: bash
         run: |
           set +e
-          : > temp/.ad-heading-cleanup.log
-          python -m py_compile scripts/cleanup_temp_ads_and_headings.py >> temp/.ad-heading-cleanup.log 2>&1
+          log='temp/.ad-heading-cleanup.log'
+          report='temp/.ad-heading-cleanup-report.json'
+          : > "$log"
+
+          python -m py_compile scripts/cleanup_temp_ads_and_headings.py >> "$log" 2>&1
           compile_rc=$?
-          echo "compile exit code: $compile_rc" >> temp/.ad-heading-cleanup.log
+          echo "compile exit code: $compile_rc" >> "$log"
+
+          cleanup_rc=1
           if [ "$compile_rc" -eq 0 ]; then
             python scripts/cleanup_temp_ads_and_headings.py \
               --root temp \
               --prompt '.prompt/Markdown文档整理与修复通用提示词.md' \
-              --report temp/.ad-heading-cleanup-report.json >> temp/.ad-heading-cleanup.log 2>&1
-            echo "cleanup exit code: $?" >> temp/.ad-heading-cleanup.log
+              --report "$report" >> "$log" 2>&1
+            cleanup_rc=$?
+            echo "cleanup exit code: $cleanup_rc" >> "$log"
           fi
-          cat temp/.ad-heading-cleanup.log
-          if [ -f temp/.ad-heading-cleanup-report.json ]; then
-            cat temp/.ad-heading-cleanup-report.json
+
+          cat "$log"
+          if [ -f "$report" ]; then
+            cat "$report"
+          fi
+
+          # Successful runs should not leave temporary diagnostic noise in the
+          # knowledge-base directory. Keep the log only when the script fails.
+          if [ "$compile_rc" -eq 0 ] && [ "$cleanup_rc" -eq 0 ]; then
+            rm -f "$log"
           fi
           exit 0
-      - name: Commit cleaned Markdown and audit diagnostics
+
+      - name: Commit cleaned Markdown and audit report
+        shell: bash
         run: |
+          set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add -A -- temp '.prompt/Markdown文档整理与修复通用提示词.md'
