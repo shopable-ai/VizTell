@@ -2,15 +2,15 @@
   "summary": {
     "markdown_files_scanned": 84,
     "pass": 20,
-    "needs_review_high": 2,
-    "needs_review_medium": 62,
+    "needs_review_high": 1,
+    "needs_review_medium": 63,
     "review_total": 64,
     "image_refs_total": 10604
   },
   "issue_counts": {
     "history_processed_but_content_fails": 59,
     "low_heading_density": 3,
-    "plain_chapter_markers": 2,
+    "plain_chapter_markers": 1,
     "possible_ad_residue": 19,
     "possible_heading_body_glue": 54
   },
@@ -375,25 +375,20 @@
     },
     {
       "path": "temp/《人性心法》/index.md",
-      "status": "needs_review_high",
+      "status": "needs_review_medium",
       "metrics": {
-        "bytes": 402722,
-        "visible_chars": 128374,
+        "bytes": 402721,
+        "visible_chars": 128371,
         "h1": 1,
         "headings_2_4": 53,
         "image_refs": 440,
-        "lines": 2529
+        "lines": 2531
       },
       "issues": [
         {
-          "code": "plain_chapter_markers",
-          "severity": "high",
-          "detail": "count=1, examples=[(1277, '第15 节投机是对人性最大的亵渎071很多人以为投机很容易，以为跟对老大，加入一个创业公司待几年上市很容易。这是对人性最大的亵渎。')]"
-        },
-        {
           "code": "possible_ad_residue",
           "severity": "medium",
-          "detail": "count_sample=8, examples=[{'line': 105, 'match': '微信号'}, {'line': 443, 'match': '微信号'}, {'line': 795, 'match': '微信号'}, {'line': 1105, 'match': '微信号'}, {'line': 1411, 'match': '微信号'}, {'line': 1736, 'match': '微信号'}, {'line': 2030, 'match': '微信号'}, {'line': 2285, 'match': '微信号'}]"
+          "detail": "count_sample=8, examples=[{'line': 105, 'match': '微信号'}, {'line': 443, 'match': '微信号'}, {'line': 795, 'match': '微信号'}, {'line': 1105, 'match': '微信号'}, {'line': 1413, 'match': '微信号'}, {'line': 1738, 'match': '微信号'}, {'line': 2032, 'match': '微信号'}, {'line': 2287, 'match': '微信号'}]"
         },
         {
           "code": "possible_heading_body_glue",
