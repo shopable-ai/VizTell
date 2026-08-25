@@ -1,0 +1,48 @@
+name: Analyze Human Business Sessions
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/analyze-human-business-sessions.yml'
+      - 'scripts/analyze_human_business_sessions.py'
+  workflow_dispatch:
+
+concurrency:
+  group: markdown-temp-repair-main
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  analyze:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Rebase to latest main
+        run: |
+          git fetch origin main
+          git rebase origin/main
+      - name: Analyze session boundaries only
+        run: |
+          python scripts/analyze_human_business_sessions.py
+          cat temp/.human-business-session-analysis.json
+      - name: Commit analysis report
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add temp/.human-business-session-analysis.json
+          if git diff --cached --quiet; then
+            echo 'Session analysis unchanged.'
+          else
+            git commit -m 'chore(temp): refresh human-business session analysis [skip ci]'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
