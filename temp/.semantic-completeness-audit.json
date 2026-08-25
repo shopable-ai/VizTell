@@ -72,13 +72,13 @@
         {
           "code": "history_processed_but_content_fails",
           "severity": "info",
-          "detail": "docs(temp): finalize Markdown content invariants [skip ci]"
+          "detail": "docs(temp): repair unambiguous OCR and heading residuals [skip ci]"
         }
       ],
       "history": {
-        "sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
-        "date": "2026-08-25T07:59:45Z",
-        "message": "docs(temp): finalize Markdown content invariants [skip ci]"
+        "sha": "a80755524dad1f14ab90abc413b06018ab030163",
+        "date": "2026-08-25T08:27:09Z",
+        "message": "docs(temp): repair unambiguous OCR and heading residuals [skip ci]"
       }
     },
     {
@@ -130,13 +130,13 @@
         {
           "code": "history_processed_but_content_fails",
           "severity": "info",
-          "detail": "docs(temp): repair content-level Markdown omissions [skip ci]"
+          "detail": "docs(temp): repair unambiguous OCR and heading residuals [skip ci]"
         }
       ],
       "history": {
-        "sha": "21e95a3cd390c0efee940fa97076d3dd1383a032",
-        "date": "2026-08-25T07:57:18Z",
-        "message": "docs(temp): repair content-level Markdown omissions [skip ci]"
+        "sha": "a80755524dad1f14ab90abc413b06018ab030163",
+        "date": "2026-08-25T08:27:09Z",
+        "message": "docs(temp): repair unambiguous OCR and heading residuals [skip ci]"
       }
     },
     {
@@ -188,13 +188,13 @@
         {
           "code": "history_processed_but_content_fails",
           "severity": "info",
-          "detail": "docs(temp): finalize Markdown content invariants [skip ci]"
+          "detail": "docs(temp): repair unambiguous OCR and heading residuals [skip ci]"
         }
       ],
       "history": {
-        "sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
-        "date": "2026-08-25T07:59:45Z",
-        "message": "docs(temp): finalize Markdown content invariants [skip ci]"
+        "sha": "a80755524dad1f14ab90abc413b06018ab030163",
+        "date": "2026-08-25T08:27:09Z",
+        "message": "docs(temp): repair unambiguous OCR and heading residuals [skip ci]"
       }
     },
     {
@@ -377,13 +377,13 @@
         {
           "code": "history_processed_but_content_fails",
           "severity": "info",
-          "detail": "docs(temp): finalize Markdown content invariants [skip ci]"
+          "detail": "docs(temp): repair unambiguous OCR and heading residuals [skip ci]"
         }
       ],
       "history": {
-        "sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
-        "date": "2026-08-25T07:59:45Z",
-        "message": "docs(temp): finalize Markdown content invariants [skip ci]"
+        "sha": "a80755524dad1f14ab90abc413b06018ab030163",
+        "date": "2026-08-25T08:27:09Z",
+        "message": "docs(temp): repair unambiguous OCR and heading residuals [skip ci]"
       }
     },
     {
@@ -440,13 +440,13 @@
         {
           "code": "history_processed_but_content_fails",
           "severity": "info",
-          "detail": "docs(temp): finalize Markdown content invariants [skip ci]"
+          "detail": "docs(temp): repair unambiguous OCR and heading residuals [skip ci]"
         }
       ],
       "history": {
-        "sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
-        "date": "2026-08-25T07:59:45Z",
-        "message": "docs(temp): finalize Markdown content invariants [skip ci]"
+        "sha": "a80755524dad1f14ab90abc413b06018ab030163",
+        "date": "2026-08-25T08:27:09Z",
+        "message": "docs(temp): repair unambiguous OCR and heading residuals [skip ci]"
       }
     },
     {
@@ -527,13 +527,13 @@
         {
           "code": "history_processed_but_content_fails",
           "severity": "info",
-          "detail": "docs(temp): finalize Markdown content invariants [skip ci]"
+          "detail": "docs(temp): repair unambiguous OCR and heading residuals [skip ci]"
         }
       ],
       "history": {
-        "sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
-        "date": "2026-08-25T07:59:45Z",
-        "message": "docs(temp): finalize Markdown content invariants [skip ci]"
+        "sha": "a80755524dad1f14ab90abc413b06018ab030163",
+        "date": "2026-08-25T08:27:09Z",
+        "message": "docs(temp): repair unambiguous OCR and heading residuals [skip ci]"
       }
     },
     {
@@ -556,13 +556,13 @@
         {
           "code": "history_processed_but_content_fails",
           "severity": "info",
-          "detail": "docs(temp): finalize Markdown content invariants [skip ci]"
+          "detail": "docs(temp): repair unambiguous OCR and heading residuals [skip ci]"
         }
       ],
       "history": {
-        "sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
-        "date": "2026-08-25T07:59:45Z",
-        "message": "docs(temp): finalize Markdown content invariants [skip ci]"
+        "sha": "a80755524dad1f14ab90abc413b06018ab030163",
+        "date": "2026-08-25T08:27:09Z",
+        "message": "docs(temp): repair unambiguous OCR and heading residuals [skip ci]"
       }
     },
     {
@@ -585,13 +585,13 @@
         {
           "code": "history_processed_but_content_fails",
           "severity": "info",
-          "detail": "docs(temp): finalize Markdown content invariants [skip ci]"
+          "detail": "docs(temp): repair unambiguous OCR and heading residuals [skip ci]"
         }
       ],
       "history": {
-        "sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
-        "date": "2026-08-25T07:59:45Z",
-        "message": "docs(temp): finalize Markdown content invariants [skip ci]"
+        "sha": "a80755524dad1f14ab90abc413b06018ab030163",
+        "date": "2026-08-25T08:27:09Z",
+        "message": "docs(temp): repair unambiguous OCR and heading residuals [skip ci]"
       }
     },
     {
@@ -1204,13 +1204,13 @@
         {
           "code": "history_processed_but_content_fails",
           "severity": "info",
-          "detail": "docs(temp): finalize Markdown content invariants [skip ci]"
+          "detail": "docs(temp): repair unambiguous OCR and heading residuals [skip ci]"
         }
       ],
       "history": {
-        "sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
-        "date": "2026-08-25T07:59:45Z",
-        "message": "docs(temp): finalize Markdown content invariants [skip ci]"
+        "sha": "a80755524dad1f14ab90abc413b06018ab030163",
+        "date": "2026-08-25T08:27:09Z",
+        "message": "docs(temp): repair unambiguous OCR and heading residuals [skip ci]"
       }
     },
     {
@@ -1969,13 +1969,13 @@
         {
           "code": "history_processed_but_content_fails",
           "severity": "info",
-          "detail": "docs(temp): finalize Markdown content invariants [skip ci]"
+          "detail": "docs(temp): repair unambiguous OCR and heading residuals [skip ci]"
         }
       ],
       "history": {
-        "sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
-        "date": "2026-08-25T07:59:45Z",
-        "message": "docs(temp): finalize Markdown content invariants [skip ci]"
+        "sha": "a80755524dad1f14ab90abc413b06018ab030163",
+        "date": "2026-08-25T08:27:09Z",
+        "message": "docs(temp): repair unambiguous OCR and heading residuals [skip ci]"
       }
     },
     {
@@ -1998,13 +1998,13 @@
         {
           "code": "history_processed_but_content_fails",
           "severity": "info",
-          "detail": "docs(temp): finalize Markdown content invariants [skip ci]"
+          "detail": "docs(temp): repair unambiguous OCR and heading residuals [skip ci]"
         }
       ],
       "history": {
-        "sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
-        "date": "2026-08-25T07:59:45Z",
-        "message": "docs(temp): finalize Markdown content invariants [skip ci]"
+        "sha": "a80755524dad1f14ab90abc413b06018ab030163",
+        "date": "2026-08-25T08:27:09Z",
+        "message": "docs(temp): repair unambiguous OCR and heading residuals [skip ci]"
       }
     },
     {
