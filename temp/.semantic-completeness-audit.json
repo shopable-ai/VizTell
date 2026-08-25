@@ -8,9 +8,9 @@
     "image_refs_total": 10604
   },
   "issue_counts": {
-    "history_processed_but_content_fails": 58,
+    "history_processed_but_content_fails": 32,
     "low_heading_density": 2,
-    "possible_ad_residue": 18,
+    "possible_ad_residue": 17,
     "possible_heading_body_glue": 54
   },
   "review": [
@@ -30,25 +30,20 @@
           "code": "possible_heading_body_glue",
           "severity": "medium",
           "detail": "count_sample=24, stems=['世界', '合众', '布局', '第个', '记住'], examples=[{'line': 277, 'prefix': '记住：80%以上的穷人', 'body_starter': '其实', 'excerpt': '记住：80%以上的穷人其实都是性格缺陷的残疾人（富有先从富有习惯，富有性格开始）；'}, {'line': 353, 'prefix': '记住：不管任何时候，我都把自己', 'body_starter': '当', 'excerpt': '记住：不管任何时候，我都把自己当小白，敬畏常识，敬畏规则，敬畏规律，这是我们投资人生存的基本法则。'}, {'line': 709, 'prefix': '记住：你', 'body_starter': '如果', 'excerpt': '记住：你如果想要从未得到过的东西，就要去做从未做过的事。'}, {'line': 861, 'prefix': '记住：你并没有想象的那么强大', 'body_starter': '当', 'excerpt': '记住：你并没有想象的那么强大当高潮的时候你应该敬畏规则，感恩，回馈哪些让你前行的护身符，并且仍然随时随地有危机感。（因为：大红之日，就是大悲之时——小龙虾）'}, {'line': 1467, 'prefix': '记住：一个人', 'body_starter': '如果', 'excerpt': '记住：一个人如果能成功（他说的对，做的对），他早就成功了（这些人反而喜欢教育别人如何成功），而牛逼的人，从年轻时候，就开始牛逼了，而且会持续牛下去。'}, {'line': 1805, 'prefix': '布局，让你不一样普通人成事靠想，大成者做事靠“悟”', 'body_starter': '想要', 'excerpt': '布局，让你不一样普通人成事靠想，大成者做事靠“悟”。想要成功，一定要拥有“大智慧”。'}, {'line': 2223, 'prefix': '记住：不要强行把自己的观点灌输给别人', 'body_starter': '因为', 'excerpt': '记住：不要强行把自己的观点灌输给别人因为人的三观受成长环境的影响，对于某些事的看法不可能总是完全相同的，别人觉得对，你觉得是错的关系好点可能觉得没什么，关系一般的可能会觉得你很烦，希望你赶紧闭嘴，脾气暴的还会和你吵起来。'}, {'line': 3073, 'prefix': '记住：永远都不要等到条件具备才开始', 'body_starter': '因为', 'excerpt': '记住：永远都不要等到条件具备才开始，因为那一天永远不会到来。'}, {'line': 4209, 'prefix': '记住：所谓上流社会，就是上层圈子的人脉（', 'body_starter': '因为', 'excerpt': '记住：所谓上流社会，就是上层圈子的人脉（因为一个城市的中心核心资源就是有这些高层控制〉，那么明白了这点我们就明白了上流社会到底有哪些人？'}, {'line': 4355, 'prefix': '记住：如果你能力', 'body_starter': '一般', 'excerpt': '记住：如果你能力一般，还不爱学习，那么想要年赚百万，大概率靠混圈子。'}, {'line': 5007, 'prefix': '记住：不管人类社会发展哪种程度，合作和竞争都是必备的生存手段', 'body_starter': '想要', 'excerpt': '记住：不管人类社会发展哪种程度，合作和竞争都是必备的生存手段。想要在社会立足，这两个都必须硬。——别相信什么，“以和为贵”一味的忍让和忍耐，只会让你丧失利益。以和为贵的前提是双赢。而不是忍耐委屈求全。'}, {'line': 5067, 'prefix': '记住：在资源意识很强的圈子里，谦虚不是美德。 装逼', 'body_starter': '大家', 'excerpt': '记住：在资源意识很强的圈子里，谦虚不是美德。 装逼大家才看得起你，愿意跟你一起玩。——人性幕强；'}]"
-        },
-        {
-          "code": "history_processed_but_content_fails",
-          "severity": "info",
-          "detail": "docs(temp): finalize Markdown content invariants [skip ci]"
         }
       ],
       "history": {
-        "sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
-        "date": "2026-08-25T07:59:45Z",
-        "message": "docs(temp): finalize Markdown content invariants [skip ci]"
+        "sha": "b8ecd134ac2e0bd64a31d2926f0e1b63ffa24478",
+        "date": "2026-08-25T09:43:08Z",
+        "message": "docs(temp): remove explicit promo credentials and watermarks [skip ci]"
       }
     },
     {
       "path": "temp/008《布局锦囊3.0》/index.md",
       "status": "needs_review_medium",
       "metrics": {
-        "bytes": 1120532,
-        "visible_chars": 370640,
+        "bytes": 1120274,
+        "visible_chars": 370554,
         "h1": 1,
         "headings_2_4": 34,
         "image_refs": 466,
@@ -59,17 +54,12 @@
           "code": "possible_ad_residue",
           "severity": "medium",
           "detail": "count_sample=3, examples=[{'line': 3999, 'match': '微信号'}, {'line': 4003, 'match': '微信号'}, {'line': 4017, 'match': '微信号'}]"
-        },
-        {
-          "code": "history_processed_but_content_fails",
-          "severity": "info",
-          "detail": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
         }
       ],
       "history": {
-        "sha": "6d30bcbd706fdbf9a88995171e98c81fb359ec53",
-        "date": "2026-08-25T08:33:14Z",
-        "message": "docs(temp): repair confirmed high-risk formatting false passes [skip ci]"
+        "sha": "b8ecd134ac2e0bd64a31d2926f0e1b63ffa24478",
+        "date": "2026-08-25T09:43:08Z",
+        "message": "docs(temp): remove explicit promo credentials and watermarks [skip ci]"
       }
     },
     {
@@ -88,17 +78,12 @@
           "code": "possible_ad_residue",
           "severity": "medium",
           "detail": "count_sample=3, examples=[{'line': 961, 'match': '微信号'}, {'line': 2641, 'match': '微信号'}, {'line': 3927, 'match': '薇信              '}]"
-        },
-        {
-          "code": "history_processed_but_content_fails",
-          "severity": "info",
-          "detail": "fix(temp): remove high-risk repair whitespace side effects [skip ci]"
         }
       ],
       "history": {
-        "sha": "2f7acd24d8eb94abda9328300a5f6266bcf9b1c7",
-        "date": "2026-08-25T08:37:10Z",
-        "message": "fix(temp): remove high-risk repair whitespace side effects [skip ci]"
+        "sha": "b8ecd134ac2e0bd64a31d2926f0e1b63ffa24478",
+        "date": "2026-08-25T09:43:08Z",
+        "message": "docs(temp): remove explicit promo credentials and watermarks [skip ci]"
       }
     },
     {
@@ -175,17 +160,12 @@
           "code": "possible_heading_body_glue",
           "severity": "medium",
           "detail": "count_sample=3, stems=['为什'], examples=[{'line': 433, 'prefix': '为什么会这样呢？', 'body_starter': '因为', 'excerpt': '为什么会这样呢？因为他可能因踩到香蕉皮而滑倒并严重骨折过，被足球击中而鼻骨碎裂过。这样的经历会形成香蕉皮和足球会使人致残致死的错误认识。这还容易理解，但有的人的恐惧更为奇怪，看似无法理解。比如有人经历了一次公交车事故，自己垂死挣扎了两个小时终于获救，但是事后，只要一见到公交车就避之唯恐不及，宁可走一个小时的路去上班。这就是乘车恐惧症。'}, {'line': 1241, 'prefix': '为什么压力会使人难以克制自己的行？要回答这个问题', 'body_starter': '我们', 'excerpt': '为什么压力会使人难以克制自己的行？要回答这个问题，我们首先要简单了解大脑是怎样控制我们的行为的。不同的行为，由大脑深处不同的原始部位控制着。这些部位存储着人类的原始冲动，其神经细胞释放神经递质或激素（多去甲肾上腺素和多巴胺），受体细胞与之结合，表现出相应的原始兴奋。比如大脑纹状体和饮食习惯有关，下丘脑和饮食欲望以及性欲有关，杏仁核与情绪有关。这些部位又由另外'}, {'line': 1889, 'prefix': '为什么人在群体中更容易被说服呢？', 'body_starter': '因为', 'excerpt': '为什么人在群体中更容易被说服呢？因为人的个体本性，在群体中交互作用时，个人往往会体验到更大的不安感，情绪极容易波动。此时一旦有人向这样的群体提出某种指示，他们最容易接受。'}]"
-        },
-        {
-          "code": "history_processed_but_content_fails",
-          "severity": "info",
-          "detail": "docs(temp): repair unambiguous OCR and heading residuals [skip ci]"
         }
       ],
       "history": {
-        "sha": "a80755524dad1f14ab90abc413b06018ab030163",
-        "date": "2026-08-25T08:27:09Z",
-        "message": "docs(temp): repair unambiguous OCR and heading residuals [skip ci]"
+        "sha": "b8ecd134ac2e0bd64a31d2926f0e1b63ffa24478",
+        "date": "2026-08-25T09:43:08Z",
+        "message": "docs(temp): remove explicit promo credentials and watermarks [skip ci]"
       }
     },
     {
@@ -238,17 +218,12 @@
           "code": "possible_heading_body_glue",
           "severity": "medium",
           "detail": "count_sample=30, stems=[], examples=[{'line': 28, 'prefix': '其实，从', 'body_starter': '我们', 'excerpt': '其实，从我们屡屡受挫的人生经历中，不难发现，事物的本质与真相和大众认知是反着来的，比如——你会发现，越是内心自卑的人，他往往外在会刻意表现得越自信，很刻意的去证明自己.…你会发现，越是拼了命的去追求一个自己所谓喜欢的女人（男人），越是很难追到….你会发现，越是一心想着赚钱，一心想要发财的人，越是很难赚5'}, {'line': 32, 'prefix': '◎人性天眼到钱……你会发现', 'body_starter': '当', 'excerpt': '◎人性天眼到钱……你会发现，当你做事越不想犯错，就越会犯错.…你会发现，越是想得到一样东西的时候，越难得到.为什么大部分人都觉得自己好像用尽了全力，但是现实结果却总是啪啪打脸，我们离我们要的东西，越来越吃力因为，我们都搞反了，我们都开启了人生的最难模式！'}, {'line': 39, 'prefix': '即使犯错与失败，都是成事的必要养料，是你下', 'body_starter': '一个', 'excerpt': '即使犯错与失败，都是成事的必要养料，是你下一个可能成功的跳板。更何况有些错，有些坑，你没有踩过，没有体会过，很难成为你的真正认知。'}, {'line': 40, 'prefix': '一个人为什么能成功？', 'body_starter': '因为', 'excerpt': '一个人为什么能成功？因为他犯了足够多的错误，再加上积累了足够多的经验。他知道了什么东西是错的，因此也更知道了什么是对的只有先走在路上，才能在路上遇到你的事业贵人、伙伴、资源、机会.等等成则积累信心，败则积累教训。'}, {'line': 53, 'prefix': '真相往往不堪入目，因此它需要包装与粉饰。否则', 'body_starter': '很多', 'excerpt': '真相往往不堪入目，因此它需要包装与粉饰。否则很多事情就很难运转，陷入尴尬一个人脸上有雀斑，为了不显得这么难看，因此化了妆粉饰一下，无可厚非。如果你要追求做人的绝对真实，说你不能欺骗我，欺骗大家，那么就去揭穿别人，把关系推向难堪与深渊追求绝对真实不是目的，无伤大雅的“虚伪”与善意的“欺骗”，更是为人处世的一种必要手段8'}, {'line': 57, 'prefix': '◎人性天限别高估你和任何人的关系千万不要高估你和任何人的关系', 'body_starter': '所谓', 'excerpt': '◎人性天限别高估你和任何人的关系千万不要高估你和任何人的关系，所谓重情重义都是咱一厢情愿的幻想。'}, {'line': 61, 'prefix': '现实告诉你，是因为你的路好走了，朋友才会多', 'body_starter': '所谓', 'excerpt': '现实告诉你，是因为你的路好走了，朋友才会多。所谓人脉资源、朋友，你想拥有这些，必须得六亲不认的先有所成就，否则你所谓的朋友，充其量只是个熟人而已。'}, {'line': 67, 'prefix': '一，干大事就不能要面子', 'body_starter': '如果', 'excerpt': '一，干大事就不能要面子。如果穷的都还不起房贷了，面子能换来银行不起诉你吗？面子这东西只有上对下才管用，你没有钱，没有能力，你要往上爬，面子对你来说只能是奢侈的存在。'}, {'line': 68, 'prefix': '- 二、不说假话，办不成大事', 'body_starter': '很多', 'excerpt': '- 二、不说假话，办不成大事。很多人可能不理解这句话，但这却'}, {'line': 72, 'prefix': '- 四、成功前要厚道', 'body_starter': '人们', 'excerpt': '- 四、成功前要厚道，人们才帮你，成功后要心黑，人们才怕你，'}, {'line': 80, 'prefix': '看透一切现象本质的方法', 'body_starter': '一个', 'excerpt': '看透一切现象本质的方法一个看透一切现象本质的方法，利益分析法。'}, {'line': 89, 'prefix': '如果你能接纳这三点，同时还不影响你做', 'body_starter': '一个', 'excerpt': '如果你能接纳这三点，同时还不影响你做一个好人，那才是一个真正的好人。你看到的公平正义都是表象，社会的本质其实是弱肉强食。'}]"
-        },
-        {
-          "code": "history_processed_but_content_fails",
-          "severity": "info",
-          "detail": "docs(temp): finalize Markdown content invariants [skip ci]"
         }
       ],
       "history": {
-        "sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
-        "date": "2026-08-25T07:59:45Z",
-        "message": "docs(temp): finalize Markdown content invariants [skip ci]"
+        "sha": "b8ecd134ac2e0bd64a31d2926f0e1b63ffa24478",
+        "date": "2026-08-25T09:43:08Z",
+        "message": "docs(temp): remove explicit promo credentials and watermarks [skip ci]"
       }
     },
     {
@@ -330,17 +305,12 @@
           "code": "possible_heading_body_glue",
           "severity": "medium",
           "detail": "count_sample=30, stems=[], examples=[{'line': 18, 'prefix': '更直白的来说就是你要实现', 'body_starter': '一个', 'excerpt': '更直白的来说就是你要实现一个身份的互换，把你放置在你用户的那个身份位置上，来思考一下他的过程和经历，通过这样的思考方法，能够更好的去满足用户的需求。'}, {'line': 19, 'prefix': '这里我们来举', 'body_starter': '一个', 'excerpt': '这里我们来举一个简单例子，假如说你是搞装修的，那么你就要去思考一下你的客户来找你之前和来找你之后，他分别会干些什么。'}, {'line': 23, 'prefix': '经过很简单的思考', 'body_starter': '我们', 'excerpt': '经过很简单的思考，我们就可以想得出来，用户在找我们搞装修之前需要做的事情：需要看房买房，需要去买家装材料，需要去设计网站上了解一些装修设计的基础知识，等等等等。'}, {'line': 26, 'prefix': '除此之外', 'body_starter': '我们', 'excerpt': '除此之外，我们也可以成为其他产业的上游，也就是把你的客户导入到其他产业里，或者直接你去做下游产业，从而多方位的开发用户价值。'}, {'line': 27, 'prefix': '还是在这个案例中', 'body_starter': '我们', 'excerpt': '还是在这个案例中，我们可以思考一下我们的下游有哪些企业，用户搞完装修以后一定会做的一些事情：进行软装设计，买合适的家具和家电等等。'}, {'line': 31, 'prefix': '这个时候', 'body_starter': '我们', 'excerpt': '这个时候我们就可以把我们手中这批有价值的客户导入到这些产业里，比如说在我们的店铺里设计一些家具家电的广告活动，或者找一些联盟商家，让他们送一些赠品过来，然后我们把这些产品拿来做活动，同时把新的用户导入到他们的店铺当中，这样的话我们就成为了其他产业的上游，间接实现了开发用户的长期价值。'}, {'line': 34, 'prefix': '这个就是穿梭机思维模型在现实世界里的应用，除此之外', 'body_starter': '我们', 'excerpt': '这个就是穿梭机思维模型在现实世界里的应用，除此之外我们还可以利用穿梭机模型做预判，也就是把我们放在不同的时间维度里去看待一些事情，用一句话总结就是在某个时间某个地点发生的事情，未来还会在哪个时间哪个地点发生？'}, {'line': 39, 'prefix': '比如说在互联网的商业模式方面就格外的典型', 'body_starter': '当', 'excerpt': '比如说在互联网的商业模式方面就格外的典型，当雅虎网在美国火了以后，中国就有了搜狐，当谷歌的搜索在美国火了以后，中国就有了百度，当亚马逊在美国火了以后，中国就有了京东，当当等等，当eBay和 PayPal在美国火了以后，中国就有了阿里巴巴支付宝等等。'}, {'line': 40, 'prefix': '这个就是绝大多数', 'body_starter': '中国', 'excerpt': '这个就是绝大多数中国互联网公司早期起家的核心逻辑所在，就是他知道美国火了的东西，在未来的中国一定可以火起来，所以直接把这个模式搬运过来，就在中国可以成功，这就是因为成功的时间是有梯度的，那些最发达最高级的人群，他们能够最先的把这些高端的模式创造出来，而只要你把这些模式合理的改变和应用，也可以应用到你的生意里，或者说更下沉的市场里。'}, {'line': 41, 'prefix': '包括在现在的中国', 'body_starter': '很多', 'excerpt': '包括在现在的中国很多一线城市火起来的项目或者是生意，模式后期也会在二三线城市，甚至是四线五城市慢慢出现，而那些能够最早的把这些一二线城市的商业模式搬到四五线城市的，他们往往就是市场红利的最大收获者，因为他们从一开始就已经摆脱了和巨头竞争的压力，同时又把一种新的理念，新的方案引入到了小城市里，没有什么竞争对手，最终取得了成功。'}, {'line': 46, 'prefix': '比如说中国的互联网连接技术只停留在一兆以内，你弄', 'body_starter': '一个', 'excerpt': '比如说中国的互联网连接技术只停留在一兆以内，你弄一个英雄联盟游戏出来那就没什么意义了，因为网根本不够用，再比如说中国连一家物流公司都没有，你就去做一个大型的网购商城，那几乎也没什么意义，因为即便有人买东西也没法给他送啊，除非你自己去做全产业链，或者有能力召集别人去做全产业链，比如说马云刘强东这样。'}, {'line': 47, 'prefix': '所以我们在做生意的时候就要去判断', 'body_starter': '当', 'excerpt': '所以我们在做生意的时候就要去判断当年出现的那种成功情况，他的那些条件是否能够再次出现，如果再次出现的话，那么我们提前进行布局，就很有可能抓住新的一波红利。'}]"
-        },
-        {
-          "code": "history_processed_but_content_fails",
-          "severity": "info",
-          "detail": "docs(temp): finalize Markdown content invariants [skip ci]"
         }
       ],
       "history": {
-        "sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
-        "date": "2026-08-25T07:59:45Z",
-        "message": "docs(temp): finalize Markdown content invariants [skip ci]"
+        "sha": "b8ecd134ac2e0bd64a31d2926f0e1b63ffa24478",
+        "date": "2026-08-25T09:43:08Z",
+        "message": "docs(temp): remove explicit promo credentials and watermarks [skip ci]"
       }
     },
     {
@@ -376,19 +346,14 @@
       "path": "temp/《人性心法》/index.md",
       "status": "needs_review_medium",
       "metrics": {
-        "bytes": 402721,
-        "visible_chars": 128371,
+        "bytes": 400515,
+        "visible_chars": 127557,
         "h1": 1,
-        "headings_2_4": 53,
+        "headings_2_4": 52,
         "image_refs": 440,
-        "lines": 2531
+        "lines": 2530
       },
       "issues": [
-        {
-          "code": "possible_ad_residue",
-          "severity": "medium",
-          "detail": "count_sample=8, examples=[{'line': 105, 'match': '微信号'}, {'line': 443, 'match': '微信号'}, {'line': 795, 'match': '微信号'}, {'line': 1105, 'match': '微信号'}, {'line': 1413, 'match': '微信号'}, {'line': 1738, 'match': '微信号'}, {'line': 2032, 'match': '微信号'}, {'line': 2287, 'match': '微信号'}]"
-        },
         {
           "code": "possible_heading_body_glue",
           "severity": "medium",
@@ -422,17 +387,12 @@
           "code": "possible_heading_body_glue",
           "severity": "medium",
           "detail": "count_sample=30, stems=[], examples=[{'line': 17, 'prefix': '关于这个问题，几千年来都没', 'body_starter': '有一个', 'excerpt': '关于这个问题，几千年来都没有一个明确的答案。如果我们非要绝对地讨论出是非对错，反而掉进了二元对立思维的误区。'}, {'line': 19, 'prefix': '当我们喜欢用是非对错来评判某件事、某样东西、某个行为时，说明', 'body_starter': '我们', 'excerpt': '当我们喜欢用是非对错来评判某件事、某样东西、某个行为时，说明我们的认知格局还不够高。面对万干世界，我们每个人的知识都太有限了，我们对事物的评判都受控于现有的认知•…'}, {'line': 22, 'prefix': '当我们想要单纯在人性的善与恶之间做一个绝对划分时，说明', 'body_starter': '我们', 'excerpt': '当我们想要单纯在人性的善与恶之间做一个绝对划分时，说明我们还并未真正成熟。那在我们已有的认知下，唯一可以界定的是什么呢？是人性中都有自私的基因。'}, {'line': 26, 'prefix': 'Q 自私的基因，是人赖以生存的本质', 'body_starter': '如果', 'excerpt': 'Q 自私的基因，是人赖以生存的本质如果一个小婴儿不自私，他是难以生存下来的。家里有婴儿的人们都有这样的经历，他在饿的时候，或者身体不舒服的时候，比如发烧，都会哭闹，但这时他会不会顾及大人累不累？'}, {'line': 30, 'prefix': '人靠自私的基因来完成优胜劣汰。从生物进化论的角度来看，假若', 'body_starter': '我们', 'excerpt': '人靠自私的基因来完成优胜劣汰。从生物进化论的角度来看，假若我们的祖先不自私，不先考虑自身生存问题，那么在残酷的生存竞争中，他们存活下来的概率会更低。我们人类能存活下来，站在自然界的顶端，体内天然携带的“自私的基因” 起到了决定性作用。'}, {'line': 31, 'prefix': '可随着人类文明的发展', 'body_starter': '我们', 'excerpt': '可随着人类文明的发展，我们能够看到人身上散发出的付出、善良、乐于助人等优良品质。但是，我们不能说人的自私基因就进化掉了。事实上，在文明的引导下，有着自私基因的人完全可以成为一个好人、善人。每个人都是自私的，但每个人也都有可'}, {'line': 40, 'prefix': '为什么父母对自己的儿女', 'body_starter': '一般', 'excerpt': '为什么父母对自己的儿女，一般都好过对自己的父母？为什么会有“养儿防老”的说法？抑或是你有没有经常听父母说“你要努力读书，将来光宗耀祖”这些话？'}, {'line': 41, 'prefix': '事实上，关系的背后本就是价交换，但', 'body_starter': '我们', 'excerpt': '事实上，关系的背后本就是价交换，但我们要注意的是，“价值”可以是世俗层面的物质价值，也可以是精神层面的心理价值。很多父母在养儿育女的过程中获得了心灵的寄托和爱的回流，这在他们来看或许是更有意义和价值的事情。'}, {'line': 47, 'prefix': '可是，盲目的、毫无章法的合作又滋生了', 'body_starter': '很多', 'excerpt': '可是，盲目的、毫无章法的合作又滋生了很多问题。为了解决和避免这些问题，人们尝试制定一些规则来限制彼此，这些规则经过长期的演化，最终就形成了道德。'}, {'line': 48, 'prefix': '所以，从这个角度来看，产生道德的根源，其实就是人性的自私', 'body_starter': '因为', 'excerpt': '所以，从这个角度来看，产生道德的根源，其实就是人性的自私。因为拥有道德对人类的生存更有利，所以人类才制定道德标准。因此，我们在认知上不应该把“自私”与“道德”完全对立。'}, {'line': 49, 'prefix': '此外，与人合作，其实在一定程度上也是一种自私的表现', 'body_starter': '因为', 'excerpt': '此外，与人合作，其实在一定程度上也是一种自私的表现。因为合作，是我们经过综合考量后所做出的对当下最有利的选择。'}, {'line': 54, 'prefix': '既然自私是人性的一个基因，那为什么', 'body_starter': '我们', 'excerpt': '既然自私是人性的一个基因，那为什么我们的文化习惯性地、普遍地将其视为一个贬义词，一点也不待见它呢？其实有三方面原因。'}]"
-        },
-        {
-          "code": "history_processed_but_content_fails",
-          "severity": "info",
-          "detail": "docs(temp): repair unambiguous OCR and heading residuals [skip ci]"
         }
       ],
       "history": {
-        "sha": "a80755524dad1f14ab90abc413b06018ab030163",
-        "date": "2026-08-25T08:27:09Z",
-        "message": "docs(temp): repair unambiguous OCR and heading residuals [skip ci]"
+        "sha": "b8ecd134ac2e0bd64a31d2926f0e1b63ffa24478",
+        "date": "2026-08-25T09:43:08Z",
+        "message": "docs(temp): remove explicit promo credentials and watermarks [skip ci]"
       }
     },
     {
@@ -509,17 +469,12 @@
           "code": "possible_heading_body_glue",
           "severity": "medium",
           "detail": "count_sample=30, stems=[], examples=[{'line': 20, 'prefix': '为什么你总是被欺负？', 'body_starter': '因为', 'excerpt': '为什么你总是被欺负？因为你不懂人性，过分善良就是一种纵容；'}, {'line': 21, 'prefix': '为什么你总是被欺骗？', 'body_starter': '因为', 'excerpt': '为什么你总是被欺骗？因为你不懂人性，交浅言深是大忌。'}, {'line': 22, 'prefix': '为什么你总是被利用？', 'body_starter': '因为', 'excerpt': '为什么你总是被利用？因为你不懂人性，飞乌尽良，弓藏，狡兔死，走狗烹。'}, {'line': 23, 'prefix': '为什么你总是成为棋子和炮灰？', 'body_starter': '因为', 'excerpt': '为什么你总是成为棋子和炮灰？因为你不懂人性，这个社会有两套规则，一套是显性的，一套是隐性的。'}, {'line': 39, 'prefix': '这几年新进来的年轻人', 'body_starter': '很多', 'excerpt': '这几年新进来的年轻人，很多都是名牌大学毕业，学习能力、执行力、综合素质都比较强。'}, {'line': 43, 'prefix': '平时沟通协调、开会、处理事情', 'body_starter': '大家', 'excerpt': '平时沟通协调、开会、处理事情，大家都是客客气气的，我一路走来，也遇到很多帮助过我的贵人。'}, {'line': 47, 'prefix': '如果你不离开这个污浊的环境，你整天都会深陷到各种各样的问题', 'body_starter': '当', 'excerpt': '如果你不离开这个污浊的环境，你整天都会深陷到各种各样的问题当中。'}, {'line': 56, 'prefix': '为什么会这样呢？我接下来详细展开来跟', 'body_starter': '大家', 'excerpt': '为什么会这样呢？我接下来详细展开来跟大家说一说：底层往往是各种失意人群的聚集地在大多数单位，领导们都会有这样的想法，比如说某个年轻人不好用，工作态度特别差，故意摆烂。'}, {'line': 59, 'prefix': '如果这个领导级别高，没办法', 'body_starter': '当', 'excerpt': '如果这个领导级别高，没办法当副职，你不能给他降级啊，那就给个正职吧。但是不能调去好单位，把他弄去差的、边缘化的、无关紧要的下属单位当正职，级别不变。'}, {'line': 64, 'prefix': '再比如说，某个领导', 'body_starter': '因为', 'excerpt': '再比如说，某个领导，因为某种原因被处分了，或者出了什么问题被问责了。行，把他弄到下面的单位去下放。'}, {'line': 67, 'prefix': '一把手发现下面单位', 'body_starter': '有一个', 'excerpt': '一把手发现下面单位有一个年轻人，写材料不错，参加各种竞赛总是得奖，，这个年轻人借调上级单位期间，经常被表扬，形象气质都非常好。行，咱们机关部门正缺人呢，把这个年轻人调上来吧。'}, {'line': 69, 'prefix': '在这些单位，有的人要么是把这个基层单位', 'body_starter': '当', 'excerpt': '在这些单位，有的人要么是把这个基层单位当做跳板，时刻想着跑路，比如遴选考走。'}]"
-        },
-        {
-          "code": "history_processed_but_content_fails",
-          "severity": "info",
-          "detail": "docs(temp): repair unambiguous OCR and heading residuals [skip ci]"
         }
       ],
       "history": {
-        "sha": "a80755524dad1f14ab90abc413b06018ab030163",
-        "date": "2026-08-25T08:27:09Z",
-        "message": "docs(temp): repair unambiguous OCR and heading residuals [skip ci]"
+        "sha": "b8ecd134ac2e0bd64a31d2926f0e1b63ffa24478",
+        "date": "2026-08-25T09:43:08Z",
+        "message": "docs(temp): remove explicit promo credentials and watermarks [skip ci]"
       }
     },
     {
@@ -538,17 +493,12 @@
           "code": "possible_ad_residue",
           "severity": "medium",
           "detail": "count_sample=1, examples=[{'line': 815, 'match': '加我微信'}]"
-        },
-        {
-          "code": "history_processed_but_content_fails",
-          "severity": "info",
-          "detail": "docs(temp): repair unambiguous OCR and heading residuals [skip ci]"
         }
       ],
       "history": {
-        "sha": "a80755524dad1f14ab90abc413b06018ab030163",
-        "date": "2026-08-25T08:27:09Z",
-        "message": "docs(temp): repair unambiguous OCR and heading residuals [skip ci]"
+        "sha": "b8ecd134ac2e0bd64a31d2926f0e1b63ffa24478",
+        "date": "2026-08-25T09:43:08Z",
+        "message": "docs(temp): remove explicit promo credentials and watermarks [skip ci]"
       }
     },
     {
@@ -567,17 +517,12 @@
           "code": "possible_heading_body_glue",
           "severity": "medium",
           "detail": "count_sample=30, stems=[], examples=[{'line': 41, 'prefix': '人性社交职场沟通思维手册你好，我是mona', 'body_starter': '很多', 'excerpt': '人性社交职场沟通思维手册你好，我是mona，很多人混到现在一事无成，或自认为一事无成。还有很多人混到现在感觉很失败，或不成功。'}, {'line': 43, 'prefix': '我们羡慕着社会上每', 'body_starter': '一个', 'excerpt': '我们羡慕着社会上每一个成功人士，羡慕着身边的有钱人，羡慕着身边每一辆呼啸而过的名车。'}, {'line': 45, 'prefix': '是啊，我怎么会混得这么差？', 'body_starter': '当', 'excerpt': '是啊，我怎么会混得这么差？当年班里（周围）不如我的那个家伙怎么现在这么发达？'}, {'line': 54, 'prefix': '人的一生，不能百年孤独，总要有朋友', 'body_starter': '如果', 'excerpt': '人的一生，不能百年孤独，总要有朋友，如果你想做一名合格的平民百姓，只要奉公守法，那随着你的性子交友，你愿意交就交，不愿意就让他滚。'}, {'line': 56, 'prefix': '我为什么这么说，其实这些朋友里，平时基本上用不着', 'body_starter': '一般', 'excerpt': '我为什么这么说，其实这些朋友里，平时基本上用不着，一般人朋友圈里多是同事、同学、邻居，因为我们平时打交道的朋友、一起喝酒唱歌洗澡的朋友，也就这一圈了，若没有一定的目的性，谁会去刻意交往一个律师或一个流氓呢？'}, {'line': 63, 'prefix': '律师的作用', 'body_starter': '大家', 'excerpt': '律师的作用，大家应该都知道，你落难倒霉的关键时候，他能拉你有力的一把。警察也不用说，常在社会混，哪能不湿鞋，车被扣了，人被查了，基本上这些事有一个局内朋友帮你，你不会吃多大亏。'}, {'line': 64, 'prefix': '老师的作用', 'body_starter': '对于', 'excerpt': '老师的作用对于以后家有儿女的朋友来讲，无疑是巨大的。'}, {'line': 72, 'prefix': '至于为什么要', 'body_starter': '有一个', 'excerpt': '至于为什么要有一个流氓地痞朋友，很多人不明白，其实很简单，在现阶段的社会里，日常生活中很多事，用这些朋友去解决，比其它任何方法都简便有效得多，但不能无限制地使用，他的副作用也是蛮大的，没有代价只有得到是不可能的，具体怎么考虑性价比，请精密计算。'}, {'line': 77, 'prefix': '人活于世，不可能没有爱好', 'body_starter': '如果', 'excerpt': '人活于世，不可能没有爱好，如果你觉得一个人没有爱好，那说明你没发现。他喜欢吃喝，陪他吃喝；他喜欢唱歌跳舞，陪他跳舞唱歌；他第4页，共87页'}, {'line': 82, 'prefix': '交朋友细节方面也有两点，舍得和倾听', 'body_starter': '如果', 'excerpt': '交朋友细节方面也有两点，舍得和倾听，如果你会点察言观色那就更好。舍得是金钱方面的舍得，你又想交点有用的朋友，又吝啬无比，那只好请你继续苦苦挣扎。'}, {'line': 83, 'prefix': '另一点是倾听，这点其实非常重要，领导为什么那么喜欢开会？', 'body_starter': '因为', 'excerpt': '另一点是倾听，这点其实非常重要，领导为什么那么喜欢开会？因为有一大堆人听自己讲话实在太爽了，心理医生为什么几乎能和每位患者处成朋友？因为他们能忍住不抽滔滔不绝患者的冲动，反能拿出一副津津有味的听众模样来。'}, {'line': 85, 'prefix': '至于如何认识到这些不同行业的朋友，说起来不可思议', 'body_starter': '其实', 'excerpt': '至于如何认识到这些不同行业的朋友，说起来不可思议，其实真的很简单。'}]"
-        },
-        {
-          "code": "history_processed_but_content_fails",
-          "severity": "info",
-          "detail": "docs(temp): repair unambiguous OCR and heading residuals [skip ci]"
         }
       ],
       "history": {
-        "sha": "a80755524dad1f14ab90abc413b06018ab030163",
-        "date": "2026-08-25T08:27:09Z",
-        "message": "docs(temp): repair unambiguous OCR and heading residuals [skip ci]"
+        "sha": "b8ecd134ac2e0bd64a31d2926f0e1b63ffa24478",
+        "date": "2026-08-25T09:43:08Z",
+        "message": "docs(temp): remove explicit promo credentials and watermarks [skip ci]"
       }
     },
     {
@@ -628,9 +573,9 @@
         }
       ],
       "history": {
-        "sha": "bb29ad97dcd9b701e07c9010a647bd934162c015",
-        "date": "2026-08-25T08:16:56Z",
-        "message": "docs(temp): recover numbered Q&A headings [skip ci]"
+        "sha": "b8ecd134ac2e0bd64a31d2926f0e1b63ffa24478",
+        "date": "2026-08-25T09:43:08Z",
+        "message": "docs(temp): remove explicit promo credentials and watermarks [skip ci]"
       }
     },
     {
@@ -823,17 +768,12 @@
           "code": "possible_ad_residue",
           "severity": "medium",
           "detail": "count_sample=1, examples=[{'line': 1008, 'match': '薇信     '}]"
-        },
-        {
-          "code": "history_processed_but_content_fails",
-          "severity": "info",
-          "detail": "fix(temp): remove high-risk repair whitespace side effects [skip ci]"
         }
       ],
       "history": {
-        "sha": "2f7acd24d8eb94abda9328300a5f6266bcf9b1c7",
-        "date": "2026-08-25T08:37:10Z",
-        "message": "fix(temp): remove high-risk repair whitespace side effects [skip ci]"
+        "sha": "b8ecd134ac2e0bd64a31d2926f0e1b63ffa24478",
+        "date": "2026-08-25T09:43:08Z",
+        "message": "docs(temp): remove explicit promo credentials and watermarks [skip ci]"
       }
     },
     {
@@ -910,17 +850,12 @@
           "code": "possible_heading_body_glue",
           "severity": "medium",
           "detail": "count_sample=13, stems=['强者'], examples=[{'line': 17, 'prefix': '强者之所以成为强者，还', 'body_starter': '因为', 'excerpt': '强者之所以成为强者，还因为强者比你多思考了一个问题—为何活着？'}, {'line': 532, 'prefix': '强者只有两大特色啊，第', 'body_starter': '一个', 'excerpt': '强者只有两大特色啊，第一个，要么非常有实力啊，第二个，要么非常有规则。'}, {'line': 579, 'prefix': '强者都有一颗强大的心脏，知道自己与人类都是禽兽，知道', 'body_starter': '所谓', 'excerpt': '强者都有一颗强大的心脏，知道自己与人类都是禽兽，知道所谓的文明是更高级的伪装！'}, {'line': 690, 'prefix': '强者思维35：红尘的变与不变', 'body_starter': '我们', 'excerpt': '强者思维35：红尘的变与不变我们都在红尘中，强者亦在红尘中体现不变的是结构，变化的是周期。'}, {'line': 781, 'prefix': '强者研究毛主席为何能神', 'body_starter': '一般', 'excerpt': '强者研究毛主席为何能神一般存在弱者把主席当做神一般的存在！'}, {'line': 917, 'prefix': '强者思维46：屁股决定脑袋', 'body_starter': '很多', 'excerpt': '强者思维46：屁股决定脑袋很多人一辈子站在自己层面与角度思考问题，这本身就是最大的智障！'}, {'line': 1194, 'prefix': '强者心法 8：入静静那刹那，可清除', 'body_starter': '很多', 'excerpt': '强者心法 8：入静静那刹那，可清除很多杂幻，获得能量回流！'}, {'line': 1298, 'prefix': '强者修炼 1：套路永不向上', 'body_starter': '很多', 'excerpt': '强者修炼 1：套路永不向上很多人认为的套路，在高一个维次的人那里早都玩烂啦！'}, {'line': 1336, 'prefix': '强者修炼 5：旋涡中成长', 'body_starter': '如果', 'excerpt': '强者修炼 5：旋涡中成长如果你所处的环境很和平，不一定是到了天堂，可能你正呆在羊群中！'}, {'line': 1414, 'prefix': '强者修炼 9：强者之核', 'body_starter': '我们', 'excerpt': '强者修炼 9：强者之核我们讲强者，何为强者，强者的核心是什么？'}, {'line': 1449, 'prefix': '强者修炼 12：破除妄念弱者之所以弱', 'body_starter': '因为', 'excerpt': '强者修炼 12：破除妄念弱者之所以弱，因为各种妄念缠身。'}, {'line': 1475, 'prefix': '强者天机 2：定海神针强者触摸了', 'body_starter': '一个', 'excerpt': '强者天机 2：定海神针强者触摸了一个东西，就是有他在，好像干难万险，深处绝境，大家也不惧！'}]"
-        },
-        {
-          "code": "history_processed_but_content_fails",
-          "severity": "info",
-          "detail": "docs(temp): finalize Markdown content invariants [skip ci]"
         }
       ],
       "history": {
-        "sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
-        "date": "2026-08-25T07:59:45Z",
-        "message": "docs(temp): finalize Markdown content invariants [skip ci]"
+        "sha": "b8ecd134ac2e0bd64a31d2926f0e1b63ffa24478",
+        "date": "2026-08-25T09:43:08Z",
+        "message": "docs(temp): remove explicit promo credentials and watermarks [skip ci]"
       }
     },
     {
@@ -939,17 +874,12 @@
           "code": "possible_heading_body_glue",
           "severity": "medium",
           "detail": "count_sample=30, stems=[], examples=[{'line': 35, 'prefix': '什么是见死不救？就是你会发现，其实真正', 'body_starter': '很多', 'excerpt': '什么是见死不救？就是你会发现，其实真正很多的高人，他们都是惜字如金的。'}, {'line': 41, 'prefix': '见路不走', 'body_starter': '首先', 'excerpt': '见路不走。首先路是什么路？路就是前人总结出来的经验和方法。'}, {'line': 42, 'prefix': '什么是见路不走？就是当', 'body_starter': '我们', 'excerpt': '什么是见路不走？就是当我们去处理问题的时候，我们解决的思路不能混在你已有的经验和方法当中，而是你要结合自身的客观条件。还有就是当下遇到的真实情况，你再去摸索一套适合自己的路。'}, {'line': 43, 'prefix': '你要知道，有的时候摆在你面前的那条路其实就是一条死路', 'body_starter': '因为', 'excerpt': '你要知道，有的时候摆在你面前的那条路其实就是一条死路，因为所有人都走的路，只能说是一条平庸之路，被同化的路。就像鲁迅先生经常说的话一样。从来如此，就是正确的。'}, {'line': 44, 'prefix': '所以你会发现', 'body_starter': '如果', 'excerpt': '所以你会发现，如果一个人能做到见路不走，那么这个人首先他会非常客观的去评估自己，他既不会夸大，也不会贬低，他是有勇气的，因为这个世界上绝大多数的人信奉的都是随大流，不挨揍，对'}, {'line': 49, 'prefix': '你看现在的时代发展，几天', 'body_starter': '一个', 'excerpt': '你看现在的时代发展，几天一个小变化，几个月就是一个大变化了，包括人的启示也是一样。所以你看，老辈的认为赚钱就是慢慢的积累，但现在很多其实就是用个两三年，甚至几个月就把这一辈子的钱全部赚了。'}, {'line': 50, 'prefix': '见路不走', 'body_starter': '有一个', 'excerpt': '见路不走有一个很形象的例子，你比如说直播带货1.0版本的时候就是表演，还有捧，是不是？而且剧本越夸张观众越喜欢，但是如果你认为这也是一条路，你啥都不用想，就直接照着去做了，结果不用我多说，因为现在的观众已经不吃那一套了。'}, {'line': 57, 'prefix': '暗线穿珠局天机38局', 'body_starter': '当', 'excerpt': '暗线穿珠局天机38局当中的空手套白狼，也是后来犹太人最爱用的光脚捞钱术—一暗线穿珠局。'}, {'line': 60, 'prefix': '宋朝的时候', 'body_starter': '有一个', 'excerpt': '宋朝的时候，有一个叫李有福的商人，本来生意做得还不错，可后来啊，这个营商环境越来越差，一边是朝廷的苛好杂税，另一边是竞争对手各种的明枪暗箭，完了不说，商队还时不时的遇上土匪打劫。李有福就是在这种艰难的环境下苟延残喘。一天，他刚忙完回到家，就收到了土匪小弟带来的信息，他儿子被山匪给绑去了。从小纸条上看，绑他儿子的还是关中第一匪帮三虎帮，上面印着土匪头子敖彪的印'}, {'line': 65, 'prefix': '三虎帮老大的义子', 'body_starter': '如果', 'excerpt': '三虎帮老大的义子，如果你让我入股，以后你们的商队绝对不会再有土匪来打劫，完了还有通关、税减免等一系列的好政策，说白了就是给你一个黑白通吃的机会。李有福一番游说之后，一毛钱没花就成了江南棉布商的股东。最后他拿着提亲的聘书和还没有捂热的股权证书，只身一人来到三虎帮，土匪们以为他是来交赎金的，结果他一分钱都拿不出来，熬彪40米的大砍刀都抬起来了。这个时候，李有福终'}, {'line': 66, 'prefix': '可能这个故事', 'body_starter': '大家', 'excerpt': '可能这个故事大家听着有点荒唐有点扯，但是仔细想一想，犹太人不就是这么发家的吗？从一开始一帮人见人欺的难民，到现在控制了全美幕后的大佬，走的不就是李有福给他儿子设的这个路线吗？'}, {'line': 67, 'prefix': '全世界都知道犹太人是最聪明的、智商最高的民族，但可能', 'body_starter': '大家', 'excerpt': '全世界都知道犹太人是最聪明的、智商最高的民族，但可能大家都不知道，犹太人聪明这件事最早就是犹太人自己吹出来的，他们靠着自己聪明会做生意。这个人设最早在欧洲吸引了一大批政商的追随者，有了这些人的支持，他们就树立了在民间的威信，做个生意，放个贷，割割民间的韭菜，这些事通畅无阻。等到财富越积越多，这帮人越来越有钱，这个结果反过来又印证了他们聪明会赚钱的这个人设，完'}]"
-        },
-        {
-          "code": "history_processed_but_content_fails",
-          "severity": "info",
-          "detail": "docs(temp): finalize Markdown content invariants [skip ci]"
         }
       ],
       "history": {
-        "sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
-        "date": "2026-08-25T07:59:45Z",
-        "message": "docs(temp): finalize Markdown content invariants [skip ci]"
+        "sha": "b8ecd134ac2e0bd64a31d2926f0e1b63ffa24478",
+        "date": "2026-08-25T09:43:08Z",
+        "message": "docs(temp): remove explicit promo credentials and watermarks [skip ci]"
       }
     },
     {
@@ -1002,17 +932,12 @@
           "code": "possible_heading_body_glue",
           "severity": "medium",
           "detail": "count_sample=30, stems=['云创', '但是', '充值', '动作', '因为', '如果', '我们', '执行', '易到', '比如', '点你', '生产', '简单'], examples=[{'line': 28, 'prefix': '如果人人能聚焦，一定能成点事情，现在知识太多了', 'body_starter': '我们', 'excerpt': '如果人人能聚焦，一定能成点事情，现在知识太多了，我们只需要学当下最本质，最关键需要学的，而不是什么都学，懂了就懂了⋯什么设计，文案，人才，团队培训，财务管理，以及品牌运营，根本不需要自己去学，要么找一个优秀的员工，分钱给他/她。要么外包出去。'}, {'line': 119, 'prefix': '但是高手一旦确定了目标', 'body_starter': '如果', 'excerpt': '但是高手一旦确定了目标，如果实在抹不开这个聚会，他也会晚上加班把这本书搞定。'}, {'line': 142, 'prefix': '我们针对目标，必须拥有两面性，不是单方面去看', 'body_starter': '一个', 'excerpt': '我们针对目标，必须拥有两面性，不是单方面去看一个目标。'}, {'line': 245, 'prefix': '我们一定要采用', 'body_starter': '我们', 'excerpt': '我们一定要采用我们【目标局】里面的一些具体方法去做。'}, {'line': 264, 'prefix': '如果没有可靠的信息和依据，基本上', 'body_starter': '我们', 'excerpt': '如果没有可靠的信息和依据，基本上我们凭借直觉来做事，失败的概率会非常大。'}, {'line': 293, 'prefix': '如果我们要确定了提升客流这样', 'body_starter': '一个', 'excerpt': '如果我们要确定了提升客流这样一个【小目标】。怎么做。'}, {'line': 297, 'prefix': '比如：1，线下', 'body_starter': '我们', 'excerpt': '比如：1，线下我们最应该学的就是实体店客流引爆策略。'}, {'line': 323, 'prefix': '我们能找到这些书，这些人，这些同行的客流策略', 'body_starter': '我们', 'excerpt': '我们能找到这些书，这些人，这些同行的客流策略，我们什么事情都不要做。这段时间，就搞定客流。'}, {'line': 341, 'prefix': '但是你给我任何', 'body_starter': '一个', 'excerpt': '但是你给我任何一个新东西，只要我愿意花费时间和精力去研究，思考，测试，落地。 我总能找到更多方法。'}, {'line': 357, 'prefix': '如果我们要真正学会布局，一定不要靠直觉来做决定', 'body_starter': '因为', 'excerpt': '如果我们要真正学会布局，一定不要靠直觉来做决定。因为大多数情况下，我们的直觉都是错误的。'}, {'line': 365, 'prefix': '但是那，如果他搞点广告，弄', 'body_starter': '一个', 'excerpt': '但是那，如果他搞点广告，弄一个微信兼职群，对接兼职人员，你都不用干活，聊聊天就把钱给赚了。'}, {'line': 414, 'prefix': '因为魅族手机做的还是不错的，他以投资人就是幌子', 'body_starter': '其实', 'excerpt': '因为魅族手机做的还是不错的，他以投资人就是幌子，其实就是看看这个行业能不能搞，能不能赚钱。'}]"
-        },
-        {
-          "code": "history_processed_but_content_fails",
-          "severity": "info",
-          "detail": "docs(temp): finalize Markdown content invariants [skip ci]"
         }
       ],
       "history": {
-        "sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
-        "date": "2026-08-25T07:59:45Z",
-        "message": "docs(temp): finalize Markdown content invariants [skip ci]"
+        "sha": "b8ecd134ac2e0bd64a31d2926f0e1b63ffa24478",
+        "date": "2026-08-25T09:43:08Z",
+        "message": "docs(temp): remove explicit promo credentials and watermarks [skip ci]"
       }
     },
     {
@@ -1031,17 +956,12 @@
           "code": "possible_ad_residue",
           "severity": "medium",
           "detail": "count_sample=2, examples=[{'line': 1176, 'match': '微信扫码'}, {'line': 2999, 'match': '微信扫码'}]"
-        },
-        {
-          "code": "history_processed_but_content_fails",
-          "severity": "info",
-          "detail": "docs(temp): finalize Markdown content invariants [skip ci]"
         }
       ],
       "history": {
-        "sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
-        "date": "2026-08-25T07:59:45Z",
-        "message": "docs(temp): finalize Markdown content invariants [skip ci]"
+        "sha": "b8ecd134ac2e0bd64a31d2926f0e1b63ffa24478",
+        "date": "2026-08-25T09:43:08Z",
+        "message": "docs(temp): remove explicit promo credentials and watermarks [skip ci]"
       }
     },
     {
@@ -1094,17 +1014,12 @@
           "code": "possible_heading_body_glue",
           "severity": "medium",
           "detail": "count_sample=9, stems=['一个', '不是', '免费', '别人', '向上', '如何', '强者', '没有', '真正'], examples=[{'line': 38, 'prefix': '一个老板能让', 'body_starter': '很多', 'excerpt': '一个老板能让很多人愿意跟随他，绝不是因为他在某个技术上有多厉害，而是他善于给别人构建梦想，让别人对他构建的梦想有期待，有盼头。很多男的一无所有，仅凭租的一辆豪车，就能到处骗色骗钱，并且还可以同一时间骗很多个人，因为他擅长给对方造梦，制造一种有钱人的梦，和对爱情的憧憬，让对方对自己有了很美好的心理期待。这不是说要宣扬行骗，而是当我们掌握这种给别人“造梦”的能力'}, {'line': 182, 'prefix': '一个从来不想得罪人，不敢得罪人的人是很难做成事的，这就好比', 'body_starter': '一个', 'excerpt': '一个从来不想得罪人，不敢得罪人的人是很难做成事的，这就好比一个人从来不敢吃苦，不敢吃亏，一直躲在安全地带，是永远不可能成长的，人生没有受过伤害，没有痛过怎么可能成长和变聪明呢，适当的锋芒和敢于说“不”，很多时候会帮我们筛选和过滤掉很多不合适的人。'}, {'line': 195, 'prefix': '一个人讲话做事，有的时候，就像爆款短视频的文案', 'body_starter': '一个', 'excerpt': '一个人讲话做事，有的时候，就像爆款短视频的文案，一个爆款文案，它是具备了很多“火”的因素的，具备以下几点，你的短视频就有了火的可能性。最好具备：有价值的内容、生动的画面感、有张力的情绪、让人印象深刻的标签和具备社交属性的传播性。'}, {'line': 239, 'prefix': '一个女孩子', 'body_starter': '如果', 'excerpt': '一个女孩子，如果你的生存处境并没有什么优质的男性的话，是没有必要表现的柔柔弱弱，更没必要暴露对爱情，以及被照顾很有需求感，因为这个时候，你很容易吸引到一些心里没数的劣质人群，他们一个个就好像是时刻都在寻猎物的狼虎，这个时候你一旦表现得想谈恋爱，渴望被照顾的时候，就会有一群劣质的人趁机而入，滑稽的是在他们得到之后，并不会觉得你有多珍贵，反而还会觉得他们的存在，'}, {'line': 394, 'prefix': '不是变美了以后，才敢去谈恋爱，也不是等什么都学会了，才去赚钱', 'body_starter': '很多', 'excerpt': '不是变美了以后，才敢去谈恋爱，也不是等什么都学会了，才去赚钱，很多人都是这样的思维，普通人本来已经比那些含着金钥匙出生的人输在起跑线，如果还总想着什么事情都是万事俱备才去做的话，是很难成功，很难改变命运的。很多人来咨询职业的时候，有的是刚毕业的大学生，有的是出社会有些时间的人，都有一种固化思维，就是总认为我应该学一个技术，应该去考一个什么证，我才能找到工作，'}, {'line': 399, 'prefix': '一个成年人', 'body_starter': '如果', 'excerpt': '一个成年人，如果一直是索取思维，而不是交换思维，那他很难过的好，甚60 V至会越来越差，就是觉得你就应该帮我，你就应该给我点好处，或者觉得“你告诉告诉我怎么了”这种心理，那他只会越过越差。你给自己设定什么状态，把自己放到什么位置上，你的命运就会朝着那个方向去走，你觉得自己弱，别人就要无偿帮你，那你就真的会一直弱下去，因为你把自己设定成弱者了。但如果说，哪怕你'}, {'line': 411, 'prefix': '别人为什么不尊重你？甚至还敢冒犯你', 'body_starter': '因为', 'excerpt': '别人为什么不尊重你？甚至还敢冒犯你，因为你对人太好了。早上看一条新闻，一个保姆在照顾老人期间，只顾自己低头玩手机，94 岁的阿婆爬上桌子放东西，掉下来摔死了，保姆谎称阿婆是从床上摔下的，后来人家调了监控，她就坐在旁边玩手机，根本没有照顾到老人的情况，或者可以说放东西这种事情，本来是需要她去做的，结果她偷懒玩手机，酿成这种悲剧，事后，她就微信跟家属道了个歉，就'}, {'line': 1065, 'prefix': '强者思维是顺应他人的人性，弱者思维是顺应自己的人性', 'body_starter': '一个', 'excerpt': '强者思维是顺应他人的人性，弱者思维是顺应自己的人性，一个 D 丝看到一个美女，美女不小心跟他对视了一下，他以为人家是不是对他有意思，以为爱情来了呢，就加人微信，问人家接不接商务，像狗屎一样贴上去，隔应人家，要不就有事没事给人家点个外卖，问人家最近过得好不好。而一个强势思维的人，遇到一个自己喜欢的人，首先想的是自己有什么价值，自己能给对方提供什么，如果暂时没有'}, {'line': 1269, 'prefix': '一个人，总是不善良，是无“道”，总是瞎善良，也是无“道”', 'body_starter': '一个', 'excerpt': '一个人，总是不善良，是无“道”，总是瞎善良，也是无“道”，一个人总是得罪人，是无“道”，总是不敢得罪人，也是无“道”。聪明的人，用有智慧的方式帮人，别人会感激他，会对他感恩戴德，愚笨的人用真心和善良帮人，最后别人不仅会出卖他，还会给他搞破坏，甚至会恨他。为什么你明明真诚待人，毫无保留的付出，最后别人不仅不感激你，甚至还会恩将仇报变成你的小人呢？因为你总是因为'}]"
-        },
-        {
-          "code": "history_processed_but_content_fails",
-          "severity": "info",
-          "detail": "fix(temp): remove high-risk repair whitespace side effects [skip ci]"
         }
       ],
       "history": {
-        "sha": "2f7acd24d8eb94abda9328300a5f6266bcf9b1c7",
-        "date": "2026-08-25T08:37:10Z",
-        "message": "fix(temp): remove high-risk repair whitespace side effects [skip ci]"
+        "sha": "b8ecd134ac2e0bd64a31d2926f0e1b63ffa24478",
+        "date": "2026-08-25T09:43:08Z",
+        "message": "docs(temp): remove explicit promo credentials and watermarks [skip ci]"
       }
     },
     {
@@ -1123,17 +1038,12 @@
           "code": "possible_heading_body_glue",
           "severity": "medium",
           "detail": "count_sample=4, stems=['不得', '人性', '人生', '女人', '婚姻', '孩子', '情侣', '成年', '提高', '男人', '看透', '窥探', '职场', '让你', '让自', '轻松'], examples=[{'line': 1271, 'prefix': '女人需要的是物质和精神', 'body_starter': '当', 'excerpt': '女人需要的是物质和精神，当你物质上无法满足她的时候，她对你精神上的要求，就会相应提高。但是，没钱的男人，通常精神状态上也处于低谷，这才是贫贱夫妻百事哀的真相。马行无力皆因瘦，人不风流只因贫，没有哪段婚姻是在浪费时间。如果它没有给你想要的，那它教会了你什么是你不想要的。结婚一步错，步步错，等你了解他的人品以后再确定关系，求婚了再同u，提亲了再结婚，结婚后，过了'}, {'line': 1386, 'prefix': '女人们，我告诉你们一件事', 'body_starter': '如果', 'excerpt': '女人们，我告诉你们一件事，如果你想留住一个男人，就不要天天做贤妻良母，洗衣服做饭带孩子，把家里收拾的并井有条，把老公照顾的像个大爷，还觉得自己很高尚，很有贤妻良母的美德，那我告诉你，事实上在男人的世界里，美德和魅力，是两回事，很多女人，都容易把这两个概念混淆，你为家里换持家务，忙里忙外，照顾孩子，早上的早餐是你做的，晚上的碗也是你洗的，这些付出，确实称得上1'}, {'line': 1393, 'prefix': '女人们，我告诉你们一件事', 'body_starter': '如果', 'excerpt': '女人们，我告诉你们一件事，如果你想留住一个男人，就不要天天做贤妻良母，洗衣服做饭带孩子，把家里收拾的井井有条，把老公照顾152'}, {'line': 1505, 'prefix': '孩子个会孝顺你，但会为了财产而拼命孝顺你', 'body_starter': '当', 'excerpt': '孩子个会孝顺你，但会为了财产而拼命孝顺你，当你把孩子当成一个独立的人来看待，而不是当成自己孩子来看待，你就清醒的明白该怎么对他，记住！真正爱孩子，只有一条，就是让他独立，其他都是扯淡。'}]"
-        },
-        {
-          "code": "history_processed_but_content_fails",
-          "severity": "info",
-          "detail": "docs(temp): repair unambiguous OCR and heading residuals [skip ci]"
         }
       ],
       "history": {
-        "sha": "a80755524dad1f14ab90abc413b06018ab030163",
-        "date": "2026-08-25T08:27:09Z",
-        "message": "docs(temp): repair unambiguous OCR and heading residuals [skip ci]"
+        "sha": "b8ecd134ac2e0bd64a31d2926f0e1b63ffa24478",
+        "date": "2026-08-25T09:43:08Z",
+        "message": "docs(temp): remove explicit promo credentials and watermarks [skip ci]"
       }
     },
     {
@@ -1181,17 +1091,12 @@
           "code": "possible_heading_body_glue",
           "severity": "medium",
           "detail": "count_sample=30, stems=[], examples=[{'line': 9, 'prefix': '亲情、爱情、友情出生命运原生家庭经历年龄', 'body_starter': '穷人', 'excerpt': '亲情、爱情、友情出生命运原生家庭经历年龄穷人与穷贫穷是无知穷人的自卑贫穷本质运气与智慧读书什么样的书命运智慧学习与出路正视无知保留自我价值才干与仕途卑微时铺路低谷熬智慧人之开窍开窍早晚强势文化'}, {'line': 20, 'prefix': '从整个社会大环境来看', 'body_starter': '一个', 'excerpt': '从整个社会大环境来看一个人的成功无非是两种，一种是以占有资源的多少来衡量，一种是以占有稀缺资源来衡量。总体上来看人类社会中一般就是以这两个角度看待成功。其实也可以理解为一个是数量，一个是质量。'}, {'line': 40, 'prefix': '足”。迷恋道德得人往往是伟大的，他们把所有人类看作为', 'body_starter': '一个', 'excerpt': '足”。迷恋道德得人往往是伟大的，他们把所有人类看作为一个整体，他们大部分的出发点都是以人类这个整体去看待问题，他们把自己当成人类的一份子，希望大家都差不多，在他们心里就是大家共同进步，他们不希望别人走的太快，也不希望自已走的太慢。这种人往往是一种理想主义，但是他们太过于理'}, {'line': 46, 'prefix': '而成功的人喜欢权谋', 'body_starter': '其实', 'excerpt': '而成功的人喜欢权谋，其实从整个人类社会来看，这些人是自私了点。其实他们自私是由于他们害怕，他们更害怕掉队，所以不择手段的往社会前头去挤，因为他们怕一不小心，就被社会甩下，到时候没人拉他一把。在他们心中是不相信社会社会是有爱的。'}, {'line': 57, 'prefix': '如果诸葛亮在隆重', 'body_starter': '当', 'excerpt': '如果诸葛亮在隆重当一个隐士，富家翁，凭借他的社会关系和才能，他的一生都不会有大难，会很舒服。'}, {'line': 62, 'prefix': '最重要的是曹操征乌丸的时候，他还随军，在路上就', 'body_starter': '因为', 'excerpt': '最重要的是曹操征乌丸的时候，他还随军，在路上就因为水土不服而病逝。'}, {'line': 64, 'prefix': '更重要的是他们都是有理想的人，更不愿意', 'body_starter': '因为', 'excerpt': '更重要的是他们都是有理想的人，更不愿意因为畏惧死亡而不坚持自己的人生追求。'}, {'line': 66, 'prefix': '但是因为后来曹操相', 'body_starter': '当', 'excerpt': '但是因为后来曹操相当魏王，荀彧不同意，曹操就给他送了一个食盒，意思大概是，你听我的就有饭吃，不听就空的。当然也可以解释为，这个盒子可以用来装给你的食物，也可以用来装你的脑袋。'}, {'line': 72, 'prefix': '韩非子也是一样', 'body_starter': '很多', 'excerpt': '韩非子也是一样，很多风险他是知道的，但是他还是要做。他死亡的最主要原因，是因为秦始皇要攻打韩国，而韩非子不同意这个战略，毕竟是他的祖国，李斯就借此挑拨秦始皇，害死了他。'}, {'line': 103, 'prefix': '站在唐家桐个人的立场，他觉得清军很坏', 'body_starter': '因为', 'excerpt': '站在唐家桐个人的立场，他觉得清军很坏，因为他们只会抢粮食。'}, {'line': 108, 'prefix': '忽然见到', 'body_starter': '一个', 'excerpt': '忽然见到一个年轻人可怜兮兮、满身脏污，顿生同情，便将出门时带来的干粮（半拉饼）分给他吃。'}, {'line': 117, 'prefix': '心系的唐家桐', 'body_starter': '当', 'excerpt': '心系的唐家桐当时就认定：这不会是哪个地主家的公子哥迷路了吧？'}]"
-        },
-        {
-          "code": "history_processed_but_content_fails",
-          "severity": "info",
-          "detail": "docs(temp): finalize Markdown content invariants [skip ci]"
         }
       ],
       "history": {
-        "sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
-        "date": "2026-08-25T07:59:45Z",
-        "message": "docs(temp): finalize Markdown content invariants [skip ci]"
+        "sha": "b8ecd134ac2e0bd64a31d2926f0e1b63ffa24478",
+        "date": "2026-08-25T09:43:08Z",
+        "message": "docs(temp): remove explicit promo credentials and watermarks [skip ci]"
       }
     },
     {
@@ -1334,9 +1239,9 @@
         }
       ],
       "history": {
-        "sha": "d3a64e22f1388997b37c8335265f8233941f66bd",
-        "date": "2026-08-25T09:14:55Z",
-        "message": "docs(temp): reflow confirmed giant OCR lines [skip ci]"
+        "sha": "b8ecd134ac2e0bd64a31d2926f0e1b63ffa24478",
+        "date": "2026-08-25T09:43:08Z",
+        "message": "docs(temp): remove explicit promo credentials and watermarks [skip ci]"
       }
     },
     {
@@ -1384,17 +1289,12 @@
           "code": "possible_heading_body_glue",
           "severity": "medium",
           "detail": "count_sample=30, stems=['如果', '对于', '我们', '所以', '比如', '社会'], examples=[{'line': 84, 'prefix': '我们考察阶层的原理', 'body_starter': '当', 'excerpt': '我们考察阶层的原理，当然不是为了解决这个问题，而是解决对社会的认：问题，以及改变命运的问题。'}, {'line': 108, 'prefix': '我们都知道物以稀为贵。比如', 'body_starter': '一个', 'excerpt': '我们都知道物以稀为贵。比如一个公司的总经理职位，一个处长的权力，相对于14亿人口来说；就是很稀缺的了，大家都想要。'}, {'line': 128, 'prefix': '如果我们给稀缺资源列', 'body_starter': '一个', 'excerpt': '如果我们给稀缺资源列一个清单的话，排在第一的是权力，排第二的是金排第三的则是影响力。'}, {'line': 132, 'prefix': '我们能够想象', 'body_starter': '一个', 'excerpt': '我们能够想象一个拥有权力的人没有影响力吗？或者，能够想象一个富人，'}, {'line': 164, 'prefix': '比如，一个亿万富翁，要把他的家产留给一个保姆', 'body_starter': '因为', 'excerpt': '比如，一个亿万富翁，要把他的家产留给一个保姆，因为在他生病的时候，他的子女们根本没来看几眼，都是保姆一直在精心照顾。这就是人际价值交换。'}, {'line': 221, 'prefix': '比如，一个写字楼白领月工资9000', 'body_starter': '一个', 'excerpt': '比如，一个写字楼白领月工资9000，一个快递员工资11000，到底谁的阶层高一点？'}, {'line': 327, 'prefix': '比如精神病学对判断一个人是不是精神病人的影响，那是相', 'body_starter': '当', 'excerpt': '比如精神病学对判断一个人是不是精神病人的影响，那是相当的大。'}, {'line': 362, 'prefix': '比如，按2021年的标准', 'body_starter': '如果', 'excerpt': '比如，按2021年的标准，如果你是本科毕业，你是普通公务员，你是年收入12万的公司小白领，你的阶层就是中产下，你也知道你不是社会底层了。但但一个年收入50万的小老板，看上去比你收入高些，但仍然和你是同一个阶层，你们都是中产下。'}, {'line': 414, 'prefix': '所以，很可能出现这种情况', 'body_starter': '一个', 'excerpt': '所以，很可能出现这种情况，一个身家500万的人，由于社会购买力极强，'}, {'line': 423, 'prefix': '所以，进入6最明显的指标', 'body_starter': '一个', 'excerpt': '所以，进入6最明显的指标，一个是文凭（本科），另外一个是收入（年收入至少要超过所在城市的城镇平均工资），还有一个是社会购买力。'}, {'line': 489, 'prefix': '比如，有两个同学，都考上了公务员', 'body_starter': '一个', 'excerpt': '比如，有两个同学，都考上了公务员，一个是在市直机关，一个则是在乡镇。'}, {'line': 568, 'prefix': '所以，从学校获得的文凭等级链上的位置，不仅影响、决定', 'body_starter': '一个', 'excerpt': '所以，从学校获得的文凭等级链上的位置，不仅影响、决定一个人的初始社会位置，还能影响、决定他能走多远。一个名校学生，总比普通学校学生，在单位、公司的晋升上有更多机会。'}]"
-        },
-        {
-          "code": "history_processed_but_content_fails",
-          "severity": "info",
-          "detail": "docs(temp): finalize Markdown content invariants [skip ci]"
         }
       ],
       "history": {
-        "sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
-        "date": "2026-08-25T07:59:45Z",
-        "message": "docs(temp): finalize Markdown content invariants [skip ci]"
+        "sha": "b8ecd134ac2e0bd64a31d2926f0e1b63ffa24478",
+        "date": "2026-08-25T09:43:08Z",
+        "message": "docs(temp): remove explicit promo credentials and watermarks [skip ci]"
       }
     },
     {
@@ -1413,17 +1313,12 @@
           "code": "possible_heading_body_glue",
           "severity": "medium",
           "detail": "count_sample=30, stems=['我们', '比如', '社会', '问题', '阶层'], examples=[{'line': 83, 'prefix': '我们可以下看到，资源在不同的阶层中', 'body_starter': '其实', 'excerpt': '我们可以下看到，资源在不同的阶层中，其实有不同的分布。阶层越低，越需要依赖于公共资源；阶层越高，越拥有私人的资源或“小群体资源”。同时，阶层越低，获取稀缺资源的机会就越少，阶层越高，获取稀缺资源的机会就越多。'}, {'line': 89, 'prefix': '我们考察阶层的原理', 'body_starter': '当', 'excerpt': '我们考察阶层的原理，当然不是为了解决这个问题，而是解决对社会的认知问题，以及改变命运的问题。'}, {'line': 121, 'prefix': '我们都知道物以稀为贵。比如', 'body_starter': '一个', 'excerpt': '我们都知道物以稀为贵。比如一个公司的总经理职位，一个处长的权力，相对于14亿人口来说，就是很稀缺的了，大家都想要。'}, {'line': 145, 'prefix': '我们能够想象', 'body_starter': '一个', 'excerpt': '我们能够想象一个拥有权力的人没有影响力吗？或者，能够想象一个富人除了钱，什么都没有吗？'}, {'line': 176, 'prefix': '比如，一个亿万富翁，要把他的家产留给一个保姆', 'body_starter': '因为', 'excerpt': '比如，一个亿万富翁，要把他的家产留给一个保姆，因为在他生病的时候，他的子女们根本没来看几眼，都是保姆一直在精心照顾。这就是人际价值交换。'}, {'line': 233, 'prefix': '比如，一个写字楼白领月工资9000', 'body_starter': '一个', 'excerpt': '比如，一个写字楼白领月工资9000，一个快递员工资 11000，到底谁的阶层高一点？'}, {'line': 325, 'prefix': '我们可以找到几个要素：首先，当然是他得有名气，被', 'body_starter': '很多', 'excerpt': '我们可以找到几个要素：首先，当然是他得有名气，被很多人知道。一个没什么名气的人，大家都不'}, {'line': 335, 'prefix': '比如精神病学对判断一个人是不是精神病人的影响，那是相', 'body_starter': '当', 'excerpt': '比如精神病学对判断一个人是不是精神病人的影响，那是相当的大。'}, {'line': 366, 'prefix': '比如，按2021年的标准', 'body_starter': '如果', 'excerpt': '比如，按2021年的标准，如果你是本科毕业，你是普通公务员，你是年收入12万的公司小白领，你的阶层就是中产下，你也知道你不是社会底层了。但但一个年收入50万的小老板，看上去比你收入高些，但仍然和你是同一个阶层，你们都是中产下。'}, {'line': 489, 'prefix': '比如，有两个同学，都考上了公务员', 'body_starter': '一个', 'excerpt': '比如，有两个同学，都考上了公务员，一个是在市直机关，一个则是在乡镇。'}, {'line': 643, 'prefix': '我们现在可以看到', 'body_starter': '当', 'excerpt': '我们现在可以看到，当一个人获得了一个初始社会位置，或者他现在站在自己的社会位置里，往前方看时，摆在他前面的主要就是五条阶层晋升路径。'}, {'line': 718, 'prefix': '社会既超出', 'body_starter': '我们', 'excerpt': '社会既超出我们的感官范围，又是一个复杂的整体，碎片化的经验一定是不够用的。要把握它的运作，必须有方法。短视频必须变成大图景、长图景，变成形象的东西。'}]"
-        },
-        {
-          "code": "history_processed_but_content_fails",
-          "severity": "info",
-          "detail": "docs(temp): finalize Markdown content invariants [skip ci]"
         }
       ],
       "history": {
-        "sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
-        "date": "2026-08-25T07:59:45Z",
-        "message": "docs(temp): finalize Markdown content invariants [skip ci]"
+        "sha": "b8ecd134ac2e0bd64a31d2926f0e1b63ffa24478",
+        "date": "2026-08-25T09:43:08Z",
+        "message": "docs(temp): remove explicit promo credentials and watermarks [skip ci]"
       }
     },
     {
@@ -1471,17 +1366,12 @@
           "code": "possible_heading_body_glue",
           "severity": "medium",
           "detail": "count_sample=30, stems=[], examples=[{'line': 12, 'prefix': '人们生活中许多知识都是这样', 'body_starter': '一个', 'excerpt': '人们生活中许多知识都是这样一个线路：真相（冷血冰冷的逻辑）一一中间加入各种糖衣包装，各种人造词汇，这些词汇组合在一起叫学科（比如经济学里面好多词汇，管理学里面多）—一最后落地到实践生活。'}, {'line': 29, 'prefix': '对国家和社会而言，社会要想发展，就必须让个体充满欲望与竞争', 'body_starter': '穷人', 'excerpt': '对国家和社会而言，社会要想发展，就必须让个体充满欲望与竞争，穷人为了安全感而奋斗，富人为了优越感而努力！'}, {'line': 36, 'prefix': '实际上，假厉害的占99.999%，甚至更多！其实不论穷富', 'body_starter': '我们', 'excerpt': '实际上，假厉害的占99.999%，甚至更多！其实不论穷富，我们都是被设定了人生的傀儡和提线木偶！在别人的世界里活出了别人需要我们活成的样子！'}, {'line': 47, 'prefix': '在实践上高级的智慧是道', 'body_starter': '因为', 'excerpt': '在实践上高级的智慧是道，因为这是“无人性”而观察所得的冰冷世界的“暂时性真理”运行逻辑。'}, {'line': 53, 'prefix': '术很容易修炼，因为“眼见为实”的直观性，接受起来比较容易', 'body_starter': '当', 'excerpt': '术很容易修炼，因为“眼见为实”的直观性，接受起来比较容易，当下即可用得上，但有着极强的局限性。'}, {'line': 68, 'prefix': '穷人追求安全感', 'body_starter': '富人', 'excerpt': '穷人追求安全感，富人追求优越感（享受别人无法享受的才能体现优越感），本质都是刷存在感！'}, {'line': 80, 'prefix': '因为人性，整个世界就是人性的交织之网', 'body_starter': '我们', 'excerpt': '因为人性，整个世界就是人性的交织之网，我们都在网中央，所以佛道都反人性，从而跳出三界五行，自己越反人性，越能驾驭人性！'}, {'line': 82, 'prefix': '以上六个纬度全部打通，你才能明自己', 'body_starter': '很多', 'excerpt': '以上六个纬度全部打通，你才能明自己很多的思考都是一个点或者一条线，能有一个面的少之又少，拥有智慧之网者才能一网打尽！'}, {'line': 91, 'prefix': '那么你就告诉他轻松发财的路子', 'body_starter': '当', 'excerpt': '那么你就告诉他轻松发财的路子，当然，轻松发财的路子99.9999%肯定是忽悠人的。'}, {'line': 112, 'prefix': '针对这些人，收智商税和情商税都狠简单！', 'body_starter': '因为', 'excerpt': '针对这些人，收智商税和情商税都狠简单！因为这些人根本就没想过开启智慧，获得智慧才是真正值得投资的呀！'}, {'line': 115, 'prefix': '你只要还活在情里，你就能轻松被收割', 'body_starter': '因为', 'excerpt': '你只要还活在情里，你就能轻松被收割，因为只要了解你的喜好，随意拨弄！无数人都是情绪的奴隶！如何才能成情绪的主人呢？'}, {'line': 118, 'prefix': '横空出世 认知，因为', 'body_starter': '很多', 'excerpt': '横空出世 认知，因为很多人不渴望真相，很多人只需要情绪！红尘老人才不迎合你，爱读不读，要么觉醒你，要么随你离去！只为那些还知道要什么，渴望独立的有缘人分享！'}]"
-        },
-        {
-          "code": "history_processed_but_content_fails",
-          "severity": "info",
-          "detail": "fix(temp): remove high-risk repair whitespace side effects [skip ci]"
         }
       ],
       "history": {
-        "sha": "2f7acd24d8eb94abda9328300a5f6266bcf9b1c7",
-        "date": "2026-08-25T08:37:10Z",
-        "message": "fix(temp): remove high-risk repair whitespace side effects [skip ci]"
+        "sha": "b8ecd134ac2e0bd64a31d2926f0e1b63ffa24478",
+        "date": "2026-08-25T09:43:08Z",
+        "message": "docs(temp): remove explicit promo credentials and watermarks [skip ci]"
       }
     },
     {
@@ -1500,17 +1390,12 @@
           "code": "possible_ad_residue",
           "severity": "medium",
           "detail": "count_sample=1, examples=[{'line': 1462, 'match': 'VX'}]"
-        },
-        {
-          "code": "history_processed_but_content_fails",
-          "severity": "info",
-          "detail": "docs(temp): finalize Markdown content invariants [skip ci]"
         }
       ],
       "history": {
-        "sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
-        "date": "2026-08-25T07:59:45Z",
-        "message": "docs(temp): finalize Markdown content invariants [skip ci]"
+        "sha": "b8ecd134ac2e0bd64a31d2926f0e1b63ffa24478",
+        "date": "2026-08-25T09:43:08Z",
+        "message": "docs(temp): remove explicit promo credentials and watermarks [skip ci]"
       }
     },
     {
@@ -1534,17 +1419,12 @@
           "code": "possible_heading_body_glue",
           "severity": "medium",
           "detail": "count_sample=30, stems=[], examples=[{'line': 4, 'prefix': '你才能够更好的去处理各种各样的关系，不然的话你会被人情所累', 'body_starter': '当', 'excerpt': '你才能够更好的去处理各种各样的关系，不然的话你会被人情所累。当你被人情所累，你的心力都消耗在这种东西身上，你怎么可能赚到钱，你不解决这第一步你就解决不了第二步，财富的问题。当财富的问题解决不了，你就会非常痛苦。你从情感上也很痛苦，从财富上也很痛苦，请问你怎么生活？你这未来还有几十年要活，你会活得很辛苦，你这'}, {'line': 13, 'prefix': '因为实验环境的不同结果就会出现非常大的偏差', 'body_starter': '如果', 'excerpt': '因为实验环境的不同结果就会出现非常大的偏差。如果这个课你不好好学，你是挣不到钱的，为什么？因为赚钱的前提是内心世界极其的安定要专注和聚焦，而专注和聚焦的前提是什么？是你不容易受到情绪的困扰，而不受到情绪的困扰。你得了解情绪，你得了解你为什么会有情绪，为什么会不平衡，什么会烦躁，什么会不安，什么会恨，为什么会爱？'}, {'line': 15, 'prefix': '这人生当中', 'body_starter': '一个', 'excerpt': '这人生当中一个非常重要的第一观点都走过了，接下来大概率是一片坦途。只要你认真践行，认真去做，我虽然年龄不大，但是我的阅历和经历和年龄是没有关系的。而且人性的底层逻辑千古不变，几百年来都没有变过，只不过它展现的形式不同，载体不同，但人是没有变的，因为我们都是智人进化过来的。我们为什么能够留到现在呢？本质是什么？是因自私。开始接下来我要讲的入室第一节不需要关心别'}, {'line': 19, 'prefix': '如果帮助了自己，去损害了', 'body_starter': '很多', 'excerpt': '如果帮助了自己，去损害了很多人的利益，也不要干，因为你会遭受天谴的，明白吗？所以入室第一节的主旨是什么？'}, {'line': 23, 'prefix': '后来不听父母话了，父母会非常暴躁，为什么？', 'body_starter': '因为', 'excerpt': '后来不听父母话了，父母会非常暴躁，为什么？因为他觉得孩子是他的，他觉得我为你付出了这么多的爱，你却不听话，你却不遵从我的旨意。白养你是白眼狼，可是这是爱吗？'}, {'line': 27, 'prefix': '的感受，没有别人的需求的，他一切都是了满足自己。为什么？', 'body_starter': '因为', 'excerpt': '的感受，没有别人的需求的，他一切都是了满足自己。为什么？因为他要生存，他不哭就没吃的，他得不到就要哭，因为他没有别的本领了，他就要通过哭喊叫嚣才能得到一些食物，才能让他生存下去。所以他管你吃不吃，同样的一个东西，你问宝宝吃不吃，他不会管你的，你饿不饿，你想不想吃，你心里爽不爽，他可不管的，他拿过来就吃。因为这是他要的，他没有辨别各种各样情绪的能力，就是本能，'}, {'line': 28, 'prefix': '夜里哭，你们俩夜里在干嘛？造人是不是多出了', 'body_starter': '一个', 'excerpt': '夜里哭，你们俩夜里在干嘛？造人是不是多出了一个人就对他产生了竞争，多出了一个人就对他获取食物的来源多了一份担忧多了一份竞争，两个人吃奶肯定不够吃，三个人吃奶，每个自己只能吃一点，那我干脆断绝了你造人的机会，我哭，天天哭天喊地。你看很多妈妈刚生宝宝的这一年多都睡不好觉，不能让你睡好觉，折磨你啊啊，你怎么能给我造人呢？你怎么能给我生个弟弟？培养了一个我的竞争对手'}, {'line': 30, 'prefix': '就是本质的逻辑。那他为什么以后又不哭了呢？', 'body_starter': '因为', 'excerpt': '就是本质的逻辑。那他为什么以后又不哭了呢？因为在他最脆弱的时候，只能把所有的资源给自己，以后稍微强大一点，可以吃别的东西，可以不吃奶水了，相对来说会好很多。但是你要知道妈妈的奶水是有限的，生了八个怎么喂狼捕猪吗？所以宝宝的这一切行为都是无意识的，行为，都是刻在他基因里。'}, {'line': 31, 'prefix': '行为都是自私的行为，但是我们在出生之后会面临', 'body_starter': '很多', 'excerpt': '行为都是自私的行为，但是我们在出生之后会面临很多所谓的大爱。你要奉献，不能信，我只有在收费科里面能这样讲，我以后也会在价值观统治的那一节课当中好好讲一讲为什么会有这些东西。好吧，虽然是书费课，但是我也不能讲的太露骨。在你没有能力的情况下，不要给予别人过多的帮助。真的力所能及的情况下给别人一点帮助，还得用一点手段，还不能乱给，还不能溺爱，还不能，穷大方真的不能'}, {'line': 34, 'prefix': '我们经常会有', 'body_starter': '很多', 'excerpt': '我们经常会有很多人讲，我不配各位有什么不配的。我说了，你不用改，胖就胖，丑就丑，松就松。你要始终告诉自己，我挺好的，我非常优秀。'}, {'line': 40, 'prefix': '大胆的。大胆的觉得你应该配得上', 'body_starter': '因为', 'excerpt': '大胆的。大胆的觉得你应该配得上。因为我送给各位一句话，人永远不可能过上自己没有想象的生活。你过上的生活一定是在你之前就想象过我要过上这样的生活。如果这个东西是你从来没有想象过的，锦衣玉食，你从来没有想象各'}, {'line': 43, 'prefix': '就是你要远离那些垃圾的人，这些垃圾的人包括你的父母', 'body_starter': '很多', 'excerpt': '就是你要远离那些垃圾的人，这些垃圾的人包括你的父母，很多父母是很差劲的，他们就是垃圾，父母真的没有。不要听这句话，什么天下无不是的。父母没有这句话，还有那些话都是断章取义，什么那个叫什么叫父母在不远游，就是还有另外一句，父母在不远游，游必有方，你知道你孝敬父母，最好的方式不是陪伴他们，你偶尔回去一下，你父母还觉得你挺好的，你待个三天你试试看就开始吵吵嘴，打架'}]"
-        },
-        {
-          "code": "history_processed_but_content_fails",
-          "severity": "info",
-          "detail": "docs(temp): finalize Markdown content invariants [skip ci]"
         }
       ],
       "history": {
-        "sha": "cf94fe25a0dda9aac31a29eb2d2b506ff579730c",
-        "date": "2026-08-25T07:59:45Z",
-        "message": "docs(temp): finalize Markdown content invariants [skip ci]"
+        "sha": "b8ecd134ac2e0bd64a31d2926f0e1b63ffa24478",
+        "date": "2026-08-25T09:43:08Z",
+        "message": "docs(temp): remove explicit promo credentials and watermarks [skip ci]"
       }
     },
     {
@@ -1592,17 +1472,12 @@
           "code": "possible_heading_body_glue",
           "severity": "medium",
           "detail": "count_sample=14, stems=['权力', '男人', '男性'], examples=[{'line': 80, 'prefix': '男人希望从女人那儿获得快乐，因此，普通女人注定会使', 'body_starter': '我们', 'excerpt': '男人希望从女人那儿获得快乐，因此，普通女人注定会使我们大失所望。她应该能带我们重返伊甸园，给我们一个放下重担，享受生活的地方。她应该是我们的救主，使我们重新衔接疏离的感觉，恢复完整。阴茎就是那条直通乐园的窄路，横度架在恶水上的桥梁，就能找到四分五裂的自我的各个部分。因此性对男人才那么重要。有个女人曾经告诉我：我终于了解，对男人来说，阴茎是他们身上唯一的部分。'}, {'line': 82, 'prefix': '男人和女人的想象力', 'body_starter': '有一个', 'excerpt': '男人和女人的想象力有一个根本的不同。我们会直接想象性，对亲密感情却只能间接想象，女人却正好相反，亲密是直接，性却是间接的。这并不代表男人只对性感兴趣，而是我们一直被要求压抑对亲密感的自然需求，文化只允许我们在性行为中感觉与另一个人亲近。用心灵的耳朵倾听，你就会听见即使最粗鄙的言语下，也藏有神圣的企图。男人在表达情感时往往张口结舌，只能用涉及性的字眼来述说他们'}, {'line': 86, 'prefix': '男人最简单的方式就是指出', 'body_starter': '我们', 'excerpt': '男人最简单的方式就是指出我们的毛病，哀叹我们如何玷污了过去的光荣，宣称我们需要新的展望。工业革命以来，我们奉行的男子气概仪式很快就变得过时，甚至有致命危险。我们的任务就是在这个不再相信圣人的理想或绝对价值观的文化里，为男子气概创造新形象。我们困处现代男性的疯狂之中，找不到出路，我们被眼前亟待处理的事务包围，成为财务季报和短命趋势的俘虏，迫切地需要超越现在，找'}, {'line': 232, 'prefix': '男人谴责女人，他们必须谴责女人', 'body_starter': '因为', 'excerpt': '男人谴责女人，他们必须谴责女人，因为这样的话，女人才能够受男人的控制，他们几乎将女人贬成次级人类，男人到底有怎么样的恐惧才会这样做？因为这简直是偏执狂……男人继续跟女人比较，然后发觉女人比较优越。'}, {'line': 292, 'prefix': '男人握有世界的蓝图和一生的生活指南。他们不像', 'body_starter': '我们', 'excerpt': '男人握有世界的蓝图和一生的生活指南。他们不像我们饱受自我疑虑的折磨，他们没有性别上的困扰，男女的分寸泾渭分明，因此可以放心合作，组成拥有共同历史的社群，每个人都有归属感，这都是现代都市生活望尘莫及的。'}, {'line': 414, 'prefix': '男人、女', 'body_starter': '人们', 'excerpt': '男人、女人们只在纯粹的精神享受中像在云端一样地遨游，他们的双手只是在一无所有的空间游动，拥抱，他们从不亲吻一次嘴唇，思想像云雾那样朦胧一片。仿佛这才是男人和女人们获得永恒幸福的途径。然而，这种生物的无形无体的爱情，只能是人的幻想而已。'}, {'line': 555, 'prefix': '男人和女人的生命都是生生不息地流动着的。没有了哪一方', 'body_starter': '我们', 'excerpt': '男人和女人的生命都是生生不息地流动着的。没有了哪一方，我们都不能再流淌，就如同没有岸的河不能成为河流一样。我生命之河的一条岸是女人，另一条岸是世界。没有了这两条河岸，我的生命就会泛滥成为一片沼泽地，毫无气势可言。'}, {'line': 633, 'prefix': '男人经常意识不到，女人是应', 'body_starter': '当', 'excerpt': '男人经常意识不到，女人是应当体验快感的，如果女人没有这种体验，那完全是男人的事。在某些受过传统教育的女人身上，还存在着某种冷酷的自负、肉体上的自我克制以及对于男人随意亲近她身体的厌恶。'}, {'line': 647, 'prefix': '男人就好像一只小鸟，在空中飞翔，而女人就像树木，根植于大地', 'body_starter': '当', 'excerpt': '男人就好像一只小鸟，在空中飞翔，而女人就像树木，根植于大地。当然，她们可以得到更多的滋养，每当有一只小鸟或一个男人想要休息，他就必须来到女人的树荫下，他必须来到树下被滋润，并得到庇护。'}, {'line': 651, 'prefix': '男人必须从男人的状态来移动，女人则必须从女人的状态来移动', 'body_starter': '因为', 'excerpt': '男人必须从男人的状态来移动，女人则必须从女人的状态来移动，因为男性的头脑只是一半，一半无法知道整体，女性的头脑也只是一半，那一半永远无法知道整体，两者都必须从他们的静止状态开始移动，变成液体状的，互相融入对方，变成无性别的。'}, {'line': 898, 'prefix': '男人限制家庭的发展，往往是由于经济的原因', 'body_starter': '当', 'excerpt': '男人限制家庭的发展，往往是由于经济的原因，当然，女人也有这种原因，但她还有自己所特有的原因。一些有职业的男人，为了能使家庭受到高等教育，情愿承受物质享受方面的损失。'}, {'line': 960, 'prefix': '男人的一切重要思想和意志只能为他', 'body_starter': '一个', 'excerpt': '男人的一切重要思想和意志只能为他一个人所有，女人被认为由男人利用着，以至对任何事情都很冷淡。'}]"
-        },
-        {
-          "code": "history_processed_but_content_fails",
-          "severity": "info",
-          "detail": "fix(temp): remove high-risk repair whitespace side effects [skip ci]"
         }
       ],
       "history": {
-        "sha": "2f7acd24d8eb94abda9328300a5f6266bcf9b1c7",
-        "date": "2026-08-25T08:37:10Z",
-        "message": "fix(temp): remove high-risk repair whitespace side effects [skip ci]"
+        "sha": "b8ecd134ac2e0bd64a31d2926f0e1b63ffa24478",
+        "date": "2026-08-25T09:43:08Z",
+        "message": "docs(temp): remove explicit promo credentials and watermarks [skip ci]"
       }
     },
     {
@@ -1819,17 +1694,12 @@
           "code": "possible_heading_body_glue",
           "severity": "medium",
           "detail": "count_sample=12, stems=['三上', '二以', '第一', '第三', '第二'], examples=[{'line': 731, 'prefix': '第三步：他又找到了', 'body_starter': '一个', 'excerpt': '第三步：他又找到了一个甜品店，和老板谈好一次性购买1000张价值150元的会员卡。最终，老板给的优惠价是每张50 块钱。'}, {'line': 1584, 'prefix': '第二天，林强带着家人正准备出城回乡，吴大人带兵', 'body_starter': '当', 'excerpt': '第二天，林强带着家人正准备出城回乡，吴大人带兵当街把他们拦了下来，说到：“你装了 20箱金银财宝的事情，我已经禀报给了皇上。皇上痛骂你是贪官，并且让我带你去面圣。”'}, {'line': 2062, 'prefix': '第二层答案，就是刘邦乃真龙天子。为了坐实这个事情，编出了', 'body_starter': '一个', 'excerpt': '第二层答案，就是刘邦乃真龙天子。为了坐实这个事情，编出了一个刘邦不是他爹亲生的故事，而且他爹亲眼看见刘邦的母亲在湖边和真龙交配所生。'}, {'line': 2697, 'prefix': '第一年，五六千万卖出去3幅', 'body_starter': '其实', 'excerpt': '第一年，五六千万卖出去3幅，其实就是庄家左手倒右手。这样的操作，只会损失一些佣金。'}, {'line': 3677, 'prefix': '第二天，店主就联系了他，让他赔偿。利用这个机会', 'body_starter': '富人', 'excerpt': '第二天，店主就联系了他，让他赔偿。利用这个机会，富人成功租下商铺，省了一笔中介费。'}, {'line': 4229, 'prefix': '第一个：穷人看结果做事', 'body_starter': '富人', 'excerpt': '第一个：穷人看结果做事，富人看趋势做事穷人最大的特点是看到别人做什么赚钱，他们也会立马跟风。'}, {'line': 4318, 'prefix': '第三个：穷人用蛮力做事', 'body_starter': '富人', 'excerpt': '第三个：穷人用蛮力做事，富人用脑袋做事穷人只知道出卖自己的劳动力赚钱，每天干着最苦的工作，拿着最低的工资，说着最正能量的话。'}, {'line': 4425, 'prefix': '第一条：洞悉全局你做局的基础来源于你的格局大小', 'body_starter': '一个', 'excerpt': '第一条：洞悉全局你做局的基础来源于你的格局大小，一个目光短浅，毫无远见，缺乏认知的人，根本做不成局。'}, {'line': 5067, 'prefix': '第二个：谋局谋局是指做生意要懂得运用营销策划，做', 'body_starter': '一个', 'excerpt': '第二个：谋局谋局是指做生意要懂得运用营销策划，做一个策划高手。'}, {'line': 5181, 'prefix': '第一个礼物：只要今天', 'body_starter': '当', 'excerpt': '第一个礼物：只要今天当场预存2万块，就送你2万块钱的红酒。你可以存在这里，自己招待朋友，也可以拿走。'}, {'line': 5183, 'prefix': '第三个礼物：送给你2万块钱的酒吧股份。第一年', 'body_starter': '如果', 'excerpt': '第三个礼物：送给你2万块钱的酒吧股份。第一年如果你选择退股，你所喝的酒全都免费，2万块钱的股份一分不少你的统统退还给你。如果你不退，第二年可以拿3万，第三年可以拿5万。'}, {'line': 5583, 'prefix': '第三条：钝刀子割肉', 'body_starter': '很多', 'excerpt': '第三条：钝刀子割肉很多人可能会说，诸侯王也不傻，为什么会忍气吞声老老实实接受呢？'}]"
-        },
-        {
-          "code": "history_processed_but_content_fails",
-          "severity": "info",
-          "detail": "docs(temp): repair unambiguous OCR and heading residuals [skip ci]"
         }
       ],
       "history": {
-        "sha": "a80755524dad1f14ab90abc413b06018ab030163",
-        "date": "2026-08-25T08:27:09Z",
-        "message": "docs(temp): repair unambiguous OCR and heading residuals [skip ci]"
+        "sha": "b8ecd134ac2e0bd64a31d2926f0e1b63ffa24478",
+        "date": "2026-08-25T09:43:08Z",
+        "message": "docs(temp): remove explicit promo credentials and watermarks [skip ci]"
       }
     },
     {
@@ -1848,25 +1718,20 @@
           "code": "possible_heading_body_glue",
           "severity": "medium",
           "detail": "count_sample=14, stems=['第一', '第三', '第二', '第四'], examples=[{'line': 274, 'prefix': '第一个：借舆论之力', 'body_starter': '一个', 'excerpt': '第一个：借舆论之力一个真正的做局高手，不但会借势，还会自己起势。'}, {'line': 743, 'prefix': '第二天，他以150文钱一斗的价格向粮商收购粮食', 'body_starter': '大家', 'excerpt': '第二天，他以150文钱一斗的价格向粮商收购粮食，大家眼看不仅有钱，还能抬高粮食价格，一举两得。'}, {'line': 1456, 'prefix': '第三步：找到', 'body_starter': '当', 'excerpt': '第三步：找到当地10家蛋糕店，谈好2万张价值100元的储值卡，最后成交价每张 40元。'}, {'line': 1457, 'prefix': '第四步：找到', 'body_starter': '当', 'excerpt': '第四步：找到当地几所学校，和校长谈，自己可以帮助学生们增加科普知识。'}, {'line': 1634, 'prefix': '第四：人相信口碑传播人', 'body_starter': '有一个', 'excerpt': '第四：人相信口碑传播人有一个很大的特点，就是别人做什么自己也会跟着做什么。'}, {'line': 2450, 'prefix': '第三种方式是靠理立系统。通过系统的运作来获锝梭动收入第', 'body_starter': '一个', 'excerpt': '第三种方式是靠理立系统。通过系统的运作来获锝梭动收入第一个层面：下层谋事在社会中，赚钱可以分为三个境界，不同的方式决定了个人的经济状况：第一种方式是靠劳动，通过付出自己的努力来赚钱；'}, {'line': 3011, 'prefix': '第三大版块：谋局的5大步骤谋局，说的直白一点就是给', 'body_starter': '一个', 'excerpt': '第三大版块：谋局的5大步骤谋局，说的直白一点就是给一个项目做计划。利用一切可以利用的人事物，帮当己成事，达成所愿。'}, {'line': 3228, 'prefix': '第一年，逐渐开始以敦低价格卖出几幅作品，这', 'body_starter': '其实', 'excerpt': '第一年，逐渐开始以敦低价格卖出几幅作品，这其实是庄寒内部操作。'}, {'line': 3400, 'prefix': '第三大版块：谋局的5大步骤谋局，说的直白一点就是给', 'body_starter': '一个', 'excerpt': '第三大版块：谋局的5大步骤谋局，说的直白一点就是给一个项目做计划。利原一初可以利用的人事物，帮自己成事，达成所愿。'}, {'line': 4354, 'prefix': '第一：分钱思维 3. 要及时反馈', 'body_starter': '一个', 'excerpt': '第一：分钱思维 3. 要及时反馈一个人单打独斗永远赚不到大钱，独木永远无法成林。'}, {'line': 4355, 'prefix': '第一：分钱思维', 'body_starter': '一个', 'excerpt': '第一：分钱思维一个人单打独斗永远赚不到大钱，独木永远无法成林。'}, {'line': 4381, 'prefix': '第二：支点思维“给我', 'body_starter': '一个', 'excerpt': '第二：支点思维“给我一个支点，我就能撬动整个地球。”'}]"
-        },
-        {
-          "code": "history_processed_but_content_fails",
-          "severity": "info",
-          "detail": "docs(temp): repair unambiguous OCR and heading residuals [skip ci]"
         }
       ],
       "history": {
-        "sha": "a80755524dad1f14ab90abc413b06018ab030163",
-        "date": "2026-08-25T08:27:09Z",
-        "message": "docs(temp): repair unambiguous OCR and heading residuals [skip ci]"
+        "sha": "b8ecd134ac2e0bd64a31d2926f0e1b63ffa24478",
+        "date": "2026-08-25T09:43:08Z",
+        "message": "docs(temp): remove explicit promo credentials and watermarks [skip ci]"
       }
     },
     {
       "path": "temp/布局锦囊5.0/index.md",
       "status": "needs_review_medium",
       "metrics": {
-        "bytes": 1259890,
-        "visible_chars": 407290,
+        "bytes": 1259731,
+        "visible_chars": 407226,
         "h1": 1,
         "headings_2_4": 38,
         "image_refs": 19,
@@ -1885,9 +1750,9 @@
         }
       ],
       "history": {
-        "sha": "6c67287e4f03638ebf3b2f69bcf3f800980aefa8",
-        "date": "2026-08-25T09:40:02Z",
-        "message": "docs(temp): restore Layout5 reviewed sections [skip ci]"
+        "sha": "b8ecd134ac2e0bd64a31d2926f0e1b63ffa24478",
+        "date": "2026-08-25T09:43:08Z",
+        "message": "docs(temp): remove explicit promo credentials and watermarks [skip ci]"
       }
     }
   ]

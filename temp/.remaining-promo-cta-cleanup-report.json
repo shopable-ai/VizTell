@@ -1,0 +1,45 @@
+{
+  "summary": {
+    "files_changed": 3,
+    "removed": {
+      "human_mind_private_wechat": 8,
+      "human_mind_resume_course": 7,
+      "author_internal_share": 5,
+      "layout5_author_wechat": 2
+    },
+    "errors": 0
+  },
+  "changed": [
+    {
+      "path": "temp/008《布局锦囊3.0》/index.md",
+      "counts": {
+        "human_mind_private_wechat": 0,
+        "human_mind_resume_course": 0,
+        "author_internal_share": 5,
+        "layout5_author_wechat": 0
+      },
+      "image_refs": 466
+    },
+    {
+      "path": "temp/《人性心法》/index.md",
+      "counts": {
+        "human_mind_private_wechat": 8,
+        "human_mind_resume_course": 7,
+        "author_internal_share": 0,
+        "layout5_author_wechat": 0
+      },
+      "image_refs": 440
+    },
+    {
+      "path": "temp/布局锦囊5.0/index.md",
+      "counts": {
+        "human_mind_private_wechat": 0,
+        "human_mind_resume_course": 0,
+        "author_internal_share": 0,
+        "layout5_author_wechat": 2
+      },
+      "image_refs": 19
+    }
+  ],
+  "errors": []
+}
