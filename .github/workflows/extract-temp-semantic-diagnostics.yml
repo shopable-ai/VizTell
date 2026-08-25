@@ -1,0 +1,47 @@
+name: Extract Temp Semantic Diagnostics
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/extract-temp-semantic-diagnostics.yml'
+      - 'scripts/extract_temp_markdown_semantic_diagnostics.py'
+  workflow_dispatch:
+
+concurrency:
+  group: extract-temp-semantic-diagnostics-main
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  diagnose:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Extract semantic residual diagnostics
+        run: |
+          python scripts/extract_temp_markdown_semantic_diagnostics.py
+          cat temp/.semantic-format-diagnostics.json
+
+      - name: Commit diagnostics
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add temp/.semantic-format-diagnostics.json
+          if git diff --cached --quiet; then
+            echo 'Diagnostics unchanged.'
+          else
+            git commit -m 'chore(temp): refresh semantic format diagnostics [skip ci]'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
