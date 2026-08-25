@@ -1,0 +1,36 @@
+name: Extract Numbered Section Review TSV
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/extract-numbered-section-review-tsv.yml'
+      - 'scripts/extract_numbered_section_review_tsv.py'
+  workflow_dispatch:
+
+concurrency:
+  group: markdown-temp-repair-main
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  extract:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 0}
+      - run: |
+          git fetch origin main
+          git rebase origin/main
+      - run: python scripts/extract_numbered_section_review_tsv.py
+      - shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add temp/.numbered-section-review.tsv
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'chore(temp): refresh numbered section review table [skip ci]'
+          git pull --rebase origin main
+          git push origin HEAD:main
