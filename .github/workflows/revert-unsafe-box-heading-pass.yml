@@ -1,0 +1,59 @@
+name: Revert Unsafe Box Heading Pass
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/revert-unsafe-box-heading-pass.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: markdown-temp-repair-main
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  revert:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Rebase to latest main
+        run: |
+          git fetch origin main
+          git rebase origin/main
+      - name: Restore only the file changed by the unsafe box-title splitter
+        shell: bash
+        run: |
+          set -euo pipefail
+          git checkout e7d49eeb563429dfcfd32bab20e3959c6997bd3c -- 'temp/《人性难题宝典1-9》.md'
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('temp/《人性难题宝典1-9》.md')
+          text=p.read_text(encoding='utf-8-sig')
+          assert text.startswith('# 人性难题宝典1-9')
+          assert '□如何消除人格障碍' in text
+          print('restored unsafe box-heading target to pre-pass content')
+          PY
+      - name: Refresh current-content audit
+        run: |
+          python scripts/audit_and_repair_temp_markdown.py --root temp --report temp/.content-format-audit.json --apply
+      - name: Commit targeted revert
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- 'temp/《人性难题宝典1-9》.md' temp/.content-format-audit.json
+          if git diff --cached --quiet; then
+            echo 'Target already restored.'
+          else
+            git commit -m 'fix(temp): revert unsafe generic boxed heading split [skip ci]'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
