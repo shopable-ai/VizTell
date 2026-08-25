@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:viztell:ai-knowledge-system:schema:knowledge-atom:0.1",
+  "title": "Knowledge Atom v0.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["atom_id", "fragment_refs", "knowledge_type", "normalized_statement"],
+  "properties": {
+    "schema_version": {"const": "0.1"},
+    "atom_id": {"type": "string", "pattern": "^A-.+"},
+    "fragment_refs": {"type": "array", "items": {"type": "string", "pattern": "^F-.+"}, "minItems": 1, "uniqueItems": true},
+    "knowledge_type": {
+      "enum": ["concept", "fact", "claim", "principle", "mechanism", "theory", "model", "framework", "method", "technique", "procedure", "decision_rule", "evidence", "condition", "scope", "boundary", "exception", "counterexample", "case", "skill", "tacit_knowledge"]
+    },
+    "normalized_statement": {"type": "string", "minLength": 1},
+    "labels": {"type": "array", "items": {"type": "string"}},
+    "conditions": {"type": "array", "items": {"type": "string"}},
+    "scope": {"type": "array", "items": {"type": "string"}},
+    "temporal": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "valid_from": {"type": ["string", "null"], "format": "date-time"},
+        "valid_until": {"type": ["string", "null"], "format": "date-time"}
+      }
+    },
+    "extraction_confidence": {"type": ["number", "null"], "minimum": 0, "maximum": 1},
+    "created_by_activity": {"type": ["string", "null"], "pattern": "^ACT-.+"}
+  }
+}
