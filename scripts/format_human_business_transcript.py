@@ -21,7 +21,7 @@ IMAGE = re.compile(r'!\[[^\]]*\]\([^\n)]*\)|!\[[^\]]*\]\[[^\]\n]*\]')
 # same anchor or from the course overview that explicitly defines the module.
 ANCHORS = [
     ('三大核心：搞人、搞钱、搞地盘', '三大核心搞人搞钱搞地盘'),
-    ('上午课程：人性获取', '上午首先为大家分享的叫人性获取'),
+    ('上午课程：人性导航图', '上午我重点为大家分享的是人性导航图'),
     ('下午课程：人性营销', '今天下午的主题跟大家分享人性营销'),
     ('商业模式落地', '接下来主题商业模式落地'),
     ('战略破局', '我接下来其实这个部分就给大家讲的是战略破局'),
@@ -41,8 +41,6 @@ def body_fingerprint(text: str) -> str:
 def insert_headings(text: str) -> tuple[str, list[dict]]:
     work = text
     inserted = []
-    # Validate before touching anything, so a changed OCR source blocks rather
-    # than silently inserting a heading at the wrong place.
     errors = []
     positions = []
     for heading, anchor in ANCHORS:
@@ -54,7 +52,6 @@ def insert_headings(text: str) -> tuple[str, list[dict]]:
     if errors:
         raise RuntimeError('; '.join(errors))
 
-    # Replace from end to start so earlier character positions remain valid.
     for pos, heading, anchor in sorted(positions, reverse=True):
         prefix = work[:pos].rstrip()
         suffix = work[pos:].lstrip()
@@ -131,8 +128,6 @@ def main() -> int:
         print(str(exc))
         return 2
 
-    # Remove only the exact six inserted heading lines and compare the original
-    # body modulo whitespace. This proves no transcript wording was lost.
     stripped_after_lines = []
     inserted_lines = {f'## {h}' for h, _ in ANCHORS}
     for raw in after.splitlines():
