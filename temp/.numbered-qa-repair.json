@@ -1,0 +1,1497 @@
+{
+  "summary": {
+    "markdown_files_scanned": 84,
+    "files_changed": 2,
+    "headings_promoted": 245,
+    "errors": 0
+  },
+  "results": [
+    {
+      "path": "temp/《人性背后隐藏的邪恶密码》/index.md",
+      "changed": true,
+      "applied": true,
+      "promoted": [
+        {
+          "line": 19,
+          "number": 1,
+          "question": "为什么跟弱者打交道，吃亏倒霉是必然的？",
+          "answer_evidence": "next_line:20"
+        },
+        {
+          "line": 24,
+          "number": 2,
+          "question": "为什么有多少财富就有多少秘密？",
+          "answer_evidence": "next_line:25"
+        },
+        {
+          "line": 29,
+          "number": 3,
+          "question": "为什么不要随便改变别人的命运？",
+          "answer_evidence": "next_line:30"
+        },
+        {
+          "line": 34,
+          "number": 4,
+          "question": "为什么弱者配骗子，强者配贵人？",
+          "answer_evidence": "next_line:35"
+        },
+        {
+          "line": 39,
+          "number": 5,
+          "question": "为什么不要接受太多赞美？",
+          "answer_evidence": "next_line:40"
+        },
+        {
+          "line": 44,
+          "number": 6,
+          "question": "为什么做事业不要追求十全十美？",
+          "answer_evidence": "next_line:45"
+        },
+        {
+          "line": 52,
+          "number": 7,
+          "question": "为什么别人会对你蹬鼻子上脸？",
+          "answer_evidence": "next_line:53"
+        },
+        {
+          "line": 57,
+          "number": 8,
+          "question": "为什么不要随意对别人好？",
+          "answer_evidence": "next_line:58"
+        },
+        {
+          "line": 64,
+          "number": 9,
+          "question": "为什么不要说废话？",
+          "answer_evidence": "next_line:65"
+        },
+        {
+          "line": 69,
+          "number": 10,
+          "question": "为什么要不断克服自己人性的弱点？",
+          "answer_evidence": "next_line:70"
+        },
+        {
+          "line": 72,
+          "number": 11,
+          "question": "为什么不要和欺骗过你的人打交道？",
+          "answer_evidence": "next_line:73"
+        },
+        {
+          "line": 82,
+          "number": 12,
+          "question": "为什么不要跟太过完美的人打交道？",
+          "answer_evidence": "next_line:83"
+        },
+        {
+          "line": 89,
+          "number": 13,
+          "question": "为什么不要跟穷亲戚打交道？",
+          "answer_evidence": "next_line:90"
+        },
+        {
+          "line": 101,
+          "number": 14,
+          "question": "为什么贵人是锦上添花，不是雪中送炭？",
+          "answer_evidence": "next_line:102"
+        },
+        {
+          "line": 111,
+          "number": 15,
+          "question": "为什么杀生就是放生，放生就是杀生？",
+          "answer_evidence": "next_line:112"
+        },
+        {
+          "line": 125,
+          "number": 16,
+          "question": "为什么一升米养恩人，一斗米养仇人？",
+          "answer_evidence": "next_line:126"
+        },
+        {
+          "line": 130,
+          "number": 17,
+          "question": "为什么说夫妻同心，其利断金？",
+          "answer_evidence": "next_line:131"
+        },
+        {
+          "line": 139,
+          "number": 18,
+          "question": "为什么杀富富不去，济贫贫不离？",
+          "answer_evidence": "next_line:140"
+        },
+        {
+          "line": 148,
+          "number": 19,
+          "question": "为什么穷人话多，富人话稀？",
+          "answer_evidence": "next_line:149"
+        },
+        {
+          "line": 158,
+          "number": 20,
+          "question": "为什么说三代穿衣，五代识食？",
+          "answer_evidence": "next_line:159"
+        },
+        {
+          "line": 178,
+          "number": 22,
+          "question": "为什么可怜之人必有可恨之处？",
+          "answer_evidence": "next_line:179"
+        },
+        {
+          "line": 187,
+          "number": 23,
+          "question": "为什么好多人做不到孝敬父母？",
+          "answer_evidence": "next_line:188"
+        },
+        {
+          "line": 196,
+          "number": 24,
+          "question": "为什么要多跟有智慧的老人聊天？",
+          "answer_evidence": "next_line:197"
+        },
+        {
+          "line": 198,
+          "number": 25,
+          "question": "为什么为人处事和赚钱要适当剑走偏锋？",
+          "answer_evidence": "next_line:199"
+        },
+        {
+          "line": 212,
+          "number": 26,
+          "question": "为什么要保护好自己的能量？",
+          "answer_evidence": "next_line:213"
+        },
+        {
+          "line": 234,
+          "number": 28,
+          "question": "为什么我不喜欢读比较消极的东西？",
+          "answer_evidence": "next_line:235"
+        },
+        {
+          "line": 240,
+          "number": 29,
+          "question": "为什么不要跟弱势思维的人打交道？",
+          "answer_evidence": "next_line:241"
+        },
+        {
+          "line": 258,
+          "number": 31,
+          "question": "为什么永远不要可怜穷人？",
+          "answer_evidence": "next_line:259"
+        },
+        {
+          "line": 269,
+          "number": 32,
+          "question": "为什么可怜别人就是祸害自己？",
+          "answer_evidence": "next_line:270"
+        },
+        {
+          "line": 278,
+          "number": 33,
+          "question": "为什么一定要远离没有安全感的女人？",
+          "answer_evidence": "next_line:279"
+        },
+        {
+          "line": 280,
+          "number": 34,
+          "question": "为什么弱者更喜欢道德绑架别人？",
+          "answer_evidence": "next_line:281"
+        },
+        {
+          "line": 287,
+          "number": 35,
+          "question": "为什么用吃素拜佛念经的方式修欲望不靠谱？",
+          "answer_evidence": "next_line:288"
+        },
+        {
+          "line": 302,
+          "number": 36,
+          "question": "为什么道德感太强的人不快乐？",
+          "answer_evidence": "next_line:303"
+        },
+        {
+          "line": 316,
+          "number": 37,
+          "question": "为什么不好意思谈钱的人不适合做生意？",
+          "answer_evidence": "next_line:317"
+        },
+        {
+          "line": 329,
+          "number": 38,
+          "question": "为什么你可以假装躺平，但不能真躺平？",
+          "answer_evidence": "next_line:330"
+        },
+        {
+          "line": 334,
+          "number": 39,
+          "question": "为什么永远不要免费帮别人忙？",
+          "answer_evidence": "next_line:335"
+        },
+        {
+          "line": 340,
+          "number": 40,
+          "question": "为什么不要对人太好？",
+          "answer_evidence": "next_line:341"
+        },
+        {
+          "line": 348,
+          "number": 41,
+          "question": "为什么不要在朋友圈释放负面情绪？",
+          "answer_evidence": "next_line:349"
+        },
+        {
+          "line": 358,
+          "number": 42,
+          "question": "为什么不要跟不能创造价值的人交往？",
+          "answer_evidence": "next_line:359"
+        },
+        {
+          "line": 368,
+          "number": 43,
+          "question": "为什么不要太关注热点新闻？",
+          "answer_evidence": "next_line:369"
+        },
+        {
+          "line": 373,
+          "number": 44,
+          "question": "为什么我没有躺平的资格？",
+          "answer_evidence": "next_line:374"
+        },
+        {
+          "line": 379,
+          "number": 45,
+          "question": "为什么想赚钱和想有钱是两回事儿？",
+          "answer_evidence": "next_line:380"
+        },
+        {
+          "line": 390,
+          "number": 46,
+          "question": "为什么要多跟高人聊天说话？",
+          "answer_evidence": "next_line:391"
+        },
+        {
+          "line": 393,
+          "number": 47,
+          "question": "为什么永远不要向外求？",
+          "answer_evidence": "next_line:394"
+        },
+        {
+          "line": 397,
+          "number": 48,
+          "question": "为什么心态不稳定的人会一生破财？",
+          "answer_evidence": "next_line:398"
+        },
+        {
+          "line": 409,
+          "number": 49,
+          "question": "为什么圣人不去赚钱却永远不缺钱？",
+          "answer_evidence": "next_line:410"
+        },
+        {
+          "line": 414,
+          "number": 50,
+          "question": "为什么不想做的事儿要直接拒绝？",
+          "answer_evidence": "next_line:415"
+        },
+        {
+          "line": 423,
+          "number": 51,
+          "question": "为什么对人不要太友好也不要太冷漠？",
+          "answer_evidence": "next_line:424"
+        },
+        {
+          "line": 430,
+          "number": 52,
+          "question": "为什么人精赚钱比较多？",
+          "answer_evidence": "next_line:431"
+        },
+        {
+          "line": 441,
+          "number": 53,
+          "question": "为什么没有回报率的事儿不碰？",
+          "answer_evidence": "next_line:442"
+        },
+        {
+          "line": 443,
+          "number": 54,
+          "question": "为什么有的人炫富会倒霉？",
+          "answer_evidence": "next_line:444"
+        },
+        {
+          "line": 448,
+          "number": 55,
+          "question": "为什么遇到炫富的人要躲得远远的？",
+          "answer_evidence": "next_line:449"
+        },
+        {
+          "line": 467,
+          "number": 57,
+          "question": "为什么老好人永远得不到尊重和重视？",
+          "answer_evidence": "next_line:468"
+        },
+        {
+          "line": 474,
+          "number": 58,
+          "question": "为什么好好说话是营销自己最牛逼的方式？",
+          "answer_evidence": "next_line:475"
+        },
+        {
+          "line": 481,
+          "number": 59,
+          "question": "为什么难得糊涂会活得更自在？",
+          "answer_evidence": "next_line:482"
+        },
+        {
+          "line": 489,
+          "number": 60,
+          "question": "为什么谁的运气好咱就靠近谁？",
+          "answer_evidence": "next_line:490"
+        },
+        {
+          "line": 500,
+          "number": 61,
+          "question": "为什么我喜欢大学毕业生做销售？",
+          "answer_evidence": "next_line:501"
+        },
+        {
+          "line": 506,
+          "number": 62,
+          "question": "为什么我鼓励大家去做销售？",
+          "answer_evidence": "next_line:507"
+        },
+        {
+          "line": 515,
+          "number": 63,
+          "question": "为什么要把自己从消费者变成商家或者创造者？",
+          "answer_evidence": "next_line:516"
+        },
+        {
+          "line": 522,
+          "number": 64,
+          "question": "为什么要把生命浪费在美好的事情上？",
+          "answer_evidence": "next_line:523"
+        },
+        {
+          "line": 538,
+          "number": 66,
+          "question": "为什么天天死盯着钱的人，往往赚不到钱？",
+          "answer_evidence": "next_line:539"
+        },
+        {
+          "line": 548,
+          "number": 67,
+          "question": "为什么要习惯性多花“冤枉钱”？",
+          "answer_evidence": "next_line:549"
+        },
+        {
+          "line": 557,
+          "number": 68,
+          "question": "为什么气场不够就少说话？",
+          "answer_evidence": "next_line:558"
+        },
+        {
+          "line": 559,
+          "number": 69,
+          "question": "为什么不是人人都适合吃素？",
+          "answer_evidence": "next_line:560"
+        },
+        {
+          "line": 567,
+          "number": 70,
+          "question": "为什么不赚钱就是垃圾废物？",
+          "answer_evidence": "next_line:568"
+        },
+        {
+          "line": 574,
+          "number": 71,
+          "question": "为什么习惯性多疑和占便宜的人大多财运不好？",
+          "answer_evidence": "next_line:575"
+        },
+        {
+          "line": 582,
+          "number": 72,
+          "question": "为什么越解释气场越弱？",
+          "answer_evidence": "next_line:583"
+        },
+        {
+          "line": 588,
+          "number": 73,
+          "question": "为什么越清高财运越差？",
+          "answer_evidence": "next_line:589"
+        },
+        {
+          "line": 595,
+          "number": 74,
+          "question": "为什么人的财运跟运气是密不可分的？",
+          "answer_evidence": "next_line:596"
+        },
+        {
+          "line": 608,
+          "number": 75,
+          "question": "为什么给人免费是最廉价的事儿？",
+          "answer_evidence": "next_line:609"
+        },
+        {
+          "line": 613,
+          "number": 76,
+          "question": "为什么很多小白没改变命运？",
+          "answer_evidence": "next_line:614"
+        },
+        {
+          "line": 620,
+          "number": 77,
+          "question": "为什么优秀的人不愿和穷人打交道？",
+          "answer_evidence": "next_line:621"
+        },
+        {
+          "line": 625,
+          "number": 78,
+          "question": "为什么有些人总是过不好？",
+          "answer_evidence": "next_line:626"
+        },
+        {
+          "line": 627,
+          "number": 79,
+          "question": "为什么底层老百姓要拼命考上好大学？",
+          "answer_evidence": "next_line:628"
+        },
+        {
+          "line": 635,
+          "number": 80,
+          "question": "为什么不要长期生活在贫穷的圈子里？",
+          "answer_evidence": "next_line:636"
+        },
+        {
+          "line": 638,
+          "number": 81,
+          "question": "为什么很多人爱学习依然赚不到钱？",
+          "answer_evidence": "next_line:639"
+        },
+        {
+          "line": 642,
+          "number": 82,
+          "question": "为什么我说底层除了搞钱不要研究别的？",
+          "answer_evidence": "next_line:643"
+        },
+        {
+          "line": 648,
+          "number": 83,
+          "question": "为什么说孝顺是个伪命题？",
+          "answer_evidence": "next_line:649"
+        },
+        {
+          "line": 651,
+          "number": 84,
+          "question": "为什么越穷的人，人际关系越差？",
+          "answer_evidence": "next_line:652"
+        },
+        {
+          "line": 653,
+          "number": 85,
+          "question": "为什么很多人都想改变命运却没有成功？",
+          "answer_evidence": "next_line:654"
+        },
+        {
+          "line": 660,
+          "number": 86,
+          "question": "为什么修行的人一般遇不到骗子？",
+          "answer_evidence": "next_line:661"
+        },
+        {
+          "line": 669,
+          "number": 87,
+          "question": "为什么要闷声发大财？",
+          "answer_evidence": "next_line:670"
+        },
+        {
+          "line": 677,
+          "number": 88,
+          "question": "为什么越心软的人命越差？",
+          "answer_evidence": "next_line:678"
+        },
+        {
+          "line": 685,
+          "number": 89,
+          "question": "为什么要多跟运气好的人待在一起？",
+          "answer_evidence": "next_line:686"
+        },
+        {
+          "line": 689,
+          "number": 90,
+          "question": "为什么你要对孩子很严厉啊？",
+          "answer_evidence": "next_line:690"
+        },
+        {
+          "line": 699,
+          "number": 91,
+          "question": "为什么穷人越勤奋越贫穷，富人越懒的越富有？",
+          "answer_evidence": "next_line:700"
+        },
+        {
+          "line": 704,
+          "number": 92,
+          "question": "为什么渣男撩小姐姐，一撩一个准？",
+          "answer_evidence": "next_line:705"
+        },
+        {
+          "line": 722,
+          "number": 94,
+          "question": "为什么聪明的父母见女婿要在最好的酒店请客？",
+          "answer_evidence": "next_line:723"
+        },
+        {
+          "line": 739,
+          "number": 95,
+          "question": "为什么真正的富家女永远不会跟穷人结合？",
+          "answer_evidence": "next_line:740"
+        },
+        {
+          "line": 758,
+          "number": 97,
+          "question": "为什么结婚一定要先以要彩礼为目标？",
+          "answer_evidence": "next_line:759"
+        },
+        {
+          "line": 782,
+          "number": 99,
+          "question": "为什么爱情和婚姻是两回事儿？",
+          "answer_evidence": "next_line:783"
+        },
+        {
+          "line": 787,
+          "number": 100,
+          "question": "为什么女孩子一定要“五独俱全”？",
+          "answer_evidence": "next_line:788"
+        },
+        {
+          "line": 789,
+          "number": 101,
+          "question": "为什么聪明的女人不会给男人花钱？",
+          "answer_evidence": "next_line:790"
+        },
+        {
+          "line": 799,
+          "number": 102,
+          "question": "为什么事缘第一，血缘第二，情缘第三？",
+          "answer_evidence": "next_line:800"
+        },
+        {
+          "line": 819,
+          "number": 103,
+          "question": "为什么 90%的女人都是弱势群体？",
+          "answer_evidence": "next_line:820"
+        },
+        {
+          "line": 827,
+          "number": 104,
+          "question": "为什么很多男的都比女的优秀啊？",
+          "answer_evidence": "next_line:828"
+        },
+        {
+          "line": 833,
+          "number": 105,
+          "question": "为什么说90后是负债的主力军？",
+          "answer_evidence": "next_line:834"
+        },
+        {
+          "line": 839,
+          "number": 106,
+          "question": "为什么以后大家的任务还是去杠杆？",
+          "answer_evidence": "next_line:840"
+        },
+        {
+          "line": 841,
+          "number": 107,
+          "question": "为什么真正爱你的人不跟你谈感情？",
+          "answer_evidence": "next_line:842"
+        },
+        {
+          "line": 853,
+          "number": 108,
+          "question": "为什么说结婚有父母带孩子是一种福气？",
+          "answer_evidence": "next_line:854"
+        },
+        {
+          "line": 862,
+          "number": 109,
+          "question": "为什么很多底层父母不愿带孩子？",
+          "answer_evidence": "next_line:863"
+        },
+        {
+          "line": 899,
+          "number": 112,
+          "question": "为什么很多人觉得赚钱越来越难啊？",
+          "answer_evidence": "next_line:900"
+        },
+        {
+          "line": 903,
+          "number": 113,
+          "question": "为什么我彻底放弃了望子成龙望女成凤？",
+          "answer_evidence": "next_line:904"
+        },
+        {
+          "line": 905,
+          "number": 114,
+          "question": "为什么不要对孩子抱有什么期望？",
+          "answer_evidence": "next_line:906"
+        },
+        {
+          "line": 914,
+          "number": 115,
+          "question": "为什么太听话的小孩容易没出息？",
+          "answer_evidence": "next_line:915"
+        },
+        {
+          "line": 929,
+          "number": 116,
+          "question": "为什么感到迷茫就找一个人去疯狂模仿？",
+          "answer_evidence": "next_line:930"
+        },
+        {
+          "line": 934,
+          "number": 117,
+          "question": "为什么你一无所有的时候要学会模仿？",
+          "answer_evidence": "next_line:935"
+        },
+        {
+          "line": 938,
+          "number": 118,
+          "question": "为什么要迷信高人牛人？",
+          "answer_evidence": "next_line:939"
+        },
+        {
+          "line": 951,
+          "number": 120,
+          "question": "为什么老板要养成做市场调研的习惯？",
+          "answer_evidence": "next_line:952"
+        },
+        {
+          "line": 965,
+          "number": 122,
+          "question": "为什么赚钱要有使命感？",
+          "answer_evidence": "next_line:966"
+        },
+        {
+          "line": 980,
+          "number": 123,
+          "question": "为什么很多人复制不了我们？",
+          "answer_evidence": "next_line:981"
+        },
+        {
+          "line": 985,
+          "number": 124,
+          "question": "为什么我们要做自己喜欢的事儿？",
+          "answer_evidence": "next_line:986"
+        },
+        {
+          "line": 991,
+          "number": 125,
+          "question": "为什么人没有必要搞社交？",
+          "answer_evidence": "next_line:992"
+        },
+        {
+          "line": 1000,
+          "number": 127,
+          "question": "为什么现在做项目的人少了？",
+          "answer_evidence": "next_line:1001"
+        },
+        {
+          "line": 1007,
+          "number": 128,
+          "question": "为什么我老强调搞流量啊？",
+          "answer_evidence": "next_line:1008"
+        },
+        {
+          "line": 1011,
+          "number": 129,
+          "question": "为什么学员说我比算命先生说得还准？",
+          "answer_evidence": "next_line:1012"
+        },
+        {
+          "line": 1022,
+          "number": 130,
+          "question": "为什么技术不值钱，营销才值钱？",
+          "answer_evidence": "next_line:1023"
+        },
+        {
+          "line": 1029,
+          "number": 131,
+          "question": "为什么很多人没把流量搞起来？",
+          "answer_evidence": "next_line:1030"
+        },
+        {
+          "line": 1034,
+          "number": 132,
+          "question": "为什么赚钱就是先卖出去再说？",
+          "answer_evidence": "next_line:1035"
+        },
+        {
+          "line": 1050,
+          "number": 134,
+          "question": "为什么服务业更适合个人创业？",
+          "answer_evidence": "next_line:1051"
+        },
+        {
+          "line": 1060,
+          "number": 135,
+          "question": "为什么穷人的社交没有任何价值？",
+          "answer_evidence": "next_line:1061"
+        },
+        {
+          "line": 1064,
+          "number": 136,
+          "question": "为什么要习惯性拉黑劣质客户？",
+          "answer_evidence": "next_line:1065"
+        },
+        {
+          "line": 1069,
+          "number": 137,
+          "question": "为什么要写书啊？",
+          "answer_evidence": "next_line:1070"
+        },
+        {
+          "line": 1071,
+          "number": 138,
+          "question": "为什么永远不出实体书？",
+          "answer_evidence": "next_line:1072"
+        },
+        {
+          "line": 1077,
+          "number": 139,
+          "question": "为什么通过不断提问就能让客户不断掏钱？",
+          "answer_evidence": "next_line:1078"
+        },
+        {
+          "line": 1082,
+          "number": 140,
+          "question": "为什么公司存在的意义就是为客户创造价值？",
+          "answer_evidence": "next_line:1083"
+        },
+        {
+          "line": 1085,
+          "number": 141,
+          "question": "为什么有些人经常跟客户产生纠纷？",
+          "answer_evidence": "next_line:1086"
+        },
+        {
+          "line": 1089,
+          "number": 142,
+          "question": "为什么被没有购买力的人认可毫无意义？",
+          "answer_evidence": "next_line:1090"
+        },
+        {
+          "line": 1099,
+          "number": 143,
+          "question": "为什么没必要取悦所有的人？",
+          "answer_evidence": "next_line:1100"
+        },
+        {
+          "line": 1104,
+          "number": 144,
+          "question": "为什么社会的主旋律还是正能量不是厚黑学？",
+          "answer_evidence": "next_line:1105"
+        },
+        {
+          "line": 1112,
+          "number": 145,
+          "question": "为什么凡事要量力而行？",
+          "answer_evidence": "next_line:1113"
+        },
+        {
+          "line": 1114,
+          "number": 146,
+          "question": "为什么自我暗示的力量非常强大？",
+          "answer_evidence": "next_line:1115"
+        },
+        {
+          "line": 1118,
+          "number": 147,
+          "question": "为什么自信是得到一切的基础？",
+          "answer_evidence": "next_line:1119"
+        },
+        {
+          "line": 1127,
+          "number": 148,
+          "question": "为什么大多数人都不会有什么出息？",
+          "answer_evidence": "next_line:1128"
+        },
+        {
+          "line": 1129,
+          "number": 149,
+          "question": "为什么要不停地向上社交？",
+          "answer_evidence": "next_line:1130"
+        },
+        {
+          "line": 1131,
+          "number": 150,
+          "question": "为什么跟人合作要先进入他们的圈子？",
+          "answer_evidence": "next_line:1132"
+        },
+        {
+          "line": 1138,
+          "number": 151,
+          "question": "为什么很少有人超越李嘉诚？",
+          "answer_evidence": "next_line:1139"
+        },
+        {
+          "line": 1142,
+          "number": 152,
+          "question": "为什么没有个性的人不适合当老大？",
+          "answer_evidence": "next_line:1143"
+        },
+        {
+          "line": 1146,
+          "number": 153,
+          "question": "为什么学很多东西不如把一样东西学透？",
+          "answer_evidence": "next_line:1147"
+        },
+        {
+          "line": 1148,
+          "number": 154,
+          "question": "为什么今年赚钱最好的一年？",
+          "answer_evidence": "next_line:1149"
+        },
+        {
+          "line": 1155,
+          "number": 155,
+          "question": "为什么年龄越大越要做减法？",
+          "answer_evidence": "next_line:1156"
+        },
+        {
+          "line": 1162,
+          "number": 156,
+          "question": "为什么远离弱者就是一种避凶？",
+          "answer_evidence": "next_line:1163"
+        },
+        {
+          "line": 1166,
+          "number": 157,
+          "question": "为什么不会花钱的人财运不会太好？",
+          "answer_evidence": "next_line:1167"
+        },
+        {
+          "line": 1178,
+          "number": 158,
+          "question": "为什么运气不好的时候要搬家啊？",
+          "answer_evidence": "next_line:1179"
+        },
+        {
+          "line": 1184,
+          "number": 159,
+          "question": "为什么考证不如学赚钱？",
+          "answer_evidence": "next_line:1185"
+        },
+        {
+          "line": 1200,
+          "number": 160,
+          "question": "为什么顺应他人的人性你才能越过越好？",
+          "answer_evidence": "next_line:1201"
+        },
+        {
+          "line": 1206,
+          "number": 161,
+          "question": "为什么人不怕有个性，就怕没个性？",
+          "answer_evidence": "next_line:1207"
+        },
+        {
+          "line": 1210,
+          "number": 162,
+          "question": "为什么要天赋技能化，技能商业化？",
+          "answer_evidence": "next_line:1211"
+        },
+        {
+          "line": 1219,
+          "number": 163,
+          "question": "为什么一个人的品性即命运？",
+          "answer_evidence": "next_line:1220"
+        },
+        {
+          "line": 1227,
+          "number": 164,
+          "question": "为什么要在脑子里不断的模拟训练一个动作？",
+          "answer_evidence": "next_line:1228"
+        },
+        {
+          "line": 1236,
+          "number": 165,
+          "question": "为什么要习惯性站在很高很高的地方？",
+          "answer_evidence": "next_line:1237"
+        },
+        {
+          "line": 1244,
+          "number": 166,
+          "question": "为什么牛人都不喜欢说话？",
+          "answer_evidence": "next_line:1245"
+        },
+        {
+          "line": 1255,
+          "number": 167,
+          "question": "为什么我喜欢留在大城市不想回去？",
+          "answer_evidence": "next_line:1256"
+        },
+        {
+          "line": 1261,
+          "number": 168,
+          "question": "为什么要我把公司锁定在大城市？",
+          "answer_evidence": "next_line:1262"
+        },
+        {
+          "line": 1266,
+          "number": 169,
+          "question": "为什么满大街有才华的人没有变成有钱人？",
+          "answer_evidence": "next_line:1267"
+        },
+        {
+          "line": 1272,
+          "number": 170,
+          "question": "为什么很多人做项目做不下去？",
+          "answer_evidence": "next_line:1273"
+        },
+        {
+          "line": 1283,
+          "number": 171,
+          "question": "为什么一定要有卖卖卖思维？",
+          "answer_evidence": "next_line:1284"
+        },
+        {
+          "line": 1318,
+          "number": 174,
+          "question": "为什么世界本质就是一场精心设计的游戏？",
+          "answer_evidence": "next_line:1319"
+        },
+        {
+          "line": 1333,
+          "number": 175,
+          "question": "为什么未来赚钱只会越来越难？",
+          "answer_evidence": "next_line:1334"
+        },
+        {
+          "line": 1339,
+          "number": 176,
+          "question": "为什么实体生意越来越难做？",
+          "answer_evidence": "next_line:1340"
+        },
+        {
+          "line": 1353,
+          "number": 177,
+          "question": "为什么目前市场上没啥暴利项目？",
+          "answer_evidence": "next_line:1354"
+        },
+        {
+          "line": 1373,
+          "number": 179,
+          "question": "为什么想要暴利项目还得搞教育？",
+          "answer_evidence": "next_line:1374"
+        },
+        {
+          "line": 1404,
+          "number": 183,
+          "question": "为什么热情是最廉价的投资？",
+          "answer_evidence": "next_line:1405"
+        },
+        {
+          "line": 1412,
+          "number": 184,
+          "question": "为什么男人对你的态度取决于你的身价？",
+          "answer_evidence": "next_line:1413"
+        },
+        {
+          "line": 1416,
+          "number": 185,
+          "question": "为什么打工不可能发家致富？",
+          "answer_evidence": "next_line:1417"
+        },
+        {
+          "line": 1424,
+          "number": 186,
+          "question": "为什么你越没钱，别人对你越苛刻？",
+          "answer_evidence": "next_line:1425"
+        },
+        {
+          "line": 1433,
+          "number": 187,
+          "question": "为什么强者身上都有兽性？",
+          "answer_evidence": "next_line:1434"
+        },
+        {
+          "line": 1438,
+          "number": 188,
+          "question": "为什么牛人都擅长包装自己？",
+          "answer_evidence": "next_line:1439"
+        },
+        {
+          "line": 1454,
+          "number": 190,
+          "question": "为什么让人产生情绪是一种很厉害的能力？",
+          "answer_evidence": "next_line:1455"
+        },
+        {
+          "line": 1460,
+          "number": 191,
+          "question": "为什么让底层人翻身是一件非常危险的事儿？",
+          "answer_evidence": "next_line:1461"
+        },
+        {
+          "line": 1471,
+          "number": 193,
+          "question": "为什么越落后的地方年轻人越少？",
+          "answer_evidence": "next_line:1472"
+        },
+        {
+          "line": 1482,
+          "number": 194,
+          "question": "为什么说钱是人生的保护系统？",
+          "answer_evidence": "next_line:1483"
+        }
+      ],
+      "image_refs": 126
+    },
+    {
+      "path": "temp/《开悟开窍开智3》/index.md",
+      "changed": true,
+      "applied": true,
+      "promoted": [
+        {
+          "line": 11,
+          "number": 1,
+          "question": "为什么李嘉诚要把房子打七折抛了？",
+          "answer_evidence": "next_line:12"
+        },
+        {
+          "line": 21,
+          "number": 2,
+          "question": "北京卖房的大爷，对房子啥态度？",
+          "answer_evidence": "next_line:22"
+        },
+        {
+          "line": 33,
+          "number": 3,
+          "question": "宇宙第一房企碧桂园的房买不出去了？",
+          "answer_evidence": "next_line:34"
+        },
+        {
+          "line": 43,
+          "number": 4,
+          "question": "未来10年房地产的趋势是什么？",
+          "answer_evidence": "next_line:44"
+        },
+        {
+          "line": 56,
+          "number": 5,
+          "question": "未来房价会降低吗？",
+          "answer_evidence": "next_line:57"
+        },
+        {
+          "line": 69,
+          "number": 6,
+          "question": "银行贷款利息会越来越低吗？",
+          "answer_evidence": "next_line:70"
+        },
+        {
+          "line": 79,
+          "number": 7,
+          "question": "2023 年，适合买房吗？",
+          "answer_evidence": "next_line:80"
+        },
+        {
+          "line": 98,
+          "number": 8,
+          "question": "赚钱了，投资什么啊？",
+          "answer_evidence": "next_line:99"
+        },
+        {
+          "line": 115,
+          "number": 9,
+          "question": "2024 年投资什么啊？",
+          "answer_evidence": "next_line:116"
+        },
+        {
+          "line": 140,
+          "number": 11,
+          "question": "未来房价还会涨吗？",
+          "answer_evidence": "next_line:141"
+        },
+        {
+          "line": 170,
+          "number": 13,
+          "question": "为什么人活着，必须有被动收入？",
+          "answer_evidence": "next_line:171"
+        },
+        {
+          "line": 193,
+          "number": 15,
+          "question": "为什么我放弃了买学区房？",
+          "answer_evidence": "next_line:194"
+        },
+        {
+          "line": 211,
+          "number": 17,
+          "question": "30 岁后只考虑哪2个事儿？",
+          "answer_evidence": "next_line:212"
+        },
+        {
+          "line": 215,
+          "number": 18,
+          "question": "为什么年轻人一定要有存款啊？",
+          "answer_evidence": "next_line:216"
+        },
+        {
+          "line": 226,
+          "number": 19,
+          "question": "为什么靠技术赚钱永无出头之日？",
+          "answer_evidence": "next_line:227"
+        },
+        {
+          "line": 245,
+          "number": 20,
+          "question": "为什么有些事努力到死也赚不到钱啊？",
+          "answer_evidence": "next_line:246"
+        },
+        {
+          "line": 255,
+          "number": 21,
+          "question": "打工怎么赚1000 万啊？",
+          "answer_evidence": "next_line:256"
+        },
+        {
+          "line": 263,
+          "number": 22,
+          "question": "未来10年互联网还有机会赚大钱吗？",
+          "answer_evidence": "next_line:264"
+        },
+        {
+          "line": 277,
+          "number": 23,
+          "question": "30 岁还有逆天改命的机会吗？",
+          "answer_evidence": "next_line:278"
+        },
+        {
+          "line": 281,
+          "number": 24,
+          "question": "为什么赚钱一定要去大城市？",
+          "answer_evidence": "next_line:282"
+        },
+        {
+          "line": 291,
+          "number": 25,
+          "question": "销售高手和菜鸟的差距是什么？",
+          "answer_evidence": "next_line:292"
+        },
+        {
+          "line": 309,
+          "number": 26,
+          "question": "北上广深，哪个城市更适合创业赚钱啊？",
+          "answer_evidence": "next_line:310"
+        },
+        {
+          "line": 319,
+          "number": 27,
+          "question": "在旅游城市搞民宿赚钱吗？",
+          "answer_evidence": "next_line:320"
+        },
+        {
+          "line": 331,
+          "number": 28,
+          "question": "Mona老师，干中介怎么赚大钱啊？",
+          "answer_evidence": "next_line:332"
+        },
+        {
+          "line": 358,
+          "number": 29,
+          "question": "为什么大部分赚钱风口都是骗局？",
+          "answer_evidence": "next_line:359"
+        },
+        {
+          "line": 375,
+          "number": 30,
+          "question": "是赚钱还是买保险啊？",
+          "answer_evidence": "next_line:376"
+        },
+        {
+          "line": 384,
+          "number": 31,
+          "question": "加盟一个品牌开店怎么赚钱啊？",
+          "answer_evidence": "next_line:385"
+        },
+        {
+          "line": 391,
+          "number": 32,
+          "question": "做什么才能年赚千万？",
+          "answer_evidence": "next_line:392"
+        },
+        {
+          "line": 393,
+          "number": 33,
+          "question": "为什么我的目标是年赚 3000万啊？",
+          "answer_evidence": "next_line:394"
+        },
+        {
+          "line": 410,
+          "number": 34,
+          "question": "为什么想赚大钱，就要学会分钱？",
+          "answer_evidence": "next_line:411"
+        },
+        {
+          "line": 414,
+          "number": 35,
+          "question": "为什么赚钱要顺应人性的劣根性啊？",
+          "answer_evidence": "next_line:415"
+        },
+        {
+          "line": 436,
+          "number": 37,
+          "question": "为什么赚钱必须上战场啊？",
+          "answer_evidence": "next_line:437"
+        },
+        {
+          "line": 450,
+          "number": 38,
+          "question": "什么是正确的赚钱姿势啊？",
+          "answer_evidence": "next_line:451"
+        },
+        {
+          "line": 460,
+          "number": 39,
+          "question": "为什么互联网公司都是烧钱烧起来的？",
+          "answer_evidence": "next_line:461"
+        },
+        {
+          "line": 474,
+          "number": 40,
+          "question": "为什么要习惯性闷声发大财？",
+          "answer_evidence": "next_line:475"
+        },
+        {
+          "line": 490,
+          "number": 41,
+          "question": "为什么苹果公司从不打击盗版产品啊？",
+          "answer_evidence": "next_line:491"
+        },
+        {
+          "line": 504,
+          "number": 42,
+          "question": "为什么99%的人一辈子都是穷B？",
+          "answer_evidence": "next_line:505"
+        },
+        {
+          "line": 514,
+          "number": 43,
+          "question": "为什么真正牛逼的人都当是老板的？",
+          "answer_evidence": "next_line:515"
+        },
+        {
+          "line": 527,
+          "number": 44,
+          "question": "为什么不想看人脸色的人一辈子都是穷B？",
+          "answer_evidence": "next_line:528"
+        },
+        {
+          "line": 537,
+          "number": 45,
+          "question": "年赚100万是一种什么样的体验？",
+          "answer_evidence": "next_line:538"
+        },
+        {
+          "line": 541,
+          "number": 46,
+          "question": "我对赚钱对理解是什么？",
+          "answer_evidence": "next_line:542"
+        },
+        {
+          "line": 546,
+          "number": 47,
+          "question": "为什么日赚10万要打磨流水线？",
+          "answer_evidence": "next_line:547"
+        },
+        {
+          "line": 554,
+          "number": 48,
+          "question": "为什么暴富只是故事，底层人太难上去了？",
+          "answer_evidence": "next_line:555"
+        },
+        {
+          "line": 567,
+          "number": 50,
+          "question": "如何挂羊头卖狗肉赚钱？",
+          "answer_evidence": "next_line:568"
+        },
+        {
+          "line": 569,
+          "number": 51,
+          "question": "如何卖服务赚钱？",
+          "answer_evidence": "next_line:570"
+        },
+        {
+          "line": 571,
+          "number": 52,
+          "question": "如何借风口赚钱？",
+          "answer_evidence": "next_line:572"
+        },
+        {
+          "line": 575,
+          "number": 53,
+          "question": "如何靠垄断赚钱？",
+          "answer_evidence": "next_line:576"
+        },
+        {
+          "line": 577,
+          "number": 54,
+          "question": "为什么《孤注一掷》里的黑老大失败了？",
+          "answer_evidence": "next_line:578"
+        },
+        {
+          "line": 590,
+          "number": 55,
+          "question": "看了《孤注一掷》，我最大的感触是什么？",
+          "answer_evidence": "next_line:591"
+        },
+        {
+          "line": 601,
+          "number": 56,
+          "question": "《孤注一掷》里真正的老大是谁？",
+          "answer_evidence": "next_line:602"
+        },
+        {
+          "line": 633,
+          "number": 58,
+          "question": "为什么向上社交是一句彻头彻尾的谎言？",
+          "answer_evidence": "next_line:634"
+        },
+        {
+          "line": 657,
+          "number": 59,
+          "question": "为什么学校不会教你怎么赚钱？",
+          "answer_evidence": "next_line:658"
+        },
+        {
+          "line": 668,
+          "number": 60,
+          "question": "为什么穷人不要对学校抱有幻想？",
+          "answer_evidence": "next_line:669"
+        },
+        {
+          "line": 684,
+          "number": 61,
+          "question": "为什么穷人要先超越父母？",
+          "answer_evidence": "next_line:685"
+        },
+        {
+          "line": 700,
+          "number": 62,
+          "question": "为什么穷人绝对不能追求稳定？",
+          "answer_evidence": "next_line:701"
+        },
+        {
+          "line": 708,
+          "number": 63,
+          "question": "为什么穷人要多生孩子？",
+          "answer_evidence": "next_line:709"
+        },
+        {
+          "line": 729,
+          "number": 65,
+          "question": "为什么穷人除了多赚钱啥也别想？",
+          "answer_evidence": "next_line:730"
+        },
+        {
+          "line": 742,
+          "number": 66,
+          "question": "为什么穷人要从大学开始相亲啊？",
+          "answer_evidence": "next_line:743"
+        },
+        {
+          "line": 753,
+          "number": 67,
+          "question": "为什么穷美女很难找到好老公？",
+          "answer_evidence": "next_line:754"
+        },
+        {
+          "line": 769,
+          "number": 68,
+          "question": "为什么穷人是拿不住钱的？",
+          "answer_evidence": "next_line:770"
+        },
+        {
+          "line": 773,
+          "number": 69,
+          "question": "为什么穷人特别相信一夜暴富？",
+          "answer_evidence": "next_line:774"
+        },
+        {
+          "line": 776,
+          "number": 70,
+          "question": "为什么穷人永远是牺牲品？",
+          "answer_evidence": "next_line:777"
+        },
+        {
+          "line": 784,
+          "number": 71,
+          "question": "为什么穷人不要在大学里学东西？",
+          "answer_evidence": "next_line:785"
+        },
+        {
+          "line": 819,
+          "number": 72,
+          "question": "为什么穷人要么学销售，要么学算命？",
+          "answer_evidence": "next_line:820"
+        },
+        {
+          "line": 828,
+          "number": 73,
+          "question": "为什么穷人最悲哀的不是拿命换钱？",
+          "answer_evidence": "next_line:829"
+        },
+        {
+          "line": 848,
+          "number": 74,
+          "question": "为什么漂亮女人越来越不吃香了？",
+          "answer_evidence": "next_line:849"
+        },
+        {
+          "line": 862,
+          "number": 75,
+          "question": "为什么很多女的离婚了？",
+          "answer_evidence": "next_line:863"
+        },
+        {
+          "line": 868,
+          "number": 76,
+          "question": "为什么人跟人之间的差距非常大？",
+          "answer_evidence": "next_line:869"
+        },
+        {
+          "line": 875,
+          "number": 77,
+          "question": "为什么高人不愿与底层打交道？",
+          "answer_evidence": "next_line:876"
+        },
+        {
+          "line": 891,
+          "number": 78,
+          "question": "为什么高人不要处理琐事儿？",
+          "answer_evidence": "next_line:892"
+        },
+        {
+          "line": 907,
+          "number": 79,
+          "question": "为什么高人做事总是信心满满？",
+          "answer_evidence": "next_line:908"
+        },
+        {
+          "line": 912,
+          "number": 80,
+          "question": "为什么高人做事习惯损失？",
+          "answer_evidence": "next_line:913"
+        },
+        {
+          "line": 933,
+          "number": 82,
+          "question": "为什么高人不去讨好别人？",
+          "answer_evidence": "next_line:934"
+        }
+      ],
+      "image_refs": 119
+    }
+  ],
+  "errors": []
+}

@@ -725,9 +725,9 @@
       "duplicate_h1_removed": 0,
       "image_refs_preserved": 0,
       "visible_retention": 1.0,
-      "last_commit_sha": "13b70cb87e6a7a3d3f94ba3cf9798c35fdbc226f",
-      "last_commit_date": "2026-08-24T19:10:36Z",
-      "last_commit_message": "docs(temp): finalize Markdown cleanup [skip ci]"
+      "last_commit_sha": "7a789a774ae7d36b00c087d6497f83c7bcedd159",
+      "last_commit_date": "2026-08-25T08:16:06Z",
+      "last_commit_message": "docs(temp): recover explicit boxed section headings [skip ci]"
     },
     {
       "path": "temp/《人性魔鬼手段》/index.md",
@@ -2366,10 +2366,10 @@
       "status": "pass",
       "issues": [],
       "metrics": {
-        "bytes": 125754,
+        "bytes": 126442,
         "visible_chars": 40084,
         "h1": 1,
-        "h2": 1,
+        "h2": 173,
         "h3": 34,
         "h4": 0,
         "image_refs": 126
@@ -2489,9 +2489,9 @@
         "image_refs": 0
       },
       "history": {
-        "last_commit_sha": "13b70cb87e6a7a3d3f94ba3cf9798c35fdbc226f",
-        "last_commit_date": "2026-08-24T19:10:36Z",
-        "last_commit_message": "docs(temp): finalize Markdown cleanup [skip ci]"
+        "last_commit_sha": "7a789a774ae7d36b00c087d6497f83c7bcedd159",
+        "last_commit_date": "2026-08-25T08:16:06Z",
+        "last_commit_message": "docs(temp): recover explicit boxed section headings [skip ci]"
       }
     },
     {
@@ -2784,10 +2784,10 @@
       "status": "pass",
       "issues": [],
       "metrics": {
-        "bytes": 64083,
+        "bytes": 64375,
         "visible_chars": 19640,
         "h1": 1,
-        "h2": 5,
+        "h2": 78,
         "h3": 7,
         "h4": 0,
         "image_refs": 119
