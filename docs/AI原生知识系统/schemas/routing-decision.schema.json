@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:viztell:ai-knowledge-system:schema:routing-decision:0.1",
+  "title": "Consumption Routing Decision v0.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["decision_id", "requirement_id", "knowledge_id", "primary_route", "rationale"],
+  "properties": {
+    "schema_version": {"const": "0.1"},
+    "decision_id": {"type": "string", "pattern": "^C-.+"},
+    "requirement_id": {"type": "string", "pattern": "^D-.+"},
+    "knowledge_id": {"type": "string", "pattern": "^K-.+"},
+    "epistemic_gate": {"type": "object"},
+    "subject_utility": {"type": "object"},
+    "learning_gap_ref": {"type": ["string", "null"], "pattern": "^LG-.+"},
+    "substitution": {"type": "object"},
+    "capability_ownership": {"type": "object"},
+    "primary_route": {
+      "enum": ["HUMAN_LEARN", "HUMAN_PRACTICE", "HUMAN_UNDERSTAND_ONLY", "REFERENCE", "WIKI_BROWSE", "FULL_TEXT_SEARCH", "SEMANTIC_SEARCH", "HYBRID_SEARCH", "RAG", "SKILL", "TOOL", "WORKFLOW", "AGENT", "AUTOMATION", "SOFTWARE", "EXISTING_TOOL_INTEGRATION", "EXTERNAL_SERVICE", "MONITOR", "DEFER", "IGNORE"]
+    },
+    "secondary_routes": {
+      "type": "array",
+      "items": {"enum": ["HUMAN_LEARN", "HUMAN_PRACTICE", "HUMAN_UNDERSTAND_ONLY", "REFERENCE", "WIKI_BROWSE", "FULL_TEXT_SEARCH", "SEMANTIC_SEARCH", "HYBRID_SEARCH", "RAG", "SKILL", "TOOL", "WORKFLOW", "AGENT", "AUTOMATION", "SOFTWARE", "EXISTING_TOOL_INTEGRATION", "EXTERNAL_SERVICE", "MONITOR", "DEFER", "IGNORE"]},
+      "uniqueItems": true
+    },
+    "rationale": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+    "review_triggers": {"type": "array", "items": {"type": "string"}},
+    "computed_at": {"type": ["string", "null"], "format": "date-time"}
+  }
+}
