@@ -1,0 +1,51 @@
+name: Repair Unambiguous Markdown Residuals
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/repair-unambiguous-markdown-residuals.yml'
+      - 'scripts/repair_unambiguous_markdown_residuals.py'
+  workflow_dispatch:
+
+concurrency:
+  group: markdown-temp-repair-main
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  repair:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Rebase to latest main
+        run: |
+          git fetch origin main
+          git rebase origin/main
+      - name: Repair only unambiguous residuals
+        run: |
+          python scripts/repair_unambiguous_markdown_residuals.py --root temp --report temp/.unambiguous-residual-repair.json --apply
+          cat temp/.unambiguous-residual-repair.json
+      - name: Re-run semantic completeness audit
+        run: |
+          python scripts/audit_temp_semantic_completeness.py --root temp --report temp/.semantic-completeness-audit.json
+      - name: Commit repairs and reports
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A -- temp
+          if git diff --cached --quiet; then
+            echo 'No unambiguous residual changes detected.'
+          else
+            git commit -m 'docs(temp): repair unambiguous OCR and heading residuals [skip ci]'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
