@@ -23,15 +23,23 @@ jobs:
       - name: Remove ads and repair heading hierarchy
         run: |
           set +e
-          python scripts/cleanup_temp_ads_and_headings.py \
-            --root temp \
-            --prompt '.prompt/Markdown文档整理与修复通用提示词.md' \
-            --report temp/.ad-heading-cleanup-report.json
-          rc=$?
-          echo "cleanup exit code: $rc"
-          cat temp/.ad-heading-cleanup-report.json
+          : > temp/.ad-heading-cleanup.log
+          python -m py_compile scripts/cleanup_temp_ads_and_headings.py >> temp/.ad-heading-cleanup.log 2>&1
+          compile_rc=$?
+          echo "compile exit code: $compile_rc" >> temp/.ad-heading-cleanup.log
+          if [ "$compile_rc" -eq 0 ]; then
+            python scripts/cleanup_temp_ads_and_headings.py \
+              --root temp \
+              --prompt '.prompt/Markdown文档整理与修复通用提示词.md' \
+              --report temp/.ad-heading-cleanup-report.json >> temp/.ad-heading-cleanup.log 2>&1
+            echo "cleanup exit code: $?" >> temp/.ad-heading-cleanup.log
+          fi
+          cat temp/.ad-heading-cleanup.log
+          if [ -f temp/.ad-heading-cleanup-report.json ]; then
+            cat temp/.ad-heading-cleanup-report.json
+          fi
           exit 0
-      - name: Commit cleaned Markdown and audit report
+      - name: Commit cleaned Markdown and audit diagnostics
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
