@@ -8,9 +8,9 @@
     "image_refs_total": 10604
   },
   "issue_counts": {
-    "history_processed_but_content_fails": 59,
+    "history_processed_but_content_fails": 58,
     "low_heading_density": 2,
-    "possible_ad_residue": 19,
+    "possible_ad_residue": 18,
     "possible_heading_body_glue": 54
   },
   "review": [
@@ -18,8 +18,8 @@
       "path": "temp/007《布局锦囊1.0》/index.md",
       "status": "needs_review_medium",
       "metrics": {
-        "bytes": 732005,
-        "visible_chars": 238269,
+        "bytes": 731972,
+        "visible_chars": 238258,
         "h1": 1,
         "headings_2_4": 337,
         "image_refs": 383,
@@ -47,8 +47,8 @@
       "path": "temp/008《布局锦囊3.0》/index.md",
       "status": "needs_review_medium",
       "metrics": {
-        "bytes": 1121996,
-        "visible_chars": 371258,
+        "bytes": 1120532,
+        "visible_chars": 370640,
         "h1": 1,
         "headings_2_4": 34,
         "image_refs": 466,
@@ -76,8 +76,8 @@
       "path": "temp/009《布局锦囊2.0》/index.md",
       "status": "needs_review_medium",
       "metrics": {
-        "bytes": 723557,
-        "visible_chars": 237288,
+        "bytes": 723362,
+        "visible_chars": 237153,
         "h1": 1,
         "headings_2_4": 58,
         "image_refs": 345,
@@ -87,7 +87,7 @@
         {
           "code": "possible_ad_residue",
           "severity": "medium",
-          "detail": "count_sample=18, examples=[{'line': 961, 'match': '微信号'}, {'line': 2641, 'match': '微信号'}, {'line': 273, 'match': '薇信'}, {'line': 533, 'match': '薇信'}, {'line': 548, 'match': '薇信'}, {'line': 697, 'match': '薇信'}, {'line': 824, 'match': '薇信'}, {'line': 840, 'match': '薇信'}, {'line': 2979, 'match': '薇信'}, {'line': 2993, 'match': '薇信'}, {'line': 3207, 'match': '薇信'}, {'line': 3765, 'match': '薇信'}, {'line': 3777, 'match': '薇信'}, {'line': 3927, 'match': '薇信              '}, {'line': 4454, 'match': '薇信'}, {'line': 4729, 'match': '薇信'}, {'line': 4919, 'match': '薇信'}, {'line': 5390, 'match': '薇信'}]"
+          "detail": "count_sample=3, examples=[{'line': 961, 'match': '微信号'}, {'line': 2641, 'match': '微信号'}, {'line': 3927, 'match': '薇信              '}]"
         },
         {
           "code": "history_processed_but_content_fails",
@@ -163,8 +163,8 @@
       "path": "temp/《人心探索（操控篇）》/index.md",
       "status": "needs_review_medium",
       "metrics": {
-        "bytes": 310797,
-        "visible_chars": 100367,
+        "bytes": 310726,
+        "visible_chars": 100330,
         "h1": 1,
         "headings_2_4": 56,
         "image_refs": 177,
@@ -226,8 +226,8 @@
       "path": "temp/《人性天眼》/index.md",
       "status": "needs_review_medium",
       "metrics": {
-        "bytes": 159545,
-        "visible_chars": 51414,
+        "bytes": 159473,
+        "visible_chars": 51390,
         "h1": 1,
         "headings_2_4": 13,
         "image_refs": 105,
@@ -313,8 +313,8 @@
       "path": "temp/《人性底层模型1.0》/index.md",
       "status": "needs_review_medium",
       "metrics": {
-        "bytes": 392858,
-        "visible_chars": 127021,
+        "bytes": 392825,
+        "visible_chars": 127010,
         "h1": 1,
         "headings_2_4": 41,
         "image_refs": 275,
@@ -410,8 +410,8 @@
       "path": "temp/《人性成败拿捏》/index.md",
       "status": "needs_review_medium",
       "metrics": {
-        "bytes": 362682,
-        "visible_chars": 116452,
+        "bytes": 362625,
+        "visible_chars": 116413,
         "h1": 1,
         "headings_2_4": 200,
         "image_refs": 259,
@@ -497,8 +497,8 @@
       "path": "temp/《人性真相》/index.md",
       "status": "needs_review_medium",
       "metrics": {
-        "bytes": 129910,
-        "visible_chars": 41220,
+        "bytes": 129817,
+        "visible_chars": 41189,
         "h1": 1,
         "headings_2_4": 16,
         "image_refs": 113,
@@ -508,7 +508,7 @@
         {
           "code": "possible_heading_body_glue",
           "severity": "medium",
-          "detail": "count_sample=30, stems=[], examples=[{'line': 20, 'prefix': '为什么你总是被欺负？', 'body_starter': '因为', 'excerpt': '为什么你总是被欺负？因为你不懂人性，过分善良就是一种纵容；'}, {'line': 21, 'prefix': '为什么你总是被欺骗？', 'body_starter': '因为', 'excerpt': '为什么你总是被欺骗？因为你不懂人性，交浅言深是大忌。'}, {'line': 22, 'prefix': '为什么你总是被利用？', 'body_starter': '因为', 'excerpt': '为什么你总是被利用？因为你不懂人性，飞乌尽良，弓藏，狡兔死，走狗烹。'}, {'line': 23, 'prefix': '为什么你总是成为棋子和炮灰？', 'body_starter': '因为', 'excerpt': '为什么你总是成为棋子和炮灰？因为你不懂人性，这个社会有两套规则，一套是显性的，一套是隐性的。'}, {'line': 39, 'prefix': '这几年新进来的年轻人', 'body_starter': '很多', 'excerpt': '这几年新进来的年轻人，很多都是名牌大学毕业，学习能力、执行力、综合素质都比较强。'}, {'line': 43, 'prefix': '平时沟通协调、开会、处理事情', 'body_starter': '大家', 'excerpt': '平时沟通协调、开会、处理事情，大家都是客客气气的，我一路走来，也遇到很多帮助过我的贵人。'}, {'line': 47, 'prefix': '如果你不离开这个污浊的环境，你整天都会深陷到各种各样的问题', 'body_starter': '当', 'excerpt': '如果你不离开这个污浊的环境，你整天都会深陷到各种各样的问题当中。'}, {'line': 56, 'prefix': '为什么会这样呢？我接下来详细展开来跟', 'body_starter': '大家', 'excerpt': '为什么会这样呢？我接下来详细展开来跟大家说一说：底层往往是各种失意人群的聚集地在大多数单位，领导们都会有这样的想法，比如说某个年轻人不好用，工作态度特别差，故意摆烂。'}, {'line': 59, 'prefix': '如果这个领导级别高，没办法', 'body_starter': '当', 'excerpt': '如果这个领导级别高，没办法当副职，你不能给他降级啊，那就给个正职吧。但是不能调去好单位，把他弄去差的、边缘化的、无关紧要的下属单位当正职，级别不变。'}, {'line': 64, 'prefix': '再比如说，某个领导', 'body_starter': '因为', 'excerpt': '再比如说，某个领导，因为某种原因被处分了，或者出了什么问题被问责了。行，把他弄到下面的单位去下放。'}, {'line': 67, 'prefix': '一把手发现下面单位', 'body_starter': '有一个', 'excerpt': '一把手发现下面单位有一个年轻人，写材料不错，参加各种竞赛总是得奖，公众号：知识藏经阁，这个年轻人借调上级单位期间，经常被表扬，形象气质都非常好。行，咱们机关部门正缺人呢，把这个年轻人调上来吧。'}, {'line': 69, 'prefix': '在这些单位，有的人要么是把这个基层单位', 'body_starter': '当', 'excerpt': '在这些单位，有的人要么是把这个基层单位当做跳板，时刻想着跑路，比如遴选考走。'}]"
+          "detail": "count_sample=30, stems=[], examples=[{'line': 20, 'prefix': '为什么你总是被欺负？', 'body_starter': '因为', 'excerpt': '为什么你总是被欺负？因为你不懂人性，过分善良就是一种纵容；'}, {'line': 21, 'prefix': '为什么你总是被欺骗？', 'body_starter': '因为', 'excerpt': '为什么你总是被欺骗？因为你不懂人性，交浅言深是大忌。'}, {'line': 22, 'prefix': '为什么你总是被利用？', 'body_starter': '因为', 'excerpt': '为什么你总是被利用？因为你不懂人性，飞乌尽良，弓藏，狡兔死，走狗烹。'}, {'line': 23, 'prefix': '为什么你总是成为棋子和炮灰？', 'body_starter': '因为', 'excerpt': '为什么你总是成为棋子和炮灰？因为你不懂人性，这个社会有两套规则，一套是显性的，一套是隐性的。'}, {'line': 39, 'prefix': '这几年新进来的年轻人', 'body_starter': '很多', 'excerpt': '这几年新进来的年轻人，很多都是名牌大学毕业，学习能力、执行力、综合素质都比较强。'}, {'line': 43, 'prefix': '平时沟通协调、开会、处理事情', 'body_starter': '大家', 'excerpt': '平时沟通协调、开会、处理事情，大家都是客客气气的，我一路走来，也遇到很多帮助过我的贵人。'}, {'line': 47, 'prefix': '如果你不离开这个污浊的环境，你整天都会深陷到各种各样的问题', 'body_starter': '当', 'excerpt': '如果你不离开这个污浊的环境，你整天都会深陷到各种各样的问题当中。'}, {'line': 56, 'prefix': '为什么会这样呢？我接下来详细展开来跟', 'body_starter': '大家', 'excerpt': '为什么会这样呢？我接下来详细展开来跟大家说一说：底层往往是各种失意人群的聚集地在大多数单位，领导们都会有这样的想法，比如说某个年轻人不好用，工作态度特别差，故意摆烂。'}, {'line': 59, 'prefix': '如果这个领导级别高，没办法', 'body_starter': '当', 'excerpt': '如果这个领导级别高，没办法当副职，你不能给他降级啊，那就给个正职吧。但是不能调去好单位，把他弄去差的、边缘化的、无关紧要的下属单位当正职，级别不变。'}, {'line': 64, 'prefix': '再比如说，某个领导', 'body_starter': '因为', 'excerpt': '再比如说，某个领导，因为某种原因被处分了，或者出了什么问题被问责了。行，把他弄到下面的单位去下放。'}, {'line': 67, 'prefix': '一把手发现下面单位', 'body_starter': '有一个', 'excerpt': '一把手发现下面单位有一个年轻人，写材料不错，参加各种竞赛总是得奖，，这个年轻人借调上级单位期间，经常被表扬，形象气质都非常好。行，咱们机关部门正缺人呢，把这个年轻人调上来吧。'}, {'line': 69, 'prefix': '在这些单位，有的人要么是把这个基层单位', 'body_starter': '当', 'excerpt': '在这些单位，有的人要么是把这个基层单位当做跳板，时刻想着跑路，比如遴选考走。'}]"
         },
         {
           "code": "history_processed_but_content_fails",
@@ -526,8 +526,8 @@
       "path": "temp/《人性真言》/index.md",
       "status": "needs_review_medium",
       "metrics": {
-        "bytes": 142967,
-        "visible_chars": 46031,
+        "bytes": 142703,
+        "visible_chars": 45943,
         "h1": 1,
         "headings_2_4": 17,
         "image_refs": 106,
@@ -555,8 +555,8 @@
       "path": "temp/《人性社交思维手册》/index.md",
       "status": "needs_review_medium",
       "metrics": {
-        "bytes": 99102,
-        "visible_chars": 31941,
+        "bytes": 98997,
+        "visible_chars": 31886,
         "h1": 1,
         "headings_2_4": 11,
         "image_refs": 90,
@@ -613,8 +613,8 @@
       "path": "temp/《人性背后隐藏的邪恶密码》/index.md",
       "status": "needs_review_medium",
       "metrics": {
-        "bytes": 126442,
-        "visible_chars": 40084,
+        "bytes": 126312,
+        "visible_chars": 40034,
         "h1": 1,
         "headings_2_4": 207,
         "image_refs": 126,
@@ -811,8 +811,8 @@
       "path": "temp/《坏术大师》/index.md",
       "status": "needs_review_medium",
       "metrics": {
-        "bytes": 119906,
-        "visible_chars": 39102,
+        "bytes": 119797,
+        "visible_chars": 39030,
         "h1": 1,
         "headings_2_4": 34,
         "image_refs": 109,
@@ -822,7 +822,7 @@
         {
           "code": "possible_ad_residue",
           "severity": "medium",
-          "detail": "count_sample=4, examples=[{'line': 667, 'match': '薇信'}, {'line': 1008, 'match': '薇信     '}, {'line': 1074, 'match': '薇信'}, {'line': 1077, 'match': '薇信'}]"
+          "detail": "count_sample=1, examples=[{'line': 1008, 'match': '薇信     '}]"
         },
         {
           "code": "history_processed_but_content_fails",
@@ -898,8 +898,8 @@
       "path": "temp/《天之卷：强者修炼手册》/index.md",
       "status": "needs_review_medium",
       "metrics": {
-        "bytes": 104841,
-        "visible_chars": 32933,
+        "bytes": 104822,
+        "visible_chars": 32920,
         "h1": 1,
         "headings_2_4": 59,
         "image_refs": 122,
@@ -927,8 +927,8 @@
       "path": "temp/《天机38局》/index.md",
       "status": "needs_review_medium",
       "metrics": {
-        "bytes": 161535,
-        "visible_chars": 52597,
+        "bytes": 161497,
+        "visible_chars": 52571,
         "h1": 1,
         "headings_2_4": 2,
         "image_refs": 89,
@@ -985,8 +985,8 @@
       "path": "temp/《布局系统2.0》/index.md",
       "status": "needs_review_medium",
       "metrics": {
-        "bytes": 581128,
-        "visible_chars": 190284,
+        "bytes": 581098,
+        "visible_chars": 190254,
         "h1": 1,
         "headings_2_4": 563,
         "image_refs": 401,
@@ -996,7 +996,7 @@
         {
           "code": "possible_ad_residue",
           "severity": "medium",
-          "detail": "count_sample=5, examples=[{'line': 1781, 'match': '加我微信'}, {'line': 577, 'match': 'VX'}, {'line': 584, 'match': 'VX'}, {'line': 679, 'match': 'VX'}, {'line': 3498, 'match': 'vX'}]"
+          "detail": "count_sample=3, examples=[{'line': 1781, 'match': '加我微信'}, {'line': 584, 'match': 'VX'}, {'line': 679, 'match': 'VX'}]"
         },
         {
           "code": "possible_heading_body_glue",
@@ -1019,8 +1019,8 @@
       "path": "temp/《布局系统》/index.md",
       "status": "needs_review_medium",
       "metrics": {
-        "bytes": 396338,
-        "visible_chars": 130249,
+        "bytes": 396301,
+        "visible_chars": 130222,
         "h1": 1,
         "headings_2_4": 181,
         "image_refs": 269,
@@ -1077,8 +1077,8 @@
       "path": "temp/《开窍开悟开智1》PDF.md",
       "status": "needs_review_medium",
       "metrics": {
-        "bytes": 423403,
-        "visible_chars": 140667,
+        "bytes": 423387,
+        "visible_chars": 140655,
         "h1": 1,
         "headings_2_4": 313,
         "image_refs": 0,
@@ -1111,8 +1111,8 @@
       "path": "temp/《开窍开悟开智2》/index.md",
       "status": "needs_review_medium",
       "metrics": {
-        "bytes": 344797,
-        "visible_chars": 111791,
+        "bytes": 344623,
+        "visible_chars": 111688,
         "h1": 1,
         "headings_2_4": 300,
         "image_refs": 204,
@@ -1169,19 +1169,14 @@
       "path": "temp/《成长人性》/index.md",
       "status": "needs_review_medium",
       "metrics": {
-        "bytes": 282598,
-        "visible_chars": 89167,
+        "bytes": 282572,
+        "visible_chars": 89149,
         "h1": 1,
         "headings_2_4": 88,
         "image_refs": 270,
         "lines": 2328
       },
       "issues": [
-        {
-          "code": "possible_ad_residue",
-          "severity": "medium",
-          "detail": "count_sample=2, examples=[{'line': 186, 'match': '薇信'}, {'line': 380, 'match': '薇信'}]"
-        },
         {
           "code": "possible_heading_body_glue",
           "severity": "medium",
@@ -1319,8 +1314,8 @@
       "path": "temp/《玩转人性》.md",
       "status": "needs_review_medium",
       "metrics": {
-        "bytes": 547838,
-        "visible_chars": 183186,
+        "bytes": 547821,
+        "visible_chars": 183174,
         "h1": 1,
         "headings_2_4": 11,
         "image_refs": 0,
@@ -1330,7 +1325,7 @@
         {
           "code": "low_heading_density",
           "severity": "medium",
-          "detail": "chars_per_heading=16653"
+          "detail": "chars_per_heading=16652"
         },
         {
           "code": "possible_ad_residue",
@@ -1377,8 +1372,8 @@
       "path": "temp/《社会人心运作手册》/index.md",
       "status": "needs_review_medium",
       "metrics": {
-        "bytes": 544995,
-        "visible_chars": 176349,
+        "bytes": 544430,
+        "visible_chars": 176054,
         "h1": 1,
         "headings_2_4": 247,
         "image_refs": 335,
@@ -1406,8 +1401,8 @@
       "path": "temp/《社会人心运作手册》PDF版/index.md",
       "status": "needs_review_medium",
       "metrics": {
-        "bytes": 550942,
-        "visible_chars": 178498,
+        "bytes": 550436,
+        "visible_chars": 178234,
         "h1": 1,
         "headings_2_4": 149,
         "image_refs": 335,
@@ -1464,8 +1459,8 @@
       "path": "temp/《红尘纵横1》/index.md",
       "status": "needs_review_medium",
       "metrics": {
-        "bytes": 157041,
-        "visible_chars": 49802,
+        "bytes": 157003,
+        "visible_chars": 49776,
         "h1": 1,
         "headings_2_4": 136,
         "image_refs": 143,
@@ -1493,8 +1488,8 @@
       "path": "temp/《红尘纵横2》/index.md",
       "status": "needs_review_medium",
       "metrics": {
-        "bytes": 134992,
-        "visible_chars": 42384,
+        "bytes": 134897,
+        "visible_chars": 42319,
         "h1": 1,
         "headings_2_4": 316,
         "image_refs": 141,
@@ -1522,8 +1517,8 @@
       "path": "temp/《红尘纵横3》/index.md",
       "status": "needs_review_medium",
       "metrics": {
-        "bytes": 162604,
-        "visible_chars": 52317,
+        "bytes": 162532,
+        "visible_chars": 52274,
         "h1": 1,
         "headings_2_4": 5,
         "image_refs": 120,
@@ -1585,8 +1580,8 @@
       "path": "temp/《贪婪的人性》男人篇.md",
       "status": "needs_review_medium",
       "metrics": {
-        "bytes": 476013,
-        "visible_chars": 158207,
+        "bytes": 475962,
+        "visible_chars": 158171,
         "h1": 1,
         "headings_2_4": 40,
         "image_refs": 0,
@@ -1812,8 +1807,8 @@
       "path": "temp/千门谋局上册/index.md",
       "status": "needs_review_medium",
       "metrics": {
-        "bytes": 619949,
-        "visible_chars": 199333,
+        "bytes": 619854,
+        "visible_chars": 199268,
         "h1": 1,
         "headings_2_4": 189,
         "image_refs": 420,
@@ -1841,10 +1836,10 @@
       "path": "temp/千门谋局下册/index.md",
       "status": "needs_review_medium",
       "metrics": {
-        "bytes": 487382,
-        "visible_chars": 154786,
+        "bytes": 487249,
+        "visible_chars": 154695,
         "h1": 1,
-        "headings_2_4": 211,
+        "headings_2_4": 210,
         "image_refs": 418,
         "lines": 5793
       },
@@ -1870,12 +1865,12 @@
       "path": "temp/布局锦囊5.0/index.md",
       "status": "needs_review_medium",
       "metrics": {
-        "bytes": 1260640,
-        "visible_chars": 407633,
+        "bytes": 1259890,
+        "visible_chars": 407290,
         "h1": 1,
         "headings_2_4": 38,
         "image_refs": 19,
-        "lines": 5369
+        "lines": 5368
       },
       "issues": [
         {
@@ -1887,17 +1882,12 @@
           "code": "possible_heading_body_glue",
           "severity": "medium",
           "detail": "count_sample=30, stems=[], examples=[{'line': 14, 'prefix': '【 卧龙背销内部资料 ］ 布局锦贲系列', 'body_starter': '如果', 'excerpt': '【 卧龙背销内部资料 ］ 布局锦贲系列如果你看的是盗版书籍， 问请马上扔掉！'}, {'line': 20, 'prefix': '有钱人培养孩子，都会让他精通人性和权谋秘术，而', 'body_starter': '穷人', 'excerpt': '有钱人培养孩子，都会让他精通人性和权谋秘术，而穷人培养孩子 ， 只会天天报各种辅导班和技能，技术；'}, {'line': 26, 'prefix': '非常感谢你，预购本书！', 'body_starter': '如果', 'excerpt': '非常感谢你，预购本书！ 如果你读的盗版，谓马上扔掉 ． 不然会害了你！ ! !'}, {'line': 36, 'prefix': '八 如果你想达到超越常人的成绩，你想赚', 'body_starter': '很多', 'excerpt': '八 如果你想达到超越常人的成绩，你想赚很多钱，那你要记住：从第一天开始，你就要以你想达到的那种人的标准来要求自己。'}, {'line': 39, 'prefix': '3 、 你第一个要菩重的人 ， 是你自己', 'body_starter': '因为', 'excerpt': '3 、 你第一个要菩重的人 ， 是你自己，因为别人都会通过观察 ， 你怎么对待自己的方式来对待你的 。'}, {'line': 40, 'prefix': '4 ` 容易相信别人的人', 'body_starter': '一般', 'excerpt': '4 ` 容易相信别人的人一般会保持贫穷，因为很快有 一 点钱，就会袚套路光了自己还不知道，多疑的人一般经济不会有什么问题 。'}, {'line': 66, 'prefix': '31 所谓财运，不过是人的性格 C', 'body_starter': '所谓', 'excerpt': '31 所谓财运，不过是人的性格 C 所谓财运好的人 ， 不过是善千观察世界、总结规律、勇于试错，井且在做错之后承认错误、重新努力的人 C 32 虚荣炫沭 ， 频繁晒车晒包的，往往是星发产长久不了；'}, {'line': 68, 'prefix': '33 . 比没钱更可怕的，是没 OO 气 c', 'body_starter': '很多', 'excerpt': '33 . 比没钱更可怕的，是没 OO 气 c很多人 20 几岁 ， 就给自己贴上「这辈子一事无成」的标签，不愿意犯错，也不敢犯错 。'}, {'line': 69, 'prefix': '有个朋友，原生家庭条件', 'body_starter': '一般', 'excerpt': '有个朋友，原生家庭条件一般，但现在自己创业，拥有几百万的资产，也算小有成就。'}, {'line': 73, 'prefix': '34． 不要同情任何人，即使是最亲近的人', 'body_starter': '因为', 'excerpt': '34． 不要同情任何人，即使是最亲近的人，因为“情谁，你的溢意迅就自动背负谁的命运 。'}, {'line': 78, 'prefix': '38． 喜欢耍花招、把别人', 'body_starter': '当', 'excerpt': '38． 喜欢耍花招、把别人当傻子的人，也许一开始会往上爬的很快，但越到上面对手越强，他若再耍花招会死得很惨 今39 遇事不愿意反思自己的原因 ， 喜欢埋怨别人的人，一辈子都会浑浑垂噩，不求上进，遇到这样的人要保持距离，因为他会把他的失败全部算在你头上。'}, {'line': 83, 'prefix': '47 人都是势利的 。 但', 'body_starter': '人们', 'excerpt': '47 人都是势利的 。 但人们不是爱钱 ， 而是喜 欢拥有｀拥有就会觉得踏实 。'}]"
-        },
-        {
-          "code": "history_processed_but_content_fails",
-          "severity": "info",
-          "detail": "fix(temp): remove high-risk repair whitespace side effects [skip ci]"
         }
       ],
       "history": {
-        "sha": "2f7acd24d8eb94abda9328300a5f6266bcf9b1c7",
-        "date": "2026-08-25T08:37:10Z",
-        "message": "fix(temp): remove high-risk repair whitespace side effects [skip ci]"
+        "sha": "6c67287e4f03638ebf3b2f69bcf3f800980aefa8",
+        "date": "2026-08-25T09:40:02Z",
+        "message": "docs(temp): restore Layout5 reviewed sections [skip ci]"
       }
     }
   ]

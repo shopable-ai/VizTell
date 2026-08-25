@@ -1,0 +1,231 @@
+{
+  "summary": {
+    "files_changed": 31,
+    "totals": {
+      "contact": 170,
+      "public_watermark": 72,
+      "more_materials": 0
+    },
+    "errors": 0
+  },
+  "changed": [
+    {
+      "path": "temp/007《布局锦囊1.0》/index.md",
+      "contact": 0,
+      "public_watermark": 1,
+      "more_materials": 0,
+      "image_refs": 383
+    },
+    {
+      "path": "temp/008《布局锦囊3.0》/index.md",
+      "contact": 20,
+      "public_watermark": 46,
+      "more_materials": 0,
+      "image_refs": 466
+    },
+    {
+      "path": "temp/009《布局锦囊2.0》/index.md",
+      "contact": 15,
+      "public_watermark": 0,
+      "more_materials": 0,
+      "image_refs": 345
+    },
+    {
+      "path": "temp/《人心探索（动机篇）》/index.md",
+      "contact": 2,
+      "public_watermark": 1,
+      "more_materials": 0,
+      "image_refs": 334
+    },
+    {
+      "path": "temp/《人心探索（操控篇）》/index.md",
+      "contact": 2,
+      "public_watermark": 1,
+      "more_materials": 0,
+      "image_refs": 177
+    },
+    {
+      "path": "temp/《人性天眼》/index.md",
+      "contact": 0,
+      "public_watermark": 3,
+      "more_materials": 0,
+      "image_refs": 105
+    },
+    {
+      "path": "temp/《人性底层模型1.0》/index.md",
+      "contact": 0,
+      "public_watermark": 1,
+      "more_materials": 0,
+      "image_refs": 275
+    },
+    {
+      "path": "temp/《人性成败拿捏》/index.md",
+      "contact": 3,
+      "public_watermark": 0,
+      "more_materials": 0,
+      "image_refs": 259
+    },
+    {
+      "path": "temp/《人性真相》/index.md",
+      "contact": 0,
+      "public_watermark": 3,
+      "more_materials": 0,
+      "image_refs": 113
+    },
+    {
+      "path": "temp/《人性真言》/index.md",
+      "contact": 0,
+      "public_watermark": 8,
+      "more_materials": 0,
+      "image_refs": 106
+    },
+    {
+      "path": "temp/《人性社交思维手册》/index.md",
+      "contact": 3,
+      "public_watermark": 2,
+      "more_materials": 0,
+      "image_refs": 90
+    },
+    {
+      "path": "temp/《人性背后隐藏的邪恶密码》/index.md",
+      "contact": 1,
+      "public_watermark": 3,
+      "more_materials": 0,
+      "image_refs": 126
+    },
+    {
+      "path": "temp/《坏术大师》/index.md",
+      "contact": 8,
+      "public_watermark": 0,
+      "more_materials": 0,
+      "image_refs": 109
+    },
+    {
+      "path": "temp/《天之卷：强者修炼手册》/index.md",
+      "contact": 1,
+      "public_watermark": 0,
+      "more_materials": 0,
+      "image_refs": 122
+    },
+    {
+      "path": "temp/《天机38局》/index.md",
+      "contact": 2,
+      "public_watermark": 0,
+      "more_materials": 0,
+      "image_refs": 89
+    },
+    {
+      "path": "temp/《布局系统2.0》/index.md",
+      "contact": 2,
+      "public_watermark": 0,
+      "more_materials": 0,
+      "image_refs": 401
+    },
+    {
+      "path": "temp/《布局系统》/index.md",
+      "contact": 2,
+      "public_watermark": 0,
+      "more_materials": 0,
+      "image_refs": 269
+    },
+    {
+      "path": "temp/《开悟开窍开智3》/index.md",
+      "contact": 3,
+      "public_watermark": 0,
+      "more_materials": 0,
+      "image_refs": 119
+    },
+    {
+      "path": "temp/《开窍开悟开智1》PDF.md",
+      "contact": 1,
+      "public_watermark": 0,
+      "more_materials": 0,
+      "image_refs": 0
+    },
+    {
+      "path": "temp/《开窍开悟开智2》/index.md",
+      "contact": 7,
+      "public_watermark": 2,
+      "more_materials": 0,
+      "image_refs": 204
+    },
+    {
+      "path": "temp/《成长人性》/index.md",
+      "contact": 2,
+      "public_watermark": 0,
+      "more_materials": 0,
+      "image_refs": 270
+    },
+    {
+      "path": "temp/《玩转人性》.md",
+      "contact": 1,
+      "public_watermark": 0,
+      "more_materials": 0,
+      "image_refs": 0
+    },
+    {
+      "path": "temp/《社会人心运作手册》/index.md",
+      "contact": 27,
+      "public_watermark": 0,
+      "more_materials": 0,
+      "image_refs": 335
+    },
+    {
+      "path": "temp/《社会人心运作手册》PDF版/index.md",
+      "contact": 24,
+      "public_watermark": 0,
+      "more_materials": 0,
+      "image_refs": 335
+    },
+    {
+      "path": "temp/《红尘纵横1》/index.md",
+      "contact": 2,
+      "public_watermark": 0,
+      "more_materials": 0,
+      "image_refs": 143
+    },
+    {
+      "path": "temp/《红尘纵横2》/index.md",
+      "contact": 5,
+      "public_watermark": 0,
+      "more_materials": 0,
+      "image_refs": 141
+    },
+    {
+      "path": "temp/《红尘纵横3》/index.md",
+      "contact": 3,
+      "public_watermark": 1,
+      "more_materials": 0,
+      "image_refs": 120
+    },
+    {
+      "path": "temp/《贪婪的人性》男人篇.md",
+      "contact": 3,
+      "public_watermark": 0,
+      "more_materials": 0,
+      "image_refs": 0
+    },
+    {
+      "path": "temp/千门谋局上册/index.md",
+      "contact": 5,
+      "public_watermark": 0,
+      "more_materials": 0,
+      "image_refs": 420
+    },
+    {
+      "path": "temp/千门谋局下册/index.md",
+      "contact": 7,
+      "public_watermark": 0,
+      "more_materials": 0,
+      "image_refs": 418
+    },
+    {
+      "path": "temp/布局锦囊5.0/index.md",
+      "contact": 19,
+      "public_watermark": 0,
+      "more_materials": 0,
+      "image_refs": 19
+    }
+  ],
+  "errors": []
+}
