@@ -1,0 +1,44 @@
+name: Correct Human Trap Heading Boundaries
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/correct-human-trap-heading-boundaries.yml'
+      - 'scripts/correct_human_trap_heading_boundaries.py'
+  workflow_dispatch:
+
+concurrency:
+  group: markdown-temp-repair-main
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  repair:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 0}
+      - name: Rebase to latest main
+        run: |
+          git fetch origin main
+          git rebase origin/main
+      - name: Correct trap heading/body boundaries
+        run: python scripts/correct_human_trap_heading_boundaries.py
+      - name: Refresh semantic audit
+        run: |
+          python scripts/audit_temp_semantic_completeness.py --root temp --report temp/.semantic-completeness-audit.json
+          python scripts/summarize_semantic_audit_issues.py
+      - name: Commit corrected Markdown and reports
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add 'temp/《人性陷阱》/index.md' temp/.human-trap-heading-boundary-repair.json temp/.semantic-completeness-audit.json temp/.semantic-audit-issue-index.tsv temp/.semantic-audit-issue-summary.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'fix(temp): correct trap heading boundaries [skip ci]'
+          git pull --rebase origin main
+          git push origin HEAD:main
