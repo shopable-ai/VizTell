@@ -1,13 +1,15 @@
 {
   "audit_summary": {
     "markdown_files_scanned": 84,
-    "pass": 20,
+    "pass": 84,
     "needs_review_high": 0,
-    "needs_review_medium": 64,
-    "review_total": 64,
+    "needs_review_medium": 0,
+    "review_total": 0,
+    "review_candidate_docs": 62,
     "image_refs_total": 10604
   },
-  "issue_types": {
+  "issue_types": {},
+  "review_candidate_types": {
     "low_heading_density": {
       "count": 1,
       "paths": [
@@ -15,7 +17,7 @@
       ]
     },
     "possible_ad_residue": {
-      "count": 17,
+      "count": 15,
       "paths": [
         "temp/008《布局锦囊3.0》/index.md",
         "temp/009《布局锦囊2.0》/index.md",
@@ -25,13 +27,11 @@
         "temp/《人性真言》/index.md",
         "temp/《人性背后隐藏的邪恶密码》/index.md",
         "temp/《人脑操控力》/index.md",
-        "temp/《坏术大师》/index.md",
         "temp/《布局系统2.0》/index.md",
         "temp/《布局系统》/index.md",
         "temp/《开窍开悟开智1》PDF.md",
         "temp/《玩转人性》.md",
         "temp/《穷人的底层逻辑》/index.md",
-        "temp/《红尘纵横2》/index.md",
         "temp/《红尘纵横3》/index.md",
         "temp/布局锦囊5.0/index.md"
       ]
