@@ -531,6 +531,6 @@
     "pass": true,
     "failures": []
   },
-  "tested_commit": "b1e4e2a0a284459708016fa305b1a8793058ec81",
+  "tested_commit": "2ce0d1501d0b69791cc10359ba0b42c30772dd9f",
   "report_semantics": "deterministic preservation/routing/context/retrieval harness; not A-E business-answer quality"
 }
