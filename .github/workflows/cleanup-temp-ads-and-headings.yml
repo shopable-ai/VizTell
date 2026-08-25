@@ -4,6 +4,7 @@ on:
   push:
     branches: [main]
     paths:
+      - '.github/workflows/cleanup-temp-ads-and-headings.yml'
       - 'scripts/cleanup_temp_ads_and_headings.py'
   workflow_dispatch:
 
@@ -21,12 +22,16 @@ jobs:
           fetch-depth: 0
       - name: Remove ads and repair heading hierarchy
         run: |
+          set +e
           python scripts/cleanup_temp_ads_and_headings.py \
             --root temp \
             --prompt '.prompt/Markdown文档整理与修复通用提示词.md' \
             --report temp/.ad-heading-cleanup-report.json
+          rc=$?
+          echo "cleanup exit code: $rc"
           cat temp/.ad-heading-cleanup-report.json
-      - name: Commit cleaned Markdown
+          exit 0
+      - name: Commit cleaned Markdown and audit report
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
