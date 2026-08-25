@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/summarize-semantic-audit-issues.yml'
+      - 'scripts/audit_temp_semantic_completeness.py'
       - 'scripts/summarize_semantic_audit_issues.py'
   workflow_dispatch:
 
