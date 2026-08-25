@@ -1,26 +1,19 @@
 {
+  "policy": "diagnostic uses latest cross-line token-only cleaner; no Markdown is changed",
   "summary": {
-    "would_change_files": 33,
+    "would_change_files": 31,
     "problems": 0,
-    "remaining_after_clean": 1
+    "remaining_after_clean": 0
   },
   "problems": [],
-  "remaining": [
-    {
-      "path": "temp/布局锦囊5.0/index.md",
-      "kind": "contact",
-      "match": "更多落地细节，可 以 添加作者微信 ：\n1361382",
-      "context": "获得成功 ， 是因为他专注点就在企业 和职业本身 ， 而非其他 。这 样一来 就 给我们这些网络成功学大师留下了弱点，忽悠他们还是不行信手拈来？        更多落地细节，可 以 添加作者微信 ： 1361382 651 4 内部悄悄分享 u【 1414 个布局锦囊：智商收割术 ，微商减肥品月挣 7 万的另 类玩法】 开篇先问大家一个问题 ： 你觉得自己聪明吗？ 相信只要是不太自卑的人 ， 都会觉得自 己还算聪明吧 ， 其实聪明这种东西是很抽象的 "
-    }
-  ],
+  "remaining": [],
   "would_change": [
     {
       "path": "temp/007《布局锦囊1.0》/index.md",
       "counts": {
         "contact": 0,
         "public_watermark": 1,
-        "more_materials": 0,
-        "empty_brackets": 0
+        "more_materials": 0
       }
     },
     {
@@ -28,8 +21,7 @@
       "counts": {
         "contact": 20,
         "public_watermark": 46,
-        "more_materials": 0,
-        "empty_brackets": 0
+        "more_materials": 0
       }
     },
     {
@@ -37,8 +29,7 @@
       "counts": {
         "contact": 15,
         "public_watermark": 0,
-        "more_materials": 0,
-        "empty_brackets": 1
+        "more_materials": 0
       }
     },
     {
@@ -46,8 +37,7 @@
       "counts": {
         "contact": 2,
         "public_watermark": 1,
-        "more_materials": 0,
-        "empty_brackets": 0
+        "more_materials": 0
       }
     },
     {
@@ -55,8 +45,7 @@
       "counts": {
         "contact": 2,
         "public_watermark": 1,
-        "more_materials": 0,
-        "empty_brackets": 0
+        "more_materials": 0
       }
     },
     {
@@ -64,8 +53,7 @@
       "counts": {
         "contact": 0,
         "public_watermark": 3,
-        "more_materials": 0,
-        "empty_brackets": 0
+        "more_materials": 0
       }
     },
     {
@@ -73,8 +61,7 @@
       "counts": {
         "contact": 0,
         "public_watermark": 1,
-        "more_materials": 0,
-        "empty_brackets": 0
+        "more_materials": 0
       }
     },
     {
@@ -82,8 +69,7 @@
       "counts": {
         "contact": 3,
         "public_watermark": 0,
-        "more_materials": 0,
-        "empty_brackets": 0
+        "more_materials": 0
       }
     },
     {
@@ -91,8 +77,7 @@
       "counts": {
         "contact": 0,
         "public_watermark": 3,
-        "more_materials": 0,
-        "empty_brackets": 0
+        "more_materials": 0
       }
     },
     {
@@ -100,8 +85,7 @@
       "counts": {
         "contact": 0,
         "public_watermark": 8,
-        "more_materials": 0,
-        "empty_brackets": 0
+        "more_materials": 0
       }
     },
     {
@@ -109,8 +93,7 @@
       "counts": {
         "contact": 3,
         "public_watermark": 2,
-        "more_materials": 0,
-        "empty_brackets": 0
+        "more_materials": 0
       }
     },
     {
@@ -118,17 +101,7 @@
       "counts": {
         "contact": 1,
         "public_watermark": 3,
-        "more_materials": 0,
-        "empty_brackets": 0
-      }
-    },
-    {
-      "path": "temp/《人性魔鬼手段》/index.md",
-      "counts": {
-        "contact": 0,
-        "public_watermark": 0,
-        "more_materials": 0,
-        "empty_brackets": 1
+        "more_materials": 0
       }
     },
     {
@@ -136,8 +109,7 @@
       "counts": {
         "contact": 8,
         "public_watermark": 0,
-        "more_materials": 0,
-        "empty_brackets": 0
+        "more_materials": 0
       }
     },
     {
@@ -145,8 +117,7 @@
       "counts": {
         "contact": 1,
         "public_watermark": 0,
-        "more_materials": 0,
-        "empty_brackets": 0
+        "more_materials": 0
       }
     },
     {
@@ -154,8 +125,7 @@
       "counts": {
         "contact": 2,
         "public_watermark": 0,
-        "more_materials": 0,
-        "empty_brackets": 0
+        "more_materials": 0
       }
     },
     {
@@ -163,8 +133,7 @@
       "counts": {
         "contact": 2,
         "public_watermark": 0,
-        "more_materials": 0,
-        "empty_brackets": 0
+        "more_materials": 0
       }
     },
     {
@@ -172,8 +141,7 @@
       "counts": {
         "contact": 2,
         "public_watermark": 0,
-        "more_materials": 0,
-        "empty_brackets": 0
+        "more_materials": 0
       }
     },
     {
@@ -181,8 +149,7 @@
       "counts": {
         "contact": 3,
         "public_watermark": 0,
-        "more_materials": 0,
-        "empty_brackets": 0
+        "more_materials": 0
       }
     },
     {
@@ -190,8 +157,7 @@
       "counts": {
         "contact": 1,
         "public_watermark": 0,
-        "more_materials": 0,
-        "empty_brackets": 0
+        "more_materials": 0
       }
     },
     {
@@ -199,8 +165,7 @@
       "counts": {
         "contact": 7,
         "public_watermark": 2,
-        "more_materials": 0,
-        "empty_brackets": 0
+        "more_materials": 0
       }
     },
     {
@@ -208,17 +173,7 @@
       "counts": {
         "contact": 2,
         "public_watermark": 0,
-        "more_materials": 0,
-        "empty_brackets": 0
-      }
-    },
-    {
-      "path": "temp/《洗脑的最高境界》.md",
-      "counts": {
-        "contact": 0,
-        "public_watermark": 0,
-        "more_materials": 0,
-        "empty_brackets": 10
+        "more_materials": 0
       }
     },
     {
@@ -226,8 +181,7 @@
       "counts": {
         "contact": 1,
         "public_watermark": 0,
-        "more_materials": 0,
-        "empty_brackets": 0
+        "more_materials": 0
       }
     },
     {
@@ -235,8 +189,7 @@
       "counts": {
         "contact": 27,
         "public_watermark": 0,
-        "more_materials": 0,
-        "empty_brackets": 0
+        "more_materials": 0
       }
     },
     {
@@ -244,8 +197,7 @@
       "counts": {
         "contact": 24,
         "public_watermark": 0,
-        "more_materials": 0,
-        "empty_brackets": 0
+        "more_materials": 0
       }
     },
     {
@@ -253,8 +205,7 @@
       "counts": {
         "contact": 2,
         "public_watermark": 0,
-        "more_materials": 0,
-        "empty_brackets": 0
+        "more_materials": 0
       }
     },
     {
@@ -262,8 +213,7 @@
       "counts": {
         "contact": 5,
         "public_watermark": 0,
-        "more_materials": 0,
-        "empty_brackets": 0
+        "more_materials": 0
       }
     },
     {
@@ -271,8 +221,7 @@
       "counts": {
         "contact": 3,
         "public_watermark": 1,
-        "more_materials": 0,
-        "empty_brackets": 0
+        "more_materials": 0
       }
     },
     {
@@ -280,8 +229,7 @@
       "counts": {
         "contact": 3,
         "public_watermark": 0,
-        "more_materials": 0,
-        "empty_brackets": 0
+        "more_materials": 0
       }
     },
     {
@@ -289,8 +237,7 @@
       "counts": {
         "contact": 5,
         "public_watermark": 0,
-        "more_materials": 0,
-        "empty_brackets": 0
+        "more_materials": 0
       }
     },
     {
@@ -298,17 +245,15 @@
       "counts": {
         "contact": 7,
         "public_watermark": 0,
-        "more_materials": 0,
-        "empty_brackets": 0
+        "more_materials": 0
       }
     },
     {
       "path": "temp/布局锦囊5.0/index.md",
       "counts": {
-        "contact": 18,
+        "contact": 19,
         "public_watermark": 0,
-        "more_materials": 0,
-        "empty_brackets": 9
+        "more_materials": 0
       }
     }
   ]
