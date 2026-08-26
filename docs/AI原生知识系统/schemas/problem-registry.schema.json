@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:viztell:ai-knowledge-system:schema:problem-registry:0.1",
+  "title": "Canonical Human Problem Registry Record v0.1",
+  "description": "由 01_需求宇宙.md 与 01B_标准用户问题与专业问题映射.md 派生的机器可审计问题记录。Markdown 人话问题地图仍是语义事实源。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "problem_id",
+    "canonical_human_problem",
+    "user_consequence",
+    "user_need",
+    "desired_outcome",
+    "primary_p_l1",
+    "related_p_l1",
+    "journey_stages",
+    "scenario_tags",
+    "scale_tags",
+    "primary_sup",
+    "related_sup",
+    "confusable_neighbors",
+    "boundary_rule",
+    "problem_relations",
+    "synthetic_cases",
+    "audit_status",
+    "legacy_aliases"
+  ],
+  "properties": {
+    "schema_version": {"const": "0.1"},
+    "problem_id": {"type": "string", "pattern": "^P-L2-[0-9]{2}-[0-9]{2}$"},
+    "canonical_human_problem": {"type": "string", "minLength": 1},
+    "user_consequence": {"type": "string", "minLength": 1},
+    "user_need": {"type": "string", "minLength": 1},
+    "desired_outcome": {"type": "string", "minLength": 1},
+    "primary_p_l1": {"type": "string", "pattern": "^P-L1-[0-9]{2}$"},
+    "related_p_l1": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"type": "string", "pattern": "^P-L1-[0-9]{2}$"}
+    },
+    "journey_stages": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"type": "string", "pattern": "^J(0[1-9]|1[0-8])$"}
+    },
+    "scenario_tags": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "scale_tags": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+    "primary_sup": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"type": "string", "pattern": "^SUP-[0-9]{3}$"}
+    },
+    "related_sup": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"type": "string", "pattern": "^SUP-[0-9]{3}$"}
+    },
+    "confusable_neighbors": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"type": "string", "pattern": "^P-L2-[0-9]{2}-[0-9]{2}$"}
+    },
+    "boundary_rule": {"type": ["string", "null"]},
+    "problem_relations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["relation_type", "target_problem_id"],
+        "properties": {
+          "relation_type": {
+            "enum": ["causes", "caused_by", "blocks", "special_case_of", "overlaps_with", "retriggered_by"]
+          },
+          "target_problem_id": {"type": "string", "pattern": "^P-L2-[0-9]{2}-[0-9]{2}$"}
+        }
+      }
+    },
+    "synthetic_cases": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"type": "string", "pattern": "^SYN-[A-Z]+[0-9]{2}$"}
+    },
+    "audit_status": {
+      "enum": ["KEEP", "REWRITE", "MERGED_CANONICAL", "PARTIAL", "MISSING_CANDIDATE"]
+    },
+    "legacy_aliases": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"type": "string", "pattern": "^P-L2-[0-9]{2}-[0-9]{2}$"}
+    },
+    "source_file": {"type": "string"},
+    "generated_at": {"type": ["string", "null"], "format": "date-time"}
+  }
+}
