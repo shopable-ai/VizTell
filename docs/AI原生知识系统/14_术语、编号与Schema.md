@@ -6,15 +6,15 @@ Schema 只约束数据合同，不证明知识真实或路由正确。
 
 ---
 
-# 一、编号规则
+## 一、编号规则
 
-## Framework
+### Framework
 
 - `L1-xx`：一级空间；
 - `L2-xx-yy`：二级维度；
 - `L3-xx-yy-zz`：三级指标。
 
-## Knowledge Objects
+### Knowledge Objects
 
 - `S-*`：Source；
 - `F-*`：Raw Fragment；
@@ -24,7 +24,7 @@ Schema 只约束数据合同，不证明知识真实或路由正确。
 - `EG-*`：Independent Evidence Group；
 - `R-*`：Relation Assertion。
 
-## Demand / Subject / Decision
+### Demand / Subject / Decision
 
 - `D-*`：Requirement / Demand Instance；
 - `SP-*`：Subject Profile；
@@ -32,7 +32,7 @@ Schema 只约束数据合同，不证明知识真实或路由正确。
 - `C-*`：Consumption / Capability Ownership / Routing Decision；
 - `IR-*`：Implementation Routing Decision。
 
-## Validation / Runtime
+### Validation / Runtime
 
 - `BC-*`：Benchmark Case；
 - `BR-*`：Benchmark Run；
@@ -43,7 +43,7 @@ Schema 只约束数据合同，不证明知识真实或路由正确。
 
 ---
 
-# 二、对象链
+## 二、对象链
 
 ```text
 D Requirement
@@ -62,7 +62,7 @@ D Requirement
 
 ---
 
-# 三、Source 最小字段族
+## 三、Source 最小字段族
 
 ```yaml
 source_id:
@@ -87,7 +87,7 @@ Source 是来源对象，不代表其中所有 Claim 的可信度相同。
 
 ---
 
-# 四、Raw Fragment 最小字段族
+## 四、Raw Fragment 最小字段族
 
 ```yaml
 fragment_id:
@@ -104,7 +104,7 @@ created_at:
 
 ---
 
-# 五、Knowledge Atom 最小字段族
+## 五、Knowledge Atom 最小字段族
 
 ```yaml
 atom_id:
@@ -123,7 +123,7 @@ Atom 是候选语义单元，不等于 Canonical，也不等于已经验证为�
 
 ---
 
-# 六、Canonical Knowledge 最小字段族
+## 六、Canonical Knowledge 最小字段族
 
 ```yaml
 knowledge_id:
@@ -152,7 +152,7 @@ updated_at:
 
 ---
 
-# 七、Evidence 最小字段族
+## 七、Evidence 最小字段族
 
 ```yaml
 evidence_id:
@@ -171,7 +171,7 @@ temporal: {}
 
 ---
 
-# 八、Relation Assertion 最小字段族
+## 八、Relation Assertion 最小字段族
 
 ```yaml
 relation_id:
@@ -192,7 +192,7 @@ Relation 本身可以被修订和推翻。
 
 ---
 
-# 九、Requirement Instance 最小字段族
+## 九、Requirement Instance 最小字段族
 
 ```yaml
 requirement_id:
@@ -217,7 +217,7 @@ prior_priority:
 
 ---
 
-# 十、Subject Profile / Learning Gap
+## 十、Subject Profile / Learning Gap
 
 ```yaml
 subject_profile:
@@ -241,7 +241,7 @@ learning_gap:
 
 ---
 
-# 十一、Consumption / Capability Routing
+## 十一、Consumption / Capability Routing
 
 ```yaml
 routing_decision:
@@ -264,7 +264,7 @@ routing_decision:
 
 ---
 
-# 十二、Implementation Routing
+## 十二、Implementation Routing
 
 ```yaml
 implementation_routing:
@@ -284,7 +284,7 @@ implementation_routing:
 
 ---
 
-# 十三、Benchmark Case
+## 十三、Benchmark Case
 
 ```yaml
 benchmark_case:
@@ -301,7 +301,7 @@ benchmark_case:
 
 ---
 
-# 十四、Validation Manifest
+## 十四、Validation Manifest
 
 ```yaml
 validation_manifest:
@@ -320,27 +320,27 @@ validation_manifest:
 
 ---
 
-# 十五、Relation Type 候选
+## 十五、Relation Type 候选
 
-## Concept
+### Concept
 
 `alias_of`、`broader_than`、`narrower_than`、`related_to`、`overlaps_with`
 
-## Proposition / Mechanism
+### Proposition / Mechanism
 
 `equivalent_to`、`paraphrase_of`、`contains`、`refines`、`adds_condition`、`adds_boundary`、`adds_scope`、`adds_mechanism`、`supports`、`weakens`、`conflicts_with`、`counterexample_to`
 
-## Provenance / Version
+### Provenance / Version
 
 `derived_from`、`quoted_from`、`revision_of`、`alternate_representation_of`、`has_primary_source`、`supersedes`
 
-## Capability
+### Capability
 
 `prerequisite_of`、`depends_on`、`complements`、`substitutes_for`、`implemented_by`
 
 ---
 
-# 十六、Unknown / Null / Not Applicable 必须区分
+## 十六、Unknown / Null / Not Applicable 必须区分
 
 禁止模型遇到空字段就自动补成确定事实。
 
@@ -355,7 +355,7 @@ validation_manifest:
 
 ---
 
-# 十七、状态对象与知识本体分离
+## 十七、状态对象与知识本体分离
 
 以下内容不应永久嵌死在 Canonical identity：
 
@@ -370,7 +370,7 @@ validation_manifest:
 
 ---
 
-# 十八、Schema 基线
+## 十八、Schema 基线
 
 当前首批可执行 Schema 使用：
 
@@ -385,7 +385,7 @@ Schema version 与领域对象 version 分开：
 
 ---
 
-# 十九、Schema 演进原则
+## 十九、Schema 演进原则
 
 1. Markdown 先固定语义，再更新 JSON Schema；
 2. 不因某个 LLM 输出方便而扭曲领域语义；
@@ -398,7 +398,7 @@ Schema version 与领域对象 version 分开：
 
 ---
 
-# 二十、主流标准映射
+## 二十、主流标准映射
 
 当前保持轻量内部模型，同时预留：
 
