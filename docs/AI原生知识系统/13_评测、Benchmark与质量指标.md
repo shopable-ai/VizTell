@@ -36,9 +36,9 @@
 
 ---
 
-# 一、评测必须分层
+## 一、评测必须分层
 
-## 1.1 Problem-level：用户问题层
+### 1.1 Problem-level：用户问题层
 
 首先评测：
 
@@ -49,7 +49,7 @@
 - 是否在应该停止研究时停止；
 - 最终结果是否帮助理解、判断、学习、决策或行动。
 
-## 1.2 Capability-level：系统能力层
+### 1.2 Capability-level：系统能力层
 
 评测：
 
@@ -62,7 +62,7 @@
 - 变化监测；
 - 结果验证。
 
-## 1.3 Component-level：知识工程与实现组件层
+### 1.3 Component-level：知识工程与实现组件层
 
 评测：
 
@@ -76,7 +76,7 @@
 
 > **组件准确不等于用户问题解决。**
 
-## 1.4 Outcome-level：用户结果层
+### 1.4 Outcome-level：用户结果层
 
 最终还必须观察：
 
@@ -89,13 +89,13 @@
 
 ---
 
-# 二、Benchmark 六层结构
+## 二、Benchmark 六层结构
 
-## B0 Schema / Invariant
+### B0 Schema / Invariant
 
 测试字段、required、ID、enum 和不允许的状态组合。
 
-## B1 Synthetic Component
+### B1 Synthetic Component
 
 人工构造答案明确的：
 
@@ -109,7 +109,7 @@
 - 委托边界；
 - 实现路由。
 
-## B2 Synthetic Problem / Task
+### B2 Synthetic Problem / Task
 
 测试：
 
@@ -121,11 +121,11 @@
 - 是否在足够时停止；
 - 是否真正回答用户最初的问题。
 
-## B3 Controlled Real Sample
+### B3 Controlled Real Sample
 
 使用 Manifest 明确的小样本验证真实噪声、表达变化和数据复杂度。
 
-## B4 Scale / Performance
+### B4 Scale / Performance
 
 测试：
 
@@ -137,7 +137,7 @@
 - 增量吞吐；
 - 大规模错误放大。
 
-## B5 Outcome / Longitudinal
+### B5 Outcome / Longitudinal
 
 测试长期结果：
 
@@ -151,9 +151,9 @@
 
 ---
 
-# 三、Problem-level 核心指标
+## 三、Problem-level 核心指标
 
-## 3.1 问题理解
+### 3.1 问题理解
 
 - true-problem identification rate；
 - wrong-problem answer rate；
@@ -161,7 +161,7 @@
 - missed constraint rate；
 - success-criteria completeness。
 
-## 3.2 知识需求
+### 3.2 知识需求
 
 - critical knowledge need recall；
 - prerequisite gap recall；
@@ -169,7 +169,7 @@
 - unknown-unknown discovery rate；
 - unnecessary information expansion rate。
 
-## 3.3 研究与综合
+### 3.3 研究与综合
 
 - critical source miss rate；
 - redundant reading / processing rate；
@@ -178,7 +178,7 @@
 - decision-changing increment recall；
 - research stop accuracy。
 
-## 3.4 用户结果
+### 3.4 用户结果
 
 - answer usefulness；
 - decision support quality；
@@ -191,9 +191,9 @@
 
 ---
 
-# 四、知识工程核心质量指标
+## 四、知识工程核心质量指标
 
-## 4.1 Canonical / 去重
+### 4.1 Canonical / 去重
 
 - duplicate candidate recall；
 - false merge rate；
@@ -202,7 +202,7 @@
 - condition/boundary preservation rate；
 - provenance retention rate。
 
-## 4.2 增量
+### 4.2 增量
 
 - new mechanism recall；
 - new condition recall；
@@ -212,7 +212,7 @@
 - decision-changing increment recall；
 - false novelty rate。
 
-## 4.3 Evidence
+### 4.3 Evidence
 
 - primary source tracing accuracy；
 - evidence independence accuracy；
@@ -222,7 +222,7 @@
 - conflict preservation rate；
 - unsupported upgrade rate。
 
-## 4.4 Retrieval / RAG
+### 4.4 Retrieval / RAG
 
 - Recall@K；
 - Precision@K；
@@ -235,7 +235,7 @@
 - unsupported inference rate；
 - minimum sufficient context quality。
 
-## 4.5 Subject Value / Learning / Delegation
+### 4.5 Subject Value / Learning / Delegation
 
 - high-value miss rate；
 - low-value attention waste；
@@ -245,7 +245,7 @@
 - existing-tool/service miss rate；
 - capability-degradation risk miss。
 
-## 4.6 Learning
+### 4.6 Learning
 
 - delayed recall；
 - concept discrimination；
@@ -256,7 +256,7 @@
 - confidence calibration；
 - real-task performance。
 
-## 4.7 Lifecycle / Governance
+### 4.7 Lifecycle / Governance
 
 - stale detection latency；
 - impacted-object recall；
@@ -267,7 +267,7 @@
 - unauthorized-action rate；
 - audit completeness。
 
-## 4.8 Implementation Routing
+### 4.8 Implementation Routing
 
 - unnecessary RAG rate；
 - Agent over-routing rate；
@@ -280,9 +280,9 @@
 
 ---
 
-# 五、Error Taxonomy
+## 五、Error Taxonomy
 
-## 5.1 Problem Errors
+### 5.1 Problem Errors
 
 - wrong problem framing；
 - premature solutioning；
@@ -295,7 +295,7 @@
 - solution detached from user constraints；
 - no outcome verification。
 
-## 5.2 Knowledge / Evidence Errors
+### 5.2 Knowledge / Evidence Errors
 
 - false merge；
 - false split；
@@ -310,7 +310,7 @@
 - weak evidence upgraded to fact；
 - lost provenance。
 
-## 5.3 Learning / Delegation Errors
+### 5.3 Learning / Delegation Errors
 
 - high-value knowledge ignored；
 - low-value knowledge interrupts human；
@@ -320,7 +320,7 @@
 - missing human verification；
 - critical capability degradation。
 
-## 5.4 Implementation / Runtime Errors
+### 5.4 Implementation / Runtime Errors
 
 - wrong implementation routing；
 - Agent over-routing；
@@ -335,7 +335,7 @@
 
 ---
 
-# 六、Benchmark Case 必须有 Forbidden Outcomes
+## 六、Benchmark Case 必须有 Forbidden Outcomes
 
 不能只写“期望答案”。
 
@@ -359,7 +359,7 @@ benchmark_case:
 
 ---
 
-# 七、P-L1/P-L2 覆盖要求
+## 七、P-L1/P-L2 覆盖要求
 
 `22_遗漏、反例与回归测试.md` 维护 17 个 P-L1 的问题覆盖矩阵，同时另设 System Error 回归。
 
@@ -373,7 +373,7 @@ benchmark_case:
 
 ---
 
-# 八、人工 Gold 与 LLM Judge 分工
+## 八、人工 Gold 与 LLM Judge 分工
 
 - 明确结构化案例：规则 / 人工 Gold；
 - 语义边界案例：人工专家 Gold + 多模型辅助；
@@ -383,7 +383,7 @@ benchmark_case:
 
 ---
 
-# 九、回归触发器
+## 九、回归触发器
 
 以下变化应触发相关 Regression Set：
 
@@ -403,7 +403,7 @@ benchmark_case:
 
 ---
 
-# 十、真实样本进入 Gate
+## 十、真实样本进入 Gate
 
 进入真实样本层前必须：
 
@@ -419,7 +419,7 @@ benchmark_case:
 
 ---
 
-# 十一、停止与验收原则
+## 十一、停止与验收原则
 
 - 不以文件数、向量数、Wiki 页数、Skill 数或 Agent 数作为完成指标；
 - 不以单次 Demo 成功作为能力通过；
