@@ -129,3 +129,6 @@
 - [MKT-PB-004 STP 与定位决策 SOP](05_行动与决策/MKT-PB-004_STP与定位决策SOP.md)：细分、目标选择、定位设计和验证；DRAFT。
 - [MKT-PB-005 定价研究与价格测试 SOP](05_行动与决策/MKT-PB-005_定价研究与价格测试SOP.md)：支付意愿、套餐、价格测试和经济性评估；DRAFT。
 - [MKT-PB-006 营销增量实验与因果测量 SOP](05_行动与决策/MKT-PB-006_营销增量实验与因果测量SOP.md)：RCT、Geo、准实验、增量和决策；DRAFT。
+
+
+- [专业 SOP 执行 Benchmark 测试集](10_质量审计与Benchmark/02_专业SOP执行Benchmark测试集.md)：为 MKT-PB-001 至 MKT-PB-006 建立六类执行测试、Gold Outputs、禁止错误、评分和 Hard Fail；DRAFT，尚未执行。
