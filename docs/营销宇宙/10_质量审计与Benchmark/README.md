@@ -175,3 +175,13 @@
 - D11、D20、D22、D23、D24 是否经过独立存在价值审查。
 
 路由测试至少覆盖 10 类：新市场进入、新产品上市、B2B 需求生成、零售/贸易营销、品牌重定位、服务体验、SaaS 留存、定价调整、广告预算重分配、国际本地化、品牌危机和社会营销。每类任务都需保存 Gold Route、允许的备选路由、禁止路由和错误严重度。
+
+
+## 十、营销任务路由 Benchmark 测试集
+
+- 测试集：[01_营销任务路由Benchmark测试集.md](01_营销任务路由Benchmark测试集.md)。
+- 当前样本：15 个正向任务 + 5 个负向/边界任务。
+- 每题定义 Primary Domain、Supporting Domains、Cross-cutting Systems、Context Tags、Evidence Needs、Expected Deliverables 和 Forbidden Errors。
+- 每题使用 10 分评分，设置硬失败条件。
+- 当前状态：Gold Route 候选已建立；模型/Agent 盲测、自动化执行和回归记录尚未完成。
+- 未保存实际执行记录前，不得宣称路由准确率已验证。
