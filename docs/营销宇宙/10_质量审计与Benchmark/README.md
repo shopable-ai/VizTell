@@ -281,3 +281,12 @@ D01-D24 全部已有首版 L2-L3 地图，共 182 个 L2 模块和 1,097 个 L3 
 - 输出质量和指标口径复核；
 - 反方审计与独立专业复核；
 - 与 24 域 Registry、H01-H06 和其他知识宇宙的边界检查。
+
+
+## 十八、首批 SOP 执行 Benchmark
+
+- 测试集：[02_专业SOP执行Benchmark测试集.md](02_专业SOP执行Benchmark测试集.md)。
+- 覆盖 MKT-PB-001 至 MKT-PB-006 六份专业 SOP。
+- 每份 SOP 至少 3 种语义改写，共至少 18 次执行。
+- 每题有 Gold Outputs、Forbidden Errors、10 分评分和 Hard Fail 条件。
+- 当前执行次数：UNKNOWN；测试设计已建立，但不得报告为已通过。
