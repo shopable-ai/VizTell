@@ -20,4 +20,4 @@
 
 后续内容以独立目录维护；每个大型知识系统必须提供一个明确、唯一的当前入口（README.md 或 00_ 版本入口），避免并行维护多个事实源。
 
-运行通用链路宇宙结构校验：python3 scripts/validate_chain_universe.py。
+运行通用链路宇宙结构校验：`python3 scripts/validate_chain_universe.py`。
