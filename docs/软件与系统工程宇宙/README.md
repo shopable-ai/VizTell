@@ -1,6 +1,6 @@
 # 工程模型总体框架与实际应用
 
-> **当前：R1-B.2｜2026-11-26｜候选使用方法。** 已形成六类任务选择主表、决策关系与真实历史对照；独立增量价值、成本与正式接入未证实。R1-B.1 总体地图与连播助手静态分析保留为历史参考；评分及唯一下一任务见 [90](90_研究缺口与续研任务.md)。
+> **当前：R1-B.2｜2026-11-26｜候选使用方法。** 已形成六类任务选择主表、决策关系与真实历史对照，并补查项目知识恢复与 OS 实际成熟度；R1-B.2 尚未退出，独立使用、增量价值、成本与正式接入未证实。R1-B.1 总体地图与连播助手静态分析保留为历史参考；评分及唯一下一任务见 [90](90_研究缺口与续研任务.md)。
 
 **工程模型的作用，是让 AI 说清楚：为什么做、必须满足什么、产品怎样行为、由什么实现、怎样证明有效。** 使用时先找当前决定缺少的知识，再选择模型；已有需求、代码、测试和记录可以直接成为模型的载体，不必另建一套文件。
 
@@ -74,7 +74,59 @@ flowchart LR
 
 只读检查现有 OS：复用[能力/功能/Spec 指南][os-mapping]、[需求工作流](https://github.com/shopable-ai/ai-native-project-os/blob/1a1867640b7ee538bac21cd1a16d50f6a7e19c0f/docs/workflows/REQUIREMENT_DESIGN_WORKFLOW.md) §3–5、9–11；[功能需求卡][os-card]承载目标、正常/异常、状态矩阵、规则、已有资产、未知及验收方向；原 ADR/工程设计承载责任和候选方案；[Spec][os-spec]的 tasks、plan、acceptance、traceability 消费经批准的差量；[证据规则][os-evidence]承载观察与声明。选择问题可作为现有工作流/Skill 的候选阅读指引，不新增 Skill、契约、字段、类型，也不能绕过现有 Decision Gate。
 
-**当前结论：** 可以作为可选阅读方法使用；正式接入需独立证明边际价值。唯一下一任务见 [90 当前任务](90_研究缺口与续研任务.md#当前唯一下一任务r1-b3)。不重做连播助手实播，不启动旧 R1-C 引擎。
+### R1-B.2 补充：真正缺的是从项目资产恢复可决策知识（2026-11-26）
+
+此前用途表回答“某种模型有什么用”，任务表回答“不同任务可能需要什么”，但都未充分回答“AI 怎样找到当前可信事实、怎样发现资料不一致、何时可以停止查找”。仅凭任务名称或“缺什么就查什么”无法可靠识别自身未知；快捷键这种局部交互也可能跨越业务规则、状态、数据归属和外部副作用。**应按具体决定和可观察风险触发选模，而不是按任务标签机械选择。**
+
+#### 1. 从真实资料恢复知识，而非先创建模型
+
+| 可观察触发条件 | 必须补查的知识与来源 | 需要得到的可核对结论 |
+| --- | --- | --- |
+| 存量任务新增或修改一个操作入口 | 从项目入口 README/GOAL/需求卡找到目标和非目标；沿当前 UI/event → action → service 查调用与已有测试 | 用户结果、现有能力、共享入口及受影响责任；不能只搜按钮名称就断言没有能力 |
+| 同一个操作受会话、权限、时间、异步结果影响 | 从动作前置、状态字段、事件处理与失败分支恢复局部状态/规则/数据归属；检查正反测试 | 允许/拒绝/等待/恢复的条件、不可重复副作用、结果未知时的处理；仅读正常路径不够 |
+| 已有数据要保存、复用、同步或跨版本解释 | 从数据结构、读写入口、身份键和迁移/兼容代码核实范围；以测试核对边界 | 谁的数据、哪个版本、生命周期、覆盖优先级；不能用字段名称推断语义 |
+| 多入口、跨组件、站点或进程 | 从实际导入、调用、接口与适配器追踪消费者及责任，核对双方输入输出 | 改动应落在哪个共享能力或专属适配，哪些消费者不变；不能根据目录名假设架构 |
+| 声称完成、复用旧测试或读取历史实现 | 先冻结 Git、源码、候选包、正式包、部署/安装身份及实际证据的适用范围，分别核对 | 可以成立的版本化结论；不要把源代码、候选、正式包与运行结果合成一个“已完成” |
+
+查询从有权威来源的项目入口和实际调用路径开始。需求文档规定期望（尚未批准的仍是候选），代码描述现状实现，测试定义描述拟验证行为，运行记录只能支持其环境和版本；它们互相校对但不能相互替代。发生冲突时保留双方来源、版本与影响，定位是需求变更、实现偏差还是证据不适用。不要以最新文件时间或代码行为自动覆盖业务要求。
+
+最小决策记录只包含：**要决定什么 → 哪条事实及来源支持它 → 复用/修改/新增/不变/待确认 → 事前判据及仍缺证据**。可写入已有任务、需求卡、R0 inventory/gap matrix 或 Spec 的相应位置；不建新正式对象。当前任务若会改变行为却缺正常/异常/恢复判据，或尚不知道版本/动作归属，就不能用“没有必要继续建模”作为停止理由。
+
+#### 2. 实际增量核对：为什么旧答案不能直接用到当前发送队列
+
+本次只查版本/入口知识的恢复，不重做 H0/H1 对照或运行产品。OpenDesk 固定新快照 [b9398918](https://github.com/shopable-ai/opendesk-browser/tree/b9398918dc109a4ccb934fe60828d750b5614e7e/projects/ai-send-queue)（读取时 main）：
+
+| 需要判断什么 | 实读事实 | 会改变的工程决定 |
+| --- | --- | --- |
+| 当前支持哪些站点 | [README L3–9][now-readme] 与 [main.js L2–40][now-main] 为 ChatGPT、Gemini、DeepSeek；历史 r16 仅 ChatGPT | 不能将旧站点范围当现在事实；修改通用动作须考虑不同站点条件，不能把历史 ChatGPT 行为推广到另外两站 |
+| 皇冠与 Ctrl+Enter 是否永远完全等价 | [main.js L300–344][now-action]：enqueue 接收 paused/sendQueuedIfEmpty；后者可进入空框发送及 ChatGPT 首页首发分支；[L530–553][now-key]：Ctrl+Enter 调用无参数 enqueue()，并有授权调用与可信事件门 | 共享核心不等于全部行为等价；须检查调用参数、站点、会话状态与用户意图，不能沿用旧案例“两个入口完全等价”的表述 |
+| 当前版本是否已正式交付 | [tool.config.json][now-config] version=1.0.3、pageModule.revision=63；实际解析[正式 Tool JSON][now-package] version=1.0.2；[README L5][now-readme] 也称正式 1.0.2/r62、候选 1.0.3/r63 | 不因源码版本或候选测试声称正式包升级，不把两种身份混为一谈；该差异有文档说明，不断言产品缺陷 |
+| 当前运行证据覆盖什么 | [UI 验证 L3–18][now-proof] 记载 r63 专用 ChatGPT 标签的皇冠首发、续发、空态、错误复制和342项定向测试；用户原标签、Gemini、DeepSeek、正式安装升级、production 未验证。原始截图/候选位于本地 artifacts，本次未取或重跑 | 只能引用文档记载；不能把 r16 的旧快捷键回归或 r63 皇冠实测当成 r63 全站快捷键通过；如要声称当前完成，先取得对应身份与原生测试证据 |
+
+这不是对现行产品的缺陷报告或改动授权。本次未测试站点，也未修改业务；实际观察为文件内容和 JSON 字段。上一轮 H0/H1 历史案例用于说明共享入队保护，不提供跨版本永久行为定义。此补查展示了**来源、行为、状态、架构和证据知识为何必须按具体决定组合**。
+
+#### 3. 对已有 OS 的能力判断纠正
+
+固定 [AI-Project-OS 配置][current-os] 中 maturity=approved/partial/unverified；real_l2_requirement_migration、real_model_multi_run_evaluation、real_l2_policy_consumption、real_human_usability_test 等 hard_gates 均 unmet。仓库完整树仅发现 templates/skill/SKILL.md，不是已运行的工程知识选择 Skill；不能据此排除其他仓库/本地存在实现。[R0 恢复模板][current-r0] 已规定 inventory/gap matrix；[L2 SOP][current-sop] 已规定 R0、S2/S4 和证据边界；[AI 原生执行模型][current-execution] 已区分 retrieval、model_reasoning 与 agent_action，且明确是规范目标；[Skill 契约][current-skill] 限于单阶段局部职责。
+
+因此**已有承载与规范，不等于已证明真实 AI 能主动获取并使用工程知识**。本专题新增候选是具体选择、查询、事实冲突与停止规则，不重建 R0 或整个工作流，不将跨阶段方法封装成一个 Skill。实际是否能独立使用、在哪个既有局部消费者有效、成本是否合理仍需证据。
+
+[now-readme]: https://github.com/shopable-ai/opendesk-browser/blob/b9398918dc109a4ccb934fe60828d750b5614e7e/projects/ai-send-queue/README.zh-CN.md#L3-L9
+[now-main]: https://github.com/shopable-ai/opendesk-browser/blob/b9398918dc109a4ccb934fe60828d750b5614e7e/projects/ai-send-queue/src/page/main.js#L2-L40
+[now-action]: https://github.com/shopable-ai/opendesk-browser/blob/b9398918dc109a4ccb934fe60828d750b5614e7e/projects/ai-send-queue/src/page/main.js#L300-L344
+[now-key]: https://github.com/shopable-ai/opendesk-browser/blob/b9398918dc109a4ccb934fe60828d750b5614e7e/projects/ai-send-queue/src/page/main.js#L530-L553
+[now-config]: https://github.com/shopable-ai/opendesk-browser/blob/b9398918dc109a4ccb934fe60828d750b5614e7e/projects/ai-send-queue/tool.config.json
+[now-package]: https://github.com/shopable-ai/opendesk-browser/blob/b9398918dc109a4ccb934fe60828d750b5614e7e/projects/ai-send-queue/ai-send-queue.opendesk-tool.json
+[now-proof]: https://github.com/shopable-ai/opendesk-browser/blob/b9398918dc109a4ccb934fe60828d750b5614e7e/projects/ai-send-queue/UI-VERIFICATION.zh-CN.md#L3-L18
+[current-os]: https://github.com/shopable-ai/ai-native-project-os/blob/1a1867640b7ee538bac21cd1a16d50f6a7e19c0f/project-os.yaml
+[current-r0]: https://github.com/shopable-ai/ai-native-project-os/blob/1a1867640b7ee538bac21cd1a16d50f6a7e19c0f/templates/brownfield-project/README.md
+[current-sop]: https://github.com/shopable-ai/ai-native-project-os/blob/1a1867640b7ee538bac21cd1a16d50f6a7e19c0f/docs/workflows/L2_PROGRESSION.md
+[current-execution]: https://github.com/shopable-ai/ai-native-project-os/blob/1a1867640b7ee538bac21cd1a16d50f6a7e19c0f/docs/architecture/AI_NATIVE_EXECUTION_MODEL.md
+[current-skill]: https://github.com/shopable-ai/ai-native-project-os/blob/1a1867640b7ee538bac21cd1a16d50f6a7e19c0f/contracts/execution/skill-contract.yaml
+
+**当前状态：R1-B.2 尚未退出。** 以上是当前对话内补查与操作方法候选，不是独立试验。先完善可实际使用的方法并核验其应用；此前 R1-B.3 只保留为未启用的历史候选，见 [90](90_研究缺口与续研任务.md)。不新增续研任务或正式机制。
+
+
 
 
 ## 1. 固定研究背景与职责
