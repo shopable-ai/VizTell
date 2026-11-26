@@ -1,0 +1,1425 @@
+{
+  "research_id": "AI-NATIVE-ENGINEERING-MODEL-UNIVERSE-R1",
+  "revision": "R1-A.1",
+  "status": "candidate",
+  "date": "2026-11-26",
+  "repository_read_baseline": "91239889481bad3f42edb30e84e1012aa1901fc0",
+  "notice": "Exchange snapshot only; not a chosen persistence format. Up/down lists are illustrative; not a validated directed dependency graph.",
+  "domains": {
+    "D01": "战略价值与问题",
+    "D02": "利益相关者与系统边界",
+    "D03": "需求、质量与约束",
+    "D04": "产品能力与变体",
+    "D05": "场景、行为与业务规则",
+    "D06": "用户体验与交互",
+    "D07": "领域知识",
+    "D08": "架构、数据与接口",
+    "D09": "实施、计划与配置",
+    "D10": "安全、风险与异常",
+    "D11": "验证、证据与保障",
+    "D12": "决策、基线与变更",
+    "D13": "部署、运营与演化"
+  },
+  "models": [
+    {
+      "id": "M01",
+      "domain_id": "D01",
+      "name_zh": "问题与机会模型",
+      "name_en": "Problem and Opportunity Model",
+      "aliases": "Problem frame; Current-state assessment",
+      "purpose_and_unique_value": "确定真实痛点与机会，不把用户提出的解决手段当成问题",
+      "inputs": "用户叙述、观察、数据、现状调查",
+      "outputs": "有来源的问题、受影响对象、假设与机会",
+      "entities_attributes_relations": "Problem(id,context,frequency,severity); Observation; Opportunity; causes/affects",
+      "representations": "问题陈述、因果图、证据链接",
+      "upstream": [],
+      "downstream": [
+        "M02",
+        "M03",
+        "M04"
+      ],
+      "activation": "核心；有新需求或故障时使用",
+      "validation_checks": "问题指向对象及来源；原因与症状分离；未知原因显式记录",
+      "automation": "低：AI归纳候选，不能观察未取得的数据",
+      "human_confirmation": "用户或领域人员确认真实痛点、机会",
+      "maintenance_cost": "低",
+      "omission_risk": "错误地解决伪问题、过早锁定方案",
+      "references": [
+        "S01",
+        "S10",
+        "S12"
+      ],
+      "domain_name": "战略价值与问题",
+      "status": "candidate"
+    },
+    {
+      "id": "M02",
+      "domain_id": "D01",
+      "name_zh": "目标与价值模型",
+      "name_en": "Goal and Value Model",
+      "aliases": "Goal model; Outcome model; Goal graph",
+      "purpose_and_unique_value": "说明为何投入、期望什么结果及成功尺度",
+      "inputs": "问题、需求方、经营目标、研究事实",
+      "outputs": "目标、优先级、收益指标、替代目标和权衡",
+      "entities_attributes_relations": "Goal(outcome,target,scope); Metric(unit,threshold); Benefit; refines/contributes/conflicts",
+      "representations": "目标网络、指标表、AND/OR分解",
+      "upstream": [
+        "M01",
+        "M03"
+      ],
+      "downstream": [
+        "M05",
+        "M06",
+        "M08",
+        "M28"
+      ],
+      "activation": "核心；微小修改可只保留目标与原目标引用",
+      "validation_checks": "目标有可检验成功条件或显式未知；AND/OR分组；冲突有处理状态",
+      "automation": "中：可提议分解，成功尺度不能臆造",
+      "human_confirmation": "目标所有者批准价值、取舍、指标阈值",
+      "maintenance_cost": "低至中",
+      "omission_risk": "目标漂移，完成许多任务却未解决问题",
+      "references": [
+        "S10",
+        "S11",
+        "S12",
+        "S08"
+      ],
+      "domain_name": "战略价值与问题",
+      "status": "candidate"
+    },
+    {
+      "id": "M03",
+      "domain_id": "D02",
+      "name_zh": "利益相关者、关注点与需要模型",
+      "name_en": "Stakeholder Concern and Need Model",
+      "aliases": "Actor-need model; Stakeholder expectations",
+      "purpose_and_unique_value": "表达谁受到影响、需要什么和彼此依赖，而不是重建角色宇宙",
+      "inputs": "访谈、权限角色、角色宇宙中的角色ID",
+      "outputs": "关注点、需要、冲突、确认责任引用",
+      "entities_attributes_relations": "Stakeholder(roleRef,scope); Concern; Need; expresses/dependsOn/conflicts",
+      "representations": "关注点矩阵、演员依赖图",
+      "upstream": [
+        "M01",
+        "M02",
+        "M04"
+      ],
+      "downstream": [
+        "M05",
+        "M14",
+        "M28"
+      ],
+      "activation": "核心；只有明确相关角色时缩减",
+      "validation_checks": "每项关键需要有来源和责任方；冲突不自动抹平；角色ID可解析",
+      "automation": "低至中：提取和建议，非独立访谈",
+      "human_confirmation": "真实需求方确认其需要，治理方解决冲突",
+      "maintenance_cost": "低至中",
+      "omission_risk": "只服务开发者，遗漏用户、运营或平台要求",
+      "references": [
+        "S02",
+        "S03",
+        "S11",
+        "S08"
+      ],
+      "domain_name": "利益相关者与系统边界",
+      "status": "candidate"
+    },
+    {
+      "id": "M04",
+      "domain_id": "D02",
+      "name_zh": "系统上下文与范围模型",
+      "name_en": "System Context and Scope Model",
+      "aliases": "Context model; Boundary; ConOps context",
+      "purpose_and_unique_value": "区分系统内外、负责与不负责、外部环境",
+      "inputs": "问题、目标、已有系统、外部平台事实",
+      "outputs": "边界、外部系统、运行情境、排除项",
+      "entities_attributes_relations": "SystemOfInterest; ExternalSystem; Actor; Boundary; interactsWith/inScope",
+      "representations": "上下文图、范围表",
+      "upstream": [
+        "M01",
+        "M02",
+        "M03"
+      ],
+      "downstream": [
+        "M05",
+        "M10",
+        "M17",
+        "M20",
+        "M24"
+      ],
+      "activation": "核心；接口、权限、跨系统时细化",
+      "validation_checks": "边界明确；外部依赖有依据及责任人；排除项不被暗中纳入",
+      "automation": "中：代码可提取部分依赖，边界需确认",
+      "human_confirmation": "产品/架构负责人确认范围与外部假设",
+      "maintenance_cost": "低至中",
+      "omission_risk": "越权、范围失控、误将外部站点行为当产品行为",
+      "references": [
+        "S03",
+        "S07",
+        "S08",
+        "S22"
+      ],
+      "domain_name": "利益相关者与系统边界",
+      "status": "candidate"
+    },
+    {
+      "id": "M05",
+      "domain_id": "D03",
+      "name_zh": "需求模型",
+      "name_en": "Requirement Model",
+      "aliases": "Requirements graph; Requirement tree (view)",
+      "purpose_and_unique_value": "定义可验收的系统义务及其来源，而非功能清单",
+      "inputs": "目标、需要、规则、约束、场景",
+      "outputs": "需求语句、适用条件、验收条件及追溯关系",
+      "entities_attributes_relations": "Requirement(statement,scope,priority,acceptance,revision); derives/refines/satisfies",
+      "representations": "结构化条目、需求树视图、追溯矩阵",
+      "upstream": [
+        "M02",
+        "M03",
+        "M04",
+        "M06",
+        "M07",
+        "M10",
+        "M13"
+      ],
+      "downstream": [
+        "M08",
+        "M15",
+        "M17",
+        "M20",
+        "M26"
+      ],
+      "activation": "核心；所有变更至少有一个需求或缺陷约束",
+      "validation_checks": "批准项可验证且有来源；冲突已处置；分解满足覆盖；排除项有理由",
+      "automation": "中：可生成候选、去重和检查，确认前非事实",
+      "human_confirmation": "需求所有者批准范围、验收条件与冲突处置",
+      "maintenance_cost": "中",
+      "omission_risk": "需求遗漏、无法知道实现是否满足承诺",
+      "references": [
+        "S02",
+        "S07",
+        "S08",
+        "S37"
+      ],
+      "domain_name": "需求、质量与约束",
+      "status": "candidate"
+    },
+    {
+      "id": "M06",
+      "domain_id": "D03",
+      "name_zh": "质量属性与度量模型",
+      "name_en": "Quality Attribute and Measurement Model",
+      "aliases": "Quality model; Quality scenarios",
+      "purpose_and_unique_value": "定义质量特性、量化尺度和预算，避免只描述功能",
+      "inputs": "目标、环境、用户/安全关注、质量分类",
+      "outputs": "质量属性、测量条件、目标值及测量方法",
+      "entities_attributes_relations": "QualityAttribute; Metric(unit,threshold,window); QualityScenario; measures/qualifies",
+      "representations": "质量属性场景、指标表、预算分配",
+      "upstream": [
+        "M02",
+        "M03",
+        "M04",
+        "M24"
+      ],
+      "downstream": [
+        "M05",
+        "M17",
+        "M26",
+        "M31"
+      ],
+      "activation": "核心覆盖检查；独立详细模型在性能、可靠性、安全等显著时启用",
+      "validation_checks": "单位、负载、环境、阈值明确或未知；度量对应目标；不把产品分类当实际达标",
+      "automation": "中：分类检查可自动，目标值需事实",
+      "human_confirmation": "产品与质量负责人确认容许误差与取舍",
+      "maintenance_cost": "中",
+      "omission_risk": "功能可用但过慢、误操作、不可维护",
+      "references": [
+        "S06",
+        "S08",
+        "S03"
+      ],
+      "domain_name": "需求、质量与约束",
+      "status": "candidate"
+    },
+    {
+      "id": "M07",
+      "domain_id": "D03",
+      "name_zh": "约束与政策模型",
+      "name_en": "Constraint and Policy Model",
+      "aliases": "Constraint catalog; Compliance obligation",
+      "purpose_and_unique_value": "分离外部强制规则、设计限制、权限政策与偏好",
+      "inputs": "平台合同、法规、业务治理、已批准决策",
+      "outputs": "有作用范围和来源的义务、禁止项、豁免",
+      "entities_attributes_relations": "Constraint(predicate,scope,authority,hardness); Policy; Exception; constrains",
+      "representations": "约束表、谓词、策略规则",
+      "upstream": [
+        "M03",
+        "M04",
+        "M24",
+        "M29"
+      ],
+      "downstream": [
+        "M05",
+        "M13",
+        "M15",
+        "M17",
+        "M20",
+        "M26"
+      ],
+      "activation": "核心覆盖检查；存在权限、合规、兼容性时细化",
+      "validation_checks": "强制性及有效期明确；外部规则版本可查；豁免有授权；冲突需处置",
+      "automation": "中：机械检查高，法律/平台解释需人工",
+      "human_confirmation": "有权决策者批准政策和豁免",
+      "maintenance_cost": "中",
+      "omission_risk": "架构越界、违反权限、把偏好当不可改变约束",
+      "references": [
+        "S02",
+        "S04",
+        "S07",
+        "S26"
+      ],
+      "domain_name": "需求、质量与约束",
+      "status": "candidate"
+    },
+    {
+      "id": "M08",
+      "domain_id": "D04",
+      "name_zh": "产品能力与功能模型",
+      "name_en": "Capability and Feature Model",
+      "aliases": "Feature catalog; Capability map; Feature tree (view)",
+      "purpose_and_unique_value": "组织产品提供的可感知能力，映射需求而不重复其义务",
+      "inputs": "目标、需求、场景、产品范围",
+      "outputs": "能力层次、功能关系、可交付边界",
+      "entities_attributes_relations": "Capability; Feature(scope,availability); realizes/supports/dependsOn",
+      "representations": "功能目录、能力地图、关系图",
+      "upstream": [
+        "M02",
+        "M05",
+        "M10"
+      ],
+      "downstream": [
+        "M09",
+        "M15",
+        "M17",
+        "M23",
+        "M26"
+      ],
+      "activation": "核心或并入需求；多功能产品独立维护",
+      "validation_checks": "核心功能有需求依据；未交付功能状态明确；无虚构功能；依赖区分价值与顺序",
+      "automation": "中：可从需求候选提取或从代码发现",
+      "human_confirmation": "产品负责人确认能力范围与交付优先级",
+      "maintenance_cost": "低至中",
+      "omission_risk": "需求与产品功能错配、范围膨胀",
+      "references": [
+        "S12",
+        "S13",
+        "S14"
+      ],
+      "domain_name": "产品能力与变体",
+      "status": "candidate"
+    },
+    {
+      "id": "M09",
+      "domain_id": "D04",
+      "name_zh": "变体与产品配置模型",
+      "name_en": "Variability and Product Configuration Model",
+      "aliases": "Feature variability model; Product-line configuration",
+      "purpose_and_unique_value": "表达版本、站点、套餐、可选组合及合法配置",
+      "inputs": "能力、平台支持范围、商业政策",
+      "outputs": "变体组、可选项、互斥和依赖规则",
+      "entities_attributes_relations": "Variant; FeatureGroup(min,max); Configuration; requires/excludes/selects",
+      "representations": "特征模型、约束表达式、配置表",
+      "upstream": [
+        "M07",
+        "M08",
+        "M20"
+      ],
+      "downstream": [
+        "M17",
+        "M21",
+        "M26",
+        "M30"
+      ],
+      "activation": "条件：多站、多版本、插件或套餐",
+      "validation_checks": "组合可满足；不存在死特征；覆盖关键配置；区分编译和运行变体",
+      "automation": "高：约束求解与组合校验；语义来源需人工",
+      "human_confirmation": "产品/平台负责人确认可用配置和套餐",
+      "maintenance_cost": "中",
+      "omission_risk": "配置组合冲突、仅测试一种版本",
+      "references": [
+        "S13",
+        "S14",
+        "S12"
+      ],
+      "domain_name": "产品能力与变体",
+      "status": "candidate"
+    },
+    {
+      "id": "M10",
+      "domain_id": "D05",
+      "name_zh": "场景与用例模型",
+      "name_en": "Scenario and Use Case Model",
+      "aliases": "Use case; Scenario catalog",
+      "purpose_and_unique_value": "表达参与者在前置条件下如何完成目标及异常情境",
+      "inputs": "目标、需要、范围、规则、观察",
+      "outputs": "主路径、替代路径、失败路径、后置条件",
+      "entities_attributes_relations": "Scenario(actor,precondition,trigger,outcome); Step; Alternative; exercises",
+      "representations": "用例文本、场景图、Given/When/Then",
+      "upstream": [
+        "M02",
+        "M03",
+        "M04",
+        "M05",
+        "M13"
+      ],
+      "downstream": [
+        "M11",
+        "M12",
+        "M14",
+        "M15",
+        "M26"
+      ],
+      "activation": "核心；Bug可仅写最小复现场景",
+      "validation_checks": "关键目标覆盖主/失败路径；前置条件和可观测结果明确；禁止将缺失场景当不可能",
+      "automation": "中：生成候选/组合；真实场景需观察",
+      "human_confirmation": "需求/用户代表确认重要场景与异常期望",
+      "maintenance_cost": "中",
+      "omission_risk": "漏测暂停、换源、超时、无权限等",
+      "references": [
+        "S07",
+        "S08",
+        "S17",
+        "S20"
+      ],
+      "domain_name": "场景、行为与业务规则",
+      "status": "candidate"
+    },
+    {
+      "id": "M11",
+      "domain_id": "D05",
+      "name_zh": "业务过程模型",
+      "name_en": "Business Process Model",
+      "aliases": "Process; activity model; business workflow",
+      "purpose_and_unique_value": "表达业务活动顺序、分支、责任交接，区别研发任务",
+      "inputs": "场景、领域事件、服务交接",
+      "outputs": "业务活动、分支、交接、异常和结束条件",
+      "entities_attributes_relations": "Process; Activity; Gateway; Actor; MessageFlow; precedes/branches",
+      "representations": "BPMN、活动图、泳道",
+      "upstream": [
+        "M03",
+        "M10",
+        "M13",
+        "M16"
+      ],
+      "downstream": [
+        "M12",
+        "M14",
+        "M15",
+        "M20",
+        "M26"
+      ],
+      "activation": "条件：多步骤业务、异步审批、多人交接",
+      "validation_checks": "有可达终点和异常路径；责任明确；消息匹配；有界/可终止条件",
+      "automation": "中：可发现路径和机械检查",
+      "human_confirmation": "业务负责人确认实际过程及例外",
+      "maintenance_cost": "中",
+      "omission_risk": "业务交接错误、错误时序、无限等待",
+      "references": [
+        "S15",
+        "S17",
+        "S19"
+      ],
+      "domain_name": "场景、行为与业务规则",
+      "status": "candidate"
+    },
+    {
+      "id": "M12",
+      "domain_id": "D05",
+      "name_zh": "行为、状态与事件模型",
+      "name_en": "Behavior, State and Event Model",
+      "aliases": "State machine; event model; interaction behavior",
+      "purpose_and_unique_value": "描述系统在事件和状态下允许的变化及时间约束",
+      "inputs": "场景、领域事件、接口、业务规则",
+      "outputs": "状态、迁移、守卫、不变量、事件/时间规则",
+      "entities_attributes_relations": "State; Event; Transition(guard,action,deadline); Invariant; transitionsTo/triggers",
+      "representations": "状态机、时序图、事件表",
+      "upstream": [
+        "M10",
+        "M11",
+        "M13",
+        "M16",
+        "M20"
+      ],
+      "downstream": [
+        "M15",
+        "M18",
+        "M22",
+        "M26"
+      ],
+      "activation": "条件：状态、异步、并发、定时或副作用显著",
+      "validation_checks": "不可达状态、非法迁移、重复事件、竞态、超时/取消；关键不变量",
+      "automation": "中至高：可抽取状态及有限模型检查",
+      "human_confirmation": "领域与架构确认事件语义和正确行为",
+      "maintenance_cost": "中至高",
+      "omission_risk": "误触发、重复提交、卡死或失去状态",
+      "references": [
+        "S07",
+        "S08",
+        "S17"
+      ],
+      "domain_name": "场景、行为与业务规则",
+      "status": "candidate"
+    },
+    {
+      "id": "M13",
+      "domain_id": "D05",
+      "name_zh": "业务规则与判定模型",
+      "name_en": "Business Rule and Decision Logic Model",
+      "aliases": "Decision table; Rule model",
+      "purpose_and_unique_value": "定义条件到业务结果的确定性规则，不是工程选型决定",
+      "inputs": "领域知识、约束、场景、需求",
+      "outputs": "规则、优先级、覆盖、默认/未知处理",
+      "entities_attributes_relations": "BusinessRule(condition,outcome,priority,scope); DecisionLogic; overrides/conflicts/appliesTo",
+      "representations": "判定表、DMN、谓词",
+      "upstream": [
+        "M05",
+        "M07",
+        "M10",
+        "M16"
+      ],
+      "downstream": [
+        "M12",
+        "M15",
+        "M19",
+        "M22",
+        "M26"
+      ],
+      "activation": "条件：多个规则、阈值、继承/覆盖；核心规则可并入M05",
+      "validation_checks": "决策表覆盖适用输入；优先级无歧义；冲突或未知显式；边界值",
+      "automation": "高：结构化表可执行/生成测试；政策要人工确定",
+      "human_confirmation": "产品/领域负责人批准语义和默认策略",
+      "maintenance_cost": "中",
+      "omission_risk": "规则冲突、同一条件不同行为、误用继承",
+      "references": [
+        "S16",
+        "S19",
+        "S07"
+      ],
+      "domain_name": "场景、行为与业务规则",
+      "status": "candidate"
+    },
+    {
+      "id": "M14",
+      "domain_id": "D06",
+      "name_zh": "用户旅程与服务体验模型",
+      "name_en": "User Journey and Service Experience Model",
+      "aliases": "Journey map; Service blueprint",
+      "purpose_and_unique_value": "表达用户跨触点目标、体验、摩擦及后台服务贡献",
+      "inputs": "用户研究、目标、场景、过程",
+      "outputs": "旅程阶段、触点、情绪证据、痛点及服务交接",
+      "entities_attributes_relations": "Journey; Touchpoint; UserAction; PainPoint; ServiceActivity; relatesTo",
+      "representations": "旅程图、服务蓝图（有后台事实时）",
+      "upstream": [
+        "M01",
+        "M03",
+        "M10",
+        "M11"
+      ],
+      "downstream": [
+        "M05",
+        "M15",
+        "M06",
+        "M31"
+      ],
+      "activation": "条件：多触点、有用户体验问题；微改可简述",
+      "validation_checks": "旅程服务用户目标；体验事实/假设分开；后台步骤与实际责任匹配",
+      "automation": "低至中：可组织资料，不得编造情绪或访谈",
+      "human_confirmation": "用户研究/产品确认真实体验，服务方确认交接",
+      "maintenance_cost": "中",
+      "omission_risk": "只优化单页面而破坏完整任务体验",
+      "references": [
+        "S20",
+        "S21"
+      ],
+      "domain_name": "用户体验与交互",
+      "status": "candidate"
+    },
+    {
+      "id": "M15",
+      "domain_id": "D06",
+      "name_zh": "交互与信息架构模型",
+      "name_en": "Interaction and Information Architecture Model",
+      "aliases": "UI model; Navigation model; UI tree (view)",
+      "purpose_and_unique_value": "表达页面/组件、可用操作、反馈、导航与无障碍行为",
+      "inputs": "需求、功能、场景、旅程、规则",
+      "outputs": "视图结构、交互契约、可用性约束、导航关系",
+      "entities_attributes_relations": "Screen; UIElement; Action; ViewState; Navigation; displays/triggers",
+      "representations": "交互规格、线框、原型、导航图",
+      "upstream": [
+        "M05",
+        "M08",
+        "M10",
+        "M12",
+        "M13",
+        "M14"
+      ],
+      "downstream": [
+        "M18",
+        "M22",
+        "M26"
+      ],
+      "activation": "条件：存在交互界面；无UI项目不启用",
+      "validation_checks": "操作→状态→反馈闭环；空/错/等待/权限；键盘与焦点；行为不与规则矛盾",
+      "automation": "中：可从设计/代码提取，UX需真实验证",
+      "human_confirmation": "UX与用户代表确认任务体验及可访问性",
+      "maintenance_cost": "中",
+      "omission_risk": "按钮有外观无业务行为，异常无反馈",
+      "references": [
+        "S20",
+        "S21",
+        "S17",
+        "S06"
+      ],
+      "domain_name": "用户体验与交互",
+      "status": "candidate"
+    },
+    {
+      "id": "M16",
+      "domain_id": "D07",
+      "name_zh": "领域概念与上下文模型",
+      "name_en": "Domain Concept and Context Model",
+      "aliases": "Domain model; Glossary; Bounded contexts",
+      "purpose_and_unique_value": "表达业务实体与语义边界，独立于存储结构",
+      "inputs": "术语、业务规则、业务事件、观察",
+      "outputs": "统一语言、实体/值对象、上下文、语义关系",
+      "entities_attributes_relations": "DomainConcept; Entity; ValueObject; Context; Event; relatesTo/owns/mapsTo",
+      "representations": "领域图、词汇表、上下文地图",
+      "upstream": [
+        "M01",
+        "M03",
+        "M04",
+        "M10",
+        "M13"
+      ],
+      "downstream": [
+        "M12",
+        "M17",
+        "M19",
+        "M20"
+      ],
+      "activation": "核心概念随项目内嵌；复杂领域独立",
+      "validation_checks": "术语同名异义分上下文；身份/不变量明确；不同上下文映射显式",
+      "automation": "中：可候选抽取，语义不能由表名反推",
+      "human_confirmation": "领域专家确认概念与业务边界",
+      "maintenance_cost": "中",
+      "omission_risk": "数据库结构替代业务语义，跨模块概念混乱",
+      "references": [
+        "S18",
+        "S19",
+        "S13",
+        "S17"
+      ],
+      "domain_name": "领域知识",
+      "status": "candidate"
+    },
+    {
+      "id": "M17",
+      "domain_id": "D08",
+      "name_zh": "架构结构与分配模型",
+      "name_en": "Architecture Structure and Allocation Model",
+      "aliases": "Component model; System decomposition; C4 views",
+      "purpose_and_unique_value": "表达组件边界、职责、依赖及需求分配，区分计划与现状",
+      "inputs": "范围、需求、领域、质量约束、代码观察",
+      "outputs": "系统/组件结构、责任、允许依赖与分配",
+      "entities_attributes_relations": "Component; Responsibility; Port; Allocation; dependsOn/contains/satisfies",
+      "representations": "C4视图、结构图、依赖规则",
+      "upstream": [
+        "M04",
+        "M05",
+        "M06",
+        "M07",
+        "M08",
+        "M16",
+        "M29"
+      ],
+      "downstream": [
+        "M18",
+        "M19",
+        "M20",
+        "M21",
+        "M22",
+        "M26"
+      ],
+      "activation": "核心轻量；跨模块、权限边界时细化",
+      "validation_checks": "职责与边界一致；禁止依赖检查；循环按层级政策判断；需求分配有依据",
+      "automation": "中至高：静态依赖可抽取，设计责任需确认",
+      "human_confirmation": "架构负责人确认边界和权衡",
+      "maintenance_cost": "中",
+      "omission_risk": "强耦合、跨站逻辑侵入核心、重复实现",
+      "references": [
+        "S03",
+        "S07",
+        "S22",
+        "S33"
+      ],
+      "domain_name": "架构、数据与接口",
+      "status": "candidate"
+    },
+    {
+      "id": "M18",
+      "domain_id": "D08",
+      "name_zh": "运行时协作模型",
+      "name_en": "Runtime Collaboration Model",
+      "aliases": "Dynamic architecture; Sequence model",
+      "purpose_and_unique_value": "表达运行中的调用、消息、并发、失败和责任转移",
+      "inputs": "架构结构、场景、状态、接口",
+      "outputs": "调用顺序、异步交互、错误/重试与时序约束",
+      "entities_attributes_relations": "Interaction; Participant; Message; Correlation; invokes/returns",
+      "representations": "时序图、运行轨迹、协议状态表",
+      "upstream": [
+        "M10",
+        "M12",
+        "M15",
+        "M17",
+        "M20"
+      ],
+      "downstream": [
+        "M22",
+        "M24",
+        "M26",
+        "M31"
+      ],
+      "activation": "条件：跨组件调用、异步、消息或并发",
+      "validation_checks": "消息与接口匹配；顺序/并发条件；超时、取消、幂等和重复回执",
+      "automation": "中：静态/运行追踪可提取部分",
+      "human_confirmation": "架构及接口所有者确认行为契约",
+      "maintenance_cost": "中",
+      "omission_risk": "回执不可信、竞争、重复执行",
+      "references": [
+        "S07",
+        "S17",
+        "S22"
+      ],
+      "domain_name": "架构、数据与接口",
+      "status": "candidate"
+    },
+    {
+      "id": "M19",
+      "domain_id": "D08",
+      "name_zh": "数据结构与生命周期模型",
+      "name_en": "Data Structure and Lifecycle Model",
+      "aliases": "Information model; ER model; Data lineage",
+      "purpose_and_unique_value": "定义数据结构、键、所有权、读写、迁移、保留和删除",
+      "inputs": "领域概念、接口、规则、政策、现存数据",
+      "outputs": "逻辑/物理映射、约束、兼容策略及数据流",
+      "entities_attributes_relations": "DataEntity; Field(type,unit,nullable); SchemaVersion; DataFlow; owns/mapsTo",
+      "representations": "ER图、schema、数据生命周期表",
+      "upstream": [
+        "M07",
+        "M13",
+        "M16",
+        "M17",
+        "M20"
+      ],
+      "downstream": [
+        "M22",
+        "M24",
+        "M26",
+        "M30",
+        "M32"
+      ],
+      "activation": "条件：持久化、传输或重要数据处理；核心数据可内嵌",
+      "validation_checks": "类型、唯一性、引用、单位、旧版兼容、删除/保留、写入冲突",
+      "automation": "高：结构检查可自动，数据政策需确认",
+      "human_confirmation": "数据所有者确认语义、保留和隐私",
+      "maintenance_cost": "中至高",
+      "omission_risk": "数据丢失、版本冲突、错误迁移、泄露",
+      "references": [
+        "S07",
+        "S17",
+        "S18",
+        "S38"
+      ],
+      "domain_name": "架构、数据与接口",
+      "status": "candidate"
+    },
+    {
+      "id": "M20",
+      "domain_id": "D08",
+      "name_zh": "接口与集成契约模型",
+      "name_en": "Interface and Integration Contract Model",
+      "aliases": "API contract; Protocol model; Adapter contract",
+      "purpose_and_unique_value": "定义组件之间承诺的输入、输出、错误、权限和兼容性",
+      "inputs": "边界、需求、架构、数据、外部文档",
+      "outputs": "操作/消息契约、版本、错误及兼容边界",
+      "entities_attributes_relations": "Interface; Operation; Request; Response; Error; Version; provides/requires",
+      "representations": "OpenAPI等接口描述、协议表、类型定义",
+      "upstream": [
+        "M04",
+        "M05",
+        "M07",
+        "M12",
+        "M17",
+        "M19"
+      ],
+      "downstream": [
+        "M18",
+        "M21",
+        "M22",
+        "M24",
+        "M26"
+      ],
+      "activation": "条件：跨边界通信或公共模块接口",
+      "validation_checks": "输入输出与schema一致；异常/未知回执；鉴权；版本兼容；消费者覆盖",
+      "automation": "高：schema/契约测试可自动；语义需双方确认",
+      "human_confirmation": "提供方和消费方确认边界及兼容策略",
+      "maintenance_cost": "中",
+      "omission_risk": "接口漂移、错误成功回执、不可独立演化",
+      "references": [
+        "S07",
+        "S17",
+        "S30",
+        "S28"
+      ],
+      "domain_name": "架构、数据与接口",
+      "status": "candidate"
+    },
+    {
+      "id": "M21",
+      "domain_id": "D13",
+      "name_zh": "部署与环境模型",
+      "name_en": "Deployment and Environment Model",
+      "aliases": "Deployment topology; Environment manifest",
+      "purpose_and_unique_value": "表达产物实际运行位置、配置、依赖和发布环境",
+      "inputs": "架构、配置、部署脚本、平台事实",
+      "outputs": "拓扑、运行环境、权限、部署及回滚目标",
+      "entities_attributes_relations": "Environment; DeploymentNode; Artifact; Config; deploysTo/requires",
+      "representations": "部署图、环境清单、部署配置",
+      "upstream": [
+        "M04",
+        "M07",
+        "M09",
+        "M17",
+        "M20",
+        "M30"
+      ],
+      "downstream": [
+        "M24",
+        "M26",
+        "M27",
+        "M31",
+        "M32"
+      ],
+      "activation": "核心最小环境身份；多环境/发布时独立",
+      "validation_checks": "环境可复现；运行版本可识别；权限与配置正确；回滚路径",
+      "automation": "高：部署配置可抽取；真实环境需执行核验",
+      "human_confirmation": "发布/平台负责人批准生产目标与权限",
+      "maintenance_cost": "中",
+      "omission_risk": "测试环境与生产不一致、无法复跑或回滚",
+      "references": [
+        "S05",
+        "S17",
+        "S22",
+        "S27"
+      ],
+      "domain_name": "部署、运营与演化",
+      "status": "candidate"
+    },
+    {
+      "id": "M22",
+      "domain_id": "D09",
+      "name_zh": "实现事实与工程资产模型",
+      "name_en": "Implementation and Artifact Inventory Model",
+      "aliases": "As-built model; Code inventory; Artifact mapping",
+      "purpose_and_unique_value": "记录实际代码、符号、构建产物和实际依赖，与设计分开",
+      "inputs": "固定提交、代码解析、构建记录",
+      "outputs": "实现实体、符号定位、产物版本、实际关系",
+      "entities_attributes_relations": "Implementation(symbol,commit,blob); Artifact(hash); CodeDependency; implements/builtFrom",
+      "representations": "代码索引、依赖图、构建清单",
+      "upstream": [
+        "M17",
+        "M18",
+        "M19",
+        "M20",
+        "M23"
+      ],
+      "downstream": [
+        "M26",
+        "M27",
+        "M30",
+        "M32"
+      ],
+      "activation": "核心；现有项目变更必须定位到真实代码",
+      "validation_checks": "路径与符号可解析；提交固定；产物有来源；映射待确认不得冒充实现",
+      "automation": "高：静态与构建事实；实现语义需审查",
+      "human_confirmation": "开发/架构确认实现对应义务与例外",
+      "maintenance_cost": "低至中（自动化后）",
+      "omission_risk": "文档自说自话、错误判断代码已交付",
+      "references": [
+        "S29",
+        "S27",
+        "S28",
+        "S22"
+      ],
+      "domain_name": "实施、计划与配置",
+      "status": "candidate"
+    },
+    {
+      "id": "M23",
+      "domain_id": "D09",
+      "name_zh": "工程任务与资源计划模型",
+      "name_en": "Engineering Task and Resource Plan Model",
+      "aliases": "Task graph; WBS; Task DAG (projection)",
+      "purpose_and_unique_value": "表达工程工作、交付、资源及先决依赖，不定义主工作流",
+      "inputs": "需求、架构、风险、验证义务、工作流契约",
+      "outputs": "任务、完成条件、责任引用、资源与依赖",
+      "entities_attributes_relations": "Task(status,estimate,doneCriteria); WorkProduct; Resource; produces/dependsOn",
+      "representations": "WBS、任务图、计划表；本次可调度任务DAG",
+      "upstream": [
+        "M05",
+        "M17",
+        "M24",
+        "M26",
+        "M30"
+      ],
+      "downstream": [
+        "M22",
+        "M27",
+        "M30"
+      ],
+      "activation": "核心轻量；多人、多设备时细化",
+      "validation_checks": "任务有义务或理由；依赖可调度；未完成状态不等于需求未满足/已满足；资源约束",
+      "automation": "中至高：候选计划和依赖检查；估算不确定",
+      "human_confirmation": "负责人确认分工、估算和关键顺序",
+      "maintenance_cost": "低至中",
+      "omission_risk": "执行遗漏、重复任务、无法并行或交接",
+      "references": [
+        "S04",
+        "S05",
+        "S12",
+        "S08"
+      ],
+      "domain_name": "实施、计划与配置",
+      "status": "candidate"
+    },
+    {
+      "id": "M24",
+      "domain_id": "D10",
+      "name_zh": "风险、威胁与危害模型",
+      "name_en": "Risk, Threat and Hazard Model",
+      "aliases": "Risk register; Threat model; Hazard analysis",
+      "purpose_and_unique_value": "表达潜在不利事件、影响、缓解、剩余风险与所有者",
+      "inputs": "目标、数据、边界、外部事实、运行经验",
+      "outputs": "风险条目、威胁情景、控制措施及待验证义务",
+      "entities_attributes_relations": "Risk(likelihood,impact,owner); Threat; Asset; Mitigation; threatens/mitigates",
+      "representations": "风险登记、攻击面/信任边界图、条件式危害分析",
+      "upstream": [
+        "M02",
+        "M04",
+        "M07",
+        "M17",
+        "M19",
+        "M20",
+        "M31"
+      ],
+      "downstream": [
+        "M05",
+        "M07",
+        "M26",
+        "M28",
+        "M29"
+      ],
+      "activation": "核心风险筛查；敏感权限/安全/高可靠性时深化",
+      "validation_checks": "关键资产有风险覆盖；控制与验证对应；剩余风险有批准；不确定性显式",
+      "automation": "中：识别候选与机械追踪，风险判断非事实",
+      "human_confirmation": "风险所有者/安全负责人确认风险和残余接受",
+      "maintenance_cost": "中至高",
+      "omission_risk": "未知威胁、误授权、风险接受无责任",
+      "references": [
+        "S04",
+        "S06",
+        "S26",
+        "S25"
+      ],
+      "domain_name": "安全、风险与异常",
+      "status": "candidate"
+    },
+    {
+      "id": "M25",
+      "domain_id": "D10",
+      "name_zh": "缺陷、异常与事件模型",
+      "name_en": "Defect, Anomaly and Incident Model",
+      "aliases": "Issue model; Nonconformance; Incident",
+      "purpose_and_unique_value": "区分已经观测的异常和未来可能风险，保留复现证据",
+      "inputs": "用户反馈、日志、失败测试、运行事件",
+      "outputs": "缺陷事实、复现条件、影响、原因候选、修复义务",
+      "entities_attributes_relations": "Issue(severity,state,observedAt); Observation; Repro; CauseHypothesis; violates/affects",
+      "representations": "缺陷记录、复现表、因果图",
+      "upstream": [
+        "M22",
+        "M27",
+        "M31"
+      ],
+      "downstream": [
+        "M01",
+        "M05",
+        "M23",
+        "M24",
+        "M26",
+        "M30"
+      ],
+      "activation": "条件：出现缺陷、事故或不符合项；Bug修复必需",
+      "validation_checks": "事实与根因假设分离；可复现或明确不可复现；关闭关联修复及复验",
+      "automation": "中：可聚类和关联；根因需确认",
+      "human_confirmation": "报告者/工程及质量人员确认复现和关闭",
+      "maintenance_cost": "低至中",
+      "omission_risk": "把症状当根因，重复修复，错误关闭缺陷",
+      "references": [
+        "S04",
+        "S05",
+        "S08",
+        "S24"
+      ],
+      "domain_name": "安全、风险与异常",
+      "status": "candidate"
+    },
+    {
+      "id": "M26",
+      "domain_id": "D11",
+      "name_zh": "验证与确认规格模型",
+      "name_en": "Verification and Validation Specification Model",
+      "aliases": "V&V plan; Test model; Test matrix (view)",
+      "purpose_and_unique_value": "定义用什么方法和条件证明义务或用户目标，独立于执行结果",
+      "inputs": "需求、质量、规则、风险、场景、接口",
+      "outputs": "验证义务、测试/分析/审查规格、接受准则",
+      "entities_attributes_relations": "VerificationObligation; TestCase(precondition,oracle,method); ValidationCriterion; verifies/validates",
+      "representations": "测试用例、覆盖矩阵、属性检查",
+      "upstream": [
+        "M02",
+        "M05",
+        "M06",
+        "M10",
+        "M12",
+        "M13",
+        "M20",
+        "M24"
+      ],
+      "downstream": [
+        "M23",
+        "M27",
+        "M28"
+      ],
+      "activation": "核心；高风险项需独立验证方法",
+      "validation_checks": "每项有效义务有方法及可观测判据；风险/负面场景覆盖；验证与确认分开",
+      "automation": "中至高：可生成候选及覆盖计算；oracle需验证",
+      "human_confirmation": "质量/需求所有者确认测试判据与用户确认方法",
+      "maintenance_cost": "中",
+      "omission_risk": "有测试但不测关键需求，或测试了错误行为",
+      "references": [
+        "S02",
+        "S07",
+        "S08",
+        "S09"
+      ],
+      "domain_name": "验证、证据与保障",
+      "status": "candidate"
+    },
+    {
+      "id": "M27",
+      "domain_id": "D11",
+      "name_zh": "验证执行与证据模型",
+      "name_en": "Verification Execution and Evidence Model",
+      "aliases": "Test run; Evidence record; Provenance view",
+      "purpose_and_unique_value": "记录实际执行、环境、版本、结果、原始证据与适用性",
+      "inputs": "验证规格、实际产物、执行器、环境",
+      "outputs": "可追溯结果、证据定位、有效/失效/未知状态",
+      "entities_attributes_relations": "TestRun; Result(outcome); Evidence(hash,source,scope,validity); Environment; generatedBy/observedOn/supports",
+      "representations": "结构化回执、日志、截图引用、证据表",
+      "upstream": [
+        "M21",
+        "M22",
+        "M26",
+        "M30"
+      ],
+      "downstream": [
+        "M25",
+        "M28",
+        "M30"
+      ],
+      "activation": "核心；未执行必须明确记录",
+      "validation_checks": "结果可追溯到用例、版本、环境；不可将历史通过推广；失败/阻塞不伪装通过",
+      "automation": "高：捕获与校验可自动；真实结果由实际执行产生",
+      "human_confirmation": "验证人确认环境与证据适用性；批准重用",
+      "maintenance_cost": "中（自动后低）",
+      "omission_risk": "伪验收、旧版本证据误用、跨设备不能复核",
+      "references": [
+        "S08",
+        "S09",
+        "S24",
+        "S27"
+      ],
+      "domain_name": "验证、证据与保障",
+      "status": "candidate"
+    },
+    {
+      "id": "M28",
+      "domain_id": "D11",
+      "name_zh": "保障论证与验收模型",
+      "name_en": "Assurance Argument and Acceptance Model",
+      "aliases": "Assurance case; Claim-argument-evidence; Acceptance record",
+      "purpose_and_unique_value": "区分证据与结论，说明为何足以接受目标及残余风险",
+      "inputs": "目标、验证义务、证据、风险、批准规则",
+      "outputs": "主张、论证、反证、覆盖范围及验收决定",
+      "entities_attributes_relations": "Claim(scope); Argument; EvidenceRef; Rebuttal; Acceptance; supports/refutes/accepts",
+      "representations": "轻量验收表；高风险用GSN/SACM式论证",
+      "upstream": [
+        "M02",
+        "M03",
+        "M24",
+        "M26",
+        "M27",
+        "M29"
+      ],
+      "downstream": [
+        "M30",
+        "M31",
+        "M32"
+      ],
+      "activation": "核心简要；高可靠性/高风险用结构化论证",
+      "validation_checks": "主张依赖证据及论证；反证未解决不能接受；确认者有权限；范围版本清楚",
+      "automation": "低至中：可检查链路，不能由AI自动批准",
+      "human_confirmation": "用户/授权验收者接受，必要时独立审查",
+      "maintenance_cost": "中至高",
+      "omission_risk": "把测试PASS当需求已全面满足",
+      "references": [
+        "S08",
+        "S25",
+        "S24"
+      ],
+      "domain_name": "验证、证据与保障",
+      "status": "candidate"
+    },
+    {
+      "id": "M29",
+      "domain_id": "D12",
+      "name_zh": "工程决策与理由模型",
+      "name_en": "Engineering Decision and Rationale Model",
+      "aliases": "ADR; Decision log; Trade-off",
+      "purpose_and_unique_value": "记录为什么选择方案、哪些备选被否决及适用条件",
+      "inputs": "目标、约束、候选、事实、评审",
+      "outputs": "决策、备选、权衡、后果、重新评估条件",
+      "entities_attributes_relations": "Decision(status,owner,reason); Alternative; Criterion; AssumptionRef; selects/supersedes",
+      "representations": "ADR、决策表、权衡记录",
+      "upstream": [
+        "M02",
+        "M06",
+        "M07",
+        "M17",
+        "M24"
+      ],
+      "downstream": [
+        "M05",
+        "M07",
+        "M17",
+        "M20",
+        "M23",
+        "M30"
+      ],
+      "activation": "条件：有重要取舍；简单任务可内嵌批准理由",
+      "validation_checks": "保留未选方案与理由；依赖假设有来源；授权及版本明确；触发条件",
+      "automation": "低至中：可总结权衡，不自动代替决策",
+      "human_confirmation": "有权决策者批准取舍",
+      "maintenance_cost": "低至中",
+      "omission_risk": "重复讨论、隐式决策导致漂移",
+      "references": [
+        "S23",
+        "S03",
+        "S11"
+      ],
+      "domain_name": "决策、基线与变更",
+      "status": "candidate"
+    },
+    {
+      "id": "M30",
+      "domain_id": "D12",
+      "name_zh": "配置基线与变更模型",
+      "name_en": "Configuration Baseline and Change Model",
+      "aliases": "Versioned configuration; Change impact model",
+      "purpose_and_unique_value": "定义可复现版本、变更意图、影响分析、批准与历史",
+      "inputs": "已批准实体、代码/产物版本、证据、变更请求",
+      "outputs": "基线、变更集、冲突、影响候选、处置结果",
+      "entities_attributes_relations": "Baseline(version manifest); ChangeSet(expectedRevision); Approval; Impact; changes/supersedes/invalidates",
+      "representations": "变更记录、版本清单、影响图（派生）",
+      "upstream": [
+        "M05",
+        "M22",
+        "M23",
+        "M27",
+        "M29"
+      ],
+      "downstream": [
+        "M05",
+        "M22",
+        "M26",
+        "M27",
+        "M28",
+        "M32"
+      ],
+      "activation": "核心；多个Agent/设备时需细化并发冲突",
+      "validation_checks": "固定引用可解析；并发写入需版本比对；影响有理由；不得删除历史证据",
+      "automation": "高：差异/图查询；语义影响和批准需人工",
+      "human_confirmation": "配置所有者批准基线与冲突处理",
+      "maintenance_cost": "中",
+      "omission_risk": "跨对话覆盖、版本证据错配、无法追溯",
+      "references": [
+        "S04",
+        "S05",
+        "S24",
+        "S28",
+        "S31"
+      ],
+      "domain_name": "决策、基线与变更",
+      "status": "candidate"
+    },
+    {
+      "id": "M31",
+      "domain_id": "D13",
+      "name_zh": "运行、服务水平与可观测性模型",
+      "name_en": "Operations, Service Level and Observability Model",
+      "aliases": "Operational model; SLI/SLO; Telemetry",
+      "purpose_and_unique_value": "表达真实运行状态、服务目标、告警、支持和反馈",
+      "inputs": "目标、质量、部署、运行遥测、事件",
+      "outputs": "运行指标、监测策略、响应责任与改进候选",
+      "entities_attributes_relations": "Service; SLI; SLO; Signal; Alert; RunbookRef; observes/measures",
+      "representations": "运行指标表、服务依赖图、告警策略",
+      "upstream": [
+        "M06",
+        "M21",
+        "M22",
+        "M28"
+      ],
+      "downstream": [
+        "M01",
+        "M24",
+        "M25",
+        "M32"
+      ],
+      "activation": "条件：持续运行、云服务、付费产品；本地扩展可轻量记录错误",
+      "validation_checks": "指标定义含窗口和来源；告警责任和隐私；数据质量与环境标注",
+      "automation": "中至高：遥测可自动获取，目标/阈值需确认",
+      "human_confirmation": "运营/服务所有者确认目标、监测和响应",
+      "maintenance_cost": "中",
+      "omission_risk": "上线后未知故障、无法识别退化或需求反馈",
+      "references": [
+        "S04",
+        "S05",
+        "S06",
+        "S24"
+      ],
+      "domain_name": "部署、运营与演化",
+      "status": "candidate"
+    },
+    {
+      "id": "M32",
+      "domain_id": "D13",
+      "name_zh": "演化、迁移与退役模型",
+      "name_en": "Evolution, Migration and Retirement Model",
+      "aliases": "Transition model; Compatibility; Decommissioning",
+      "purpose_and_unique_value": "表达从现状到目标的版本迁移、用户数据兼容、回滚与退役",
+      "inputs": "当前基线、目标变更、数据结构、风险、运行反馈",
+      "outputs": "迁移策略、兼容范围、回滚、废弃条件",
+      "entities_attributes_relations": "Migration(from,to); Compatibility; Deprecation; Rollback; migrates/supersedes",
+      "representations": "迁移矩阵、过渡图、版本策略",
+      "upstream": [
+        "M19",
+        "M21",
+        "M24",
+        "M30",
+        "M31"
+      ],
+      "downstream": [
+        "M05",
+        "M22",
+        "M23",
+        "M26",
+        "M27"
+      ],
+      "activation": "条件：升级、兼容性、数据迁移、服务下线",
+      "validation_checks": "旧数据不丢失；迁移幂等或明确约束；回滚/不可逆声明；淘汰有影响评估",
+      "automation": "中：可生成迁移候选与测试，真实数据风险需确认",
+      "human_confirmation": "产品/数据/发布负责人批准兼容与退役策略",
+      "maintenance_cost": "中至高",
+      "omission_risk": "旧数据失效、升级破坏用户、无法恢复",
+      "references": [
+        "S04",
+        "S05",
+        "S12",
+        "S35"
+      ],
+      "domain_name": "部署、运营与演化",
+      "status": "candidate"
+    }
+  ],
+  "references": {
+    "S01": {
+      "title": "SEBoK Types of Models",
+      "url": "https://sebokwiki.org/wiki/Types_of_Models"
+    },
+    "S02": {
+      "title": "ISO/IEC/IEEE 29148:2018 (public abstract)",
+      "url": "https://www.iso.org/standard/72089.html"
+    },
+    "S03": {
+      "title": "ISO/IEC/IEEE 42010:2022 (public abstract)",
+      "url": "https://www.iso.org/standard/74393.html"
+    },
+    "S04": {
+      "title": "ISO/IEC/IEEE 15288:2023 (public abstract)",
+      "url": "https://www.iso.org/standard/81702.html"
+    },
+    "S05": {
+      "title": "ISO/IEC/IEEE 12207:2026 (public abstract)",
+      "url": "https://www.iso.org/standard/90219.html"
+    },
+    "S06": {
+      "title": "ISO/IEC 25010:2023 (public abstract)",
+      "url": "https://www.iso.org/standard/78176.html"
+    },
+    "S07": {
+      "title": "OMG SysML v2/KerML overview",
+      "url": "https://www.omg.org/sysml/SysML-2.htm"
+    },
+    "S08": {
+      "title": "NASA Systems Engineering Handbook Appendix",
+      "url": "https://www.nasa.gov/reference/system-engineering-handbook-appendix/"
+    },
+    "S09": {
+      "title": "NASA Systems Modeling Handbook",
+      "url": "https://standards.nasa.gov/node/3111"
+    },
+    "S10": {
+      "title": "Van Lamsweerde, KAOS research bibliography",
+      "url": "https://webperso.info.ucl.ac.be/~avl/gore.php"
+    },
+    "S11": {
+      "title": "Dalpiaz, Franch, Horkoff, iStar 2.0 language guide",
+      "url": "https://arxiv.org/abs/1605.07767"
+    },
+    "S12": {
+      "title": "ArchiMate 101, The Open Group community",
+      "url": "https://archimate-community.pages.opengroup.org/workgroups/archimate-101/"
+    },
+    "S13": {
+      "title": "FODA, SEI technical report abstract",
+      "url": "https://www.sei.cmu.edu/library/feature-oriented-domain-analysis-foda-feasibility-study/"
+    },
+    "S14": {
+      "title": "FeatureIDE official documentation overview",
+      "url": "https://featureide.github.io/"
+    },
+    "S15": {
+      "title": "OMG BPMN specification landing page",
+      "url": "https://www.omg.org/spec/BPMN/"
+    },
+    "S16": {
+      "title": "OMG DMN specification landing page",
+      "url": "https://www.omg.org/spec/DMN/"
+    },
+    "S17": {
+      "title": "OMG UML specification landing page",
+      "url": "https://www.omg.org/spec/UML/"
+    },
+    "S18": {
+      "title": "Bounded Context, Martin Fowler",
+      "url": "https://martinfowler.com/bliki/BoundedContext.html"
+    },
+    "S19": {
+      "title": "EventStorming official overview",
+      "url": "https://www.eventstorming.com/"
+    },
+    "S20": {
+      "title": "NN/g Journey Mapping 101",
+      "url": "https://www.nngroup.com/articles/journey-mapping-101/"
+    },
+    "S21": {
+      "title": "NN/g Service Blueprints",
+      "url": "https://www.nngroup.com/articles/service-blueprints-definition/"
+    },
+    "S22": {
+      "title": "C4 model official overview",
+      "url": "https://c4model.com/"
+    },
+    "S23": {
+      "title": "ADR community documentation",
+      "url": "https://adr.github.io/"
+    },
+    "S24": {
+      "title": "W3C PROV overview",
+      "url": "https://www.w3.org/TR/prov-overview/"
+    },
+    "S25": {
+      "title": "OMG SACM specification landing page",
+      "url": "https://www.omg.org/spec/SACM/"
+    },
+    "S26": {
+      "title": "OWASP Threat Modeling overview",
+      "url": "https://owasp.org/www-community/Threat_Modeling"
+    },
+    "S27": {
+      "title": "SLSA v1.2 specification overview",
+      "url": "https://slsa.dev/spec/v1.2/"
+    },
+    "S28": {
+      "title": "OSLC official overview",
+      "url": "https://open-services.net/"
+    },
+    "S29": {
+      "title": "OMG Knowledge Discovery Metamodel",
+      "url": "https://www.omg.org/spec/KDM/"
+    },
+    "S30": {
+      "title": "OpenAPI Initiative",
+      "url": "https://openapis.org/"
+    },
+    "S31": {
+      "title": "NIST Digital Thread project",
+      "url": "https://www.nist.gov/ctl/smart-connected-systems-division/smart-connected-manufacturing-systems-group/enabling-digital"
+    },
+    "S32": {
+      "title": "W3C SHACL",
+      "url": "https://www.w3.org/TR/shacl/"
+    },
+    "S33": {
+      "title": "OMG MDA overview",
+      "url": "https://www.omg.org/mda/"
+    },
+    "S34": {
+      "title": "Eclipse EMF/Ecore",
+      "url": "https://eclipse.dev//modeling/emf/"
+    },
+    "S35": {
+      "title": "Eclipse Epsilon",
+      "url": "https://eclipse.dev/epsilon/"
+    },
+    "S36": {
+      "title": "Eclipse Capella",
+      "url": "https://mbse-capella.org/"
+    },
+    "S37": {
+      "title": "OMG ReqIF",
+      "url": "https://www.omg.org/spec/ReqIF/"
+    },
+    "S38": {
+      "title": "W3C RDF 1.1 Concepts",
+      "url": "https://www.w3.org/TR/rdf11-concepts/"
+    },
+    "S39": {
+      "title": "W3C OWL 2 overview",
+      "url": "https://www.w3.org/TR/owl2-overview/"
+    },
+    "S40": {
+      "title": "OMG OCL specification landing page",
+      "url": "https://www.omg.org/spec/OCL/"
+    }
+  }
+}
