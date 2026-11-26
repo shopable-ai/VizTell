@@ -1,4 +1,22 @@
-# 工程模型总体框架与实际应用
+# AI 原生研发方法：总入口与专题索引
+
+> 阅读顺序：先看[总体框架与使用入口](00_AI原生研发总体框架与关键结论.md)，再按具体问题进入专题。2026-11-26精选材料的原文去向、概念纠正和三方向接续，见[整理与推进计划](10_精选材料归类与推进计划.md)。
+
+| 要解决的问题 | 现有入口 |
+| --- | --- |
+| 全部材料怎样关联、下一步分工是什么 | [总体框架](00_AI原生研发总体框架与关键结论.md)、[精选材料归类](10_精选材料归类与推进计划.md) |
+| 当前工程决定缺什么知识、怎样选择模型 | 本页下方工程模型正文；[当前任务与缺口](90_研究缺口与续研任务.md) |
+| 怎样从不完整想法发现必要需求 | [需求推理与需求工程](需求推理与需求工程/README.md) |
+| 谁受影响、需要哪些专业判断 | [角色与多专家协作](角色与多专家协作/README.md) |
+| 怎样发现异常、盲区和过度设计 | [推理与盲区审计](推理与盲区审计/README.md) |
+| 怎样衔接设计、能力调用、实施和验收 | [研发工作流与工程能力关系](07_研发工作流与工程能力关系.md) |
+
+目录名保留为“软件与系统工程宇宙”，正文按软件研发的具体问题使用。下方保留既有工程模型研究及其链接；专题的当前状态以各入口和任务记录为准，不因本次整理而退出或重新启动。
+
+---
+
+## 工程模型总体框架与实际应用
+
 
 > **当前：R1-B.3｜2026-11-26｜独立验证受阻，暂不正式采用。** 用户已授权执行独立增量验证。R1-B.2 候选选择方法保留，Cookie Editor 新案例、修复前版本、共同资料、预算和盲评标准已登记；A/B 首次输出、独立审阅及成本观测均未取得。仅作可选阅读指南，不改 AI-Project-OS。详见 [09 实验登记](09_工程模型独立价值实验登记_CookieEditor.md) 与 [90 当前状态](90_研究缺口与续研任务.md)。
 
@@ -359,5 +377,6 @@ R1-B.1 历史读取基线：VizTell `87b4dbc2e68eea33b54a88b7a448b8466203e939`�
 [case-rules-test]: https://github.com/shopable-ai/opendesk-browser/blob/58d18b06bd785fa99aa4f9ceb1d517c28092c2ad/projects/video-auto-skip/tests/rules.test.mjs#L23-L59
 [case-history]: https://github.com/shopable-ai/opendesk-browser/blob/58d18b06bd785fa99aa4f9ceb1d517c28092c2ad/projects/video-auto-skip/LOCAL-R1-ACCEPTANCE.zh-CN.md#L79-L95
 [case-config]: https://github.com/shopable-ai/opendesk-browser/blob/58d18b06bd785fa99aa4f9ceb1d517c28092c2ad/projects/video-auto-skip/tool.config.json
+
 
 
