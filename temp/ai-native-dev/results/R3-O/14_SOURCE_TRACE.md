@@ -39,3 +39,20 @@
 
 ## F2/F3成熟方法补证
 H第6节已记录15项逐项理论出处、直接/间接支持与访问限制；原FTA链接403、Scenario-Based RE链接418，保留边界。原reference/04、05、06、07、08、09、10、11、12的名录已逐项核对；不是恢复历史缺失35/14和九机制。SWEBOK官方topics曾通过搜索摘要核对18领域，本次直接打开返回403；新增二级知识入口是独立候选而非逐字复刻官方章节。
+
+## R1及R1.1来源差量（当前）
+
+起点main 0a099415f3f951e2110fa5958c0e870f12922cba；相对用户提供a1bcb624965ce436ed680d7ded207f0b617cb70a新增3次社会运行规则研究提交，未覆盖。核心正文commit b95512b5f7611e63cebce490c6d4117aa2c4a70e、2e29be672268ff0db6ec2db42ddb42975ed6e473；当前裁决见O §11。R1来源以各专题R1段落及O §10为历史记录。
+
+| 来源 | 实际核查范围 | 支持内容及限制 |
+|---|---|---|
+| IEEE SWEBOK V4.0a https://ieeecs-media.computer.org/media/education/swebok/swebok-v4.pdf | 官方PDF目录印刷xx–xxiii，第16–18章 | 三大基础、人因、AI、度量、实验、数值误差等；非全书审查 |
+| ACM/IEEE-CS/AAAI CS2023 https://csed.acm.org/wp-content/uploads/2025/11/CS2023-Report.htm 及 https://csed.acm.org/knowledge-areas/ | 公开报告目录及知识领域 | 计算与数学基础交叉索引；非全部知识或资格证明 |
+| Sutcliffe等1998 Supporting Scenario-Based Requirements Engineering，DOI 10.1109/32.738340，https://research.cs.vt.edu/ns/cs5724papers/1.motivatingreuse.tpgap.sutcliffe.scenarios.pdf | 高校镜像PDF印刷1072–1074首页、方法段/图 | 场景路径、知识复用、异常与问题模式；非全文或穷尽证明 |
+| Pearl 2010 https://pmc.ncbi.nlm.nih.gov/articles/PMC2836213/ | 公开HTML摘要、导论及方法导航 | 观察、干预、反事实与因果假设/识别；G二元模型为本轮反例 |
+| Letier/van Lamsweerde 2002 https://research.dial.uclouvain.be/entities/publication/bce90b0f-32b2-4546-a319-469a22cad035 DOI 10.1109/ICSE.2002.1007958 | 作者机构摘要 | 目标可实现性、主体监测/控制；C形式定义和量词反例为本轮推导 |
+| Lamport 1978 https://apice.unibo.it/bin/view/Publication/LamportAcmcomm21 DOI 10.1145/359545.359563 | 机构摘要 | 事件先后偏序，非统计因果/全序物理时间 |
+| Benveniste等2018 https://doi.org/10.1561/1000000053 | 出版方摘要 | 契约设计与验证/抽象细化用途；D/E反例非全文定理复刻 |
+| Alpern & Schneider 1985 DOI 10.1016/0020-0190(85)90056-0 | 公开摘要 | 安全/活性辨析入口；复杂公平/活性理论待独立复核 |
+
+其余成熟方法沿用H §6及R1记录，未声称重读全部原论文/标准。A–O原提示词独立任务段、R2主要分册与原始备份关键区段用于恢复；重复附录按同源处理，原始1168行未逐字重读。新形式判据、选择规则、交叉关系与反方均为单模型综合及抽象推演，非软件实验或独立评审。
