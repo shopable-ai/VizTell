@@ -73,3 +73,34 @@
 **否决与回流：** 已知重大逻辑错误、关键遗漏、硬约束冲突、虚假证据或越界声明优先阻断；分数高不能抵消。输出区分发现、证据、严重度、影响对象、可修正范围、待定责任；B 将问题返回对应节点，K 保存反例。审计停止于高影响问题已处置或明确阻断，新增检查不改变结论。框架自审仅验证定义与逻辑，不执行产品测试，也不宣称成熟方法的实际效果。
 
 本节为F2通用结构推导和概念反例，未进行具体应用；重要分类和完整专业知识仍须独立核验。
+
+## 6. F2补证：原15成熟方法的独立作用、选择与限制
+
+本表是对原reference/08的逐项保留和进一步核查。理论来源支持方法的基本作用；“如何组合到AI研发框架”仍是本轮推断。只研究理论，不执行实际应用、模型程序或产品测试。
+
+| 方法 | 在框架中的独立用途与输入→输出 | 适用边界与证据状态 |
+|---|---|---|
+| KAOS | 从目标、约束、假设及责任主体出发，细化目标、发现冲突及障碍→候选需求与责任 | 不把每个目标直接转成唯一功能；UCL作者项目页核验目标细化、冲突与主体分配；原论文作者机构摘要支持障碍分析 |
+| 系统思维/系统动力学 | 当存在反馈、积累、延迟和长期影响时，研究相互作用→结构/动态假设 | 因果环并非因果已证明；MIT Sterman《Business Dynamics》目录支持反馈、动态复杂性与建模 |
+| NASA系统工程 | 从利益相关者期望与需求，递归逻辑分解及设计→分层关系和系统边界 | 过程可裁剪，非强制完整文档；NASA SEH 4.0、6.8公开章节核验 |
+| GMA形态分析 | 多参数及离散取值→交叉一致性检查→减少不相容组合 | 两两相容未必保证高阶组合全局相容；一致性不是因果或质量保证；Swedish Morphological Society方法页核验 |
+| TRIZ | 明确相互冲突的技术要求→借用矛盾分析、分离或创新原则→候选方案 | 提供发散策略，不自动证明可行或最优；Altshuller Institute公开知识介绍核验 |
+| 双钻 | 不清楚问题或存在早期方案偏见→发现、定义、发展、交付两次发散收敛 | 不等于每次研发必须四阶段；Design Council官方页核验 |
+| 因果/反事实 | 给定变量、假设、机制及观察→区分相关、干预和反事实主张 | 必须陈述因果假设、可识别性和适用范围；Pearl 2010论文HTML摘要核验 |
+| Premortem | 从假定计划失败出发→列可能原因→优先调查或控制风险 | 生成的是风险假设，不是故障事实或概率；Klein 2007 HBR公开摘要核验 |
+| FMEA | 从组件/接口与失效模式出发→逐层影响、检测及补偿 | 早期仅能做粗粒度分析，依赖对设计和故障模式理解；NASA软件工程手册8.5（历史版本）核验 |
+| FTA | 从特定不希望发生的顶事件出发→逻辑条件、可能原因及组合 | 目标是特定顶事件，不覆盖所有其他损失；NASA软件FMEA章明确对照自顶向下FTA；原FTA独立链接403，间接支持 |
+| STPA | 从损失、危险、控制结构出发→不安全控制动作、约束及因果场景 | 可分析无组件失效的危险交互；不以STPA单独证明安全；STPA Primer公开页核验 |
+| QAW/ATAM | QAW帮助识别质量属性场景；ATAM分析架构候选的取舍、风险与敏感点 | 两者输入及目标不同，不能合并成同一评估；SEI公开方法页核验 |
+| Scenario-Based RE | 从角色、目标、条件与交互场景出发→候选正常、替代、异常及恢复需求 | 场景不等于完整需求；原IEEE论文链接418，未读取原文；IREB elicitation、KAOS公开项目页仅支持场景导向调查的部分一般思想，原方法细节仍待核验 |
+| NIST组合测试 | 对参数、取值、约束与交互强度建模→选有覆盖保证的组合 | t-way保证的是所设交互覆盖，不保证发现所有故障；SP800-142公开摘要核验 |
+| Google SRE | 运行反馈与候选变化→代表性信号、对照、风险限制→可评价的运行证据 | 指标受混杂和样本代表性影响，不证明所有业务正确；SRE Workbook Canarying Releases公开章节核验 |
+
+### 组合选择的结构结论
+- 目标缺口优先KAOS及场景研究；问题定义不清用双钻；有技术矛盾再引入TRIZ。
+- 参数组合空间大时GMA做候选相容性筛选，NIST组合方法研究后续覆盖策略；两者不等同。
+- 局部模式失效→FMEA；已知顶层不可接受事件→FTA；控制交互、时序及社会技术系统风险→STPA；长期反馈与积累→系统动力学。按风险组合，不能以任一方法替代全部审计。
+- 质量要求不清用QAW，具体架构权衡用ATAM；因果/反事实校核解释条件；Premortem补风险假设；SRE关注运行信号与反馈。
+- 通用理论支持不等于本AI框架实效。当前15个方法均有选择和限制入口，其中13个取得直接相关公开来源层面的支持、FTA取得间接支持、Scenario-Based RE原论文未核验。不是15项完整理论课程或15项已独立验证。完整正式标准和方法内部步骤不在本节伪称已通读。
+
+来源新增：UCL KAOS https://webperso.info.ucl.ac.be/~avl/gore.php ；van Lamsweerde & Letier 2000作者机构摘要 https://research.dial.uclouvain.be/entities/publication/de49727c-3abf-4113-8b8d-8b24334e4f7e ；MIT Sterman https://mitmgmtfaculty.mit.edu/jsterman/business-dynamics/ ；GMA https://swemorph.com/ma.html ；TRIZ https://aitriz.org/pages/triz ；Pearl https://pmc.ncbi.nlm.nih.gov/articles/PMC2836213/ ；Klein https://hbr.org/2007/09/performing-a-project-premortem ；NASA FMEA https://swehb.nasa.gov/pages/viewpage.action?pageId=103776712 ；NIST https://csrc.nist.gov/pubs/sp/800/142/final ；SRE https://sre.google/workbook/canarying-releases/ 。访问受限的原始链接：FTA https://swehb.nasa.gov/pages/viewpage.action?pageId=72025075 ；Scenario-Based RE https://ieeexplore.ieee.org/abstract/document/738340 。

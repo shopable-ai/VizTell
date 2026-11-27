@@ -35,3 +35,7 @@
 - https://plato.stanford.edu/entries/abduction/ — 解释性推断与必然性区别；2025-06-18修订。
 - https://www.nasa.gov/reference/6-8-decision-analysis/ — 分析强度及多属性、不确定性与利益相关者。
 - https://www.w3.org/TR/prov-overview/ — 来源、派生及版本信息。以上为本轮公开HTML资料查阅，未宣称完整标准核验。
+
+
+## F2/F3成熟方法补证
+H第6节已记录15项逐项理论出处、直接/间接支持与访问限制；原FTA链接403、Scenario-Based RE链接418，保留边界。原reference/04、05、06、07、08、09、10、11、12的名录已逐项核对；不是恢复历史缺失35/14和九机制。SWEBOK官方topics曾通过搜索摘要核对18领域，本次直接打开返回403；新增二级知识入口是独立候选而非逐字复刻官方章节。
