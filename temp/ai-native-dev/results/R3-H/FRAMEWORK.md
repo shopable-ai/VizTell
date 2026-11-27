@@ -104,3 +104,30 @@
 - 通用理论支持不等于本AI框架实效。当前15个方法均有选择和限制入口，其中13个取得直接相关公开来源层面的支持、FTA取得间接支持、Scenario-Based RE原论文未核验。不是15项完整理论课程或15项已独立验证。完整正式标准和方法内部步骤不在本节伪称已通读。
 
 来源新增：UCL KAOS https://webperso.info.ucl.ac.be/~avl/gore.php ；van Lamsweerde & Letier 2000作者机构摘要 https://research.dial.uclouvain.be/entities/publication/de49727c-3abf-4113-8b8d-8b24334e4f7e ；MIT Sterman https://mitmgmtfaculty.mit.edu/jsterman/business-dynamics/ ；GMA https://swemorph.com/ma.html ；TRIZ https://aitriz.org/pages/triz ；Pearl https://pmc.ncbi.nlm.nih.gov/articles/PMC2836213/ ；Klein https://hbr.org/2007/09/performing-a-project-premortem ；NASA FMEA https://swehb.nasa.gov/pages/viewpage.action?pageId=103776712 ；NIST https://csrc.nist.gov/pubs/sp/800/142/final ；SRE https://sre.google/workbook/canarying-releases/ 。访问受限的原始链接：FTA https://swehb.nasa.gov/pages/viewpage.action?pageId=72025075 ；Scenario-Based RE https://ieeexplore.ieee.org/abstract/document/738340 。
+
+
+## R1 深化：成熟方法的独立作用、适用对象与审计结论
+
+保留八审计域与15方法；本节重点修复历史来源缺口及方法之间的区别，不重新堆砌清单。
+
+### 1. 两项历史来源补证
+- FTA：直接核对 NASA Software Engineering Handbook 8.7 Software Fault Tree Analysis（https://swehb.nasa.gov/pages/viewpage.action?pageId=72025087 ），明确从预设不可接受顶事件向下分析致因和组合，甚至正常功能也可能导致危害。旧间接/不可访问来源保留为历史记录，但此项已有直接公开依据。FMEA对照：https://swehb.nasa.gov/pages/viewpage.action?pageId=103776712 。
+- Scenario-Based RE：1998原论文 DOI 10.1109/32.738340，IEEE索引摘要 https://ieeexplore.ieee.org/abstract/document/738340 已由公开搜索返回；摘要支持用场景路径展开需求、利用通用需求类别、给正常序列施加异常类型并识别问题模式。直接打开IEEE仍返回418，故仅标「出版方索引摘要已核对」，不声称读完整论文或分析其具体案例。
+
+### 2. 三种失效视角的理论区分
+
+| 方法 | 分析起点 | 核心操作与产物 | 局限 |
+|---|---|---|---|
+| FMEA | 单元、行为或数据的故障模式 | 向上推局部/系统影响，形成失效、影响及控制候选 | 仅单故障分析可能漏掉组合、正常交互和边界 |
+| FTA | 定义明确的不可接受顶事件T | 按AND/OR条件反推致因，寻找最小致因组合（相对于模型） | 顶事件或因果结构遗漏会漏检；概率推断需可靠分布/依赖 |
+| STPA | 损失、危害、控制结构 | 检查控制动作缺失、提供错误、时序、持续时间及反馈，推导控制约束 | 控制模型不完整仍可能遗漏；不是概率排名工具 |
+
+抽象反例：顶事件 T=(a∧b)∨c。只检查a或b单独触发T会漏掉{a,b}；按故障树逻辑可得两个最小致因集合{a,b}与{c}，前提是表达本身充分。若a,b代表各自局部合法的动作，却在某环境时序交互中共同违反系统不变量，则单纯局部故障清单并不足够；STPA关注这类控制条件。三种方法互补，不意味着每个项目都需全部采用。STPA原理核对：https://stamp-institute.org/stpa-primer/ 。
+
+### 3. 审计的选择机制
+
+目标/障碍→GORE；角色与异常路径→场景需求工程；设计备选→形态分析、双钻、TRIZ；复杂反馈→系统思维；质量场景提取与架构权衡分别用QAW和ATAM；故障和控制选择上表；有限交互→NIST组合方法；不确定因果→竞争解释、反事实；计划风险→premortem；运行与服务可靠性→SRE。NASA系统工程作跨层级过程参照。先定位高影响主张和风险，再选能产生独立新信息的方法，不按名称全调用。
+
+形式：审计对象+主张+适用条件+发现类型+反例/来源+影响+处置（已否定、待证、可接受、阻断、不适用）。用正向从条件找结果，用逆向从结果找候选原因，再判断是否存在另一个充分解释。任何建议必须能指出实际改变哪个主张、义务或风险，否则归为低价值重复。重要义务未核实不能靠平均评分关闭。有限t-way覆盖只说明给定域与交互阶数覆盖，不能证明所有故障或安全属性；NIST公开摘要：https://csrc.nist.gov/pubs/sp/800/142/final 。
+
+抽象审查结果：以上T的双条件反例推翻「所有单因素正常即可整体安全」；它只验证逻辑反例，不是实际测试。仍有15方法内部完整条件、方法交叉裁剪与风险度量待专业独立审查；框架期不进入产品实验。
