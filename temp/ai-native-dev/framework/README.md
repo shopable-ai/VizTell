@@ -12,6 +12,27 @@
 
 此主线描述未来软件研发，不是当前研究任务必须执行的五阶段。入口需要恢复已有目标、事实、成果及边界；具体任务允许复用和裁剪。研究、决策、审计、知识复用可以贯穿各阶段。
 
+## 快速阅读：五组专题框架
+
+以下五组是为了便于阅读的专题导航，与下文七种研究视图互补，不是新的研发阶段、强制层级或互斥分类。
+
+| 专题组 | 主要内容 | 入口 |
+|---|---|---|
+| 01 基础研究框架 | 因素宇宙、链路宇宙、推理模式宇宙 | [A](../results/R3-A/FRAMEWORK.md) · [B](../results/R3-B/FRAMEWORK.md) · [G](../results/R3-G/FRAMEWORK.md) |
+| 02 专业方法框架 | 需求推理、工程模型、项目多维拆分、角色与多专家、盲区审计 | [C](../results/R3-C/FRAMEWORK.md) · [D](../results/R3-D/FRAMEWORK.md) · [E](../results/R3-E/FRAMEWORK.md) · [F](../results/R3-F/FRAMEWORK.md) · [H](../results/R3-H/FRAMEWORK.md) |
+| 03 研发执行框架 | 研发工作流、Skill、工具与Agent | [I](../results/R3-I/FRAMEWORK.md) · [J](../results/R3-J/FRAMEWORK.md) |
+| 04 知识与治理框架 | 知识资产、知识复利、AI执行治理 | [K](../results/R3-K/FRAMEWORK.md) · [L](../results/R3-L/FRAMEWORK.md) |
+| 05 价值与系统构想 | 商业与运营框架、AI Project OS概念框架 | [M](../results/R3-M/FRAMEWORK.md) · [N](../results/R3-N/FRAMEWORK.md) |
+| 总体框架整合 | 分类、层级、关系、推导、边界与完整性 | [O](../results/R3-O/FRAMEWORK.md) |
+
+**研究顺序：先横向建立整体框架，再纵向深入有价值的分支，最后整合与审查。** 当前阶段禁止提前执行具体应用。详见[研究阶段与推进原则](RESEARCH-STAGES.md)。
+
+### 当前阅读入口
+- [完整专题导航](../results/R3-O/00_NAVIGATION.md)
+- [总体整合正文](../results/R3-O/FRAMEWORK.md)
+- [研究状态](../results/R3-O/13_RESEARCH_STATUS.md) · [来源追溯](../results/R3-O/14_SOURCE_TRACE.md)
+- [延期应用索引](DEFERRED-APPLICATIONS.md)
+
 ## 2. 主要研究视图
 
 | 视图 | 解决什么问题 | 主要专题 |
@@ -46,7 +67,7 @@
 | R3-N AI Project OS概念框架 | 12 | 七个候选组件的职责、关系、替代性、必要性假设与系统边界；暂不判断真实项目实施收益，不建设系统。 |
 | R3-O 总体框架整合 | 01/13/14 | 整合总体地图、处理分类重叠和跨专题接口，审查覆盖、逻辑、理论依据、可阅读性、必要性，分离未决框架问题和后续实证待办。 |
 
-截至本页初始审查基线，A–H已有八份F1框架初稿。可查看 [A](../results/R3-A/FRAMEWORK.md)、[B](../results/R3-B/FRAMEWORK.md)、[C](../results/R3-C/FRAMEWORK.md)、[D](../results/R3-D/FRAMEWORK.md)、[E](../results/R3-E/FRAMEWORK.md)、[F](../results/R3-F/FRAMEWORK.md)、[G](../results/R3-G/FRAMEWORK.md)、[H](../results/R3-H/FRAMEWORK.md)。其他专题继续在对应 results/R3-X/FRAMEWORK.md 增量研究；后续状态以文件实际内容而不是此历史快照为准。
+截至核查基线 b34bba95ee43b35a1d9cc986fbede91da6f3c826，A–N及O共15份 FRAMEWORK.md 和15份 FRAMEWORK-STATUS.md 已存在。F1一级候选已形成，F2关键分支首轮深化、F3第一轮整合与补证均已推进。具体成果及最新进度见上方导航和O的研究状态；尚未通过最终验收，不能因文件齐备而宣称完成。
 
 ## 4. 原始16个研究维度的归属候选
 
@@ -91,4 +112,4 @@
 
 F1：把A–N完整一级框架和必要二级入口建立起来；O随时修正总体地图。F2：重点深化因素的语义类型、模型/需求/能力的区别、链路边关系、方法选择、工作流裁剪、证据/决策及知识失效等高影响分支；查阅通用专业理论、处理逻辑反例和重复，逐项判断去留。F3：综合Q1–Q6进行总体审查，处置重要冲突和框架未知，将产品实证待办单独保留。
 
-初始审查结论：方向与范围纠偏已明确，已经出现A–H一级候选；不能仅凭初稿认定F2/F3完成。尚未完成全专题深化、跨专题定义裁决、通用理论依据的完整核验和独立评审。95分是阶段目标，不是本页已获得的专家分数。后续应用效果、具体业务、测试、工程实现均延期。
+当前审查结论：已形成完整专题入口和首轮框架深化、整合候选；专业理论补证、关键子分支深化、独立反方及完整审查尚未完成。O的状态文件记录自评92.33/100（非独立专家结果），未达最终95分目标；真实产品效果、具体业务、测试、工程实现全部延期，不作为框架阶段完成门。

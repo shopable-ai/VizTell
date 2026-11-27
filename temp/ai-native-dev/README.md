@@ -21,6 +21,8 @@
 - [04 总体整合](launch/04_独立审查与整合.md)（O）
 - [当前研究规则](launch/RESEARCH-RUNBOOK.md)（覆盖旧提示词的阶段、验证及交付要求）
 - [总体框架地图与接口审查](framework/README.md)
+- [研究阶段与推进原则](framework/RESEARCH-STAGES.md)：五个研究阶段，当前仅01–03。
+- [延期应用索引](framework/DEFERRED-APPLICATIONS.md)：17份早期业务研究文件保留但停用，禁止恢复其应用待办。
 
 先恢复已有框架，再按F1总体地图、F2专题深化、F3总体整合持续研究。不要因为原始资料已保存而只读标题或简化目标。框架结果以最新main中各专题FRAMEWORK.md为准。旧对话已经收到的历史提示词不会因文件更新自动撤回，需要发送新阶段指令。
 
