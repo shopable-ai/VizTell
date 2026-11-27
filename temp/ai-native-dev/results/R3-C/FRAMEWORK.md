@@ -138,3 +138,5 @@ KAOS目标细化/障碍和责任指派（UCL项目页与作者机构摘要）支
 需求性质→可判别的验收条件（适用域、量词、环境、阈值、预期）→验证方法与实际证据→裁决。验收判据自身是否准确表达目标是一项独立主张；证据是否满足判据是另一项。有限例证不能证明无界全称性质；活性“最终发生”不等于限时发生，且依赖环境公平/可达假设。目标解释改变时回查判据与证据，不自动复用旧验收。
 
 理论参照：van Lamsweerde 的目标导向需求工程公开研究入口 https://webperso.info.ucl.ac.be/~avl/gore.php 及 SEBoK 系统需求定义（上轮）；Alpern & Schneider 1985, Defining Liveness（公开摘要，DOI 10.1016/0020-0190(85)90056-0）。本节形式判据、两个反例和裁剪规则为本轮推导；不宣称实现可判定、能自动穷尽需求或已完成实际对照。
+
+补证：Letier 与 van Lamsweerde 2002, Agent-based tactics for goal-oriented requirements elaboration，DOI 10.1109/ICSE.2002.1007958，作者机构公开摘要 https://research.dial.uclouvain.be/entities/publication/bce90b0f-32b2-4546-a319-469a22cad035 。摘要支持目标分配需考虑主体能否监测/控制变量并实现目标；未读论文全文，不宣称复现其形式分类。
