@@ -1,0 +1,900 @@
+{
+  "record_type": "bounded_research_validation_evidence",
+  "task_id": "AI-NATIVE-DEVELOPMENT-WORKFLOW-R2-VALIDATION",
+  "run_id": "R2-VALIDATION-20261127T021638Z",
+  "created_at_utc": "2026-11-27T02:24:18.063956+00:00",
+  "plan": {
+    "task_id": "AI-NATIVE-DEVELOPMENT-WORKFLOW-R2-VALIDATION",
+    "run_id": "R2-VALIDATION-20261127T021638Z",
+    "registered_at_utc": "2026-11-27T02:21:52.622530+00:00",
+    "scope": "existing research-document correction and evidence audit; not product development or formal framework implementation",
+    "authorized_by": "current user request, tasks A-D and acceptance criterion 8",
+    "baselines": {
+      "VizTell": "cdc95f1264da7b6d0ae002bda8456ddb688d803e",
+      "ai-native-project-os": "1a1867640b7ee538bac21cd1a16d50f6a7e19c0f",
+      "opendesk-browser": "e351c1e9bb4dd84b38d3554c118edb6711a09baf"
+    },
+    "initial_worktrees": "three isolated main checkouts clean; user local workspace unobservable because CodexPro returned UNAVAILABLE",
+    "existing_work": "R1-B.3 Cookie Editor independent experiment; R3.2 requirement evaluation; existing OS L2 progression/plans; existing product acceptance entries",
+    "entry_and_reuse": "R0 restore; reuse user scope and approved formal stage definitions; S3 no new architectural choice; correct affected exit-condition and evidence wording; S5 document edits; S6 scoped document checks and independent review",
+    "changes_expected": [
+      "07: fix S1/S5 exit wording, stale handoff, concrete capability inventory and bounded current evidence",
+      "00/90: short pointers to existing 07 validation result",
+      "one evidence snapshot under existing snapshots/"
+    ],
+    "predefined_checks": [
+      "diff whitespace",
+      "changed markdown local and pinned GitHub reference targets resolve against full Git trees",
+      "changed markdown headings/tables render as structured markdown",
+      "three independent Agent reviews over final candidate; six advisory dimensions and arithmetic mean",
+      "precise staged diff; remote main lease or fast-forward; commit and remote file-content readback"
+    ],
+    "not_claimed": [
+      "automatic task routing proven",
+      "three product cases executed this turn",
+      "formal OS verifier or review certification",
+      "business acceptance",
+      "general 95+"
+    ],
+    "product_execution_decision": "Do not start a separate product work package: cases A hypothesis and B/C existing work with candidate-specific evidence; existing research experiments explicitly out of scope. Current real execution is documentation maintenance only."
+  },
+  "candidate_document_sha256": {
+    "docs/软件与系统工程宇宙/00_AI原生研发总体框架与关键结论.md": "c4525fdd1e0d21e64022ced56b6571e13b0d6e34b26767f453ee3b8c2b1a5dbb",
+    "docs/软件与系统工程宇宙/07_研发工作流与工程能力关系.md": "0945bc623b82c3f3c6a8d686be3cecfc1b33a75e5cae36f5262f3eb8a6938ccd",
+    "docs/软件与系统工程宇宙/90_研究缺口与续研任务.md": "de561819f14d90e64a7554fa6169f5ae58eeb6b94b17c3a26347bfd71e0c2b21"
+  },
+  "checks": {
+    "run_id": "R2-VALIDATION-20261127T021638Z",
+    "checked_at_utc": "2026-11-27T02:24:50.027854+00:00",
+    "scope": "document reference targets, simple Markdown table/fence structure, current candidate content hashes; no product or model test",
+    "checks": [
+      {
+        "kind": "sha256",
+        "path": "docs/软件与系统工程宇宙/00_AI原生研发总体框架与关键结论.md",
+        "sha256": "c4525fdd1e0d21e64022ced56b6571e13b0d6e34b26767f453ee3b8c2b1a5dbb"
+      },
+      {
+        "kind": "markdown_source_structure",
+        "path": "docs/软件与系统工程宇宙/00_AI原生研发总体框架与关键结论.md",
+        "tables": 6,
+        "fences_balanced": true,
+        "rendered_browser": false
+      },
+      {
+        "kind": "sha256",
+        "path": "docs/软件与系统工程宇宙/07_研发工作流与工程能力关系.md",
+        "sha256": "0945bc623b82c3f3c6a8d686be3cecfc1b33a75e5cae36f5262f3eb8a6938ccd"
+      },
+      {
+        "kind": "markdown_source_structure",
+        "path": "docs/软件与系统工程宇宙/07_研发工作流与工程能力关系.md",
+        "tables": 11,
+        "fences_balanced": true,
+        "rendered_browser": false
+      },
+      {
+        "kind": "sha256",
+        "path": "docs/软件与系统工程宇宙/90_研究缺口与续研任务.md",
+        "sha256": "de561819f14d90e64a7554fa6169f5ae58eeb6b94b17c3a26347bfd71e0c2b21"
+      },
+      {
+        "kind": "markdown_source_structure",
+        "path": "docs/软件与系统工程宇宙/90_研究缺口与续研任务.md",
+        "tables": 12,
+        "fences_balanced": true,
+        "rendered_browser": false
+      },
+      {
+        "kind": "git_diff_check",
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    ],
+    "failures": [],
+    "references": [
+      {
+        "source": "docs/软件与系统工程宇宙/00_AI原生研发总体框架与关键结论.md",
+        "target": "10_精选材料归类与推进计划.md",
+        "resolved_path": "docs/软件与系统工程宇宙/10_精选材料归类与推进计划.md",
+        "new": false,
+        "kind": "local_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/00_AI原生研发总体框架与关键结论.md",
+        "target": "11_因素宇宙与链路关系地图.md",
+        "resolved_path": "docs/软件与系统工程宇宙/11_因素宇宙与链路关系地图.md",
+        "new": false,
+        "kind": "local_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/00_AI原生研发总体框架与关键结论.md",
+        "target": "../通用链路宇宙/08_软件IT与AI原生.md#r2-chain-map",
+        "resolved_path": "docs/通用链路宇宙/08_软件IT与AI原生.md",
+        "new": false,
+        "kind": "local_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/00_AI原生研发总体框架与关键结论.md",
+        "target": "07_研发工作流与工程能力关系.md",
+        "resolved_path": "docs/软件与系统工程宇宙/07_研发工作流与工程能力关系.md",
+        "new": false,
+        "kind": "local_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/00_AI原生研发总体框架与关键结论.md",
+        "target": "07_研发工作流与工程能力关系.md#r2-validation",
+        "resolved_path": "docs/软件与系统工程宇宙/07_研发工作流与工程能力关系.md",
+        "new": true,
+        "kind": "local_target",
+        "exists": true,
+        "explicit_anchor_exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/00_AI原生研发总体框架与关键结论.md",
+        "target": "assets/项目结构与分层拆解_用户原图.svg",
+        "resolved_path": "docs/软件与系统工程宇宙/assets/项目结构与分层拆解_用户原图.svg",
+        "new": false,
+        "kind": "local_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/00_AI原生研发总体框架与关键结论.md",
+        "target": "README.md#当前使用方法r1-b2先决定再选择知识",
+        "resolved_path": "docs/软件与系统工程宇宙/README.md",
+        "new": false,
+        "kind": "local_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/00_AI原生研发总体框架与关键结论.md",
+        "target": "需求推理与需求工程/README.md",
+        "resolved_path": "docs/软件与系统工程宇宙/需求推理与需求工程/README.md",
+        "new": false,
+        "kind": "local_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/00_AI原生研发总体框架与关键结论.md",
+        "target": "推理与盲区审计/README.md",
+        "resolved_path": "docs/软件与系统工程宇宙/推理与盲区审计/README.md",
+        "new": false,
+        "kind": "local_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/00_AI原生研发总体框架与关键结论.md",
+        "target": "90_研究缺口与续研任务.md",
+        "resolved_path": "docs/软件与系统工程宇宙/90_研究缺口与续研任务.md",
+        "new": false,
+        "kind": "local_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/00_AI原生研发总体框架与关键结论.md",
+        "target": "角色与多专家协作/README.md",
+        "resolved_path": "docs/软件与系统工程宇宙/角色与多专家协作/README.md",
+        "new": false,
+        "kind": "local_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/00_AI原生研发总体框架与关键结论.md",
+        "target": "10_精选材料归类与推进计划.md#4-三张可试用的方法卡",
+        "resolved_path": "docs/软件与系统工程宇宙/10_精选材料归类与推进计划.md",
+        "new": false,
+        "kind": "local_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/00_AI原生研发总体框架与关键结论.md",
+        "target": "09_工程模型独立价值实验登记_CookieEditor.md",
+        "resolved_path": "docs/软件与系统工程宇宙/09_工程模型独立价值实验登记_CookieEditor.md",
+        "new": false,
+        "kind": "local_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/00_AI原生研发总体框架与关键结论.md",
+        "target": "https://github.com/shopable-ai/VizTell",
+        "new": false,
+        "kind": "external_not_rechecked"
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/00_AI原生研发总体框架与关键结论.md",
+        "target": "https://github.com/shopable-ai/ai-native-project-os",
+        "new": false,
+        "kind": "external_not_rechecked"
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/00_AI原生研发总体框架与关键结论.md",
+        "target": "https://github.com/shopable-ai/opendesk-browser",
+        "new": false,
+        "kind": "external_not_rechecked"
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/00_AI原生研发总体框架与关键结论.md",
+        "target": "10_精选材料归类与推进计划.md",
+        "resolved_path": "docs/软件与系统工程宇宙/10_精选材料归类与推进计划.md",
+        "new": false,
+        "kind": "local_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/07_研发工作流与工程能力关系.md",
+        "target": "00_AI原生研发总体框架与关键结论.md",
+        "resolved_path": "docs/软件与系统工程宇宙/00_AI原生研发总体框架与关键结论.md",
+        "new": false,
+        "kind": "local_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/07_研发工作流与工程能力关系.md",
+        "target": "#r2-validation",
+        "resolved_path": "docs/软件与系统工程宇宙/07_研发工作流与工程能力关系.md",
+        "new": true,
+        "kind": "local_target",
+        "exists": true,
+        "explicit_anchor_exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/07_研发工作流与工程能力关系.md",
+        "target": "02_工程模型目录与定义卡.md",
+        "resolved_path": "docs/软件与系统工程宇宙/02_工程模型目录与定义卡.md",
+        "new": false,
+        "kind": "local_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/07_研发工作流与工程能力关系.md",
+        "target": "04_模型分类纠偏与收敛方案.md",
+        "resolved_path": "docs/软件与系统工程宇宙/04_模型分类纠偏与收敛方案.md",
+        "new": false,
+        "kind": "local_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/07_研发工作流与工程能力关系.md",
+        "target": "角色与多专家协作/README.md",
+        "resolved_path": "docs/软件与系统工程宇宙/角色与多专家协作/README.md",
+        "new": false,
+        "kind": "local_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/07_研发工作流与工程能力关系.md",
+        "target": "https://github.com/shopable-ai/ai-native-project-os/blob/1a1867640b7ee538bac21cd1a16d50f6a7e19c0f/docs/workflows/PROJECT_DELIVERY_WORKFLOW.md",
+        "new": false,
+        "kind": "pinned_git_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/07_研发工作流与工程能力关系.md",
+        "target": "https://github.com/shopable-ai/ai-native-project-os/blob/1a1867640b7ee538bac21cd1a16d50f6a7e19c0f/docs/workflows/REQUIREMENT_DESIGN_WORKFLOW.md",
+        "new": false,
+        "kind": "pinned_git_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/07_研发工作流与工程能力关系.md",
+        "target": "https://github.com/shopable-ai/ai-native-project-os/blob/1a1867640b7ee538bac21cd1a16d50f6a7e19c0f/docs/workflows/STAGE_EXIT_GATES.md",
+        "new": false,
+        "kind": "pinned_git_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/07_研发工作流与工程能力关系.md",
+        "target": "https://github.com/shopable-ai/ai-native-project-os/blob/1a1867640b7ee538bac21cd1a16d50f6a7e19c0f/contracts/execution/skill-contract.yaml",
+        "new": false,
+        "kind": "pinned_git_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/07_研发工作流与工程能力关系.md",
+        "target": "https://github.com/shopable-ai/ai-native-project-os/blob/1a1867640b7ee538bac21cd1a16d50f6a7e19c0f/templates/skill/SKILL.md",
+        "new": false,
+        "kind": "pinned_git_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/07_研发工作流与工程能力关系.md",
+        "target": "需求推理与需求工程/README.md",
+        "resolved_path": "docs/软件与系统工程宇宙/需求推理与需求工程/README.md",
+        "new": false,
+        "kind": "local_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/07_研发工作流与工程能力关系.md",
+        "target": "推理与盲区审计/README.md",
+        "resolved_path": "docs/软件与系统工程宇宙/推理与盲区审计/README.md",
+        "new": false,
+        "kind": "local_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/07_研发工作流与工程能力关系.md",
+        "target": "https://github.com/shopable-ai/opendesk-browser/blob/e351c1e9bb4dd84b38d3554c118edb6711a09baf/.agents/skills/README.md",
+        "new": true,
+        "kind": "pinned_git_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/07_研发工作流与工程能力关系.md",
+        "target": "https://github.com/shopable-ai/opendesk-browser/blob/58d18b06bd785fa99aa4f9ceb1d517c28092c2ad/projects/video-auto-skip/REQUIREMENTS.zh-CN.md",
+        "new": false,
+        "kind": "pinned_git_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/07_研发工作流与工程能力关系.md",
+        "target": "https://github.com/shopable-ai/opendesk-browser/blob/58d18b06bd785fa99aa4f9ceb1d517c28092c2ad/projects/video-auto-skip/tests/rules.test.mjs",
+        "new": false,
+        "kind": "pinned_git_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/07_研发工作流与工程能力关系.md",
+        "target": "https://github.com/shopable-ai/opendesk-browser/blob/58d18b06bd785fa99aa4f9ceb1d517c28092c2ad/projects/video-auto-skip/LOCAL-R1-ACCEPTANCE.zh-CN.md",
+        "new": false,
+        "kind": "pinned_git_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/07_研发工作流与工程能力关系.md",
+        "target": "https://github.com/shopable-ai/opendesk-browser/blob/58d18b06bd785fa99aa4f9ceb1d517c28092c2ad/projects/ai-send-queue/ACCEPTANCE-FOLLOWUP.zh-CN.md",
+        "new": false,
+        "kind": "pinned_git_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/07_研发工作流与工程能力关系.md",
+        "target": "https://github.com/shopable-ai/opendesk-browser/blob/58d18b06bd785fa99aa4f9ceb1d517c28092c2ad/projects/ai-send-queue/ACCEPTANCE-CTRL-ENTER.zh-CN.md",
+        "new": false,
+        "kind": "pinned_git_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/07_研发工作流与工程能力关系.md",
+        "target": "https://github.com/shopable-ai/opendesk-browser/blob/e351c1e9bb4dd84b38d3554c118edb6711a09baf/projects/video-auto-skip/README.zh-CN.md",
+        "new": true,
+        "kind": "pinned_git_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/07_研发工作流与工程能力关系.md",
+        "target": "https://github.com/shopable-ai/opendesk-browser/blob/e351c1e9bb4dd84b38d3554c118edb6711a09baf/projects/video-auto-skip/LOCALIZATION-PLAN.zh-CN.md",
+        "new": true,
+        "kind": "pinned_git_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/07_研发工作流与工程能力关系.md",
+        "target": "https://github.com/shopable-ai/opendesk-browser/blob/e351c1e9bb4dd84b38d3554c118edb6711a09baf/projects/ai-send-queue/README.zh-CN.md",
+        "new": true,
+        "kind": "pinned_git_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/07_研发工作流与工程能力关系.md",
+        "target": "https://github.com/shopable-ai/opendesk-browser/blob/e351c1e9bb4dd84b38d3554c118edb6711a09baf/projects/ai-send-queue/UI-VERIFICATION.zh-CN.md",
+        "new": true,
+        "kind": "pinned_git_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/07_研发工作流与工程能力关系.md",
+        "target": "90_研究缺口与续研任务.md",
+        "resolved_path": "docs/软件与系统工程宇宙/90_研究缺口与续研任务.md",
+        "new": true,
+        "kind": "local_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/07_研发工作流与工程能力关系.md",
+        "target": "09_工程模型独立价值实验登记_CookieEditor.md",
+        "resolved_path": "docs/软件与系统工程宇宙/09_工程模型独立价值实验登记_CookieEditor.md",
+        "new": true,
+        "kind": "local_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/07_研发工作流与工程能力关系.md",
+        "target": "https://github.com/shopable-ai/ai-native-project-os/blob/1a1867640b7ee538bac21cd1a16d50f6a7e19c0f/docs/workflows/PROJECT_DELIVERY_WORKFLOW.md",
+        "new": false,
+        "kind": "pinned_git_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/07_研发工作流与工程能力关系.md",
+        "target": "https://github.com/shopable-ai/ai-native-project-os/blob/1a1867640b7ee538bac21cd1a16d50f6a7e19c0f/docs/workflows/REQUIREMENT_DESIGN_WORKFLOW.md",
+        "new": false,
+        "kind": "pinned_git_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/07_研发工作流与工程能力关系.md",
+        "target": "https://github.com/shopable-ai/ai-native-project-os/blob/1a1867640b7ee538bac21cd1a16d50f6a7e19c0f/docs/workflows/STAGE_EXIT_GATES.md",
+        "new": false,
+        "kind": "pinned_git_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/07_研发工作流与工程能力关系.md",
+        "target": "https://github.com/shopable-ai/ai-native-project-os/blob/1a1867640b7ee538bac21cd1a16d50f6a7e19c0f/docs/workflows/PROJECT_TYPE_AND_GOVERNANCE_ROUTING.md",
+        "new": false,
+        "kind": "pinned_git_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/07_研发工作流与工程能力关系.md",
+        "target": "https://github.com/shopable-ai/ai-native-project-os/blob/1a1867640b7ee538bac21cd1a16d50f6a7e19c0f/docs/research/RESEARCH_WORKFLOW.md",
+        "new": false,
+        "kind": "pinned_git_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/07_研发工作流与工程能力关系.md",
+        "target": "https://github.com/shopable-ai/ai-native-project-os/blob/1a1867640b7ee538bac21cd1a16d50f6a7e19c0f/docs/architecture/AI_NATIVE_EXECUTION_MODEL.md",
+        "new": false,
+        "kind": "pinned_git_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/07_研发工作流与工程能力关系.md",
+        "target": "https://github.com/shopable-ai/ai-native-project-os/blob/1a1867640b7ee538bac21cd1a16d50f6a7e19c0f/contracts/execution/skill-contract.yaml",
+        "new": false,
+        "kind": "pinned_git_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/07_研发工作流与工程能力关系.md",
+        "target": "https://github.com/shopable-ai/ai-native-project-os/blob/1a1867640b7ee538bac21cd1a16d50f6a7e19c0f/README.md",
+        "new": false,
+        "kind": "pinned_git_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/07_研发工作流与工程能力关系.md",
+        "target": "https://github.com/shopable-ai/ai-native-project-os/blob/1a1867640b7ee538bac21cd1a16d50f6a7e19c0f/project-os.yaml",
+        "new": false,
+        "kind": "pinned_git_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/07_研发工作流与工程能力关系.md",
+        "target": "snapshots/development-workflow-r2-validation-2026-11-27.json",
+        "resolved_path": "docs/软件与系统工程宇宙/snapshots/development-workflow-r2-validation-2026-11-27.json",
+        "new": true,
+        "kind": "local_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/07_研发工作流与工程能力关系.md",
+        "target": "https://github.com/shopable-ai/ai-native-project-os/blob/1a1867640b7ee538bac21cd1a16d50f6a7e19c0f/docs/workflows/REQUIREMENT_DESIGN_WORKFLOW.md",
+        "new": false,
+        "kind": "pinned_git_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/07_研发工作流与工程能力关系.md",
+        "target": "https://github.com/shopable-ai/ai-native-project-os/blob/1a1867640b7ee538bac21cd1a16d50f6a7e19c0f/docs/workflows/L2_PROGRESSION.md",
+        "new": true,
+        "kind": "pinned_git_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/07_研发工作流与工程能力关系.md",
+        "target": "https://github.com/shopable-ai/ai-native-project-os/blob/1a1867640b7ee538bac21cd1a16d50f6a7e19c0f/docs/superpowers/plans/2026-07-12-human-ai-requirement-design-layer-implementation.md",
+        "new": true,
+        "kind": "pinned_git_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/90_研究缺口与续研任务.md",
+        "target": "README.md#当前使用方法r1-b2先决定再选择知识",
+        "resolved_path": "docs/软件与系统工程宇宙/README.md",
+        "new": false,
+        "kind": "local_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/90_研究缺口与续研任务.md",
+        "target": "08_工程模型实际使用对照案例_CtrlEnter.md",
+        "resolved_path": "docs/软件与系统工程宇宙/08_工程模型实际使用对照案例_CtrlEnter.md",
+        "new": false,
+        "kind": "local_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/90_研究缺口与续研任务.md",
+        "target": "07_研发工作流与工程能力关系.md#r2-validation",
+        "resolved_path": "docs/软件与系统工程宇宙/07_研发工作流与工程能力关系.md",
+        "new": true,
+        "kind": "local_target",
+        "exists": true,
+        "explicit_anchor_exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/90_研究缺口与续研任务.md",
+        "target": "09_工程模型独立价值实验登记_CookieEditor.md",
+        "resolved_path": "docs/软件与系统工程宇宙/09_工程模型独立价值实验登记_CookieEditor.md",
+        "new": false,
+        "kind": "local_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/90_研究缺口与续研任务.md",
+        "target": "README.md#2-一张地图六组知识怎样互相约束",
+        "resolved_path": "docs/软件与系统工程宇宙/README.md",
+        "new": false,
+        "kind": "local_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/90_研究缺口与续研任务.md",
+        "target": "README.md#4-固定案例自动跳片尾但不误跳正片或彩蛋",
+        "resolved_path": "docs/软件与系统工程宇宙/README.md",
+        "new": false,
+        "kind": "local_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/90_研究缺口与续研任务.md",
+        "target": "README.md#1-固定研究背景与职责",
+        "resolved_path": "docs/软件与系统工程宇宙/README.md",
+        "new": false,
+        "kind": "local_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/90_研究缺口与续研任务.md",
+        "target": "README.md#46-最少需要验证什么当前证据到哪里",
+        "resolved_path": "docs/软件与系统工程宇宙/README.md",
+        "new": false,
+        "kind": "local_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/90_研究缺口与续研任务.md",
+        "target": "01_工程模型宇宙与研究基线.md",
+        "resolved_path": "docs/软件与系统工程宇宙/01_工程模型宇宙与研究基线.md",
+        "new": false,
+        "kind": "local_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/90_研究缺口与续研任务.md",
+        "target": "https://github.com/shopable-ai/ai-native-project-os",
+        "new": false,
+        "kind": "external_not_rechecked"
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/90_研究缺口与续研任务.md",
+        "target": "03_已有工程模型与双向差异矩阵.md",
+        "resolved_path": "docs/软件与系统工程宇宙/03_已有工程模型与双向差异矩阵.md",
+        "new": false,
+        "kind": "local_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/90_研究缺口与续研任务.md",
+        "target": "04_模型分类纠偏与收敛方案.md",
+        "resolved_path": "docs/软件与系统工程宇宙/04_模型分类纠偏与收敛方案.md",
+        "new": false,
+        "kind": "local_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/90_研究缺口与续研任务.md",
+        "target": "05_最小工程语义元模型与关系注册候选.md",
+        "resolved_path": "docs/软件与系统工程宇宙/05_最小工程语义元模型与关系注册候选.md",
+        "new": false,
+        "kind": "local_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/90_研究缺口与续研任务.md",
+        "target": "06_工程语义样例与反例验证.md",
+        "resolved_path": "docs/软件与系统工程宇宙/06_工程语义样例与反例验证.md",
+        "new": false,
+        "kind": "local_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/90_研究缺口与续研任务.md",
+        "target": "05_最小工程语义元模型与关系注册候选.md",
+        "resolved_path": "docs/软件与系统工程宇宙/05_最小工程语义元模型与关系注册候选.md",
+        "new": false,
+        "kind": "local_target",
+        "exists": true
+      },
+      {
+        "source": "docs/软件与系统工程宇宙/90_研究缺口与续研任务.md",
+        "target": "README.md",
+        "resolved_path": "docs/软件与系统工程宇宙/README.md",
+        "new": false,
+        "kind": "local_target",
+        "exists": true
+      }
+    ],
+    "reference_summary": {
+      "occurrences": 70,
+      "new_occurrences": 13,
+      "pinned_git_targets": 27,
+      "local_targets": 39,
+      "external_not_rechecked": 4
+    },
+    "status": "PASS",
+    "actual_exec_output_chunk_id": "ce7428"
+  },
+  "independent_reviews": {
+    "actual_agent_count": 3,
+    "professional_perspective_count": 6,
+    "reviewers": [
+      "/root/case_evidence",
+      "/root/framework_audit",
+      "/root/verification_redteam"
+    ],
+    "fork_modes": {
+      "/root/case_evidence": "all",
+      "/root/framework_audit": "all",
+      "/root/verification_redteam": "none"
+    },
+    "raw_review_records": [
+      {
+        "source_filename": "audit-case-final.json",
+        "original_utf8_sha256": "ac458f3aeceab06fed5033eb5a4b535b7440113d536877bfc41ec085451db4b6",
+        "original_utf8": "{\n  \"review_id\": \"AI-NATIVE-DEVELOPMENT-WORKFLOW-R2-VALIDATION-case-review-01\",\n  \"reviewer\": {\n    \"task_path\": \"/root/case_evidence\",\n    \"kind\": \"independent AI agent consultation\",\n    \"human_expert\": false,\n    \"certified_verifier\": false,\n    \"independence\": \"Separate agent reasoning; inherited task context; not blind. Reviewer supplied initial case evidence findings and did not write repository patches. This is a review of documents and source evidence, not an independent product execution or blinded experiment.\"\n  },\n  \"created_at\": \"2026-11-27T10:24:12.079429+08:00\",\n  \"scoring_object\": \"Complete current A-D workflow application validation, not prose polish or prompt quality. A/B/C are document/source review; D has real document maintenance only. No current product execution evidence.\",\n  \"inputs\": [\n    {\n      \"repository\": \"VizTell\",\n      \"path\": \"docs/软件与系统工程宇宙/00_AI原生研发总体框架与关键结论.md\",\n      \"absolute_path\": \"/workspace/scratch/ac9c3ac05130/VizTell/docs/软件与系统工程宇宙/00_AI原生研发总体框架与关键结论.md\",\n      \"sha256\": \"c4525fdd1e0d21e64022ced56b6571e13b0d6e34b26767f453ee3b8c2b1a5dbb\",\n      \"bytes\": 11750,\n      \"scope\": \"read-only; current candidate for three modified VizTell files, fixed checkout for other files\"\n    },\n    {\n      \"repository\": \"VizTell\",\n      \"path\": \"docs/软件与系统工程宇宙/07_研发工作流与工程能力关系.md\",\n      \"absolute_path\": \"/workspace/scratch/ac9c3ac05130/VizTell/docs/软件与系统工程宇宙/07_研发工作流与工程能力关系.md\",\n      \"sha256\": \"0945bc623b82c3f3c6a8d686be3cecfc1b33a75e5cae36f5262f3eb8a6938ccd\",\n      \"bytes\": 42696,\n      \"scope\": \"read-only; current candidate for three modified VizTell files, fixed checkout for other files\"\n    },\n    {\n      \"repository\": \"VizTell\",\n      \"path\": \"docs/软件与系统工程宇宙/90_研究缺口与续研任务.md\",\n      \"absolute_path\": \"/workspace/scratch/ac9c3ac05130/VizTell/docs/软件与系统工程宇宙/90_研究缺口与续研任务.md\",\n      \"sha256\": \"de561819f14d90e64a7554fa6169f5ae58eeb6b94b17c3a26347bfd71e0c2b21\",\n      \"bytes\": 56102,\n      \"scope\": \"read-only; current candidate for three modified VizTell files, fixed checkout for other files\"\n    },\n    {\n      \"repository\": \"VizTell\",\n      \"path\": \"docs/软件与系统工程宇宙/09_工程模型独立价值实验登记_CookieEditor.md\",\n      \"absolute_path\": \"/workspace/scratch/ac9c3ac05130/VizTell/docs/软件与系统工程宇宙/09_工程模型独立价值实验登记_CookieEditor.md\",\n      \"sha256\": \"c9ed3ca330903bddac37ec3d667429f36c66299acfd5eb40fb7c9b4c5d9f1a24\",\n      \"bytes\": 12051,\n      \"scope\": \"read-only; current candidate for three modified VizTell files, fixed checkout for other files\"\n    },\n    {\n      \"repository\": \"ai-native-project-os\",\n      \"path\": \"docs/workflows/PROJECT_DELIVERY_WORKFLOW.md\",\n      \"absolute_path\": \"/workspace/scratch/ac9c3ac05130/ai-native-project-os/docs/workflows/PROJECT_DELIVERY_WORKFLOW.md\",\n      \"sha256\": \"85ec43237f0c156a6360b442f7dddffecfd193999ad4fd137467c104ae3fd16f\",\n      \"bytes\": 9324,\n      \"scope\": \"read-only; current candidate for three modified VizTell files, fixed checkout for other files\"\n    },\n    {\n      \"repository\": \"ai-native-project-os\",\n      \"path\": \"docs/workflows/REQUIREMENT_DESIGN_WORKFLOW.md\",\n      \"absolute_path\": \"/workspace/scratch/ac9c3ac05130/ai-native-project-os/docs/workflows/REQUIREMENT_DESIGN_WORKFLOW.md\",\n      \"sha256\": \"0f34b227824ad6f46f3444c0a100e828924424f23821b00c2c87c64c07a61f19\",\n      \"bytes\": 10093,\n      \"scope\": \"read-only; current candidate for three modified VizTell files, fixed checkout for other files\"\n    },\n    {\n      \"repository\": \"ai-native-project-os\",\n      \"path\": \"docs/workflows/STAGE_EXIT_GATES.md\",\n      \"absolute_path\": \"/workspace/scratch/ac9c3ac05130/ai-native-project-os/docs/workflows/STAGE_EXIT_GATES.md\",\n      \"sha256\": \"b67ca8ef073d745cc916d3a976eac8ba048f5987da2008cbdd44542b39494815\",\n      \"bytes\": 10109,\n      \"scope\": \"read-only; current candidate for three modified VizTell files, fixed checkout for other files\"\n    },\n    {\n      \"repository\": \"opendesk-browser\",\n      \"path\": \"AGENTS.md\",\n      \"absolute_path\": \"/workspace/scratch/ac9c3ac05130/opendesk-browser/AGENTS.md\",\n      \"sha256\": \"4ac453e03c297651562e1a61c17781eedd25e530ca2eec71e16111eefa5b2ce6\",\n      \"bytes\": 53708,\n      \"scope\": \"read-only; current candidate for three modified VizTell files, fixed checkout for other files\"\n    },\n    {\n      \"repository\": \"opendesk-browser\",\n      \"path\": \"projects/video-auto-skip/tool.config.json\",\n      \"absolute_path\": \"/workspace/scratch/ac9c3ac05130/opendesk-browser/projects/video-auto-skip/tool.config.json\",\n      \"sha256\": \"bab78795e23f91f597389b9c73ef1900a3180ae3aaef1506a6334407b61f839c\",\n      \"bytes\": 610,\n      \"scope\": \"read-only; current candidate for three modified VizTell files, fixed checkout for other files\"\n    },\n    {\n      \"repository\": \"opendesk-browser\",\n      \"path\": \"projects/video-auto-skip/README.zh-CN.md\",\n      \"absolute_path\": \"/workspace/scratch/ac9c3ac05130/opendesk-browser/projects/video-auto-skip/README.zh-CN.md\",\n      \"sha256\": \"61fb893b7f5efb8bc9c3b721547b661de826f3457e3d07d20bc0baa544da3e97\",\n      \"bytes\": 21981,\n      \"scope\": \"read-only; current candidate for three modified VizTell files, fixed checkout for other files\"\n    },\n    {\n      \"repository\": \"opendesk-browser\",\n      \"path\": \"projects/video-auto-skip/LOCAL-R1-ACCEPTANCE.zh-CN.md\",\n      \"absolute_path\": \"/workspace/scratch/ac9c3ac05130/opendesk-browser/projects/video-auto-skip/LOCAL-R1-ACCEPTANCE.zh-CN.md\",\n      \"sha256\": \"d88faf2007f891619f7c34b8d62210ba2f64654035af3051118f43e8e1559e88\",\n      \"bytes\": 19008,\n      \"scope\": \"read-only; current candidate for three modified VizTell files, fixed checkout for other files\"\n    },\n    {\n      \"repository\": \"opendesk-browser\",\n      \"path\": \"projects/video-auto-skip/LOCALIZATION-PLAN.zh-CN.md\",\n      \"absolute_path\": \"/workspace/scratch/ac9c3ac05130/opendesk-browser/projects/video-auto-skip/LOCALIZATION-PLAN.zh-CN.md\",\n      \"sha256\": \"3d8f84c92f433dfffe847a909141acb51d1ccd203796cd5c5f14001d50383b59\",\n      \"bytes\": 15864,\n      \"scope\": \"read-only; current candidate for three modified VizTell files, fixed checkout for other files\"\n    },\n    {\n      \"repository\": \"opendesk-browser\",\n      \"path\": \"projects/ai-send-queue/tool.config.json\",\n      \"absolute_path\": \"/workspace/scratch/ac9c3ac05130/opendesk-browser/projects/ai-send-queue/tool.config.json\",\n      \"sha256\": \"24c2853631319ac8da72bb6fcc89bb0bb4406f71230855f7e84bb14f78a0eee6\",\n      \"bytes\": 515,\n      \"scope\": \"read-only; current candidate for three modified VizTell files, fixed checkout for other files\"\n    },\n    {\n      \"repository\": \"opendesk-browser\",\n      \"path\": \"projects/ai-send-queue/README.zh-CN.md\",\n      \"absolute_path\": \"/workspace/scratch/ac9c3ac05130/opendesk-browser/projects/ai-send-queue/README.zh-CN.md\",\n      \"sha256\": \"7b9b041b95dd57e6236a6968bf60f2f898a192dec82ecc1ebaf2c203bd921350\",\n      \"bytes\": 48327,\n      \"scope\": \"read-only; current candidate for three modified VizTell files, fixed checkout for other files\"\n    },\n    {\n      \"repository\": \"opendesk-browser\",\n      \"path\": \"projects/ai-send-queue/UI-VERIFICATION.zh-CN.md\",\n      \"absolute_path\": \"/workspace/scratch/ac9c3ac05130/opendesk-browser/projects/ai-send-queue/UI-VERIFICATION.zh-CN.md\",\n      \"sha256\": \"f752070dd5dc2db4560cbc2ec57aef607268627a805b29d96b95b7212904b098\",\n      \"bytes\": 120973,\n      \"scope\": \"read-only; current candidate for three modified VizTell files, fixed checkout for other files\"\n    },\n    {\n      \"repository\": \"opendesk-browser\",\n      \"path\": \"projects/ai-send-queue/ACCEPTANCE-FOLLOWUP.zh-CN.md\",\n      \"absolute_path\": \"/workspace/scratch/ac9c3ac05130/opendesk-browser/projects/ai-send-queue/ACCEPTANCE-FOLLOWUP.zh-CN.md\",\n      \"sha256\": \"60714ee8c64510192525538ff17da1420aa2d2d576a83cf5f526fa4d33f175f7\",\n      \"bytes\": 16937,\n      \"scope\": \"read-only; current candidate for three modified VizTell files, fixed checkout for other files\"\n    }\n  ],\n  \"execution_records\": [\n    {\n      \"tool\": \"functions.exec / exec_command\",\n      \"chunk_id\": \"f6c676\",\n      \"command\": \"git status --short\",\n      \"cwd\": \"/workspace/scratch/ac9c3ac05130/VizTell\",\n      \"exit_code\": 0,\n      \"observation\": \"Only 00/07/90 modified at first review read.\"\n    },\n    {\n      \"tool\": \"functions.exec / exec_command\",\n      \"chunk_id\": \"eda508\",\n      \"command\": \"git diff --stat\",\n      \"cwd\": \"/workspace/scratch/ac9c3ac05130/VizTell\",\n      \"exit_code\": 0,\n      \"observation\": \"3 files, 91 insertions, 6 deletions at first review read.\"\n    },\n    {\n      \"tool\": \"functions.exec / exec_command\",\n      \"chunk_id\": \"95d243\",\n      \"command\": \"git diff -- <00/07/90 paths>\",\n      \"cwd\": \"/workspace/scratch/ac9c3ac05130/VizTell\",\n      \"exit_code\": 0,\n      \"observation\": \"Read complete candidate diff: S1/S5 exit fixes, capability mapping, current candidate evidence boundaries, R1-B.3 continuation, validation record.\"\n    },\n    {\n      \"tool\": \"functions.exec / exec_command\",\n      \"chunk_id\": \"b4f6b2\",\n      \"command\": \"rg -n S1/S5/ADR/N/A/blocked/退出 in three formal workflow documents\",\n      \"cwd\": \"/workspace/scratch/ac9c3ac05130/ai-native-project-os\",\n      \"exit_code\": 0,\n      \"observation\": \"Formal S1 requires no blocking unknown. S3 permits N/A and no empty ADR; requirement-design line104 conflicts by demanding accepted ADR without condition.\"\n    },\n    {\n      \"tool\": \"functions.exec / exec_command\",\n      \"chunk_id\": \"0ce41a\",\n      \"command\": \"rg --files snapshots plus two mistakenly addressed product paths in VizTell\",\n      \"cwd\": \"/workspace/scratch/ac9c3ac05130/VizTell\",\n      \"exit_code\": 2,\n      \"observation\": \"Only prior snapshot files were listed at review time; product paths do not belong to this repo. This command error is not a product failure or acceptance evidence.\"\n    },\n    {\n      \"tool\": \"functions.exec / exec_command\",\n      \"chunk_id\": \"a7ea52\",\n      \"command\": \"rg -n current candidate and evidence status terms in OpenDesk product files\",\n      \"cwd\": \"/workspace/scratch/ac9c3ac05130/opendesk-browser\",\n      \"exit_code\": 0,\n      \"observation\": \"Confirmed 0.2.17/r17 and r63/r62 separation. Output partly truncated; exact small source sections were already independently read through GitHub fetch_file.\"\n    },\n    {\n      \"tool\": \"mcp__codex_apps__github_fetch / fetch_file\",\n      \"identifier_type\": \"canonical URLs and fixed repository SHAs; provider did not expose runId\",\n      \"observation\": \"Prior read-only audit independently read the same latest-main product reports, configurations, AGENTS and VizTell 09/90. No browser or product tests invoked.\"\n    }\n  ],\n  \"findings\": [\n    {\n      \"id\": \"CASE-01\",\n      \"severity\": \"resolved\",\n      \"topic\": \"Task continuation\",\n      \"source\": \"07 section6, 90 current state, 09 experiment registry\",\n      \"finding\": \"R1-B.1 pointer was stale; candidate now points to R1-B.3 and preserves BLOCKED independent A/B status. No duplicate experiment or product task created.\",\n      \"verification\": \"PASS_DOCUMENT_REVIEW\"\n    },\n    {\n      \"id\": \"CASE-02\",\n      \"severity\": \"resolved\",\n      \"topic\": \"Candidate and historical evidence\",\n      \"source\": \"07 section5 latest snapshot table; product READMEs and acceptance reports\",\n      \"finding\": \"0.2.0 and r17 remain historical examples; current 0.2.17 and r63/r62 are clearly distinguished. Reports do not turn into current runtime acceptance; missing local raw artifacts and iYF/other-site boundaries remain explicit.\",\n      \"verification\": \"PASS_DOCUMENT_REVIEW\"\n    },\n    {\n      \"id\": \"CASE-03\",\n      \"severity\": \"resolved\",\n      \"topic\": \"Safe workflow trimming\",\n      \"source\": \"07 sections1,2,5,8; formal stage exit gates\",\n      \"finding\": \"No-choice S3 may be N/A, existing semantics and assets reused, K3/K4 not forced before K0-K2, bug repair need not recreate all models. Blocking unknown or incomplete work cannot pass a stage; permission, approved baseline, criteria and evidence remain required.\",\n      \"verification\": \"PASS_DOCUMENT_REVIEW\"\n    },\n    {\n      \"id\": \"CASE-04\",\n      \"severity\": \"resolved_wording_actual_delivery_still_pending\",\n      \"topic\": \"Git and evidence completion tense\",\n      \"source\": \"07 sections8.1 and8.3\",\n      \"finding\": \"Latest candidate corrects premature Git completion language and conditions final delivery on actual commit/readback receipts. No future success is asserted.\",\n      \"minimum_fix\": \"Complete real Git commit and remote readback, write actual snapshot and hashes before fixing final claims; otherwise mark these steps pending. Do not invent successful future receipts.\",\n      \"verification\": \"PASS_DOCUMENT_REVIEW; actual Git delivery not reviewed\",\n      \"initial_finding\": \"Reviewed candidate already states Git delivery/readback and points to a final snapshot, but at this review time no new snapshot or completed remote readback was present. Parent explicitly states remote commit is pending.\"\n    },\n    {\n      \"id\": \"CASE-05\",\n      \"severity\": \"open_external_scope\",\n      \"topic\": \"Formal ADR dependency conflict\",\n      \"source\": \"ai-native-project-os REQUIREMENT_DESIGN_WORKFLOW.md line104 versus PROJECT_DELIVERY_WORKFLOW.md lines19,50 and STAGE_EXIT_GATES.md lines51-60\",\n      \"finding\": \"Formal requirement-workflow wording can be read as an unconditional accepted-ADR prerequisite while delivery/gate texts explicitly permit no-choice N/A. Candidate now describes this as a wording ambiguity and preserves the actual implementation/authority boundary.\",\n      \"minimum_fix\": \"Existing formal workflow owner should condition the sentence on actual architecture choice and retain decision approval for such choices. Receipt or owner acceptance is not claimed.\",\n      \"verification\": \"SOURCE_CONFIRMED_NOT_FIXED_IN_FORMAL_REPOSITORY\"\n    },\n    {\n      \"id\": \"CASE-06\",\n      \"severity\": \"acceptance_limitation\",\n      \"topic\": \"Actual application proof\",\n      \"source\": \"07 section8\",\n      \"finding\": \"No real product task was executed end-to-end this round. Document maintenance is real execution but cannot prove automatic phase/model/Skill selection, safe adaptive returns or real business acceptance. Historical B/C reports and hypothetical A do not close this gap.\",\n      \"minimum_fix\": \"Preserve NOT_RUN/UNVERIFIED and hand result to existing implementation processes. No duplicate product/experiment should be started solely to raise score.\",\n      \"verification\": \"REAL_BUSINESS_ACCEPTANCE_NOT_RUN\"\n    }\n  ],\n  \"scores\": [\n    {\n      \"perspective\": \"需求工程专家\",\n      \"score\": 86,\n      \"scale\": 100,\n      \"basis\": \"Original goal, scoped requirements, the three task routes and preservation of permission/criteria obligations are coherent and source-linked. Score measures complete A-D validation rather than writing quality.\",\n      \"deductions\": [\n        {\n          \"points\": 8,\n          \"reason\": \"No current real product execution demonstrates that necessary requirements are recovered and omissions are corrected through acceptance.\"\n        },\n        {\n          \"points\": 4,\n          \"reason\": \"New-product case remains hypothetical and both product cases are historical path reviews; no new independent application outcome.\"\n        },\n        {\n          \"points\": 2,\n          \"reason\": \"Current local product state and original runtime attachments were unavailable, limiting the strength of recovered behavioral facts.\"\n        }\n      ]\n    },\n    {\n      \"perspective\": \"工作流专家\",\n      \"score\": 84,\n      \"scale\": 100,\n      \"basis\": \"Minimal corrections restore clear stage stopping conditions; reuse and pruning are explained, and old specialist tasks are not repeated. Full application evidence remains incomplete.\",\n      \"deductions\": [\n        {\n          \"points\": 9,\n          \"reason\": \"No present software execution chain tests actual routing, capability invocation, failure reopening and final acceptance.\"\n        },\n        {\n          \"points\": 4,\n          \"reason\": \"Formal ADR prerequisite contradiction is identified but remains unresolved at the authority source.\"\n        },\n        {\n          \"points\": 3,\n          \"reason\": \"Existing tool/Skill guidance is mapped but automatic triggering and handoff reliability are unverified in a real task.\"\n        }\n      ]\n    }\n  ],\n  \"arithmetic_mean_of_this_review_only\": 85.0,\n  \"six_perspective_overall_mean\": null,\n  \"status\": {\n    \"document_semantics\": \"PASS_DOCUMENT_REVIEW\",\n    \"current_product_execution\": \"NOT_RUN\",\n    \"real_business_acceptance\": \"NOT_PASSED\",\n    \"remote_commit_readback\": \"NOT_REVIEWED_PENDING\",\n    \"95_gate\": \"NOT_MET\"\n  },\n  \"remaining_in_topic_work\": [\n    \"Bind the real final snapshot and actual Git commit/remote readback before reporting delivery. No additional semantic patch, new case research, duplicate product execution or new framework is required by this review.\"\n  ],\n  \"boundary\": \"This review does not certify other agents, tools, model reliability, native products, or framework deployment. Numerical scores are reasoned consultation judgments, not statistical measurements or human expert certification.\",\n  \"initial_review_inputs\": [\n    {\n      \"repository\": \"VizTell\",\n      \"path\": \"docs/软件与系统工程宇宙/00_AI原生研发总体框架与关键结论.md\",\n      \"absolute_path\": \"/workspace/scratch/ac9c3ac05130/VizTell/docs/软件与系统工程宇宙/00_AI原生研发总体框架与关键结论.md\",\n      \"sha256\": \"c4525fdd1e0d21e64022ced56b6571e13b0d6e34b26767f453ee3b8c2b1a5dbb\",\n      \"bytes\": 11750,\n      \"scope\": \"read-only; current candidate for three modified VizTell files, fixed checkout for other files\"\n    },\n    {\n      \"repository\": \"VizTell\",\n      \"path\": \"docs/软件与系统工程宇宙/07_研发工作流与工程能力关系.md\",\n      \"absolute_path\": \"/workspace/scratch/ac9c3ac05130/VizTell/docs/软件与系统工程宇宙/07_研发工作流与工程能力关系.md\",\n      \"sha256\": \"0945bc623b82c3f3c6a8d686be3cecfc1b33a75e5cae36f5262f3eb8a6938ccd\",\n      \"bytes\": 42696,\n      \"scope\": \"read-only; current candidate for three modified VizTell files, fixed checkout for other files\"\n    },\n    {\n      \"repository\": \"VizTell\",\n      \"path\": \"docs/软件与系统工程宇宙/90_研究缺口与续研任务.md\",\n      \"absolute_path\": \"/workspace/scratch/ac9c3ac05130/VizTell/docs/软件与系统工程宇宙/90_研究缺口与续研任务.md\",\n      \"sha256\": \"de561819f14d90e64a7554fa6169f5ae58eeb6b94b17c3a26347bfd71e0c2b21\",\n      \"bytes\": 56102,\n      \"scope\": \"read-only; current candidate for three modified VizTell files, fixed checkout for other files\"\n    },\n    {\n      \"repository\": \"VizTell\",\n      \"path\": \"docs/软件与系统工程宇宙/09_工程模型独立价值实验登记_CookieEditor.md\",\n      \"absolute_path\": \"/workspace/scratch/ac9c3ac05130/VizTell/docs/软件与系统工程宇宙/09_工程模型独立价值实验登记_CookieEditor.md\",\n      \"sha256\": \"c9ed3ca330903bddac37ec3d667429f36c66299acfd5eb40fb7c9b4c5d9f1a24\",\n      \"bytes\": 12051,\n      \"scope\": \"read-only; current candidate for three modified VizTell files, fixed checkout for other files\"\n    },\n    {\n      \"repository\": \"ai-native-project-os\",\n      \"path\": \"docs/workflows/PROJECT_DELIVERY_WORKFLOW.md\",\n      \"absolute_path\": \"/workspace/scratch/ac9c3ac05130/ai-native-project-os/docs/workflows/PROJECT_DELIVERY_WORKFLOW.md\",\n      \"sha256\": \"85ec43237f0c156a6360b442f7dddffecfd193999ad4fd137467c104ae3fd16f\",\n      \"bytes\": 9324,\n      \"scope\": \"read-only; current candidate for three modified VizTell files, fixed checkout for other files\"\n    },\n    {\n      \"repository\": \"ai-native-project-os\",\n      \"path\": \"docs/workflows/REQUIREMENT_DESIGN_WORKFLOW.md\",\n      \"absolute_path\": \"/workspace/scratch/ac9c3ac05130/ai-native-project-os/docs/workflows/REQUIREMENT_DESIGN_WORKFLOW.md\",\n      \"sha256\": \"0f34b227824ad6f46f3444c0a100e828924424f23821b00c2c87c64c07a61f19\",\n      \"bytes\": 10093,\n      \"scope\": \"read-only; current candidate for three modified VizTell files, fixed checkout for other files\"\n    },\n    {\n      \"repository\": \"ai-native-project-os\",\n      \"path\": \"docs/workflows/STAGE_EXIT_GATES.md\",\n      \"absolute_path\": \"/workspace/scratch/ac9c3ac05130/ai-native-project-os/docs/workflows/STAGE_EXIT_GATES.md\",\n      \"sha256\": \"b67ca8ef073d745cc916d3a976eac8ba048f5987da2008cbdd44542b39494815\",\n      \"bytes\": 10109,\n      \"scope\": \"read-only; current candidate for three modified VizTell files, fixed checkout for other files\"\n    },\n    {\n      \"repository\": \"opendesk-browser\",\n      \"path\": \"AGENTS.md\",\n      \"absolute_path\": \"/workspace/scratch/ac9c3ac05130/opendesk-browser/AGENTS.md\",\n      \"sha256\": \"4ac453e03c297651562e1a61c17781eedd25e530ca2eec71e16111eefa5b2ce6\",\n      \"bytes\": 53708,\n      \"scope\": \"read-only; current candidate for three modified VizTell files, fixed checkout for other files\"\n    },\n    {\n      \"repository\": \"opendesk-browser\",\n      \"path\": \"projects/video-auto-skip/tool.config.json\",\n      \"absolute_path\": \"/workspace/scratch/ac9c3ac05130/opendesk-browser/projects/video-auto-skip/tool.config.json\",\n      \"sha256\": \"bab78795e23f91f597389b9c73ef1900a3180ae3aaef1506a6334407b61f839c\",\n      \"bytes\": 610,\n      \"scope\": \"read-only; current candidate for three modified VizTell files, fixed checkout for other files\"\n    },\n    {\n      \"repository\": \"opendesk-browser\",\n      \"path\": \"projects/video-auto-skip/README.zh-CN.md\",\n      \"absolute_path\": \"/workspace/scratch/ac9c3ac05130/opendesk-browser/projects/video-auto-skip/README.zh-CN.md\",\n      \"sha256\": \"61fb893b7f5efb8bc9c3b721547b661de826f3457e3d07d20bc0baa544da3e97\",\n      \"bytes\": 21981,\n      \"scope\": \"read-only; current candidate for three modified VizTell files, fixed checkout for other files\"\n    },\n    {\n      \"repository\": \"opendesk-browser\",\n      \"path\": \"projects/video-auto-skip/LOCAL-R1-ACCEPTANCE.zh-CN.md\",\n      \"absolute_path\": \"/workspace/scratch/ac9c3ac05130/opendesk-browser/projects/video-auto-skip/LOCAL-R1-ACCEPTANCE.zh-CN.md\",\n      \"sha256\": \"d88faf2007f891619f7c34b8d62210ba2f64654035af3051118f43e8e1559e88\",\n      \"bytes\": 19008,\n      \"scope\": \"read-only; current candidate for three modified VizTell files, fixed checkout for other files\"\n    },\n    {\n      \"repository\": \"opendesk-browser\",\n      \"path\": \"projects/video-auto-skip/LOCALIZATION-PLAN.zh-CN.md\",\n      \"absolute_path\": \"/workspace/scratch/ac9c3ac05130/opendesk-browser/projects/video-auto-skip/LOCALIZATION-PLAN.zh-CN.md\",\n      \"sha256\": \"3d8f84c92f433dfffe847a909141acb51d1ccd203796cd5c5f14001d50383b59\",\n      \"bytes\": 15864,\n      \"scope\": \"read-only; current candidate for three modified VizTell files, fixed checkout for other files\"\n    },\n    {\n      \"repository\": \"opendesk-browser\",\n      \"path\": \"projects/ai-send-queue/tool.config.json\",\n      \"absolute_path\": \"/workspace/scratch/ac9c3ac05130/opendesk-browser/projects/ai-send-queue/tool.config.json\",\n      \"sha256\": \"24c2853631319ac8da72bb6fcc89bb0bb4406f71230855f7e84bb14f78a0eee6\",\n      \"bytes\": 515,\n      \"scope\": \"read-only; current candidate for three modified VizTell files, fixed checkout for other files\"\n    },\n    {\n      \"repository\": \"opendesk-browser\",\n      \"path\": \"projects/ai-send-queue/README.zh-CN.md\",\n      \"absolute_path\": \"/workspace/scratch/ac9c3ac05130/opendesk-browser/projects/ai-send-queue/README.zh-CN.md\",\n      \"sha256\": \"7b9b041b95dd57e6236a6968bf60f2f898a192dec82ecc1ebaf2c203bd921350\",\n      \"bytes\": 48327,\n      \"scope\": \"read-only; current candidate for three modified VizTell files, fixed checkout for other files\"\n    },\n    {\n      \"repository\": \"opendesk-browser\",\n      \"path\": \"projects/ai-send-queue/UI-VERIFICATION.zh-CN.md\",\n      \"absolute_path\": \"/workspace/scratch/ac9c3ac05130/opendesk-browser/projects/ai-send-queue/UI-VERIFICATION.zh-CN.md\",\n      \"sha256\": \"f752070dd5dc2db4560cbc2ec57aef607268627a805b29d96b95b7212904b098\",\n      \"bytes\": 120973,\n      \"scope\": \"read-only; current candidate for three modified VizTell files, fixed checkout for other files\"\n    },\n    {\n      \"repository\": \"opendesk-browser\",\n      \"path\": \"projects/ai-send-queue/ACCEPTANCE-FOLLOWUP.zh-CN.md\",\n      \"absolute_path\": \"/workspace/scratch/ac9c3ac05130/opendesk-browser/projects/ai-send-queue/ACCEPTANCE-FOLLOWUP.zh-CN.md\",\n      \"sha256\": \"60714ee8c64510192525538ff17da1420aa2d2d576a83cf5f526fa4d33f175f7\",\n      \"bytes\": 16937,\n      \"scope\": \"read-only; current candidate for three modified VizTell files, fixed checkout for other files\"\n    }\n  ],\n  \"followup_review\": {\n    \"reviewed_at\": \"2026-11-27T10:24:34.635763+08:00\",\n    \"tool\": \"functions.exec / exec_command\",\n    \"chunk_id\": \"8356d0\",\n    \"exit_code\": 0,\n    \"observation\": \"Read latest 00/07/90 hashes and changed claims. 07 now explicitly says commit preparation is not Git delivery, requires actual tool receipts, and closes document maintenance only after checks/commit/readback. Snapshot has a concrete path. ADR wording is framed as an ambiguity, not an executed checker defect.\",\n    \"finding_resolution\": {\n      \"CASE-04\": \"Premature completion wording corrected. Actual remote commit/readback still pending and not certified by this review.\"\n    },\n    \"scores_unchanged\": true,\n    \"remaining_required_repository_semantic_edits\": []\n  }\n}\n"
+      },
+      {
+        "source_filename": "audit-framework-final.json",
+        "original_utf8_sha256": "b23c31eb9811ed3a18959ff5a2a5c0ac8d591236edba810b5d8e47c4eb012c45",
+        "original_utf8": "{\n  \"task_id\": \"AI-NATIVE-DEVELOPMENT-WORKFLOW-R2-VALIDATION\",\n  \"task_path\": \"/root/framework_audit\",\n  \"review_type\": \"independent_subagent_consultative_review\",\n  \"reviewed_at_utc\": \"2026-11-27T02:24:37.294422+00:00\",\n  \"scoring_scope\": \"本轮完整A–D验证范围的证据成熟度与可用性；不是仅对文档修辞评分，不是框架官方总体分，不是统计测得的成功率。\",\n  \"independence\": {\n    \"separate_agent_context\": true,\n    \"inherited_parent_context\": true,\n    \"blind_review\": false,\n    \"reviewer_is_human\": false,\n    \"certified_os_verifier\": false,\n    \"limits\": \"同一Agent承担软件架构与AI Agent两个专业视角；不能声称两位独立专家、盲评、多模型实测或正式Acceptance Verdict。\"\n  },\n  \"baselines\": {\n    \"VizTell\": \"cdc95f1264da7b6d0ae002bda8456ddb688d803e\",\n    \"ai-native-project-os\": \"1a1867640b7ee538bac21cd1a16d50f6a7e19c0f\",\n    \"opendesk-browser\": \"e351c1e9bb4dd84b38d3554c118edb6711a09baf\"\n  },\n  \"input_sha256\": {\n    \"docs/软件与系统工程宇宙/00_AI原生研发总体框架与关键结论.md\": \"c4525fdd1e0d21e64022ced56b6571e13b0d6e34b26767f453ee3b8c2b1a5dbb\",\n    \"docs/软件与系统工程宇宙/07_研发工作流与工程能力关系.md\": \"0945bc623b82c3f3c6a8d686be3cecfc1b33a75e5cae36f5262f3eb8a6938ccd\",\n    \"docs/软件与系统工程宇宙/90_研究缺口与续研任务.md\": \"de561819f14d90e64a7554fa6169f5ae58eeb6b94b17c3a26347bfd71e0c2b21\"\n  },\n  \"opendesk_skill_file_sha256\": {\n    \"opendesk-extension-runtime\": \"05905bb6d111d1b9257fd02488e79b470b19cacc163cdd6bfa104ddca69f6aa9\",\n    \"opendesk-extension-ui\": \"2d96e18985beecb78d7f3f38fc39a557f0c7d869b8c169c83dcd5c9650d52709\",\n    \"opendesk-program-publish\": \"f821a56a31db9974b8a8eb5741589ddd422b2ed14eabe9017e761e7605443187\",\n    \"opendesk-script-authoring\": \"906a8e3709cee679ff231a89655b7dfc8ff1f1e20a67401dcb9d1cc4929cff94\",\n    \"opendesk-sidebar-tool-dev\": \"a4ae7e83ba33950aedac7a27e0353cea3cd4cc2f0065db98426a9d0b46a35dfc\",\n    \"opendesk-sidebar-tool-package\": \"2150163869c655f23de2c248078fa4ae625f185f8f5722aff368dbfb52153132\",\n    \"opendesk-trusted-sidebar-feature\": \"ffbdbd2d3b0fd7f31c7f328ce8da6b1f9d6733289597f102c0995668a40cd7f0\",\n    \"opendesk-ui-preview\": \"28e8d73d8d2073bd48ffe21fd72c7da22a2fedde27be73f7327e9963fc91352b\"\n  },\n  \"actual_run_identifiers\": {\n    \"agent_task_path\": \"/root/framework_audit\",\n    \"tool_exec_command_chunks\": [\n      \"07c907\",\n      \"166a21\",\n      \"e26b14\",\n      \"40df35\",\n      \"787046\",\n      \"5b5f1d\",\n      \"7a6432\",\n      \"3f19e4\",\n      \"19a5a3\",\n      \"17063e\",\n      \"17c34a\",\n      \"063498\",\n      \"70f48c\",\n      \"b0538d\",\n      \"d41739\",\n      \"cbfea9\",\n      \"74c277\"\n    ],\n    \"note\": \"这些是实际工具输出的chunk ID；未冒充产品Run ID。GitHub连接器只读调用另以仓库固定SHA与文件blob SHA定位。\"\n  },\n  \"methods\": [\n    \"GitHub固定提交的完整框架路径树（477条，truncated=false）与指定权威文件定向读取。\",\n    \"读取正式流程/阶段门禁/Skill契约/模板、两项Python静态检查器和既有实施计划；未运行其测试。\",\n    \"核对OpenDesk八个Skill的目录、元数据、触发和边界相关段落，以及原创建工作流与历史记录；并非激活这八个产品Skill。\",\n    \"读取app-update与preview checker源码；核对原builder、preview kit和read-only Codex eval脚本的真实源码入口。\",\n    \"检查初始修订diff后，再读取两处收口措辞的实际最新内容，并冻结三份候选文档SHA256。\"\n  ],\n  \"verified_repairs\": [\n    {\n      \"id\": \"WF-EXIT-UNKNOWN\",\n      \"status\": \"FIXED_IN_REVIEWED_CANDIDATE\",\n      \"evidence\": \"07 §2 S1明确只有关键未知不再阻断当前决策才可退出，否则保留blocked。\"\n    },\n    {\n      \"id\": \"WF-EXIT-INCOMPLETE\",\n      \"status\": \"FIXED_IN_REVIEWED_CANDIDATE\",\n      \"evidence\": \"07 §2 S5明确所需检查通过才退出；未完成留当前或重开上游。\"\n    },\n    {\n      \"id\": \"WF-STALE-HANDOFF\",\n      \"status\": \"FIXED_IN_REVIEWED_CANDIDATE\",\n      \"evidence\": \"07 §6引用R1-B.3与09登记，明确不重启B.1/B.2或盲测。\"\n    },\n    {\n      \"id\": \"WF-CAPABILITY-BOUNDARY\",\n      \"status\": \"VERIFIED_IN_REVIEWED_CANDIDATE\",\n      \"evidence\": \"07 §3.1区分8个OpenDesk指导Skill、实际工具/Workflow、OS模板/候选；没有宣称已自动触发或OS注册成功。\"\n    },\n    {\n      \"id\": \"WF-PRECOMMIT-CLAIM\",\n      \"status\": \"FIXED_IN_REVIEWED_CANDIDATE\",\n      \"evidence\": \"07 §8.1/8.3将Git交付改为实际提交与远端读回回执为准，未提前报PASS。\"\n    },\n    {\n      \"id\": \"WF-ADR-WORDING\",\n      \"status\": \"CORRECTLY_LIMITED_TO_AMBIGUITY\",\n      \"evidence\": \"07 §8.2准确写成可被理解为强制ADR的措辞不一致，未声称已证明运行强制ADR。\"\n    }\n  ],\n  \"capability_findings\": {\n    \"framework_specific_p1_p13_deployed_packages_found\": 0,\n    \"opendesk_repository_guidance_skills_found\": 8,\n    \"these_counts_are_not_equivalent\": true,\n    \"actual_tools_confirmed\": [\n      \"linters/check_controlled_objects.py\",\n      \"linters/check_capability_function_mapping.py\",\n      \"scripts/app-update.mjs\",\n      \"scripts/app-update-plan.mjs\",\n      \"scripts/build-sidebar-tool.mjs\",\n      \"scripts/sidebar-preview-kit.mjs\",\n      \"scripts/preview/build-preview.mjs\",\n      \"scripts/preview/check-preview-contract.mjs\",\n      \"scripts/agent-skills-r22-eval.mjs\"\n    ],\n    \"opendesk_script_git_blobs\": {\n      \"scripts/agent-skills-r22-eval.mjs\": \"9493a24c8f4297b0115881ccf672a1275d64b115\",\n      \"scripts/app-update.mjs\": \"7e01a27203c6588d1c86cbc094eec698666bdee6\",\n      \"scripts/build-sidebar-tool.mjs\": \"952e19d9ff11f53aed8788f117347950d3e1624f\",\n      \"scripts/preview/check-preview-contract.mjs\": \"c0e55a69295f1dd842ceec6823b3c349bac7426d\"\n    },\n    \"specific_limits\": [\n      \"app-update通过候选构建、定向测试、晋升、读回后只报PACKAGE_READY_INSTALL_NOT_TESTED，不能证明实际Chrome安装。\",\n      \"check-preview-contract明确锁定quick-notes输入，检查来源锁与重复生成一致性，不能外推全工具或原生验收。\",\n      \"agent-skills-r22-eval实现codex exec --json --sandbox read-only及调用/读取/不可观测分级；reasoning/ownership仍要求人工语义审阅，不能以关键词通过声称正确率。\",\n      \"OpenDesk sparse-checkout未包含scripts；本地路径不存在不是仓库能力不存在。已用git ls-tree、git show和GitHub读取确认固定HEAD中的源码。\"\n    ],\n    \"new_skill_required_by_this_task\": false\n  },\n  \"open_findings\": [\n    {\n      \"id\": \"FW-ADR-OPTIONAL\",\n      \"severity\": \"P2\",\n      \"status\": \"DOCUMENTED_FOR_EXISTING_OWNER_NOT_FIXED\",\n      \"source\": \"ai-native-project-os docs/workflows/REQUIREMENT_DESIGN_WORKFLOW.md §7 line104\",\n      \"impact\": \"与PROJECT_DELIVERY_WORKFLOW §1/4及STAGE_EXIT_GATES §S3的按需ADR/N/A表达仍不一致，可能使消费者过度执行。\",\n      \"minimum_fix\": \"由原正式权威维护将相关措辞限定为存在架构选择时要求ADR。\",\n      \"owner_receipt_verified\": false\n    },\n    {\n      \"id\": \"WF-REAL-APPLICATION\",\n      \"severity\": \"acceptance_gap\",\n      \"status\": \"UNVERIFIED\",\n      \"impact\": \"本轮没有从实际产品任务经工作流选择和必要Skill调用到真实业务验收的完整运行证据；文档修复不能替代此证据。\"\n    },\n    {\n      \"id\": \"WF-AUTOMATIC-ROUTING\",\n      \"severity\": \"acceptance_gap\",\n      \"status\": \"UNVERIFIED\",\n      \"impact\": \"P1–P13与8个现有Skill的来源已核实，但未观测本轮三个案例的自动选择、调用事件及任务结果。\"\n    },\n    {\n      \"id\": \"WF-OS-L2-CONSUMPTION\",\n      \"severity\": \"acceptance_gap\",\n      \"status\": \"UNVERIFIED\",\n      \"impact\": \"正式OS仍partial/unverified；没有本轮真实L2按其契约消费上下文、Spec、Workflow、Skill和Run/Evidence的运行证明。\"\n    }\n  ],\n  \"scores\": [\n    {\n      \"dimension\": \"软件架构\",\n      \"score\": 94,\n      \"out_of\": 100,\n      \"deductions\": [\n        {\n          \"points\": 3,\n          \"reason\": \"正式框架ADR前置表述歧义仍未在权威源闭合，只完成有证据登记与承接路径。\"\n        },\n        {\n          \"points\": 3,\n          \"reason\": \"阶段依赖和工程模型裁剪已完成静态/独立语义核对，尚无本轮真实产品执行证明这些衔接在实际技术依赖下成立。\"\n        }\n      ],\n      \"positive_basis\": \"五阶段映射、按需ADR、最早受影响节点重开、单一权威、阶段门禁与候选/模板/工具的分离均正确；修订保持最小范围。\",\n      \"passes_95_target\": false\n    },\n    {\n      \"dimension\": \"AI Agent\",\n      \"score\": 88,\n      \"out_of\": 100,\n      \"deductions\": [\n        {\n          \"points\": 7,\n          \"reason\": \"尚无本轮实际任务自动选择研发阶段和必要Skill、观测调用事件并完成业务验收的闭环，只有人工组织的文档维护及能力源码核对。\"\n        },\n        {\n          \"points\": 5,\n          \"reason\": \"正式框架的真实L2上下文与执行契约消费未验证；已有Skill指导文件和可执行工具不能证明OS自动编排接入已完成。\"\n        }\n      ],\n      \"positive_basis\": \"八个真实仓库Skill与P1–P13候选区别清楚；按职责选入口、复用现有脚本、独立Agent审查、版本证据边界和不重复实现均已落实。\",\n      \"passes_95_target\": false\n    }\n  ],\n  \"score_interpretation\": \"咨询性证据评分；不保证目标95，不以完成文档或模型自评补足真实运行证据。两项分数仅供父任务与另外四项做六项算术平均；本报告不自行生成六专家总分。\",\n  \"tests_executed_by_reviewer\": [],\n  \"product_runtime_executed_by_reviewer\": false,\n  \"git_commit_and_remote_readback_at_review\": \"PENDING_NOT_CLAIMED\",\n  \"candidate_document_blockers_remaining\": [],\n  \"overall_real_application_acceptance\": \"NOT_PASSED\",\n  \"review_recommendation\": \"可提交有明确边界的文档修复；实际Git交付待提交与读回回执。停止本专题独立扩展，把未证实项留既有承接入口；不得称原始自动研发目标或95门禁通过。\"\n}\n"
+      },
+      {
+        "source_filename": "audit-redteam-final.json",
+        "original_utf8_sha256": "f64070a7f7398d9901fc0c565bbc9575de9ac9fd2d5a6925771e0952324cf708",
+        "original_utf8": "{\n  \"schema_version\": 1,\n  \"review_id\": \"AI-NATIVE-DEVELOPMENT-WORKFLOW-R2-VALIDATION-independent-verification-redteam-2026-11-27\",\n  \"task_path\": \"/root/verification_redteam\",\n  \"review_date\": \"2026-11-27\",\n  \"reviewer_type\": \"independent_ai_subagent\",\n  \"human_expert\": false,\n  \"official_os_certified_verifier\": false,\n  \"scope\": \"用户完整A-D验证范围；不是只评文案质量，也不是AI-Project-OS官方总分或产品验收裁决。\",\n  \"scope_by_objective\": {\n    \"A\": \"核五阶段与正式框架一致性、遗漏、依赖、复用、裁剪、输入输出退出及重复；具体错误最小修正。\",\n    \"B\": \"复用07三个案例核对入口、知识、模型、能力、省略理由及验收；仅检查选择衔接，不重开发或重跑其他专项。\",\n    \"C\": \"区分13项中的已存在Skill、工具/Workflow、模板/候选与实际缺失；不凭候选名称新增Skill。\",\n    \"D\": \"核对已有任务与授权条件，选择真实工作包并记录任务至验收；受阻或未运行不得用桌面、样例、历史代真实。当前实际工作包为研究文档修正。\"\n  },\n  \"repository_heads\": {\n    \"VizTell\": \"cdc95f1264da7b6d0ae002bda8456ddb688d803e\",\n    \"ai-native-project-os\": \"1a1867640b7ee538bac21cd1a16d50f6a7e19c0f\",\n    \"opendesk-browser\": \"e351c1e9bb4dd84b38d3554c118edb6711a09baf\"\n  },\n  \"candidate_status_at_review\": \"main工作树文档候选；root静态文档检查已PASS且本Agent核对同候选hash，完整证据快照与Git交付仍待root完成。本评审不预认定提交/远端回读。\",\n  \"input_files\": [\n    {\n      \"repository\": \"VizTell\",\n      \"path\": \"docs/软件与系统工程宇宙/00_AI原生研发总体框架与关键结论.md\",\n      \"sha256\": \"c4525fdd1e0d21e64022ced56b6571e13b0d6e34b26767f453ee3b8c2b1a5dbb\"\n    },\n    {\n      \"repository\": \"VizTell\",\n      \"path\": \"docs/软件与系统工程宇宙/07_研发工作流与工程能力关系.md\",\n      \"sha256\": \"0945bc623b82c3f3c6a8d686be3cecfc1b33a75e5cae36f5262f3eb8a6938ccd\"\n    },\n    {\n      \"repository\": \"VizTell\",\n      \"path\": \"docs/软件与系统工程宇宙/90_研究缺口与续研任务.md\",\n      \"sha256\": \"de561819f14d90e64a7554fa6169f5ae58eeb6b94b17c3a26347bfd71e0c2b21\"\n    },\n    {\n      \"repository\": \"ai-native-project-os\",\n      \"path\": \"AGENTS.md\",\n      \"sha256\": \"62414f64b3fb12fda23e8eb0b5fd395be154b93ba17d28a5e3668712389cef19\"\n    },\n    {\n      \"repository\": \"ai-native-project-os\",\n      \"path\": \"README.md\",\n      \"sha256\": \"2a3aee397c2c7178f7da4ae94055bb29468a1e92610757dca4d7b701e0044ce9\"\n    },\n    {\n      \"repository\": \"ai-native-project-os\",\n      \"path\": \"project-os.yaml\",\n      \"sha256\": \"c25d9a758942cdcadf4a8089b8ac1a6aea7a6482987d60ff6e403045e73b3904\"\n    },\n    {\n      \"repository\": \"ai-native-project-os\",\n      \"path\": \"docs/workflows/PROJECT_DELIVERY_WORKFLOW.md\",\n      \"sha256\": \"85ec43237f0c156a6360b442f7dddffecfd193999ad4fd137467c104ae3fd16f\"\n    },\n    {\n      \"repository\": \"ai-native-project-os\",\n      \"path\": \"docs/workflows/STAGE_EXIT_GATES.md\",\n      \"sha256\": \"b67ca8ef073d745cc916d3a976eac8ba048f5987da2008cbdd44542b39494815\"\n    },\n    {\n      \"repository\": \"ai-native-project-os\",\n      \"path\": \"docs/workflows/PROJECT_TYPE_AND_GOVERNANCE_ROUTING.md\",\n      \"sha256\": \"fe0bbf3f2f2c1efbc16dc67533107384ca7b7b0990a3502ced8e9c4280ad793b\"\n    },\n    {\n      \"repository\": \"ai-native-project-os\",\n      \"path\": \"contracts/execution/skill-contract.yaml\",\n      \"sha256\": \"5f7421a40a573837a259a0bb446ca9160e9e89f82f349b8834ba745c9c80a560\"\n    },\n    {\n      \"repository\": \"ai-native-project-os\",\n      \"path\": \"docs/governance/GATES_PROOF_SCORING.md\",\n      \"sha256\": \"78dbb015077b71abaee04d25d0eb8d4eb7af71d22705c26a299c9a8377676f5d\"\n    },\n    {\n      \"repository\": \"ai-native-project-os\",\n      \"path\": \"reviews/current-score-status.yaml\",\n      \"sha256\": \"f295fd01b83579001dbbd8ebd79a2547842dd89953fff38680487734a15f33bf\"\n    },\n    {\n      \"repository\": \"ai-native-project-os\",\n      \"path\": \"linters/check_controlled_objects.py\",\n      \"sha256\": \"61b8aacb5fe60e967a4f1860b6297228f79bfb78cb4056c80f51d95732bd2cd7\"\n    },\n    {\n      \"repository\": \"ai-native-project-os\",\n      \"path\": \"tests/test_operational_spine_checker.py\",\n      \"sha256\": \"3ba80b4f9bf11062df2a7163f8305392da633c0743b83d046212a7a6e1cda303\"\n    },\n    {\n      \"repository\": \"ai-native-project-os\",\n      \"path\": \"tests/test_operational_spine_e2e.py\",\n      \"sha256\": \"300bb8089ad959eb88d711d86fff67d032add01cbd6a309fc71f5dcab5a56b7b\"\n    },\n    {\n      \"repository\": \"opendesk-browser\",\n      \"path\": \"AGENTS.md\",\n      \"sha256\": \"4ac453e03c297651562e1a61c17781eedd25e530ca2eec71e16111eefa5b2ce6\"\n    },\n    {\n      \"repository\": \"opendesk-browser\",\n      \"path\": \".agents/skills/README.md\",\n      \"sha256\": \"1ab06c99ddfab5d50f57668662f9aca42f6009d8b67ebfe31879bd8dc211dd54\"\n    },\n    {\n      \"repository\": \"opendesk-browser\",\n      \"path\": \"projects/video-auto-skip/REQUIREMENTS.zh-CN.md\",\n      \"sha256\": \"311ec4da2c804838696c1d20ad3c99e906a635ef57127b2e3352666266400c6d\"\n    },\n    {\n      \"repository\": \"opendesk-browser\",\n      \"path\": \"projects/video-auto-skip/LOCAL-R1-ACCEPTANCE.zh-CN.md\",\n      \"sha256\": \"d88faf2007f891619f7c34b8d62210ba2f64654035af3051118f43e8e1559e88\"\n    },\n    {\n      \"repository\": \"opendesk-browser\",\n      \"path\": \"projects/video-auto-skip/tests/rules.test.mjs\",\n      \"sha256\": \"e7f22ebbd78abbb854c90a43da21e067880a0e732043eb92e2d4ebb13ab653bc\"\n    },\n    {\n      \"repository\": \"opendesk-browser\",\n      \"path\": \"projects/video-auto-skip/README.zh-CN.md\",\n      \"sha256\": \"61fb893b7f5efb8bc9c3b721547b661de826f3457e3d07d20bc0baa544da3e97\"\n    },\n    {\n      \"repository\": \"opendesk-browser\",\n      \"path\": \"projects/video-auto-skip/LOCALIZATION-PLAN.zh-CN.md\",\n      \"sha256\": \"3d8f84c92f433dfffe847a909141acb51d1ccd203796cd5c5f14001d50383b59\"\n    },\n    {\n      \"repository\": \"opendesk-browser\",\n      \"path\": \"projects/video-auto-skip/tool.config.json\",\n      \"sha256\": \"bab78795e23f91f597389b9c73ef1900a3180ae3aaef1506a6334407b61f839c\"\n    },\n    {\n      \"repository\": \"opendesk-browser\",\n      \"path\": \"projects/ai-send-queue/ACCEPTANCE-FOLLOWUP.zh-CN.md\",\n      \"sha256\": \"60714ee8c64510192525538ff17da1420aa2d2d576a83cf5f526fa4d33f175f7\"\n    },\n    {\n      \"repository\": \"opendesk-browser\",\n      \"path\": \"projects/ai-send-queue/ACCEPTANCE-CTRL-ENTER.zh-CN.md\",\n      \"sha256\": \"59c48fc6feabd398d7001097297a8cd4b0ca5dade2e20df379a849bf771bc214\"\n    },\n    {\n      \"repository\": \"opendesk-browser\",\n      \"path\": \"projects/ai-send-queue/README.zh-CN.md\",\n      \"sha256\": \"7b9b041b95dd57e6236a6968bf60f2f898a192dec82ecc1ebaf2c203bd921350\"\n    },\n    {\n      \"repository\": \"opendesk-browser\",\n      \"path\": \"projects/ai-send-queue/UI-VERIFICATION.zh-CN.md\",\n      \"sha256\": \"f752070dd5dc2db4560cbc2ec57aef607268627a805b29d96b95b7212904b098\"\n    },\n    {\n      \"repository\": \"opendesk-browser\",\n      \"path\": \"projects/ai-send-queue/tool.config.json\",\n      \"sha256\": \"24c2853631319ac8da72bb6fcc89bb0bb4406f71230855f7e84bb14f78a0eee6\"\n    },\n    {\n      \"repository\": \"opendesk-browser\",\n      \"path\": \"scripts/agent-skills-r22-eval.mjs\",\n      \"read_via\": \"git show HEAD:path because sparse checkout omits local file\",\n      \"sha256\": \"d93237d9b9b51cef65f330908eb09f2866114d5a342b50bc6e87ade134ec007a\"\n    },\n    {\n      \"repository\": \"scratch-review-evidence\",\n      \"path\": \"/workspace/scratch/ac9c3ac05130/r2-document-checks.json\",\n      \"sha256\": \"ff3a64ff5683608393df37dcf017476ec120d0fcffaf1ebe0fa9b0f5ec0a4fe4\"\n    }\n  ],\n  \"independence\": {\n    \"same_agent_two_perspectives\": true,\n    \"perspectives\": [\n      \"测试验收\",\n      \"反方审计\"\n    ],\n    \"fork_context\": \"spawn参数fork_turns=none；收到独立任务说明、后续用户A-D精确范围及候选修订通知，没有继承父对话。评审已知任务和候选，不是盲评，也不证明不同模型独立性。\",\n    \"authored_candidate_files\": false,\n    \"provided_review_suggestions\": true,\n    \"candidate_edits_owner\": \"/root\",\n    \"reviewed_own_candidate_edits\": false,\n    \"not_available\": [\n      \"独立外部人类专家身份\",\n      \"真实宿主模型run_id及计费记录\",\n      \"OS认证reviewer/策略激活回执\"\n    ],\n    \"counting_rule\": \"两项专业视角由一个真实Agent产生，不能统计成两名独立专家。\",\n    \"fork_turns\": \"none\",\n    \"fork_metadata_basis\": \"协调者/root核对真实spawn调用记录后通知，纠正本Agent先前误写的all/继承描述。\"\n  },\n  \"actual_tools\": [\n    {\n      \"tool\": \"functions.exec\",\n      \"nested_tool\": \"tools.exec_command\",\n      \"uses\": \"git diff/status/show/ls-tree、rg/cat/sed、Python hashlib与JSON；只读仓库，最后写本独立审阅JSON。\",\n      \"observed_output_chunk_ids\": [\n        \"200c03\",\n        \"d727b2\",\n        \"cb2085\",\n        \"7e6fbf\",\n        \"928d16\",\n        \"0bab22\",\n        \"533c5e\",\n        \"ebb58e\",\n        \"67938e\"\n      ]\n    },\n    {\n      \"tool\": \"functions.exec\",\n      \"nested_tool\": \"tools.clock__curr_time\",\n      \"observed_time\": \"2026-11-27 02:23:29 UTC\"\n    },\n    {\n      \"tool\": \"collaboration.send_message\",\n      \"uses\": \"向协调者报告门禁缺陷、时态缺陷、证据边界及复核结论。\"\n    }\n  ],\n  \"executed_product_tests\": [],\n  \"executed_other_topic_experiments\": [],\n  \"executed_repository_checkers\": [],\n  \"test_execution_boundary\": \"本Agent只读检查测试和checker定义，没有运行产品、R1-B.3、R3.2或Skill模型评测；已读取root静态文档检查原始结果并重新核对3份md的hash。root检查不虚记为本Agent重跑。\",\n  \"source_observations\": [\n    \"S1关键未知必须不再阻断当前决定才可退出；blocked只暂停依赖决定。\",\n    \"S5未完成不是退出条件；本工作包所需检查与合法上游引用仍须满足。\",\n    \"OS完整树477条=299 blob+178 tree，研发Skill只见契约、模板与匿名fixture；不是P1-P13已部署。\",\n    \"OpenDesk现行8份SKILL.md真实存在；其指导文件不等于宿主自动触发成功。\",\n    \"OpenDesk scripts/agent-skills-r22-eval.mjs存在于HEAD Git树，当前稀疏工作树不含此文件；本轮仅git show读取，未执行。\",\n    \"连播当前配置为0.2.17、pageModule revision17；LOCALIZATION-PLAN第9节报告本机侧栏/媒体/升级，iYF本轮NOT_TESTED。\",\n    \"队列当前配置1.0.3、pageModule revision63；README区分正式JSON1.0.2/r62。UI-VERIFICATION的r63报告限定特定ChatGPT页面，不能覆盖r17追加提问的当前回归。\",\n    \"07原引5份案例文件在58d18b06bd785fa99aa4f9ceb1d517c28092c2ad与e351c1e9bb4dd84b38d3554c118edb6711a09baf之间逐字节相同。\",\n    \"OS历史v1读取与当前s2_exit/s5_exit是不同profile；匿名fixture证据上限为fixture_runtime_proven。\"\n  ],\n  \"raw_artifacts_checked\": [\n    {\n      \"path\": \"projects/video-auto-skip/artifacts/dual-r1/native-local-journey-ui-rerun.json\",\n      \"present_in_review_environment\": false\n    },\n    {\n      \"path\": \"projects/video-auto-skip/artifacts/dual-r1/candidate.opendesk-tool.json\",\n      \"present_in_review_environment\": false\n    },\n    {\n      \"path\": \"projects/ai-send-queue/artifacts/stalled-followup-20261109/r17-native-final.ax.txt\",\n      \"present_in_review_environment\": false\n    },\n    {\n      \"path\": \"projects/ai-send-queue/artifacts/stalled-followup-20261109/r17-native-followup.png\",\n      \"present_in_review_environment\": false\n    }\n  ],\n  \"closed_findings\": [\n    {\n      \"id\": \"VR-01\",\n      \"severity\": \"P1\",\n      \"finding\": \"07的S1把明确阻断并列成退出条件。\",\n      \"resolution\": \"当前候选改为关键未知解除方可退出，否则保留blocked，仅暂停依赖决策。\",\n      \"reverified\": true\n    },\n    {\n      \"id\": \"VR-02\",\n      \"severity\": \"P1\",\n      \"finding\": \"07的S5把明确未完成并列成退出条件。\",\n      \"resolution\": \"当前候选写明未完成不得退出，留S5或重开上游。\",\n      \"reverified\": true\n    },\n    {\n      \"id\": \"VR-03\",\n      \"severity\": \"P1\",\n      \"finding\": \"首个最终候选在Git提交前写已有Git交付与文档交付结束。\",\n      \"first_observed_candidate_sha256\": \"923a30b9ae4111401577678868335fedc1601d998436a017751e3a400f55a0a0\",\n      \"resolution\": \"当前候选明确提交准备不等于交付，以真实提交/远端读回为准，结束条件改为检查、提交与读回完成。\",\n      \"reverified\": true\n    }\n  ],\n  \"new_mandatory_text_fixes_remaining\": [],\n  \"unresolved_items\": [\n    {\n      \"id\": \"GAP-REAL-APPLICATION\",\n      \"kind\": \"proof_gap\",\n      \"status\": \"NOT_RUN / NOT_PASSED\",\n      \"detail\": \"没有本轮真实产品研发到业务验收的完整Run/Evidence；实际文档维护不能外推为自动工作流或三个产品成功。\",\n      \"handoff\": \"原真实L2推进与实施流程；本次不新启产品工作。\"\n    },\n    {\n      \"id\": \"GAP-CAPABILITY-RUNTIME\",\n      \"kind\": \"proof_gap\",\n      \"status\": \"UNVERIFIED\",\n      \"detail\": \"P1-P13的自动选择、可靠触发和跨项目效果没有本轮运行证据；8份Skill文件与checker存在仅支持资产可复用。\",\n      \"handoff\": \"原Skill评测及真实L2消费流程；不重跑其专项。\"\n    },\n    {\n      \"id\": \"GAP-RAW-BUSINESS-EVIDENCE\",\n      \"kind\": \"evidence_access_limit\",\n      \"status\": \"UNAVAILABLE_IN_REVIEW_ENVIRONMENT\",\n      \"detail\": \"原始候选、AX、截图与媒体回执不在本次环境；本次独立核实报告文本与Git版本，不能复核其原始运行。\"\n    },\n    {\n      \"id\": \"GAP-AUTHORITY-ADR\",\n      \"kind\": \"known_upstream_wording_ambiguity\",\n      \"status\": \"REGISTERED_NOT_FIXED\",\n      \"detail\": \"需求工作流ADR前置措辞与交付/S3按需ADR说明存在歧义；07准确登记，未修改正式框架。\",\n      \"handoff\": \"原需求设计实施计划与权威维护；实时owner/接收未确认。\"\n    },\n    {\n      \"id\": \"GAP-DELIVERY\",\n      \"kind\": \"pending_completion_check\",\n      \"status\": \"PENDING_ROOT_RECEIPTS\",\n      \"detail\": \"同候选静态文档检查已由root执行并由本Agent读取核对；完整证据快照定稿与远端提交读回仍待实际回执。Git待交付不是判定真实应用不足的原因；即使Git成功，真实应用证据仍未取得。\"\n    },\n    {\n      \"id\": \"GAP-DEDUP-LIVE-STATE\",\n      \"kind\": \"scope_limit\",\n      \"status\": \"PARTIAL\",\n      \"detail\": \"本Agent没有独立访问本机未提交工作、进程、实时owner或外部Issue/PR搜索原始回执；本轮文档明确写未确认，不冒充已移交。\"\n    }\n  ],\n  \"scoring_method\": {\n    \"type\": \"本任务独立咨询加总评分，分母100；非OS官方几何平均评分。\",\n    \"full_scope\": true,\n    \"target\": 95,\n    \"conservative_evidence_ceiling\": 84,\n    \"ceiling_basis\": \"参照OS GATES_PROOF_SCORING无端到端证据的封顶；没有异构真实验证不得声称通用95+。本记录不更改OS not_evaluated。\",\n    \"excluded_from_claim\": \"按授权不运行产品测试不是执行违规；它仍使真实应用效果的证据缺口保持存在。无证据项不因文案高分补足。\"\n  },\n  \"scores\": {\n    \"testing_acceptance\": {\n      \"score\": 79,\n      \"maximum\": 100,\n      \"dimensions\": [\n        {\n          \"objective\": \"A\",\n          \"name\": \"阶段、门禁与失败重开\",\n          \"score\": 19,\n          \"maximum\": 20,\n          \"deducted\": 1,\n          \"reason\": \"两处实际门禁错误已修；上游ADR歧义尚未在权威处收敛，候选只登记。\"\n        },\n        {\n          \"objective\": \"B\",\n          \"name\": \"三案例选择、裁剪与验收对应\",\n          \"score\": 18,\n          \"maximum\": 20,\n          \"deducted\": 2,\n          \"reason\": \"路径与范围一致；原始业务附件无法独立核验，报告级复用不能确证运行结果。未要求重跑禁止专项。\"\n        },\n        {\n          \"objective\": \"C\",\n          \"name\": \"13项能力分类与可调用性证据\",\n          \"score\": 17,\n          \"maximum\": 20,\n          \"deducted\": 3,\n          \"reason\": \"8个Skill、工具、模板/候选已分清；本轮没有能力自动触发、可靠调用和效果评测。\"\n        },\n        {\n          \"objective\": \"D\",\n          \"name\": \"实际工作包执行至验收\",\n          \"score\": 18,\n          \"maximum\": 30,\n          \"deducted\": 12,\n          \"reason\": \"真实文档读取、修正、独立复核与同候选静态文档检查可确认；缺真实产品/自动研发端到端证据扣10；最终Git交付回执待完成扣1；承接未获实时接收扣1。Git成功不会补足前述真实应用证据。\"\n        },\n        {\n          \"objective\": \"A-D\",\n          \"name\": \"可复核输入与证据重放\",\n          \"score\": 7,\n          \"maximum\": 10,\n          \"deducted\": 3,\n          \"reason\": \"已绑定候选/来源hash；原始业务回执不可得扣2；最终证据快照与外部任务搜索原始回执尚未由本Agent核完扣1。\"\n        }\n      ],\n      \"meets_95\": false\n    },\n    \"adversarial_audit\": {\n      \"score\": 83,\n      \"maximum\": 100,\n      \"dimensions\": [\n        {\n          \"objective\": \"A\",\n          \"name\": \"防错误退出和权威绕过\",\n          \"score\": 19,\n          \"maximum\": 20,\n          \"deducted\": 1,\n          \"reason\": \"S1/S5假通过入口关闭；正式ADR措辞歧义仍在上游。\"\n        },\n        {\n          \"objective\": \"B\",\n          \"name\": \"防旧证据迁移和候选混同\",\n          \"score\": 18,\n          \"maximum\": 20,\n          \"deducted\": 2,\n          \"reason\": \"历史/当前/生产边界写明且来源相符；原始附件不可核，不能检验报告完整性。\"\n        },\n        {\n          \"objective\": \"C\",\n          \"name\": \"防能力、角色与专家身份误分类\",\n          \"score\": 19,\n          \"maximum\": 20,\n          \"deducted\": 1,\n          \"reason\": \"Skill指导、Workflow/工具、模板候选及3Agent6视角区分正确；当前宿主能力实际加载未观测。\"\n        },\n        {\n          \"objective\": \"D\",\n          \"name\": \"防重复执行、越权裁剪和虚假完成\",\n          \"score\": 20,\n          \"maximum\": 30,\n          \"deducted\": 10,\n          \"reason\": \"未越界重开实验，真实应用仍标未通过；缺真实端到端应用扣6；本机任务/owner/进程未可核扣3；Git最终回执待完成扣1。\"\n        },\n        {\n          \"objective\": \"A-D\",\n          \"name\": \"审计可重放与独立性\",\n          \"score\": 7,\n          \"maximum\": 10,\n          \"deducted\": 3,\n          \"reason\": \"独立Agent实际只读复核与输入hash存在；不是盲评扣1；最终快照/外部搜索回执未由本Agent完整核验扣2。\"\n        }\n      ],\n      \"meets_95\": false\n    },\n    \"two_perspective_arithmetic_mean\": 81.0\n  },\n  \"verdict\": {\n    \"document_semantic_review\": \"ACCEPT_CANDIDATE_STATIC_DOCUMENT_CHECKS_PASS_PENDING_DELIVERY\",\n    \"full_A_D_application_validation\": \"PARTIAL_NOT_PASSED\",\n    \"real_business_acceptance\": \"NOT_RUN_NOT_PASSED\",\n    \"automatic_selection_and_general_effect\": \"UNVERIFIED\",\n    \"no_new_mandatory_text_defect_after_recheck\": true,\n    \"official_os_overall_score\": \"not_evaluated\",\n    \"no_score_substitutes_for_evidence\": true\n  },\n  \"recheck_note\": \"最终候选0945bc…已关闭本Agent发现的三处文案/时态问题。root静态检查同候选PASS已核对，未提前认定Git交付。后续07/00/90语义变化须按新hash重审；快照落盘或Git成功不提升真实应用证明。\",\n  \"parent_static_check_evidence\": {\n    \"executor_task_path\": \"/root\",\n    \"reported_tool_output_chunk_id\": \"ce7428\",\n    \"independently_read_output_chunk_id\": \"67938e\",\n    \"record_run_id\": \"R2-VALIDATION-20261127T021638Z\",\n    \"checked_at_utc\": \"2026-11-27T02:24:50.027854+00:00\",\n    \"result\": \"PASS\",\n    \"candidate_hashes_independently_rechecked\": true,\n    \"independently_reexecuted_static_checks\": false,\n    \"tables\": 29,\n    \"reference_occurrences_checked\": 66,\n    \"new_reference_occurrences_included\": 13,\n    \"preexisting_external_reference_occurrences_not_rechecked\": 4,\n    \"git_diff_check_exit_code\": 0,\n    \"rendered_browser\": false,\n    \"scope\": \"本地/固定SHA目标存在及源Markdown结构与diff，不是浏览器渲染、外部网站可访问性或产品/模型执行。\"\n  },\n  \"review_history\": [\n    {\n      \"testing_acceptance\": 78,\n      \"adversarial_audit\": 83,\n      \"basis\": \"静态检查回执收到前的候选复评；输入07 hash不变。\",\n      \"raw_record_path\": \"/workspace/scratch/ac9c3ac05130/audit-redteam-initial.json\",\n      \"raw_record_sha256\": \"6429e037ebebd19e998f83d2abee879132116476c8937c880711294722ab9cbd\",\n      \"historical_metadata_note\": \"原始字节完整保留；fork上下文误写及检查待定状态以当前最终记录更正。\"\n    },\n    {\n      \"testing_acceptance\": 79,\n      \"adversarial_audit\": 83,\n      \"basis\": \"新增并核对root真实静态检查回执，关闭1分检查缺口；产品/自动选择证明分不提高。\"\n    }\n  ],\n  \"independence_metadata_correction\": {\n    \"original_incorrect_claim\": \"继承父任务上下文\",\n    \"corrected_claim\": \"fork_turns=none；独立任务说明及后续消息上下文\",\n    \"original_raw_receipt_preserved\": \"/workspace/scratch/ac9c3ac05130/audit-redteam-initial.json\",\n    \"original_raw_sha256\": \"6429e037ebebd19e998f83d2abee879132116476c8937c880711294722ab9cbd\",\n    \"effect_on_score\": \"当前仍非盲评，评分理由与79/83不变；此更正不增加真实运行证据。\",\n    \"original_receipt_status\": \"HISTORICAL_SUPERSEDED_FOR_FORK_METADATA_AND_STATIC_CHECK_STATUS\"\n  }\n}\n"
+      }
+    ],
+    "all_final_document_hashes_matched": true,
+    "human_experts": false,
+    "blind_or_multimodel_study": false,
+    "official_os_verifier_certification": false,
+    "historical_raw_review": {
+      "source_filename": "audit-redteam-initial.json",
+      "original_utf8_sha256": "6429e037ebebd19e998f83d2abee879132116476c8937c880711294722ab9cbd",
+      "original_utf8": "{\n  \"schema_version\": 1,\n  \"review_id\": \"AI-NATIVE-DEVELOPMENT-WORKFLOW-R2-VALIDATION-independent-verification-redteam-2026-11-27\",\n  \"task_path\": \"/root/verification_redteam\",\n  \"review_date\": \"2026-11-27\",\n  \"reviewer_type\": \"independent_ai_subagent\",\n  \"human_expert\": false,\n  \"official_os_certified_verifier\": false,\n  \"scope\": \"用户完整A-D验证范围；不是只评文案质量，也不是AI-Project-OS官方总分或产品验收裁决。\",\n  \"scope_by_objective\": {\n    \"A\": \"核五阶段与正式框架一致性、遗漏、依赖、复用、裁剪、输入输出退出及重复；具体错误最小修正。\",\n    \"B\": \"复用07三个案例核对入口、知识、模型、能力、省略理由及验收；仅检查选择衔接，不重开发或重跑其他专项。\",\n    \"C\": \"区分13项中的已存在Skill、工具/Workflow、模板/候选与实际缺失；不凭候选名称新增Skill。\",\n    \"D\": \"核对已有任务与授权条件，选择真实工作包并记录任务至验收；受阻或未运行不得用桌面、样例、历史代真实。当前实际工作包为研究文档修正。\"\n  },\n  \"repository_heads\": {\n    \"VizTell\": \"cdc95f1264da7b6d0ae002bda8456ddb688d803e\",\n    \"ai-native-project-os\": \"1a1867640b7ee538bac21cd1a16d50f6a7e19c0f\",\n    \"opendesk-browser\": \"e351c1e9bb4dd84b38d3554c118edb6711a09baf\"\n  },\n  \"candidate_status_at_review\": \"main工作树文档候选；root将另行完成静态检查、证据快照与Git交付。本评审不预认定这些步骤成功。\",\n  \"input_files\": [\n    {\n      \"repository\": \"VizTell\",\n      \"path\": \"docs/软件与系统工程宇宙/00_AI原生研发总体框架与关键结论.md\",\n      \"sha256\": \"c4525fdd1e0d21e64022ced56b6571e13b0d6e34b26767f453ee3b8c2b1a5dbb\"\n    },\n    {\n      \"repository\": \"VizTell\",\n      \"path\": \"docs/软件与系统工程宇宙/07_研发工作流与工程能力关系.md\",\n      \"sha256\": \"0945bc623b82c3f3c6a8d686be3cecfc1b33a75e5cae36f5262f3eb8a6938ccd\"\n    },\n    {\n      \"repository\": \"VizTell\",\n      \"path\": \"docs/软件与系统工程宇宙/90_研究缺口与续研任务.md\",\n      \"sha256\": \"de561819f14d90e64a7554fa6169f5ae58eeb6b94b17c3a26347bfd71e0c2b21\"\n    },\n    {\n      \"repository\": \"ai-native-project-os\",\n      \"path\": \"AGENTS.md\",\n      \"sha256\": \"62414f64b3fb12fda23e8eb0b5fd395be154b93ba17d28a5e3668712389cef19\"\n    },\n    {\n      \"repository\": \"ai-native-project-os\",\n      \"path\": \"README.md\",\n      \"sha256\": \"2a3aee397c2c7178f7da4ae94055bb29468a1e92610757dca4d7b701e0044ce9\"\n    },\n    {\n      \"repository\": \"ai-native-project-os\",\n      \"path\": \"project-os.yaml\",\n      \"sha256\": \"c25d9a758942cdcadf4a8089b8ac1a6aea7a6482987d60ff6e403045e73b3904\"\n    },\n    {\n      \"repository\": \"ai-native-project-os\",\n      \"path\": \"docs/workflows/PROJECT_DELIVERY_WORKFLOW.md\",\n      \"sha256\": \"85ec43237f0c156a6360b442f7dddffecfd193999ad4fd137467c104ae3fd16f\"\n    },\n    {\n      \"repository\": \"ai-native-project-os\",\n      \"path\": \"docs/workflows/STAGE_EXIT_GATES.md\",\n      \"sha256\": \"b67ca8ef073d745cc916d3a976eac8ba048f5987da2008cbdd44542b39494815\"\n    },\n    {\n      \"repository\": \"ai-native-project-os\",\n      \"path\": \"docs/workflows/PROJECT_TYPE_AND_GOVERNANCE_ROUTING.md\",\n      \"sha256\": \"fe0bbf3f2f2c1efbc16dc67533107384ca7b7b0990a3502ced8e9c4280ad793b\"\n    },\n    {\n      \"repository\": \"ai-native-project-os\",\n      \"path\": \"contracts/execution/skill-contract.yaml\",\n      \"sha256\": \"5f7421a40a573837a259a0bb446ca9160e9e89f82f349b8834ba745c9c80a560\"\n    },\n    {\n      \"repository\": \"ai-native-project-os\",\n      \"path\": \"docs/governance/GATES_PROOF_SCORING.md\",\n      \"sha256\": \"78dbb015077b71abaee04d25d0eb8d4eb7af71d22705c26a299c9a8377676f5d\"\n    },\n    {\n      \"repository\": \"ai-native-project-os\",\n      \"path\": \"reviews/current-score-status.yaml\",\n      \"sha256\": \"f295fd01b83579001dbbd8ebd79a2547842dd89953fff38680487734a15f33bf\"\n    },\n    {\n      \"repository\": \"ai-native-project-os\",\n      \"path\": \"linters/check_controlled_objects.py\",\n      \"sha256\": \"61b8aacb5fe60e967a4f1860b6297228f79bfb78cb4056c80f51d95732bd2cd7\"\n    },\n    {\n      \"repository\": \"ai-native-project-os\",\n      \"path\": \"tests/test_operational_spine_checker.py\",\n      \"sha256\": \"3ba80b4f9bf11062df2a7163f8305392da633c0743b83d046212a7a6e1cda303\"\n    },\n    {\n      \"repository\": \"ai-native-project-os\",\n      \"path\": \"tests/test_operational_spine_e2e.py\",\n      \"sha256\": \"300bb8089ad959eb88d711d86fff67d032add01cbd6a309fc71f5dcab5a56b7b\"\n    },\n    {\n      \"repository\": \"opendesk-browser\",\n      \"path\": \"AGENTS.md\",\n      \"sha256\": \"4ac453e03c297651562e1a61c17781eedd25e530ca2eec71e16111eefa5b2ce6\"\n    },\n    {\n      \"repository\": \"opendesk-browser\",\n      \"path\": \".agents/skills/README.md\",\n      \"sha256\": \"1ab06c99ddfab5d50f57668662f9aca42f6009d8b67ebfe31879bd8dc211dd54\"\n    },\n    {\n      \"repository\": \"opendesk-browser\",\n      \"path\": \"projects/video-auto-skip/REQUIREMENTS.zh-CN.md\",\n      \"sha256\": \"311ec4da2c804838696c1d20ad3c99e906a635ef57127b2e3352666266400c6d\"\n    },\n    {\n      \"repository\": \"opendesk-browser\",\n      \"path\": \"projects/video-auto-skip/LOCAL-R1-ACCEPTANCE.zh-CN.md\",\n      \"sha256\": \"d88faf2007f891619f7c34b8d62210ba2f64654035af3051118f43e8e1559e88\"\n    },\n    {\n      \"repository\": \"opendesk-browser\",\n      \"path\": \"projects/video-auto-skip/tests/rules.test.mjs\",\n      \"sha256\": \"e7f22ebbd78abbb854c90a43da21e067880a0e732043eb92e2d4ebb13ab653bc\"\n    },\n    {\n      \"repository\": \"opendesk-browser\",\n      \"path\": \"projects/video-auto-skip/README.zh-CN.md\",\n      \"sha256\": \"61fb893b7f5efb8bc9c3b721547b661de826f3457e3d07d20bc0baa544da3e97\"\n    },\n    {\n      \"repository\": \"opendesk-browser\",\n      \"path\": \"projects/video-auto-skip/LOCALIZATION-PLAN.zh-CN.md\",\n      \"sha256\": \"3d8f84c92f433dfffe847a909141acb51d1ccd203796cd5c5f14001d50383b59\"\n    },\n    {\n      \"repository\": \"opendesk-browser\",\n      \"path\": \"projects/video-auto-skip/tool.config.json\",\n      \"sha256\": \"bab78795e23f91f597389b9c73ef1900a3180ae3aaef1506a6334407b61f839c\"\n    },\n    {\n      \"repository\": \"opendesk-browser\",\n      \"path\": \"projects/ai-send-queue/ACCEPTANCE-FOLLOWUP.zh-CN.md\",\n      \"sha256\": \"60714ee8c64510192525538ff17da1420aa2d2d576a83cf5f526fa4d33f175f7\"\n    },\n    {\n      \"repository\": \"opendesk-browser\",\n      \"path\": \"projects/ai-send-queue/ACCEPTANCE-CTRL-ENTER.zh-CN.md\",\n      \"sha256\": \"59c48fc6feabd398d7001097297a8cd4b0ca5dade2e20df379a849bf771bc214\"\n    },\n    {\n      \"repository\": \"opendesk-browser\",\n      \"path\": \"projects/ai-send-queue/README.zh-CN.md\",\n      \"sha256\": \"7b9b041b95dd57e6236a6968bf60f2f898a192dec82ecc1ebaf2c203bd921350\"\n    },\n    {\n      \"repository\": \"opendesk-browser\",\n      \"path\": \"projects/ai-send-queue/UI-VERIFICATION.zh-CN.md\",\n      \"sha256\": \"f752070dd5dc2db4560cbc2ec57aef607268627a805b29d96b95b7212904b098\"\n    },\n    {\n      \"repository\": \"opendesk-browser\",\n      \"path\": \"projects/ai-send-queue/tool.config.json\",\n      \"sha256\": \"24c2853631319ac8da72bb6fcc89bb0bb4406f71230855f7e84bb14f78a0eee6\"\n    },\n    {\n      \"repository\": \"opendesk-browser\",\n      \"path\": \"scripts/agent-skills-r22-eval.mjs\",\n      \"read_via\": \"git show HEAD:path because sparse checkout omits local file\",\n      \"sha256\": \"d93237d9b9b51cef65f330908eb09f2866114d5a342b50bc6e87ade134ec007a\"\n    }\n  ],\n  \"independence\": {\n    \"same_agent_two_perspectives\": true,\n    \"perspectives\": [\n      \"测试验收\",\n      \"反方审计\"\n    ],\n    \"fork_context\": \"继承父任务上下文，非盲评；已读任务边界与候选，独立调用只读工具核对权威和来源。\",\n    \"authored_candidate_files\": false,\n    \"provided_review_suggestions\": true,\n    \"candidate_edits_owner\": \"/root\",\n    \"reviewed_own_candidate_edits\": false,\n    \"not_available\": [\n      \"独立外部人类专家身份\",\n      \"真实宿主模型run_id及计费记录\",\n      \"OS认证reviewer/策略激活回执\"\n    ],\n    \"counting_rule\": \"两项专业视角由一个真实Agent产生，不能统计成两名独立专家。\"\n  },\n  \"actual_tools\": [\n    {\n      \"tool\": \"functions.exec\",\n      \"nested_tool\": \"tools.exec_command\",\n      \"uses\": \"git diff/status/show/ls-tree、rg/cat/sed、Python hashlib与JSON；只读仓库，最后写本独立审阅JSON。\",\n      \"observed_output_chunk_ids\": [\n        \"200c03\",\n        \"d727b2\",\n        \"cb2085\",\n        \"7e6fbf\",\n        \"928d16\",\n        \"0bab22\",\n        \"533c5e\",\n        \"ebb58e\"\n      ]\n    },\n    {\n      \"tool\": \"functions.exec\",\n      \"nested_tool\": \"tools.clock__curr_time\",\n      \"observed_time\": \"2026-11-27 02:23:29 UTC\"\n    },\n    {\n      \"tool\": \"collaboration.send_message\",\n      \"uses\": \"向协调者报告门禁缺陷、时态缺陷、证据边界及复核结论。\"\n    }\n  ],\n  \"executed_product_tests\": [],\n  \"executed_other_topic_experiments\": [],\n  \"executed_repository_checkers\": [],\n  \"test_execution_boundary\": \"本Agent只读检查测试和checker定义，没有运行产品、R1-B.3、R3.2或Skill模型评测；root静态文档检查结果须另存，不借用为本Agent运行。\",\n  \"source_observations\": [\n    \"S1关键未知必须不再阻断当前决定才可退出；blocked只暂停依赖决定。\",\n    \"S5未完成不是退出条件；本工作包所需检查与合法上游引用仍须满足。\",\n    \"OS完整树477条=299 blob+178 tree，研发Skill只见契约、模板与匿名fixture；不是P1-P13已部署。\",\n    \"OpenDesk现行8份SKILL.md真实存在；其指导文件不等于宿主自动触发成功。\",\n    \"OpenDesk scripts/agent-skills-r22-eval.mjs存在于HEAD Git树，当前稀疏工作树不含此文件；本轮仅git show读取，未执行。\",\n    \"连播当前配置为0.2.17、pageModule revision17；LOCALIZATION-PLAN第9节报告本机侧栏/媒体/升级，iYF本轮NOT_TESTED。\",\n    \"队列当前配置1.0.3、pageModule revision63；README区分正式JSON1.0.2/r62。UI-VERIFICATION的r63报告限定特定ChatGPT页面，不能覆盖r17追加提问的当前回归。\",\n    \"07原引5份案例文件在58d18b06bd785fa99aa4f9ceb1d517c28092c2ad与e351c1e9bb4dd84b38d3554c118edb6711a09baf之间逐字节相同。\",\n    \"OS历史v1读取与当前s2_exit/s5_exit是不同profile；匿名fixture证据上限为fixture_runtime_proven。\"\n  ],\n  \"raw_artifacts_checked\": [\n    {\n      \"path\": \"projects/video-auto-skip/artifacts/dual-r1/native-local-journey-ui-rerun.json\",\n      \"present_in_review_environment\": false\n    },\n    {\n      \"path\": \"projects/video-auto-skip/artifacts/dual-r1/candidate.opendesk-tool.json\",\n      \"present_in_review_environment\": false\n    },\n    {\n      \"path\": \"projects/ai-send-queue/artifacts/stalled-followup-20261109/r17-native-final.ax.txt\",\n      \"present_in_review_environment\": false\n    },\n    {\n      \"path\": \"projects/ai-send-queue/artifacts/stalled-followup-20261109/r17-native-followup.png\",\n      \"present_in_review_environment\": false\n    }\n  ],\n  \"closed_findings\": [\n    {\n      \"id\": \"VR-01\",\n      \"severity\": \"P1\",\n      \"finding\": \"07的S1把明确阻断并列成退出条件。\",\n      \"resolution\": \"当前候选改为关键未知解除方可退出，否则保留blocked，仅暂停依赖决策。\",\n      \"reverified\": true\n    },\n    {\n      \"id\": \"VR-02\",\n      \"severity\": \"P1\",\n      \"finding\": \"07的S5把明确未完成并列成退出条件。\",\n      \"resolution\": \"当前候选写明未完成不得退出，留S5或重开上游。\",\n      \"reverified\": true\n    },\n    {\n      \"id\": \"VR-03\",\n      \"severity\": \"P1\",\n      \"finding\": \"首个最终候选在Git提交前写已有Git交付与文档交付结束。\",\n      \"first_observed_candidate_sha256\": \"923a30b9ae4111401577678868335fedc1601d998436a017751e3a400f55a0a0\",\n      \"resolution\": \"当前候选明确提交准备不等于交付，以真实提交/远端读回为准，结束条件改为检查、提交与读回完成。\",\n      \"reverified\": true\n    }\n  ],\n  \"new_mandatory_text_fixes_remaining\": [],\n  \"unresolved_items\": [\n    {\n      \"id\": \"GAP-REAL-APPLICATION\",\n      \"kind\": \"proof_gap\",\n      \"status\": \"NOT_RUN / NOT_PASSED\",\n      \"detail\": \"没有本轮真实产品研发到业务验收的完整Run/Evidence；实际文档维护不能外推为自动工作流或三个产品成功。\",\n      \"handoff\": \"原真实L2推进与实施流程；本次不新启产品工作。\"\n    },\n    {\n      \"id\": \"GAP-CAPABILITY-RUNTIME\",\n      \"kind\": \"proof_gap\",\n      \"status\": \"UNVERIFIED\",\n      \"detail\": \"P1-P13的自动选择、可靠触发和跨项目效果没有本轮运行证据；8份Skill文件与checker存在仅支持资产可复用。\",\n      \"handoff\": \"原Skill评测及真实L2消费流程；不重跑其专项。\"\n    },\n    {\n      \"id\": \"GAP-RAW-BUSINESS-EVIDENCE\",\n      \"kind\": \"evidence_access_limit\",\n      \"status\": \"UNAVAILABLE_IN_REVIEW_ENVIRONMENT\",\n      \"detail\": \"原始候选、AX、截图与媒体回执不在本次环境；本次独立核实报告文本与Git版本，不能复核其原始运行。\"\n    },\n    {\n      \"id\": \"GAP-AUTHORITY-ADR\",\n      \"kind\": \"known_upstream_wording_ambiguity\",\n      \"status\": \"REGISTERED_NOT_FIXED\",\n      \"detail\": \"需求工作流ADR前置措辞与交付/S3按需ADR说明存在歧义；07准确登记，未修改正式框架。\",\n      \"handoff\": \"原需求设计实施计划与权威维护；实时owner/接收未确认。\"\n    },\n    {\n      \"id\": \"GAP-DELIVERY\",\n      \"kind\": \"pending_completion_check\",\n      \"status\": \"PENDING_ROOT_RECEIPTS\",\n      \"detail\": \"最终文档结构/链接/差量检查、完整证据快照与远端提交读回不由本审查提前认定。\"\n    },\n    {\n      \"id\": \"GAP-DEDUP-LIVE-STATE\",\n      \"kind\": \"scope_limit\",\n      \"status\": \"PARTIAL\",\n      \"detail\": \"本Agent没有独立访问本机未提交工作、进程、实时owner或外部Issue/PR搜索原始回执；本轮文档明确写未确认，不冒充已移交。\"\n    }\n  ],\n  \"scoring_method\": {\n    \"type\": \"本任务独立咨询加总评分，分母100；非OS官方几何平均评分。\",\n    \"full_scope\": true,\n    \"target\": 95,\n    \"conservative_evidence_ceiling\": 84,\n    \"ceiling_basis\": \"参照OS GATES_PROOF_SCORING无端到端证据的封顶；没有异构真实验证不得声称通用95+。本记录不更改OS not_evaluated。\",\n    \"excluded_from_claim\": \"按授权不运行产品测试不是执行违规；它仍使真实应用效果的证据缺口保持存在。无证据项不因文案高分补足。\"\n  },\n  \"scores\": {\n    \"testing_acceptance\": {\n      \"score\": 78,\n      \"maximum\": 100,\n      \"dimensions\": [\n        {\n          \"objective\": \"A\",\n          \"name\": \"阶段、门禁与失败重开\",\n          \"score\": 19,\n          \"maximum\": 20,\n          \"deducted\": 1,\n          \"reason\": \"两处实际门禁错误已修；上游ADR歧义尚未在权威处收敛，候选只登记。\"\n        },\n        {\n          \"objective\": \"B\",\n          \"name\": \"三案例选择、裁剪与验收对应\",\n          \"score\": 18,\n          \"maximum\": 20,\n          \"deducted\": 2,\n          \"reason\": \"路径与范围一致；原始业务附件无法独立核验，报告级复用不能确证运行结果。未要求重跑禁止专项。\"\n        },\n        {\n          \"objective\": \"C\",\n          \"name\": \"13项能力分类与可调用性证据\",\n          \"score\": 17,\n          \"maximum\": 20,\n          \"deducted\": 3,\n          \"reason\": \"8个Skill、工具、模板/候选已分清；本轮没有能力自动触发、可靠调用和效果评测。\"\n        },\n        {\n          \"objective\": \"D\",\n          \"name\": \"实际工作包执行至验收\",\n          \"score\": 17,\n          \"maximum\": 30,\n          \"deducted\": 13,\n          \"reason\": \"真实文档读取、修正、独立复核可确认；缺真实产品/自动研发端到端证据扣10；本轮静态检查与交付回执待完成扣2；承接未获实时接收扣1。\"\n        },\n        {\n          \"objective\": \"A-D\",\n          \"name\": \"可复核输入与证据重放\",\n          \"score\": 7,\n          \"maximum\": 10,\n          \"deducted\": 3,\n          \"reason\": \"已绑定候选/来源hash；原始业务回执不可得扣2；最终证据快照与外部任务搜索原始回执尚未由本Agent核完扣1。\"\n        }\n      ],\n      \"meets_95\": false\n    },\n    \"adversarial_audit\": {\n      \"score\": 83,\n      \"maximum\": 100,\n      \"dimensions\": [\n        {\n          \"objective\": \"A\",\n          \"name\": \"防错误退出和权威绕过\",\n          \"score\": 19,\n          \"maximum\": 20,\n          \"deducted\": 1,\n          \"reason\": \"S1/S5假通过入口关闭；正式ADR措辞歧义仍在上游。\"\n        },\n        {\n          \"objective\": \"B\",\n          \"name\": \"防旧证据迁移和候选混同\",\n          \"score\": 18,\n          \"maximum\": 20,\n          \"deducted\": 2,\n          \"reason\": \"历史/当前/生产边界写明且来源相符；原始附件不可核，不能检验报告完整性。\"\n        },\n        {\n          \"objective\": \"C\",\n          \"name\": \"防能力、角色与专家身份误分类\",\n          \"score\": 19,\n          \"maximum\": 20,\n          \"deducted\": 1,\n          \"reason\": \"Skill指导、Workflow/工具、模板候选及3Agent6视角区分正确；当前宿主能力实际加载未观测。\"\n        },\n        {\n          \"objective\": \"D\",\n          \"name\": \"防重复执行、越权裁剪和虚假完成\",\n          \"score\": 20,\n          \"maximum\": 30,\n          \"deducted\": 10,\n          \"reason\": \"未越界重开实验，真实应用仍标未通过；缺真实端到端应用扣6；本机任务/owner/进程未可核扣3；Git最终回执待完成扣1。\"\n        },\n        {\n          \"objective\": \"A-D\",\n          \"name\": \"审计可重放与独立性\",\n          \"score\": 7,\n          \"maximum\": 10,\n          \"deducted\": 3,\n          \"reason\": \"独立Agent实际只读复核与输入hash存在；不是盲评扣1；最终快照/外部搜索回执未由本Agent完整核验扣2。\"\n        }\n      ],\n      \"meets_95\": false\n    },\n    \"two_perspective_arithmetic_mean\": 80.5\n  },\n  \"verdict\": {\n    \"document_semantic_review\": \"ACCEPT_CANDIDATE_PENDING_STATIC_CHECKS_AND_DELIVERY\",\n    \"full_A_D_application_validation\": \"PARTIAL_NOT_PASSED\",\n    \"real_business_acceptance\": \"NOT_RUN_NOT_PASSED\",\n    \"automatic_selection_and_general_effect\": \"UNVERIFIED\",\n    \"no_new_mandatory_text_defect_after_recheck\": true,\n    \"official_os_overall_score\": \"not_evaluated\",\n    \"no_score_substitutes_for_evidence\": true\n  },\n  \"recheck_note\": \"最终候选0945bc…已关闭本Agent发现的三处文案/时态问题。若07/00/90后续语义再次变化，必须按新hash重审；仅快照落盘、静态检查或Git回执成功不提升真实应用证明。\"\n}\n",
+      "status": "historical, superseded by final record; original 78/83 scores and inaccurate fork-context metadata preserved with explicit correction in final review"
+    }
+  },
+  "proof_boundaries": {
+    "documentation_execution": "EXECUTED",
+    "automatic_workflow_routing": "UNVERIFIED",
+    "product_tests_this_run": "NOT_RUN",
+    "business_acceptance_this_run": "NOT_RUN",
+    "os_official_overall_score": "not_evaluated"
+  },
+  "delivery": {
+    "record_phase": "prepublication_evidence_freeze",
+    "commit_binding": "The Git commit containing this file binds the reviewed document and evidence bytes.",
+    "remote_publication_and_readback": "Not asserted by this prepublication snapshot; confirm from the subsequent actual GitHub tool receipts and final task report.",
+    "branch": "main",
+    "planned_files": [
+      "docs/软件与系统工程宇宙/00_AI原生研发总体框架与关键结论.md",
+      "docs/软件与系统工程宇宙/07_研发工作流与工程能力关系.md",
+      "docs/软件与系统工程宇宙/90_研究缺口与续研任务.md",
+      "docs/软件与系统工程宇宙/snapshots/development-workflow-r2-validation-2026-11-27.json"
+    ],
+    "framework_and_product_checkouts_clean_at_final_check": true,
+    "clean_check_chunks": [
+      "ccf6db",
+      "d87acd"
+    ]
+  },
+  "frozen_at_utc": "2026-11-27T02:28:22.067006+00:00",
+  "deduplication_and_baseline_checks": {
+    "checked_at": "2026-11-27",
+    "repository_scope": [
+      "shopable-ai/VizTell",
+      "shopable-ai/ai-native-project-os",
+      "shopable-ai/opendesk-browser"
+    ],
+    "issue_query": {
+      "query": "is:open",
+      "topn": 50
+    },
+    "issues": {
+      "issues": [
+        {
+          "id": null,
+          "url": "https://github.com/shopable-ai/opendesk-browser/issues/76",
+          "title": "P0: Web Clipper trusted policy provenance drift blocks shared production builds",
+          "issue_number": 76,
+          "body": "## P0 shared build blocker (2026-10-21)\n\n**Owner:** Web Markdown Clipper trusted-source review / shared fixed-bundle provenance (not the AdBlock React owner).\n\nBoth AdBlock's production WXT build and the Sidebar Preview Contract / Extension Package Budgets build fail closed at:\n\n```\n[opendesk-fixed-marketplace] Trusted Web Clipper source changed; review and re-pin before fixed build:\nexamples/sidebar-tools/web-markdown-clipper/trusted/policy.js\n```\n\n- Pinned Git blob in `scripts/bundle-provenance.mjs`: `6240ef2d75f251c0b4d980690081d3540bba275f`\n- Current `main` Git blob for `examples/sidebar-tools/web-markdown-clipper/trusted/policy.js`: `35b60045acd85bc021f25e9e97b5de3474e44d08`\n- AdBlock's separate **12/12 pinned privileged inputs match** current sources; this failure is not an AdBlock source re-pin defect.\n\n### Actual evidence\n- AdBlock failed job: https://github.com/shopable-ai/opendesk-browser/actions/runs/39613641152\n- Sidebar Preview Contract failed job: https://github.com/shopable-ai/opendesk-browser/actions/runs/39613793526\n- Extension Package Budgets failed job: https://github.com/shopable-ai/opendesk-browser/actions/runs/39612684227\n\n### Required resolution by owning workflow\n1. Compare the changed Web Clipper policy against the previously reviewed blob and audit trust, permissions, site checks, regression tests and compatibility.\n2. If the change is intended and safe, explicitly review and re-pin the **exact** new source with corresponding owner tests, or restore correct reviewed source if unintended.\n3. Preserve the fail-closed fixed-bundle guard. Do **not** remove provenance checks, disable CI or blindly change an SHA to make the build green.\n4. Prove `npm run build` and the relevant shared GitHub Actions succeed on the **same reviewed commit**.\n\nAdBlock R2.6 continues independent Node/source changes. Official AdBlock 1.2.2 promotion remains **BLOCKED** until the shared build, source-bound React Chromium, and real macOS Chrome DNR gates pass.\n",
+          "state": null,
+          "user": null,
+          "assignees": null,
+          "labels": null,
+          "milestone": null,
+          "state_reason": null,
+          "comments": null,
+          "created_at": null,
+          "updated_at": null,
+          "closed_at": null,
+          "display_url": "https://github.com/shopable-ai/opendesk-browser/issues/76",
+          "display_title": "P0: Web Clipper trusted policy provenance drift blocks shared production builds"
+        },
+        {
+          "id": null,
+          "url": "https://github.com/shopable-ai/opendesk-browser/issues/75",
+          "title": "SDK R11 P0: Full Bookmarks Capability & declarative Chrome API binding for independent Bookmark Manager R2",
+          "issue_number": 75,
+          "body": "## 背景（2026-10-14 / `main`）\nBookmark Manager R2 必须从 `examples/sidebar-tools/bookmark-manager/` 的**独立安装 v2 工具沙箱**调用公开 `OpenDeskSDK.browser.bookmarks.*`，不能要求开发者写入宿主 `src/`。目前核对：\n- `src/framework/sdk/browser-contract.js` 仅公开 `browser.bookmarks.create` 与 `browser.bookmarks.removeOwned`；\n- `src/framework/sdk/browser.js` 的 Wrapper 相同；\n- `src/platform/chrome/bookmarks.js` 是 Owned（最多 64 个、自建 URL、opaque BookmarkRef），无全树读取/文件夹 CRUD；\n- `src/bookmark-manager/{model,service,trusted-ui}.js` 的旧 P0 是静态可信实现，不是安装工具 SDK；\n- `src/ui/sidebar-tools/package.js` 仅认可 `browser.bookmarks`（含义是 Owned）；无可安装 Full Bookmarks capability；\n- `src/framework/sdk/browser-contract.js` 当前通用 12KB response 上限，无法承诺 500+ 书签的全量树。\n**Owned 不等于 Full，不允许复用名称后静默提权。**\n\n## R11 前置工作（由 SDK 所有者负责；本 issue 不是授权另造 Bookmark 私有 Bridge）\n1. **Owned create 命名冲突优先消除**：当前 `browser.bookmarks.create` 实际是工具自建书签的 Owned 创建，不能直接重解释为 Chrome 原生 Full 创建。R11 可将现有 Owned 创建显式改名为 `createOwned`（或 `owned.create`）并一次性迁移仓内消费者；再将 `bookmarks.create` 定义为真正 Chrome 原生 create + 独立 Full 授权，或选取能保留 Chrome 动作语义的明确双命名。**绝不允许名称相同、授权效果不同而无区分**。有关 API 原生语义、参数、返回及迁移必须共同验收。\n2. **声明式映射**：使用 Chrome 原生 API Catalog/Binding/唯一安全 Dispatcher，正式公开 `getTree`, `get`, `search`, `create`（可建文件夹）, `update`, `move`, `remove`, `removeTree`，清晰定义调用参数和 `BookmarkTreeNode` 返回形状；保留既有 `removeOwned` 的独立契约，不破坏 Owned 隔离。\n3. **Full Bookmarks Capability**：确定独立、明确命名的 `browser.bookmarks.full`（名称待 R11 审批；**不能自动与现有 `browser.bookmarks` 等同**）。安装 Package schema、能力列表、工具身份/包哈希/installEpoch、Side Panel 可信安装审阅和 Chrome 可选 `bookmarks` 权限需同时通过；首次真实用户点击才触发可信浏览器权限流程。\n4. **事件**：提供 `onCreated/onRemoved/onChanged/onMoved/onChildrenReordered/onImportEnded` 的有界、可撤销 SDK 事件观察机制（复用现有 `browser.events`，不暴露原生 Event 对象至 sandbox），需覆盖 SW 重启、卸载、授权撤销和跨窗口变更。\n5. **TOCTOU / 非空文件夹删除**：Host 必须在受信任端核实目标 ID/父目录、受管理/根节点、调用工具权限及写入前的条件快照；`removeTree` 的确认必须携带稳定子树签名或 Host-issued 一次性预检票据，遇变更失败关闭。前端先 `getTree` 再普通 `removeTree(id)` 不能视作原子安全删除。\n6. **大型树**：有界、可遍历且完整的树读取/搜索，正式证明 500+ 项不会被 12KB 输出限制截断、静默返回空树或丢掉尾部结果；响应字节上限改动只能按方法、按风险审计。\n7. **误用/失败**：缺授权返回明确错误而非 `[]`；撤权立即阻止新请求；未知写入结果 `E_OUTCOME_UNKNOWN` 不自动重放；其他工具、普通网站/Page SDK、旧包/旧 installEpoch 均无法偷用 Full 书签；卸载工具不可自动删除 Chrome 用户书签。\n8. **验收分级**：分别提供 SDK Schema/Wrapper/Host/权限/Node/Build/已安装 Chrome（首次拒绝→允许、CRUD、跨窗口、受管根、撤权、500+、Worker 重启）证据，同一候选 SHA，未做的标 NOT_TESTED。\n\n## Bookmark Manager R2 的依赖\nR2 首先只准备 `examples/sidebar-tools/bookmark-manager/` 源码和可失败关闭的 SDK 探测；在本 issue 全部 P0 闭环前**不列入官方 Catalog、不移除 `src/bookmark-manager/`、不宣称真实安装/CRUD PASS**。SDK R11 owner 完成后，再为工具提交 Full Capability/业务调用/真实测试。",
+          "state": null,
+          "user": null,
+          "assignees": null,
+          "labels": null,
+          "milestone": null,
+          "state_reason": null,
+          "comments": null,
+          "created_at": null,
+          "updated_at": null,
+          "closed_at": null,
+          "display_url": "https://github.com/shopable-ai/opendesk-browser/issues/75",
+          "display_title": "SDK R11 P0: Full Bookmarks Capability & declarative Chrome API binding for independent Bookmark Manager R2"
+        }
+      ]
+    },
+    "pr_query": {
+      "query": "",
+      "state": "open",
+      "topn": 30
+    },
+    "prs": {
+      "issues": []
+    },
+    "exact_task_git_search": {
+      "command": "git grep -n -E 'AI-NATIVE-DEVELOPMENT-WORKFLOW-R2-VALIDATION|AI-NATIVE-DEVELOPMENT-WORKFLOW-R2' HEAD -- docs",
+      "chunk_id": "43755b",
+      "matches": [
+        "original R2 header in 07 only"
+      ],
+      "limitation": "Does not enumerate other private chats or unsynced local tasks."
+    },
+    "baseline_comparison": {
+      "base": "7a8d0190b2a16dc67ac8701492302a9670496c05",
+      "status": "ahead",
+      "ahead_by": 6,
+      "commits": [
+        {
+          "sha": "5f93116c283a777000835cb36b6e53bacb09a172",
+          "message": "docs: clarify engineering model framework and video case (R1-B.1)\n\nReuse the six knowledge groups, document model selection and existing fixed outro capability, distinguish source facts from runtime evidence, and retain historical research with one bounded next task.\n\nOnly update the engineering-model README and 90 research entry."
+        },
+        {
+          "sha": "da98e64bb801a57fc59e056aaf64b27505d38761",
+          "message": "docs: converge engineering model selection and retrospective comparison (R1-B.2)\n\nUse decision-driven selection, preserve historical research, add fixed-source Ctrl+Enter author comparison and keep independent validation as the only next task."
+        },
+        {
+          "sha": "f7b886000131bf6a86cddba252bd1e95f2732fae",
+          "message": "docs: correct R1-B.2 research status and ground knowledge recovery in current assets\n\nDistinguish OS design from runtime ability; verify present source, action semantics, candidate and official package identities. Add decision-triggered knowledge retrieval and preserve R1-B.2 as unfinished, deferring R1-B.3."
+        },
+        {
+          "sha": "0a7d681c0ee09de8402a216a123885008c203576",
+          "message": "docs(engineering-model): register R1-B.3 independent experiment and record execution blocker"
+        },
+        {
+          "sha": "3f20454731e399922c8f3dbfcafde0f379830608",
+          "message": "docs: consolidate AI-native development notes and clarify research directions"
+        },
+        {
+          "sha": "cdc95f1264da7b6d0ae002bda8456ddb688d803e",
+          "message": "docs: add R2 software factor map and lifecycle chain navigation"
+        }
+      ]
+    },
+    "local_workspace_observation": {
+      "tool": "codexpro.open_current_workspace",
+      "status": "UNAVAILABLE",
+      "message": "Connection failed",
+      "sensitive_transport_details_omitted": true
+    }
+  },
+  "scoring": {
+    "object": "complete user A-D validation evidence; advisory independent-Agent scores, not writing-only scores or OS official maturity",
+    "scores": [
+      {
+        "perspective": "需求工程专家",
+        "score": 86,
+        "reviewer": "/root/case_evidence"
+      },
+      {
+        "perspective": "软件架构专家",
+        "score": 94,
+        "reviewer": "/root/framework_audit"
+      },
+      {
+        "perspective": "工作流专家",
+        "score": 84,
+        "reviewer": "/root/case_evidence"
+      },
+      {
+        "perspective": "AI Agent专家",
+        "score": 88,
+        "reviewer": "/root/framework_audit"
+      },
+      {
+        "perspective": "测试验收专家",
+        "score": 79,
+        "reviewer": "/root/verification_redteam"
+      },
+      {
+        "perspective": "反方审计专家",
+        "score": 83,
+        "reviewer": "/root/verification_redteam"
+      }
+    ],
+    "aggregation": "arithmetic_mean_of_six_100_point_scores",
+    "sum_for_arithmetic_only": 514,
+    "divisor": 6,
+    "arithmetic_mean": 85.66666666666667,
+    "display_mean": 85.67,
+    "target": 95,
+    "passes_all_core_dimensions": false,
+    "passes_combined_target": false,
+    "critical_evidence_gap_overrides_score": true,
+    "frozen_before_remote_publication": true
+  },
+  "objective_results": {
+    "A": "research wording repaired; formal framework ADR wording ambiguity remains registered at existing owner path",
+    "B": "three existing case routes independently reviewed; no new product execution",
+    "C": "13 capabilities classified; 8 OpenDesk repository Skill guides and concrete tools distinguished from OS templates/candidates; no new Skill justified",
+    "D": "real documentation maintenance executed; product/automatic-workflow end-to-end business acceptance NOT_RUN"
+  },
+  "unresolved_and_handoff": [
+    {
+      "id": "FORMAL_ADR_WORDING",
+      "status": "REGISTERED_NOT_FIXED",
+      "source": "ai-native-project-os/docs/workflows/REQUIREMENT_DESIGN_WORKFLOW.md section 7",
+      "conflicts_with": [
+        "docs/workflows/PROJECT_DELIVERY_WORKFLOW.md sections 1,4",
+        "docs/workflows/STAGE_EXIT_GATES.md S3"
+      ],
+      "minimal_candidate_correction": "Limit accepted-ADR prerequisite to tasks with actual architectural choices; preserve reasoned N/A for no-choice tasks.",
+      "existing_handoff": "docs/superpowers/plans/2026-07-12-human-ai-requirement-design-layer-implementation.md",
+      "recipient_live_identity_confirmed": false,
+      "receipt_confirmed": false
+    },
+    {
+      "id": "REAL_L2_CONSUMPTION",
+      "status": "UNVERIFIED",
+      "existing_handoff": "ai-native-project-os/docs/workflows/L2_PROGRESSION.md and existing implementation plans",
+      "no_new_parallel_task": true
+    },
+    {
+      "id": "ENGINEERING_MODEL_EFFECT",
+      "status": "existing R1-B.3 REGISTERED/BLOCKED_INDEPENDENT_EXECUTION",
+      "existing_handoff": "09_工程模型独立价值实验登记_CookieEditor.md",
+      "not_reexecuted": true
+    },
+    {
+      "id": "REQUIREMENT_EFFECT",
+      "status": "R3.2 remains existing task",
+      "not_reexecuted": true
+    },
+    {
+      "id": "PRODUCT_ACCEPTANCE",
+      "status": "NOT_RUN_THIS_TURN",
+      "existing_handoff": [
+        "opendesk-browser/projects/video-auto-skip/README.zh-CN.md",
+        "opendesk-browser/projects/ai-send-queue/UI-VERIFICATION.zh-CN.md"
+      ],
+      "current_local_machine_and_original_attachments": "UNAVAILABLE_TO_THIS_RUN"
+    }
+  ]
+}
