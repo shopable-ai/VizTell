@@ -1,0 +1,82 @@
+{
+  "scope": "synthetic gate mutation checks with one historical case; labels are predefined, no independent evaluation",
+  "cases": [
+    {
+      "case": "historical_report",
+      "expected_release": false,
+      "status_only": true,
+      "linked_gate": false,
+      "failed_edges": [
+        "suite_pass",
+        "release_blocked",
+        "installed_identity",
+        "executed_identity",
+        "native:draft_ime",
+        "native:fifo_no_replay",
+        "native:route_owner",
+        "native:trusted_shortcut"
+      ]
+    },
+    {
+      "case": "hypothetical_complete",
+      "expected_release": true,
+      "status_only": true,
+      "linked_gate": true,
+      "failed_edges": []
+    },
+    {
+      "case": "old_installed_version",
+      "expected_release": false,
+      "status_only": true,
+      "linked_gate": false,
+      "failed_edges": [
+        "installed_identity"
+      ]
+    },
+    {
+      "case": "old_run_receipt",
+      "expected_release": false,
+      "status_only": true,
+      "linked_gate": false,
+      "failed_edges": [
+        "executed_identity"
+      ]
+    },
+    {
+      "case": "full_suite_fail",
+      "expected_release": false,
+      "status_only": true,
+      "linked_gate": false,
+      "failed_edges": [
+        "suite_pass"
+      ]
+    },
+    {
+      "case": "unresolved_release_block",
+      "expected_release": false,
+      "status_only": true,
+      "linked_gate": false,
+      "failed_edges": [
+        "release_blocked"
+      ]
+    },
+    {
+      "case": "missing_native_IME",
+      "expected_release": false,
+      "status_only": true,
+      "linked_gate": false,
+      "failed_edges": [
+        "native:draft_ime"
+      ]
+    },
+    {
+      "case": "wrong_version_native_FIFO",
+      "expected_release": false,
+      "status_only": true,
+      "linked_gate": false,
+      "failed_edges": [
+        "native:fifo_no_replay"
+      ]
+    }
+  ]
+}

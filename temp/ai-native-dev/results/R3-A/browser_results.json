@@ -1,0 +1,127 @@
+{
+  "scope": "isolated Chromium page, source-derived minimal mechanisms; not installed extension or native OS pointer test",
+  "A": [
+    {
+      "trace": [
+        [
+          "down",
+          "toc",
+          true
+        ]
+      ],
+      "scrollY": 0,
+      "strip_px": 24,
+      "mode": "overlap",
+      "start_x": 778,
+      "pass": false
+    },
+    {
+      "trace": [
+        [
+          "down",
+          "knob",
+          true
+        ]
+      ],
+      "scrollY": 700,
+      "strip_px": 24,
+      "mode": "safe28",
+      "start_x": 778,
+      "pass": true
+    },
+    {
+      "trace": [
+        [
+          "down",
+          "knob",
+          true
+        ]
+      ],
+      "scrollY": 700,
+      "strip_px": 24,
+      "mode": "noninteractive",
+      "start_x": 778,
+      "pass": true
+    },
+    {
+      "trace": [
+        [
+          "down",
+          "toc",
+          true
+        ]
+      ],
+      "scrollY": 0,
+      "strip_px": 32,
+      "mode": "overlap",
+      "start_x": 770,
+      "pass": false
+    },
+    {
+      "trace": [
+        [
+          "down",
+          "toc",
+          true
+        ]
+      ],
+      "scrollY": 0,
+      "strip_px": 32,
+      "mode": "safe28",
+      "start_x": 770,
+      "pass": false
+    },
+    {
+      "trace": [
+        [
+          "down",
+          "knob",
+          true
+        ]
+      ],
+      "scrollY": 700,
+      "strip_px": 32,
+      "mode": "noninteractive",
+      "start_x": 770,
+      "pass": true
+    }
+  ],
+  "G": [
+    {
+      "target": "tiny",
+      "candidates": [
+        "tiny",
+        "parent"
+      ],
+      "trusted": true,
+      "pointer_events": "auto",
+      "element_from_point": "tiny",
+      "x": 71,
+      "y": 58
+    },
+    {
+      "target": "parent",
+      "candidates": [
+        "parent"
+      ],
+      "trusted": true,
+      "pointer_events": "none",
+      "element_from_point": "parent",
+      "x": 71,
+      "y": 58
+    },
+    {
+      "target": "tiny",
+      "candidates": [
+        "tiny",
+        "parent"
+      ],
+      "trusted": true,
+      "pointer_events": "auto",
+      "element_from_point": "tiny",
+      "x": 71,
+      "y": 58
+    }
+  ],
+  "chromium_version": "144.0.7559.96"
+}
