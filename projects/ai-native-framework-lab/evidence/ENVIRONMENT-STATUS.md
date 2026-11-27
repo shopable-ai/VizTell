@@ -39,6 +39,12 @@ npm test
 
 该测试只验证共享测试骨架和故意不完整的起始实现，**不代表 Superpowers 或 BMAD 已运行，也不代表框架能正确实现或发现错误**。
 
+## 浏览器执行环境探测
+
+容器中存在 /usr/bin/chromium，但本轮 headless / CDP 探测未能完成模拟页加载：DevTools 目标最终显示 chrome-error://chromewebdata，另一次 dump-dom 尝试超时。具体原因尚未确认，不能将其归因于模拟页面代码，也不作为产品功能失败证据。
+
+因此本轮没有形成真实浏览器按钮点击、新标签页创建或原页面状态保持的验收记录。浏览器级验收仍标记为未验证。
+
 ## 证据边界
 
 以上只证明本轮会话使用的本地连接通道不可用，不能证明用户本地 Codex 已损坏，也不能证明 Codex 没有安装 Superpowers / BMAD 或不支持 Subagent。
