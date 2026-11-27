@@ -16,10 +16,11 @@ class FakeElement {
 }
 
 function createHarness(options = {}) {
-  const root = new FakeElement({
-    projectId: options.projectId === undefined ? "project-alpha" : options.projectId,
-    conversationId: "conversation-42"
-  });
+  const dataset = { conversationId: "conversation-42" };
+  if (!options.omitProjectId) {
+    dataset.projectId = options.projectId === undefined ? "project-alpha" : options.projectId;
+  }
+  const root = new FakeElement(dataset);
   const button = new FakeElement({});
   const status = new FakeElement({});
   const page = Object.freeze({
@@ -54,6 +55,7 @@ test("opening a tab does not mutate the original page state", () => {
     scrollTop: h.page.scrollTop
   };
   h.button.click();
+  assert.equal(h.openTabCalls.length, 1, "the state-preservation assertion must not pass when no tab was opened");
   assert.deepEqual({
     href: h.page.href,
     conversationId: h.root.dataset.conversationId,
@@ -63,6 +65,13 @@ test("opening a tab does not mutate the original page state", () => {
 });
 
 test("missing project identity fails closed and gives feedback", () => {
+  const h = createHarness({ omitProjectId: true });
+  h.button.click();
+  assert.deepEqual(h.openTabCalls, []);
+  assert.equal(h.status.textContent, "未识别当前项目，未打开新标签页");
+});
+
+test("empty project identity fails closed and gives feedback", () => {
   const h = createHarness({ projectId: "" });
   h.button.click();
   assert.deepEqual(h.openTabCalls, []);
