@@ -2,6 +2,43 @@
 
 **当前研究对象：框架本身。** R1.1已对A–O完成重点理论深化、专业知识导航和跨专题单模型反方自审；当前自评94.83/100，未通过最终验收。最新有效裁决：[O §11](../results/R3-O/FRAMEWORK.md)；[当前研究状态](../results/R3-O/13_RESEARCH_STATUS.md)。不进入具体应用和工程化。
 
+<a id="framework-overview"></a>
+
+## 总体框架总览
+
+**原始目标：通用 AI 原生软件研发框架**
+
+从不完整想法到真正解决问题的能力体系。
+
+```mermaid
+flowchart TB
+    GOAL["原始目标：通用 AI 原生软件研发框架<br/>从不完整想法到真正解决问题的能力体系"]
+    subgraph FRAMEWORK["五组研究框架 · R1.1"]
+        direction TB
+        A["01 · 基础知识框架<br/>A 因素宇宙 · B 链路宇宙<br/>D 工程模型 · E 多维拆分<br/>需要考虑什么、理解什么、怎样表达和拆分"]
+        B["02 · 认知与专业推理框架<br/>C 需求推理 · F 角色与专家<br/>G 推理模式 · H 盲区审计<br/>怎样思考、发现未知、推导结论和纠正错误"]
+        C["03 · 研发组织与能力框架<br/>I 研发工作流 · J Skill / Tool / Agent<br/>怎样选择专业方法、组织工作和协调执行"]
+        D["04 · 治理与持续演化框架<br/>K 知识复利 · L AI 执行治理<br/>M 商业与运营<br/>怎样保持长期正确性、控制成本、积累知识并产生价值"]
+        E["05 · 总体整合与工程化概念<br/>N AI Project OS · O 总体整合<br/>各体系如何关联，以及哪些方法未来可能值得工程化"]
+        A ~~~ B ~~~ C ~~~ D ~~~ E
+    end
+    GOAL --- FRAMEWORK
+```
+
+本图保存此前对话中展示的五组总体框架及其核心问题。五组是当前阅读与研究分类，不是五个必须顺序执行的研发阶段，也不是已经确定的系统模块。R1.2 横向收敛仍可修正分组；本次只补充可视化阅读入口，不改变研究结论、评分或阶段状态。
+
+### 五组框架与专题正文
+
+| 专题组 | 主要内容 | 入口 |
+|---|---|---|
+| 01 基础知识框架 | 因素宇宙、链路宇宙、工程模型、多维拆分 | [A](../results/R3-A/FRAMEWORK.md) · [B](../results/R3-B/FRAMEWORK.md) · [D](../results/R3-D/FRAMEWORK.md) · [E](../results/R3-E/FRAMEWORK.md) |
+| 02 认知与专业推理框架 | 需求推理、角色与多专家、推理模式、盲区审计 | [C](../results/R3-C/FRAMEWORK.md) · [F](../results/R3-F/FRAMEWORK.md) · [G](../results/R3-G/FRAMEWORK.md) · [H](../results/R3-H/FRAMEWORK.md) |
+| 03 研发组织与能力框架 | 工作流、Skill、Tool与Agent | [I](../results/R3-I/FRAMEWORK.md) · [J](../results/R3-J/FRAMEWORK.md) |
+| 04 治理与持续演化框架 | 知识复利、AI执行治理、商业与运营 | [K](../results/R3-K/FRAMEWORK.md) · [L](../results/R3-L/FRAMEWORK.md) · [M](../results/R3-M/FRAMEWORK.md) |
+| 05 总体整合与工程化概念 | AI Project OS概念职责、总体整合及边界 | [N](../results/R3-N/FRAMEWORK.md) · [O](../results/R3-O/FRAMEWORK.md) |
+
+**研究顺序：先横向建立整体框架，再纵向深入有价值的分支，最后整合与审查。** 当前阶段禁止提前执行具体应用。详见[研究阶段与推进原则](RESEARCH-STAGES.md)。
+
 <a id="next-framework-task"></a>
 
 ## 当前唯一下一任务（R1.2 候选，尚未执行）
@@ -25,20 +62,6 @@
 原始想法 / 需求变更 / 缺陷反馈 → 需求理解与推理 → 工程模型与业务设计 → 解决方案与技术设计 → 工程执行 → 真实验收与持续演化。
 
 此主线描述未来软件研发，不是当前研究任务必须执行的五阶段。入口需要恢复已有目标、事实、成果及边界；具体任务允许复用和裁剪。研究、决策、审计、知识复用可以贯穿各阶段。
-
-## 快速阅读：五组专题框架
-
-以下五组是为了便于阅读的专题导航，与下文七种研究视图互补，不是新的研发阶段、强制层级或互斥分类。
-
-| 专题组 | 主要内容 | 入口 |
-|---|---|---|
-| 01 基础知识框架 | 因素宇宙、链路宇宙、工程模型、多维拆分 | [A](../results/R3-A/FRAMEWORK.md) · [B](../results/R3-B/FRAMEWORK.md) · [D](../results/R3-D/FRAMEWORK.md) · [E](../results/R3-E/FRAMEWORK.md) |
-| 02 认知与专业推理框架 | 需求推理、角色与多专家、推理模式、盲区审计 | [C](../results/R3-C/FRAMEWORK.md) · [F](../results/R3-F/FRAMEWORK.md) · [G](../results/R3-G/FRAMEWORK.md) · [H](../results/R3-H/FRAMEWORK.md) |
-| 03 研发组织与能力框架 | 工作流、Skill、Tool与Agent | [I](../results/R3-I/FRAMEWORK.md) · [J](../results/R3-J/FRAMEWORK.md) |
-| 04 治理与持续演化框架 | 知识复利、AI执行治理、商业与运营 | [K](../results/R3-K/FRAMEWORK.md) · [L](../results/R3-L/FRAMEWORK.md) · [M](../results/R3-M/FRAMEWORK.md) |
-| 05 总体整合与工程化概念 | AI Project OS概念职责、总体整合及边界 | [N](../results/R3-N/FRAMEWORK.md) · [O](../results/R3-O/FRAMEWORK.md) |
-
-**研究顺序：先横向建立整体框架，再纵向深入有价值的分支，最后整合与审查。** 当前阶段禁止提前执行具体应用。详见[研究阶段与推进原则](RESEARCH-STAGES.md)。
 
 ### 当前阅读入口
 - [完整专题导航](../results/R3-O/00_NAVIGATION.md)
