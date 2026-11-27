@@ -1,0 +1,96 @@
+Command: npm test
+Runtime: Node.js v22.16.0
+Working directory: /tmp/ai-native-framework-lab/shared
+Source integrity: package.json, src/project-page.js and tests/project-page.test.js Git blob hashes matched the corresponding files committed in VizTell main.
+Expected baseline: RED because the implementation is intentionally incomplete.
+Exit code: 1
+Result: 4 tests, 1 pass, 3 fail.
+
+> ai-native-framework-lab-case@0.0.0 test
+> node --test
+
+TAP version 13
+# Subtest: click opens exactly one independent conversation tab for the current project
+not ok 1 - click opens exactly one independent conversation tab for the current project
+  ---
+  duration_ms: 1.977943
+  type: 'test'
+  location: '/tmp/ai-native-framework-lab/shared/tests/project-page.test.js:38:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    
+    0 !== 1
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 1
+  actual: 0
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///tmp/ai-native-framework-lab/shared/tests/project-page.test.js:41:10)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.start (node:internal/test_runner/test:1047:17)
+    startSubtestAfterBootstrap (node:internal/test_runner/harness:296:17)
+  ...
+# Subtest: opening a tab does not mutate the original page state
+ok 2 - opening a tab does not mutate the original page state
+  ---
+  duration_ms: 1.032432
+  type: 'test'
+  ...
+# Subtest: missing project identity fails closed and gives feedback
+not ok 3 - missing project identity fails closed and gives feedback
+  ---
+  duration_ms: 2.381531
+  type: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    + actual - expected
+    
+    + ''
+    - '未识别当前项目，未打开新标签页'
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: '未识别当前项目，未打开新标签页'
+  actual: ''
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///tmp/ai-native-framework-lab/shared/tests/project-page.test.js:69:10)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    async Test.processPendingSubtests (node:internal/test_runner/test:1047:7)
+  ...
+# Subtest: project identity with special characters can be recovered from the target URL
+not ok 4 - project identity with special characters can be recovered from the target URL
+  ---
+  duration_ms: 0.29265
+  type: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    
+    0 !== 1
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 1
+  actual: 0
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///tmp/ai-native-framework-lab/shared/tests/project-page.test.js:75:10)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:12)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:1047:7)
+  ...
+1..4
+# tests 4
+# suites 0
+# pass 1
+# fail 3
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 103.805487

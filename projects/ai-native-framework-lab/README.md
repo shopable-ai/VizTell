@@ -15,7 +15,8 @@
 
 - 已完成：固定版本核对；关键 Skill、Workflow、Memlog 和 Codex 宿主说明的定向源码核查；统一案例与测试基线设计。
 - 已写入：三份中文研究稿、共享模拟案例、测试骨架、证据目录和实验执行约定。
-- 未完成：真实 Codex Skill 触发、框架安装/运行、TDD 红绿、Subagent 调度、Party Mode 模式验证、工作流中断恢复、真实浏览器验收。
+- 已验证：共享案例基线在 Node.js v22.16.0 下执行，4 项测试中 3 项按预期失败、1 项通过。失败是功能缺失导致的 RED，不是语法或模块加载错误。原始输出见 evidence/SHARED-BASELINE-RED.txt。
+- 未完成：真实 Codex Skill 触发、框架安装/运行、框架驱动的 TDD 红绿、Subagent 调度、Party Mode 模式验证、工作流中断恢复、真实浏览器验收。
 - 阻塞：本轮 CodexPro 本地工作区桥接连接失败；本机文件桥接和桌面控制通道返回 429。详见 evidence/ENVIRONMENT-STATUS.md。
 - 重要：当前没有 Superpowers 或 BMAD 真实生成的实验结果。研究稿是基于源码的解释，不得冒充框架生成物。
 
@@ -27,6 +28,7 @@
 4. [shared/CASE.md](shared/CASE.md)：两套框架共用的原始需求与验收契约。
 5. [experiments/README.md](experiments/README.md)：运行、隔离与证据保存约定。
 6. [evidence/ENVIRONMENT-STATUS.md](evidence/ENVIRONMENT-STATUS.md)：本轮真实连接检测。
+7. [evidence/SHARED-BASELINE-RED.txt](evidence/SHARED-BASELINE-RED.txt)：共享测试基线首次运行的原始输出。
 
 ## 隔离规则
 
@@ -47,4 +49,4 @@
 5. 使用相同测试基线做自动化和浏览器级验收。
 6. 完成四个专业视角审核后，更新研究结论与评分。
 
-当前状态是“源码机制已核查、真实实操未完成”，不是 R2 完成。
+当前状态是“源码机制已核查、共享测试基线已运行、真实框架实操未完成”，不是 R2 完成。
