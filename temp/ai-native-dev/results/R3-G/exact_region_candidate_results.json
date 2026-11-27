@@ -1,0 +1,227 @@
+{
+  "scope": "exact Git blob module in isolated Chromium, fake extraction; no installed extension / production site",
+  "git_blob_sha": "45f09fae8c948bfd748b66c01d3066282e550b1c",
+  "scratch_candidate": true,
+  "chromium": "144.0.7559.96",
+  "cases": [
+    {
+      "outcome": {
+        "ok": true,
+        "markdown": "tiny:Tiny text",
+        "streaming": false,
+        "loadedOnly": true,
+        "append": false
+      },
+      "events": [
+        {
+          "target": "tiny",
+          "trusted": true
+        }
+      ],
+      "extracted": [
+        "tiny"
+      ],
+      "overlay_remains": false,
+      "case": "tiny_auto",
+      "expected": "tiny",
+      "matches_expected": true
+    },
+    {
+      "outcome": {
+        "ok": true,
+        "markdown": "parent:Tiny textOther textlet x=1",
+        "streaming": false,
+        "loadedOnly": true,
+        "append": false
+      },
+      "events": [
+        {
+          "target": "parent",
+          "trusted": true
+        }
+      ],
+      "extracted": [
+        "parent"
+      ],
+      "overlay_remains": false,
+      "case": "tiny_none",
+      "expected": "parent",
+      "matches_expected": true
+    },
+    {
+      "outcome": {
+        "ok": true,
+        "markdown": "tiny:Tiny text",
+        "streaming": false,
+        "loadedOnly": true,
+        "append": false
+      },
+      "events": [
+        {
+          "target": "tiny",
+          "trusted": true
+        }
+      ],
+      "extracted": [
+        "tiny"
+      ],
+      "overlay_remains": false,
+      "case": "tiny_auto",
+      "expected": "tiny",
+      "matches_expected": true
+    },
+    {
+      "outcome": {
+        "ok": true,
+        "markdown": "code:let x=1",
+        "streaming": false,
+        "loadedOnly": true,
+        "append": false
+      },
+      "events": [
+        {
+          "target": "token",
+          "trusted": true
+        }
+      ],
+      "extracted": [
+        "code"
+      ],
+      "overlay_remains": false,
+      "case": "pre_atomic",
+      "expected": "code",
+      "matches_expected": true
+    },
+    {
+      "outcome": {
+        "ok": true,
+        "markdown": "tiny:Tiny text",
+        "streaming": false,
+        "loadedOnly": true,
+        "append": true
+      },
+      "events": [
+        {
+          "target": "tiny",
+          "trusted": true
+        }
+      ],
+      "extracted": [
+        "tiny"
+      ],
+      "overlay_remains": false,
+      "case": "ctrl_append",
+      "expected": "tiny",
+      "matches_expected": true
+    },
+    {
+      "outcome": {
+        "ok": false,
+        "error": "已取消区域点选"
+      },
+      "events": [
+        {
+          "target": "secret",
+          "trusted": true
+        }
+      ],
+      "extracted": [],
+      "overlay_remains": false,
+      "case": "password_blocked",
+      "expected": null,
+      "matches_expected": true
+    },
+    {
+      "outcome": {
+        "ok": false,
+        "error": "网页已变化或离开，区域点选取消"
+      },
+      "events": [
+        {
+          "target": "tiny",
+          "trusted": true
+        }
+      ],
+      "extracted": [],
+      "overlay_remains": false,
+      "case": "route_changed",
+      "expected": null,
+      "matches_expected": true
+    },
+    {
+      "outcome": {
+        "ok": true,
+        "markdown": "parent:Tiny textOther textlet x=1",
+        "streaming": false,
+        "loadedOnly": true,
+        "append": false
+      },
+      "events": [
+        {
+          "target": "tiny",
+          "trusted": true
+        }
+      ],
+      "extracted": [
+        "parent"
+      ],
+      "overlay_remains": false,
+      "case": "intentional_parent",
+      "expected": "parent",
+      "matches_expected": true
+    },
+    {
+      "outcome": {
+        "ok": true,
+        "markdown": "tiny:Tiny text",
+        "streaming": false,
+        "loadedOnly": true,
+        "append": false
+      },
+      "events": [],
+      "extracted": [
+        "tiny"
+      ],
+      "overlay_remains": false,
+      "case": "keyboard_return_to_child",
+      "expected": "tiny",
+      "matches_expected": true
+    },
+    {
+      "outcome": {
+        "ok": false,
+        "error": "region eligibility changed"
+      },
+      "events": [
+        {
+          "target": "tiny",
+          "trusted": true
+        }
+      ],
+      "extracted": [],
+      "overlay_remains": false,
+      "case": "stale_aria_hidden",
+      "expected": null,
+      "matches_expected": true,
+      "fresh_candidates": []
+    },
+    {
+      "outcome": {
+        "ok": false,
+        "error": "region eligibility changed"
+      },
+      "events": [
+        {
+          "target": "tiny",
+          "trusted": true
+        }
+      ],
+      "extracted": [],
+      "overlay_remains": false,
+      "case": "stale_editable_ancestor",
+      "expected": null,
+      "matches_expected": true,
+      "fresh_candidates": []
+    }
+  ]
+}
