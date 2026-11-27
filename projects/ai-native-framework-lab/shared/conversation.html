@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>独立项目对话</title>
+</head>
+<body>
+  <main>
+    <h1>新建的独立对话</h1>
+    <p>项目身份：<strong data-project-id></strong></p>
+    <p>这是模拟页面，不连接真实 ChatGPT。</p>
+  </main>
+  <script type="module">
+    const params = new URLSearchParams(window.location.search);
+    document.querySelector("[data-project-id]").textContent = params.get("projectId") || "未提供项目身份";
+  </script>
+</body>
+</html>

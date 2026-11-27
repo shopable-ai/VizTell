@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>模拟 ChatGPT 项目页</title>
+  <style>
+    body { font: 16px system-ui, sans-serif; margin: 40px auto; max-width: 760px; padding: 0 20px; color: #202124; }
+    .panel { border: 1px solid #dadce0; border-radius: 14px; padding: 24px; }
+    button { border: 0; border-radius: 8px; padding: 10px 16px; background: #202124; color: white; cursor: pointer; }
+    textarea { display: block; width: 100%; min-height: 100px; margin: 16px 0; }
+    [data-role="status"] { min-height: 24px; color: #5f6368; }
+  </style>
+</head>
+<body>
+  <main class="panel" data-project-root data-project-id="project-alpha" data-conversation-id="conversation-42">
+    <h1>模拟 ChatGPT 项目</h1>
+    <p>当前项目：Project Alpha</p>
+    <p>当前对话：conversation-42</p>
+    <textarea aria-label="当前对话草稿">这是一段尚未发送的原页面草稿。</textarea>
+    <button type="button" data-action="new-conversation">在新标签页创建独立对话</button>
+    <p data-role="status" aria-live="polite"></p>
+  </main>
+  <script type="module" src="./src/app.js"></script>
+</body>
+</html>
