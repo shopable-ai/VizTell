@@ -14,7 +14,7 @@
 
 ## 1. 先恢复完整输入，再做增量研究
 
-仓库：https://github.com/shopable-ai/VizTell；唯一工作分支 main；根目录 temp/ai-native-dev/。先读 README、本规则、framework/README.md、所选 launch 文件和 prompts/00。主控检查当前main中 results/R3-X/FRAMEWORK.md 的存在、内容及最后进展，不能将旧应用状态当框架状态。
+仓库：https://github.com/shopable-ai/VizTell；唯一工作分支 main；根目录 projects/ai-native-dev/。先读 README、本规则、framework/README.md、所选 launch 文件和 prompts/00。主控检查当前main中 results/R3-X/FRAMEWORK.md 的存在、内容及最后进展，不能将旧应用状态当框架状态。
 - 启动每专题前完整读取对应的 prompts/R3-X 文件（原始目标、详细知识问题、验证及交付要求、内嵌R2资料），按需读 reference/ 关联分册、原始备份和其他专题框架。读取不是执行旧应用要求；将其延期。
 - 已有 A/B/G 的实际业务探索保持原样；只使用已提炼到 FRAMEWORK.md 的通用结论，不再运行旧程序或继续其产品待办。优先复用全部已有 FRAMEWORK.md，不创建平行的重复框架文件。
 - 缺失的历史35模型家族/14主领域、九种机制、两份历史文件若不在本目录内，标注缺失；可以独立提出新候选，但不能声称找回历史资料。不扫描VizTell其他目录，不读取实际项目仓库。
